@@ -1,0 +1,294 @@
+\documentclass[a4paper, 12pt]{report}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc} 
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amsfonts,amssymb, empheq}
+\usepackage{eurosym}
+\usepackage{booktabs}
+\usepackage{wrapfig}
+\pagestyle{fancy}
+\fancyhead[R]{Université Paris-Est Créteil}
+\fancyhead[L]{Management des risques bancaires}
+\usepackage{array,multirow,makecell}
+\usepackage{hyperref}
+\setcellgapes{1pt}
+\makegapedcells
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash }b{#1}} 
+%\renewcommand{\thechapter}{\Roman{chapter}}
+%\setcounter{chapter}{1} % pour numéroter le chapitre 
+\begin{document}
+	\chapter*{Introduction}
+	
+Au cours années 1980, mouvement de déréglementation, de désintermédiation et de décloisonnement (3D). Le rôle des marchés de capitaux est renforcé dans le financement de l’activité économique. Cependant banques ont toujours une place prépondérante dans le financement, notamment pour les ménages. 
+Actuellement, financement par le crédit bancaire des ménages, ETI, PME : +
+de 60 \% en France (en Europe ordre de 80 \%)
+
+Au cours années 1990, ce mouvement de libéralisation s’est étendu aux pays émergents. Il y a eut une interconnexion croissante des systèmes financiers nationaux. Le système bancaire traditionnel n’est plus suffisant pour répondre
+aux besoins de placements des agents comme firmes transnationales ce qui va engendré le développement des fonds spéculatifs, des organismes de
+titrisation, des fonds d’investissement (OPC(\textit{Organisme de placement collectif})). Ces entités ne créent pas de monnaie mais remplissent pour partie des fonctions semblables au système bancaire traditionnel (transformation échéances, liquidité, rendement,…). On appelle ça le système bancaire parallèle (Shadow Banking) ou Intermédiation financière non bancaire (IFNB). La transformation d'échéance représente l'opération par laquelle une banque transforme des dépôts de court terme en prêts de long terme. En d'autres termes, la banque emprunte des fonds à court terme (par exemple, des dépôts des clients) et utilise ces fonds pour financer des investissements ou des prêts à plus longue échéance, comme des crédits immobiliers ou des prêts aux entreprises.
+
+Le système bancaire représente le marché des banques. Le système financier représente le marché des capitaux, les intermédiaires financiers IF (bancaire et non bancaire). Les intermédiaires financiers ce sont les assurances, les établissement de crédit (EC) et les OPC.
+
+Activités de titrisation aux USA élément déclencheur de la crise financière globale (CFG) de 2007-2009. Depuis il y a un mouvement de re-réglementation de la sphère financière et réflexion sur l’impact du développement des systèmes inanciers sur la croissance économique
+
+A partir des années 2010, expansion des innovations technologiques dans le secteur financier : FinTech. Cela révolutionne l’offre de services financiers, ça tend à réduire la distinction entre intermédiation et marché. Ainsi banques traditionnelles concurrencées par : banques en ligne (Boursorama banque (SG), Hello Bank (BNP-P), Fortunéo (Crédit Mutuel Arkéa),…) et néo-banques (Revolut (anglaise), N26 (allemande), Orange Bank (française),…). Il y a également l'émergence de nouveaux intermédiaires issus de la FinTech c'est l'exemple du financement participatif (\textit{Crowdfunding}) les établissements de paiement, les établissements de monnaie électronique, … Cela a permis de revoir le modèle d’affaire des banques.
+
+L'enjeux actuels est intelligence artificielle (IA) elle pourra aider dans lutte contre blanchiment des capitaux et financement du terrorisme (LCB FT), modèle interne de credit scoring, protection de la clientèle.
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+ \centering
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-09-12 234518}
+\end{wrapfigure}
+
+Pendant longtemps, la théorie a ignoré le lien entre sphères réelle et financière : modèle de Modigliani et Miller (1958) parle de la neutralité du mode de financement sur la valeur de l’actif économique de l’entreprise. Gurley et Shaw (1955) démontre l'importance du rôle des banques dans la transformation des échéances entre emprunteurs (LT) etprêteurs (CT). Il est nécessaire qu'il y ait un ajustement entre les différents besoins des agents.
+
+Le développement de la théorie bancaire dans années 1980 avec l’introduction des asymétries d’information (AI) entre prêteurs et emprunteurs. Elle met en lumière le conflits d’intérêt entre prêteurs et emprunteurs dans la théorie de
+l’agence et l'anti-sélection (avant signature du contrat de prêt) et aléa-moral (après signature du contrat)
+
+\begin{center}
+	\begin{tabular}{lr}
+	A                                 & P                    \\ \hline
+	\multicolumn{1}{l|}{Crédit}       & Dépôt                \\
+	\multicolumn{1}{l|}{Titre détenu} & Titre émis           \\
+	\multicolumn{1}{l|}{}             & Fond propre (action)
+\end{tabular}
+\end{center}
+Depuis Bâle 3 les banques doivent respecter ce ratio 
+
+$$
+\text{Ratio de fonds propres solvabilité}= \frac{\text{Fonds propres}}{\sum \text{Actif podérés par les risques}}\ge 10,5\%
+$$
+
+\chapter{Le cadre institutionnel et réglementaire et les grandes tendances de l’évolution du système financier}
+
+Depuis début de la Seconde Guerre mondiale et jusqu'à fin des années 1960 le système bancaire français contrôlé par l’État. 
+
+On assiste à une harmonisation européenne de la réglementation financière à partir de 1973 (Directive sur les assurances) et à l'ouverture du marché unique à la fin de 1992 (traité de Maastricht). Ces deux évolutions ont entraîné des transformations profondes du système financier français, notamment par la rationalisation des structures et des implantations, la diversification des activités et le renouvellement des modes de gestion.
+
+Ces transformations s’inscrivaient dans le contexte mondial de mouvement des 3D et d’ouverture internationale des marchés bancaires et financiers.
+
+La crise financière globale (CFG) de 2007-2009 a porté un coup d’arrêt brutal à cette évolution et a montré l’urgence de réformer et d’encadrer le système
+financier. 
+
+\section{Contexte institutionnel et réglementaire des activités bancaires, d’assurance et de marchés}
+
+\subsection{Réglementations}
+
+La réglementation est apparue tard en France au début de la Seconde Guerre mondiale (Italie, USA, … 1920). Avant nous avions un système bancaire libéralisé (ni de charte bancaire, ni de dépôt de garantie ni de réglementation prudentielle). Cependant la banque de France a exercé une certaine supervision sans en avoir la charge.
+
+\subsubsection{Réglementations antérieures aux années 1980}
+
+Le système bancaire fut organisé pour la première fois en 1941 par le
+gouvernement de Vichy. On assiste à un essor du système à la fin années 1960 mais le système cloisonné, les législations complexes et hétérogènes et les 
+autorités de contrôle diverses jusqu’aux années 1980. 
+
+\paragraph{Lois bancaires de 1941-1945}
+
+La loi de 1941 a marqué la création de la Commission de contrôle des banques dans le but de sécuriser les clients après le krach de 1929, qui avait entraîné la disparition de 566 banques françaises entre 1929 et 1935. À cette époque, il n'existait pas de législation unique applicable à tous les établissements bancaires, lesquels étaient répartis en trois catégories : les banques inscrites, les établissements financiers et les établissements à statut légal spécial. 
+
+La loi de 1945 a renforcé le rôle de l'État dans les circuits de financement afin de lutter contre l'inflation et de participer à la reconstruction du pays. Cette loi a également entraîné la nationalisation de la Banque de France et de quatre grandes banques : Société Générale, Crédit Lyonnais, Comptoir National d'Escompte de Paris et Banque Nationale pour le Commerce et l'Industrie. Inspirées du modèle américain du Glass-Steagall Act, les banques inscrites ont été spécialisées pour faciliter leur contrôle : il y avait les banques de dépôts, les banques d'affaires et les banques de crédit à moyen et long terme.
+
+Les banques de dépôts ne pouvaient pas recevoir de dépôts à vue ou à terme de plus de deux ans et leurs activités de prise de participation dans les entreprises étaient limitées. Les banques d'affaires étaient spécialisées dans la prise de participation et la gestion d'affaires existantes ou en formation, avec une collecte de dépôts restreinte. Les banques de crédit à moyen et long terme ne pouvaient pas recevoir de dépôts ni accorder de crédits de moins de deux ans et avaient une capacité de prise de participation limitée. Ce cloisonnement des activités bancaires visait à encadrer le crédit, réguler la création de monnaie et orienter l'épargne vers les besoins de financement.
+
+Le Conseil National du Crédit (CNC) a été créé pour superviser le secteur bancaire. Chaque établissement devait être inscrit sur la liste du CNC, à l'exception des établissements à statut légal spécial tels que le Crédit Agricole et le Crédit Mutuel. Les banques s'enregistraient en indiquant leur spécialisation, ce qui influençait la collecte des dépôts, ainsi que le calcul des ratios de liquidité et de fonds propres.
+
+\paragraph{Décrets de 1966 et de 1967 (dits décrets « Debré »)}
+
+Les décrets de 1966 et 1967, connus sous le nom de décrets « Debré », ont été mis en place pour moderniser le secteur bancaire en réponse à la mensualisation des salaires et à l'intensification de l'utilisation des chèques. Ces décrets visaient à favoriser la détention d'une épargne longue par les agents non financiers (ANF) et à encourager la transformation des échéances en permettant la concession de crédits à long terme avec des ressources à court terme.
+
+Les décrets s'articulaient autour de deux objectifs principaux. D'une part, ils cherchaient à donner aux banques les moyens de maximiser la collecte des dépôts en facilitant l'ouverture de nouveaux guichets sans avoir besoin de l'autorisation du Conseil National du Crédit (CNC). Entre 1967 et 1975, le nombre de guichets a été multiplié par deux. D'autre part, ils avaient pour but de favoriser la « déspécialisation » en rapprochant les banques de dépôts et les banques d'affaires, en unifiant les conditions de collecte des dépôts et d'octroi de crédits, et en permettant aux banques de dépôts de prendre des participations dans des affaires.
+
+Malgré ces évolutions, les règles de fonctionnement du système bancaire restaient loin d'être équitables et homogènes.
+
+\subsubsection{Réglementations dans les années 1980-90}
+
+Au début des années 1980, une grande réforme du système financier a été initiée, motivée par la forte inflation des années 1970 et les engagements pris par l'État dans le cadre des traités européens. Cette réforme a conduit à une ouverture accrue du système bancaire : l'encadrement du crédit a été supprimé en 1985, le contrôle des changes a été aboli en 1990, et le marché unique européen a été mis en place en 1992.
+
+\paragraph{Loi de nationalisation de 1982}
+
+avait pour objectif de financer des investissements prioritaires, d'assurer un meilleur contrôle du crédit et de réduire son coût. Cette loi a conduit à la nationalisation des banques commerciales générant plus de 1 milliard de francs de dépôts, des banques du réseau coopératif et mutualiste, ainsi que des banques de crédit à moyen et long terme. Les banques étrangères étaient exclues de cette nationalisation.
+
+Ainsi, 36 banques de dépôts et banques détenues indirectement par l'État ont été nationalisées, incluant des institutions telles que le Crédit Commercial de France (CCF), le Crédit Industriel et Commercial (CIC), la Banque Rothschild, la Banque Worms, la Banque La Hénin, la Banque d'Indochine et de Suez, ainsi que la Banque de Paris et des Pays-Bas. Les anciens actionnaires ont été indemnisés en recevant, en échange de leurs actions, des obligations émises par la Caisse Nationale des Banques, un organisme créé spécifiquement par la loi de 1982.
+
+\paragraph{Loi bancaire de 1984 relative à l’activité et au contrôle des établissements de crédit (EC)}
+
+La loi bancaire de 1984, relative à l’activité et au contrôle des établissements de crédit (EC), a transposé en droit français la première directive bancaire européenne de 1977. Son objectif était d’harmoniser progressivement les conditions de fonctionnement de tous les établissements financiers et de renforcer leurs structures financières. Dès lors, tous les établissements du secteur bancaire ont été désignés sous le terme d’établissements de crédit (EC).
+
+Cette loi a soumis tous les établissements de crédit aux mêmes autorités de réglementation et de contrôle, à l'exception du Trésor public, de la Banque de France, des instituts d’émission des DOM et TOM, des services financiers de la Poste, et de la Caisse des Dépôts et Consignations. Elle visait à garantir la stabilité du système bancaire en imposant à l’ensemble des EC des exigences telles que l’existence de fonds propres suffisants, le respect des règles de liquidité, de solvabilité et d'équilibre des structures financières.
+
+Pour exercer leur activité, les établissements de crédit devaient obtenir un agrément délivré par le Comité des Etablissements de Crédit. La loi a également défini six catégories d’EC : les banques, les banques mutualistes ou coopératives, les caisses d’épargne et de prévoyance, les caisses du crédit municipal, les sociétés financières et les institutions financières spécialisées. À cette époque, toutes les banques étaient intégrées dans le modèle de la banque universelle.
+
+\paragraph{Lois de privatisation de 1986 et de 1993}
+
+Les lois de privatisation de 1986 et de 1993 ont marqué des phases significatives de libéralisation du secteur bancaire en France. La loi de 1986 visait à privatiser les banques afin de les libérer des circuits de financement contrôlés par l’État. La première vague de privatisations, qui s'est déroulée entre 1986 et 1988, a vu le retour au secteur privé de 73 banques, dont la Compagnie financière Paribas, la Banque régionale Sogenal, et la Société Générale. Toutefois, les privatisations ont été suspendues en 1988 à la suite du krach boursier de 1987.
+
+La loi de 1993 a repris le processus de privatisation, qui s'est poursuivi jusqu'à la fin des années 1990, avec le retour au secteur privé de 14 banques, y compris BNP et ses filiales. La récession de 1993 a entraîné la faillite de nombreuses entreprises du secteur privé, incapables de rembourser leurs crédits aux banques. En réponse, l'État a soutenu des banques publiques ou parapubliques telles que le Crédit Lyonnais et le Crédit Foncier de France pour éviter des faillites bancaires et stabiliser le système financier.
+
+\paragraph{Réglementation des services financiers en Europe}
+
+Dans les années 1970, la Commission Européenne (CE) et le Conseil des ministres des États membres ont défini une stratégie bancaire et financière visant à promouvoir l'intégration et la stabilité financières en Europe. La réglementation s'est traduite par la transposition, par chaque État membre, du programme législatif relatif au marché unique des services financiers dans son droit interne. Les décisions sous-jacentes, sous forme de directives préparées par la CE, étaient discutées et éventuellement amendées par le Parlement européen, puis définitivement adoptées par le Conseil des ministres, représentant les gouvernements des États membres.
+
+La réglementation bancaire dans l'Union européenne repose sur cinq principes fondamentaux. Tout d'abord, la liberté totale des mouvements de capitaux permet la suppression du contrôle des changes entre les États membres, facilitant ainsi les flux financiers au sein de l'UE. Ensuite, le principe de liberté d’établissement permet à tout établissement bancaire agréé dans un État membre d’ouvrir une succursale dans un autre État membre sans avoir à demander une autorisation aux autorités locales. De plus, la liberté de prestation de services autorise un établissement bancaire agréé à offrir ses services à un client situé dans un autre pays de l’UE, même sans y avoir de présence physique. Le quatrième principe est la reconnaissance mutuelle des agréments, aussi appelé le principe du « passeport unique », qui permet à une banque agréée dans un pays d’exercer librement dans les autres pays membres. Enfin, la surveillance des établissements bancaires de petite et moyenne taille est assurée par les autorités du pays d’origine, tandis que pour les établissements systémiques, c'est la Banque centrale européenne (BCE) qui prend en charge la supervision.
+
+\subsubsection{Réglementations de la fin des années 1990 jusqu’à mi-2000}
+
+À partir de la fin des années 1990 jusqu’au milieu des années 2000, la réglementation bancaire a connu plusieurs évolutions majeures. Tout d'abord, il y a eu un désengagement progressif de l’État, accompagné d’une réduction du nombre d’établissements de crédit (EC), marquant ainsi une concentration du secteur. Cette période a également vu l’émergence de grands groupes diversifiés, ayant une envergure à la fois européenne et internationale, ce qui a renforcé la compétitivité des acteurs du marché. Par ailleurs, une plus grande homogénéité des conditions d’exercice des activités bancaires et financières s’est installée, favorisant une standardisation des pratiques et une meilleure intégration du marché bancaire au sein de l’Union européenne.
+
+\paragraph{Loi de modernisation des activités financières (MAF) de 1996}
+
+La Loi de modernisation des activités financières (MAF) de 1996 a marqué une étape importante dans l'évolution de la réglementation financière en France. Elle a permis la transposition en droit français de la directive européenne de 1993 relative aux services d'investissement, couvrant des activités telles que les ordres de bourses, le trading pour compte propre, ainsi que le placement et la gestion sur instruments financiers pour compte de tiers. Cette loi a également favorisé l’harmonisation des conditions d’exercice des services d'investissement, renforçant la cohérence et la compétitivité du secteur. En outre, elle a établi un cadre institutionnel unique pour l’exercice de ces services en France, que ce soit par les établissements de crédit (EC) ou par les entreprises d’investissement (EI), qui doivent être agréés par l’Autorité de Contrôle Prudentiel (ACP) ou, pour les sociétés de gestion de portefeuille, par l’Autorité des Marchés Financiers (AMF). Les EC et EI sont ainsi désignés comme Prestataires de Services d’Investissement (PSI), consolidant ainsi le cadre réglementaire des activités d’investissement en France.
+
+\paragraph{Ordonnance relative aux marchés d’instruments financiers (MIF) de 2007}
+
+L'Ordonnance relative aux marchés d’instruments financiers (MIF) de 2007 a transposé en droit français la directive européenne de 2004, introduisant plusieurs réformes importantes dans le secteur financier. L'une des principales mesures a été la mise en concurrence des bourses traditionnelles avec de nouvelles plates-formes électroniques de négociation, ouvrant ainsi le marché à davantage d'acteurs et renforçant la compétitivité. Parmi ces nouveaux acteurs figurent les systèmes multilatéraux de négociation (SMN) et les internalisateurs systématiques (IS). Les SMN permettent une confrontation multilatérale des ordres de bourse entre banques, courtiers ou bourses, comme c'est le cas sur des plates-formes telles que Turquoise ou Chi-X. Les IS, quant à eux, se caractérisent par des négociations bilatérales de gré à gré, souvent effectuées par des banques et des courtiers, à l’image de BNP Paribas Arbitrage. Ces évolutions ont considérablement modifié la structure et le fonctionnement des marchés financiers en Europe.
+
+\paragraph{Ordonnance relative à la solvabilité des EC et EI de 2007}
+
+L'Ordonnance relative à la solvabilité des établissements de crédit (EC) et des entreprises d’investissement (EI) de 2007 a transposé en droit français deux directives européennes de 2006 concernant la solvabilité de ces institutions financières. Cette ordonnance a permis l'introduction du nouvel "Accord de Bâle 2" dans le cadre de la réglementation bancaire française. Cet accord vise à établir une convergence internationale en matière de mesure et de normes de fonds propres (FP), renforçant ainsi la stabilité financière des établissements en imposant des exigences plus strictes concernant la gestion des risques et la solidité de leurs fonds propres. Cela a marqué un tournant important dans la régulation bancaire, en alignant les pratiques françaises sur les standards internationaux.
+
+\subsubsection{Règlementations dans les années de l’après crise financière globale (CFG) 2007-2009}
+
+Dans les années qui ont suivi la crise financière globale (CFG) de 2007-2009, un important mouvement de re-réglementation du secteur financier a été initié, notamment lors du sommet du G20 à Londres en avril 2009. Ce mouvement visait à renforcer la régulation des marchés financiers afin d'éviter une nouvelle crise de cette ampleur. En plus de la régulation des acteurs traditionnels, une attention particulière a été portée sur le développement de la finance digitale et participative, qui a pris de l'ampleur durant cette période. Par ailleurs, la lutte contre le blanchiment des capitaux et le financement du terrorisme est devenue une priorité, avec des réglementations renforcées dans ces domaines. Enfin, cette période a vu l’apparition de nouveaux acteurs dans le secteur financier, modifiant encore davantage le paysage de la finance mondiale.
+
+\paragraph{Ordonnance relative au service de paiement de 2009}
+
+L'Ordonnance relative au service de paiement de 2009 a transposé en droit français la directive européenne de 2007 relative aux services de paiement, appelée DSP1. Cette ordonnance a introduit un nouveau type d'acteur dans le secteur financier : les établissements de paiement (EP). Ces établissements sont autorisés à fournir divers services de paiement, tels que le virement, le prélèvement, le transfert de fonds, ainsi que les opérations de versement ou de retrait d’espèces. Cette réforme a permis de moderniser et de diversifier l’offre de services de paiement en France, facilitant les transactions et la gestion des fonds pour les utilisateurs.
+
+\paragraph{Loi de régulation bancaire et financière de 2010}
+
+La Loi de régulation bancaire et financière de 2010 a été adoptée pour renforcer la régulation et l'encadrement du système financier français à la suite de la crise financière. Elle a conféré à l'Autorité des Marchés Financiers (AMF) des pouvoirs élargis, notamment l'interdiction des ventes à découvert, la régulation des marchés dérivés et des dérivés de crédit, ainsi que le contrôle des agences de notation (en leur imposant des agréments et des sanctions). La loi a également créé le Conseil de la Régulation Financière et du Risque Systémique (COREFRIS), un organe destiné à surveiller et prévenir les risques systémiques. En outre, cette législation a introduit des mesures pour encadrer la rémunération des opérateurs de marché, en particulier concernant les bonus et les frais bancaires, avec pour objectif de rendre les tarifs plus transparents et de limiter les excès.
+
+\paragraph{Ordonnance relative aux établissements de crédit et aux sociétés de financement de 2013}
+
+L'Ordonnance relative aux établissements de crédit et aux sociétés de financement de 2013 visait à harmoniser le statut des établissements de crédit (EC) au niveau communautaire, en vue de l’entrée en vigueur, au 1er janvier 2014, du règlement européen CRR (Capital Requirement Regulation). Ce règlement a transposé en Europe le nouveau cadre prudentiel connu sous le nom de Bâle 3, renforçant ainsi les exigences en matière de fonds propres pour les EC. Les EC sont désormais agréés en tant que banques, banques mutualistes ou coopératives, établissements de crédit spécialisés, ou caisses de crédit municipal. Les EC ne répondant plus à la définition européenne peuvent continuer leur activité sous un nouveau statut : celui de Société de Financement (SF). Ces sociétés sont autorisées à octroyer des crédits, mais ne peuvent pas collecter de dépôts ou d’autres fonds remboursables du public. Elles sont actives dans des secteurs comme le crédit à la consommation, le crédit-bail mobilier et immobilier, le crédit aux entreprises, l'affacturage, ainsi que les cautions et garanties. Cette ordonnance a également marqué la disparition du statut de société financière et d'institution financière spécialisée, ces entités étant désormais agréées soit comme établissements de crédit spécialisés, soit comme sociétés de financement.
+
+\paragraph{Loi de séparation et de régulation des activités bancaires de 2013}
+
+La Loi de séparation et de régulation des activités bancaires de 2013 a été mise en place pour renforcer la régulation des acteurs bancaires et accroître les pouvoirs des autorités de supervision. L'une des mesures clés de cette loi est la séparation des opérations spéculatives des banques de leurs activités essentielles à l’économie. Les activités utiles sont maintenues au sein de la maison mère, tandis que les opérations pour compte propre (trading) sont transférées dans une filiale distincte. De plus, un plafonnement strict des rémunérations variables des dirigeants et des traders a été instauré pour limiter la prise de risques excessifs. La loi introduit également le principe d’imputation prioritaire des pertes sur les actionnaires et les créanciers de la banque, afin de limiter l’intervention de l’État en cas de difficultés financières. Un autre volet important est la création d’un fonds de résolution unique, financé entièrement par le secteur financier, avec un objectif de 55 milliards d’euros d’ici 2025, alimenté par les établissements de crédit (EC) et entreprises d’investissement (EI) des pays de la zone euro. Enfin, le COREFRIS a été remplacé par le Haut Conseil de Stabilité Financière (HCSF), renforçant ainsi le cadre de surveillance et de stabilité du système financier.
+
+\paragraph{Loi transposant la 2ème directive sur la monnaie électronique (DME2) en 2013}
+
+La Loi transposant la 2ème directive sur la monnaie électronique (DME2) en 2013 a intégré en droit français les dispositions de la directive européenne sur la monnaie électronique de 2009. Cette loi permet aux établissements de crédit (EC) et aux établissements de monnaie électronique (EME) d’émettre de la monnaie électronique, élargissant ainsi les possibilités offertes aux acteurs du marché. En outre, elle autorise les EC, les EME, ainsi que les établissements de paiement (EP) à fournir des services de paiement, offrant ainsi une plus grande flexibilité et une gamme étendue de services financiers aux utilisateurs.
+
+\paragraph{Ordonnance relative au financement participatif de 2014}
+
+L'Ordonnance relative au financement participatif de 2014 a établi un cadre juridique sécurisé pour le financement participatif, un mode de financement qui permet aux entreprises de solliciter un grand nombre de personnes pour soutenir un projet sans avoir recours aux banques. Cette ordonnance introduit également un nouveau statut de conseiller en investissements participatifs, destiné à encadrer et réguler les activités des intermédiaires qui facilitent les investissements dans des projets financés par le public. Cette mesure vise à protéger les investisseurs tout en favorisant le développement de nouvelles formes de financement pour les entreprises.
+
+\paragraph{Ordonnance relative aux marchés d’instruments financiers (MIF2) de 2016}
+
+L'Ordonnance relative aux marchés d’instruments financiers (MIF2) de 2016 a apporté une refonte significative des exigences en matière de transparence pré- et post-négociation. Elle impose aux plateformes de négociation de donner accès à leurs données et crée une nouvelle catégorie d'acteurs : les prestataires de services de communication de données. Toutes les activités de négociation doivent désormais être organisées et menées sur des plateformes de négociation réglementées, comprenant les marchés réglementés (MR), les systèmes multilatéraux de négociation (MTF), et les systèmes organisés de négociation (OTF) pour les produits hors actions.
+
+Cette ordonnance a également renforcé les pouvoirs de supervision de l'Autorité des Marchés Financiers (AMF), notamment pour limiter les positions prises sur les instruments dérivés de matières premières. Enfin, elle a introduit des contrôles pour la négociation algorithmique, en particulier pour les transactions à haute fréquence, avec des exigences telles que le test des algorithmes et la conservation des traces des ordres.
+
+\paragraph{Ordonnance relative au renforcement du dispositif français de lutte contre le blanchiment des capitaux et le financement du terrorisme (LCB/FT) de 2016}
+
+L'Ordonnance relative au renforcement du dispositif français de lutte contre le blanchiment des capitaux et le financement du terrorisme (LCB/FT) de 2016 a transposé la 4ème directive (UE) de 2015 dans le droit français. Cette directive suit les recommandations du Groupe d’Action Financière (GAFI), une organisation intergouvernementale créée en 1989 pour établir un cadre global pour la lutte contre le blanchiment de capitaux (BC) et le financement du terrorisme (FT).
+
+Le blanchiment de capitaux consiste à donner une apparence légitime à des biens ou des capitaux d'origine illicite, provenant notamment de trafic de stupéfiants, d'activités criminelles, de corruption, de prostitution, de trafic d'armes, ou de certains types de fraude fiscale. Le financement du terrorisme, quant à lui, désigne la fourniture ou la collecte de fonds destinés à être utilisés pour des activités terroristes.
+
+L'ordonnance renforce l'approche par risques des personnes assujetties, améliore l'identification du bénéficiaire effectif (BE), et élargit la notion de Personnes Politiquement Exposées (PPE). Elle favorise également une coopération accrue entre les cellules de renseignements financiers, afin de renforcer l'efficacité des mesures de prévention et de lutte contre le blanchiment des capitaux et le financement du terrorisme.
+
+\paragraph{Ordonnance relative aux services de paiement (DSP2) de 2018}
+
+L'Ordonnance relative aux services de paiement (DSP2) de 2018 a introduit de nouvelles règles importantes concernant l’accès aux activités de services de paiement. Elle a établi des normes pour la supervision des prestataires de services de paiement, les modalités techniques applicables aux opérations de paiement, ainsi que les droits et obligations des parties impliquées dans un service de paiement. En outre, cette ordonnance a introduit deux nouveaux types de prestataires de services : les services d’information sur les comptes et les services d’initiation de paiement. Ces innovations visent à renforcer la transparence, la sécurité et la concurrence dans le secteur des paiements, tout en offrant de nouvelles possibilités pour les utilisateurs et les prestataires de services financiers.
+
+\paragraph{Loi du plan d'action pour la croissance et la transformation des entreprises (PACTE) de 2019}
+
+La Loi du plan d'action pour la croissance et la transformation des entreprises (PACTE) de 2019 vise à stimuler la croissance et la transformation des entreprises en France. Parmi ses principales mesures, la loi cherche à rendre l'épargne retraite complémentaire plus attractive et à favoriser son utilisation pour le financement en fonds propres des entreprises. Elle propose également une révision de la gouvernance de la Caisse des Dépôts et Consignations (CDC) afin d'améliorer son efficacité et son rôle dans le financement de l'économie. De plus, la loi encadre les prestataires de services sur actifs numériques (PSAN) et les levées de fonds par émission de jetons (Initial Coin Offering, ICO), afin de sécuriser et réguler ces nouvelles formes d'investissement et de financement dans le secteur des actifs numériques.
+
+\paragraph{Ordonnance relative au renforcement du dispositif français de lutte contre le blanchiment des capitaux et le financement du terrorisme (LCB/FT) de 2020}
+
+L'Ordonnance relative au renforcement du dispositif français de lutte contre le blanchiment des capitaux et le financement du terrorisme (LCB/FT) de 2020 a transposé la 5ème directive (UE) de 2018 dans le droit français. Cette ordonnance a introduit plusieurs mesures importantes, notamment une plus grande accessibilité au registre des bénéficiaires effectifs, permettant une meilleure transparence sur l'identité des véritables propriétaires de sociétés. Elle impose également une vigilance renforcée pour les relations d’affaires et les opérations avec les pays à haut risque, afin de mieux contrer les risques liés au blanchiment de capitaux et au financement du terrorisme. En outre, certains prestataires de services liés aux actifs numériques ont été assujettis aux règles LCB/FT, intégrant ainsi ces acteurs dans le cadre réglementaire de la lutte contre le blanchiment et le financement du terrorisme.
+
+\paragraph{Règlement Digital Operational Resilience Act (DORA) de 2023 (application en 2025)}
+
+Le Règlement Digital Operational Resilience Act (DORA) de 2023, dont l'application est prévue pour 2025, vise à renforcer et harmoniser la gestion des risques liés aux technologies de l'information et à la sécurité des réseaux et des systèmes d'information au niveau de l'Union européenne. Il établit des exigences pour assurer une résilience opérationnelle face aux risques informatiques, de cybersécurité, de continuité d'activité, ainsi que pour les risques liés aux tiers impliqués dans les services numériques. DORA a pour objectif de garantir que les institutions financières soient mieux préparées à gérer les incidents informatiques et les menaces de cybersécurité, tout en assurant la continuité de leurs opérations en cas de perturbations majeures.
+
+\paragraph{Règlement MiCA Marché des crypto-actifs de 2023 (application en 2024)}
+
+Le Règlement MiCA, relatif au marché des crypto-actifs, a été adopté en 2023 et entrera en application en 2024. Ce règlement établit un cadre européen harmonisé pour encadrer les émetteurs de crypto-actifs de première et de deuxième générations ainsi que les prestataires de services sur actifs numériques (PSAN). Son objectif principal est de régir l’offre au public et l’admission aux négociations de jetons, tout en encadrant la fourniture de services sur crypto-actifs par des prestataires. De plus, il vise à prévenir les abus de marché sur les crypto-actifs, garantissant ainsi un environnement plus sûr et transparent pour les investisseurs et les acteurs du marché.
+
+\paragraph{Directive sur les services de paiement (DSP3) et règlement sur les services de paiement (RSP1) de 2023}
+
+La Directive sur les services de paiement (DSP3) et le règlement sur les services de paiement (RSP1) adoptés en 2023 visent à uniformiser les règles du jeu entre les banques et les prestataires de services de paiement (PSP). Ces mesures garantissent un accès pour les PSP à tous les services de paiement et leur permettent d'ouvrir des comptes auprès des banques. En outre, elles renforcent la protection contre la fraude aux paiements et assurent la protection des consommateurs. Concernant l'accès aux données financières, la directive offre aux clients la possibilité, mais non l'obligation, de partager leurs données, tout en renforçant la protection des données personnelles conformément au règlement général sur la protection des données (RGPD).
+
+\paragraph{Paquet législatif sur la LCB/FT de 2021}
+
+Le paquet législatif sur la lutte contre le blanchiment de capitaux et le financement du terrorisme (LCB/FT) de 2021 comprend plusieurs mesures clés. Il introduit un projet de règlement LCB/FT qui établit une nouvelle autorité de l'Union européenne en matière de LCB-FT, nommée l'Anti-Money Laundering Authority (AMLA). Ce paquet inclut également un règlement LCB-FT contenant des règles directement applicables relatives à la vigilance à l'égard de la clientèle et aux bénéficiaires effectifs. En outre, la 6ème directive sur la LCB-FT (AMLD6) propose des dispositions concernant les autorités nationales de surveillance et les cellules de renseignement financier dans les États membres. Enfin, une révision du règlement sur les transferts de fonds a été effectuée pour garantir la traçabilité des transferts de crypto-actifs.
+
+\subsection{Autorités}
+
+\subsubsection{Autorités françaises}
+
+Les autorités françaises répartissent leurs actions dans le domaine des activités des banques, des assurances et des marchés. Le régulateur définit les règles à travers des lois, des ordonnances, des décrets, des arrêtés, ainsi que des directives et règlements communautaires. Parallèlement, le superviseur est chargé de contrôler la bonne application de ces règles par les entités concernées, tant au moment de leur création, lors de l'attribution des agréments, qu'à chaque étape de leur existence, grâce à des contrôles sur pièces et sur place.
+
+\begin{wrapfigure}{r}{0.65\textwidth}
+	\centering
+	\includegraphics[scale=0.4]{../../../Downloads/Screenshot 2024-09-14 at 19-01-08 Economie de l’industrie des services financiers - C2 risques bancaires M1 24.pdf}
+\end{wrapfigure}
+
+\subparagraph{Fonction de régulation}
+
+\paragraph{Comité Consultatif de la Législation et de la Réglementation Financières (CCLRF)}
+
+Le Comité Consultatif de la Législation et de la Réglementation Financières (CCLRF) a pour mission d'émettre des avis sur l'ensemble des règlements, ainsi que sur tous les projets de lois et de textes communautaires relatifs aux assurances, aux établissements de crédit (EC), aux établissements de paiement (EP), aux établissements de monnaie électronique (EME) et aux entreprises d'investissement (EI).
+
+\paragraph{Comité Consultatif du Secteur Financier (CCSF)}
+
+Le Comité Consultatif du Secteur Financier (CCSF)  étudie les relations entre les entreprises (EC, EI, EP, EME) et leurs clientèles et propose toutes mesures appropriées dans ce domaine sous forme d’avis ou de recommandations
+d’ordre général
+
+\paragraph{Haut conseil de stabilité financière (HCSF)}
+
+Le Haut Conseil de Stabilité Financière (HCSF) est une autorité macro-prudentielle chargée de surveiller le système financier dans son ensemble. Son objectif principal est de préserver la stabilité de ce système tout en veillant à ce qu'il contribue de manière soutenable à la croissance économique.
+
+\paragraph{Traitement du renseignement et action contre les circuits financiers clandestins (Tracfin)}
+
+Tracfin est un organisme chargé de lutter contre les circuits financiers clandestins, le blanchiment de capitaux (BC) et le financement du terrorisme (FT). Il a pour mission de recueillir, d'analyser et d'enrichir les déclarations de soupçons que les professionnels assujettis sont tenus par la loi de lui transmettre.
+
+\paragraph{Autorité des normes comptables (ANC)}
+
+L'Autorité des Normes Comptables (ANC) établit les prescriptions comptables générales et sectorielles que doivent respecter les personnes physiques ou morales soumises à l'obligation légale d'établir des documents comptables conformes aux normes de la comptabilité privée. De plus, elle donne son avis sur toute disposition législative ou réglementaire contenant des mesures de nature comptable, notamment en ce qui concerne les normes comptables internationales.
+
+\subsubsection{Fonction de supervision}
+
+\paragraph{Banque de France}
+
+La Banque de France a un mandat explicite en matière de stabilité financière depuis 2013, qu'elle exerce conjointement avec le Haut Conseil de Stabilité Financière (HCSF). Son rôle consiste à identifier et à suivre les risques pesant sur la stabilité du système financier.
+
+\paragraph{Autorité de Contrôle Prudentiel et de Résolution (ACPR)}
+
+L'Autorité de Contrôle Prudentiel et de Résolution (ACPR) est responsable d'autoriser les acteurs du secteur financier, tels que les établissements de crédit (EC), les établissements de paiement (EP), les établissements de monnaie électronique (EME) et les compagnies d'assurance, à exercer leur activité par le biais d'agréments ou d'autorisations. Elle contrôle également ce secteur en veillant au respect de la réglementation et en sanctionnant les manquements. Par ailleurs, l'ACPR protège la clientèle, qu'elle soit composée de particuliers ou de professionnels, et dispose de compétences en matière de résolution pour limiter l'impact des défaillances bancaires sur la stabilité financière, afin de protéger les déposants et d'éviter le recours aux aides d'État.
+
+
+
+
+
+
+
+
+
+
+\section{Grandes tendances de l’évolution des activités bancaires et financières}
+
+\subsection{Bref rappel historique}
+
+
+\subsection{Désintermédiation ?}
+
+
+
+\subsection{Focus sur la croissance comparée du secteur bancaire et du secteur non bancaire et DeFi}
+
+
+
+
+
+
+
+
+\end{document}

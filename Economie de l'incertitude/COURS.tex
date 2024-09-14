@@ -1,0 +1,279 @@
+\documentclass[a4paper, 12pt]{report}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc} 
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amsfonts,amssymb, empheq}
+\usepackage{eurosym}
+\usepackage{booktabs}
+\usepackage{cancel}
+\pagestyle{fancy}
+\fancyhead[R]{Université Paris-Est Créteil}
+\fancyhead[L]{Économie de l'incertitude}
+\usepackage{array,multirow,makecell}
+\setcellgapes{1pt}
+\makegapedcells
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash }b{#1}} 
+%\renewcommand{\thechapter}{\Roman{chapter}}
+%\setcounter{chapter}{1} % pour numéroter le chapitre 
+\begin{document}
+	\chapter*{Introduction}
+	
+\section{Hypothèse d'information parfaite}
+
+Jusqu'à présent, vous avez étudié en microéconomie les comportements des agents (consommateur, producteur) sous l'hypothèse d'information parfaite. Acheteurs et vendeurs sont parfaitement informés des caractéristiques des produits et des facteurs de production et des prix auxquels ils sont proposés. 
+
+Cette hypothèse exclut toute forme incertitude : aucun agent n'a jamais de doute, que ce soit sur la qualité des produits qu'il achète ; la qualification des travailleurs qu'il
+embauche ; les conditions de travail dans l'entreprise dans laquelle il envisage de travailler ; l'évolution future des prix, des salaires, des taux d'intérêt ; l'âge auquel il prendra sa retraite… ou même la date de son décès. 
+
+\section{Omniprésence de l'incertitude}
+
+L'incertitude et l'imperfection de l'information jouent pourtant un rôle important dans de nombreux champs de l’économie : finance, assurance, retraites, économie du travail, économie de la santé, économie de l’environnement, etc.
+
+L'incertitude est ainsi omniprésente dans la réalité : le salarié peut être licencié (ou promu), le chef d'entreprise peut faire faillite à la suite de la défaillance d'un fournisseur ou bénéficier des ennuis judiciaires d'un concurrent, l'automobiliste peut avoir un accident, certaines consommations peuvent rendre malade à plus ou moins long-terme, les maisons peuvent bruler, la terre peut trembler… une pandémie peut survenir, etc.
+
+Dans certaines situations, l'incertitude est même un élément essentiel du problème qui se pose à l'agent économique qui doit prendre une décision : Assurances, garanties, placements financiers, sociétés d'intérim, agences immobilières, publicités… tout cela n'existe que car l'incertitude existe !
+
+Ce cours a pour objectif d’étudier dans quelle mesure les résultats établis en microéconomie sous l'hypothèse simplificatrice d’information parfaite sont modifiés par la prise en compte de l'incertitude.
+
+\section{Microéconomie de l'incertitude}
+
+La microéconomie de l'incertitude n'est pas une rupture complète avec ce que vous avez appris sous l'hypothèse d'information parfaite, mais plutôt une généralisation de vos connaissances : l'univers certain que vous connaissez s'analyse, nous le verrons, comme un cas particulier de l'univers incertain. 
+
+Dans certains cas, il est par ailleurs évidemment raisonnable de négliger l'incertitude. Par exemple, quand vous achetez votre café, on peut supposer que vous savez de manière certaine l'utilité que vous apportera sa consommation (même s'il existe, certes, un risque infime que ce café contienne de l'arsenic ou tout autre produit inattendu).
+
+Les résultats d'univers certain seront seulement reformulés dans un cadre d’analyse plus large. Vous allez voir apparaitre un aspect des préférences qui n'a pas de sens en univers certain et qui est omniprésent en univers incertain : l'attitude face au risque des agents.
+
+Vous verrez aussi pourquoi il est raisonnable de penser que la plupart des individus n'aiment pas le risque, sont prêts à payer pour le diminuer et ont intérêt à le partager avec d'autres agents. 
+
+\section{Question de l’intervention de l'État}
+
+L'économie de l'incertitude définit précisément la notion de risque puis montre dans quelle mesure les individus ont intérêt à partager les risques qu'ils supportent (par exemple via des assurances, une diversification des placements financiers ou encore la famille).
+
+L'économie de l'incertitude fait donc surgir une question familière aux économistes : comment les individus, laissés à eux-mêmes, vont-ils partager les risques qu'ils supportent ? Le marché conduit-il à une répartition optimale de ces risques ? Ou bien l'intervention de l'État est-elle souhaitable ? Peut-on créer des instruments ou des institutions qui permettraient un partage de ces risques meilleur que celui qui se forme spontanément ?
+
+Nous retrouvons donc, en économie de l'incertitude, la grande question de l'intervention de l'État : est-il légitime qu'il intervienne ? Améliore-t-il la situation lorsqu'il le fait ? Doit-il réglementer, taxer ou subventionner, ou produire lui-même ?
+
+Nous ne répondrons pas directement à ces questions dans ce cours, mais nous définirons précisément la notion de risque et en donnerons le cadre et les outils théoriques. C'est le travail préliminaire indispensable pour répondre à ces questions.
+
+\chapter{Concepts de base}
+
+L'incertitude qui pèse sur un problème économique peut être résumée par trois éléments. 
+
+Les états de la nature : les événements qui peuvent se réaliser. Ils peuvent être écrits sous forme discrète (exemple : faire face à un sinistre ou non) ou continue (ex : taux de sinistre entre 0 et 1)
+
+Les actions réalisables par l'agent étudié : s'assurer ou non contre un sinistre (2 actions), s'assurer un taux de remboursement en cas de sinistre (appartenant à l'intervalle $[0;1]$)
+
+Les conséquences des actions pour un état de la nature donné : le montant de richesse finale selon qu'un sinistre a lieu ou non et que l'on s'est assuré ou non. Attention : on fait ici l'hypothèse simplificatrice que les conséquences des actions peuvent être ramenées à des montants monétaires.
+
+\section{Les loteries}
+
+Toutes ces informations (états de la nature, actions, conséquences des actions) peuvent être représentées sous la forme d'une matrice d'information et de loteries.
+
+Notons $E$ l'ensemble des différents états de la nature $e_j$. 
+
+Exemple avec trois états de la nature $E=\left\{ e_1,e_2,e_3 \right\}$
+
+Notons $p_j$ les probabilités (objectives ou subjectives) associées aux états de la nature : $p_j=P\left[ e=e_j \right]$ avec $\sum_j^Jp_j=1$
+
+Notons $A$ l'ensemble des actions possibles $a_i$ de l'agent
+
+Notons $x_{ij}$ les conséquences des actions $a_i$ selon les différents
+états de la nature $e_j$ où $i$ est l'indice de l'action et $j$ celui de l'état de
+la nature
+
+Dans notre exemple : $i\in \left\{ 1,2,3 \right\}\,;\,j\in \left\{ 1,2,3 \right\}$
+
+\subsection{Écriture matrice d'information}
+
+La matrice d'information s'écrit de la manière suivante :
+
+\begin{center}
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-09-09 225833}
+\end{center}
+
+Choisir une action $a_i$ revient à choisir des gains $x_{ij}$ quand l'état de la nature $e_j$ se réalise, sachant que cet événement aura lieu avec une probabilité $p_j$
+
+\subsection{Remarque 1 : Risque vs incertitude ?}
+
+On oppose souvent les notions de risque et d’incertitude. Le risque est défini par un ensemble d’états de la nature et par les probabilités associées à ces états. L'incertitude est cas où une quantification des probabilités associées
+aux différents états de la nature n’est pas possible. On parle même parfois d’incertitude radicale lorsque nous ne sommes pas en mesure de savoir les différents états de la nature possible. 
+
+Cette distinction remonte à l'économiste américain Franck Knight (1921) et est donc antérieure à la démonstration de Savage sur les probabilités subjectives (1954). Nous ne reprendrons pas cette distinction aujourd'hui considérée comme quelque peu dépassée : risque et incertitude seront ici considérés comme synonymes. Ainsi, incertitude n'est pas synonyme d'ignorance totale.
+
+Tout au long de ce cours, nous supposerons que l’agent étudié sait que l'état de la nature qui se réalisera est l'un de ceux de la matrice d'information.Nous faisons par ailleurs l'hypothèse simplificatrice qu'il est capable d'attribuer une probabilité subjective à chaque état de la nature (Savage, 1954)
+
+\subsection{Remarque 2 : Univers certain vs incertain}
+
+Lorsqu'au moment de la décision, une au moins des actions possibles a plus d'une conséquence possible, on dit que le décideur prend sa décision en univers incertain.
+
+A l’inverse, lorsque toutes les actions possibles $a_i$ pour un décideur ont chacune une seule conséquence possible $x_{ij}$, on dit que le décideur prend sa décision en univers certain.
+
+Il s’agit d’un cas particulier de l'univers incertain dans lequel la matrice d'information ne comprend qu'une colonne : celle de l'état de la nature dont on sait qu'il va se réaliser !
+
+\subsection{Écriture loteries}
+
+A chaque action $a$ (chaque ligne de la matrice d'information) on associe une loterie
+
+Loterie discrète (cas le plus commun dans ce cours)
+
+$$
+\begin{matrix}
+	a=\begin{cases}
+		z_1 \quad z_2 \quad \cdots \quad z_I & \\
+		p_1 \quad p_2 \quad \cdots \quad p_I &
+	\end{cases} &  0<p_i \leq 1 & \sum_{i=1}^I p_i=1 \\
+\end{matrix}
+$$
+
+Les $z_i$ sont les réalisations de la variable d'intérêt (gains ou pertes)
+qui surviennent avec des probabilités $p_i$, $I$ événements possibles
+
+Loterie continue : dans ce cas, on n'utilise plus des probabilités discrètes mais une loi de probabilité continue, caractérisée par une fonction de répartition $F_a(z)$ ou une densité $f_a(z)$
+
+$$
+F_a(z)=\mathbb{P}\left[ Z\le z \right]=\int_{-\infty }^{Z}f_a(z)dz \; z \in A
+$$
+
+$A$ ensemble des réalisations possibles $z$ de la variable aléatoire $Z$
+
+\subsection{Exemple 1}
+
+\begin{center}
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-09-10 001051}
+\end{center}
+
+Écrire les 3 loteries $a_1,a_2,a_3$ associées aux trois actions possibles de l'agent
+
+$$
+a_1=\begin{cases}
+	\begin{matrix}z_1 & z_2 & z_3 \\ 0,1 & 0,4 & 0,5 \end{matrix}
+\end{cases}
+$$
+$$
+a_2=\begin{cases}
+	\begin{matrix}z_1 & z_2 \\ 0,1 & 0,9 \end{matrix}
+\end{cases}
+$$
+$$
+\underbrace{a_3=\begin{cases}
+		\begin{matrix}z_1 \\ 1 \end{matrix}
+\end{cases}}_ {\text{Loterie certaine}}
+$$
+
+\subsection{Exemple 2 : assurance partielle}
+
+Un ménage veut assurer sa voiture de valeur $v$ sachant que la probabilité d'accident est $p$. Le ménage s'assure pour un montant $z\le v$ et doit payer une prime d'assurance égale à $\beta_z$ , avec $\beta \in ]0;1[$. En cas d'accident, son capital sera égal au montant remboursé $z$ moins la prime d'assurance $\beta_z$. S'il n'y a pas d'accident, son capital sera de $v$ moins la prime d'assurance.
+
+Écrire la loterie associée au problème
+$$
+a(z)=\begin{cases}
+	\begin{matrix}z-\beta_z & v-\beta_z \\ p & 1-p \end{matrix}
+\end{cases}
+$$
+Avec $z$ la variable de choix de l'agent
+
+\subsection{Exemple 3 : jeu d'argent}
+
+Une personne achète un jeu à gratter d'un montant $m$. Elle peut gagner le montant $z>m$ avec une probabilité $p = 0,25$.
+
+Écrire la loterie associée au problème
+
+$$
+a=\begin{cases}
+	\begin{matrix}z-m & -m \\ \underbrace{0,25}_{\text{Vous gagnez}}& \underbrace{0,75}_{\text{Vous perdez}}\end{matrix}
+\end{cases}
+$$
+
+Remarque : Cette manière d'écrire les conséquences du jeu suppose qu'elles sont purement monétaires ce qui exclut qu'on prenne du plaisir à jouer, ou la répugnance pour les jeux d'argent. Plus généralement, nous supposerons dans ce cours que les actions, en elles-mêmes, ne procurent ni utilité ni désutilité
+
+\subsection{Exemple 4 : risque de chômage}
+
+Une personne peut être au chômage avec une probabilité $p$. Si elle travaille, son salaire est $w$, sinon il est égal à $\gamma w$ avec $0\le \gamma < 1$. La cotisation chômage est égale à $\tau w$ avec $0 < \tau < 1$.
+
+Écrire la loterie associée au problème
+
+$$
+a=\begin{cases}
+	\begin{matrix}\gamma w & w-\gamma m \\ \underbrace{p}_{\text{Chômage}}& \underbrace{1-p}_{\text{Pas chômage}}\end{matrix}
+\end{cases}
+$$
+
+\subsection{Exemple 5 : fonction de profit}
+
+Une entreprise produit un bien qu'elle vend au prix aléatoire $P$. Pour le produire elle embauche $L$ travailleurs qu'elle rémunère au salaire certain $w$. Sa fonction de production est $Q=\sqrt{\ell}$ et le prix $P$ apparait avec une densité $f_P(p)$ (il s'agit de la distribution du prix).
+
+Après avoir défini le programme de l'entreprise, la condition de premier ordre et le profit aléatoire en fonction du prix $\prod (p)$ , écrire la loterie continue associée au profit de l'entreprise.
+
+Le programme de l'entreprise
+$$
+\begin{cases}\underset{\ell}\max \,\prod(p)=p\cdot q - w \cdot \ell \\ s.c \, Q=\sqrt{\ell}\end{cases}
+$$
+Condition de premier ordre 
+$$
+\underset{\ell}\max \, p \cdot \sqrt{\ell}-w\cdot\ell
+$$
+$$
+\frac{\partial \prod(p)}{\partial \ell}=\frac{1}{2}p\cdot \ell^{-\frac{1}{2}}-w=0
+$$
+$$
+w=\frac{1}{2}p\cdot \ell^{-\frac{1}{2}}
+$$
+$$
+2w=p\cdot \ell^{-\frac{1}{2}}
+$$
+$$
+\frac{1}{2w}=\frac{1}{p}\ell^{\frac{1}{2}}
+$$
+$$
+\ell^{\star}=\left( \frac{1}{2}\cdot\frac{p}{w}\right)^2
+$$
+Pour trouver le profit aléatoire on remplace $\ell$ par $\ell^{\star}$ dans la fonction de profit. 
+$$
+\prod(p)=p\cdot \sqrt{\ell^{\star}}-w\cdot\ell^{\star}
+$$
+$$
+p\cdot \left( \frac{p}{2w} \right)-w\cdot\left( \frac{p}{2w} \right)^2
+$$
+$$
+\frac{p^2}{2w}-\cancel{w}\cdot \frac{p^2}{2w^{\cancel{2}}}
+$$
+$$
+\frac{p^2}{4w}>0
+$$
+La loterie finale de l'entreprise est donc :
+$$
+a=\begin{cases}\begin{matrix}\prod(p)=\frac{p^2}{4w}\\ f_P(p)\to \text{distribution prix}\end{matrix}\end{cases}
+$$
+
+\section{Le critère d'espérance mathématique}
+
+
+\section{Le paradoxe de St Pétersbourg}
+
+
+\section{Le paradoxe de l'assurance}
+
+
+\section{Neutralité face au risque}
+
+
+
+\section{Fonctions de Markowitz}
+
+
+\section{Autres mesures du risque}
+
+
+
+
+
+
+
+
+
+
+\end{document}
