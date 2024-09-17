@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.31)  17 SEP 2024 18:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.31)  17 SEP 2024 18:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./COURS_MANAGEMENT_DES_RISQUES_BANCAIRES.tex
-(COURS_MANAGEMENT_DES_RISQUES_BANCAIRES.tex
+**./COURS_ECONOMIE_ET_POLITIQUE_DU_LOGEMENT.tex
+(COURS_ECONOMIE_ET_POLITIQUE_DU_LOGEMENT.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-09-28>
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
@@ -456,8 +456,8 @@ tex.def
 File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count307
 \l__pdf_internal_box=\box60
-) (COURS_MANAGEMENT_DES_RISQUES_BANCAIRES.aux)
-\openout1 = `COURS_MANAGEMENT_DES_RISQUES_BANCAIRES.aux'.
+) (COURS_ECONOMIE_ET_POLITIQUE_DU_LOGEMENT.aux)
+\openout1 = `COURS_ECONOMIE_ET_POLITIQUE_DU_LOGEMENT.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
@@ -506,311 +506,164 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 LaTeX Info: Redefining \degres on input line 23.
 LaTeX Info: Redefining \up on input line 23.
 Package hyperref Info: Link coloring OFF on input line 23.
- (COURS_MANAGEMENT_DES_RISQUES_BANCAIRES.out)
-(COURS_MANAGEMENT_DES_RISQUES_BANCAIRES.out)
+ (COURS_ECONOMIE_ET_POLITIQUE_DU_LOGEMENT.out)
+(COURS_ECONOMIE_ET_POLITIQUE_DU_LOGEMENT.out)
 \@outlinefile=\write3
-\openout3 = `COURS_MANAGEMENT_DES_RISQUES_BANCAIRES.out'.
+\openout3 = `COURS_ECONOMIE_ET_POLITIQUE_DU_LOGEMENT.out'.
 
-
-Overfull \hbox (2.04562pt too wide) in paragraph at lines 36--37
-\T1/cmr/m/n/12 glo-bale (CFG) de 2007-2009. De-puis il y a un mou-ve-ment de re
--réglementation
- []
-
-[1
+ [1
 
 
 {C:/Users/issak/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09-12 234518.png, id=44, 3
-79.4175pt x 235.63031pt>
-File: ../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09-12 234518.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09-12 234518.png>
-Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09
--12 234518.png  used on input line 44.
-(pdftex.def)             Requested size: 189.70828pt x 117.81487pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
-
-
-(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
-
-
-(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (8.6856pt too wide) detected at line 64
-[] \OT1/cmr/m/n/12 = [] \OMS/cmsy/m/n/12 ^^U \OT1/cmr/m/n/12 10\OML/cmm/m/it/12
- ; \OT1/cmr/m/n/12 5%
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
 
-[2 <../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09-12 234518.png>]
-Chapitre 1.
-
-Overfull \hbox (4.27515pt too wide) in paragraph at lines 77--77
-[]\T1/cmr/bx/n/17.28 Contexte ins-ti-tu-tion-nel et ré-gle-men-taire des
- []
-
-[3
-
-]
+[2]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+
+[3]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
 
 [4]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
 
 [5]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
 
 [6]
+<../../../Downloads/Screenshot 2024-09-17 at 18-23-33 Microsoft PowerPoint - CM
+_EL_intro_2024_2025 - CM_EL_intro_2024_2025.pdf.png, id=60, 441.65pt x 493.845p
+t>
+File: ../../../Downloads/Screenshot 2024-09-17 at 18-23-33 Microsoft PowerPoint
+ - CM_EL_intro_2024_2025 - CM_EL_intro_2024_2025.pdf.png Graphic file (type png
+)
+<use ../../../Downloads/Screenshot 2024-09-17 at 18-23-33 Microsoft PowerPoint 
+- CM_EL_intro_2024_2025 - CM_EL_intro_2024_2025.pdf.png>
+Package pdftex.def Info: ../../../Downloads/Screenshot 2024-09-17 at 18-23-33 M
+icrosoft PowerPoint - CM_EL_intro_2024_2025 - CM_EL_intro_2024_2025.pdf.png  us
+ed on input line 120.
+(pdftex.def)             Requested size: 220.82445pt x 246.92189pt.
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+Underfull \hbox (badness 2856) in paragraph at lines 123--124
+\T1/cmr/m/n/12 d'im-payé de loyer ou de
+ []
 
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7]
-Overfull \hbox (2.06943pt too wide) in paragraph at lines 147--148
-\T1/cmr/bx/n/12 de 2007[] \T1/cmr/m/n/12 L'Or-don-nance re-la-tive aux mar-chés
- d'ins-tru-ments fi-nan-ciers (MIF)
+Underfull \hbox (badness 1199) in paragraph at lines 123--124
+\T1/cmr/m/n/12 ailleurs, 11,5 % des ac-cé-
+ []
+
+
+Underfull \hbox (badness 2698) in paragraph at lines 123--124
+\T1/cmr/m/n/12 fi-cul-tés de rem-bour-se-ment
  []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
 
-[8]
+[7 <../../../Downloads/Screenshot 2024-09-17 at 18-23-33 Microsoft PowerPoint -
+ CM_EL_intro_2024_2025 - CM_EL_intro_2024_2025.pdf.png>]
+<../../../Downloads/Screenshot 2024-09-17 at 18-30-05 Microsoft PowerPoint - CM
+_EL_intro_2024_2025 - CM_EL_intro_2024_2025.pdf.png, id=69, 451.6875pt x 517.93
+5pt>
+File: ../../../Downloads/Screenshot 2024-09-17 at 18-30-05 Microsoft PowerPoint
+ - CM_EL_intro_2024_2025 - CM_EL_intro_2024_2025.pdf.png Graphic file (type png
+)
+<use ../../../Downloads/Screenshot 2024-09-17 at 18-30-05 Microsoft PowerPoint 
+- CM_EL_intro_2024_2025 - CM_EL_intro_2024_2025.pdf.png>
+Package pdftex.def Info: ../../../Downloads/Screenshot 2024-09-17 at 18-30-05 M
+icrosoft PowerPoint - CM_EL_intro_2024_2025 - CM_EL_intro_2024_2025.pdf.png  us
+ed on input line 129.
+(pdftex.def)             Requested size: 225.84319pt x 258.96686pt.
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[9]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[10]
-Overfull \hbox (15.02171pt too wide) in paragraph at lines 175--176
- []\T1/cmr/bx/n/12 Loi trans-po-sant la 2ème di-rec-tive sur la mon-naie élec-t
-ro-nique (DME2)
+Underfull \hbox (badness 1755) in paragraph at lines 132--133
+\T1/cmr/m/n/12 dé-penses de lo-ge-ment des
  []
 
 
-Overfull \hbox (7.943pt too wide) in paragraph at lines 183--184
-\T1/cmr/bx/n/12 de 2016[] \T1/cmr/m/n/12 L'Or-don-nance re-la-tive aux mar-chés
- d'ins-tru-ments fi-nan-ciers (MIF2)
+Underfull \hbox (badness 1558) in paragraph at lines 132--133
+\T1/cmr/m/n/12 du dis-po-si-tif de ré-duc-tion
  []
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[11]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[12]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[13]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[14]
-<../../../Downloads/Screenshot 2024-09-14 at 19-01-08 Economie de lâ€™industrie
- des services financiers - C2 risques bancaires M1 24.pdf.png, id=135, 637.3812
-6pt x 429.605pt>
-File: ../../../Downloads/Screenshot 2024-09-14 at 19-01-08 Economie de lâ€™indu
-strie des services financiers - C2 risques bancaires M1 24.pdf.png Graphic file
- (type png)
-<use ../../../Downloads/Screenshot 2024-09-14 at 19-01-08 Economie de lâ€™indus
-trie des services financiers - C2 risques bancaires M1 24.pdf.png>
-Package pdftex.def Info: ../../../Downloads/Screenshot 2024-09-14 at 19-01-08 E
-conomie de lâ€™industrie des services financiers - C2 risques bancaires M1 24.p
-df.png  used on input line 231.
-(pdftex.def)             Requested size: 254.94798pt x 171.83894pt.
-
-Overfull \hbox (1.45036pt too wide) in paragraph at lines 231--232
- [][] 
- []
-
-
-Overfull \hbox (1.54826pt too wide) in paragraph at lines 238--239
- []\T1/cmr/bx/n/12 Comité Consul-ta-tif de
- []
-
-
-Overfull \hbox (11.91518pt too wide) in paragraph at lines 238--239
-\T1/cmr/bx/n/12 nan-cières (CCLRF)[] \T1/cmr/m/n/12 Le
- []
-
-
-Underfull \hbox (badness 3291) in paragraph at lines 238--239
-\T1/cmr/m/n/12 Co-mité Consul-ta-tif de
- []
-
-
-Overfull \hbox (14.19795pt too wide) in paragraph at lines 238--239
-\T1/cmr/m/n/12 Ré-gle-men-ta-tion Fi-nan-cières
- []
-
-
-Underfull \hbox (badness 1270) in paragraph at lines 238--239
-\T1/cmr/m/n/12 (CCLRF) a pour mis-
+Overfull \hbox (12.98022pt too wide) in paragraph at lines 136--137
+\T1/cmr/m/n/12 por-tant en ré-gu-lant la construc-
  []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
 
-[15 <../../../Downloads/Screenshot 2024-09-14 at 19-01-08 Economie de lâ€™indus
-trie des services financiers - C2 risques bancaires M1 24.pdf.png>]
-Overfull \hbox (4.28003pt too wide) in paragraph at lines 255--256
- []\T1/cmr/bx/n/12 Autorité des normes comp-tables (ANC)[] \T1/cmr/m/n/12 L'Au-
-to-rité des Normes Comp-
- []
-
+[8 <../../../Downloads/Screenshot 2024-09-17 at 18-30-05 Microsoft PowerPoint -
+ CM_EL_intro_2024_2025 - CM_EL_intro_2024_2025.pdf.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
 
-[16]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[17]
-<../../../Downloads/Screenshot 2024-09-15 at 18-52-45 Management des risques ba
-ncaires - C3 risques bancaires M1 24.pdf.png, id=162, 483.8075pt x 363.3575pt>
-File: ../../../Downloads/Screenshot 2024-09-15 at 18-52-45 Management des risqu
-es bancaires - C3 risques bancaires M1 24.pdf.png Graphic file (type png)
-<use ../../../Downloads/Screenshot 2024-09-15 at 18-52-45 Management des risque
-s bancaires - C3 risques bancaires M1 24.pdf.png>
-Package pdftex.def Info: ../../../Downloads/Screenshot 2024-09-15 at 18-52-45 M
-anagement des risques bancaires - C3 risques bancaires M1 24.pdf.png  used on i
-nput line 277.
-(pdftex.def)             Requested size: 193.51956pt x 145.34041pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[18 <../../../Downloads/Screenshot 2024-09-15 at 18-52-45 Management des risque
-s bancaires - C3 risques bancaires M1 24.pdf.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[19] (COURS_MANAGEMENT_DES_RISQUES_BANCAIRES.aux)
-Package rerunfilecheck Info: File `COURS_MANAGEMENT_DES_RISQUES_BANCAIRES.out' 
-has not changed.
-(rerunfilecheck)             Checksum: D3D619A7273CA533613DE8BC3D6575BF;2698.
+[9] (COURS_ECONOMIE_ET_POLITIQUE_DU_LOGEMENT.aux)
+Package rerunfilecheck Info: File `COURS_ECONOMIE_ET_POLITIQUE_DU_LOGEMENT.out'
+ has not changed.
+(rerunfilecheck)             Checksum: DB1034AF30271A6C5D65B5F92AD35075;1258.
  ) 
 Here is how much of TeX's memory you used:
- 13096 strings out of 475385
- 213533 string characters out of 2776907
- 568595 words of memory out of 3000000
- 34214 multiletter control sequences out of 15000+600000
- 482292 words of font info for 57 fonts, out of 8000000 for 9000
+ 12976 strings out of 475385
+ 211320 string characters out of 2776907
+ 567590 words of memory out of 3000000
+ 34171 multiletter control sequences out of 15000+600000
+ 473749 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,11n,77p,1469b,467s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx
+ 72i,11n,77p,1031b,457s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecbx1440.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+0\ecrm1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
 /dpi600\ecbx1728.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecti1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/issak/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/issak/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/issak/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/issak
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on COURS_MANAGEMENT_DES_RISQUES_BANCAIRES.pdf (19 pages, 446474 
+pen/ec/dpi600\ecbx2488.pk>
+Output written on COURS_ECONOMIE_ET_POLITIQUE_DU_LOGEMENT.pdf (9 pages, 260840 
 bytes).
 PDF statistics:
- 478 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 80 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 224 PDF objects out of 1000 (max. 8388607)
+ 18 named destinations out of 1000 (max. 500000)
+ 67 words of extra memory for PDF output out of 10000 (max. 10000000)
 
