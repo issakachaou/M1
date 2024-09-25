@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.31)  12 SEP 2024 23:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.31)  23 SEP 2024 21:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -457,35 +457,155 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
 
-[9] (COURS.aux) ) 
+[9]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+
+[10]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+
+[11]
+<../../../Pictures/Screenshots/Capture d'écran 2024-09-23 161629.png, id=57, 4
+59.96844pt x 142.28156pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-23 161629.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2024-09-23 161629.png>
+Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-09
+-23 161629.png  used on input line 357.
+(pdftex.def)             Requested size: 229.98366pt x 71.1406pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+
+[12 <../../../Pictures/Screenshots/Capture d'écran 2024-09-23 161629.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+
+[13]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+
+[14]
+<../../../Pictures/Screenshots/Capture d'écran 2024-09-23 183537.png, id=69, 6
+74.52pt x 249.18094pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-23 183537.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2024-09-23 183537.png>
+Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-09
+-23 183537.png  used on input line 422.
+(pdftex.def)             Requested size: 337.25917pt x 124.59015pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+
+[15 <../../../Pictures/Screenshots/Capture d'écran 2024-09-23 183537.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+
+[16]
+Overfull \hbox (15.00824pt too wide) detected at line 533
+\OML/cmm/m/it/12 p\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 ! \OT1/cmr/m/n/12 + (1 \OMS
+/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 ^^L\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 z \OMS/c
+msy/m/n/12 ^^@ \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ! \OT1/cmr/m/n/12 + (1 \OMS/cm
+sy/m/n/12 ^^@ \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 v\OT1/cmr/m/n
+/12 ) + (\OML/cmm/m/it/12 p \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 ^^L\OT1/cmr/m
+/n/12 )\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 ][] + (1 \OMS/cmsy/m/n/12 ^^@ \OML/cmm
+/m/it/12 p\OT1/cmr/m/n/12 )[\OML/cmm/m/it/12 ! \OT1/cmr/m/n/12 + \OML/cmm/m/it/
+12 v \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 ^^Lz \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m
+/n/12 (\OML/cmm/m/it/12 ! \OT1/cmr/m/n/12 + (1 \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/
+it/12 p\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 v \OT1/cmr/m/n/12 + (\OML/cmm/m/it/12 
+p \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 ^^L\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 z\
+OT1/cmr/m/n/12 )][]
+ []
+
+
+Overfull \hbox (25.45258pt too wide) detected at line 550
+[]
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+
+[17]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+
+[18] (COURS.aux) ) 
 Here is how much of TeX's memory you used:
- 6229 strings out of 475385
- 101328 string characters out of 2776907
- 464503 words of memory out of 3000000
- 27529 multiletter control sequences out of 15000+600000
- 480832 words of font info for 55 fonts, out of 8000000 for 9000
+ 6256 strings out of 475385
+ 102908 string characters out of 2776907
+ 464505 words of memory out of 3000000
+ 27552 multiletter control sequences out of 15000+600000
+ 481477 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,21n,62p,486b,426s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
-/ec/dpi600\ecrm0800.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jk
-nappen/ec/dpi600\ecbx1440.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljf
-our/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/
-pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\issak\AppData\Local\MiKTeX\
-fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/issak/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/issak/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/issa
-k/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Us
-ers/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pf
-b><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmr6.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr8.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmsy10.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmsy8.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Users/issak/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on COURS.pdf (9 pages, 211607 bytes).
+ 55i,21n,62p,874b,426s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappe
+n/ec/dpi600\ecrm0800.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/j
+knappen/ec/dpi600\ecbx1440.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/lj
+four/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts
+/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\issak\AppData\Local\MiKTeX
+\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/issak/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/issak/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/iss
+ak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/U
+sers/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.p
+fb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr12.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr6.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr8.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/issak/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Users/issak/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on COURS.pdf (18 pages, 463521 bytes).
 PDF statistics:
- 305 PDF objects out of 1000 (max. 8388607)
+ 375 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

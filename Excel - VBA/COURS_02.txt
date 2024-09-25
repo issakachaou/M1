@@ -1,0 +1,37 @@
+'Cours no. 2 : 21 septembre
+
+VBA est un langage de programmation nécessitant une application hote 
+commun à toutes les application MS
+VBA automatise des actions répétitive 
+Créer des formulaire 
+personnaliser l'inteface excel
+
+
+Sub macro1()
+
+'instruction1
+
+'instruction2
+
+End Sub
+
+Sub macro2()
+'instruction1
+
+'instruction2
+
+End Sub
+
+
+
+Function mafonction1()
+
+'instruction1
+
+'instruction2
+
+End Function
+
+
+
+

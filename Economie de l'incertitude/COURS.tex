@@ -166,12 +166,12 @@ $$
 
 \subsection{Exemple 2 : assurance partielle}
 
-Un ménage veut assurer sa voiture de valeur $v$ sachant que la probabilité d'accident est $p$. Le ménage s'assure pour un montant $z\le v$ et doit payer une prime d'assurance égale à $\beta_z$ , avec $\beta \in ]0;1[$. En cas d'accident, son capital sera égal au montant remboursé $z$ moins la prime d'assurance $\beta_z$. S'il n'y a pas d'accident, son capital sera de $v$ moins la prime d'assurance.
+Un ménage veut assurer sa voiture de valeur $v$ sachant que la probabilité d'accident est $p$. Le ménage s'assure pour un montant $z\le v$ et doit payer une prime d'assurance égale à $\beta z$ , avec $\beta \in ]0;1[$. En cas d'accident, son capital sera égal au montant remboursé $z$ moins la prime d'assurance $\beta z$. S'il n'y a pas d'accident, son capital sera de $v$ moins la prime d'assurance.
 
 Écrire la loterie associée au problème
 $$
 a(z)=\begin{cases}
-	\begin{matrix}z-\beta_z & v-\beta_z \\ p & 1-p \end{matrix}
+	\begin{matrix}z-\beta z & v-\beta z \\ p & 1-p \end{matrix}
 \end{cases}
 $$
 Avec $z$ la variable de choix de l'agent
@@ -210,7 +210,7 @@ Après avoir défini le programme de l'entreprise, la condition de premier ordre
 
 Le programme de l'entreprise
 $$
-\begin{cases}\underset{\ell}\max \,\prod(p)=p\cdot q - w \cdot \ell \\ s.c \, Q=\sqrt{\ell}\end{cases}
+\begin{cases}\underset{\ell}\max \,\prod(p)=p\cdot q - w \cdot \ell \\ s.c. \, Q=\sqrt{\ell}\end{cases}
 $$
 Condition de premier ordre 
 $$
@@ -251,18 +251,315 @@ $$
 
 \section{Le critère d'espérance mathématique}
 
+Dans la sous-section 1.1, nous avons exploré la manière d'écrire un problème économique dans un contexte d'incertitude, en utilisant des outils tels que la matrice d'information et les loteries. Une question essentielle qui se pose est celle de la prise de décision par l'agent : comment choisit-il une action parmi les différentes options disponibles et comment compare-t-il les loteries ? Pour faciliter cette comparaison, un critère simple est souvent employé : l'approche par l'espérance mathématique, qui consiste à évaluer le gain « moyen » associé à chaque loterie. Cependant, il est crucial de noter que ce critère présente des limites significatives, comme le démontrent les paradoxes 1.3 et 1.4, qui soulignent l'insatisfaction que peut engendrer cette méthode d'évaluation.
+
+\subsection{Définition}
+
+L'espérance mathématique d'une variable aléatoire discrète $X$ de réalisations $(x_1,\cdots,x_I)$ qui surviennent avec des probabilités $(p_1,\cdots,p_I)$ est définie par :
+$$
+\mathbb{E}(X)=\sum_{i=1}^{I}p_i\cdot x_i
+$$
+L'espérance mathématique d'une variable aléatoire continue $X$ de réalisations $x \in A$ réel est définie par :
+$$
+\mathbb{E}(X)=\int_{x \in A}^{}xf(x)dx
+$$
+Avec $f(x)$ densité de probabilité de $X$.
 
 \section{Le paradoxe de St Pétersbourg}
 
+Le paradoxe de St Pétersbourg, formulé par Daniel Bernoulli en 1738, remet en question la validité du critère d'espérance mathématique. Dans ce jeu, une pièce équilibrée est lancée, et le joueur compte le nombre de fois où elle tombe sur pile avant qu'elle ne tombe sur face. Si le joueur obtient $I$ jets successifs sur pile, il remporte $2^{I}$ ducats. À la fin de l'expérience, Bernoulli interroge ses interlocuteurs sur le montant qu'ils seraient prêts à payer pour participer à ce jeu. Étonnamment, la plupart d'entre eux proposent des sommes relativement faibles, autour de 4 ducats, ce qui illustre un décalage entre l'espérance mathématique théorique du jeu et la valeur perçue par les joueurs.
+
+\subsection{Loterie associée}
+
+Quel montant le critère d'espérance mathématique conduirait-il à proposer ?
+On écrit la loterie et calcule l'espérance mathématique. La probabilité de tomber $I$ fois de suite sur pile est égale à $(\frac{1}{2})^I$. Dans ce cas, le gain est alors de $2^I$. On obtient donc la loterie suivante :
+$$
+ \left\{\begin{matrix}
+	1 & 2 & \cdots & 2^{I} & \cdots \\
+	\frac{1}{2} &  \frac{1}{4}  & \cdots &  \frac{1}{2^{I+1}} & \cdots \\
+\end{matrix}\right.
+$$
+\subsection{Espérance mathématique}
+
+Espérance mathématique de cette loterie ? On vérifie que la somme des probabilités est bien égale à 1 :
+$$
+\sum_{i=1}^{+\infty}\left(\frac{1}{2}\right)^{i+1}=\frac{1}{2}\cdot\frac{1}{1-\frac{1}{2}}=1
+$$
+Remarque : c'est une suite géométrique de raison $\frac{1}{2}$
+
+Espérance mathématique :
+$$
+\mathbb{E}(B)\sum_{i=1}^{+\infty}\left(\frac{1}{2}\right)^{i+1}2^i=\lim_{I \to +\infty} \sum_{i=1}^{I}\frac{1}{2}\cdot\left(\frac{1}{2}\right)^i\cdot 2^i=\lim_{I \to +\infty} \sum_{i=1}^{I}\frac{1}{2}=+\infty
+$$
+Un joueur devrait donc être prêt à donner tout ce qu'il possède pour jouer à ce jeu… ce qui ne correspond pas du tout à ce que l'on observe dans la réalité. C'est ce qu'on appelle un paradoxe expérimental. 
 
 \section{Le paradoxe de l'assurance}
 
+Le paradoxe de l'assurance met en lumière une contradiction intrigante : bien que le critère d'espérance mathématique soit un outil fondamental pour évaluer les risques, il ne suffit pas à expliquer pourquoi un marché de l'assurance existe. En effet, selon ce critère, les individus rationnels devraient choisir d'auto-assurer leurs risques, car la probabilité de perte et le montant de la prime ne justifient pas toujours le recours à un assureur. Pourtant, la réalité montre que les gens préfèrent souvent souscrire des polices d'assurance, motivés par des facteurs psychologiques, sociaux et économiques, tels que la peur de l'incertitude, le besoin de sécurité et la solidarité collective. Ainsi, le paradoxe soulève des questions sur la nature des décisions économiques et les comportements humains face au risque.
+
+Considérons un particulier qui dispose d'une richesse non risquée $\omega$ et qui souhaite assurer un bien risqué de valeur $v$ pour un montant $z$. Pour obtenir cette indemnité $z$ en cas de sinistre, il doit régler une prime d'assurance d'un montant $\beta z$ avec $0 < \beta < 1$. Le sinistre survient avec une probabilité $p$.
+
+Loterie associée à la richesse du particulier :
+$$
+W= \left\{\begin{matrix}
+	\omega + (1-\beta)z& \omega + v -\beta z \\
+	p & 1-p \\
+\end{matrix}\right.
+$$
+
+\subsection{L'assureur}
+
+L'assureur perçoit la prime d'assurance $\beta z$ que le sinistre ait lieu ou non et fait face à un coût de fonctionnement $c$,
+en plus du remboursement $z$ qu'il doit effectuer en cas de
+sinistre. Si le sinistre a lieu il fait une perte $\beta z - z - c < 0$
+et s'il n'a pas lieu il réalise un gain de $\beta z - c$.
+
+Loterie associée au profit de l'assureur :
+$$
+W= \left\{\begin{matrix}
+	(\beta-1)z-c & \beta z-c \\
+	p & 1-p \\
+\end{matrix}\right.
+$$
+
+\subsection{Espérances mathématiques}
+
+Espérance de richesse du particulier :
+$$
+\mathbb{E}(W)=p[\omega+(1-\beta)z]+(1-p)[\omega+v-\beta z]=\omega+(1-p)v+(p-\beta)z
+$$
+Espérance de profit de l'assureur :
+$$
+\mathbb{E}(\pi)=p[(\beta-1)z-c]+(1-p)[\beta z-c]=(\beta-p)z-c
+$$
+
+Il s'agit de fonctions linéaires de $z$. Le paramètre essentiel est la pente des droites.
+
+\subsection{Demande d'assurance du particulier}
+
+Le particulier va choisir le montant assuré $z$ qui maximise l'espérance de sa richesse :
+$$
+\begin{cases}\underset{z}\max \,\mathbb{E}(W)\\ s.c. \,0 \le z\le v\end{cases}
+$$
+Or, la dérivée de l'espérance de la richesse par rapport à \( z \) est la pente \( p - \beta \), il y a donc trois cas possibles. Si \( p < \beta \), l'espérance de la richesse décroît avec le montant assuré, ce qui implique que la demande d'assurance est nulle, \( z^d = 0 \). Si \( p = \beta \), l'espérance de la richesse ne dépend pas du montant assuré, rendant la demande d'assurance indéterminée, \( z^d \in [0, v] \). Enfin, si \( p > \beta \), l'espérance de la richesse croît avec le montant assuré, et le particulier choisit donc l'assurance complète, \( z^d = v \). Globalement, le particulier ne souhaite s'assurer que si \( p \geq \beta \).
+
+\subsection{Choix de l'assureur}
+
+L'assureur cherche à maximiser l'espérance du profit :
+$$
+\begin{cases}\underset{z}\max \,\mathbb{E}(\pi)\\ s.c. \, 0\le z\le v\,;\mathbb{E}(\pi)>0\end{cases}
+$$
+Or, la dérivée de l'espérance de la richesse par rapport à \( z \) est la pente \( \beta - p \), il y a donc trois cas possibles. Si \( p < \beta \), l'espérance de profit croît avec le montant assuré, et l'assureur a intérêt à offrir une assurance complète (sous réserve que l'espérance de profit soit positive), soit \( z^s = v \). Si \( p = \beta \), l'espérance de profit ne dépend pas du montant assuré, mais elle est surtout négative, soit $ (=(\beta-p) z - c = -c)$. Dans ce cas, l'assureur ne propose donc pas de contrat, soit \( z^s = 0 \). Enfin, si \( p > \beta \), l'espérance de profit de l'assureur est toujours négative, et l'assureur ne propose pas de contrat, soit \( z^s = 0 \).
+
+\subsection{Offre et demande d'assurance}
+En résumé, on a les fonctions d'offre et demande suivantes :
+\begin{center}
+\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-09-23 161629}
+\end{center}
+Il ne peut donc pas y avoir de marché de l'assurance si on applique le critère de l'espérance mathématique. Pourtant, ce marché existe et a un poids important dans l'économie ce qui est paradoxale
+
+\subsection{Conclusion sur les paradoxes}
+
+Le paradoxe de St Pétersbourg et celui de l'assurance soulignent les limites du critère d'espérance mathématique. Deux critiques principales peuvent être faites à son encontre : premièrement, ce n'est pas forcément le gain ou la richesse en tant que tel qui importe aux agents, mais l'utilité qui y est associée. Deuxièmement, le critère d'espérance mathématique ne tient pas compte du fait que l'attitude vis-à-vis du risque peut être très différente d'un individu à l'autre. Nous allons donc introduire des critères spécifiques de prise en compte du risque, tels que les fonctions de Markowitz. Par la suite, dans le Chapitre 2, nous introduirons la notion plus large d'utilité espérée, qui sera retenue dans le reste de ce cours.
 
 \section{Neutralité face au risque}
 
+Avec le critère d'espérance mathématique retenu jusqu'à présent, un décideur est indifférent entre les richesses :
+$$
+W_1= \left\{\begin{matrix}
+	\omega+50\\
+	1 \\
+\end{matrix}\right.
+$$
+$$
+W_2= \left\{\begin{matrix}
+	\omega-100 & \omega+200 \\
+	0,5 & 0,5 \\
+\end{matrix}\right.
+$$
 
+En effet, $\mathbb{E}(W_1) =\mathbb{E}(W_1) = \omega +50$ ne tient compte que du rendement moyen. Le décideur est donc indifférent entre la richesse $W_1$ ,certaine, sans risque, et la richesse $W_2$, aléatoire, risquée.  Le critère d'espérance mathématique représente les préférences d'un individu indifférent au risque ou encore neutre face au risque
+
+On retiendra ainsi qu'un individu est neutre face au risque si et seulement si ses préférences sont représentées par le critère d'espérance mathématique. Pour améliorer la représentation des préférences des agents, il faudrait donc introduire, en plus de l'espérance mathématique de la richesse, une mesure du risque. C'est l'objet des fonctions de Markowitz.
 
 \section{Fonctions de Markowitz}
+
+Puisqu'une richesse est risquée lorsqu'elle peut prendre différentes valeurs, une première mesure du risque est la dispersion de la variable aléatoire représentant cette richesse. 
+
+La variance constitue une mesure connue et intuitive de la dispersion et donc du risque :
+$$
+\mathbb{V}(W)=\mathbb{E}\left[(W-\mathbb{E}(W))^2\right]= \mathbb{E}(W^2)-\mathbb{E}(W)^2
+$$
+= Valeur moyenne de la distance au carré entre les réalisations de
+$W$ et leur moyenne théorique $\mathbb{E}(W)$. Plus les réalisations s'écartent de leur valeur moyenne, plus la richesse est risquée = Moyenne des carrés - carré de la moyenne
+
+\subsection{Définition}
+
+Les fonctions de Markowitz sont une manière de représenter les préférences des agents par une fonction d'utilité à deux éléments, l'espérance et la variance de la richesse :
+$$
+U(W)=f\left(\mathbb{E}(W),\mathbb{V}(W)\right)
+$$
+La fonction de Markowitz est supposée croissante avec l'espérance de la richesse : pour un risque donné (i.e. à variance donnée), le décideur préférera la richesse qui a l'espérance la plus élevée : $\frac{\partial U(W)}{\partial \mathbb{E}(W)}>0$. L'effet du risque sur l'utilité dépend quant à lui de l'attitude vis-à-vis du risque de l'individu
+
+\subsection{Attitude vis-à-vis du risque}
+
+Trois hypothèses peuvent être faites concernant le lien entre utilité et risque :
+
+L'utilité est une fonction décroissante du risque : $\frac{\partial U(W)}{\partial \mathbb{V}(W)}<0$. A espérance donnée, le décideur préfère la richesse qui présente. le risque le plus faible (i.e. la variance la plus faible). On dira que le décideur a de l'aversion pour le risque, ou encore
+qu'il est riscophobe. 
+
+L'utilité est indépendante du risque : $\frac{\partial U(W)}{\partial \mathbb{V}(W)}=0$. Dans ce cas, la fonction de Markowitz ne dépend plus que de
+l'espérance de la richesse. On retrouve le cas d'un décideur neutre face au risque. Le critère d'espérance mathématique est un cas particulier des
+fonctions de Markowitz
+
+L'utilité est une fonction croissante du risque :  $\frac{\partial U(W)}{\partial \mathbb{V}(W)}>0$. Le décideur préfère la richesse qui présente le risque le plus élevé. On dira alors que le décideur a un goût pour le risque, ou encore qu'il est riscophile. Ce comportement reste cependant peu observé en pratique !
+
+Attention : un riscophobe n'est pas une personne qui ne prend jamais de risque, ni même une personne qui ne prend pas de risque lorsque c'est possible… de même, un riscophile peut dans certains cas choisir une richesse certaine tout dépend des loteries proposées et du degré d'aversion pour le risque des individus, c'est l'arbitrage entre niveau de risque et richesse !
+
+\subsection{Courbes d'indifférence de Markowitz}
+
+\begin{center}
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-09-23 183537}
+\end{center}
+
+\subsection{Fonction de Markowitz linéaire}
+
+La spécification la plus usuelle et la plus simple de la fonction de Markowitz est la forme linéaire :
+$$
+U(W)= \mathbb{E}(W)-k\mathbb{V}(W)
+$$
+La constante $k$ représente le degré d'aversion pour le risque : plus $k$ est élevé, plus l'individu a d'aversion pour le risque
+
+Si $k>0$ : l'utilité est d'autant plus faible que le risque (la variance)
+est élevé, c'est le cas d'aversion pour le risque.
+
+Si $k=0$ nous sommes dans le cas de la neutralité face au risque.
+
+Si $k<0$ nous sommes dans le cas de goût pour le risque. 
+
+La fonction de Markowitz linéaire est parfois appelée "critère espérance-variance" et est très utilisée. Elle impose la même sensibilité au risque de gain et de perte. 
+
+\subsection{Exemple}
+
+Supposons qu'un individu possède une richesse initiale certaine $\omega$ , que ses préférences soient correctement représentées par une fonction de Markowitz linéaire, et qu'il doive choisir entre deux loteries :
+$$
+X= \left\{\begin{matrix}
+	10 & 40 \\
+	0,5 & 0,5 \\
+\end{matrix}\right.
+$$
+et 
+$$
+Y= \left\{\begin{matrix}
+	-5 & 65 \\
+	0,5 & 0,5 \\
+\end{matrix}\right.
+$$
+
+Que peut-on dire du choix de cet individu selon son attitude vis-à-vis du risque ?
+$$
+W=\omega + \begin{matrix}
+	X \\
+	Y
+\end{matrix}
+$$
+Critère  de choix : fonction linaire de Markowitz
+$$
+U(\omega+X)=\mathbb{E}(\omega+X)-k\mathbb{V}(\omega+X)
+$$
+$$
+U(\omega+Y)=\mathbb{E}(\omega+Y)-k\mathbb{V}(\omega+Y)
+$$
+$$
+\mathbb{E}(\omega+X)=\omega+\mathbb{E}(X)=\omega+10\cdot0,5+40\cdot0,5=\omega+25
+$$
+$$
+\mathbb{E}(\omega+Y)=\omega+\mathbb{E}(Y)=\omega-5\cdot0,5+65\cdot0,5=\omega+30
+$$
+$$
+\mathbb{V}(\omega+X)=\mathbb{V}(X)=\mathbb{E}(X^2)-\mathbb{E}(X)^2
+$$
+$$
+0,5\cdot10^2+0,5\cdot40^2-25^2=225
+$$
+$$
+\mathbb{V}(\omega+Y)=\mathbb{V}(Y)=\mathbb{E}(Y^2)-\mathbb{E}(Y)^2
+$$
+$$
+0,5\cdot(-5)^2+0,5\cdot65^2-30^2=1225
+$$
+
+Un agent neutre au risque ne tient compte que de l'espérance et choisit la loterie qui conduit à l'espérance la plus élévé. Dans ce cas on a $Y \succ X$. 
+
+L'agent riscophobe : $U(\omega+X) > U(\omega+Y)$
+$$
+U(\cancel{\omega}+X)=\mathbb{E}(\cancel{\omega}+X)-k\mathbb{V}(\cancel{\omega}+X)>U(\cancel{\omega}+Y)=\mathbb{E}(\cancel{\omega}+Y)-k\mathbb{V}(\cancel{\omega}+Y)
+$$
+$$
+25-k\cdot225>30-k\cdot1225
+$$
+$$
+1000k>5
+$$
+$$
+\text{Si }k>0,005\; \text{Choix de $X$}
+$$
+$$
+\text{Si }k<0,005\; \text{Choix de $Y$}
+$$
+$$
+\text{Si }k = 0,005\; \text{Indiffrérence entre $X$ et $Y$}
+$$
+
+\subsection{Retour sur le pb de l'assurance}
+
+Reprenons le problème de l'assurance vu en section 1.4. en supposant désormais que les préférences de l'assuré ne sont plus représentées par l'espérance mathématique mais par une fonction de Markowitz linéaire. Nous avions du côté du particulier la loterie suivante :
+$$
+W= \left\{\begin{matrix}
+	\omega + (1-\beta)z& \omega + v -\beta z \\
+	p & 1-p \\
+\end{matrix}\right.
+$$
+Nous avions calculé son espérance :
+$$
+\mathbb{E}(W)=\omega+(1-p)v+(p-\beta)z
+$$
+Calculons maintenant sa variance pour introduire le risque :
+$$
+\mathbb{V}(W)=\mathbb{E}\left[(W-\mathbb{E}(W))^2\right]
+$$
+$$
+p[\omega+(1-\beta)z-(\omega+(1-p)v)+(p-\beta)z]^2+(1-p)[\omega+v-\beta z-(\omega+(1-p)v+(p-\beta)z)]^2
+$$
+$$
+\mathbb{V}(W)=p(1-p)(v-z)^2
+$$
+\subsection{Étude de la variance (i.e. du risque)}
+
+Le risque est croissant avec l'écart entre la valeur du bien $v$ et le montant remboursé $z$ en cas de sinistre. Moins on s'assure, plus la variance est forte. Le risque varie également avec la probabilité de sinistre $p$.
+
+$p(1-p)$ minimale en $p=0$ (sinistre impossible) et $p=1$ (sinistre certain). 
+
+$p(1-p)$  maximale en $p=\frac{1}{2}$, c'est donc lorsque le sinistre a autant
+de chances de survenir que de ne pas survenir que le risque est le
+plus fort
+
+$p(1-p)$  peut être interprété comme un indicateur d'incertitude sur les états de la nature
+$$
+\begin{cases}\underset{z}\max \,U(W)=\mathbb{E}(W)-k\mathbb{V}(W)=\omega+(1-p)v+(p-\beta)z-kp(1-p)(v-z)^2\\ s.c. \, 0\le z\le v\end{cases}
+$$
+Nous écartons le cas où la probabilité de sinistre $p$ est nulle ou égale à 1 : dans ce cas il n'y a plus d'incertitude et le choix devient trivial. Nous supposons donc que : $0<p<1$
+
+De même, nous avons vu en section 1.4. qu'il est peu vraisemblable de supposer que l'assureur demande une prime d'assurance $\beta z$ inférieure à l'espérance de l'indemnité $pz$ (ce ne serait pas rentable pour lui). Nous supposons que : $p<\beta$
+
+Enfin, l'assureur ne peut pas demander une prime $\beta z$ supérieure ou même égale à la somme $z$ qu'il s'engage à verser à l'assuré en cas de sinistre (aucun assuré n'accepterait de s'assurer dans ce cas !). Nous supposons donc que : $\beta<1$. Ainsi, nous avons la contrainte suivante sur les paramètres :
+$$
+0<p<\beta<1
+$$
+
+
+\subsection{Problème de l'assuré avec utilité Markowitz}
+
 
 
 \section{Autres mesures du risque}

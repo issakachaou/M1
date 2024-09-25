@@ -12,7 +12,7 @@ SI(ALEA.ENTRE.BORNES(1;3)=1;"A";SI(ALEA.ENTRE.BORNES(1;3)=2;"B";"C"))
 
 =CHOISIR(ALEA.ENTRE.BORNES(1;3);"A";"B";"C")
 
-'Fonction rechecheV "V lookup"
+'Fonction rechecheV "Vlookup"
 
 =RECHERCHEV(D2;NIVEAU!$A$2:$C$4;2;FAUX)
 
@@ -22,6 +22,6 @@ SI(ALEA.ENTRE.BORNES(1;3)=1;"A";SI(ALEA.ENTRE.BORNES(1;3)=2;"B";"C"))
 
 'faire un indentifiant de manière plus simple 
 
-=B2&D2&E
+=B2&D2&E2
 
 =STXT(A2;NBCAR(A2);1)
