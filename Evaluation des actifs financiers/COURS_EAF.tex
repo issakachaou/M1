@@ -1,0 +1,186 @@
+\documentclass[a4paper, 12pt]{report}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc} 
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amsfonts,amssymb, empheq}
+\usepackage{eurosym}
+\usepackage{booktabs}
+\usepackage{wrapfig}
+\pagestyle{fancy}
+\fancyhead[R]{Université Paris-Est Créteil}
+\fancyhead[L]{Évaluation des actifs financiers}
+\usepackage{array,multirow,makecell}
+\setcellgapes{1pt}
+\makegapedcells
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash }b{#1}} 
+%\renewcommand{\thechapter}{\Roman{chapter}}
+%\setcounter{chapter}{1} % pour numéroter le chapitre 
+\begin{document}
+\chapter{Choix optimal de portefeuille et modèle d'évaluation des actifs financiers}
+
+\section{Le rendement attendu d'un portefeuille}
+
+\subsection{Calculer le rendement d'un portefeuille}
+Pour trouver un portefeuille optimal, nous avons besoin d'une méthode pour définir un portefeuille et analyser son rendement. Nous pouvons décrire un portefeuille par ses pondérations, c'est-à-dire la fraction de l'investissement total dans le portefeuille détenue dans chaque investissement individuel du portefeuille :
+$$
+\omega_i = \frac{\text{Valeur de l\'~investissement}~i }{\text{Valeur totale du portefeuille}}
+$$
+La somme des pondérations de ces portefeuilles est égale à 1 (c'est-à-dire $\sum_{i=1}^{N}\omega_i=1$) afin qu'ils représentent la façon dont nous avons réparti notre argent entre les différents investissements individuels du portefeuille.
+
+Prenons l'exemple d'un portefeuille composé de 200 actions de Dolby Laboratories valant 30\$ par action et de 100 actions de Coca-Cola valant 40\$ par action. La valeur totale du portefeuille est de $200 \cdot 30 + 100 \cdot 40=10 000\$$ et les pondérations $\omega_D$ et $\omega_C$ correspondantes sont les suivantes 
+$$
+\begin{matrix}
+	\omega_D=\frac{200\cdot30}{10000}=60\% & \omega_C=\frac{100\cdot40}{10000}=40\% 
+\end{matrix}
+$$
+Étant donné les pondérations du portefeuille, nous pouvons calculer le rendement du portefeuille.
+
+Supposons que $\omega_1,\cdots,\omega_N$ soient les pondérations des N investissements d'un portefeuille, et que ces investissements aient des rendements $r_1,\cdots,r_N$
+
+Le rendement du portefeuille, $r_p$ , est alors la moyenne pondérée des rendements des investissements du portefeuille, où les poids correspondent aux poids du portefeuille :
+$$
+r_p=\omega_1\cdot r_1+\omega_2\cdot r_2+\cdots+\omega_N\cdot r_N=\sum_{i=1}^{N}\omega_i\cdot r_i
+$$
+Le rendement d'un portefeuille est facile à calculer si l'on connaît les rendements des actions individuelles et les pondérations du portefeuille.
+
+Supposons que vous achetiez 200 actions de Dolby Laboratories à 30\$ l'action et 100 actions de Coca-Cola à 40\$ l'action. Si le cours de l'action de Dolby passe à 36\$ et celui de Coca-Cola à 38\$, quelle est la nouvelle valeur du portefeuille et quel est le rendement obtenu ? portefeuille et quel est son rendement ?
+
+Après le changement de prix, quelles sont les nouvelles pondérations du portefeuille ?
+
+La nouvelle valeur du portefeuille est de $200 \cdot 36 + 100 \cdot 38  = 11 000\$ $, soit un gain de 1 000\$ ou un rendement de 10\% sur votre investissement de 10 000\$. Le rendement de Dolby était de $\frac{36}{30}-1=20\%$, et celui de Coca-Cola de $\frac{38}{40}-1=5\%$
+
+Compte tenu des pondérations initiales du portefeuille (60\% Dolby's et 40\% Coca-Cola), nous pouvons également calculer le rendement du portefeuille :
+$$
+r_p=\omega_1\cdot r_1+\omega_2\cdot r_2+\cdots+\omega_N\cdot r_N=\sum_{i=1}^{N}\omega_i\cdot r_i
+$$
+$$
+r_p=\omega_D\cdot r_D+\omega_C\cdot r_C
+$$
+$$
+r_p=60\cdot 20+40\cdot (-5)=10\%
+$$
+Après le changement de prix, les nouvelles pondérations du portefeuille sont :
+$$
+\begin{matrix}
+	\omega_D=\frac{200\cdot36}{11000}=65,45\% & \omega_C=\frac{100\cdot38}{11000}=34,55\% 
+\end{matrix}
+$$
+En l'absence de négociation, les pondérations augmentent pour les actions dont le rendement est supérieur à celui du portefeuille.
+
+En se basant sur le fait que l'espérance d'une somme est juste la somme des espérances et que l'espérance d'un multiple connu est juste le multiple de son espérance, on obtient la formule suivante pour le rendement attendu d'un portefeuille :
+$$
+\mathbb{E}(r_p)=\mathbb{E}\left( \sum_{i=1}^{N} \omega_i \cdot r_i \right)=\sum_{i=1}^{N}\mathbb{E}(\omega_i \cdot r_i)=\sum_{i=1}^{N}\omega_i \cdot \mathbb{E}(r_i) 
+$$
+En d'autres termes, le rendement attendu d'un portefeuille est simplement la moyenne pondérée des rendements attendus des investissements qui le composent, en utilisant les pondérations du portefeuille.
+
+Supposons que vous investissiez 10 000\$ dans des actions Ford et 30 000\$ dans des actions Tyco International. Vous prévoyez un rendement de 10\% pour Ford et de 16\% pour Tyco. Quel est le rendement attendu de votre portefeuille ?
+
+Vous avez investi 40 000\$ au total, de sorte que les pondérations de votre portefeuille sont les suivantes : 10 000/40 000 = 25\% dans Ford et 30 000/40 000 = 75\% dans Tyco.
+
+Par conséquent, le rendement attendu de votre portefeuille est de :
+$$
+\mathbb{E}(r_p)=\omega_F \cdot \mathbb{E}(r_F)+\omega_T \cdot \mathbb{E}(r_T)
+$$
+$$
+\mathbb{E}(r_p)=25 \cdot 10+75\cdot 16=14,5\%
+$$
+
+\subsection{La volatilité d'un portefeuille à deux actions}
+
+La combinaison d'actions dans un portefeuille élimine une partie de leur risque grâce à la diversification. La part de risque qui subsiste dépend du degré d'exposition des actions à des risques communs. Commençons par un exemple simple de l'évolution du risque lorsque des actions sont combinées dans un portefeuille. 
+
+Le tableau 11.1 présente les rendements de trois actions hypothétiques, ainsi que leurs rendements et volatilités moyens.
+moyennes et leurs volatilités.
+
+\begin{wrapfigure}{l}{0.65\textwidth}
+	\centering
+	\includegraphics[scale=0.4]{../../../Pictures/Screenshots/Capture d'écran 2024-09-27 200006}
+\end{wrapfigure}
+Alors que les trois actions ont la même volatilité et le même rendement moyen, la structure de leurs rendements diffère. Lorsque les actions des compagnies aériennes se sont bien comportées, les actions pétrolières ont eu tendance à mal se comporter (voir 2010-2011), et lorsque les compagnies aériennes se sont mal comportées, les actions pétrolières ont eu tendance à bien se comporter (2013-2014). Le tableau 11.1 présente les rendements de deux portefeuilles d'actions
+
+Le premier portefeuille se compose d'investissements égaux dans les deux compagnies aériennes, North Air et West Air. Le second portefeuille comprend des investissements égaux dans West Air et Tex Oil.
+
+Le rendement moyen des deux portefeuilles est égal au rendement moyen des actions. Cependant, leurs volatilités (12,1\% et 5,1\%) sont très différentes de celles des actions individuelles et les unes des autres.
+
+Cet exemple illustre deux phénomènes importants.
+
+En combinant des actions dans un portefeuille, nous réduisons le risque grâce à la diversification. Comme les prix des actions n'évoluent pas de la même manière, une partie du risque est répartie dans un portefeuille. Par conséquent, les deux portefeuilles présentent un risque plus faible que les actions individuelles.
+
+Le degré de risque éliminé dans un portefeuille dépend de la mesure dans laquelle les actions sont confrontées à des risques communs et leurs prix évoluent ensemble.
+
+Étant donné que les deux titres de compagnies aériennes ont tendance à être performants ou médiocres en même temps, le portefeuille de titres de compagnies aériennes a une volatilité qui n'est que légèrement inférieure à celle des titres individuels.
+
+En revanche, les actions des compagnies aériennes et des compagnies pétrolières n'évoluent pas ensemble ; elles ont même tendance à évoluer dans des directions opposées. Par conséquent, le risque supplémentaire est annulé, ce qui rend le portefeuille beaucoup moins risqué. Cet avantage de la diversification est obtenu sans coût et sans réduction du rendement moyen.
+rendement moyen.
+
+\subsection{Détermination de la covariance et de la corrélation}
+
+Pour déterminer le risque d'un portefeuille, il ne suffit pas de connaître le risque et le rendement des actions qui le composent : il faut savoir dans quelle mesure les actions sont confrontées à des risques communs et leurs rendements évoluent ensemble.
+
+Nous introduisons deux mesures statistiques, la covariance et la corrélation, qui nous permettent de mesurer la co-mouvement des rendements entre $r_i$ et $r_j$ :
+$$
+\text{cov}=\sigma_{i,j}=\frac{1}{T}\sum_{i=1}^{T}(r_{i,t}-\mu_i)(r_{j,t}-\mu_j)
+$$
+La covariance entre $r_i$ et $r_i$ écrit $\sigma_{i,i}$ est la variance de $r_i$ ($\sigma_{i}^2$) car :
+$$
+\sigma_{i,i}=\frac{1}{T}\sum_{i=1}^{T}(r_{i,t}-\mu_i)(r_{i,t}-\mu_i)
+$$
+$$
+\sigma_{i,i}=\frac{1}{T}\sum_{i=1}^{T}(r_{i,t}-\mu_i)^2
+$$
+Considérons la covariance entre $r_i$ et $r_j$ :
+$$
+\sigma_{i,j}=\frac{1}{T}\sum_{i=1}^{T}(r_{i,t}-\mu_i)(r_{j,t}-\mu_j)
+$$
+Intuitivement, si deux actions évoluent ensemble, leurs rendements auront tendance à être supérieurs ou inférieurs à la moyenne au même moment, et la covariance sera positive.
+
+Si les actions évoluent dans des directions opposées, l'une aura tendance à être supérieure à la moyenne lorsque l'autre est inférieure à la moyenne, et la covariance sera négative.
+
+Si le signe de la covariance est facile à interpréter, son ampleur ne l'est pas. Elle sera plus importante si les actions sont plus volatiles (et présentent donc des écarts plus importants par rapport à leurs rendements attendus), et elle sera d'autant plus importante que les actions évoluent de manière très proche les unes des autres.
+
+Afin de contrôler la volatilité de chaque action et de quantifier la force de la relation entre elles, nous pouvons calculer la corrélation entre les rendements de deux actions, définie comme la covariance des rendements divisée par l'écart-type de chaque rendement :
+$$
+\rho_{i,j}=\frac{\frac{1}{T}\sum_{i=1}^{T}(r_{i,t}-\mu_i)(r_{j,t}-\mu_j)}{\sqrt{\frac{1}{T}\sum_{i=1}^{T}(r_{i,t}-\mu_i)^2}\cdot\sqrt{\frac{1}{T}\sum_{i=1}^{T}(r_{j,t}-\mu_j)^2}}=\frac{\sigma_{i,j
+}}{\sigma_{i}\sigma_{j}}
+$$
+\begin{wrapfigure}{l}{0.70\textwidth}
+	\centering
+\includegraphics[scale=0.4]{../../../Pictures/Screenshots/Capture d'écran 2024-09-27 215442}
+\end{wrapfigure}
+La corrélation entre deux actions a le même signe que leur covariance, elle a donc une interprétation similaire.
+
+En divisant par les volatilités, la corrélation est toujours comprise entre -1 et +1, ce qui nous permet d'évaluer la force de la relation entre les actions.
+
+Comme le montre la figure 11.1, la corrélation est un baromètre de la mesure dans laquelle les rendements partagent un risque commun et ont tendance à évoluer ensemble.
+
+Plus la corrélation est proche de +1, plus les rendements ont tendance à évoluer ensemble en raison d'un risque commun. Lorsque la corrélation (et donc la covariance) est égale à 0, les rendements ne sont pas corrélés, c'est-à-dire qu'ils n'ont pas tendance à évoluer ensemble ou à l'opposé l'un de l'autre.
+
+Les risques indépendants ne sont pas corrélés.
+
+Enfin, plus la corrélation est proche de -1, plus les rendements ont tendance à évoluer en sens inverse.
+
+\subsection{Calcul de la variance et de la volatilité d'un portefeuille}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

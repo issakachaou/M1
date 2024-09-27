@@ -217,7 +217,7 @@ $$
 \underset{\ell}\max \, p \cdot \sqrt{\ell}-w\cdot\ell
 $$
 $$
-\frac{\partial \prod(p)}{\partial \ell}=\frac{1}{2}p\cdot \ell^{-\frac{1}{2}}-w=0
+\frac{d \prod(p)}{d \ell}=\frac{1}{2}p\cdot \ell^{-\frac{1}{2}}-w=0
 $$
 $$
 w=\frac{1}{2}p\cdot \ell^{-\frac{1}{2}}
@@ -559,15 +559,335 @@ $$
 
 
 \subsection{Problème de l'assuré avec utilité Markowitz}
+$$
+\begin{cases}\underset{z}\max \,U(W)=\mathbb{E}(W)-k\mathbb{V}(W)=\omega+(1-p)v+(p-\beta)z-kp(1-p)(v-z)^2\\ s.c. \, 0\le z\le v\end{cases}
+$$
+Nous écartons le cas où la probabilité de sinistre $p$ est nulle ou égale à 1 : dans ce cas il n'y a plus d'incertitude et le choix devient trivial. Nous supposons donc que : $0<p<1$
 
+De même, nous avons vu en section 1.4. qu'il est peu vraisemblable de supposer que l'assureur demande une prime d'assurance $\beta z$ inférieure à l'espérance de l'indemnité $pz$ (ce ne serait pas rentable pour lui). Nous supposons que : $p<\beta$
 
+Enfin, l'assureur ne peut pas demander une prime $\beta z$ supérieure ou même égale à la somme $z$ qu'il s'engage à verser à l'assuré en cas de sinistre (aucun assuré n'accepterait de s'assurer dans ce cas !). Nous supposons donc que : $\beta<1$. Ainsi, nous avons la contrainte suivante sur les paramètres :
+$$
+0<p<\beta<1
+$$
+
+\subsection{Indemnité optimale}
+
+Trois cas sont possible selon le degré d'aversion au risque :
+
+$k=0$ (neutralité face au risque) : on se retrouve dans le cas de l'espérance mathématique que nous avons déjà étudié, donc il n'existe pas de marché de l'assurance. S'il n'existait que des propriétaires neutres face au risque, avec nos hypothèses, il n'existerait pas de marché de l'assurance
+
+$k<0$ (goût pour le risque) : si le propriétaire est riscophile, son utilité de Markowitz est une fonction croissante à la fois de l'espérance et de la variance de la richesse. Or, ces deux fonctions, $\mathbb{E}(W)$ et $\mathbb{V}(W)$ sont décroissantes de l'indemnité $z$. Le propriétaire choisit donc de ne pas s'assurer : $z^d=0$. S'il n'existait que des propriétaires riscophiles, il n'y aurait pas non plus de marché de l'assurance. 
+
+Le dernier cas est celui du propriétaire averse au risque ($k>0$). Toute hausse de $z$ a alors deux effets de sens contraire : la diminution de l'espérance $\mathbb{E}(W)$ , qui diminue l'utilité, et la diminution de la variance $\mathbb{V}(W)$, qui augmente l'utilité.
+
+Dans ce cas, il faut résoudre le programme de l'assuré
+$$
+\begin{cases}\underset{z}\max \,U(W)=\mathbb{E}(W)-k\mathbb{V}(W)=\omega+(1-p)v+(p-\beta)z-kp(1-p)(v-z)^2\\ s.c. \, 0\le z\le v \\ 0 < p < \beta < 1 \end{cases}
+$$
+Condition de premier ordre
+$$
+\frac{d U(W)}{dz}=0\Leftrightarrow p-\beta+kp(1-p)2(v-z)=0
+$$
+Rappel : $g(f(x))'=g'(f(x))\cdot f'(x)$
+$$
+p-\beta + kp(1-p)2v-kp(1-p)2z=0
+$$
+$$
+p-\beta + kp(1-p)2v=kp(1-p)2z
+$$
+$$
+z^d=\frac{p-\beta + kp(1-p)2v}{kp(1-p)2}
+$$
+$$
+z^d=\frac{p-\beta }{kp(1-p)2}+\frac{kp(1-p)2}{kp(1-p)2}v
+$$
+$$
+z^d=v-\frac{\beta-p}{kp(1-p)2}
+$$
+Condition du second ordre 
+$$
+\frac{d^2U(W)}{dz^2}=-kp(1-p)2<0
+$$
+Remarque 
+$$
+z^d>0 \Leftrightarrow  v -\frac{\beta - p }{kp(1-p)2}>0
+$$
+$$
+p>\beta - v(2kp(1-p))
+$$
+(Si cette valeur est strictement comprise entre 0 et $v$). Un marché de l'assurance peut donc bien exister lorsque les décideurs sont riscophobes
+
+\subsection{Statique comparative}
+$$
+z^d=v-\frac{\beta-p}{kp(1-p)2}
+$$
+Le montant assuré $z^d$ augmente avec la valeur du bien risqué $v$ : toutes choses étant égale par ailleurs un riscophobe est prêt à payer une prime plus élevée pour un bien d'une plus grande valeur
+
+Le montant assuré $z^d$ augmente avec la probabilité de sinistre
+
+Le montant assuré $z^d$ baisse avec le taux de prime d'assurance qu'il faut payer $\beta$, c'est un effet prix classique
+
+Le montant assuré $z^d$ augmente avec le degré d'aversion au risque $k$.
+
+Ces résultats correspondent à l'intuition. Par contre, avec une fonction de Markowitz linéaire, le montant assuré ne dépend pas de la richesse non risquée $\omega$.
 
 \section{Autres mesures du risque}
 
+Les fonctions de Markowitz, qui évaluent le risque à travers la variance de la richesse aléatoire, constituent une approche classique en finance. Cependant, il existe d'autres manières d'appréhender le risque qui méritent d'être explorées. Parmi celles-ci, les fonctions de sécurité d'abord privilégient la protection du capital en minimisant les pertes potentielles. Les fonctions Maximin, ou critère de Wald, se concentrent sur le meilleur résultat possible dans le pire des scénarios, tandis que les fonctions Maximax visent à maximiser le gain dans le meilleur des cas. Les fonctions de Hurwicz, quant à elles, combinent ces deux perspectives en intégrant un coefficient d'optimisme. Enfin, les fonctions de regret évaluent le risque en tenant compte des opportunités manquées, permettant ainsi une prise de décision plus éclairée face à l'incertitude. Ces différentes approches enrichissent notre compréhension du risque et offrent des outils variés pour la gestion de portefeuille.
+
+\subsection{Fonctions sécurité d'abord}
+
+Soient les deux loteries suivantes auxquelles est soumis nun individu ayant une richesse certaine initiale $\omega$ :
+$$
+\begin{matrix}
+	X=\left\{\begin{matrix}
+		-5 & 5 & 10 \\
+		0,1 & 0,2 & 0,7 \\
+	\end{matrix}\right. & \text{Et} & Y=\left\{\begin{matrix}
+		-20 & 5 & 10 \\
+		0,01 & 0,29 & 0,7 \\
+	\end{matrix}\right.
+\end{matrix}
+$$
+$$
+\mathbb{E}(\omega+X)=\omega+7,5 \; ; \;\mathbb{E}(\omega+X)=\omega+8,25
+$$
+$$
+\mathbb{V}(\omega+X)=21,25 \; ; \;\mathbb{V}(\omega+X)=13,75
+$$
+
+Si on mesure le risque par la variance, un individu riscophobe choisira toujours la loterie $Y$ qui a une plus grande espérance de richesse et une plus petite variance. Toutefois, on peut imaginer qu'un individu, très inquiet à l'idée de perdre éventuellement 20, préférera la loterie $X$.
+
+Dans ce cas, l'individu ne mesure pas le risque par la variance (i.e. la somme des carrés des écarts à l'espérance mathématique, pondérés par leur probabilité). Un tel individu mesurera le risque par la somme des carrés des pertes, pondérées par leur probabilité :
+$$
+\mathbb{V}^{\star}(\omega+X)=(-5)^2\cdot 0,1=2,5 \; ; \;\mathbb{V}^{\star}(\omega+X)=(-20)^2\cdot 0,01 =4
+$$
+Avec cette nouvelle mesure, la loterie $X$ devient moins risquée que $Y$ et les choix de l'individu riscophobe dépendront de la comparaison des espérances et des risques, en fonction du degré d'aversion au risque
+
+On peut alors définir une nouvelle fonction d'utilité, sous la forme suivante :
+$$
+U(W)=\mathbb{E}(W)-k\mathbb{V}^{\star}(W)
+$$
+Ces fonctions d'utilité sont appelées fonctions d'utilité sécurité d'abord
+
+\subsection{Fonctions Maximin (critère de Wald)}
+Soit une richesse initiale certaine $\omega$ et trois loteries :
+$$
+\begin{matrix}
+	X=\left\{\begin{matrix}
+		1 & 20 & 30 \\
+		0,1 & 0,2 & 0,7 \\
+	\end{matrix}\right. & Y=\left\{\begin{matrix}
+		2 & 3 & 4 \\
+		0,1 & 0,2 & 0,7 \\
+	\end{matrix}\right. & Z=\left\{\begin{matrix}
+		-10 & 2 & 50 \\
+		0,1 & 0,2 & 0,7 \\
+	\end{matrix}\right.
+\end{matrix}
+$$
+Les fonctions Maximin correspondent à un individu pessimiste qui ne considère que la plus faible valeur de chaque richesse :
+$$
+\begin{matrix}
+	m(\omega+X)=\omega+1 & m(\omega+Y)=\omega+2 & m(\omega+Z)=\omega-10
+\end{matrix}
+$$
+Choix de la loterie qui garantit le plus grand minimum : ici il s'agit de la loterie $Y$
+
+\subsection{Fonctions Maximax}
+
+
+Soit une richesse initiale certaine $\omega$ et trois loteries :
+$$
+\begin{matrix}
+	X=\left\{\begin{matrix}
+		1 & 20 & 30 \\
+		0,1 & 0,2 & 0,7 \\
+	\end{matrix}\right. & Y=\left\{\begin{matrix}
+		2 & 3 & 4 \\
+		0,1 & 0,2 & 0,7 \\
+	\end{matrix}\right. & Z=\left\{\begin{matrix}
+		-10 & 2 & 50 \\
+		0,1 & 0,2 & 0,7 \\
+	\end{matrix}\right.
+\end{matrix}
+$$
+Les fonctions Maximax correspondent à un individu optimiste qui ne considère que la valeur la plus élevée de chaque richesse :
+$$
+\begin{matrix}
+	m(\omega+X)=\omega+30 & m(\omega+Y)=\omega+4 & m(\omega+Z)=\omega+50
+\end{matrix}
+$$
+Choix de la loterie qui garantit le plus grand maximum : ici la loterie $Z$
+
+\subsection{Fonctions de Hurwicz}
+
+Les fonctions de Hurwicz pondèrent Maximin et Maximax pour les différentes loteries, soit pour la loterie $X$ :
+$$
+U(\omega +X)= \omega m (\omega +X)+M(\omega +X)
+$$
+$\alpha$ mesure le degré de pessimisme de l'individu
+
+\subsection{Fonctions de regret }
+
+Les fonctions vues jusqu'à présent attribuent à une richesse une utilité indépendante des autres richesses possibles… nous allons relâcher cette hypothèse
+
+Réécrivons les trois loteries sous forme de matrice d'information :
+\begin{center}
+	\includegraphics[scale=0.4]{../../../Pictures/Screenshots/Capture d'écran 2024-09-25 213135}
+\end{center}
+Si l'état $e_1$ se réalise, le décideur saura (mais trop tard) que la meilleure action aurait été $Y$ : s'il a choisit $X$, il obtiendra une richesse de $\omega + 1$ au lieu de $\omega + 2$,  on dit qu'il regrettera alors $\omega+2-(\omega+1)=1$
+\begin{center}
+	\includegraphics[scale=0.4]{../../../Pictures/Screenshots/Capture d'écran 2024-09-10 001051}
+\end{center}
+Avec ce critère, l'individu choisira la loterie associée à la plus petite somme des regrets, soit ici $X$
+
+\subsection{Conclusion sur la mesure du risque}
+
+Nous avons examiné plusieurs fonctions, telles que celles de Markowitz et Maximin, qui introduisent la notion de risque dans les décisions des agents économiques. La représentation des préférences par une fonction de Markowitz permet de résoudre le paradoxe de l'assurance, en conduisant à une fonction de demande d'assurance présentant des propriétés relativement satisfaisantes. Dans le chapitre 2, nous approfondirons la notion plus générale d'utilité espérée, qui inclut plusieurs des fonctions discutées comme des cas particuliers. C'est cette notion d'utilité espérée que nous retiendrons par la suite pour analyser les choix en situation d'incertitude, offrant ainsi un cadre théorique robuste pour comprendre les comportements des agents face au risque.
+
+\chapter{L'utilité espérée}
+
+Ce chapitre vise à présenter les fonctions d'utilité espérée, leurs fondements et leurs propriétés. Ce concept d'utilité espérée sera utilisé dans le reste du cours. Nous comparerons notamment les fonctions d'utilité espérée aux fonctions d'utilité que vous avez vu jusqu'à présent en microéconomie. Nous appliquerons ensuite la théorie de l'utilité espérée au cas de l'assurance. Enfin, nous présenterons les limites de l'utilité espérée
+
+\section{Définition}
+
+On appelle fonctions d'utilité espérée les fonctions d'utilité dont la valeur est l'espérance, non pas de la richesse, mais de l'utilité de cette richesse. Elles s'écrivent :
+$$
+U(W)=\mathbb{E}\left( u(W)\right) 
+$$
+Pour écrire la fonction d'utilité espérée, on transforme la richesse aléatoire $W$ par la fonction d'utilité $u$. On obtient alors une nouvelle
+variable aléatoire $u(W)$. L'utilité espérée de $W$ est l'espérance de cette nouvelle variable aléatoire. Cela permet de prendre en compte le fait que ce n'est pas la richesse qui compte, mais l'utilité qui y est associée. L'utilité espérée étend le concept de fonction d'utilité à la décision dans l'incertitude… d'où l'introduction de l'espérance et des probabilité. 
+
+Considérons une richesse aléatoire $W$ comportant une partie certaine $\omega$ et une partie aléatoire $X$ :
+$$
+W=\omega+X
+$$
+Dans le cas discret, i.e. lorsque la richesse $W$ prend un nombre fini de valeurs, l'utilité espérée s'écrit :
+$$
+U(W)=\mathbb{E}\left( u(W)\right)=\sum_{i=1}^{I}p_iu(w_i)=\sum_{i=1}^{I}p_iu( \omega+x_i)
+$$
+Dans le cas continu, l'utilité espérée s'écrit :
+$$
+U(W)=\mathbb{E}\left( u(W)\right)=\int_{a}^{b}f(x)u(w)dx=\int_{a}^{b}f(x)u(\omega+x)dx
+$$
+Où $a$ et $b$ désignent les valeurs minimales et maximales de la richesse aléatoire $x$ et $f(x)$ sa densité (distribution)
+
+Il existe autant de fonctions d'utilité espérée que de fonctions d'utilité $u$
+$$
+u'>0
+$$
+Rappel de l'hypothèse de non satiété : un agent préférera toujours avoir une richesse plus grande (consommer plus)
+\section{Fondements}
+
+L'histoire des fonctions d'utilité espérée repose sur les
+travaux de Daniel Bernoulli (1738), John von Neumann et Oskar Morgenstern (1944) et de Leonard J. Savage (1954)
+
+\subsection{Bernoulli (1738)}
+
+Afin de résoudre le paradoxe de St Pétersbourg (\textit{cf.} 1.3.), Bernoulli a supposé que les préférences des agents étaient représentées par l'espérance d'une fonction de la richesse, fonction croissante (hypothèse de non satiété) mais à un taux décroissant (utilité marginale décroissante)
+
+Par exemple, en prenant la fonction d'utilité logarithmique, on obtient la fonction d'utilité espérée suivante :
+$$
+U(W)=\mathbb{E}\left( u(W)\right)=\mathbb{E}\left( \ln(W) \right)
+$$
+Supposer une fonction d'utilité logarithmique lève le paradoxe de St Pétersbourg : le prix que les agents sont prêts à payer pour participer au jeu devient fini
+
+\subsection{Von Neumann et Morgenstern (1944)}
+
+Ces deux auteurs sont considérés comme les pères fondateurs de la théorie de l'utilité espérée… à tel point que les fonctions d'utilité espérée sont souvent appelées fonctions d'utilité de Von Neumann \& Morgenstern
+
+ls ont démontré l'existence des fonctions d'utilité espérée, à partir d'une liste d'hypothèses relatives aux préférences des agents sur les loteries, en supposant les probabilités des différents états de la nature comme données
+
+Ils ont donné des fondements axiomatiques aux fonctions d'utilité espérée : si l'on admet leurs axiomes (laissés de côté ici par souci de simplicité), on doit admettre que les préférences des agents sont correctement représentées par des fonctions d'utilité espérée
+
+\subsection{Savage (1954)}
+
+Von Neumann et Morgenstern raisonnaient sur des probabilités données des états de la nature, donc supposées objectives
+
+Comme nous l'avons déjà souligné dans le Chap. 1, Savage a donné des fondements axiomatiques à l'existence de probabilités subjectives
+
+\section{Quelques propriétés}
+
+\subsection{Fonctions globales / élémentaires}
+
+Nous allons voir dans cette sous-section 2.3. quelques propriétés des fonctions d'utilité espérée. Commençons par nous attarder sur la distinction entre fonction d'utilité globale et fonction d'utilité élémentaire.
+
+La fonction d'utilité espérée $U(W)=\mathbb{E}\left( u(W)\right)$ est une
+fonction composée : sa valeur dépend des valeurs possibles de la richesse par l'intermédiaire de la fonction $u$.
+
+$u$ est appelée fonction d'utilité élémentaire
+
+$U$ est appelée fonction d'utilité globale
+
+En pratique, il n'y a pas de distinction marquée entre $U$ et $u$ (nous la ferons toutefois dans l'écriture pour éviter toute confusion dans ce cours !). En effet :
+
+Il suffit de donner la fonction $u$ pour connaitre parfaitement la forme de $U$. Par exemple, lorsqu'on suppose une fonction d'utilité espérée logarithmique, on sait sans ambiguïté que l'on désigne la fonction : $U(W)=\mathbb{E}\left( \ln(W) \right)$
+
+Dans le cas d'un univers certain, les fonctions $U$ et $u$ sont confondues. Ainsi,
+$$
+\text{Si}\;W\left\{\begin{matrix}
+	w\\1
+\end{matrix}\right.
+$$
+On a : 
+$$
+U(W)=\mathbb{E}\left ( u(W) \right )=\mathbb{E}\left ( u(w) \right )=u(w)
+$$
+On voit bien que l'univers certain (et ses fonctions d'utilité $u$) constitue un cas particulier de l'univers incertain (et ses fonctions d'utilité espérée $U$) !
+
+\subsection{Unicité fonction d'utilité globale}
+
+Vous savez, grâce à vos cours de microéconomie, qu'une fonction d'utilité n'est définie qu'à une transformation strictement croissante près : les mêmes préférences peuvent être représentées par une multitude de fonctions d'utilité
+
+C'est également vrai pour la fonction d'utilité espérée $U$ : toute transformation strictement croissante d'une fonction d'utilité espérée $g(U)$ représentera les mêmes préférences
+
+MAIS cette nouvelle fonction $g(U)$ n'aura pas nécessairement la forme d'une fonction d'utilité espérée (forme qui est commode en pratique)…
+
+Pour continuer à avoir une fonction d'utilité espérée, il faudra se limiter aux transformations affines strictement croissantes de la forme :
+$$
+g(U)=aU+b, \quad a>0
+$$
+On retiendra que les fonctions d'utilité espérée ne sont définies qu'à une transformation affine strictement croissante près
+
+\subsection{Neutralité face au risque}
+
+Supposons une fonction d'utilité élémentaire de la forme :
+$$
+u_1(w)=aw+b\;;\;a>0 \equiv U_1(W)=\mathbb{E}(aW+b)
+$$
+La fonction d'utilité espérée n'étant définie qu'à une transformation affine strictement croissante près, les mêmes préférences peuvent être représentées par :
+$$
+u_2(w)=w\ \equiv U_2(W)=\mathbb{E}(W)
+$$
+On retombe sur le critère d'espérance mathématique de la richesse vu dans le Chap. 1, utilisé pour décrire les préférences d'individus neutres face au risque
+
+On retiendra les deux points suivants :
+
+Les fonctions espérance de la richesse constituent un cas particulier des fonctions d'utilité espérée. De même, nous verrons plus loin que certaines fonctions de Markowitz sont des cas particuliers des fonctions d'utilité espérée.
+
+Les fonctions d'utilité espérée dont la fonction élémentaire $u$ est affine, et donc a fortiori la fonction identité $u(w)=w$, représentent les préférences d'un agent neutre face au risque
+
+\section{Application à l'assurance}
+
+Reprenons le problème de l'assurance dans le cadre de la théorie de l'utilité espérée et supposons des préférences logarithmiques $u(w)=\ln(w)$. La loterie associée à l'assurance est toujours :
+$$
+W= \left\{\begin{matrix}
+	\omega + (1-\beta)z& \omega + v -\beta z \\
+	p & 1-p \\
+\end{matrix}\right.
+$$
+Écrire l'utilité espérée associée à cette loterie
+
+Écrire le programme de l'assuré
+
+Résoudre le programme pour en déduire la demande
+d'assurance
 
 
 
-
+\section{Critiques}
 
 
 
