@@ -392,8 +392,163 @@ Quel taux d’intérêt débiteur maximise le profit ? L'enveloppe de prêts dis
 
 \subsection{Solution}
 
+Lorsqu'un emprunteur sollicite un crédit de 200 000 €, la banque, face à un taux d'intérêt de 29 \%, ne lui accorde qu'un montant de 100 000 €. Dans le cas où le projet réussit et que l'emprunteur est peu risqué, le profit net s'élève à 1 100 €, soit 130 € de revenus moins 129 € de coûts, ce qui correspond à un retour de 1 100 € (1 + 0,29) = 129 €. En revanche, si l'emprunteur est considéré comme présentant un risque plus élevé, le profit net est de 6 €, calculé comme 135 € de revenus moins 129 € de coûts. Ainsi, le profit total attendu par la banque doit être suffisant pour lui permettre d'atteindre l'équilibre financier, en tenant compte des différents niveaux de risque associés à chaque emprunteur.
+$$
+\frac{(0,5\cdot 0,9 \cdot 129 +0,5\cdot 0,8 \cdot 129 )}{1,05}-100000=4428,57
+$$
+
+Face à une demande excédentaire de crédit, la banque choisit d'augmenter le taux débiteur à 34 \%. Cette décision entraîne une éviction des emprunteurs peu risqués, car leur profit net devient négatif, avec un calcul de 130 € de revenus moins 134 € de coûts, soit -4 €. En revanche, seuls les emprunteurs risqués demeurent sur le marché, affichant un profit net de 1 €, calculé comme 135 € de revenus moins 134 € de coûts. Ainsi, le profit total attendu par la banque doit être ajusté en fonction de ce nouveau profil de risque, se concentrant désormais sur des emprunteurs présentant un risque plus élevé.
+$$
+\frac{0,8\cdot134\cdot1000}{1,05}-100000=2095,24
+$$
+La banque réalise un profit plus élevé en maintenant un taux débiteur de 29 \% tout en rationnant la demande de crédit de moitié, plutôt qu'en augmentant le taux à 34 \% sans rationner le crédit. En effet, un taux plus bas attire des emprunteurs moins risqués, ce qui permet à la banque de sécuriser des rendements plus stables. En rationnant le crédit, la banque peut mieux gérer les risques associés aux emprunteurs, ce qui se traduit par une rentabilité supérieure par rapport à une stratégie de taux plus élevés qui pourrait dissuader les emprunteurs de qualité. Ainsi, la gestion prudente du taux et du rationnement se révèle plus bénéfique pour la rentabilité globale de la banque.
+
 \section{Clauses spécifiques et contrats bancaires}
 
+\subsection{Garanties}
 
+Les clauses spécifiques et les contrats bancaires incluent des garanties, qui se divisent en deux types : internes et externes. Cependant, ces garanties engendrent des coûts pour la banque, notamment le coût de surveillance et le coût de liquidation. Malgré ces dépenses, l'utilisation de garanties demeure essentielle pour plusieurs raisons. Premièrement, elles permettent une réduction significative du risque associé aux prêts, offrant ainsi une protection à l'institution financière. Deuxièmement, les garanties servent d'instrument de signalement, indiquant la solvabilité et la fiabilité des emprunteurs. Ainsi, même si les garanties impliquent des coûts, leur rôle dans la gestion des risques et l'évaluation des emprunteurs justifie leur utilisation dans les contrats bancaires.
+
+La banque incite les emprunteurs à révéler leur niveau de risque en proposant deux types de contrats à deux emprunteurs, A et B, qui sont indifférenciables sur le plan du risque. Bien que la banque suspecte qu'un emprunteur soit plus risqué que l'autre, elle ne peut pas déterminer lequel. Elle offre donc à chaque emprunteur le choix entre un contrat avec garantie et un taux d'intérêt faible, ou un contrat sans garantie avec un taux d'intérêt élevé. Si l'emprunteur A est en réalité moins risqué que l'emprunteur B, il choisira probablement le contrat avec garantie et taux d'intérêt faible, car cela lui permettra de bénéficier d'un coût d'emprunt réduit tout en offrant une protection supplémentaire. Ce comportement incite ainsi la banque à mieux évaluer le risque associé à chaque emprunteur.
+
+\subsubsection{Exemple numérique (G, T \& B)}
+
+L'emprunteur A possède des actifs d'une valeur de 100 €, avec une probabilité de 1 d'atteindre cette valeur à la fin de la période. En revanche, l'emprunteur B a des actifs d'une valeur de 200 € avec une probabilité de 0,5, et une valeur de 0 € avec une probabilité de 0,5. Les projets d'investissement des emprunteurs A et B nécessitent un prêt de 30 € entièrement financé par la banque. Étant donné que la banque ne peut pas discriminer entre les projets des deux emprunteurs et que le taux sans risque est de 10 \%, avec des agents neutres face au risque, la banque doit concevoir des contrats qui incitent chaque emprunteur à révéler son risque, qui est connu privativement.
+
+Pour cela, la banque propose deux types de contrats : un contrat de prêt garanti, offrant une sécurité supplémentaire à l'emprunteur, et un contrat de prêt non garanti, avec un taux d'intérêt plus élevé. 
+
+\subsubsection{Solution}
+
+Dans cette situation, la solution se dessine clairement : l'emprunteur A, considéré comme peu risqué, opte pour le contrat avec prêt garanti. En effet, sa situation financière lui permet de rembourser son crédit avec certitude, car il a une probabilité de 100 \% que son projet se réalise. D'autre part, l'emprunteur B, qui présente un risque plus élevé, choisit le contrat avec prêt non garanti.
+$$
+\frac{1\cdot(1+r_s)\cdot30}{1+0,01}-30=0\Rightarrow (1+r_s)\cdot 30=30\cdot(1+0,01)\Rightarrow r_s=0,1=10\%
+$$
+Le taux d'intérêt sur le prêt garanti ($r_s$) qui permet à la banque d'atteindre l'équilibre est fixé à 10 \%. Cela signifie que le remboursement du prêt garanti s'élève à :
+$$
+(1+0,1)\cdot30=33 \text{\euro}
+$$
+L'emprunteur B remboursera son prêt avec une probabilité de 50 %.
+$$
+\frac{0,5\cdot(1+r_u)\cdot30}{1+0,01}-30=0\Rightarrow 1+r_u = 2,2\Rightarrow r_u=1,2=120\%
+$$
+Le taux d'intérêt sur le prêt non garanti ($r_u$) devrait s'établir à 120 \%. Cela signifie que le remboursement du prêt non garanti sera calculé comme suit :
+$$
+\\
+(1+1,2)\cdot30=66\text{\euro}
+$$
+Avec ce taux, l'emprunteur B devra rembourser 66 € à la fin de la période, ce qui reflète le risque plus élevé associé à ce type de prêt. Ce mécanisme permet à la banque de compenser le risque de défaut potentiel en augmentant le coût du crédit pour les emprunteurs jugés plus risqués.
+
+Pour déterminer le montant de la garantie, CC, qui rend l'emprunteur B indifférent entre le prêt garanti au taux de 10 \% et le prêt non garanti au taux de 120 \%, nous devons établir l'équivalence entre les deux options de remboursement.
+$$
+\frac{1}{2}(200-66)=\frac{1}{2}(200-33)-\frac{1}{2}C
+$$
+$$
+200-66=200-33-C
+$$
+$$
+134=167-C
+$$
+$$
+C=33\text{\euro}
+$$
+Si le montant de la garantie $C$  est supérieur à 33 €, seul l'emprunteur A choisira le prêt garanti, car sa valeur attendue de la trésorerie nette serait de 67 € (calculée comme 100 € - 33 €). En revanche, avec le prêt non garanti, sa valeur nette ne serait que de 34 € (100 € - 66 €). De son côté, l'emprunteur B optera pour le prêt non garanti, malgré un taux d'intérêt de 120 \%, car un montant de garantie  $C$ supérieur à 33 € entraînerait des pertes pour lui. Ainsi, la banque a la possibilité de sélectionner les emprunteurs en fonction de leur niveau de risque en imposant un montant minimum pour la garantie, ce qui lui permet de mieux gérer son exposition au risque tout en optimisant ses choix de financement.
+
+\subsection{Clauses spécifiques des contrats de crédit}
+
+Les clauses spécifiques des contrats de crédit incluent des solutions de restructuration bancaire, qui visent à résoudre les problèmes d'aléa moral, particulièrement accentués en cas de détresse financière. Cette détresse peut être classée en deux catégories. La première, la détresse faible, se manifeste lorsque la société non financière (SNF) connaît une insuffisance temporaire de trésorerie, ce qui l'empêche provisoirement de rembourser sa dette. Dans ce cas, la valeur de ses actifs reste supérieure à celle de ses dettes, et il n'y a pas de situation d'insolvabilité. Pour surmonter ce déficit temporaire, la SNF peut vendre des actifs sélectionnés, retarder ses projets d'investissement ou émettre de nouvelles actions. La seconde catégorie, la détresse modérée, se caractérise par un défaut de remboursement imminent si aucune restructuration de la dette n'est effectuée. Ici, la valeur des actifs est inférieure à celle des dettes, ce qui nécessite une intervention rapide pour éviter une situation de faillite.
+
+\subsubsection{Exemple numérique (G \& T)}
+
+Une entreprise doit 120 € à ses créanciers, tandis que son dirigeant prélève 5 € pour la gestion de l'entreprise. Les actifs de la société sont évalués à 125 € avec une probabilité de 0,9, et à 0 € avec une probabilité de 0,1. Par ailleurs, la valeur liquidative de l'entreprise est de 90 €, et le taux sans risque est de 0 \%, ce qui signifie que l'actualisation se fait sur une base de 1. 
+
+Quelles sont les stratégies envisageables pour les créanciers ?
+
+Si les créanciers demandent le remboursement de la dette, le dirigeant préférera faire défaut, car le montant de la dette de 120 € est supérieur à la valeur liquidative de 90 €. En effet, si le dirigeant choisit de continuer l'activité pendant une période, il s'attend à un bénéfice négatif :
+$$
+0,9\cdot (125-120)+0,1\cdot (0)-5=-0,5\text{\euro}
+$$
+Dans ce cas, il serait plus avantageux pour lui de faire défaut et de récupérer la valeur liquidative de l'entreprise. En revanche, si les créanciers acceptent de renégocier la dette en la réduisant à 119 €, le dirigeant pourrait alors continuer l'activité sur une période, ce qui entraînerait un bénéfice attendu positif : 
+$$
+0,9\cdot (125-119)+0,1\cdot (0)-5=0,4\text{\euro}
+$$
+Cette renégociation inciterait donc le dirigeant à poursuivre l'exploitation de l'entreprise plutôt que de faire défaut.
+
+La restructuration redonne de l'espoir au dirigeant, car elle permet aux créanciers de bénéficier d'une situation plus favorable. En effet, avec une réduction de la dette à 119 €, les créanciers obtiennent une valeur attendue de remboursement de
+
+$$ 0,9  \cdot (119) + 0,1 \cdot 0 = 107,10\text{\euro} $$ 
+ 
+ce qui est supérieur à la valeur liquidative de 90 €. Ainsi, en réduisant la dette de 1 €, les créanciers réalisent un gain de 17,10 € (107,10 - 90). Ce processus de restructuration est donc bénéfique tant pour l'entrepreneur, qui peut continuer son activité, que pour les créanciers, qui voient leurs chances de recouvrement s'améliorer. Les deux parties sortent gagnantes de cette situation, favorisant ainsi une collaboration constructive.\\
+
+
+En cas de détresse financière sévère, l'emprunteur, c'est-à-dire le dirigeant, est susceptible de faire défaut sur ses obligations. Cependant, un plan de restructuration peut être élaboré pour éviter des procédures de liquidation. Ce plan vise à réorganiser les dettes de l'entreprise et à établir des conditions plus favorables pour le remboursement, permettant ainsi à l'emprunteur de maintenir son activité tout en rassurant les créanciers sur la récupération de leurs fonds. Une telle approche peut contribuer à stabiliser la situation financière de l'entreprise et à préserver des emplois, tout en évitant les conséquences néfastes d'une liquidation, qui seraient préjudiciables pour toutes les parties impliquées.
+
+\subsubsection{Exemple numérique}
+
+Dans cet exemple, il existe deux sortes de dettes : une dette senior obligataire de 100 € et une dette junior bancaire de 1000 €. La valeur liquidative de l'entreprise est de 200 €. Si l'activité de l'entreprise se poursuit pendant une période, la valeur des actifs est estimée à 1100 € avec une probabilité de 0,9, et à 0 € avec une probabilité de 0,1, ce qui donne une valeur attendue de 990 €. De plus, le coût de gestion est de 5 €.
+
+Le dirigeant souhaite liquider la société. Que peuvent faire les créanciers ?
+
+Les détenteurs d'obligations recevront les montants suivants :
+
+En cas de liquidation de la société : Ils recevront 100 € (soit 200 € - 100 €).
+
+Si l'activité continue: Ils recevront 90 €, calculé comme suit : 
+$$
+0,9 \cdot 100 + 0,1 \cdot 0
+$$
+Pour la banque, les montants à recevoir sont :
+
+En cas de liquidation de la société : La banque recevra 100 € (soit 200 € - 100 €).
+
+Si l'activité continue : Elle recevra 900 €, calculé comme suit : 
+$$
+0,9 \cdot 1000 + 0,1 \cdot 0 
+$$
+Concernant l'actionnaire-dirigeant :
+
+La liquidation est préférable dans ce cas, car si l'activité continue, les actionnaires ne percevront rien et devront en plus faire face à un coût de gestion de 5 €. Ainsi, la décision de liquider l'entreprise apparaît plus avantageuse pour l'actionnaire-dirigeant.
+
+La banque a un intérêt à ce que l'activité continue.
+
+La banque peut racheter la dette obligataire et restructurer le prêt total (1000 € + 100 €) en le réduisant de 1100 € à 1090 €. Ce plan est accepté.
+
+Pour le dirigeant, le bénéfice attendu est calculé comme suit :
+$$
+0,9\cdot(1100-1090)-5=4 \text{\euro}
+$$
+
+Pour les détenteurs d'obligations, ils recevront : 100\euro
+
+Pour la banque, le montant attendu est :
+$$
+0,9\cdot 1090-100 =881\text{\euro}
+$$
+(ce montant inclut le rachat de la dette obligataire pour 100 €).
+
+Ainsi, cette restructuration permet à toutes les parties de bénéficier d'une situation plus favorable, incitant la banque à soutenir la continuité de l'activité de l'entreprise.
+
+Plan sera-t-il accepté par tous les créanciers ? 
+
+Dans l'exemple précédent, si des divergences de points de vue étaient survenues entre les créanciers obligataires et bancaires, cela aurait pu entraîner un blocage dans le processus de restructuration. 
+
+Cependant, ce blocage n'a pas eu lieu, car la banque a racheté la dette de 100 € aux détenteurs d'obligations. Cette action a permis d'harmoniser les intérêts des créanciers et de faciliter la mise en place du plan de restructuration, évitant ainsi des complications supplémentaires et permettant à l'entreprise de continuer son activité.
+
+\subsubsection{Exemple numérique}
+3 types de dette :
+
+Dette bancaire (priorité la + élevée) = 250
+
+Dette senior obligataire (priorité suivante) = 45
+
+Dette junior obligataire (priorité la + faible) = 45\\
+Entreprise est déclarée en faillite – Créanciers ont le choix entre ces 2 plans de restructuration :
+Plan A : valeur de l’entreprise à la période suivante : 290 avec proba = 0,6 et 125 avec proba = 0,4 ( = 224)
+$$
+0,6 \cdot 260 +0,4\cdot125=224
+$$
+Plan B : valeur de l’entreprise à la période suivante : 340 avec proba = 1/3 et 25 avec proba = 2/3 (= 130)
+$$
+\frac{1}{3}\cdot 340 +\frac{2}{3}\cdot25=130
+$$
 
 \end{document}
