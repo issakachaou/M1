@@ -198,7 +198,7 @@ Une personne peut être au chômage avec une probabilité $p$. Si elle travaille
 
 $$
 a=\begin{cases}
-	\begin{matrix}\gamma w & w-\gamma m \\ \underbrace{p}_{\text{Chômage}}& \underbrace{1-p}_{\text{Pas chômage}}\end{matrix}
+	\begin{matrix}\gamma w & w-\tau w \\ \underbrace{p}_{\text{Chômage}}& \underbrace{1-p}_{\text{Pas chômage}}\end{matrix}
 \end{cases}
 $$
 
@@ -378,7 +378,7 @@ W_2= \left\{\begin{matrix}
 \end{matrix}\right.
 $$
 
-En effet, $\mathbb{E}(W_1) =\mathbb{E}(W_1) = \omega +50$ ne tient compte que du rendement moyen. Le décideur est donc indifférent entre la richesse $W_1$ ,certaine, sans risque, et la richesse $W_2$, aléatoire, risquée.  Le critère d'espérance mathématique représente les préférences d'un individu indifférent au risque ou encore neutre face au risque
+En effet, $\mathbb{E}(W_1) =\mathbb{E}(W_2) = \omega +50$ ne tient compte que du rendement moyen. Le décideur est donc indifférent entre la richesse $W_1$ ,certaine, sans risque, et la richesse $W_2$, aléatoire, risquée.  Le critère d'espérance mathématique représente les préférences d'un individu indifférent au risque ou encore neutre face au risque
 
 On retiendra ainsi qu'un individu est neutre face au risque si et seulement si ses préférences sont représentées par le critère d'espérance mathématique. Pour améliorer la représentation des préférences des agents, il faudrait donc introduire, en plus de l'espérance mathématique de la richesse, une mesure du risque. C'est l'objet des fonctions de Markowitz.
 
@@ -651,10 +651,10 @@ $$
 \end{matrix}
 $$
 $$
-\mathbb{E}(\omega+X)=\omega+7,5 \; ; \;\mathbb{E}(\omega+X)=\omega+8,25
+\mathbb{E}(\omega+X)=\omega+7,5 \; ; \;\mathbb{E}(\omega+Y)=\omega+8,25
 $$
 $$
-\mathbb{V}(\omega+X)=21,25 \; ; \;\mathbb{V}(\omega+X)=13,75
+\mathbb{V}(\omega+X)=21,25 \; ; \;\mathbb{V}(\omega+Y)=13,75
 $$
 
 Si on mesure le risque par la variance, un individu riscophobe choisira toujours la loterie $Y$ qui a une plus grande espérance de richesse et une plus petite variance. Toutefois, on peut imaginer qu'un individu, très inquiet à l'idée de perdre éventuellement 20, préférera la loterie $X$.
@@ -716,7 +716,7 @@ $$
 Les fonctions Maximax correspondent à un individu optimiste qui ne considère que la valeur la plus élevée de chaque richesse :
 $$
 \begin{matrix}
-	m(\omega+X)=\omega+30 & m(\omega+Y)=\omega+4 & m(\omega+Z)=\omega+50
+	M(\omega+X)=\omega+30 & M(\omega+Y)=\omega+4 & M(\omega+Z)=\omega+50
 \end{matrix}
 $$
 Choix de la loterie qui garantit le plus grand maximum : ici la loterie $Z$
@@ -725,7 +725,7 @@ Choix de la loterie qui garantit le plus grand maximum : ici la loterie $Z$
 
 Les fonctions de Hurwicz pondèrent Maximin et Maximax pour les différentes loteries, soit pour la loterie $X$ :
 $$
-U(\omega +X)= \omega m (\omega +X)+M(\omega +X)
+U(\omega +X)= \alpha m (\omega +X)+(1-\alpha)M(\omega +X)
 $$
 $\alpha$ mesure le degré de pessimisme de l'individu
 
@@ -739,7 +739,7 @@ Réécrivons les trois loteries sous forme de matrice d'information :
 \end{center}
 Si l'état $e_1$ se réalise, le décideur saura (mais trop tard) que la meilleure action aurait été $Y$ : s'il a choisit $X$, il obtiendra une richesse de $\omega + 1$ au lieu de $\omega + 2$,  on dit qu'il regrettera alors $\omega+2-(\omega+1)=1$
 \begin{center}
-	\includegraphics[scale=0.4]{../../../Pictures/Screenshots/Capture d'écran 2024-09-10 001051}
+\includegraphics[scale=0.4]{../../../Pictures/Screenshots/Capture d'écran 2024-09-29 214207}
 \end{center}
 Avec ce critère, l'individu choisira la loterie associée à la plus petite somme des regrets, soit ici $X$
 

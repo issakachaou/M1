@@ -165,22 +165,150 @@ Enfin, plus la corrélation est proche de -1, plus les rendements ont tendance �
 
 \subsection{Calcul de la variance et de la volatilité d'un portefeuille}
 
+Ecrivons la matrice de variance-covariance du portefeuille $p$ avec $N$ actions comme $\Omega_p$ tel que :
+$$
+\Omega_p=\begin{pmatrix}
+	\sigma^2_1& \cdots & \sigma_{1,j} & \cdots & \sigma_{1,N} \\
+	\cdots& \cdots & \cdots & \cdots & \cdots \\
+	\sigma_{i,1} & \cdots & \sigma^2_i & \cdots & \sigma_{i,N} \\
+	\cdots & \cdots & \cdots  & \cdots & \cdots  \\
+	\sigma_{N,1} & \cdots & \sigma_{N,j} & \cdots & \sigma^2_N
+\end{pmatrix}
+$$
+$$
+\Omega_p=\begin{pmatrix}
+	\omega_1,\cdots,\omega_i,\cdots,\omega_N
+\end{pmatrix}\begin{pmatrix}
+	\sigma^2_1& \cdots & \sigma_{1,j} & \cdots & \sigma_{1,N} \\
+	\cdots& \cdots & \cdots & \cdots & \cdots \\
+	\sigma_{i,1} & \cdots & \sigma^2_i & \cdots & \sigma_{i,N} \\
+	\cdots & \cdots & \cdots  & \cdots & \cdots  \\
+	\sigma_{N,1} & \cdots & \sigma_{N,j} & \cdots & \sigma^2_N
+\end{pmatrix}\begin{pmatrix}
+	\omega_1 \\
+	\cdots\\
+	\omega_i \\
+	\cdots \\
+	\omega_N
+\end{pmatrix}
+$$
+$$
+\sigma^2_p=\omega^T\Omega\omega=\sum_{i=1}^{N}\sum_{j=1}^{N}\omega_i\omega_j\sigma_{i,j}
+$$
+Considérons la variance d'un portefeuille de deux actions :
+$$
+\begin{matrix}
+	\sigma_p^2=\omega_1^2\sigma_1^2+\omega_2^2\sigma_2^2+2\omega_1\omega_2\sigma_1\sigma_2\rho_{1,2}& \omega_2=1-\omega_1
+\end{matrix}
+$$
+$$
+\sigma_p^2=\omega_1^2\sigma_1^2+(1-\omega_1)^2\sigma_2^2+2\omega_1(1-\omega_1)\sigma_1\sigma_2\rho_{1,2}
+$$
+\newpage
+\begin{wrapfigure}{l}{0.65\textwidth}
+	\centering
+	\includegraphics[scale=0.4]{../../../Pictures/Screenshots/Capture d'écran 2024-09-27 200006}
+\end{wrapfigure}
+Comme toujours, la volatilité est la racine carrée de la variance. Vérifions cette formule pour les actions des compagnies aériennes et pétrolières du tableau 11.1. Considérons le portefeuille contenant les actions de West Air et Tex Oil. La variance de chaque action est égale au carré de sa volatilité, soit $(0,134)^2 = 0,018$. Supposons que la covariance entre les actions soit de -0,0128. Par conséquent, la variance d'un portefeuille investi à 50\% dans chaque action est de :
+$$
+\sigma_p^2=\frac{1}{2}^2\cdot0,018+\frac{1}{2}^2\cdot0,018\cdot\frac{1}{2}\cdot\frac{1}{2}\cdot(-0,0128)=0,0026
+$$
+La volatilité du portefeuille est de $\sqrt{0,0026} = 5,1\%$, ce qui correspond au calcul du tableau 11.1.
+
+Pour les portefeuilles North Air et West Air, le calcul est le même, à l'exception de la covariance plus élevée des actions (0,0112), ce qui se traduit par une volatilité plus élevée (12,1\%).
+
+\subsubsection{La volatilité d'un grand portefeuille}
+
+Nous pouvons obtenir des avantages supplémentaires de la diversification en détenant plus de deux actions dans notre portefeuille. Bien qu'il soit préférable d'effectuer ces calculs à l'aide d'un ordinateur, leur compréhension permet d'obtenir une intuition importante concernant le degré de diversification possible si nous détenons de nombreuses actions. Rappelons que le rendement d'un portefeuille de $N$ actions est simplement la moyenne pondérée des rendements des actions du portefeuille où :
+$$
+r_{i,t}=\frac{[P_{i,t}-P_{i,t-1}]+D_{i,t}}{P_{i,t-1}}
+$$
+et $P_{i,t}$ est le prix de l'actif $i$, $_{i,t}$ est le dividende de l'actif $i$ à l'instant t alors :
+$$
+r_{p,t}=\sum_{t=1}^{N}\omega_{i,t}r_{i,t}
+$$
+
+\subsubsection{Volatilité et diversification}
+
+\begin{wrapfigure}{l}{0.68\textwidth}
+	\centering
+\includegraphics[scale=0.4]{../../../Pictures/Screenshots/Capture d'écran 2024-09-28 192523}
+\end{wrapfigure}
+La volatilité diminue au fur et à mesure que le nombre d'actions dans le portefeuille augmente. En fait, près de la moitié de la volatilité des actions individuelles est éliminée dans un grand portefeuille grâce à la diversification. L'avantage de la diversification est le plus spectaculaire au début : La diminution de la volatilité lorsque l'on passe d'une à deux actions est beaucoup plus importante que la diminution lorsque l'on passe de 100 à 101 actions (en effet, la quasi-totalité des avantages de la diversification peut être obtenue avec une trentaine d'actions). Toutefois, même pour un portefeuille très important, il n'est pas possible d'éliminer tous les risques.
+
+\section{Le portefeuille efficient}
+
+Considérons un portefeuille d'actions Intel et Coca-Cola. Supposons qu'un investisseur pense que ces actions ne sont pas corrélées et qu'elles se comporteront comme suit :
+
+\begin{center}
+	\begin{tabular}{@{}lcc@{}}
+	\toprule
+	Action    & Rendement attendu & Volatilité \\ \midrule
+	Intel ($I$)     & 26\%              & 50\%       \\
+	Coca-Cola ($CC$) & 6\%               & 25\%       \\ \bottomrule
+\end{tabular}
+\end{center}
+Comment l'investisseur doit-il choisir un portefeuille composé de ces deux titres ? Certains portefeuilles sont-ils préférables à d'autres ?
+
+Calculons le rendement attendu et la volatilité pour différentes combinaisons d'actions. Considérons un portefeuille composé à 40 \% d'actions Intel et à 60 \% d'actions Coca-Cola. Nous pouvons calculer le rendement attendu à partir de l'équation :
+$$
+\mathbb{E}(r_p)=\mathbb{E} \left(\sum_{i=1}^{N}\omega_i\cdot r_i \right)=\sum_{i=1}^{N}\mathbb{E}(\omega_i\cdot r_i)=\sum_{i=1}^{N}\omega_i\cdot\mathbb{E}(r_i)
+$$
+$$
+\mathbb{E}(r_p)=\omega_I\cdot\mathbb{E}(r_I)+\omega_{CC}\cdot\mathbb{E}(r_{CC})
+$$
+$$
+\mathbb{E}(r_p)=40\cdot26+60\cdot6=14\%
+$$
+Supposons qu'un investisseur pense que ces actions ne sont pas corrélées. Nous pouvons calculer la variance à l'aide de l'équation suivante
+$$
+\sigma_p^2=\omega_1^2\cdot\sigma_1^2+(1-\omega_1)^2\sigma_2^2+2\omega_1(1-\omega_1)\sigma_1\sigma_2\rho_{1,2}
+$$
+$$
+\sigma_p^2=40^2\cdot50^2+(1-40)^2\cdot25^2+2\cdot40(1-40)\cdot50\cdot25\cdot0=0,0625
+$$
+Sur la base de ce résultat, la volatilité mesurée par l'écart-type est la racine carrée de la variance : $\sqrt{0,0625}$ = 25\%.
+
+Grâce à la diversification, il est possible de trouver un portefeuille dont la volatilité est encore plus faible que celle de l'une ou l'autre action. En investissant 20 \% dans l'action Intel et 80 \% dans l'action Coca-Cola, par exemple, la volatilité n'est que de 22,4 \%. Mais sachant que les investisseurs s'intéressent à la volatilité et au rendement attendu, nous devons considérer les deux simultanément. Pour ce faire, nous représentons graphiquement la volatilité et le rendement attendu de chaque portefeuille.
+\begin{center}
+	\begin{tabular}{@{}cccc@{}}
+		\toprule
+		Intel               & Coca-Cola     & Rendement attendu & Volatilité \\ \midrule
+		\textit{$\omega_I$} & $\omega_{CC}$ & $\mathbb{E}(r_p)$ & $\sigma_p$ \\
+		100\%               & 0\%           & 26\%              & 50\%       \\
+		80\%                & 20\%          & 22\%              & 40,3\%     \\
+		60\%                & 40\%          & 18\%              & 31,6\%     \\
+		40\%                & 60\%          & 14\%              & 25\%       \\
+		20\%                & 80\%          & 10\%              & 22,4\%     \\
+		0\%                 & 100\%         & 6\%               & 25\%       \\ \bottomrule
+	\end{tabular}
+\end{center}
+
+Supposons que l'investisseur envisage d'investir à 100 \% dans l'action Coca-Cola. D'autres portefeuilles, tels que le portefeuille composé de 20 \% d'actions Intel et de 80 \% d'actions Coca-Cola, sont plus avantageux pour l'investisseur sur les deux plans : Le rendement attendu est plus élevé et la volatilité est plus faible. Par conséquent, investir uniquement dans l'action Coca-Cola n'est pas une bonne idée.
+\newpage
+\begin{wrapfigure}{l}{0.60\textwidth}
+	\centering
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-09-29 225806}
+\end{wrapfigure}
+Nous disons qu'un portefeuille est inefficace lorsqu'il est possible d'en trouver un autre qui soit meilleur en termes de rendement attendu et de volatilité. Si l'on regarde la figure 11.3, un portefeuille est inefficient s'il existe d'autres portefeuilles au-dessus et à gauche (c'est-à-dire au nord-ouest) de celui-ci. Investir uniquement dans l'action Coca-Cola est inefficace, et il en va de même pour tous les portefeuilles dont l'action Coca-Cola représente plus de 80 \% (partie bleue de la courbe). Les portefeuilles inefficaces ne sont pas optimaux pour un investisseur qui recherche des rendements élevés et une faible volatilité.
+
+En revanche, les portefeuilles contenant au moins 20 \% d'actions Intel sont efficients (partie rouge de la courbe) : Il n'y a pas d'autre portefeuille composé des deux actions qui offre un rendement attendu plus élevé avec une volatilité plus faible. Mais si nous pouvons exclure les portefeuilles inefficaces en tant que choix d'investissement inférieurs, nous ne pouvons pas facilement classer les portefeuilles efficaces : les investisseurs choisiront parmi eux en fonction de leurs propres préférences en matière de rendement par rapport au risque. Un investisseur extrêmement conservateur qui se soucie uniquement de minimiser le risque choisira le portefeuille à la volatilité la plus faible (20 \% Intel, 80 \% Coca-Cola). Un investisseur agressif pourrait choisir d'investir à 100 \% dans l'action Intel (même si cette approche est plus risquée, l'investisseur peut être prêt à prendre ce risque pour obtenir un rendement attendu plus élevé).
+
+\subsection{L'effet de corrélation}
+
+Dans la figure 11.3, nous avons supposé que les rendements des actions Intel et Coca-Cola n'étaient pas corrélés. Examinons comment les combinaisons de risque et de rendement changeraient si les corrélations étaient différentes. La corrélation n'a aucun effet sur le rendement attendu d'un portefeuille. Par exemple, un portefeuille 40-60 aura toujours un rendement attendu de 14 \%. Cependant, la volatilité du portefeuille diffère en fonction de la corrélation. En particulier, plus la corrélation est faible, plus la volatilité est faible. Si l'on se réfère à la figure 11.3, plus la corrélation et donc la volatilité des portefeuilles sont faibles, plus la courbe représentant les portefeuilles s'infléchit vers la gauche, comme l'illustre la figure 11.4.
+\begin{wrapfigure}{l}{0.65\textwidth}
+	\centering
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-09-29 230936}
+\end{wrapfigure}
+Lorsque les actions sont parfaitement corrélées positivement, on peut identifier l'ensemble des portefeuilles par la ligne droite qui les sépare. Dans ce cas extrême (la ligne rouge de la figure 11.4), la volatilité du portefeuille est égale à la volatilité moyenne pondérée des deux actions (il n'y a pas de diversification). En revanche, lorsque la corrélation est inférieure à 1, la volatilité des portefeuilles est réduite du fait de la diversification et la courbe s'infléchit vers la gauche. La réduction du risque (et l'inflexion de la courbe) s'accentue à mesure que la corrélation diminue. À l'autre extrême de la corrélation négative parfaite (ligne bleue), la ligne redevient droite, mais cette fois, elle se réfléchit sur l'axe vertical. En particulier, lorsque les deux actions sont parfaitement corrélées négativement, il devient possible de détenir un portefeuille qui ne comporte absolument aucun risque.
 
 
 
+\subsection{Rendement attendu et volatilité en cas de vente à découvert}
 
+\subsection{Portefeuilles efficaces avec de nombreux titres}
 
-
-
-
-
-
-
-
-
-
-
-
-
+\subsection{Épargne et emprunt sans risque }
 
 \end{document}

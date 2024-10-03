@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.31)  27 SEP 2024 22:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.31)  29 SEP 2024 23:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -456,32 +456,197 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
 
-[6] (COURS_EAF.aux) ) 
+[6]
+File: ../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09-27 200006.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09-27 200006.png>
+Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09
+-27 200006.png  used on input line 210.
+(pdftex.def)             Requested size: 249.62819pt x 116.83441pt.
+
+Underfull \hbox (badness 1831) in paragraph at lines 212--213
+\T1/cmr/m/n/12 vo-la-ti-lité est la ra-cine
+ []
+
+
+Underfull \hbox (badness 2799) in paragraph at lines 212--213
+\T1/cmr/m/n/12 car-rée de la va-riance.
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 212--213
+\T1/cmr/m/n/12 Vé-ri-fions cette for-mule
+ []
+
+
+Underfull \hbox (badness 8151) in paragraph at lines 212--213
+\T1/cmr/m/n/12 pour les ac-tions des
+ []
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 212--213
+\T1/cmr/m/n/12 pé-tro-lières du ta-bleau
+ []
+
+<../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09-28 192523.png, id=37, 6
+87.31781pt x 323.70938pt>
+File: ../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09-28 192523.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09-28 192523.png>
+Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09
+-28 192523.png  used on input line 235.
+(pdftex.def)             Requested size: 274.92226pt x 129.48145pt.
+
+Overfull \hbox (9.72511pt too wide) in paragraph at lines 235--236
+ [][] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+
+[7]
+Underfull \hbox (badness 1253) in paragraph at lines 237--238
+\T1/cmr/m/n/12 que le nombre d'ac-
+ []
+
+
+Underfull \hbox (badness 1708) in paragraph at lines 237--238
+\T1/cmr/m/n/12 tions dans le por-te-
+ []
+
+
+Underfull \hbox (badness 1442) in paragraph at lines 237--238
+\T1/cmr/m/n/12 feuille aug-mente. En
+ []
+
+
+Overfull \hbox (0.7759pt too wide) in paragraph at lines 237--238
+\T1/cmr/m/n/12 éli-mi-née dans un grand
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+
+[8 <../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09-28 192523.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+
+[9]
+<../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09-29 225806.png, id=50, 4
+81.8pt x 266.49562pt>
+File: ../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09-29 225806.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09-29 225806.png>
+Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09
+-29 225806.png  used on input line 291.
+(pdftex.def)             Requested size: 240.8994pt x 133.24748pt.
+
+Overfull \hbox (6.89702pt too wide) in paragraph at lines 291--292
+ [][] 
+ []
+
+
+Underfull \hbox (badness 2012) in paragraph at lines 293--294
+\T1/cmr/m/n/12 tendu et de vo-la-ti-lité. Si
+ []
+
+
+Underfull \hbox (badness 3138) in paragraph at lines 293--294
+\T1/cmr/m/n/12 s'il existe d'autres por-te-
+ []
+
+<../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09-29 230936.png, id=51, 5
+14.92375pt x 280.04625pt>
+File: ../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09-29 230936.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09-29 230936.png>
+Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09
+-29 230936.png  used on input line 302.
+(pdftex.def)             Requested size: 257.46124pt x 140.02277pt.
+
+Overfull \hbox (3.96362pt too wide) in paragraph at lines 302--303
+ [][] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+
+[10 <../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09-29 225806.png>]
+Overfull \hbox (4.4129pt too wide) in paragraph at lines 303--305
+\T1/cmr/m/n/12 par-fai-te-ment cor-ré-lées po-
+ []
+
+
+Underfull \hbox (badness 3780) in paragraph at lines 303--305
+\T1/cmr/m/n/12 te-feuilles par la ligne
+ []
+
+
+Underfull \hbox (badness 4132) in paragraph at lines 303--305
+\T1/cmr/m/n/12 droite qui les sé-pare.
+ []
+
+
+Underfull \hbox (badness 3281) in paragraph at lines 303--305
+\T1/cmr/m/n/12 11.4), la vo-la-ti-lité du
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+
+[11 <../../../Pictures/Screenshots/Capture d'Ã©cran 2024-09-29 230936.png>]
+(COURS_EAF.aux) ) 
 Here is how much of TeX's memory you used:
- 6269 strings out of 475385
- 101880 string characters out of 2776907
- 462928 words of memory out of 3000000
- 27569 multiletter control sequences out of 15000+600000
- 480832 words of font info for 55 fonts, out of 8000000 for 9000
+ 6306 strings out of 475385
+ 104225 string characters out of 2776907
+ 470930 words of memory out of 3000000
+ 27601 multiletter control sequences out of 15000+600000
+ 482292 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,12n,62p,524b,426s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
-ppen/ec/dpi600\ecrm1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfou
-r/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk
-/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\issak\AppData\Local\MiKTeX\fo
-nts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/issak/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/issak/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/issak/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/User
-s/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-<C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-r8.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmsy8.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/symbols/msbm10.pfb>
-Output written on COURS_EAF.pdf (6 pages, 332493 bytes).
+ 55i,12n,62p,1007b,426s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
+/ec/dpi600\ecbx1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jk
+nappen/ec/dpi600\ecrm1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljf
+our/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/
+pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\issak\AppData\Local\MiKTeX\
+fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/issak/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/issak/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/issa
+k/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Us
+ers/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pf
+b><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmr8.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmsy8.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/symbols/msbm10.pfb>
+Output written on COURS_EAF.pdf (11 pages, 557057 bytes).
 PDF statistics:
- 230 PDF objects out of 1000 (max. 8388607)
+ 296 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
