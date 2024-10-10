@@ -8,6 +8,7 @@
 \usepackage{eurosym}
 \usepackage{booktabs}
 \usepackage{cancel}
+\usepackage{hyperref}
 \pagestyle{fancy}
 \fancyhead[R]{Université Paris-Est Créteil}
 \fancyhead[L]{Économie de l'incertitude}
@@ -884,12 +885,220 @@ $$
 
 Résoudre le programme pour en déduire la demande
 d'assurance
+$$
+U(w)=\mathbb{E}(u(w))=\mathbb{E}(\ln(w))
+$$
+$$
+p\ln \left[ \omega + (1-\beta)z\right]+(1-p)\ln\left[ \omega + v - \beta_z \right] 
+$$
+$$
+\begin{cases}\underset{z}\max U(W)\\ s.c. \, 0\le z\le v \\ 0 < p < \beta < 1 \end{cases}
+$$
+$$
+\frac{dU(W)}{dz}=0 \Leftrightarrow p \cdot \frac{1-\beta}{\omega + (1-\beta)z}+(1-p)\frac{\beta}{\omega + v - \beta_z}=0
+$$
+$$
+\Leftrightarrow  p \cdot \frac{1-\beta}{\omega + (1-\beta)z} = (1-p)\frac{\beta}{\omega + v - \beta_z}
+$$
+$$
+p(1-\beta)(\omega + v - \beta_z) = (\omega +(1-\beta)z)(1-p)\beta
+$$
+$$
+z^d = \frac{p}{\beta}v-\left( \frac{\beta-p}{(1-\beta)\beta} \right) \omega
+$$
 
+Si $z^d<0$ solution en coin $z^d=0$
 
+Si $z^d>v$ solution en coin $z^d=v$
+
+Pour tous les autres cas voir la fonction de demande.
+
+\subsection{Statique comparative}
+$$
+z^d = \frac{p}{\beta}v-\left( \frac{\beta-p}{(1-\beta)\beta} \right) \omega
+$$
+Le montant assuré $z^d$ est une fonction croissante de la probabilité
+de sinistre $p$ et de la valeur $v$ du bien risqué (trivial)
+
+$z^d$ est une fonction décroissante du prix $\beta$ de l'euro d'indemnité,
+c'est un effet prix classique (dérivée négative)
+
+$z^d$ dépend négativement de la richesse certaine $\omega$. Ce résultat, nouveau, souligne que les individus les plus riches sont leur propre assureur.
+
+Il n'existe pas d'équivalent à la mesure $k$ d'aversion face au risque des fonctions de Markowitz. Nous verrons plus tard (Chap. 3) que la fonction d'utilité espérée logarithmique représente les préférences d'un agent riscophobe. Nous verrons également comment mesurer son degré d'aversion au risque.
 
 \section{Critiques}
 
+Les comportements déduits des fonctions d'utilité espérée sont généralement compatibles avec ce qui est observé dans la réalité
 
+Il existe toutefois des invalidations expérimentales à la théorie de l'utilité espérée, les deux plus connues sont le paradoxe d'Allais et le paradoxe d'Ellsberg
+
+Ces paradoxes remettent en cause les axiomes sur lesquels repose la théorie de l'utilité espérée (axiomes non détaillés jusqu'à présent)
+
+\subsection{Axiomes de rationalité univers certain}
+
+"Rationnel" $\neq$ "Raisonnable" : supposer qu'un individu est rationnel, c'est supposer que ses actions sont en adéquation avec le but qu'il poursuit (atteindre ce qu'il préfère), il a une cohérence dans son comportement
+
+En univers certain, supposer un individu rationnel c'est supposer qu'il a des préférences sur l'ensemble des conséquences possibles $A$. Il existe une relation notée $\succsim$, permettant de classer les conséquences, qui satisfait :
+
+L'axiome de réflexivité : chaque conséquence $A_i$ est bien définie
+
+L'axiome de complétude : $\forall i,j $ soit $A_i\succ A_j$ soit $A_j\succ A_i$ soit $A_i \sim A_j$
+
+L'axiome de transitivité : $\forall i,j,k $ si $A_i\succsim A_j$ et $A_j\succsim A_k$ alors $A_i\succsim A_k$
+
+(+ Axiome de continuité pour pouvoir représenter les préférences
+par une fonction d'utilité : les préférences ne font pas de saut)
+
+\subsection{Axiomes fonctions d'utilité espérée}
+
+Absence d'illusion stochastique : tous les agents sont indifférents entre deux loteries (éventuellement composées) qui donnent les mêmes lots ultimes avec les mêmes probabilités
+
+Probabilité croissante :
+Soient 
+$$
+\begin{matrix}
+W_1= \left\{\begin{matrix}
+	w^{min} & w^{max} \\
+	1-p & p \\
+\end{matrix}\right. & Et & 
+W_2= \left\{\begin{matrix}
+	w^{min} & w^{max} \\
+	1-q & q\\
+\end{matrix}\right.
+\end{matrix}
+$$
+$$
+\begin{matrix}
+W_1 \succ W_2 \Leftrightarrow p > q & Et &  W_1 \sim W_2 \Leftrightarrow p=q
+\end{matrix}
+$$
+Cohérence dans les préférences
+$$
+\exists \alpha,\beta \in[0,1] |W_1 \succ W_2 \succ W_3 
+$$
+$$
+\alpha W_1 + (1-\alpha)W_3 \succ W_2 \text{ et } W_2 \succ \beta W_1 + (1-\beta)W_3
+$$
+Indépendance 
+$$
+W_1 \succ W_2 \Rightarrow \alpha W_1 + (1-\alpha)W_3 \succ \alpha W_2 +(1-\alpha)W_3
+$$
+Pas de complémentarité ni de substituabilité entre les différentes richesses aléatoires
+
+\subsection{Paradoxe d'Allais, 1952}
+
+Soit un individu soumis à un 1\ier~choix entre 2 loteries :
+$$
+\begin{matrix}
+	A= \left\{\begin{matrix}
+		100 \\
+		1 \\
+	\end{matrix}\right. & Et & 
+	B = \left\{\begin{matrix}
+		0 & 100 & 500 \\
+		0,01 & 0,89 & 0,10 \\
+	\end{matrix}\right.
+\end{matrix}
+$$
+Puis à un 2\ieme~choix entre :
+$$
+\begin{matrix}
+	C= \left\{\begin{matrix}
+		0 & 100 \\
+		0,89 & 0,11 \\
+	\end{matrix}\right. & Et & 
+	D = \left\{\begin{matrix}
+		0 & 500  \\
+		0,90 & 0,10 \\
+	\end{matrix}\right.
+\end{matrix}
+$$
+Si les préférences sont représentables par une fonction d'utilité espérée, alors un individu qui préfère $A$ à $B$ doit préférer $C$ à $D$ :
+$$
+\mathbb{E}\left( u(A) \right)>\mathbb{E}\left( u(B) \right)
+$$
+$$
+\equiv u(100)> 0,01 u(0)+0,89u(100)+0,1u(500)
+$$
+$$
+\equiv 0,89u(0)+0,11u(100)>0,9u(0)+0,1u(500)
+$$
+$$
+\mathbb{E}\left( u(C) \right)>\mathbb{E}\left( u(D) \right)
+$$
+Ce choix a été soumis aux participants d'un colloque à Paris. Parmi les personnes présentes, certaines ont déclaré préférer $A$ à $B$ …mais également $D$ à $C$, ce qui est contraire aux prédictions de la théorie de
+l'utilité espérée. Il s'agit d'une invalidation expérimentale de l'axiome
+d'indépendance
+
+\subsection{Paradoxe d'Ellsberg, 1961}
+
+"Voici 2 urnes. La première contient 50 boules rouges et 50 boules
+noires. La seconde contient 100 boules, les unes rouges, les autres
+noires, mais dans une proportion qu'on ne vous indique pas. On
+s'apprête maintenant à tirer une boule d'une des deux urnes. Vous
+avez le choix entre deux paris sur la couleur de la boule qui sera tirée.
+Vous recevrez 100\euro~si vous gagnez votre pari. Il ne se passera rien si
+vous perdez."
+
+1\iere~étape : choix entre les deux paris suivants :
+
+$R1$ : je parie que la boule est rouge si elle est tirée dans l'urne 1
+
+$R2$ : je parie que la boule est rouge si elle est tirée dans l'urne 2
+
+2\ieme~étape : choix entre :
+
+$N1$: je parie que la boule est noire si elle est tirée dans l'urne 1
+
+$N2$ : je parie que la boule est noire si elle est tirée dans l'urne 2
+
+On constate que beaucoup de ceux qui ont préféré $R1$ à $R2$ préfèrent également $N1$ à $N2$. Pourtant, s'ils pensent qu'ils ont plus de chance de
+gagner en pariant $R1$ plutôt que $R2$, c'est qu'ils pensent que dans la seconde urne il y a plus de boules noires que de boules rouges. Ils devraient donc penser qu'ils ont plus de chance de gagner en pariant $N2$ qu'en pariant $N1$. Ce paradoxe expérimental invalide l'axiome de la
+théorie de l'utilité espérée portant sur les probabilités
+
+\subsection{Portée des paradoxes}
+
+Faut-il déduire de ces paradoxes que les fondements axiomatiques de la théorie de l'utilité espérée sont trop restrictifs ? Faut-il remettre complètement en question la théorie de l'utilité espérée ?
+
+La question est ouverte
+
+Ici, nous donnons quelques éléments permettant de nuancer ces paradoxes et de les réconcilier avec la théorie de l'utilité espérée
+
+\subsection{Expérience de lab v.s. vie courante}
+
+Dans le domaine de l'économie expérimentale, il est essentiel de ne pas se fier uniquement aux déclarations des agents économiques, mais plutôt à leurs actions concrètes. En effet, la manière dont les individus se comportent lors des expériences peut être influencée par divers facteurs, notamment leur niveau d'incitation à réfléchir. Il est plausible que les participants, confrontés à des enjeux perçus comme peu significatifs dans un cadre de laboratoire, n'engagent pas l'effort intellectuel nécessaire. Cependant, dans des situations réelles où les enjeux sont plus tangibles, leur comportement pourrait être radicalement différent. Ce phénomène soulève des questions sur l'organisation même des expériences, comme l'illustre le paradoxe d'Ellsberg, où la transparence d'une urne contraste avec l'opacité d'une autre. Ainsi, l'économie expérimentale s'efforce de prendre de nombreuses précautions afin de réduire la distance entre les réponses fournies par les participants et leurs véritables préférences.
+
+\subsection{Argument des illusions d'optiques}
+
+Les paradoxes expérimentaux peuvent tout simplement montrer, non pas que la théorie de l'utilité espérée est invalidée mais que les agents économiques peuvent se tromper (ils peuvent être victimes d’illusion cognitive dans leur prise de décision en univers incertain).
+
+La question est de savoir si de telles erreurs sont fréquentes ou non dans les actes économiques réels. En effet, ce qui nous intéresse en tant qu'économistes, c'est ce qui détermine le comportement des individus (pas
+ce qui devrait le déterminer) : si la plupart des agents font des erreurs par rapport à la théorie, alors la théorie de l'utilité espérée n'est sans doute pas adaptée.
+
+\subsection{Disparition des individus irrationnels}
+
+Un autre argument serait de dire que les individus irrationnels, c'est-à-dire ne respectant pas les axiomes de l'utilité espérée tendent à disparaitre parce qu'ils changent de comportement avant d'être ruinés ou par ruine
+
+\subsection{Théories alternatives}
+
+Plutôt que de tenter de « sauver » la théorie de l'utilité espérée, il est possible d'envisager des approches qui la transcendent. Une telle démarche se manifeste par la théorie de l'utilité non espérée, qui propose de transformer les probabilités plutôt que les valeurs de la richesse. Cette perspective est enrichie par la théorie des perspectives développée par Kahneman et Tversky en 1979, qui met en lumière l'impact des biais cognitifs et l'aversion à la perte sur les décisions économiques. En outre, l'économie expérimentale s'est ouverte à des collaborations interdisciplinaires, intégrant les contributions de psychologues, de neuroscientifiques et d'autres experts pour mieux comprendre les comportements humains face à l'incertitude et aux choix. Cette approche holistique permet d'approfondir notre compréhension des mécanismes décisionnels au-delà des modèles traditionnels.
+
+\chapter{Mesure du risque \& degré d'aversion}
+
+\section{Équivalent certain}
+
+
+\section{Prix de vente}
+
+
+\section{Prime de risque}
+
+
+\section{Prime de risque et degré d'aversion}
+
+
+\section{ Les trois primes de risque et les indices d'aversion associés}
 
 
 
