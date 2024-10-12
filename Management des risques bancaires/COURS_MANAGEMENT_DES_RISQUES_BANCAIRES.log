@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.3.31)  3 OCT 2024 23:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2024.10.12)  12 OCT 2024 14:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -521,8 +521,8 @@ Overfull \hbox (2.04562pt too wide) in paragraph at lines 36--37
 
 
 {C:/Users/issak/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-12 234518.png, id=76, 3
-79.4175pt x 235.63031pt>
+<../../../Pictures/Screenshots/Capture d'écran 2024-09-12 234518.png, id=100, 
+379.4175pt x 235.63031pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-12 234518.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-09-12 234518.png>
@@ -680,7 +680,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [14]
 <../../../Downloads/Screenshot 2024-09-14 at 19-01-08 Economie de l’industrie
- des services financiers - C2 risques bancaires M1 24.pdf.png, id=167, 637.3812
+ des services financiers - C2 risques bancaires M1 24.pdf.png, id=191, 637.3812
 6pt x 429.605pt>
 File: ../../../Downloads/Screenshot 2024-09-14 at 19-01-08 Economie de l’indu
 strie des services financiers - C2 risques bancaires M1 24.pdf.png Graphic file
@@ -755,7 +755,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [17]
 <../../../Downloads/Screenshot 2024-09-15 at 18-52-45 Management des risques ba
-ncaires - C3 risques bancaires M1 24.pdf.png, id=194, 483.8075pt x 363.3575pt>
+ncaires - C3 risques bancaires M1 24.pdf.png, id=218, 483.8075pt x 363.3575pt>
 File: ../../../Downloads/Screenshot 2024-09-15 at 18-52-45 Management des risqu
 es bancaires - C3 risques bancaires M1 24.pdf.png Graphic file (type png)
 <use ../../../Downloads/Screenshot 2024-09-15 at 18-52-45 Management des risque
@@ -784,7 +784,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [19]
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-21 170847.png, id=205, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-09-21 170847.png, id=229, 
 314.67563pt x 181.42781pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-21 170847.png Grap
 hic file (type png)
@@ -832,7 +832,7 @@ Overfull \hbox (1.78862pt too wide) in paragraph at lines 307--308
 \T1/cmr/m/n/12 NBFI re-pr�-sen-tant 46,8%
  []
 
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-21 171536.png, id=206, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-09-21 171536.png, id=230, 
 232.61906pt x 215.30438pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-21 171536.png Grap
 hic file (type png)
@@ -880,7 +880,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [20 <../../../Pictures/Screenshots/Capture d'écran 2024-09-21 170847.png> <../
 ../../Pictures/Screenshots/Capture d'écran 2024-09-21 171536.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-21 171848.png, id=213, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-09-21 171848.png, id=237, 
 590.205pt x 483.30562pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-21 171848.png Grap
 hic file (type png)
@@ -888,7 +888,7 @@ hic file (type png)
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-09
 -21 171848.png  used on input line 321.
 (pdftex.def)             Requested size: 354.12573pt x 289.98561pt.
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-21 172259.png, id=214, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-09-21 172259.png, id=238, 
 791.20593pt x 394.47375pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-21 172259.png Grap
 hic file (type png)
@@ -941,7 +941,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [25]
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-21 195110.png, id=240, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-09-21 195110.png, id=264, 
 307.90031pt x 167.87718pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-21 195110.png Grap
 hic file (type png)
@@ -954,7 +954,7 @@ Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-09
 Package wrapfig Warning: Collision between wrapping environments on input line 
 379.
 
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-21 195405.png, id=241, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-09-21 195405.png, id=265, 
 328.22626pt x 298.86656pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-21 195405.png Grap
 hic file (type png)
@@ -1066,6 +1066,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [32]
+<../../../Pictures/Screenshots/Capture d'écran 2024-10-12 095037.png, id=303, 
+423.08063pt x 121.95563pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-12 095037.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2024-10-12 095037.png>
+Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
+-12 095037.png  used on input line 556.
+(pdftex.def)             Requested size: 296.15442pt x 85.36833pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1074,39 +1083,265 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[33] (COURS_MANAGEMENT_DES_RISQUES_BANCAIRES.aux)
+[33 <../../../Pictures/Screenshots/Capture d'écran 2024-10-12 095037.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[34]
+Chapitre 3.
+[35
+
+]
+<../../../Pictures/Screenshots/Capture d'écran 2024-10-12 102311.png, id=319, 
+354.57469pt x 146.04562pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-12 102311.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2024-10-12 102311.png>
+Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
+-12 102311.png  used on input line 582.
+(pdftex.def)             Requested size: 212.74644pt x 87.62804pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[36 <../../../Pictures/Screenshots/Capture d'écran 2024-10-12 102311.png>]
+<../../../Pictures/Screenshots/Capture d'écran 2024-10-12 105123.png, id=326, 
+281.55188pt x 157.33781pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-12 105123.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2024-10-12 105123.png>
+Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
+-12 105123.png  used on input line 617.
+(pdftex.def)             Requested size: 197.08496pt x 110.13571pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\setbox' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hbox' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\textstyle' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathaccent' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\setbox' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hbox' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathsurround' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\textstyle' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathaccent' on input line 621.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 621.
+
+<../../../Pictures/Screenshots/Capture d'écran 2024-10-12 111754.png, id=327, 
+187.45032pt x 144.54pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-12 111754.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2024-10-12 111754.png>
+Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
+-12 111754.png  used on input line 634.
+(pdftex.def)             Requested size: 168.7037pt x 130.08478pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[37 <../../../Pictures/Screenshots/Capture d'écran 2024-10-12 105123.png>]
+<../../../Pictures/Screenshots/Capture d'écran 2024-10-12 113519.png, id=335, 
+361.35pt x 165.61874pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-12 113519.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2024-10-12 113519.png>
+Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
+-12 113519.png  used on input line 645.
+(pdftex.def)             Requested size: 361.34912pt x 165.61833pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[38 <../../../Pictures/Screenshots/Capture d'écran 2024-10-12 111754.png>]
+<../../../Pictures/Screenshots/Capture d'écran 2024-10-12 114552.png, id=341, 
+396.7322pt x 103.88812pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-12 114552.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2024-10-12 114552.png>
+Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
+-12 114552.png  used on input line 651.
+(pdftex.def)             Requested size: 396.73122pt x 103.88786pt.
+
+Overfull \hbox (6.73122pt too wide) in paragraph at lines 651--652
+ [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[39 <../../../Pictures/Screenshots/Capture d'écran 2024-10-12 113519.png> <../
+../../Pictures/Screenshots/Capture d'écran 2024-10-12 114552.png>]
+<../../../Pictures/Screenshots/Capture d'écran 2024-10-12 142804.png, id=348, 
+323.70938pt x 73.77562pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-12 142804.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2024-10-12 142804.png>
+Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
+-12 142804.png  used on input line 673.
+(pdftex.def)             Requested size: 323.70859pt x 73.77542pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[40 <../../../Pictures/Screenshots/Capture d'écran 2024-10-12 142804.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[41] (COURS_MANAGEMENT_DES_RISQUES_BANCAIRES.aux)
 Package rerunfilecheck Info: File `COURS_MANAGEMENT_DES_RISQUES_BANCAIRES.out' 
 has not changed.
-(rerunfilecheck)             Checksum: 2ACA482E884DD608FE3E9E955DCD637E;4981.
+(rerunfilecheck)             Checksum: 2D254C33E147AC0568F5EDDBEBBC175A;7784.
  ) 
 Here is how much of TeX's memory you used:
- 13206 strings out of 475385
- 218625 string characters out of 2776907
- 568604 words of memory out of 3000000
- 34289 multiletter control sequences out of 15000+600000
- 482980 words of font info for 61 fonts, out of 8000000 for 9000
+ 13322 strings out of 475385
+ 224460 string characters out of 2776906
+ 568605 words of memory out of 3000000
+ 34381 multiletter control sequences out of 15000+600000
+ 486278 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,12n,77p,1469b,530s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+ <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi
 1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecbx1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecbx1440.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecbx1728.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/issak/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/issak/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/issak/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users
-/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><
-C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
-8.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/eurosym/feymr10.pfb>
-Output written on COURS_MANAGEMENT_DES_RISQUES_BANCAIRES.pdf (33 pages, 1844785
+0\tcrm1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecbx1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecbx1440.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\issak\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/issak/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/issak/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/i
+ssak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:
+/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12
+.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmr6.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr8.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/issak/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/issak/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/eurosym/feymr10.pfb><C:/Users/issak/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on COURS_MANAGEMENT_DES_RISQUES_BANCAIRES.pdf (41 pages, 2030208
  bytes).
 PDF statistics:
- 648 PDF objects out of 1000 (max. 8388607)
- 96 named destinations out of 1000 (max. 500000)
- 174 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 787 PDF objects out of 1000 (max. 8388607)
+ 112 named destinations out of 1000 (max. 500000)
+ 257 words of extra memory for PDF output out of 10000 (max. 10000000)
 

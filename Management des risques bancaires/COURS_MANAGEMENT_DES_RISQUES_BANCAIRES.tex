@@ -551,4 +551,138 @@ $$
 \frac{1}{3}\cdot 340 +\frac{2}{3}\cdot25=130
 $$
 
+Vous êtes le banquier référent. Quel plan préféreriez-vous ? Avec un taux d’actualisation de 0 \%, vous êtes neutre à l’égard du risque. Cela implique que vous considérez les remboursements espérés par les différents créanciers de manière équitable.
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-10-12 095037}
+\end{center}
+
+Le banquier et les détenteurs d'obligations senior préfèrent le plan A. En revanche, les détenteurs d'obligations junior optent pour le plan B, demandant à être remboursés à la valeur faciale de la dette, soit 45, si le plan A est adopté. La banque accepte cette demande, car avec le plan A, le calcul est le suivant : 200 - 45 = 155, ce qui est supérieur à 100 du plan B.
+
+Cependant, les détenteurs d'obligations senior agissent comme des passagers clandestins (\textit{free riders}), demandant également à être remboursés à la valeur faciale de la dette, soit 45 au lieu de 24. Pour la banque, cela donne : 200 - 45 - (45 - 24) = 134, ce qui est toujours supérieur à 100. Ainsi, elle reste gagnante par rapport au plan B.
+
+\chapter{La relation entre la banque et l’entreprise}
+
+\section*{Introduction}
+
+La banque collecte des informations tout en rassemblant des ressources auprès des déposants et en accordant des crédits. La théorie bancaire analyse cette double relation, d'une part entre les emprunteurs (entreprises, particuliers, etc.) et la banque, et d'autre part entre les déposants et la banque. Cela inclut les contrats de dépôt et les contrats de crédit (ou contrats de dette).
+
+Pour éviter le problème d'aléa moral (AI ex-post) entre prêteurs et emprunteurs, la banque met en place un contrat de dette avec des garanties.
+
+Le contrat de dette permet de sanctionner les entreprises en cas de déclarations fallacieuses. Les déposants, quant à eux, sont confrontés au comportement potentiellement opportuniste de la banque, qui pourrait dissimuler ses véritables revenus. Ils ont donc intérêt à déposer leurs fonds auprès d'une banque et à déléguer la surveillance des emprunteurs à cette dernière. Cela entraîne un coût de délégation, car les déposants doivent faire confiance à la banque pour gérer cette surveillance de manière efficace et transparente.
+
+\section{La banque comme « surveillant délégué » : le modèle de Diamond, 1984}
+
+La banque agit comme « surveillant délégué » selon le modèle de Diamond (1984), ce qui concerne la relation entre les entreprises (emprunteurs) et la banque. Pour éviter le problème d’aléa moral de l’emprunteur, deux possibilités s'offrent à la banque : mettre en place un contrat de dette impliquant un audit de l’emprunteur en cas de défaut de paiement, comme proposé par Townsend (1979), ou établir un contrat de dette sans audit, mais avec des pénalités non pécuniaires en cas de défaut, ce qui est assimilable à un contrat de dette avec garanties, selon Diamond (1984).
+
+\subsection{Modèle de Townsend : 2 agents neutres au risque}
+
+Investissement I en $t = 0$ revenus $y \in [0;+\infty[$ en $t=1$ avec 1 fonction de densité $f(y)$ Investisseur (prêteur) n’a pas l’information
+concernant la réalisation de $y$, sauf à mener unaudit dont le coût est de $K$
+\begin{center}
+	\includegraphics[scale=0.6]{../../../Pictures/Screenshots/Capture d'écran 2024-10-12 102311}
+\end{center}
+On note :
+
+$S_1$ l’intervalle de revenus déclarés pour lequel un audit intervient en $t = 1$
+
+$S_0$ l’intervalle pour lequel aucun audit n’est prévu en $t = 1$
+
+$R_1$ le paiement au prêteur dans la région de vérification $S_1$
+
+$R_0$ le paiement au prêteur dans la région de non vérification $S_0$
+
+Lorsque $\widehat{y}\in S_0$, le paiement $R_0$ est en fonction de $\widehat{y}$ : $R_0(\widehat{y})$
+
+Lorsque $\widehat{y}\in S_1$, un audit intervient alors le paiement $R_1$ est fonction du revenu réel y : $R_1(y)$
+
+L'objectif est de trouver le contrat qui maximise l’espérance de revenu de l’entrepreneur (emprunteur) tout en l'incitant à déclarer ses véritables revenus et en tenant compte de la participation de l’investisseur (prêteur). Pour cela, deux conditions doivent être remplies afin d'inciter l'entrepreneur à déclarer ses véritables revenus, ce qui constitue un contrat incitatif : 
+
+Condition 1 (sans audit) :
+$$
+\forall y \in S_0\;,\; R_0(\widehat{y})=D
+$$
+Avec $D$ une constante ou un remboursement fixe
+
+Condition 2 (avec audit) :
+$$
+\forall y \in S_1\;,\; R_1(y)\le D
+$$
+
+Programme de maximisation sous contrainte
+$$
+\begin{cases}\max \int_{S_0}(y-D)f(y)dy+\int_{S_1}[y-R_1(y)]f(y)dy\quad(1)\\s.c. \, \int_{S_0}Df(y)dy+\int_{S_1}[R_1-K]f(y)dy\ge i\quad(2)\end{cases}
+$$
+$i$ revenu attendu par les investisseurs s’ils placent leurs fonds au taux d’intérêt du marché. Equation (2) = contrainte de participation de l’investisseur
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-10-12 105123}
+\end{center}
+Le modèle démontre l'optimalité d'un contrat de dette standard, caractérisé par un paiement fixe lorsque l’entrepreneur ne fait pas faillite. En cas de faillite, la totalité des revenus de l'emprunteur est saisie, accompagnée d'un audit systématique.
+
+\subsection{Modèle de Diamond : contrat avec remboursement fixe ($D$) et pénalités non pécuniaires fixées à $(D-\widehat{y})$ pour l’entrepreneur en cas de défaillance $(\widehat{y}<D)$}
+
+Ce système de pénalités permet de réduire l'incitation de l'entrepreneur à minimiser le remboursement au prêteur. $\forall\;\widehat{y}$ L'entrepreneur doit débourser $D$ en raison du crédit contracté à $t=0$. Les pénalités non pécuniaires se traduisent par la perte de réputation subie par l'entrepreneur en cas de défaillance.
+
+La contrainte d’incitation de l’entrepreneur est égale à : $R(y)+\phi(y)=D$
+
+$R(y)$ paiement de l’entrepreneur à l’investisseur, $\phi(y)$ montant de la pénalité encourue en cas de défaut, $D$ remboursement fixe.
+
+Programme de minimisation sous contrainte
+$$
+\begin{cases}\min \int_{0}^{D} \phi(y)f(y)dy \\s.c. \, \int_{0}^{D} yf(y)dy+\int_{D}^{\infty}Df(y)dy\ge i\end{cases}
+$$
+\begin{center}
+	\includegraphics[scale=0.9]{../../../Pictures/Screenshots/Capture d'écran 2024-10-12 111754}
+\end{center}
+
+D’après Lacker (1991), qui interprète le modèle de Diamond, le contrat de dette est comparable à un contrat de dette avec garanties. Si $\widehat{y}<D$ l'emprunteur fait défaut, le prêteur peut saisir les biens servant de garanties à hauteur du montant du défaut de paiement. Le paiement des garanties inciterait l’emprunteur à déclarer ses véritables revenus, jouant ainsi un rôle crucial pour résoudre les problèmes d’aléa moral. Cependant, le modèle de Diamond ignore le deuxième effet des garanties : le dédommagement du prêteur en cas de défaillance de l'emprunteur. La pénalité non pécuniaire ne profite pas directement au prêteur, mais elle entraîne l'absence de coût de surveillance pour ce dernier.
+
+Comment un intermédiaire financier (IF) réduit-il les coûts de surveillance des emprunteurs ? Plusieurs questions se posent : Pourquoi les investisseurs ou déposants confient-ils leur épargne à une banque ? Pourquoi ne préfèrent-ils pas financer directement les entreprises en leur achetant des titres (actions ou obligations) sur les marchés ? La réponse réside dans le fait que l'IF permet de réduire les coûts de surveillance. 
+
+Cependant, un autre problème d’agence existe entre la banque et les déposants. La banque reçoit les remboursements des emprunts, mais les déposants ne les observent pas directement. Cela soulève la question de savoir comment s’assurer que la banque n’adopte pas un comportement opportuniste vis-à-vis des déposants. Enfin, qui surveille le contrôleur des remboursements ?
+
+Diamond introduit deux éléments supplémentaires : pour financer un projet d'investissement de 1\euro, l'entrepreneur doit lever des fonds auprès de $m$ investisseurs. Chaque investisseur dispose d'un montant de $\left( \frac{1}{m}\right)$\euro. Par ailleurs, une banque finance $N$ firmes (emprunteurs), et chaque entrepreneur (emprunteur) reçoit un crédit de 1\euro.
+
+\includegraphics{../../../Pictures/Screenshots/Capture d'écran 2024-10-12 113519}
+
+Il existe trois types de financement. Le premier est le financement direct par dette obligataire, avec des pénalités non pécuniaires $\phi(y)=D-\widehat{y}$ en cas de défaut $(\widehat{y} < D)$. Ce modèle, proposé par Diamond, implique un contrat de dette avec pénalités non pécuniaires. Le deuxième type est le financement direct par émission d’actions auprès de $m$ investisseurs, où un audit systématique au coût $K$ est effectué par chacun des $m$ investisseurs, $\forall\;\widehat{y}$. Enfin, le troisième type est le financement indirect par la banque, qui propose un contrat de dépôt permettant de récupérer les fonds de $m$ déposants. La banque utilise ces fonds pour financer les emprunteurs et se charge de l’audit des emprunteurs en $t=1$. 
+
+L'entrepreneur opte pour le type de financement qui maximise son espérance de revenu.
+\begin{center}
+	\includegraphics{../../../Pictures/Screenshots/Capture d'écran 2024-10-12 114552}
+\end{center}
+
+La surveillance de l’emprunteur devient inutile si le financement direct par dette obligataire domine les financements direct par émission d’actions et indirect par la banque.
+$$
+\int_{0}^{D}\phi f(y)dy<\min \left[ K+\phi_B \cdot K\right]
+$$
+Si la surveillance est nécessaire (l'inégalité n'est pas respectée), il y a une supériorité systématique de la délégation de la surveillance à un intermédiaire financier (IF) lorsque $K+\phi_B < m \cdot K$. Cependant, cela entraîne un problème d’aléa moral au niveau du contrôleur, c'est-à-dire la banque.
+
+\subsubsection{Exemple numérique (Diamond 1996 « \textit{Financial intermediation as delegated monitoring: a simple example} »)}
+
+un projet d'investissement s'élève à 100 \textsterling. Ce projet rapporte 140 \textsterling~avec une probabilité de 80 \% et 100 \textsterling avec une probabilité de 20 \%. La valeur espérée du projet est donc $\mathbb{E}(V) = 0,8 \cdot 140 + 0,2 \cdot 100 = 132 \;\text{\textsterling}$. La rentabilité espérée est de 32 \% $\left( \frac{132 - 100}{100}\right)$. La firme souhaite réaliser une augmentation de capital pour financer un investissement de 1 million de \textsterling, en émettant 10 000 titres à 100 \textsterling~chacun. Les dividendes dépendent des résultats que l’entreprise déclarera, et le coût de surveillance est de 200 \textsterling~par actionnaire.
+
+La gestion de l’entreprise est opaque, ce qui entraîne l'absence de souscription d’actions, car l'entreprise est jugée peu fiable et peut mentir sur ses revenus. De plus, le coût de surveillance de 200 £ est supérieur au prix du titre de 100 £. Par conséquent, l’entreprise ne peut pas financer son projet par l’émission d’actions.
+
+Elle se tourne alors vers le financement auprès d’une banque, en établissant un contrat de dette B avec un remboursement de $100 \cdot (1 + \rho$), où $\rho$ représente le taux d’intérêt débiteur. Si l’entreprise ne peut pas rembourser, elle risque la liquidation. Le taux d’intérêt sans risque est fixé à 5 \%. Il est nécessaire de calculer le taux débiteur pour couvrir les charges de la banque.
+$$
+\frac{0.8\cdot100(1+\rho)}{1+0,05}-100=0\longrightarrow \rho=31,25\%
+$$
+Entreprise rembourse 131,25 \textsterling~; Gain de 8,75 \textsterling~ (=140 – 131,25) dans 80 \% des cas
+
+\begin{center}
+	\includegraphics{../../../Pictures/Screenshots/Capture d'écran 2024-10-12 142804}
+\end{center}
+
+Imaginons maintenant que la banque accorde un crédit C à un taux débiteur $\rho^{'}$ et un contrat de dépôt D souscrit au taux créditeur $r$. Dans ce cadre, la banque agit en tant qu'intermédiaire entre 10 000 investisseurs (déposants) et un emprunteur.
+
+
+
+
+
+
+\section{Les relations de clientèle et les relations de long terme}
+
+\section{La gestion du risque de crédit (titrisation, dérivés de crédit)}
+
+
 \end{document}
