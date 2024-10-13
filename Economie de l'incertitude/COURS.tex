@@ -8,6 +8,7 @@
 \usepackage{eurosym}
 \usepackage{booktabs}
 \usepackage{cancel}
+\usepackage{wrapfig}
 \usepackage{hyperref}
 \pagestyle{fancy}
 \fancyhead[R]{Université Paris-Est Créteil}
@@ -20,7 +21,13 @@
 \newcolumntype{C}[1]{>{\centering\arraybackslash }b{#1}} 
 %\renewcommand{\thechapter}{\Roman{chapter}}
 %\setcounter{chapter}{1} % pour numéroter le chapitre 
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+
 \begin{document}
+	
 	\chapter*{Introduction}
 	
 \section{Hypothèse d'information parfaite}
@@ -1087,7 +1094,6 @@ Plutôt que de tenter de « sauver » la théorie de l'utilité espérée, il es
 \chapter{Mesure du risque \& degré d'aversion}
 
 \section{Équivalent certain}
-
 
 \section{Prix de vente}
 
