@@ -9,6 +9,7 @@
 \usepackage{booktabs}
 \usepackage{cancel}
 \usepackage{wrapfig}
+\usepackage{tikz}
 \usepackage{hyperref}
 \pagestyle{fancy}
 \fancyhead[R]{Université Paris-Est Créteil}
@@ -1093,7 +1094,90 @@ Plutôt que de tenter de « sauver » la théorie de l'utilité espérée, il es
 
 \chapter{Mesure du risque \& degré d'aversion}
 
+Jusqu'à présent, nous avons vu une mesure spécifique de l'attitude face au risque des individus : la constante $k$, qui est le coefficient associé à la variance dans les fonctions de Markowitz. Dans ce chapitre, nous allons explorer comment mesurer, de manière monétaire, l'attitude face au risque, quelle que soit la fonction d'utilité utilisée. Ainsi, nous introduirons plusieurs concepts clés, tels que l'équivalent certain, le prix de vente et la prime de risque. De plus, nous verrons comment mesurer le degré d'aversion au risque à travers des indices d'aversion, ce qui nous permettra d'approfondir notre compréhension des comportements des investisseurs face à l'incertitude financière.
+
 \section{Équivalent certain}
+
+Définition : l'équivalent certain d'une richesse aléatoire $W$ est la richesse certaine $\bar{w}$ qui procure la même utilité que la richesse aléatoire $W$ :
+$$
+\bar{w} \,|\, \underbrace{u(\bar{w})}_{\text{Utilité apportée par richesse
+		certaine}}= \underbrace{\mathbb{E}\left( u(W) \right)}_{\text{Espérance d'utilité de la
+		richesse aléatoire}}
+$$
+$$
+\Leftrightarrow \bar{w}=u^{-1}\left( \mathbb{E}\left( u(W) \right) \right)
+$$
+
+Avec $u^{-1}$ la fonction d'utilité réciproque
+
+L'équivalent certain dépend de la partie aléatoire $X$ de la richesse, de sa partie certaine $\omega$, des préférences $u$ de l'individu et des probabilités des états de la nature
+
+\subsection{Exemple}
+
+Soit un individu de préférences $u(w)=\sqrt{w}$ possédant une richesse certaine $\omega = 200$\euro~et confronté à la loterie $X$ suivante :
+$$
+X = \left\{\begin{matrix}
+	-50 & 100 \\
+	0,4 & 0,6 \\
+\end{matrix}\right.
+$$
+Quel est l'équivalent certain de cette loterie ?
+$$
+W = \omega+X = \left\{\begin{matrix}
+	200 -50 & 200+100 \\
+	0,4 & 0,6 \\
+\end{matrix}\right.= \left\{\begin{matrix}
+	150 & 300 \\
+	0,4 & 0,6 \\
+\end{matrix}\right.
+$$
+
+Remarque : $\omega$ représente la part non risquée de la richesse aléatoire et $W$ représente la part aléatoire de la richesse aléatoire
+
+On calcule l'espérance d'utilité de la richesse aléatoire :
+$$
+\mathbb{E}\left( u(W) \right)=\sum_{i=1}^{I}p_iu(w_i)
+$$
+$$
+=0,4 \cdot u(150) + 0,6 \cdot u(300)
+$$
+$$
+=0,4 \sqrt{150}+ 0,6\sqrt{300} \approx 15,29
+$$
+On cherche donc l'équivalent certain $\bar{w}$ tel que :
+$$
+u(\bar{w})= \mathbb{E}\left( u(W) \right)=15,29
+$$
+$$
+\Leftrightarrow \sqrt{\bar{w}}=15,29 \Leftrightarrow \bar{w} = 233,78 \text{\euro}
+$$
+Remarque : alternativement on aurait pu utiliser :
+$$
+\bar{w}=u^{-1}\left( \mathbb{E}\left( u(W) \right) \right)=15,29^2=233,78\text{\euro}
+$$
+
+L'agent est indifférent entre la richesse certaine de $233,78\text{\euro}$ et la richesse aléatoire $W$
+
+Remarque : l'équivalent certain de la richesse aléatoire $W$ est de $233,78\text{\euro}$, or l'espérance mathématique (en termes monétaires donc) de la richesse aléatoire $W$ est égale à :
+$$
+\mathbb{E}(W)=0,4\cdot150+0,6\cdot300=240\text{\euro}
+$$
+
+Ainsi, le décideur est prêt à recevoir une valeur certaine ($233,78\text{\euro}$) plus faible que la valeur moyenne de la richesse aléatoire $W$ ($240\text{\euro}$) pour être libéré du risque de variation de la richesse, on parle d'aversion au risque
+
+Nous reviendrons sur cet écart lorsque nous évoquerons le concept de prime de risque
+
+\subsection{Représentation graphique}
+
+\begin{center}
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-10-14 225055}
+\end{center}
+
+
+
+
+
+
 
 \section{Prix de vente}
 
