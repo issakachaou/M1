@@ -675,12 +675,119 @@ Entreprise rembourse 131,25 \textsterling~; Gain de 8,75 \textsterling~ (=140 �
 
 Imaginons maintenant que la banque accorde un crédit C à un taux débiteur $\rho^{'}$ et un contrat de dépôt D souscrit au taux créditeur $r$. Dans ce cadre, la banque agit en tant qu'intermédiaire entre 10 000 investisseurs (déposants) et un emprunteur.
 
+Les déposants délèguent à la banque la surveillance des emprunteurs, mais la banque peut déclarer à \( t=1 \) des revenus inférieurs à ceux reçus des emprunteurs. Ce coût de délégation, noté $\left( \phi_B\right)$, incite la banque à ne pas mentir sur les revenus reçus des emprunteurs. Ce coût représente une pénalité non pécuniaire $\left( \phi_B\right)$ si la banque ne respecte pas ses engagements contractuels, entraînant une perte de réputation. Le contrat de dette optimal entre la banque et les déposants est un contrat avec pénalité non pécuniaire. De plus, la diversification du portefeuille d’investisseurs (de déposants) de la banque tend à faire diminuer le coût de délégation vers 0 ($\phi_B$ tend vers 0 quand \( m \) tend vers \( \infty \)). Enfin, la diversification du portefeuille d’emprunteurs permet d’éliminer le risque de défaut de la banque vis-à-vis des déposants (investisseurs).
 
+Le projet d’investissement \( I \) s'élève à 100 £ et rapporte 140 £ avec une probabilité de 80 \% et 100 £ avec une probabilité de 20 \%. La valeur espérée du projet est donnée par \( \mathbb{E}(V) = 0,8 \cdot 140 + 0,2 \cdot 100 = 132 \). La rentabilité espérée est de 32 \% (calculée comme \( \frac{132 - 100}{100} \)). La firme souhaite procéder à une augmentation de capital pour financer un investissement de 1 million de £, en émettant 10 000 titres à 100 £ chacun. Les dividendes dépendent des résultats que l’entreprise déclarera. Enfin, le coût de surveillance est de 200 £ par actionnaire.
 
+La gestion de l’entreprise est opaque, car il n’y a pas de souscription d’actions en raison de la fiabilité douteuse de l’entreprise, qui peut mentir sur ses revenus. De plus, le coût de surveillance s'élève à 200 £, ce qui est supérieur au prix du titre de 100 £. Par conséquent, l’entreprise ne peut pas financer son projet par l’émission d’actions. 
 
+Pour le financement, l’entreprise se tourne vers une banque, avec un contrat de dette \( B \) qui prévoit un remboursement de \( 100 \cdot (1+\rho) \), où \( \rho \) représente le taux d’intérêt débiteur. Si l’entreprise ne peut pas rembourser, cela entraînera une liquidation. Le taux d’intérêt sans risque est de 5 \%, et il est nécessaire de calculer le taux débiteur pour couvrir les charges de la banque.
 
+Nous avons l'équation suivante pour le remboursement de l'entreprise : 
+\[
+\frac{0,8 \cdot 100(1+\rho)}{(1+0,05)}-100=0
+\]
+Cela donne un taux débiteur \( \rho = 31,25 \% \). Ainsi, l'entreprise rembourse 131,25 £, ce qui lui permet de réaliser un gain de 8,75 £ (calculé comme \( 140 - 131,25 \)) dans 80 \% des cas. Cet effet de levier entraîne une rentabilité espérée de 32 \%, qui est supérieure au taux débiteur de 31,25 \%.
+
+\begin{center}
+	\includegraphics[scale=0.8]{../../../Pictures/Screenshots/Capture d'écran 2024-10-16 143348}
+\end{center}
+
+Imaginons maintenant que la banque accorde un crédit \( C \) à un taux débiteur \( \rho' \) et qu'elle souscrit un contrat de dépôt \( D \) à un taux créditeur \( r \). Dans ce scénario, la banque agit en tant qu'intermédiaire entre 10 000 investisseurs (déposants) et un emprunteur.
+
+La banque engage 200 £ pour les coûts de surveillance et récupère 100 £ lorsque l’emprunteur fait défaut, ce qui se produit dans 20 \% des cas. En mutualisant les coûts de surveillance, la banque réduit le coût au niveau individuel à un montant négligeable de 0,01 £ (calculé comme \( \frac{100}{10\,000} \)) au lieu de 100 £ (soit 200 £ moins 100 £) en cas de liquidation. Pour simplifier, nous considérons donc ce coût comme nul. Dans 20 \% des cas, si l’emprunteur ne peut pas payer les intérêts de l’emprunt, la banque ne peut pas non plus payer les intérêts créditeurs sur les dépôts. 
+
+Cependant, la banque diversifie le risque en agissant comme intermédiaire (\textit{Middleman}) entre plusieurs emprunteurs et plusieurs investisseurs (déposants).
+
+Si la banque accorde deux crédits, \( C_1 \) et \( C_2 \), de 50 £ chacun à deux emprunteurs différents, le projet d’investissement d’un emprunteur rapporte une espérance de valeur donnée par l'équation suivante : 
+\[
+\mathbb{E}(V) = 70 \cdot 0,8 + 50 \cdot 0,2,
+\]
+ce qui signifie qu'il y a une probabilité de 80 \% d'obtenir 70 £ et une probabilité de 20 \% d'obtenir 50 £. De même, le second emprunteur a des capacités de remboursement similaires, basées sur la même structure de probabilités.
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-10-16 144340}
+	\\
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-10-16 144533}
+\end{center}
+
+Dans 4 \% des cas, la banque récupère 100 £, ce qui représente la capacité de remboursement des deux emprunteurs. Dans 96 \% des cas, la capacité de remboursement est supérieure ou égale à 120 £, permettant ainsi à la banque de rembourser les dépôts avec intérêts.
+
+Le contrat de dépôt \( D \) est accepté par les investisseurs (déposants) si le taux créditeur est tel que 
+\[
+\frac{0,96 \cdot 100 \cdot (1+r)}{1,05} - 100 = 0 \implies r = 9,375 \%.
+\]
+Dans 4 \% des cas, la banque ne paie pas l’intérêt aux déposants car \( 50 £ + 50 £ < 109,375 £ \) (soit \( 100 \cdot (1+0,09375) \)), entraînant ainsi la liquidation de la banque. Dans 96 \% des cas, la banque peut rembourser car elle dispose d'au minimum \( 50 £ \cdot (1 + \text{taux débiteur}) + 50 £ \). Le taux débiteur minimum \( \rho' \) est tel que 
+\[
+50 \cdot (1 + \rho') + 50 = 109,375 \implies \rho' = 18,75 \%.
+\]
+Cela entraîne un effet de levier accru, avec un taux débiteur passant de 31,25 \% à 18,75 \%. Si les deux emprunteurs font défaut, la liquidation de la banque est évitée si 
+\[
+FP = 9,375 \, (100 \cdot 0,09375).
+\]
+
+La banque a un avantage par rapport aux marchés pour surveiller les emprunteurs, en raison des économies d’échelle réalisées au niveau des coûts de contrôle (ou de surveillance). 
+
+Cela soulève un deuxième problème d’agence entre la banque et les déposants, à savoir l’aléa moral. En effet, les déposants ne peuvent pas vérifier les informations transmises par la banque concernant les remboursements des emprunteurs, ce qui les oblige à déléguer cette surveillance à la banque. Les coûts de délégation peuvent tendre vers zéro grâce à la diversification du portefeuille d’investisseurs (déposants). 
+
+En accordant des crédits à \( x \) emprunteurs, la banque est capable d’offrir une rémunération aux déposants qui est indépendante des états de nature, ce qui limite l’aléa moral.
 
 \section{Les relations de clientèle et les relations de long terme}
+
+Les grandes entreprises ont accès aux marchés, tandis que les PME et ETI sont davantage dépendantes des banques pour leur financement. Les financements par les marchés et par les banques ne sont pas de même nature. Le financement bancaire se caractérise par une plus forte continuité des relations, les banques étant capables de subir des pertes à court terme en misant sur la rentabilité à long terme de leurs engagements. En revanche, le financement par les marchés implique une relation à court terme sans garantir une telle assurance de liquidité pour les emprunteurs. Les banques proposent des financements relationnels, souvent désignés par le terme « relationship banking » ou banques à l’engagement, qui se traduisent par des relations à long terme et l’offre de plusieurs produits.
+
+Les marchés proposent des financements transactionnels fondés sur une interaction à court terme. L'association entre le financement bancaire et le financement relationnel n'est pas systématique. Dans le cadre du financement relationnel, les banques accumulent des informations qualitatives (soft) grâce à une relation étroite, qui inclut des éléments tels que les compétences managériales et l'honnêteté. À l'inverse, dans le financement transactionnel, les banques privilégient des informations quantitatives (hard), telles que les relevés de compte, les historiques des défauts de paiement et la capacité à fournir des garanties. Cela soulève la question des avantages et des limites d'une relation à long terme entre la banque et son client.
+
+\subsection{Les avantages}
+
+La possibilité de réduire les asymétries d'information (AI) découle de la relation à long terme entre la banque et l'emprunteur. Cette relation permet une accumulation continue de connaissances sur les clients, établissant un lien hors marché, bilatéral et non anonyme. De plus, le crédit est considéré comme un actif spécifique qui incorpore une information privée difficilement cessible.
+
+\subsubsection{Baisse de l’aléa moral}
+
+La relation à long terme permet à la banque de connaître la véritable nature de l'emprunteur, ce qui l'incite à révéler des informations pertinentes. En conséquence, la banque peut alors réduire les coûts de surveillance. Si l'emprunteur ne joue pas le jeu, la banque a la possibilité de le menacer de représailles, telles que le non-renouvellement des lignes de crédit. Ce client craint alors une perte de relation avec la banque ou un rationnement du crédit. Cette dynamique est illustrée dans l'article de Stiglitz et Weiss (1983) intitulé « \textit{Incentive Effects of Termination: Applications to the Credit and Labour Markets} » publié dans l'American Economic Review. La cessation de l'octroi de crédit à un client constitue un mauvais signal, et cette menace s'avère efficace.
+
+\subsubsection{Lissage temporel}
+
+Les prêteurs et les emprunteurs partagent la même information, laquelle n'est pas utilisable par d'autres potentiels prêteurs. Les banques sont incitées à maintenir le financement même durant les périodes difficiles ; en retour, la firme garantit sa fidélité envers la banque. Cela peut se traduire par une restructuration du prêt, compensant les pertes actuelles par des gains futurs pour éviter la faillite, ainsi qu'un lissage temporel des remboursements sur un horizon à long terme. Les marchés de capitaux n'offrent pas de telles conditions. Pour plus de détails, on peut se référer à l'article de Mayer (1988) intitulé « New Issues in Corporate Finance » publié dans l'European Economic Review.
+
+
+\subsubsection{Baisse des coûts d’acquisition de l’information}
+
+La banque acquiert et accumule des informations sur le client, notamment lors du prêt et à travers l'historique des comptes, mémorisant ainsi l'histoire du client. Les informations acquises sont non standardisées, non homogénéisables et non transmissibles, ce qui fait que seule la banque dispose d'une bonne évaluation du risque de défaut du client. 
+
+Selon Haubrich (1989), la banque observe l'historique des véritables versements des emprunteurs et procède à des tests statistiques pour comparer le rendement moyen déclaré du projet au rendement moyen véritable. En cas d'écart important, la banque peut sanctionner en suspendant le crédit, bien qu'il existe une certaine tolérance, le client ayant droit à la malchance. 
+
+Sharpe (1990) distingue entre banque interne et banque externe : la banque interne, celle qui a accordé le prêt, a un signal exact du résultat du projet de l'entreprise, qu'il s'agisse de succès ou d'échec, tandis que la banque externe, qui ne connaît pas la firme, reçoit des informations bruitées. 
+
+Les entreprises ayant réussi dans leur projet bénéficient de meilleures conditions de financement lors de la période suivante par la banque interne, car leur probabilité de réussite est plus élevée que celle des firmes inconnues. En revanche, la banque externe, qui n'a pas prêté à ces firmes, leur propose des conditions de financement moins avantageuses en raison d'un coût d'acquisition de l'information plus élevé.
+\newpage
+Les taux d'intérêt sont établis de manière à juste couvrir les charges de la banque, se présentant selon l'ordre suivant : 
+\[ 
+r_s < r_s' < r_p < r_f' < r_f 
+\]. 
+
+Ici, \( r_s \) représente le taux d'intérêt appliqué à la deuxième période par la banque interne aux firmes ayant réussi.
+
+\( r_s' \) est le taux appliqué à la même période par la banque externe aux firmes ayant également réussi. 
+
+\( r_p \) correspond au taux appliqué à la première période par les banques sur un marché concurrentiel lorsqu'elles ne connaissent pas les firmes. 
+
+\( r_f' \) est le taux appliqué à la deuxième période par la banque externe aux firmes n'ayant pas réussi
+
+\( r_f \) est le taux appliqué à la même période par la banque interne aux firmes n'ayant pas réussi. 
+
+On observe que \( r_f' < r_f \), ce qui indique que la banque interne connaît mieux son client que la banque externe, qui ne dispose que d'informations bruitées.\\
+
+Il est coûteux pour les firmes de quitter leur banque, ce qui engendre un effet de \textit{lock-in} ou d'enfermement. Les firmes de bonne qualité sont informationnellement capturées par les banques, qui en profitent pour extraire une rente sur ces firmes, en appliquant des taux d'intérêt plus élevés que ceux que les firmes devraient réellement payer. Bien que les banques surtaxent ces clients, elles leur accordent des avantages suffisants pour les inciter à rester. 
+
+À la deuxième période, chaque banque traite ses anciens clients comme si elle recevait un bruit plutôt qu'un vrai signal. Les banques internes proposent soit \( r_s' \), soit \( r_f' \) en fonction du résultat du projet de la première période, tandis que les banques externes ne peuvent pas offrir d'autres taux d'intérêt. En conséquence, les firmes se retrouvent captives de leur banque.
+
+Les banques accaparent des rentes extraites de leurs anciens clients pour accorder des conditions préférentielles aux nouveaux clients. Cependant, elles ne connaissent pas ces nouveaux clients et souhaitent établir une relation à long terme avec eux. Le modèle conclut qu'un excès de financements est accordé à de nouvelles firmes qui ne sont pas nécessairement les meilleures. Sharpe introduit la possibilité de construire des contrats basés sur la réputation pour éliminer ces inefficiences. Ainsi, la banque promet à ses anciens et nouveaux clients que le taux débiteur dépendra de la performance de la firme lors de la première période. Toute rupture de ce contrat sera connue des firmes, engageant ainsi la crédibilité de la banque. En respectant ces engagements, la banque peut dégager des gains supérieurs à ceux qu'elle obtiendrait en reniant ces engagements.
+
+\subsubsection{Exemple numérique : relation à long terme et risque moral}
+
+Considérons un exemple numérique illustrant la relation à long terme et le risque moral. Une entreprise effectue un emprunt et a le choix entre deux projets d'investissement : le projet S, qui rapporte 150 € avec une probabilité de 0,8 et 0 € avec une probabilité de 0,2, et le projet R, qui rapporte 162 € avec une probabilité de 0,5 et 0 € avec une probabilité de 0,5. Le taux d'intérêt sans risque est de 5 \%. Le banquier ne contrôle pas le choix du projet de l'emprunteur, qu'il s'agisse de S ou de R. La facturation du crédit ne peut pas dépasser 150 points de base au-dessus du taux d'équilibre, sinon le client ira voir une autre banque. Plusieurs scénarios sont possibles : (i) un contrat de crédit sur une période de 100 € ; (ii) un contrat de crédit sur deux périodes avec 100 € emprunté à chaque période.
+
 
 \section{La gestion du risque de crédit (titrisation, dérivés de crédit)}
 
