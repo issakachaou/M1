@@ -303,12 +303,501 @@ Dans la figure 11.3, nous avons supposé que les rendements des actions Intel et
 \end{wrapfigure}
 Lorsque les actions sont parfaitement corrélées positivement, on peut identifier l'ensemble des portefeuilles par la ligne droite qui les sépare. Dans ce cas extrême (la ligne rouge de la figure 11.4), la volatilité du portefeuille est égale à la volatilité moyenne pondérée des deux actions (il n'y a pas de diversification). En revanche, lorsque la corrélation est inférieure à 1, la volatilité des portefeuilles est réduite du fait de la diversification et la courbe s'infléchit vers la gauche. La réduction du risque (et l'inflexion de la courbe) s'accentue à mesure que la corrélation diminue. À l'autre extrême de la corrélation négative parfaite (ligne bleue), la ligne redevient droite, mais cette fois, elle se réfléchit sur l'axe vertical. En particulier, lorsque les deux actions sont parfaitement corrélées négativement, il devient possible de détenir un portefeuille qui ne comporte absolument aucun risque.
 
+\subsection{Retour Attendu et Volatilité avec une Vente à Découvert : problème}
+
+\subsubsection{Effet de la Vente à Découvert}
+
+Nous avons considéré uniquement des portefeuilles dans lesquels nous investissons un montant positif dans chaque action. Nous faisons référence à un investissement positif dans un titre comme une position longue dans le titre.
+
+Cependant, il est également possible d'investir un montant négatif dans une action, appelé position courte, en engageant une vente à découvert. Cela consiste en une transaction dans laquelle vous vendez une action aujourd'hui que vous ne possédez pas, avec l'obligation de la racheter à l'avenir.
+
+Comme le démontre l'exemple suivant, nous pouvons inclure une position courte comme partie d'un portefeuille en attribuant à cette action un poids de portefeuille négatif.
+
+Supposons que vous ayez 20 000 \$ en espèces à investir. Vous décidez de vendre à découvert pour un montant de 10 000 \$ d'actions Coca-Cola et d'investir les produits de votre vente à découvert, ainsi que vos 20 000 \$, dans Intel.
+
+Quelle est alors le retour attendu et la volatilité de votre portefeuille ?
+Nous pouvons considérer notre vente à découvert comme un investissement négatif de -10 000 \$ dans les actions de Coca-Cola. De plus, nous avons investi 30 000 \$ dans les actions d'Intel, pour un investissement net total de 30 000 \$ - 10 000 \$ = 20 000 \$ en espèces.
+
+Les poids de portefeuille correspondants sont les suivants :
+
+\[
+\omega_I = \frac{\text{valeur de l'investissement dans Intel}}{\text{valeur totale du portefeuille}} = \frac{30 000}{20 000} = 150\%
+\]
+
+\[
+\omega_{CC} = \frac{\text{valeur de l'investissement dans Coca-Cola}}{\text{valeur totale du portefeuille}} = \frac{-10 000}{20 000} = -50\%
+\]
+
+Notez que les poids du portefeuille s'additionnent toujours à 100\%.
+
+En utilisant ces poids de portefeuille, nous pouvons calculer le retour attendu et la volatilité du portefeuille comme suit :
+
+\[
+\mathbb{E}(r_p) = \omega_I \cdot \mathbb{E}(r_I) + \omega_{CC} \cdot \mathbb{E}(r_{CC})
+\]
+
+\[
+\mathbb{E}(r_p) = 150\% \cdot 26\% - 50\% \cdot 6\% = 36\%
+\]
+
+La variance du portefeuille est donnée par :
+
+\[
+\sigma^2_p = \omega^2_1 \sigma^2_1 + (1 - \omega_1)^2 \sigma^2_2 + 2 \omega_1 (1 - \omega_1) \sigma_1 \sigma_2 \rho_{1,2}
+\]
+
+La volatilité du portefeuille est alors calculée comme suit :
+
+\[
+\sigma_p = \sqrt{150\%^2 \cdot 50\%^2 + (1 - 150\%)^2 \cdot 25\%^2 + 2 \cdot 150\% \cdot (1 - 150\%) \cdot 50\% \cdot 25\% \cdot 0}
+\]
+\[ 
+= 76\%
+ \]
+Notez que dans ce cas, la vente à découvert augmente le retour attendu de votre portefeuille, mais également sa volatilité, au-delà de celle des actions individuelles.
+
+Rappelons que la vente à découvert est rentable si vous vous attendez à ce que le prix d'une action diminue à l'avenir. 
+
+Il est important de noter que lorsque vous empruntez une action pour la vendre à découvert, vous êtes obligé de l'acheter et de la retourner à l'avenir. Ainsi, lorsque le prix de l'action diminue, vous recevez plus au départ pour les actions que le coût de remplacement à l'avenir.
+
+Cependant, comme le montre l'exemple précédent, la vente à découvert peut être avantageuse même si vous vous attendez à ce que le prix de l'action augmente, tant que vous investissez les produits dans une autre action avec un retour attendu encore plus élevé. Cela dit, comme l'exemple le montre également, la vente à découvert peut considérablement augmenter le risque du portefeuille.
 
 
-\subsection{Rendement attendu et volatilité en cas de vente à découvert}
 
+\begin{center}
+	
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155216}
+
+\end{center}
 \subsection{Portefeuilles efficaces avec de nombreux titres}
+\begin{center}
+	
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155515}
 
-\subsection{Épargne et emprunt sans risque }
+\end{center}
+\begin{center}
+	
+\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155648}
+
+
+\end{center}
+\subsubsection{Diversification avec $N$ actions}
+
+Ajouter davantage d'actions à un portefeuille réduit le risque grâce à la diversification.
+
+Considérons l'effet d'ajouter à notre portefeuille une troisième action, Bore Industries, qui est non corrélée avec Intel et Coca-Cola, mais qui devrait avoir un retour très faible de 2\% et la même volatilité que Coca-Cola (25\%).
+
+La figure 11.6 illustre les portefeuilles que nous pouvons construire en utilisant ces trois actions. Étant donné que l'action Bore est inférieure à l'action Coca-Cola (elle a la même volatilité mais un retour plus faible), on pourrait supposer qu'aucun investisseur ne voudrait détenir une position longue dans Bore.
+
+Cependant, cette conclusion ignore les opportunités de diversification que Bore offre.
+
+La figure 11.6 montre les résultats de la combinaison de Bore avec Coca-Cola ou avec Intel (courbes bleu clair), ou de la combinaison de Bore avec un portefeuille 50-50 de Coca-Cola et Intel (courbe bleu foncé).
+
+Remarquez que certains des portefeuilles obtenus en combinant uniquement Intel et Coca-Cola (courbe noire) sont inférieurs à ces nouvelles possibilités.
+
+
+Lorsque nous combinons l'action Bore avec chaque portefeuille d'Intel et de Coca-Cola, et que nous permettons également des ventes à découvert, nous obtenons une région entière de possibilités de risque et de retour plutôt qu'une simple courbe.
+
+Cette région est montrée dans la zone ombragée de la figure 11.7. Mais notez que la plupart de ces portefeuilles sont inefficaces.
+
+Les portefeuilles efficaces (ceux offrant le retour attendu le plus élevé pour un niveau de volatilité donné) sont ceux situés sur le bord nord-ouest de la région ombragée, que nous appelons la frontière efficace pour ces trois actions.
+
+Dans ce cas, aucune des actions, prise seule, ne se trouve sur la frontière efficace, il ne serait donc pas efficace de placer tout notre argent dans une seule action.
+
+Lorsque l'ensemble des opportunités d'investissement passe de deux à trois actions, la frontière efficace s'améliore.
+
+Visuellement, l'ancienne frontière avec deux actions se situe à l'intérieur de la nouvelle frontière. En général, l'ajout de nouvelles opportunités d'investissement permet une plus grande diversification et améliore la frontière efficace. La figure 11.8 (diapositive suivante) utilise des données historiques pour montrer l'effet de l'augmentation de l'ensemble de trois actions (Amazon, GE et McDonald's) à dix actions.
+
+Bien que les actions ajoutées semblent offrir des combinaisons risque-retour inférieures prises individuellement, leur inclusion permet une diversification supplémentaire, ce qui améliore la frontière efficace.
+
+Ainsi, pour arriver au meilleur ensemble possible d'opportunités de risque et de retour, nous devrions continuer à ajouter des actions jusqu'à ce que toutes les opportunités d'investissement soient représentées.
+
+En fin de compte, sur la base de nos estimations de rendements, de volatilités et de corrélations, nous pouvons construire la frontière efficace pour tous les investissements risqués disponibles, montrant les meilleures combinaisons possibles de risque et de retour que nous pouvons obtenir par une diversification optimale.
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-10-17 160716}
+\end{center}
+
+\subsection{Épargne et emprunt sans risque}
+
+\subsubsection{Introduction de l'actif sans risque appelé \( r_f \)}
+
+Nous avons considéré les possibilités de risque et de retour qui résultent de la combinaison d'investissements risqués dans des portefeuilles. En incluant tous les investissements risqués dans la construction de la frontière efficace, nous atteignons une diversification maximale.
+
+Il existe une autre méthode, en plus de la diversification, pour réduire le risque que nous n'avons pas encore examinée : nous pouvons conserver une partie de notre argent dans un investissement sûr, sans risque, comme les bons du Trésor. Bien sûr, cela réduira notre retour attendu.
+
+Inversement, si nous sommes un investisseur agressif à la recherche de rendements élevés, nous pourrions décider d'emprunter de l'argent pour investir encore plus sur le marché boursier.
+
+Dans cette section, nous verrons que la capacité de choisir le montant à investir dans des titres risqués par rapport aux titres sans risque nous permet de déterminer le portefeuille optimal de titres risqués pour un investisseur.
+Considérons un portefeuille risqué arbitraire avec des rendements \( r_p \). Examinons l'effet sur le risque et le rendement de placer une fraction \( \omega \) de notre argent dans le portefeuille \( p \), tout en laissant la fraction restante \( (1 - \omega) \) dans des bons du Trésor sans risque avec un rendement \( r_f \). Le portefeuille qui comprend \( p \) et \( r_f \) est appelé \( \psi \).
+
+En utilisant nos équations précédentes, nous calculons le rendement attendu et la variance de ce portefeuille.
+
+\[
+\mathbb{E}(r_\psi) = \omega \cdot \mathbb{E}(r_p) + (1 - \omega) \cdot r_f 
+\]
+
+\[
+\mathbb{E}(r_\psi) = \omega \cdot \mathbb{E}(r_p) + r_f - \omega \cdot r_f 
+\]
+
+\[
+\mathbb{E}(r_\psi) = r_f + \omega \cdot (\mathbb{E}(r_p) - r_f) 
+\]
+
+La première équation indique simplement que le rendement attendu est la moyenne pondérée des rendements attendus des bons du Trésor et du portefeuille. Comme nous connaissons à l'avance le taux d'intérêt actuel payé sur les bons du Trésor, nous n'avons pas besoin de calculer un rendement attendu pour eux.
+
+La deuxième équation réorganise la première pour donner une interprétation utile : notre rendement attendu est égal au taux sans risque plus une fraction de la prime de risque du portefeuille, \( \mathbb{E}(r_p) - r_f \), en fonction de la fraction \( \omega \) que nous investissons dans celui-ci.
+
+Ensuite, calculons la volatilité. Étant donné que le taux sans risque \( r_f \) est fixe et ne varie pas avec (ou contre) notre portefeuille, sa volatilité et sa covariance avec le portefeuille sont toutes deux nulles.
+
+\[
+\sigma_\psi = \sqrt{(1 - \omega)^2 \cdot \sigma^2_{r_f} + \omega^2 \cdot \sigma^2_{r_p} + 2 \cdot (1 - \omega) \cdot \omega \cdot \sigma_{r_f, r_p}} 
+\]
+
+\[
+\sigma_\psi = \sqrt{(1 - \omega)^2 \cdot \sigma^2_{r_f} + \omega^2 \cdot \sigma^2_{r_p} + 2 \cdot (1 - \omega) \cdot \omega \cdot \sigma_{r_f, r_p}} 
+\]
+
+Les termes en bleu sont égaux à zéro :
+
+\[
+\sigma_\psi = \sqrt{\omega^2 \cdot \sigma^2_{r_p}} 
+\]
+
+\[
+\sigma_\psi = \omega \cdot \sigma_{r_p} 
+\]
+
+Cela signifie que la volatilité n'est qu'une fraction de la volatilité du portefeuille, en fonction du montant que nous y investissons.
+
+La ligne bleue dans la Figure 11.9 illustre les combinaisons de volatilité et de rendement attendu pour différents choix de \( \omega \). En regardant l'Équation (23), à mesure que nous augmentons la fraction \( \omega \) investie dans \( p \), nous augmentons à la fois notre risque et notre prime de risque proportionnellement.
+
+Ainsi, la ligne est droite depuis l'investissement sans risque jusqu'à \( p \).
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-10-17 161419}
+\end{center}
+
+\subsubsection{Emprunter et Acheter des Actions sur Marge}
+
+
+À mesure que nous augmentons la fraction \( \omega \) investie dans le portefeuille \( p \) de 0 à 100\%, nous nous déplaçons le long de la ligne dans la Figure 11.9, passant de l'investissement sans risque à \( p \).
+
+Si nous augmentons \( \omega \) au-delà de 100\%, nous obtenons des points au-delà de \( p \) dans le graphique.
+
+Dans ce cas, nous vendons à découvert l'investissement sans risque, donc nous devons payer le rendement sans risque ; en d'autres termes, nous empruntons de l'argent au taux d'intérêt sans risque.
+
+Emprunter de l'argent pour investir dans des actions est appelé acheter des actions sur marge ou utiliser l'effet de levier.
+
+Un portefeuille qui consiste en une position courte dans l'investissement sans risque est connu sous le nom de portefeuille à effet de levier. Comme vous pouvez vous y attendre, l'investissement sur marge est une stratégie d'investissement risquée.
+
+Notez que la région de la ligne bleue dans la Figure 11.9 avec \( \omega > 100\% \) présente un risque plus élevé que le portefeuille \( p \) lui-même. En même temps, l'investissement sur marge peut offrir des rendements attendus plus élevés que l'investissement dans \( p \) en utilisant uniquement les fonds dont nous disposons.
+
+\subsubsection{Investissement sur Marge : problème}
+
+Supposons que vous ayez 10 000 \$ en espèces et que vous décidiez d'emprunter un autre 10 000 \$ à un taux d'intérêt de 5\% afin d'investir 20 000 \$ dans le portefeuille \( Q \), qui a un rendement attendu de 10\% et une volatilité de 20\%.
+
+\begin{enumerate}
+	\item Quel est le rendement attendu et la volatilité de votre investissement ?
+	\item Quel est votre rendement réalisé si \( Q \) augmente de 30\% au cours de l'année ?
+	\item Que se passe-t-il si \( Q \) diminue de 10\% ?
+\end{enumerate}
+\subsubsection{Investissement sur Marge : solution}
+\begin{enumerate}
+	\item Vous avez doublé votre investissement dans \( Q \) en utilisant la marge, donc \( \omega = 200\% \). D'après nos dernières équations, nous voyons que vous avez augmenté à la fois votre rendement attendu et votre risque par rapport au portefeuille \( Q \) :
+	\[
+	\mathbb{E}(r_\psi) = r_f + \omega \cdot (\mathbb{E}(r_Q) - r_f) 
+	\]
+	\[
+	\mathbb{E}(r_\psi) = 5\% + 200\% \cdot (10\% - 5\%) = 15\% 
+	\]
+	\[
+	\sigma_\psi = \omega \cdot \sigma_Q = 200\% \cdot 20\% = 40\% 
+	\]
+	
+	\item Si \( Q \) augmente de 30\%, votre investissement vaudra 26 000 \$, mais vous devrez 10 000 \$ $\cdot$ (1 + 5\%) = 10 500 \$ sur votre prêt, pour un paiement net de 15 500 \$, soit un rendement de 55\% sur votre investissement initial de 10 000 \$.
+	
+	\item Si \( Q \) chute de 10\%, il vous reste 18 000 \$ - 10 500 \$ = 7 500 \$, et votre rendement est de -25\%.
+\end{enumerate}
+
+Ainsi, l'utilisation de la marge a doublé l'étendue de vos rendements (55\% - (-25\%) = 80\% contre 30\% - (-10\%) = 40\%), correspondant au doublement de la volatilité du portefeuille.
+
+\section{Portefeuille efficient et rendements requis}
+
+\subsection{Identifier le portefeuille tangent}
+
+\subsubsection{Introduction de l'actif sans risque appelé \( r_f \)}
+
+En regardant la Figure 11.9, nous pouvons voir que le portefeuille \( p \) n'est pas le meilleur portefeuille à combiner avec l'investissement sans risque. En combinant l'actif sans risque avec un portefeuille situé un peu plus haut sur la frontière efficace que le portefeuille \( p \), nous obtiendrons une ligne plus raide que celle passant par \( p \).
+
+Si la ligne est plus raide, alors pour tout niveau de volatilité, nous obtiendrons un rendement attendu plus élevé. Pour obtenir le rendement attendu le plus élevé possible pour tout niveau de volatilité, nous devons trouver le portefeuille qui génère la ligne la plus raide possible lorsqu'il est combiné avec l'investissement sans risque.
+
+La pente de la ligne passant par un portefeuille donné \( p \) est souvent appelée le ratio de Sharpe du portefeuille. Ce ratio peut être exprimé comme suit :
+\[
+\text{Ratio de Sharpe} = \frac{\text{Rendement Excédentaire du Portefeuille}}{\text{Volatilité du Portefeuille}} = \frac{ \mathbb{E}(r_p) - r_f}{\sigma}
+\]
+
+Le ratio de Sharpe mesure le rapport entre la récompense et la volatilité fourni par un portefeuille. Le portefeuille optimal à combiner avec l'actif sans risque sera celui avec le ratio de Sharpe le plus élevé, où la ligne avec l'investissement sans risque touche juste, et est donc tangente à, la frontière efficace des investissements risqués, comme le montre la Figure 11.10 (diapositive suivante).
+
+Le portefeuille qui génère cette ligne tangente est connu sous le nom de portefeuille tangent. Tous les autres portefeuilles d'actifs risqués se situent en dessous de cette ligne. Étant donné que le portefeuille tangent a le ratio de Sharpe le plus élevé de tous les portefeuilles de l'économie, il offre la plus grande récompense par unité de volatilité de tous les portefeuilles disponibles.
+
+Comme il est évident d'après la Figure 11.10, les combinaisons de l'actif sans risque et du portefeuille tangent fournissent le meilleur compromis risque-rendement disponible pour un investisseur. Cette observation a une conséquence frappante : le portefeuille tangent est efficace et, une fois que nous incluons l'investissement sans risque, tous les portefeuilles efficaces sont des combinaisons de l'investissement sans risque et du portefeuille tangent.
+
+Par conséquent, le portefeuille optimal d'investissements risqués ne dépend plus de la prudence ou de l'agressivité de l'investisseur ; chaque investisseur devrait investir dans le portefeuille tangent, indépendamment de ses préférences en matière de risque. Les préférences de l'investisseur détermineront uniquement combien investir dans le portefeuille tangent par rapport à l'investissement sans risque.
+
+Les investisseurs prudents investiront une petite somme, choisissant un portefeuille sur la ligne près de l'investissement sans risque. Les investisseurs agressifs investiront davantage, choisissant un portefeuille qui est proche du portefeuille tangent ou même au-delà en achetant des actions à crédit. Cependant, les deux types d'investisseurs choisiront de détenir le même portefeuille d'actifs risqués, le portefeuille tangent.
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-10-17 163726}
+\end{center}
+
+\subsection{Amélioration du portefeuille : Bêta et rendement requis}
+
+\subsubsection{Introduction de l'actif sans risque appelé \( r_f \)}
+
+Prenons un portefeuille arbitraire \( p \) et considérons si nous pourrions augmenter son ratio de Sharpe en vendant certains de nos actifs sans risque (ou en empruntant de l'argent) et en investissant le produit dans un investissement \( i \). Si nous faisons cela, il y a deux conséquences.
+
+Tout d'abord, en ce qui concerne le rendement attendu, étant donné que nous renonçons au rendement sans risque et le remplaçons par le rendement de \( i \), notre rendement attendu augmentera de l'excédent de rendement de \( i \), soit \( \mathbb{E}(r_i) - r_f \).
+
+Ensuite, en ce qui concerne la volatilité, nous ajouterons le risque que \( i \) a en commun avec notre portefeuille (le reste du risque de \( i \) sera diversifié). Le risque additionnel est mesuré par la volatilité de \( i \) multipliée par sa corrélation avec \( p \) : \( \sigma_i \cdot \rho_{i,p} \).
+
+Il est important de se demander si le gain en rendement provenant de l'investissement dans \( i \) est suffisant pour compenser l'augmentation du risque. Une autre façon d'augmenter notre risque aurait été d'investir davantage dans le portefeuille \( p \) lui-même. Dans ce cas, le ratio de Sharpe de \( p \) calculé comme \( \frac{\mathbb{E}(r_p) - r_f}{\sigma_p} \) nous indique combien le rendement augmenterait pour une augmentation donnée du risque.
+
+Étant donné que l'investissement dans \( i \) augmente le risque de \( \sigma_i \cdot \rho_{i,p} \), il offre une augmentation de rendement plus importante que ce que nous aurions pu obtenir avec \( p \) seul.
+
+Nous avons la condition suivante : 
+\[
+\mathbb{E}(r_i) - r_f > \sigma_i \cdot \rho_{i,p} \cdot \frac{\mathbb{E}(r_p) - r_f}{\sigma_p} 
+\]
+
+Pour fournir une interprétation supplémentaire de cette condition, combinons les termes de volatilité et de corrélation pour définir le \(\beta\) de l'investissement \( i \) avec le portefeuille \( p \) :
+
+\[
+\beta^p_i = \frac{\sigma_i \cdot \rho_{i,p}}{\sigma_p}
+\]
+
+Le \(\beta^p_i\) mesure la sensibilité de l'investissement \( i \) aux fluctuations du portefeuille \( p \). Autrement dit, pour chaque variation de 1 \% du rendement du portefeuille, le rendement de l'investissement \( i \) est censé changer de \(\beta^p_i\) \% en raison des risques que \( i \) a en commun avec \( p \).
+
+Avec cette définition, nous pouvons poser :
+
+\[
+\mathbb{E}(r_i) = r_f + \beta^p_i \cdot (\mathbb{E}(r_p) - r_f)
+\]
+
+Cela signifie qu'augmenter le montant investi dans \( i \) augmentera le ratio de Sharpe du portefeuille \( p \) si son rendement attendu \( \mathbb{E}(r_i) \) dépasse son rendement requis compte tenu du portefeuille \( p \).
+
+Le rendement requis est le rendement attendu nécessaire pour compenser le risque que l'investissement \( i \) contribuera au portefeuille. Le rendement requis pour un investissement \( i \) est égal au taux d'intérêt sans risque plus la prime de risque du portefeuille actuel \( p \), ajustée par la sensibilité de \( i \) au portefeuille, notée \( \beta^p_i \).
+
+Si le rendement attendu de \( i \) dépasse ce rendement requis, alors ajouter davantage de cet investissement améliorera la performance du portefeuille.
+
+\subsection{Rendements attendus et portefeuille efficient}
+
+\subsubsection{Problème}
+
+Vous êtes actuellement investi dans le Fonds Omega, un fonds diversifié avec un rendement attendu de 15 \% et une volatilité de 20 \%, ainsi que dans des obligations d'État sans risque offrant un rendement de 3 \%. 
+
+Votre courtier vous suggère d'ajouter un fonds immobilier à votre portefeuille. Ce fonds immobilier a un rendement attendu de 9 \%, une volatilité de 35 \%, et une corrélation (\( \rho \)) de 0,10 avec le Fonds Omega.
+
+La question se pose alors : l'ajout du fonds immobilier améliorera-t-il votre portefeuille ?
+
+\subsubsection{Solution}
+
+Soit \( r_{re} \) le rendement du fonds immobilier et \( r_{of} \) le rendement du Fonds Omega. D'après nos dernières équations, le \(\beta\) du fonds immobilier avec le Fonds Omega est donné par :
+
+\[
+\beta^{of}_{re} = \frac{\sigma_{re} \cdot \rho_{re,of}}{\sigma_{of}} = \frac{35\% \cdot 10\%}{20\%} = 0.175
+\]
+
+Nous pouvons maintenant déterminer le rendement requis qui rend le fonds immobilier une addition attrayante à notre portefeuille :
+
+\[
+r_{re} = r_f + \beta^{of}_{re} \cdot (E(r_{of}) - r_f) = 3\% + 0.175 \cdot (15\% - 3\%) = 5.1\%
+\]
+
+Étant donné que son rendement attendu de 9 \% dépasse le rendement requis de 5.1 \%, investir une certaine somme dans le fonds immobilier améliorera le ratio de Sharpe de notre portefeuille.
+
+\subsubsection{Présentation du véritable portefeuille efficient}
+
+Si le rendement attendu d'un actif dépasse son rendement requis, nous pouvons améliorer la performance du portefeuille \( p \) en ajoutant davantage de cet actif. Mais combien devrions-nous en ajouter ?
+
+À mesure que nous achetons des actions de l'actif \( i \), sa corrélation (et donc son \(\beta\)) avec notre portefeuille augmentera, ce qui augmentera finalement son rendement requis jusqu'à ce que \( \mathbb{E}(r_i) = r_i \). À ce stade, nos avoirs dans l'actif \( i \) sont optimaux. 
+
+De même, si le rendement attendu de l'actif \( i \) est inférieur au rendement requis \( r_i \), nous devrions réduire nos avoirs dans \( i \). En procédant ainsi, la corrélation et le rendement requis \( r_i \) diminueront jusqu'à ce que \( \mathbb{E}(r_i) = r_i \).
+
+Ainsi, si nous n'avons aucune restriction sur notre capacité à acheter ou vendre des actifs négociés sur le marché, nous continuerons à trader jusqu'à ce que le rendement attendu de chaque actif soit égal à son rendement requis (c'est-à-dire jusqu'à ce que \( \mathbb{E}(r_i) = r_i \) soit vrai pour tous les \( i \)).
+
+À ce stade, aucune transaction ne peut améliorer le ratio risque-rendement du portefeuille, de sorte que notre portefeuille est le portefeuille optimal et efficace. Un portefeuille est efficace si et seulement si le rendement attendu de chaque actif disponible est égal à son rendement requis :
+
+\[
+\mathbb{E}(r_i) = r_i = r_f + \beta^{eff}_i \cdot (\mathbb{E}(r_{eff}) - r_f)
+\]
+
+où \( r_{eff} \) est le rendement du portefeuille efficace, le portefeuille avec le plus haut ratio de Sharpe de tous les portefeuilles de l'économie.
+
+\section{Le modèle d'évaluation des actifs financiers (CAPM)}
+
+\subsection{Les trois principales hypothèses du CAPM}
+
+Les investisseurs peuvent acheter et vendre tous les actifs à des prix de marché compétitifs (sans encourir de taxes ou de coûts de transaction) et peuvent emprunter et prêter au taux d'intérêt sans risque.
+
+Tous les investisseurs choisissent un portefeuille d'actifs négociés qui offre le rendement attendu le plus élevé possible, compte tenu du niveau de volatilité qu'ils sont prêts à accepter : « Les investisseurs ne détiennent que des portefeuilles efficaces d'actifs négociés, des portefeuilles qui offrent le rendement attendu maximum pour un niveau de volatilité donné. »
+
+Il y a de nombreux investisseurs dans le monde, et chacun peut avoir ses propres estimations des volatilités, des corrélations et des rendements attendus des actifs disponibles. Les investisseurs ne formulent pas ces estimations de manière arbitraire ; ils les basent sur des modèles historiques et d'autres informations (y compris les prix du marché) qui sont largement accessibles au public.
+
+Si tous les investisseurs utilisent des sources d'information disponibles publiquement, alors leurs estimations sont susceptibles d'être similaires. Par conséquent, il n'est pas déraisonnable de considérer un cas particulier dans lequel tous les investisseurs ont les mêmes estimations concernant les investissements et les rendements futurs, appelé attentes homogènes.
+
+Bien que les attentes des investisseurs ne soient pas complètement identiques dans la réalité, supposer des attentes homogènes devrait être une approximation raisonnable dans de nombreux marchés. Cela représente la troisième hypothèse simplificatrice du CAPM :
+
+« Les investisseurs ont des attentes homogènes concernant les volatilités, les corrélations et les rendements attendus des actifs. »
+
+\subsubsection{Investissement Optimal : La Ligne de Marché des Capitaux (CML)}
+
+Lorsque les hypothèses du CAPM sont respectées, le portefeuille de marché est efficace. Ainsi, le portefeuille tangent dans la Figure 11.10 (diapositive suivante) est en réalité le portefeuille de marché (M).
+
+La ligne tangente représente le rendement attendu le plus élevé que nous pouvons atteindre pour tout niveau de volatilité. Lorsque la ligne tangente passe par le portefeuille de marché, elle est appelée la Ligne de Marché des Capitaux (CML).
+
+\begin{wrapfigure}{r}{0.70\textwidth}
+	\centering
+	\includegraphics[scale=0.50]{../../../Pictures/Screenshots/Capture d'écran 2024-10-17 170450}
+\end{wrapfigure}
+
+Selon le CAPM, tous les investisseurs devraient choisir un portefeuille sur la ligne de marché des capitaux, en détenant une combinaison de l'actif sans risque et du portefeuille de marché.
+
+\subsubsection{Détermination de la Prime de Risque}
+
+\paragraph{Risque de Marché et \( \beta \)}
+
+Sous les hypothèses du CAPM, nous pouvons identifier le portefeuille efficace : il est égal au portefeuille de marché. Ainsi, si nous ne connaissons pas le rendement attendu d'un titre ou le coût du capital d'un investissement, nous pouvons utiliser le CAPM pour le déterminer en utilisant le portefeuille de marché comme référence.
+
+\[
+\mathbb{E}(r_i) = r_f + \beta_i (\mathbb{E}(r_M) - r_f) 
+\]
+
+\[
+\beta_i = \frac{\sigma_i \cdot \rho_{i,M}}{\sigma_M} = \frac{\sigma_{i,M}}{\sigma^2_M} 
+\]
+
+Le \( \beta \) d'un titre mesure sa volatilité due au risque de marché par rapport au marché dans son ensemble, et capture ainsi la sensibilité du titre au risque de marché.
+
+Pour déterminer la prime de risque appropriée pour tout investissement, nous devons redimensionner la prime de risque du marché (le montant par lequel le rendement attendu du marché dépasse le taux sans risque) par la quantité de risque de marché présente dans les rendements du titre, mesurée par son \( \beta \) avec le marché.
+
+
+Nous pouvons interpréter l'équation du CAPM comme suit : selon la Loi du Prix Unique, dans un marché compétitif, les investissements avec un risque similaire devraient avoir le même rendement attendu.
+
+Étant donné que les investisseurs peuvent éliminer le risque spécifique à l'entreprise en diversifiant leurs portefeuilles, la bonne mesure du risque est le \( \beta \) de l'investissement avec le portefeuille de marché, \( \beta_i \).
+
+\subsubsection{Détermination de la Prime de Risque : problème}
+
+Supposons que le taux de rendement sans risque soit de 4\% et que le portefeuille de marché ait un rendement espéré de 10\% avec une volatilité de 16\%. L'action 3M présente une volatilité de 22\% et une corrélation avec le marché de 0,50. 
+
+\begin{enumerate}
+	\item Quel est le bêta de l'action 3M par rapport au marché ?
+	\item Quel portefeuille situé sur la ligne de marché des capitaux présente un risque équivalent à celui du marché, et quel est son rendement espéré ?
+\end{enumerate}
+
+\subsubsection{Détermination de la Prime de Risque : solution}
+
+Nous pouvons utiliser la formule suivante :
+\[
+\beta_i = \frac{\sigma_i \cdot \rho_{i,M}}{\sigma_M} = \frac{\sigma_{i,M}}{\sigma_M^2}
+\]
+\[
+\beta_i = \frac{22\% \cdot 0,5}{16\%} = 0,69
+\]
+Cela signifie que pour chaque mouvement de 1\% du portefeuille de marché, l'action 3M tend à bouger de 0,69\%. Nous pourrions obtenir la même sensibilité au risque de marché en investissant 69\% dans le portefeuille de marché et 31\% dans l'actif sans risque.
+
+Puisque l'action 3M présente le même risque de marché, elle devrait avoir le même rendement espéré que ce portefeuille, qui est :
+\[
+\mathbb{E}(r_i) = r_f + \beta_i (\mathbb{E}(r_M) - r_f)
+\]
+\[
+\mathbb{E}(r_{3M}) = 4\% + 0,69 \cdot (10\% - 4\%) = 8,1\%
+\]
+Les investisseurs exigeront donc un rendement espéré de 8,1\% pour compenser le risque associé à l'action 3M
+
+\begin{center}
+\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-10-17 172834}
+\end{center}
+
+\subsection{La ligne du marché des titres}
+
+
+\begin{center}
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-10-17 173525}
+\end{center}
+
+
+\subsubsection{\( \mathbb{E}(r_i) \) vs. \( \beta \)}
+
+\[
+\mathbb{E}(r_i) = r_f + \beta_i (\mathbb{E}(r_M) - r_f)
+\]
+L'équation implique qu'il existe une relation linéaire entre le bêta \( \beta \) d'une action et son rendement espéré. Le dernier graphique trace cette ligne à travers l'investissement sans risque (avec un \( \beta \) de 0) et le marché (avec un \( \beta = 1 \)) ; elle est appelée la ligne des marchés de titres (SML).
+
+Selon les hypothèses du CAPM, la ligne des marchés de titres (SML) est la droite sur laquelle toutes les valeurs mobilières individuelles devraient se situer lorsqu'elles sont représentées en fonction de leur rendement espéré et de leur \( \beta \).
+
+Comme nous l'illustrons pour McDonald's (MCD), le rendement espéré d'une action dépend uniquement de la fraction de sa volatilité qui est commune avec le marché.
+
+La distance de chaque action par rapport à la droite de la ligne de marché des capitaux est due à son risque diversifiable.
+
+La relation entre le risque et le rendement pour des titres individuels devient évidente uniquement lorsque nous mesurons le risque de marché plutôt que le risque total.
+
+\subsubsection{Le bêta d'un portefeuille}
+
+Étant donné que la ligne des marchés de titres (SML) s'applique à toutes les opportunités d'investissement négociables, nous pouvons également l'appliquer aux portefeuilles.
+
+Par conséquent, le rendement espéré d'un portefeuille est donné par \( \mathbb{E}(r_p) = r_f + \beta_p (\mathbb{E}(r_M) - r_f) \) et dépend donc du \( \beta \) du portefeuille.
+
+\[
+\beta_p = \frac{\sigma_p \cdot \rho_{p,M}}{\sigma_M} = \frac{\sigma_{p,M}}{\sigma_M^2} = \frac{\text{cov}(r_p, r_M)}{\mathbb{V}(r_M)}
+\]
+En utilisant l'équation 40, nous calculons le \( \beta \) d'un portefeuille où :
+\[
+\mathbb{E}(r_p) = \mathbb{E}\left(\sum_{i=1}^{N} \omega_i \cdot r_i\right) = \sum_{i=1}^{N} \mathbb{E}(\omega_i \cdot r_i) = \sum_{i=1}^{N} \omega_i \cdot \mathbb{E}(r_i)
+\]
+
+\[
+\beta_p = \frac{\text{cov}\left(\sum_{i=1}^{N} \omega_i \cdot r_i, r_M\right)}{\mathbb{V}(r_M)} = \sum_{i=1}^{N} \omega_i \cdot \frac{\text{cov}(r_i, r_M)}{\mathbb{V}(r_M)} = \sum_{i=1}^{N} \omega_i \cdot \beta_i
+\]
+
+Autrement dit, le \( \beta \) d'un portefeuille est la moyenne pondérée des \( \beta \) des titres qui composent le portefeuille.
+
+\chapter{Produits dérivés : Les stratégies sur options}
+
+\section{Introduction}
+
+\subsection{Définitions, contexte et recours}
+
+\subsection{Les options européennes}
+
+
+\subsection{Les autres types d'options}
+
+\subsection{Les stratégies optionnelle de base}
+
+\section{La Parité Call-Put}
+
+\subsection{Call-Put : un relation européenne}
+
+\section{Stratégies sur options}
+
+\subsection{Le recours aux options pour quelles stratégies ?}
+
+\subsection{Les Caps, les Floors et les Collars}
+
+\subsection{Stratégies à caractère directionnel}
+
+\subsection{Entrainement}
+
+\section{Valorisation des primes d'options}
+
+\subsection{Le modèle de Cox, Ross et Rubinstein}
+
+\subsection{Le modèle de Black and Scholes}
+
+\subsection{Les Grecque de Black and Scholes}
+
+\subsection{Grecs d'ordre supérieur}
 
 \end{document}
