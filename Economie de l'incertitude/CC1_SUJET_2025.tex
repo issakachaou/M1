@@ -4,10 +4,10 @@
 \usepackage[french]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath,amsfonts,amssymb, empheq}
-\usepackage{array,multirow,makecell}
+\usepackage{array,multirow,makecell,eurosym}
 \pagestyle{head}
 \pagestyle{foot}
-%\printanswers
+\printanswers
 \usepackage{geometry} % Pour les marges
 \geometry{hmargin=2.5cm, vmargin=2.5cm}
 \footer{}{\thepage}{}
@@ -44,49 +44,155 @@
 		 
 \begin{questions}
 \question[1,25] Quelles critiques les paradoxes vus en cours font-ils au critère de l'espérance mathématique ?
-	\makeemptybox{4cm}
-
-\begin{solutionorbox}
-	la réponse
-\end{solutionorbox}
-
-\question[1,25] Définissez le concept d'aversion au risque.
-	\makeemptybox{3cm}
-	
-\begin{solutionorbox}
-	la réponse
-\end{solutionorbox}	
-	
-\question[1,25] Est-ce qu'un agent averse au risque ne prendra jamais de risque ?
-	\makeemptybox{3cm}
-	
-\begin{solutionorbox}
-	la réponse
-\end{solutionorbox}	
-	
-\question[1,25] En quoi des préférences fondées sur le critère de l'espérance mathématiques est un cas particulier de la fonction de Markowitz ?
-\makeemptybox{3cm}
-
-\begin{solutionorbox}
-	la réponse
-\end{solutionorbox}
-
 \end{questions}
+\begin{solutionbox}{4cm}
+Le paradoxe de St Pétersbourg et le paradoxe de l'assurance soulignent les limites du critère de l'espérance mathématique. La première limite est que la représentation les préférences des agents par l'espérance  prends seulement en compte le gain alors qu'en réalité ce n'est pas les gains qui importent aux individus mais l'utilité qui y est associé. La deuxième limite est que le critère de l'espérance mathématique ne prend pas en compte du degré d'aversion au risque des agents.
+\end{solutionbox}
+\begin{questions}
+\question[1,25] Définissez le concept d'aversion au risque.
+\end{questions}
+\begin{solutionbox}{3cm}
+L'aversion au risque désigne la préférence d'un individu pour un gain certain plutôt que pour un gain incertain, à espérance égale. 
+\end{solutionbox}	
+\begin{questions}
+\question[1,25] Est-ce qu'un agent averse au risque ne prendra jamais de risque ?
+\end{questions}
+\begin{solutionbox}{3cm}
+Un agent averse au risque pourra prendre des risques si on aversion pour le risque est plus faible que son attrait pour la richesse
+\end{solutionbox}	
+\newpage
+\begin{questions}
+\question[1,25] En quoi des préférences fondées sur le critère de l'espérance mathématiques est un cas particulier de la fonction de Markowitz ?
+\end{questions}
+\begin{solutionbox}{6cm}
+Un agent neutre au risque a des préférence représente par l'espérance mathématique soit : \[ U(X)=\mathbb{E}(X) \] Or une fonction de Markowitz est de la forme : \[ U(X)=\mathbb{E}(X)-k\mathbb{V}(X) \] Avec \( k \) le degré d'aversion au risque. Si \( k = 0 \) l'agent est donc neutre au risque et on retrouve : \[ U(X)=\mathbb{E}(X) \]
+\end{solutionbox}
 
 \section*{Exercice 1 : Projet d'investissement en univers incertain (5 points)}
 
-Un investisseur à le choix en différent choix d'investissement. On suppose qu'il est rationnel et que son but est de maximiser sa richesse. On suppose également que l'investisseur est dans un univers incertain, en d'autre termes, après avoir investit son gains dépends de l'évolution des marchés que ce soit à la hausse ou à la baisse. 
+Un investisseur à le choix en différent choix d'investissement. On suppose qu'il est rationnel et que son but est de maximiser sa richesse. On suppose également que l'investisseur est dans un univers incertain, en d'autre termes, après avoir investit son capital, les gains fait son investissement dépendent de l'évolution des marchés que ce soit à la hausse ou à la baisse. 
 
+Il a le choix entre un premier projet noté  \( X_1 \)  qui rapporte 2000\euro~avec une probabilité de 0,3 ou  1500\euro~avec une probabilité de 0,7 et un second projet noté  \( X_2 \)  qui rapporte 3000\euro~avec une probabilité de 0,2 ou 1900\euro~avec une probabilité de 0,8.
 
+\begin{questions}
+\question[1,25] Écrire les loteries associés aux deux projets. 
+\end{questions}
+\begin{solutionbox}{4cm}
+	\[ 
+	X_1 =\left\{\begin{matrix}
+		2000-1000 & 1500-1000  \\
+		0,3 &  0,7\\
+	\end{matrix}\right.\Rightarrow 
+	X_1 =\left\{\begin{matrix}
+		1000 & 500  \\
+		0,3 &  0,7\\
+	\end{matrix}\right.	
+	 \]
+	  \[ 
+	  X_2 =\left\{\begin{matrix}
+	  	3000-1000 & 1900-1000  \\
+	  	0,2 &  0,8\\
+	  \end{matrix}\right.\Rightarrow 
+	   X_2 =\left\{\begin{matrix}
+	  	2000 & 900  \\
+	  	0,2 &  0,8\\
+	  \end{matrix}\right.
+	   \]
+\end{solutionbox}
+\begin{questions}
+\question[1,25] Calculer les espérances et les variances des deux loteries.
+\end{questions}
+\begin{solutionbox}{6cm} Les espérances des loteries sont :
+\[ 
+\mathbb{E}(X_1)=1000\cdot0,3+500\cdot0,7=650\text{\euro}
+ \]
+\[ 
+\mathbb{E}(X_2)=2000\cdot0,2+900\cdot0,8=1120\text{\euro}
+ \] 
+Les variances des loteries sont :
+\[ 
+\mathbb{V}(X_1)=1000^2\cdot0,3+500^2\cdot0,7-(650)^2=52500
+ \]
+\[ 
+\mathbb{V}(X_2)=2000^2\cdot0,2+900^2\cdot0,8-(1120)^2=193600
+\]
+\end{solutionbox}
+\begin{questions}
+\question[1,25] On suppose que l'investisseur à des préférences qui peuvent être représentés par une fonction de Markowitz. Quel loterie choisira-t-il si son degré d'aversion est \( k=-4 \) ? Même question pour \( k=0 \)  et  \( k=4 \) ?
 
+\end{questions}
 
+\begin{solutionbox}{16cm}
+Lorsque \( k=-4 \) on a la fonction suivante : 
+\[ 
+U(X_i)=\mathbb{E}(X_i)+4\mathbb{V}(X_i)\quad \forall i \in \{1,2\}
+ \]
+Alors : 
+\[ 
+U(X_1)=\mathbb{E}(X_1)+4\mathbb{V}(X_1)=650+4\cdot52500=210650
+\]
+\[ 
+U(X_2)=\mathbb{E}(X_2)+4\mathbb{V}(X_2)=1120+4\cdot193600=775520
+\]
+Lorsque \( k=-4 \), la fonction d'utilité est une fonction croissante de la variance, l'agent à un goût pour le risque. Dans ce cas, \( U(X_2)>U(X_1) \), l'investisseur choisira \( X_2 \).\\
 
+Lorsque \( k=0 \), on a la fonction suivante : 
 
+\[ 
+U(X_i)=\mathbb{E}(X_i)\quad \forall i \in \{1,2\}
+\]
+Alors : 
+\[ 
+U(X_1)=\mathbb{E}(X_1)=650
+\]
+\[ 
+U(X_2)=\mathbb{E}(X_2)=1120
+\]
+Lorsque \( k=0 \), la fonction d'utilité représente les préférence d'un agent neutre au risque. Dans ce cas \( U(X_2)>U(X_1) \), l'investisseur choisira \( X_2 \).\\
 
+Lorsque \( k=4 \), on a la fonction suivante : 
 
+\[ 
+U(X_i)=\mathbb{E}(X_i)-4\mathbb{V}(X_i)\quad \forall i \in \{1,2\}
+\]
+Alors : 
+\[ 
+U(X_1)=\mathbb{E}(X_1)-4\mathbb{V}(X_1)=650-4\cdot52500=-209350
+\]
+\[ 
+U(X_2)=\mathbb{E}(X_2)-4\mathbb{V}(X_2)=1120-4\cdot193600=-773280
+\]
+Lorsque \( k=0 \), la fonction d'utilité représente les préférence d'un agent neutre au risque. Dans ce cas \( U(X_1)>U(X_2) \), l'investisseur choisira \( X_1 \).
+\end{solutionbox}
+\begin{questions}
+	\question[1,25] A partir de quel valeur de \( k \) l'investisseur choisira le projet 1 ?
+\end{questions}
 
-
-
+\begin{solutionbox}{8cm}
+Il faut résoudre l'inégalité suivante :
+\[ 
+U(X_1)>U(X_2)
+\]
+\[ 
+\mathbb{E}(X_1)-k\mathbb{V}(X_1)>\mathbb{E}(X_2)-k\mathbb{V}(X_2)
+\]
+\[ 
+ -k\mathbb{V}(X_1)>\mathbb{E}(X_2)-k\mathbb{V}(X_2)-\mathbb{E}(X_1)
+\]
+\[ 
+ -k\mathbb{V}(X_1)+k\mathbb{V}(X_2)>\mathbb{E}(X_2)-\mathbb{E}(X_1)
+\]
+\[ 
+k\left(\mathbb{V}(X_2)-\mathbb{V}(X_1)\right) > \mathbb{E}(X_2)-\mathbb{E}(X_1)
+ \]
+ \[ 
+ k>\frac{\mathbb{E}(X_2)-\mathbb{E}(X_1)}{\mathbb{V}(X_2)-\mathbb{V}(X_1)}
+  \]
+  \[ 
+  k>0,003
+   \]
+\end{solutionbox}
+\section*{Exercice 2 : Problème du producteur en univers incertain (5 points)}
 
 \label{LastPage}
 \end{document}
