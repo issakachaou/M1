@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2024.10.12)  14 OCT 2024 21:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2024.10.12)  21 OCT 2024 18:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -559,11 +559,11 @@ Package rerunfilecheck Info: File `REUNION_M2.out' has not changed.
 Here is how much of TeX's memory you used:
  12958 strings out of 475385
  208435 string characters out of 2776906
- 560286 words of memory out of 3000000
+ 561286 words of memory out of 3000000
  34156 multiletter control sequences out of 15000+600000
  475552 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,5n,77p,485b,530s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 72i,5n,77p,959b,530s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx
 1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\ecxc1728.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
@@ -571,9 +571,9 @@ Here is how much of TeX's memory you used:
 pen/ec/dpi600\ecbx1728.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour
 /jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/
 ljfour/jknappen/ec/dpi600\ecbx2488.pk>
-Output written on REUNION_M2.pdf (8 pages, 81766 bytes).
+Output written on REUNION_M2.pdf (8 pages, 88362 bytes).
 PDF statistics:
- 256 PDF objects out of 1000 (max. 8388607)
+ 269 PDF objects out of 1000 (max. 8388607)
  13 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
