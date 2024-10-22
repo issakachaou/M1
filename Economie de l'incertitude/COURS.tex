@@ -12,6 +12,7 @@
 \usepackage{tikz}
 \usepackage{hyperref}
 \pagestyle{fancy}
+\usepackage{mathptmx} %times aves le mode math
 \fancyhead[R]{Université Paris-Est Créteil}
 \fancyhead[L]{Économie de l'incertitude}
 \usepackage{array,multirow,makecell}
@@ -1173,14 +1174,83 @@ Nous reviendrons sur cet écart lorsque nous évoquerons le concept de prime de 
 	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-10-14 225055}
 \end{center}
 
-
-
-
-
-
-
 \section{Prix de vente}
 
+Définition : le prix de vente \( p_v \) de la partie aléatoire \( X \) d'une richesse \( W \) est le prix minimal à partir duquel le propriétaire de cette loterie est prêt à la vendre. En vendant une loterie à un prix \( p_v \), le propriétaire cède une richesse aléatoire \( W = \omega + X \) en échange d'une richesse certaine \( \bar{w} = \omega + p_v \) où \( \bar{w} \) est l'équivalent certain de la richesse \( W \). 
+
+Le prix de vente de la loterie est donc égal à \( p_v = \bar{w} - \omega \). 
+\noindent\\
+Remarque : un prix de vente peut être \( > 0 \) ou \( < 0 \) : si \( > 0 \), le propriétaire exige une rémunération en échange de sa loterie ; si \( < 0 \), il est prêt à payer l'acheteur pour se débarrasser de sa loterie.
+
+\subsection{Exemple 1}
+
+Reprenons l'exemple précédent. Le prix de vente de la loterie est : 
+\[
+p_v = \tilde{w} - \omega = 233,78 - 200 = 33,78 \, \text{€}
+\] 
+L'agent est prêt à vendre sa loterie \( X \) pour 33,78 € (ou plus). Remarque : cette loterie rapportant en moyenne \( E(X) = 40 \, \text{€} \), on en déduira que l'agent est prêt à perdre de l'argent pour se débarrasser du risque, ce qui témoigne d'une aversion au risque. Là encore, nous reviendrons sur cet écart lorsque nous évoquerons le concept de prime de risque.
+
+\subsection{Exemple 2}
+
+On considère le même agent, ayant donc toujours les préférences \( u(w)=\sqrt{w} \) et une richesse non risquée \( \omega = 200 \, \text{€}\), confronté à une nouvelle loterie \( Y \) cette fois :
+\noindent\\
+Soit
+\[ 
+ Y = \begin{cases} 
+50  & 100  \\ 
+0,4 &  0,6 
+\end{cases}
+\]
+Ainsi, la richesse est donnée par
+\[ 
+ W = \omega + Y = \begin{cases} 
+	250 & 100 \\ 
+	0,4 & 0,6 
+\end{cases}.
+  \]
+Calculer l'équivalent certain de la richesse aléatoire \( W \)\\
+\noindent
+Calculer le prix de vente de la loterie \( Y \)\\
+\noindent
+Comment caractériser les préférences de cet individu face au risque ?\\
+\noindent \\
+Équivalent certain
+\[ 
+u(w)=\mathbb{E}\left[ u(w) \right]
+\]
+\[ 
+=0,4\cdot\sqrt{250}+0,6\cdot\sqrt{100}=12,32
+\]
+\[ 
+\sqrt{\bar{w}}=12,32 \Rightarrow \bar{w}=151,78 \,\text{€}
+\]
+\[ 
+\mathbb{E}(w)=0,4\cdot250+0,6\cdot100=160\,\text{€}
+ \]
+On a donc \( \mathbb{E}(w)>\bar{w} \), l'agent est riscophobe. L'agent est prêt à échanger sa richesse aléatoire \( W \) contre une richesse certaine de \( 151,78 \,\text{€} \)
+\\ \noindent \\
+Prix de vente 
+\[ 
+p_v=151,78-200=-48,22 \,\text{€}
+\]
+L'agent est prêt à payer 48,22 € pour se débarrasser de sa loterie \(Y\)
+\[ 
+\mathbb{E}(Y)=-40
+ \]
+\[ 
+p_v<\mathbb{E}(Y)
+ \]
+
+\subsection{Prix de vente et préférences}
+
+es exemples 1 et 2 soulignent que l'aversion face au risque n'est pas définie par le signe du prix de vente d'une loterie (le prix de vente était \( > 0 \) dans l'exemple 1 et \( < 0 \) dans l'exemple 2). Quelles que soient les préférences du décideur, le prix de vente d'une loterie peut être positif ou négatif. Ainsi, un agent neutre face au risque \( u(w) = w \) pourra également être confronté à des prix de vente aussi bien positifs que négatifs : 
+\[
+\bar{w} = E[u(W)] = E[W] \quad \text{pour un agent neutre au risque}
+\]
+\[
+p_v = \bar{w} - \omega = E[W] - \omega = E[\omega + X] - \omega = E[X] \in \mathbb{R}
+\]
+On pourra toutefois conclure que plus le prix de vente est faible, toutes choses étant égales par ailleurs, plus l'aversion au risque est grande.
 
 \section{Prime de risque}
 

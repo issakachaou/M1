@@ -1,7 +1,8 @@
 \documentclass[a4paper, 12pt]{report}
 \usepackage{graphicx}
-\usepackage[utf8]{inputenc} 
+\usepackage[utf8]{inputenc}
 \usepackage[french]{babel}
+\usepackage{mathptmx} %times aves le mode math
 \usepackage[T1]{fontenc}
 \usepackage{fancyhdr}
 \usepackage{amsmath,amsfonts,amssymb, empheq}
@@ -216,7 +217,7 @@ Depuis la crise de 2008, l’évolution du marché immobilier est marquée par d
 En 2021, la France métropolitaine comptait 36,2 millions de logements, soit 12,6 millions de plus qu’en 1982. Cette évolution est principalement attribuée à la construction de logements neufs ainsi qu’à la transformation de locaux non résidentiels en logements, un processus connu sous le nom de réaffectations. Toutefois, les démolitions et les changements d’usage de locaux d’habitation, appelés désaffectations, contribuent à réduire le parc immobilier. De plus, le taux de croissance du parc a diminué, passant de 1,1 \% à 0,7 \% par an ces dernières années, en grande partie en raison de la chute de la construction neuve liée à la crise sanitaire.
 
 \subsubsection{Évolution annuelle moyenne du nombre de logements par catégorie}
-
+\newpage
 \begin{wrapfigure}{r}{0.7\textwidth}
 	\centering
 \includegraphics[scale=0.4]{../../../Pictures/Screenshots/Capture d'écran 2024-09-22 081402}
@@ -526,8 +527,174 @@ Les Sociétés d’Économie Mixte (SEM) sont des sociétés anonymes dont le ca
 
 \section{Financement et fonctionnement du secteur locatif social}
 
+\subsection{Financement du logement social}
+
+La grande majorité des financements destinés au logement social provient des prêts accordés par la Caisse des Dépôts et Consignations (CDC), que ce soit pour la construction de nouveaux logements ou pour la réhabilitation du parc ancien. Une autre source de financement spécifique est la Participation des employeurs à l’effort de logement, souvent désignée sous le terme de 1\% logement. Cette contribution est cruciale, car elle représente une source de financement significative. Dans les deux cas, il s'agit d'une épargne privée mise à disposition pour soutenir le logement social, renforçant ainsi l'accès à des logements abordables pour les ménages.
+
+En 2014, la répartition du financement des investissements en matière de logement social était dominée par les prêts de la Caisse des Dépôts et Consignations (CDC), représentant 74 \% du total. Les contributions d'Action Logement s'élevaient à seulement 2,5 \%, tandis que les fonds propres des organismes de logement constituaient 15 \% et les collectivités locales apportaient 5 \%. L'État, quant à lui, ne représentait que 1 \% des financements sous forme d'aides directes. Il est essentiel de souligner que l'obtention de ces aides de l'État est un déclencheur fondamental pour le reste des financements. Ainsi, le financement du logement social repose principalement sur des sources privées, avec une part relativement faible de dépenses publiques, même en tenant compte des aides indirectes, telles que les avantages fiscaux accordés aux organismes HLM.
+
+Exemple : structure de financement pour un logement social moyen qui coûtait 140 000\euro~en 2014.
+
+\newpage
+\begin{wrapfigure}{r}{0.65\textwidth}
+	\centering
+	\includegraphics[scale=0.45]{../../../Pictures/Screenshots/Capture d'écran 2024-10-22 092053}
+\end{wrapfigure}
+
+En 2022, l'encours de la dette des organismes de logement social (HLM) s'élevait à environ 150 milliards d'euros, marquant une hausse significative de 81 \% par rapport aux 84 milliards d'euros en 2006. Près de 80 \% de cette dette a été contractée auprès de la Caisse des Dépôts et Consignations (CDC). Depuis 2011, le montant annuel des nouveaux prêts accordés par la CDC a dépassé les 20 milliards d'euros, contre seulement 5 milliards en 2006. En 2015, les organismes HLM ont bénéficié de 13 milliards d'euros de prêts de la CDC, dont 10,4 milliards étaient destinés à la construction et 2,3 milliards à la réhabilitation. Par ailleurs, les prêts d'autres organismes s'élevaient à 1 milliard d'euros, tandis que les fonds propres mobilisés atteignaient 3 milliards d'euros.
+
+\subsection{Caractéristiques des prêts}
+
+Chaque année, le gouvernement détermine le nombre de prêts pouvant être accordés par la CDC ainsi que leurs conditions d'utilisation, incluant l'objet, la tarification, la durée maximale et la liste des emprunteurs éligibles. Ces prêts présentent deux caractéristiques majeures. Premièrement, ils sont adaptés au financement de projets à long terme, étant accordés pour des durées très longues, avec une moyenne de 32 ans, 40 ans pour les bâtiments, et jusqu'à 50 ans pour le foncier. Cette longue durée d'amortissement permet de rendre le coût de construction ou de réhabilitation compatible avec les plafonds de loyers imposés aux HLM. Deuxièmement, ces prêts se déconnectent d'une logique de marché, s'éloignant sur trois aspects principaux : ils sont souvent accordés au coût de la ressource, voire en dessous ; le taux des prêts est généralement indépendant des durées offertes ; et leur tarification dépend du caractère social plus ou moins affirmé des biens financés (PLAI, PLUS ou PLS), plutôt que de la situation financière de l'organisme emprunteur.
+
+\subsection{Les loyers d'équilibre}
+
+La gestion des organismes de logement social (HLM) repose sur des loyers dits « d’équilibre », qui doivent permettre aux organismes de faire face à leurs charges courantes, y compris la charge de la dette jusqu'à son extinction. En moyenne, les annuités financières représentent la moitié des recettes de loyers. Le montant de la dette dépend du coût d'investissement initial, que la dette couvre à hauteur de 70 \%. Cela signifie que les loyers sont essentiellement liés aux coûts de construction, reflétant ainsi les dépenses engagées pour la réalisation des projets de logement.
+
+Les loyers des organismes de logement social (HLM) doivent respecter des plafonds légaux. L'octroi de prêts de longue durée et à taux d'intérêt bas est essentiel pour garantir que les loyers restent en dessous de ces plafonds. Au moment de la livraison du programme, le loyer et sa progression au fil du temps doivent prendre en compte plusieurs éléments : les coûts de gestion, les dépenses d'entretien des immeubles, les risques de vacance et d'impayés, ainsi que l'assujettissement à la taxe foncière après 25 ans.
+
+\begin{wrapfigure}{r}{0.65\textwidth}
+	\centering
+\includegraphics[scale=0.45]{../../../Pictures/Screenshots/Capture d'écran 2024-10-22 093013}
+\end{wrapfigure}
+
+Pour un programme de 65 logements destinés à un couple avec un enfant dans la région de Toulouse, le coût total s'élève à 7,2 millions d'euros, soit 111 000 euros par logement. Ce programme est financé à hauteur de 77 \% par des prêts de la Caisse des Dépôts et Consignations (CDC) sur 40 ans, 12 \% par des aides directes provenant de l'État et de la collectivité locale, et 11 \% par des fonds propres.
+
+Dans cet exemple, l'équilibre de la gestion locative est établi pour un loyer de départ de 310 euros, avec une augmentation prévue de X2 sur une période de 40 ans. Ces loyers d'équilibre sont rendus abordables pour les ménages les plus modestes grâce à l'existence d'aides personnelles aux locataires, qui représentent en moyenne 230 euros par logement. Cela équivaut à 22 \% des dépenses en logement.
+
+\subsection{Les niveaux de loyers}
+
+La plupart des loyers des logements HLM ne sont pas fixés librement par le bailleur, mais font l'objet d'une convention entre celui-ci et l'État. La législation prévoit la possibilité d'augmenter les loyers une fois par an, dans la limite des conventions conclues. Cette révision peut avoir lieu chaque année au 1er janvier, en fonction de l'Indice de Référence des Loyers (IRL). De plus, la convention fixe un plafond de loyer, qui varie selon le type de financement du logement et sa zone d'implantation.
+
+\begin{center}
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-10-22 093602}
+\end{center}
+Les zones de fixation des loyers pour les logements HLM sont classées comme suit : 
+
+Zone A bis : Paris et 76 communes des Yvelines, des Hauts-de-Seine, de Seine-Saint-Denis, du Val-de-Marne et du Val-d’Oise.
+
+Zone A : Agglomération de Paris, la Côte d’Azur, la partie française de l’agglomération genevoise, ainsi que certaines agglomérations ou communes où les loyers et les prix des logements sont très élevés.
+
+Zone B1 : Certaines grandes agglomérations où les loyers et les prix des logements sont élevés, ainsi qu'une partie de la grande couronne parisienne non située en zone A bis ou A.
+
+Zone B2 : Villes-centre de certaines grandes agglomérations, grande couronne autour de Paris non située en zone A bis, A et B1, ainsi que certaines communes où les loyers et les prix des logements sont assez élevés.
+
+Zone C : Reste du territoire.
+
+\begin{center}
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-10-22 093824}
+\end{center}
+
+Les loyers plafonds sont sensiblement différenciés entre les agglomérations par rapport aux loyers effectifs du secteur privé.
+
+\begin{center}
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-10-22 094025}
+\end{center}
+
+
+\subsection{Limites du modèle}
+
+Le modèle économique du secteur locatif social a été mis à l'épreuve par une forte augmentation des prix du logement, avec une hausse de 100 \% en termes réels entre 1997 et 2007. Cette situation a également entraîné une augmentation significative des prix des terrains, ce qui a eu un impact direct sur la capacité des bailleurs sociaux à construire de nouveaux logements, étant donné que les loyers sont régulés. En conséquence, le coût unitaire d'un logement locatif social a augmenté de plus de 80 \% en 15 ans sur l'ensemble du territoire, passant de moins de 80 000 euros à plus de 140 000 euros.
+
+\begin{wrapfigure}{r}{0.56\textwidth}
+	\centering
+\includegraphics[scale=0.40]{../../../Pictures/Screenshots/Capture d'écran 2024-10-22 094336}
+\end{wrapfigure}
+
+En Île-de-France, le coût de construction est supérieur de près de 40 \% à celui des autres régions. De plus, la charge foncière y est deux fois plus importante qu'ailleurs.
+
+Bien que la part de l’endettement ait diminué en pourcentage, le montant nécessaire pour réaliser un logement a considérablement augmenté de plus de 75 \% en 15 ans, atteignant aujourd'hui une moyenne de 110 000 euros, contre 62 000 euros en 2000. Cette situation s'explique par la hausse des coûts de construction et l'augmentation des besoins en logements, entraînant une croissance spectaculaire de la dette des organismes, qui est passée à 130 milliards d’euros en 2014, contre 84 milliards d’euros en 2006. Cependant, cet endettement accru n’a pas été suffisant à lui seul pour financer le « choc d’investissement » qui a eu lieu à partir de 2008.
+
+\begin{center}
+	\includegraphics[scale=0.4]{../../../Pictures/Screenshots/Capture d'écran 2024-10-22 094707}
+\end{center}
+
+\begin{center}
+	\includegraphics[scale=0.4]{../../../Pictures/Screenshots/Capture d'écran 2024-10-22 095216}
+\end{center}
+
+Pour faire face à la hausse conjointe des volumes et des coûts, plusieurs ressources complémentaires ont été mobilisées. Tout d'abord, il y a eu un recours croissant aux fonds propres, passant de 5 \% à 14 \% du total du financement. De plus, les contributions des collectivités locales ont augmenté de manière significative. Par ailleurs, la mobilisation de terrains publics au profit des bailleurs sociaux, accélérée à partir de 2012, a également facilité la réalisation de certains programmes.
+
+Les bailleurs sociaux ont pu exploiter d'autres leviers pour s'adapter à la situation. Ils ont notamment réalisé des opérations d'acquisition-réhabilitation, permettant de pallier la pénurie d’offre foncière dans les zones urbaines denses. De plus, dans un contexte de très bas taux d’intérêt depuis 2012, les HLM ont préféré recourir aux emprunts bancaires et ont également restructuré leur dette auprès de la CDC. Cependant, ces changements récents traduisent une fragilisation du modèle, rendant les HLM plus dépendants de l’engagement des municipalités en leur faveur. La réduction des dotations budgétaires aux communes depuis 2015 a également rendu plus difficile le maintien de leur soutien au logement social.
 
 \section{Vivre en HLM : quelles conséquences ?}
+
+\subsection{Avantages monétaires et conditions de vie}
+
+L’occupation d’un logement social permet aux ménages de bénéficier de loyers inférieurs à ceux pratiqués par les bailleurs privés, ce qui constitue une forme de subvention implicite. À ce sujet, quatre questions peuvent être soulevées : quel est le montant de la subvention implicite associée à l’occupation d’un logement social ? Dans quelle mesure l’occupation d’un logement social modifie-t-elle les conditions de logement ? Comment l’occupation d’un logement social impacte-t-elle le niveau de vie hors logement des ménages ? L’occupation d’un logement social entraîne-t-elle une surconsommation de logement ? 
+
+(Source : Trevien C. (2013), « \textit{Habiter en HLM : quel avantage monétaire et quel impact sur les conditions de logement ?} », Document de travail de l’Insee, n°2013-2.)
+
+Ce travail confirme les résultats de plusieurs études portant sur le lien entre logement social et redistribution des richesses. La subvention implicite associée à l’occupation des logements sociaux bénéficie en partie aux ménages aisés. En effet, selon les plafonds de revenu à l’entrée, 80 \% des ménages sont éligibles pour les logements sociaux, et le loyer ne dépend des revenus des locataires que de façon marginale. De plus, il existe un droit au maintien dans les lieux, indépendamment de l’évolution des revenus des occupants.
+
+L’emménagement en HLM n’a pas le même effet sur les conditions de logement selon le niveau de vie du ménage. Les caractéristiques des logements sociaux occupés diffèrent sensiblement selon le niveau socio-économique des locataires. Les ménages à faible revenu se voient attribuer des logements de moins bonne qualité, car ils sont souvent les seuls compatibles avec leurs ressources ou parce que les ménages plus aisés refusent d’y emménager. En revanche, les ménages aisés peuvent quitter plus facilement les logements sociaux de mauvaise qualité, ce qui entraîne une attrition différenciée selon les revenus. Enfin, les bailleurs sociaux favorisent l’emménagement de ménages plus aisés pour des raisons de solvabilité.
+
+\subsection{Résultats de l'étude}
+
+\begin{center}
+	\includegraphics[scale=0.4]{../../../Pictures/Screenshots/Capture d'écran 2024-10-22 095914}
+\end{center}
+
+\subsection{Définition des effets}
+
+Subvention implicite : il s'agit de la différence entre le loyer potentiel d’un logement HLM s’il avait été proposé dans le parc locatif privé et le loyer demandé par le bailleur social.
+
+Valeur du logement : cela représente la différence de valeur, aux prix du marché privé, entre le logement HLM occupé par le ménage et celui qu’il aurait occupé dans le parc locatif privé.
+
+Effet niveau de vie hors logement : c'est la différence entre le loyer du logement HLM et les dépenses de logement auxquelles le ménage aurait dû consentir pour le logement qu’il aurait occupé dans le parc locatif privé.
+
+Surconsommation : cela correspond à la différence de la quantité de logement consommée entre le logement qu’il aurait occupé s’il bénéficiait d’une allocation égale à la subvention implicite et le logement HLM occupé.
+
+\subsection{Résultats de l'étude}
+
+\begin{center}
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-10-22 100131}
+\end{center}
+
+Les gains associés à l’occupation d’une HLM varient fortement selon la taille de l’aire urbaine. Les loyers des logements sociaux progressent moins vite que les loyers libres en fonction de la taille de l’aire urbaine. Par exemple, le loyer libre moyen est supérieur de 60 \% dans l’AU (Aire Urbaine) de Paris par rapport à l’extérieur, tandis que cet écart est limité à 22 \% dans le parc social.
+
+La hausse de niveau de vie résultant de l’emménagement en HLM croît avec l’augmentation de la taille de l’aire urbaine, passant de 142 euros hors AU à 318 euros dans l’AU de Paris. Dans cette même aire urbaine, les ménages en HLM consommeraient moins de logement s’ils disposaient de l’équivalent de la subvention implicite pour se loger dans le privé. Cependant, la surconsommation de logement reste faible, s’élevant à 48 euros par mois.
+
+\begin{center}
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-10-22 100445}
+\end{center}
+
+Le gain associé à l’occupation d’une HLM croît avec le niveau de vie. Les ménages du 1er quintile bénéficient d’une subvention implicite de 239 euros, tandis qu’elle s’élève à 319 euros pour les ménages du dernier quintile. Cette subvention représente en moyenne 23,6 \% des revenus des ménages du 1er quintile, mais seulement 6,9 \% pour ceux du dernier. On ne peut donc pas parler d’effet anti-redistributif.
+
+L’effet niveau de vie hors logement de l’occupation d’un logement social croît encore plus fortement que la subvention implicite avec le niveau de vie du ménage. Il progresse de 190 euros pour le 1er quintile à 330 euros pour le dernier quintile.
+
+L’emménagement en HLM n’entraîne pas un rapprochement significatif du centre de l’aire urbaine. Il réduit de 15,4 points de pourcentage la probabilité d’habiter une maison, avec un effet particulièrement fort dans les aires urbaines de moins de 50 000 habitants. De plus, il diminue de 3 000 euros le revenu médian annuel du voisinage, cette diminution étant d’autant plus forte que l’aire urbaine est grande.
+
+En revanche, l’emménagement en HLM augmente la surface du logement de 2,5 m². L’incrément est positif dans les aires urbaines de plus de 500 000 habitants (+5,9 m²) et de Paris (+10,7 m²), tandis qu’il est négatif en dehors des aires urbaines (-10,9 m²). L’augmentation est également plus importante pour les ménages modestes (+2,9 m²) et devient non significative pour les ménages des deux derniers quintiles.
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-10-22 100752}
+\end{center}
+
+\subsection{Accession à la propriété}
+
+Selon Goffette-Nagot et Sidibé (2012), les loyers des logements HLM sont d'environ 40 \% inférieurs à ceux du marché, ce qui permet aux locataires de bénéficier d'un pouvoir d'achat supplémentaire. En effet, ce statut de locataire en HLM permettrait de consommer un supplément de 10 \% de services de logement et 11 \% d'autres dépenses par rapport aux locataires du secteur libre. Cela soulève la question de l'impact de ce statut sur les capacités d'épargne des ménages. On peut se demander si, en favorisant l'épargne, le statut de locataire en HLM pourrait influencer la dynamique d'accession à la propriété, en facilitant l'accès à la propriété pour ces ménages.
+
+Source : Goffette-Nagot F. et Sidibé M. (2012), « \textit{Logement social et accession à la
+propriété }», Economie et Prévision, n°200-201.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 \chapter{La dynamique des marchés immobiliers}
@@ -626,18 +793,6 @@ C’est par exemple la démarche de Case (1986), qui utilise comme déterminants
 On peut tester l’existence d’une bulle a posteriori en utilisant les loyers effectivement observés. Cornuel (1999 et 2003) montre que, pour le marché parisien, les prix sont bien expliqués par les loyers, et même que, de manière générale, les prix sont un peu en dessous de la valeur fondamentale. En particulier, le niveau des loyers rend bien compte du pic des prix de 1992. En définitive, au-delà de la flambée des prix, le fait marquant du marché du logement est qu’il y a eu également une augmentation des loyers. Pour la France entière, ils ont cru de 20 points de plus que l’inflation entre 1985 et 1995, ce qui souligne l’évolution dynamique du marché immobilier durant cette période.
 
 Par conséquent, c’est la valeur fondamentale qui a connu une fluctuation. Cette flambée de loyers ne peut résulter elle-même d’une bulle, puisque le service n’est pas stockable, condition requise pour que l’on puisse avoir affaire à une bulle. C’est donc une fluctuation due à un phénomène réel, c’est-à-dire une chose dont il faut identifier la nature. Cette distinction est essentielle pour comprendre les dynamiques du marché immobilier et les facteurs qui influencent les prix et les loyers.
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
