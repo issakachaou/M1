@@ -12,6 +12,7 @@
 \fancyhead[R]{Université Paris-Est Créteil}
 \fancyhead[L]{Management des risques bancaires}
 \usepackage{array,multirow,makecell}
+\usepackage{mathptmx} %times aves le mode math
 \usepackage{hyperref}
 \setcellgapes{1pt}
 \makegapedcells
@@ -786,10 +787,215 @@ Les banques accaparent des rentes extraites de leurs anciens clients pour accord
 
 \subsubsection{Exemple numérique : relation à long terme et risque moral}
 
-Considérons un exemple numérique illustrant la relation à long terme et le risque moral. Une entreprise effectue un emprunt et a le choix entre deux projets d'investissement : le projet S, qui rapporte 150 € avec une probabilité de 0,8 et 0 € avec une probabilité de 0,2, et le projet R, qui rapporte 162 € avec une probabilité de 0,5 et 0 € avec une probabilité de 0,5. Le taux d'intérêt sans risque est de 5 \%. Le banquier ne contrôle pas le choix du projet de l'emprunteur, qu'il s'agisse de S ou de R. La facturation du crédit ne peut pas dépasser 150 points de base au-dessus du taux d'équilibre, sinon le client ira voir une autre banque. Plusieurs scénarios sont possibles : (i) un contrat de crédit sur une période de 100 € ; (ii) un contrat de crédit sur deux périodes avec 100 € emprunté à chaque période.
+Considérons un exemple numérique illustrant la relation à long terme et le risque moral. Une entreprise effectue un emprunt et a le choix entre deux projets d'investissement : le projet S, qui rapporte 150 € avec une probabilité de 0,8 et 0 € avec une probabilité de 0,2, et le projet R, qui rapporte 162 € avec une probabilité de 0,5 et 0 € avec une probabilité de 0,5. Le taux d'intérêt sans risque est de 5 \%. Le banquier ne contrôle pas le choix du projet de l'emprunteur, qu'il s'agisse de S ou de R. La facturation du crédit ne peut pas dépasser 150 points de base au-dessus du taux d'équilibre, sinon le client ira voir une autre banque. Plusieurs scénarios sont possibles : (i) un contrat de crédit sur une période de 100 € ; (ii) un contrat de crédit sur deux périodes avec 100 € emprunté à chaque période.\\
+
+\textbf{Scénario 1 :} 
+\\\noindent
 
 
-\section{La gestion du risque de crédit (titrisation, dérivés de crédit)}
+Projet R choisi par l'entreprise. Pour couvrir ses charges (équilibrer le compte), la banque propose un taux débiteur tel que : la banque obtient 105 (=100\((1+0,05)\)) en plaçant 100 sur le marché au taux sans risque de 5 \%, ce qui est équivalent à accorder un crédit de \( 100 \cdot (1+r) \) avec une probabilité de 0,5. Ainsi, on a :
+
+\[
+105 = 0,5 \cdot 100 \cdot (1+r)
+\]
+
+D'où :
+
+\[
+\frac{105}{0,5} = 100 \cdot (1+r) \implies 210 = 100 \cdot (1+r) \implies r = 110\%
+\]
+
+Remboursement par l’entreprise de 210 à la banque. Cette dernière n’emprunte pas à ce taux prohibitif.\\
+
+Projet S choisi par l’entreprise. Le taux débiteur sera \( r = 31,25 \% \). Remboursement de 131,25 à la banque. Profit attendu par l’entreprise avec le projet S : 
+
+\[
+0,8 \cdot (150 - 131,25) = 15
+\]
+
+Profit attendu avec le projet R : 
+
+\[
+0,5 \cdot (162 - 131,25) = 15,375
+\]
+
+La banque ne veut pas prêter les 100 car le projet R est beaucoup plus risqué et sera le projet choisi par l’entreprise. Taux \( i_{max} \) que la banque peut facturer pour que l’entreprise soit indifférente entre projet R ou S :
+
+\[
+0,8 \cdot [150 - 100 \cdot (1+i_{max})] = 0,5 \cdot [162 - 100 \cdot (1+i_{max})]
+\]
+
+D'où : 
+
+\[
+i_{max} = 30 \%
+\]
+
+À ce taux, la banque ne couvre pas ses charges sur le projet, il n’y aura pas de crédit accordé, ce qui entraîne un rationnement du crédit.
+
+Projet S choisi par l’entreprise. Le taux débiteur sera \( r = 31,25 \% \). Remboursement de 131,25 à la banque. Profit attendu par l’entreprise avec le projet S : 
+
+\[
+0,8 \cdot (150 - 131,25) = 15
+\]
+
+Profit attendu avec le projet R : 
+
+\[
+0,5 \cdot (162 - 131,25) = 15,375
+\]
+
+La banque ne veut pas prêter les 100 car le projet R est beaucoup plus risqué et sera le projet choisi par l’entreprise. Taux \( i_{max} \) que la banque peut facturer pour que l’entreprise soit indifférente entre projet R ou S :
+
+\[
+0,8 \cdot [150 - 100 \cdot (1+i_{max})] = 0,5 \cdot [162 - 100 \cdot (1+i_{max})]
+\]
+
+D'où : 
+
+\[
+i_{max} = 30 \%
+\]
+
+À ce taux, la banque ne couvre pas ses charges sur le projet, il n’y aura pas de crédit accordé, ce qui entraîne un rationnement du crédit.\\
+
+\textbf{Scénario 2 : la banque accorde}
+\\\noindent\\
+1 crédit de 100 en 1ère période au taux \( i_1 \). 1 crédit de 100 en 2ème période au taux \( i_2 \) – ce 2nd crédit est conditionnel au remboursement du 1er. On suppose que \( i_2 = 30 \% \) à la 2nde période et la firme choisit S à la 2nde période.
+
+Taux \( i_{max} \) de la 1ère période que la banque peut facturer à l’entreprise qui la rende indifférente entre le projet S et R à la 1ère période :
+
+\[
+0,8 \cdot [150 - 100 \cdot (1+i_{max})] + 0,8 \cdot [150 - 100 \cdot (1+0,30)] 
+\]
+\[ 
+= 0,5 \cdot [162 - 100 \cdot (1+i_{max})] + 0,8 \cdot [150 - 100 \cdot (1+0,30)]
+ \]
+
+D'où :
+
+\[
+i_{max} = 30 \%
+\]
+
+Même résultat que précédemment.
+
+Comme \( i_2 = 30 \% \), \( i_1 \) est le taux d’intérêt de la 1ère période facturé par la banque pour couvrir ses charges. Si \( i_2 = 30 \% \), on sait que la banque fait des pertes en 2nde période. Quel \( i_1 \) ?
+
+\[
+[0,8 \cdot (1+i_1) \cdot 100 - 105] + 0,8 \cdot [(0,8 \cdot 130) - 105] = 0
+\]
+
+D'où :
+
+\[
+i_1 = 32,25 \%
+\]
+
+La banque couvre ses charges sur 2 périodes et non sur 1 période.
+
+Banque facture 150 points de base au-dessus de son taux d’équilibre sans perdre l’entreprise. \( i_1 = 33,75 \% \) ; projet S retenu sur 2 périodes.
+
+Profit attendu par la banque sur 2 périodes :
+
+\[
+[0,8 \cdot (1+i_1) \cdot 100 - 105] + 0,8 \cdot [(0,8 \cdot 130) - 105]
+\]
+
+Calculons :
+
+\[
+0,8 \cdot 133,75 - 105 + 0,8 \cdot (104 - 105) = 1,2 \,\text{€}
+\]
+
+Bénéfice attendu pour l’entreprise :
+
+\[
+0,8 \cdot (150 - 133,75) + 0,8 \cdot [0,8 \cdot (150 - 130)] = 25,80 \, \text{€}
+\]
+
+Banque et entreprise sont en faveur d’une relation de long terme, baisse du risque moral, entre autres. Aucun crédit n’est accordé sur 1 période car l’emprunteur peut choisir le projet le plus risqué (aléa moral).
+
+Si la banque prête sur 2 périodes, elle peut décider d’accorder le crédit à la 2nde période à un taux plus bas si l’emprunteur choisit le projet le moins risqué. Elle recouvre la perte liée à la 2nde période en élevant son taux à la 1ère période. L’emprunteur choisira le projet le moins risqué à la 1ère période pour obtenir le crédit à la 2nde période. Dit autrement, le crédit de la 2nde période est conditionnel à la réussite du projet de la 1ère période.
+
+\subsection{Les limites}
+
+Von Thadden (1995) met en évidence les limites de la relation de long terme. Il existe deux types de firmes : les firmes de « bonne qualité » et les firmes de « mauvaise qualité ». Chacune peut engager des projets à court terme ou à long terme.
+
+Les projets à long terme sont plus profitables que ceux à court terme pour la banque, mais moins rentables lors de la première période. Les banquiers ne peuvent pas connaître a priori le type de firme et interprètent souvent les mauvais résultats de la première période comme le signe d’une firme de « mauvaise qualité », ce qui peut les amener à arrêter de la financer.
+
+Sans surveillance de la part des banques, les firmes de « bonne qualité » sont incitées à investir dans des projets à court terme. Lorsque les banques effectuent une surveillance, elles peuvent discriminer entre les firmes à l’échéance du projet à financer. 
+
+Elles peuvent alors financer les projets à long terme des firmes de « bonne qualité » et extraire une rente informationnelle grâce à ces projets à long terme, tout en tentant de maintenir leur monopole. 
+
+Pour éviter d'être soumises à cette rente, les firmes ont intérêt à choisir des projets à court terme, ce qui aboutit à une inefficience.
+
+Rajan (1992) montre que la banque a une position de monopole. La firme, avec un faible pouvoir de négociation, laisse une partie de ses profits à la banque. Pour éviter ce hold-up, la firme cherche à diversifier ses sources de financement en faisant appel à d’autres banques.
+
+Voir Rajan R, « \textit{Insiders and outsiders: The choice between informed and arm’s-length debt} », Journal of finance, 47 (4), 1992.
+
+\section{La titrisation et la crise financière globale de 2007-2009}
+
+La crise financière globale, qui a éclaté en 2007-2008, est une période de turbulences économiques majeures qui a touché de nombreux pays à travers le monde. Elle a été déclenchée par l'effondrement du marché immobilier américain et la crise des prêts hypothécaires à risque (subprimes). Les banques ont subi d'énormes pertes en raison de l'exposition à ces prêts, entraînant une perte de confiance dans le système financier. 
+
+Les principales causes incluent les prêts hypothécaires à risque, qui sont des prêts accordés à des emprunteurs peu solvables, ainsi que la titrisation, où les banques ont regroupé ces prêts en titres financiers, rendant difficile l'évaluation des risques. De plus, la réglementation insuffisante a permis des pratiques risquées au sein des institutions financières.
+
+Les conséquences ont été sévères, avec des faillites bancaires, une récession mondiale, une augmentation du chômage et des interventions gouvernementales massives pour stabiliser les marchés. La crise a également conduit à des réformes réglementaires pour éviter de futures crises similaires.
+
+Le terme "Ninja" est un acronyme pour désigner des emprunteurs qui n'ont pas de revenu, pas d'emploi et pas d'actifs. Ces prêts étaient souvent accordés sans vérification des revenus ou de la solvabilité de l'emprunteur, ce qui a contribué à l'augmentation des défauts de paiement lorsque le marché immobilier a commencé à décliner. Les prêts Ninja étaient typiques des prêts hypothécaires à risque (subprimes) qui ont alimenté la crise financière.
+
+La loi sur la faillite personnelle est un cadre juridique qui permet aux individus en difficulté financière de se libérer de certaines dettes et de recommencer à zéro. Ce concept est particulièrement pertinent dans le contexte des prêts hypothécaires à risque (subprimes) et de la crise financière de 2008.
+
+La bulle immobilière a éclaté lorsque l'augmentation des taux d'intérêt a provoqué une chute des prix de l'immobilier, exposant la fragilité des prêts hypothécaires à risque (subprimes) accordés à des emprunteurs peu solvables.
+
+La titrisation a joué un rôle clé dans la bulle immobilière en permettant aux banques de regrouper et de vendre des prêts hypothécaires sous forme de titres financiers, transférant ainsi le risque aux investisseurs tout en masquant la qualité des actifs, ce qui a alimenté la prise de risques excessive.
+
+La technique de la titrisation est utilise si elle est utilisée à bon escient
+
+\subsection{Les modalités}
+
+\subsubsection{Principes}
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-10-23 163856}
+\end{center}
+
+Mortgage-Backed Securities – MBS : titres adossés à des prêts hypothécaires. 
+
+Assets Backed Securities – ABS : titres adossés à des actifs (obligations, …). 
+
+Collateralised Debt Obligations - CDO : titres garantis par un portefeuille de dettes, incluant : 
+
+Dettes = crédits bancaires (Collateralised Loan Obligations - CLO) et / ou titres financiers négociables (Collateralised Bond Obligations - CBO) et / ou dérivés de crédit (Collateralised Synthetic Obligations - CSO). 
+
+CDO2 = CDO adossés à des CDO eux-mêmes assis sur des MBS ou des ABS.
+
+Véhicule (ou conduit ou SPV - Special Purpose Vehicle) peut aussi émettre des titres négociables à court terme adossés à des actifs (Assets Backed Commercial Papers - ABCP).
+
+\begin{center}
+	\includegraphics[scale=0.8]{../../../Pictures/Screenshots/Capture d'écran 2024-10-23 164456}
+\end{center}
+
+Dérivés de crédits (crédit default swap) ou swap sur défaillance
+
+\begin{center}
+\includegraphics[scale=0.8]{../../../Pictures/Screenshots/Capture d'écran 2024-10-23 164632}
+\end{center}
+
+\subsection{Titrisation et dérivés de crédit}
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-10-23 164850}
+\end{center}
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-10-23 165026}
+\end{center}
+
+
+
+
+
 
 
 \end{document}

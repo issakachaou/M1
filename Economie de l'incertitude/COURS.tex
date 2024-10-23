@@ -1254,7 +1254,210 @@ On pourra toutefois conclure que plus le prix de vente est faible, toutes choses
 
 \section{Prime de risque}
 
+Définition : la prime de risque \( \pi \) est le montant que le décideur est prêt à payer pour s'affranchir du risque.
 
+La prime de risque \( \pi \) d'une richesse aléatoire \( W = \omega + X \) est égale à l'écart entre l'espérance mathématique de la partie aléatoire de la richesse et son prix de vente :
+\[
+\pi = \mathbb{E}[X] - pv
+\]
+
+On peut également définir la prime de risque \( \pi \) comme l'écart entre l'espérance mathématique de la richesse aléatoire et son équivalent certain :
+\[
+\pi = \mathbb{E}[W] - \bar{w}
+\]
+
+On peut également définir la prime de risque absolue de la manière suivante :
+\[
+u(\bar{w}) = u(E[W] - \pi) = E[u(W)] \quad \Leftrightarrow \quad \pi = \mathbb{E}[W] - u^{-1}\left( E[u]\right) 
+\]
+
+\subsection{Exemples 1 et 2}
+\noindent
+Exemple 1 : 
+\[
+\pi = \mathbb{E}[X] - pv = 40 - 33,78 = 6,22\,\text{€} 
+\]
+\[
+\pi = \mathbb{E}[W] - \bar{w} = 240 - 233,78 = 6,22\,\text{€} 
+\]
+\noindent
+Exemple 2 : 
+\[
+\pi = \mathbb{E}[Y] - pv = -40 - (-48,22) = 8,22\,\text{€} 
+\]
+\[
+\pi = \mathbb{E}[W] - \bar{w} = 160 - 151,78 = 8,22\,\text{€} 
+\]
+\noindent
+Remarque : Dans ces deux exemples, l'agent est prêt à payer pour se débarrasser du risque, il est donc averse au risque.
+
+\subsection{Représentation graphique}
+
+\begin{center}
+	\includegraphics[scale=0.4]{../../../Pictures/Screenshots/Capture d'écran 2024-10-23 193755}
+\end{center}
+
+\subsection{Prime de risque et préférences}
+
+La prime de risque attachée à une richesse certaine est nulle, indépendamment de l'attitude face au risque.
+
+L'aversion face au risque peut se définir par rapport à la prime de risque \( \pi \) associée à une richesse aléatoire \( W \). Plus précisément :
+
+Aversion face au risque : \( \pi > 0 \)
+
+Neutralité face au risque : \( \pi = 0 \)
+
+Goût pour le risque : \( \pi < 0 \)
+
+\noindent
+Un décideur riscophobe (i.e. averse au risque) est prêt à payer pour s'affranchir du risque, alors qu'un décideur riscophile (i.e. ayant un goût pour le risque) est prêt à payer pour acquérir un risque supplémentaire.
+
+\subsection{Fonction d'utilité et préférences}
+
+Sans passer par le calcul de la prime de risque, nous pouvons déduire à partir de la forme de la fonction d'utilité \( u \) l'attitude face au risque d'un agent. Pour démontrer cela, nous utilisons la propriété d'inégalité de Jensen : soit \( f \) une fonction strictement concave (resp. strictement convexe) et \( W \) une variable aléatoire réelle, alors :
+
+\[
+f \left( \mathbb{E}[W] \right) > \mathbb{E}\left[ f(W) \right] \quad \text{(resp. } f \left( \mathbb{E}[W] \right) < \mathbb{E}\left[ f(W) \right] \text{)}
+\]
+
+Remarque : si \( f \) est linéaire (donc à la fois concave et convexe), on a l'égalité suivante :
+
+\[
+f \left( \mathbb{E}[W] \right) = \mathbb{E}\left[ f(W) \right]
+\]
+
+En utilisant la définition suivante de la prime de risque :
+
+\[
+\pi = \mathbb{E}[W] - u^{-1} \left( \mathbb{E}\left[ u(W) \right] \right)
+\]
+
+et l'inégalité de Jensen, on en déduit que :
+
+La prime de risque est positive (aversion face au risque) si et seulement si :
+
+\[
+\mathbb{E}[W] > u^{-1} \left( \mathbb{E}\left[ u(W) \right] \right) \iff u \left( \mathbb{E}[W] \right) > \mathbb{E}\left[ u(W) \right]
+\]
+
+avec une fonction d'utilité \( u \) concave.
+
+La prime de risque est nulle (neutralité face au risque) si et seulement si :
+
+\[
+u \left( \mathbb{E}[W] \right) = \mathbb{E}\left[ u(W) \right]
+\]
+
+avec une fonction d'utilité \( u \) linéaire.
+
+La prime de risque est négative (goût pour le risque) si et seulement si :
+
+\[
+u \left( \mathbb{E}[W] \right) < \mathbb{E}\left[ u(W) \right]
+\]
+
+avec une fonction d'utilité \( u \) convexe.
+
+\subsection{Représentation graphique}
+
+On peut vérifier graphiquement (cas d'une richesse aléatoire prenant
+seulement 2 valeurs) que le signe de la prime de risque dépend
+uniquement de la concavité / convexité de la fonction élémentaire \( u \)
+\begin{center}
+	\includegraphics[scale=0.45]{../../../Pictures/Screenshots/Capture d'écran 2024-10-23 202153}
+\end{center}
+
+\subsection{Exercice d'application}
+
+Considérons un travailleur qui gagne un revenu \( r \) lorsqu'il est en emploi et perçoit une indemnité \( b < r \) lorsqu'il est au chômage. La probabilité de chômage est égale à \( p \). Sa richesse initiale est égale à \( \omega \) et ses préférences sont représentées par la fonction d'utilité \( u(w) = \ln(w) \).
+
+\begin{itemize}
+	\item Écrire la loterie sur la richesse du travailleur.
+	\item Calculer l'espérance de la richesse, l'espérance de la part aléatoire de la richesse et l'utilité espérée de la richesse.
+	\item Calculer l'équivalent certain.
+	\item Calculer le prix de vente de la loterie (du risque chômage).
+	\item Calculer, de 2 manières différentes, la prime de risque.
+	\item Application numérique (AN) : \( r = 1200 \, € \) ; \( b = 600 \, € \) ; \( p = 0{,}1 \). Donner la valeur de la prime de risque lorsque \( \omega = 1000 \, € \) et lorsque \( \omega = 0 \, € \). Commentaires ?
+\end{itemize}
+\noindent
+Loterie des travailleurs
+
+\[
+X= \begin{cases} 
+ b &  r  \\
+ p &  1 - p
+\end{cases}
+\]
+\noindent
+Richesse totale
+\[ 
+W=\omega+X= \begin{cases} 
+	\omega + b & \omega + r  \\
+	p &  1 - p
+\end{cases}
+ \]
+\noindent
+Rappel
+\[ 
+n\ln(a)=\ln(a^n) \quad \text{et} \quad \ln(a)+\ln(b)=\ln(ab)
+ \]
+
+\[ 
+\mathbb{E}(X)=b\cdotp(1-p)r
+ \]
+\[ 
+\mathbb{E}=p(\omega+b)+(1-p)(\omega+r)
+ \]
+\[ 
+=\cancel{p\omega}+pb+\omega+r-\cancel{p\omega}-pr
+\]
+\[ 
+pb+\omega(1-p)r
+ \]
+\[ 
+U(w)=\mathbb{E}\left( u(w) \right) 
+ \]
+\[ 
+=p\ln(\omega+b)+(1-p)\ln(\omega+r)
+ \]
+\[ 
+\ln \left[(\omega+b)^{p}\omega+r)^{1-p} \right] 
+ \]
+\noindent
+Équivalent certain
+
+\[ 
+\bar{w} \quad u(\bar{w})=\mathbb{E}\left( u(w)\right) 
+ \]
+\[ 
+\bar{w}=u^{-1}\left[ \mathbb{E}\left( u(w) \right)  \right] 
+ \]
+\[ 
+\bar{w}=\exp\left[\ln\left[ (\omega+b)^{p}(\omega+r)^{1-p}\right]  \right] 
+ \]
+\[ 
+\bar{w}= (\omega+b)^{p}(\omega+r)^{1-p}
+ \]
+\noindent
+Prix de vente 
+\[ 
+p_v=\bar{w}-w=(\omega+b)^{p}(\omega+r)^{1-p}-w
+ \]
+\noindent
+Prime de risque
+
+\[ 
+\pi=\mathbb{E}(X)-p_v=pb+(1-p)r-(\omega+b)^{p}(\omega+r)^{1-p}+w
+ \]
+\noindent
+Application numérique\\
+
+\noindent
+\( \omega=1000\, \text{€}\)
+\[ 
+\mathbb{E}(w)=1000+0,1\cdot+0,9\cdot1200=2140\, \text{€}
+ \]
+\( \omega=0\, \text{€}\)
 \section{Prime de risque et degré d'aversion}
 
 
