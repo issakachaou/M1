@@ -1,5 +1,16 @@
 \babel@toc {french}{}\relax 
-\contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}%
-\contentsline {chapter}{\numberline {2}La première année de master}{5}{chapter.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}%
+\contentsline {chapter}{\numberline {2}La première année de master}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Matières importantes et marge de sécurité}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Le savoir être}{4}{section.2.2}%
 \contentsline {chapter}{\numberline {3}Le stage}{6}{chapter.3}%
-\contentsline {chapter}{\numberline {4}L'alternance}{7}{chapter.4}%
+\contentsline {section}{\numberline {3.1}Le choix du tuteur de stage}{6}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Le moment pour trouver un stage}{6}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Le CV, la lettre de motivation et LinkedIn}{7}{section.3.3}%
+\contentsline {section}{\numberline {3.4}L'entretien}{7}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Le savoir être en stage}{8}{section.3.5}%
+\contentsline {chapter}{\numberline {4}L'alternance}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Les modalités}{9}{section.4.1}%
+\contentsline {section}{\numberline {4.2}La rémunération}{10}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Annexe}{11}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Liste des étudiants de M2}{11}{section.5.1}%

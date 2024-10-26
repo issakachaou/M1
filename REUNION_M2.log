@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2024.10.12)  21 OCT 2024 18:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2024.10.12)  26 OCT 2024 22:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -276,10 +276,50 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count292
 \@thisrulewidth=\dimen194
 )
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip65
+\cftbeforetoctitleskip=\skip66
+\cftaftertoctitleskip=\skip67
+\cftbeforepartskip=\skip68
+\cftpartnumwidth=\skip69
+\cftpartindent=\skip70
+\cftbeforechapskip=\skip71
+\cftchapindent=\skip72
+\cftchapnumwidth=\skip73
+\cftbeforesecskip=\skip74
+\cftsecindent=\skip75
+\cftsecnumwidth=\skip76
+\cftbeforesubsecskip=\skip77
+\cftsubsecindent=\skip78
+\cftsubsecnumwidth=\skip79
+\cftbeforesubsubsecskip=\skip80
+\cftsubsubsecindent=\skip81
+\cftsubsubsecnumwidth=\skip82
+\cftbeforeparaskip=\skip83
+\cftparaindent=\skip84
+\cftparanumwidth=\skip85
+\cftbeforesubparaskip=\skip86
+\cftsubparaindent=\skip87
+\cftsubparanumwidth=\skip88
+\cftbeforeloftitleskip=\skip89
+\cftafterloftitleskip=\skip90
+\cftbeforefigskip=\skip91
+\cftfigindent=\skip92
+\cftfignumwidth=\skip93
+\c@lofdepth=\count293
+\c@lotdepth=\count294
+\cftbeforelottitleskip=\skip94
+\cftafterlottitleskip=\skip95
+\cftbeforetabskip=\skip96
+\cfttabindent=\skip97
+\cfttabnumwidth=\skip98
+)
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
 \wrapoverhang=\dimen195
 \WF@size=\dimen196
-\c@WF@wrappedlines=\count293
+\c@WF@wrappedlines=\count295
 \WF@box=\box57
 \WF@everypar=\toks25
 Package: wrapfig 2003/01/31  v 3.6
@@ -290,21 +330,21 @@ Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
 \ar@mcellbox=\box58
 \extrarowheight=\dimen198
 \NC@list=\toks26
-\extratabsurround=\skip65
-\backup@length=\skip66
+\extratabsurround=\skip99
+\backup@length=\skip100
 \ar@cellbox=\box59
 )
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip67
-\multirow@cntb=\count294
-\multirow@dima=\skip68
+\multirow@colwidth=\skip101
+\multirow@cntb=\count296
+\multirow@dima=\skip102
 \bigstrutjot=\dimen199
 )
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/makecell\makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \rotheadsize=\dimen256
-\c@nlinenum=\count295
+\c@nlinenum=\count297
 \TeXr@lab=\toks27
 )
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
@@ -362,11 +402,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count296
+\c@section@level=\count298
 )
 \@linkdim=\dimen257
-\Hy@linkcounter=\count297
-\Hy@pagecounter=\count298
+\Hy@linkcounter=\count299
+\Hy@pagecounter=\count300
  (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2022-09-22 v7.00t Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -377,7 +417,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count299
+\Hy@SavedSpaceFactor=\count301
  (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2022-09-22 v7.00t Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -390,7 +430,7 @@ Package hyperref Info: Plain pages OFF on input line 4177.
 Package hyperref Info: Backreferencing OFF on input line 4182.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4410.
-\c@Hy@tempcnt=\count300
+\c@Hy@tempcnt=\count302
 
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
@@ -407,7 +447,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count301
+\Fld@menulength=\count303
 \Field@Width=\dimen259
 \Fld@charsize=\dimen260
 Package hyperref Info: Hyper figures OFF on input line 6027.
@@ -422,9 +462,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6057.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count302
-\c@Item=\count303
-\c@Hfootnote=\count304
+\Hy@abspage=\count304
+\c@Item=\count305
+\c@Hfootnote=\count306
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
@@ -435,8 +475,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count305
-\c@bookmark@seq@number=\count306
+\Fld@listcount=\count307
+\c@bookmark@seq@number=\count308
 
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
@@ -449,48 +489,90 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
-\Hy@SectionHShift=\skip69
+\Hy@SectionHShift=\skip103
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathptmx.sty
+Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup6
+\symitalic=\mathgroup7
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+)
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 32
+.
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count307
+\l__color_backend_stack_int=\count309
 \l__pdf_internal_box=\box60
 ) (REUNION_M2.aux)
 \openout1 = `REUNION_M2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count308
+\scratchcounter=\count310
 \scratchdimen=\dimen261
 \scratchbox=\box61
-\nofMPsegments=\count309
-\nofMParguments=\count310
+\nofMPsegments=\count311
+\nofMParguments=\count312
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count311
+\MPscratchCnt=\count313
 \MPscratchDim=\dimen262
-\MPnumerator=\count312
-\makeMPintoPDFobject=\count313
+\MPnumerator=\count314
+\makeMPintoPDFobject=\count315
 \everyMPtoPDFconversion=\toks29
 )
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -503,77 +585,142 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \degres on input line 25.
-LaTeX Info: Redefining \up on input line 25.
-Package hyperref Info: Link coloring OFF on input line 25.
+LaTeX Info: Redefining \degres on input line 32.
+LaTeX Info: Redefining \up on input line 32.
+Package hyperref Info: Link coloring OFF on input line 32.
  (REUNION_M2.out) (REUNION_M2.out)
 \@outlinefile=\write3
 \openout3 = `REUNION_M2.out'.
 
 <../../Downloads/Screenshot 2024-09-17 at 13-58-12 Sciences Ã©conomiques et ges
-tion.png, id=19, 326.21875pt x 108.405pt>
+tion.png, id=63, 326.21875pt x 108.405pt>
 File: ../../Downloads/Screenshot 2024-09-17 at 13-58-12 Sciences Ã©conomiques e
 t gestion.png Graphic file (type png)
 <use ../../Downloads/Screenshot 2024-09-17 at 13-58-12 Sciences Ã©conomiques et
  gestion.png>
 Package pdftex.def Info: ../../Downloads/Screenshot 2024-09-17 at 13-58-12 Scie
-nces Ã©conomiques et gestion.png  used on input line 30.
+nces Ã©conomiques et gestion.png  used on input line 37.
 (pdftex.def)             Requested size: 163.10896pt x 54.20236pt.
  [1
 
 {C:/Users/issak/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <../../Downlo
-ads/Screenshot 2024-09-17 at 13-58-12 Sciences Ã©conomiques et gestion.png>]
+ads/Screenshot 2024-09-17 at 13-58-12 Sciences Ã©conomiques et gestion.png>] (R
+EUNION_M2.toc
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
+ 2.
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
+ 2.
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
+ 2.
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
+ 2.
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
+.
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+)
+\tf@toc=\write4
+\openout4 = `REUNION_M2.toc'.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.63 \tableofcontents
-                      [1
+l.73 \newpage
+              [1
 
-] (REUNION_M2.toc)
-\tf@toc=\write4
-\openout4 = `REUNION_M2.toc'.
-
- [2
-
-] [3]
+] [2]
 Chapitre 1.
-[4
+[3
 
 ]
 Chapitre 2.
-[5
 
-]
+Overfull \hbox (2.13673pt too wide) in paragraph at lines 92--93
+\T1/ptm/m/n/12 d'éva-lua-tion des ac-tifs fi-nan-ciers, es-sen-tiel pour notre 
+fu-tur pro-fes-sion-nel. D'autres
+ []
+
+
+Overfull \hbox (10.61452pt too wide) in paragraph at lines 94--95
+[]\T1/ptm/m/n/12 Les cours d'éco-no-mie im-mo-bi-lière, quant à eux, re-pré-sen
+tent le socle de connais-
+ []
+
+[4
+
+] [5]
 Chapitre 3.
 [6
 
-]
+] [7] [8]
 Chapitre 4.
-[7
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
+62.
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+[9
+
+] [10]
+Chapitre 5.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+88.
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Overfull \hbox (78.0044pt too wide) in paragraph at lines 169--189
+ [] 
+ []
+
+[11
 
 ] (REUNION_M2.aux)
 Package rerunfilecheck Info: File `REUNION_M2.out' has not changed.
-(rerunfilecheck)             Checksum: EAC93955C0EB136D81C7F8A6169F61F1;488.
+(rerunfilecheck)             Checksum: AB8FC9A3BDE0BBD7BF7B7E3AB41B92A7;2446.
  ) 
 Here is how much of TeX's memory you used:
- 12958 strings out of 475385
- 208435 string characters out of 2776906
- 561286 words of memory out of 3000000
- 34156 multiletter control sequences out of 15000+600000
- 475552 words of font info for 37 fonts, out of 8000000 for 9000
+ 13521 strings out of 475385
+ 217871 string characters out of 2776906
+ 578879 words of memory out of 3000000
+ 34658 multiletter control sequences out of 15000+600000
+ 508073 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,5n,77p,959b,530s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx
-1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecxc1728.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecrm1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecbx1728.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecbx2488.pk>
-Output written on REUNION_M2.pdf (8 pages, 88362 bytes).
+ 72i,10n,77p,760b,530s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
+1200.pk>{C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.e
+nc}<C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.p
+fb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.p
+fb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.
+pfb>
+Output written on REUNION_M2.pdf (12 pages, 102037 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 213 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 500000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
