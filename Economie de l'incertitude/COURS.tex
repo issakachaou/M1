@@ -1367,7 +1367,7 @@ uniquement de la concavité / convexité de la fonction élémentaire \( u \)
 	\includegraphics[scale=0.45]{../../../Pictures/Screenshots/Capture d'écran 2024-10-23 202153}
 \end{center}
 
-\subsection{Exercice d'application}
+\subsection{Exercice d'application} 
 
 Considérons un travailleur qui gagne un revenu \( r \) lorsqu'il est en emploi et perçoit une indemnité \( b < r \) lorsqu'il est au chômage. La probabilité de chômage est égale à \( p \). Sa richesse initiale est égale à \( \omega \) et ses préférences sont représentées par la fonction d'utilité \( u(w) = \ln(w) \).
 
@@ -1447,21 +1447,655 @@ p_v=\bar{w}-w=(\omega+b)^{p}(\omega+r)^{1-p}-w
 Prime de risque
 
 \[ 
-\pi=\mathbb{E}(X)-p_v=pb+(1-p)r-(\omega+b)^{p}(\omega+r)^{1-p}+w
- \]
+\pi=\mathbb{E}(X)-p_v=pb+(1-p)r-(\omega+b)^{p}(\omega+r)^{1-p}+w 
+\]
 \noindent
 Application numérique\\
 
 \noindent
-\( \omega=1000\, \text{€}\)
+\[  \omega=1000\, \text{€} \tag{1}\]
 \[ 
 \mathbb{E}(w)=1000+0,1\cdot+0,9\cdot1200=2140\, \text{€}
- \]
-\( \omega=0\, \text{€}\)
+\]
+\[ \omega=0\, \text{€} \tag{2} \]
+\[ 
+\mathbb{E}(w)=1140\, \text{€}
+\]
+\[ 
+\bar{w}=(1600)^{0,1}\cdot(2200)^{0,9}=2131\, \text{€} \tag{1}
+\]
+\[ 
+\bar{w}=(600)^{0,1}\cdot(1200)^{0,9}=1120\, \text{€} \tag{2}
+\]
+\[ 
+\pi = \mathbb{E}(w)-\bar{w}=2140-2131=9\, \text{€} \tag{1} 
+\]
+\[ 
+\pi = \mathbb{E}(w)-\bar{w}=1140-1120=20\, \text{€} \tag{2}
+\]
+
+\subsection{Statique comparative}
+
+Toute choses étant égales par ailleurs, l'individu le moins riche est prêt à payer plus chère pour se débarrasser du risque. Il a une prime de risque plus élevé.
+
 \section{Prime de risque et degré d'aversion}
 
+Nous allons ici revenir sur l'interprétation du montant de la prime de risque et sur son lien avec le degré d'aversion face au risque. 
 
-\section{ Les trois primes de risque et les indices d'aversion associés}
+1) Si la prime de risque $\pi_A$ que l'individu $A$ attache à une richesse donnée est supérieure à celle $\pi_B$ que l'individu $B$ attache à cette même richesse, alors $A$ a une plus grande aversion pour le risque que présente cette richesse que $B$. Ainsi, le montant de la prime de risque mesure l'aversion d'un individu pour le risque attaché à une richesse. Il dépend de trois éléments : les préférences $u$, la partie risquée $X$ de la richesse, et la partie certaine $\omega$ de la richesse.
+
+Il est également possible de comparer le degré d'aversion au risque de deux individus non pas en comparant les montants de leurs primes de risque, mais en observant leurs préférences, c'est-à-dire la fonction d'utilité élémentaire $u$. Plus précisément, nous pouvons comparer le degré de concavité de la fonction élémentaire (cf. section 3.3.).
+
+2) Considérons deux individus $A$ et $B$ dotés respectivement des préférences $u_A$ et $u_B$. Si les préférences de l'individu $A$ peuvent être représentées par une transformation $f$ telle que croissante et concave de celles de l'individu $B$, c'est-à-dire si $u_A(w) = f(u_B(w))$ avec $f' > 0$ et $f'' < 0$, alors $A$ est plus riscophobe que $B$.
+
+\subsection{L'indice d'Arrow et Pratt}
+
+Considérons une richesse aléatoire composée d'une partie certaine et d'une partie risquée : $W = \omega + X$.
+
+3) Kenneth Arrow et John Pratt (1963-64) ont montré que lorsque le risque $X$ est "petit", il est possible d'approximer la prime de risque par l'expression suivante :
+
+\[
+\pi \approx \frac{\mathbb{V}(W)}{2} \cdot \left( -\frac{u''(\mathbb{E}[W])}{u'(\mathbb{E}[W])} \right) \approx \frac{\mathbb{V}(X)}{2} \cdot \left( -\frac{u''(\omega + \mathbb{E}[X])}{u'(\omega + \mathbb{E}[X])} \right)
+\]
+
+\( \frac{\mathbb{V}(W)}{2} \) : Caractéristique de la richesse (variance). Mesure l'incertitude associée à la richesse.
+
+\( \left( -\frac{u''(\mathbb{E}[W])}{u'(\mathbb{E}[W])} \right) \) : Caractéristique des préférences. Mesure l'aversion face au risque.
+
+
+On remarque à partir de la formule d'Arrow et Pratt que :
+
+La prime de risque approximée est du même signe que \( -u'' \), c'est-à-dire \( > 0 \) pour un individu ayant des préférences strictement concaves (aversion au risque), \( < 0 \) pour un individu ayant des préférences strictement convexes (goût du risque) et \( = 0 \) pour un individu ayant des préférences affines (neutralité face au risque).
+
+La prime de risque augmente avec la variance (i.e. l'incertitude "objective") de la richesse aléatoire \( W \) et avec l'aversion au risque (subjective).
+
+
+La deuxième partie de l'expression approchée de la prime de risque s'appelle Indice d'aversion d'Arrow-Pratt :
+
+\[
+A_W = -\frac{u''(\mathbb{E}[W])}{u'(\mathbb{E}[W])}
+\]
+
+Comme \( \mathbb{E}[W] \) peut prendre n'importe quelle valeur \( w \), on écrit aussi cet indice :
+
+\[
+A_w = -\frac{u''(w)}{u'(w)}
+\]
+
+Ce coefficient mesure le degré de concavité de la fonction d'utilité au voisinage du point \( w \). Plus cet indice est grand, plus le degré d'aversion au risque est important.
+
+\subsection{Théorème de Pratt}
+
+Soient deux individus \( A \) et \( B \) dont les préférences sont représentées respectivement par \( U_A(W) = \mathbb{E}[u_A(W)] \) et \( U_B(W) = \mathbb{E}[u_B(W)] \). Ces trois propriétés sont équivalentes :
+
+(i) \( u_A \) est une transformation strictement croissante et strictement concave de \( u_B \) :
+\[
+\exists f, \, f' > 0, \, f'' < 0 \quad | \quad u_A(w) = f(u_B(w))
+\]
+
+(ii) La prime de risque que \( A \) associe à la richesse aléatoire \( W \) est supérieure à la prime de risque que \( B \) associe à la même richesse, pour tout petit risque \( X \) :
+\[
+\pi_A > \pi_B
+\]
+
+(iii) En n'importe quel point \( w \), l'indice d'Arrow-Pratt de \( A \) est supérieur à celui de \( B \) :
+\[
+\forall w, \quad -\frac{u_A''(w)}{u'(w)} > -\frac{u_B''(w)}{u'(w)}
+\]
+
+\subsubsection{Résumé}
+\begin{center}
+	\includegraphics[scale=0.4]{../../../Pictures/Screenshots/Capture d'écran 2024-10-28 114219}
+\end{center}
+
+\section{Les trois primes de risque et les indices d'aversion associés}
+
+Dans cette section, nous allons voir qu'il existe trois grands types de risques puis nous étudierons les indices d'aversion associés à ces risques.
+
+1) Jusqu'à présent, nous avons supposé que la partie aléatoire de la richesse, \( X \), venait s'ajouter à la partie certaine \( \omega \) : 
+\[
+W = \omega + X
+\]
+On parle dans ce cas de risque additif.
+
+2) Le risque, que nous notons cette fois \( Y \), peut également être multiplicatif : 
+\[
+W = \omega (1 + Y)
+\]
+Ce risque s'applique à la totalité de la richesse certaine \( \omega \).
+
+Ex : investissement de capitaux propres \( \omega \) dans une nouvelle technique de production au taux de rendement incertain \( Y \) ou encore placement d'argent en actions sur les marchés financiers.
+
+3) Enfin, le risque, que nous noterons cette fois \( Z \), peut être également mixte, ou partiel (combinaison des risques additifs et multiplicatifs) :
+\[
+W = \omega_1 + \omega_2(1 + Z), \quad \omega_1 + \omega_2 = \omega
+\]
+Ce risque porte sur une partie \( \omega_2 \) de la richesse certaine.
+
+On remarque que le risque multiplicatif et le risque partiel peuvent toujours être écrits sous forme additive :
+\[
+\omega(1 + Y)= \omega + \omega Y\quad ; \quad \omega_1 + \omega_2(1 + Z) = \omega + \omega_2 Z
+\]
+Tous les résultats établis jusqu'à présent avec un risque additif s'appliquent donc au risque multiplicatif, avec \( X = \omega Y \) et au risque partiel, avec \( X = \omega_2 Z \).
+
+\subsection{Prime de risque relatif}
+
+\subsubsection{Exemple}
+
+Prenons un exemple pour introduire la notion de prime de risque relatif : soit un individu de préférences \( u(w) = \sqrt{w}\) possédant une richesse certaine \( \omega = 200 \, € \) et confronté à la loterie \( Y \) suivante (risque multiplicatif) :
+
+\[
+Y = 
+\begin{cases}
+-25\% & +50\% \\
+0,4 & 0,6
+\end{cases}
+\]
+
+Sa richesse aléatoire s'écrit :
+\[
+W = \omega (1 + Y) = 
+\begin{cases}
+	200 (1 - 0,25) & 	200 (1 + 0,5) \\
+0,4 & 0,6
+\end{cases} = 
+\begin{cases}
+	150 & 300\\
+	0,4 & 0,6
+\end{cases}
+\]
+
+On retrouve donc la même richesse \( W \) et les mêmes préférences que dans l'exemple 1.
+
+L'équivalent certain de \( W \), le prix de vente de la partie risquée \( \omega Y \) et la prime de risque prennent donc les mêmes valeurs que vues précédemment :
+
+\[
+\bar{w} = \mathbb{E}\left[\sqrt{\omega (1 + Y)}\right] \quad \text{soit} \quad \bar{w} = 233,82 \, \text{€}
+\]
+\[
+pv = \bar{w} - \omega = 33,82 \, \text{€}
+\]
+\[
+\pi = \mathbb{E}[\omega Y] - pv = \omega \mathbb{E}[Y] - pv = 200 \cdot \left( 0,4 \cdot (-0,25) + 0,6 \cdot 0,5 \right) - 33,82 = 6,18 \, \text{€}
+\]
+
+Cependant, il est beaucoup plus naturel de raisonner sur des taux, plutôt que sur des montants monétaires… ce qui va nous conduire notamment à définir une nouvelle forme de prime de risque : la prime de risque relatif.
+
+Que peut-on dire en termes de taux ?
+
+\[
+\mathbb{E}[Y] = 20\%
+\]
+
+D'après l'interprétation de l'équivalent certain, l'individu est prêt à céder sa richesse aléatoire \( W = \omega (1 + Y) \) en l'échange d'une richesse certaine de \( 233,82 \, \text{€} \).
+
+Cela revient à accepter un taux de rendement équivalent certain de la richesse de :
+
+\[
+\bar{y} = \frac{233,82 - 200}{200} = 16,91\% \quad (\neq 20\%)
+\]
+
+Formellement, on a :
+
+\[
+u(\omega (1 + \bar{y})) = \mathbb{E}\left[ u(\omega (1 + Y))\right]
+\]
+
+La prime de risque relatif s'écrit alors comme la différence :
+
+\[
+\pi_R = \mathbb{E}[Y] - \bar{y} = 3,09 \, p.p.
+\]
+
+Interprétation : l'individu est prêt à soustraire \( 3,09 \) points de rendement à \( \mathbb{E}[Y] \) pour éliminer le risque.
+
+\subsubsection{Définition}
+
+Définition : la prime de risque relatif \( \pi_R \) est le nombre de points de rendement auxquels un décideur est prêt à renoncer pour s'affranchir du risque.
+
+Elle est définie par :
+\[
+\pi_R \, | \, u(\mathbb{E}[W]) - \omega \pi_R = \mathbb{E}[u(W)] \Leftrightarrow u(\omega(1 + \mathbb{E}[Y]) - \pi_R = \mathbb{E}[u(\omega(1 + Y)]
+\]
+
+Avec \( W = \omega\left( 1 + \mathbb{E}[Y]\right)  \)
+
+Remarque : la prime \( \pi \) étudiée jusqu'à présent, appelée prime de risque absolu, raisonnait en nombre d'unités monétaires.
+
+\subsection{Prime de risque partiel}
+
+\subsubsection{Définition}
+
+Définition : la prime de risque partiel \( \pi_P \) est le nombre de points de rendement auxquels un décideur est prêt à renoncer sur la partie risquée de sa richesse pour s'affranchir du risque.
+
+Elle est définie par :
+
+\[
+\pi_P \, | \, u(E[W]) - \omega_2 \pi_P = E[u(W)] \Leftrightarrow u (\omega_1 + \omega_2(1 + E[Z]) - \pi_P = E[u(\omega_1 + \omega_2(1 + Z)]
+\]
+
+Avec \( W = \omega_1 + \omega_2(1 + Z) \)
+
+Avec \( \omega = \omega_1 + \omega_2 \).
+
+\subsubsection{Exemple}
+Calculer, pour chacun des cas ci-dessous, la prime de risque correspondante. Que remarquez-vous ?
+
+1. On considère un décideur ayant une richesse certaine \( \omega = 100 \, \text{€} \) et des préférences représentées par \( u(w) = \sqrt{w} \). Il est confronté à un risque additif : 
+
+\[
+X = \begin{cases}
+-25 \, \text{€} & 	75 \, \text{€} \\
+0,5  &  0,5
+\end{cases}
+\]
+
+2. On considère un décideur avec un capital de \( \omega = 100 \, \text{€} \) et des préférences représentées par \( u(w) = \sqrt{w} \). La loterie porte sur le taux de rendement : 
+
+\[
+Y = \begin{cases}
+	-25\% & 75\%\\
+	0,5 & 0,5
+\end{cases}
+\]
+
+3. On considère un investisseur avec une richesse certaine \( \omega_1 = 50 \, € \) et une richesse risquée \( \omega_2 = 50 \, € \) et des préférences représentées par \( u(w) = \sqrt{w}\). Le placement sur la richesse risquée est représenté par la loterie : 
+
+\[
+Z = \begin{cases}
+	-50\% & 150\%  \\
+	0,5 &  0,5
+\end{cases}
+\]
+Réponse 1 : risque additif 
+\[
+X = \begin{cases}
+	75  & 175\\
+	0,5  &  0,5
+\end{cases}
+\]
+Equivalent certain : 
+
+\[ 
+\mathbb{E}\left( u(w)\right) =0,5\sqrt{75}+0,5\sqrt{175}=10,9445053
+\]
+
+On cherche donc l'équivalent certain $\bar{w}$ tel que :
+\[ u(\bar{w})= \mathbb{E}\left( u(W) \right)=10,9445053 \]
+\[ \Leftrightarrow \sqrt{\bar{w}}=10,944505 \Leftrightarrow \bar{w} =10,944505^2 =119,7821962
+\]
+\[
+\pi_A = \mathbb{E}(X) - \bar{w} = 125-119,7821962=5,217803813
+\, \text{€}
+\]
+Réponse 2 : risque relatif 
+
+\[ 
+u\left[ \omega(1+\mathbb{E}(Y)-\pi_R) \right] =\mathbb{E}\left[ u(\underbrace{\omega(1+Y)}_{w})\right] 
+\]
+\[ 
+W=\omega(1+Y)
+\]
+\[
+Y = \begin{cases}
+	100(1-0,25) & 100(1+0,75)\\
+	0,5 & 0,5
+\end{cases} = \begin{cases}
+75  & 175\\
+0,5  &  0,5
+\end{cases}
+\]
+\[  
+\mathbb{E}(Y)=0,5(-0,25)+0,5(0,75)=0,25
+\]
+\[ 
+\sqrt{100(1+0,25-\pi_R)}=0,5\sqrt{75}+0,5\sqrt{175}
+ \]
+\[ 
+\sqrt{(125-100\pi_R)}=10,9445053
+\]
+\[ 
+\pi_R=\frac{125-10,945^2}{100}=0,052178038
+ \]
+Il est prêt a payer 5,2 point de rendement pour se débarrasser du risque. 
+
+Réponse 3 : risque partiel
+
+\[ 
+W=\omega_1+\omega_2(1+Z)
+ \]
+\[
+= 50 + \begin{cases}
+	50(1-0,5) & 50(1+1,5)\\
+	0,5 & 0,5
+\end{cases} = 50+\begin{cases}
+	25  & 125\\
+	0,5  &  0,5
+\end{cases}= \begin{cases}
+75  & 175\\
+0,5  &  0,5
+\end{cases}
+\]
+\[ 
+\pi_P=u\left[ \omega_1+\omega_2(1+\mathbb{E}(Z)-\pi_P) \right] 
+ \]
+\[ 
+\mathbb{E}\left[ u(\underbrace{\omega(1+Y)}_{w}) \right] 
+ \]
+\[ 
+0,5\sqrt{75}+0,5\sqrt{175}
+ \]
+ \[ 
+ \sqrt{50+50(1+0,5-\pi_P)}
+  \]
+\[ 
+\sqrt{125-50\pi_P}=10,945
+ \]
+\[ 
+\pi_P=0.104
+ \]
+Donc 10,4 point de pourcentage 
+
+\subsection{Relation entre primes de risque}
+
+Établissons la relation entre les trois primes de risque. Supposons que \( X, Y, Z \) sont telles que :
+
+\[
+W = \omega + X = \omega(1 + Y) = \omega_1 + \omega_2 (1+ Z).
+\]
+
+En utilisant les trois définitions des primes, nous avons :
+
+\[
+u(E[W]- \pi)  = u(E[W]- \omega \pi_R)  = u(E[W]- \omega_2 \pi_P) .
+\]
+
+Cela implique que :
+
+\[
+E[W] - \pi = E[W] - \omega \pi_R = E[W] - \omega_2 \pi_P.
+\]
+
+Nous pouvons en déduire que :
+
+\[
+\pi = \omega \pi_R = \omega_2 \pi_P.
+\]
+
+Ainsi, nous constatons que toutes ces primes de risque représentent la même grandeur, exprimée de manière différente. En effet, elles peuvent être présentées soit en unités monétaires (prime absolue), soit en point pourcentage de la richesse totale (prime relative), soit en point de pourcentage de la richesse risquée (prime partielle).
+
+\subsection{Signe des primes de risque}
+
+Comme \( \omega, \omega_1, \omega_2 \) sont des paramètres positifs, les trois primes de risque sont de même signe. 
+
+La prime de risque est strictement positive pour un individu riscophobe, nulle pour un individu neutre face au risque, et strictement négative pour un individu riscophile.
+
+Comme c'était le cas pour la prime de risque absolue, on peut également comparer le degré d'aversion au risque de deux individus soumis à la même richesse en comparant leurs primes de risque relative ou leurs primes de risque partielle.
+
+\subsection{Indices d'aversion}
+
+À chacune de ces trois primes de risque correspond un indice d'aversion pour le risque différent.
+
+1) Nous avons vu précédemment l'indice d'aversion absolue pour le risque, noté \( A_A(w) = -\frac{u''(w)}{u'(w)} \).
+
+2) Nous pouvons, de même, approximer la prime d'un "petit" risque multiplicatif et calculer un indice d'aversion relative pour le risque, noté \( AR_w \) :
+
+\[
+\pi_R \approx \frac{\mathbb{V}(Y)}{2} \cdot \left( -\omega\frac{ u''(\mathbb{E}[W])}{u'(\mathbb{E}[W])}\right) 
+\]
+
+avec 
+
+\[
+A_R(w,\omega) = \left( -\omega\frac{ u''(w)}{u'(w)}\right) 
+\]
+
+3) Enfin, nous pouvons approximer la prime d'un "petit" risque partiel et calculer un indice d'aversion partielle pour le risque, noté \( AP_w \) :
+
+\[
+\pi_P \approx \frac{\mathbb{V}(Z)}{2} \cdot \left( -\omega_2\frac{ u''(\mathbb{E}[W])}{u'(\mathbb{E}[W])}\right) 
+\]
+
+avec 
+
+\[
+A_p(w,\omega_2) = \left( -\omega_2\frac{ u''(w)}{u'(w)}\right) 
+\]
+
+On a la relation suivante :
+
+\[
+A_A(w)=\frac{A_R(w,\omega)}{\omega}=\frac{A_P(w,\omega_2)}{\omega_2}
+\]
+
+\chapter{Fonctions d'utilité usuelles}
+
+Nous avons vu que la forme des fonctions d'utilité espérée permet de caractériser l'attitude face au risque des individus : convexité ou concavité, ainsi que les indices d'aversion pour le risque d'Arrow-Pratt.
+
+Jusqu'à présent, nous avons travaillé avec certaines fonctions d'utilité élémentaires \( u \) spécifiques :
+
+Les fonctions affines croissantes de la richesse (y compris la fonction identité) reviennent à utiliser le critère d'espérance mathématique de la richesse, ce qui traduit une neutralité face au risque.
+
+La fonction \( u(w) = \ln(w) \) représente une aversion au risque, en raison de sa concavité.
+
+De même, la fonction \( u(w) = \sqrt{w} \) exprime une aversion au risque, également par sa concavité.
+
+Dans ce chapitre, nous nous proposons d'étudier les caractéristiques de deux grands types de fonctions d'utilité :
+
+Les fonctions d'utilité puissances (fonctions CRRA : \textit{Constant Relative Risk Aversion}).
+
+Les fonctions d'utilité exponentielles négatives (fonctions CARA : \textit{Constant Absolute Risk Aversion}).
+
+Nous verrons également que l'utilité linéaire de Markowitz, sous certaines conditions, représente les mêmes préférences qu'une fonction d'utilité CARA.
+
+\section{Fonctions d'utilité puissances (CRRA)}
+
+Il s'agit des fonctions d'utilité qui s'écrivent sous la forme d'une puissance :
+
+\[
+u(w) = \frac{w^{\alpha}}{\alpha}, \quad w > 0, \quad \alpha \neq 0
+\]
+
+Le critère de décision devient :
+
+\[
+U(W) = \mathbb{E}[u(W)] = \frac{1}{\alpha} \mathbb{E}[W^{\alpha}]
+\]
+
+Cas particuliers :
+
+Si \(\alpha = 1\) : \(u(w) = w\), on retrouve le critère d'espérance mathématique pour un individu neutre au risque.
+
+Si \(\alpha \to 0\) : \(u(w) = \ln(w)\), on retrouve la fonction d'utilité logarithmique (non démontré).
+
+Si \(\alpha = 0{,}5\) : \(u(w) = 2 \sqrt{w}\).
+
+\subsection{Préférences vis-à-vis du risque}
+
+Utilité marginale : \( u'(w) = \alpha w^{\alpha - 1} > 0 \)
+
+Donc l'utilité augmente avec la richesse \( w \), l'hypothèse de non-satiété est bien satisfaite.
+
+Dérivée seconde : \( u''(w) = \alpha (\alpha - 1) w^{\alpha - 2} \)
+
+Si \( \alpha < 1 \) : \( u''(w) < 0 \) \(\rightarrow\) utilité concave \(\rightarrow\) agent riscophobe.
+
+Si \( \alpha = 1 \) : \( u''(w) = 0 \) \(\rightarrow\) utilité linéaire \(\rightarrow\) agent neutre au risque.
+
+Si \( \alpha > 1 \) : \( u''(w) > 0 \) \(\rightarrow\) utilité convexe \(\rightarrow\) agent riscophile.
+
+La fonction puissance admet donc les trois attitudes face au risque.
+
+\subsection{Indices d'aversion pour le risque}
+
+Indice d'aversion absolue pour le risque (cf. Chap. 3) :
+
+\[
+A_A(w) = - \frac{u''(w)}{u'(w)} = - \frac{(\alpha - 1) w^{\alpha - 2}}{ w^{\alpha - 1}} = \frac{1 - \alpha}{w}
+\]
+
+Cet indice a bien le signe attendu en fonction de l'attitude face au risque.
+
+L'aversion absolue décroît avec la richesse \( w \) pour un agent riscophobe (idée généralement admise que les riches acceptent plus de risques que les pauvres).
+
+Indice d'aversion relative pour le risque :
+
+\[
+A_R(w) = \left( -w \frac{u''(w)}{u'(w)} \right) = w \cdot A_A(w) = 1 - \alpha
+\]
+
+Constante \(\rightarrow\) d'où le nom de fonction d'utilité CRRA (Constant Relative Risk Aversion).
+
+\section{Fonctions d'utilité exponentielles négatives (CARA)}
+
+Il s'agit des fonctions d'utilité qui s'écrivent sous la forme d'une exponentielle négative :
+
+\[
+u(w) = -\frac{1}{\alpha} \exp(-\alpha w), \quad \alpha > 0
+\]
+
+Le critère de décision devient :
+
+\[
+U(W) = \mathbb{E}\left[ u(W)\right]  = -\frac{1}{\alpha} \mathbb{E}\left[ \exp(-\alpha W)\right] 
+\]
+
+Cas particulier :
+
+Si \( \alpha \to 0 \) : \( u(w) = w \), on retrouve le critère d'espérance mathématique (non démontré).
+
+\subsection{Préférences vis-à-vis du risque}
+
+Utilité marginale : \( u'(w) = \exp(-\alpha w) > 0 \)
+
+Donc l'utilité augmente avec la richesse \( w \), l'hypothèse de non-satiété est bien satisfaite.
+
+Dérivée seconde : \( u''(w) = -\alpha \cdot \exp(-\alpha w) < 0 \)
+
+Puisque \( \alpha > 0 \), le signe est toujours négatif.
+
+Ce type de fonctions d'utilité ne peut donc être utilisé que pour représenter les préférences d'agents riscophobes.
+
+\subsection{Indices d'aversion pour le risque}
+
+Indice d'aversion absolue face au risque :
+
+\[
+A_A(w) = - \frac{u''(w)}{u'(w)} = \alpha
+\]
+
+Constante \(\rightarrow\) d'où le nom de fonction d'utilité CARA (Constant Absolute Risk Aversion).
+
+Indice d'aversion relative face au risque :
+
+\[
+A_R(w) = w \cdot A_A(w) = \alpha w
+\]
+
+Proportionnel à la richesse.
+
+Remarque : si les préférences sont représentées par une fonction CARA et si la richesse suit une loi normale, l'approximation d'Arrow-Pratt de la prime de risque devient exacte et valable pour n'importe quel risque (pas uniquement pour un "petit" risque).
+
+\subsection{Exercice d'entrainement (non-traité)}
+
+On considère l'exemple de l'assurance déjà vu précédemment :
+
+\[
+W = 
+\begin{cases}
+	\omega + (1 - \beta)z & \omega + v - \beta z   \\
+	p &  1 - p
+\end{cases}
+\]
+
+On suppose un agent riscophobe dont les préférences sont représentées par une fonction d'utilité CARA.
+
+Montrer que l'espérance d'utilité de la richesse s'écrit :
+
+\[
+U(W) = -\frac{p}{\alpha} \exp(-\alpha (\omega + (1 - \beta)z)) - \frac{1 - p}{\alpha} \exp(-\alpha(\omega + v - \beta z))
+\]
+
+Montrer que la demande d'assurance s'écrit :
+
+\[
+z_d = v- \frac{ 1}{\alpha} \cdot \left[ \frac{(1-p)\beta}{p(1 - \beta)}\right] 
+\]
+
+Comment évolue la demande avec la richesse \( \omega \), la valeur du bien risqué \( v \), la probabilité de sinistre \( p \), le montant de la prime \( \beta \) et le reste ?
+
+\section{Remarque sur l'utilité linéaire de Markowitz}
+
+On peut démontrer que, lorsque la richesse \( W \) suit une loi normale, les fonctions de type CARA représentent les mêmes préférences qu'une fonction d'utilité linéaire de Markowitz :
+
+\[
+U(W) = \mathbb{E}(W) - k\mathbb{V}(W)
+\]
+
+Dans ce cas, le paramètre \( k \) d'aversion au risque de l'utilité linéaire de Markowitz est proportionnel au paramètre \( \alpha \) des fonctions CARA :
+
+\[
+\alpha = 2k
+\]
+
+L'utilité linéaire de Markowitz est donc un cas particulier de la théorie de l'utilité espérée, correspondant à une fonction d'utilité CARA + une hypothèse sur la distribution de la richesse.
+
+
+\chapter{La dominance stochastique}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

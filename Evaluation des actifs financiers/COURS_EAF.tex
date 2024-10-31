@@ -13,6 +13,7 @@
 \fancyhead[L]{Évaluation des actifs financiers}
 \usepackage{array,multirow,makecell}
 \setcellgapes{1pt}
+\usepackage{mathptmx} %times aves le mode math
 \makegapedcells
 \newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
@@ -769,12 +770,69 @@ Autrement dit, le \( \beta \) d'un portefeuille est la moyenne pondérée des \(
 
 \subsection{Définitions, contexte et recours}
 
+\subsubsection{Définitions}
+
+\paragraph{Qu’est-ce qu’une option ?}
+
+Une option est un titre financier conditionnel qui confère à son détenteur le droit d’acheter ou de vendre une certaine quantité d’un actif sous-jacent, à un prix déterminé à l’avance et pendant une période donnée.
+
+Pour exercer ce droit, l’acheteur de l’option doit verser une prime au vendeur.
+
+Cette option peut être exercée soit à l’échéance (option européenne), soit pendant la durée d’exercice (option américaine).
+
+\paragraph{Caractéristiques des options}
+
+Les options se sont considérablement développées depuis la fin des années 1970.
+
+Ce type de produit financier permet à son détenteur de se couvrir ou de spéculer contre une évolution défavorable du prix d’un titre financier en utilisant la possibilité d’acheter ou non un actif sous-jacent.
+
+\paragraph{Organisation}
+
+Le rôle des marchés organisés d’options est tout d’abord d’assurer la liquidité des options, c'est-à-dire la cotation permanente et l’existence d’un prix unique pour une option donnée. Deuxièmement, l’existence de marchés organisés simplifie la gestion des contrats optionnels en éliminant le risque de contrepartie, car la contrepartie unique de tous les contrats sur un marché organisé est la chambre de compensation de la bourse. Les différents participants des marchés d’options comprennent les brokers (courtiers) qui exécutent les ordres des investisseurs, les market makers (teneurs de marché) qui risquent leur propre capital et assurent la liquidité du marché, ainsi que les spécialistes qui affichent en permanence les prix sur les options les plus liquides. Enfin, la chambre de compensation sert à éliminer le risque de contrepartie.
+
+\paragraph{Quid de l’indexation ?} 
+
+Les options sont écrites sur : actions (CBOE : 1332 actions, MONEP : 67 actions), indices (CAC40, S\&P500, indices sectoriels, etc.), taux de change (PHLX), obligations ou swaps, et futures sur marchandises (commodities) : cacao, café, sucre, blé, mais aussi des matières premières telles que l’électricité, etc. Les marchés les plus liquides sont ceux d’options sur indices. Ce sont aussi des marchés où l’on a le plus besoin d’une calibration précise (car les fourchettes bid-ask sont étroites) et où l’on a le maximum de données disponibles (par exemple, sur CBOE, on trouve plus de 500 options de 8 maturités différentes allant de quelques jours à deux ans sur l’indice S\&P 500).
+
 \subsection{Les options européennes}
 
+\subsubsection{Les types d’options}
+
+\paragraph{Des produits basés sur de l’anticipation}
+
+Si, à la date d’échéance, l’acquéreur de l’option n’a pas effectué l’opération à laquelle le contrat passé avec le vendeur lui donne droit, il abandonne l’option. L’avantage des contrats optionnels par rapport aux contrats fermes est qu’ils permettent à la fois de se protéger contre le risque (exercice de l’option In The Money) tout en ayant la possibilité de profiter d’une évolution favorable des taux (abandon de l’option restant Out of The Money). Il existe deux sortes d’options : les options d’achat (call) et les options de vente (put). Les options sont également appelées options de placement et d’emprunt lorsqu’il s’agit d’options de taux d’intérêt.
+
+Parmi les options classiques, on distingue les options d’achat (call) et les options de vente (put).
+
+\paragraph{Le Call} 
+
+Un call donne à son détenteur le droit d’acheter l’actif sous-jacent à un prix d’exercice défini dans le contrat. Le vendeur du call a l’obligation de livrer l’actif sous-jacent dès lors que l’acheteur décide d’exercer son option.
+
+\paragraph{Le Put}
+
+Un put donne à son détenteur le droit de vendre l’actif sous-jacent à un prix d’exercice défini dans le contrat. Le vendeur du put a l’obligation d’acheter l’actif sous-jacent au prix d’exercice dès lors que le détenteur du put décide d’exercer son option.
+
+\subsubsection{Caractérisation d’une option, Les paramètres d’une option}
+
+\paragraph{Le Call}
+
+L’actif sous-jacent \( S_t \) : il peut s’agir d’une action, d’un indice boursier, d’une obligation, d’une devise ou de matières premières ; le prix de l’actif sous-jacent, correspondant au cours spot et noté \( S_t \), évolue en fonction des conditions de l’offre et de la demande sur le marché. Le prix d’exercice ou strike \( K \) : prix auquel le détenteur de l’option peut exercer son droit, c'est-à-dire au prix auquel l’acheteur peut acquérir l’actif sous-jacent durant la période de vie ; c’est un prix de référence ; en fonction de l’évolution du prix du sous-jacent, l’option peut être levée si le prix d’exercice est avantageux et que l’investisseur peut réaliser un profit. La date d’exercice \( T \) : date à laquelle l’option perd toute valeur et disparaît ; elle correspond au jour auquel l’option peut être exercée ; plus la date d’exercice de l’option est lointaine, plus le prix de l’option est élevé. La prime de l’option (ou premium) : elle correspond au prix auquel l’investisseur souscrit le titre auprès de l’émetteur ou directement sur le marché ; la prime est définitivement acquise au vendeur de l’option ; le vendeur d’un call ou d’un put touche ainsi une prime à la date d’émission du titre.
+
+\subsubsection{Exemple - Les paramètres d’une option et leurs influences}
+
+\paragraph{Call option on CAC 40}
+
+L’acheteur d’un call sur l’indice CAC 40 a tout intérêt à exercer son option si la valeur finale de l’indice, qui constitue ici l’actif sous-jacent, est supérieure au prix d’exercice. Si le prix d’exercice est de 5 050 points et que l’indice CAC 40 vaut 5 100 points, l’investisseur peut exercer son option en achetant la contrepartie au prix de 5 050 points et revendre directement l’actif sur le marché au prix de 5 100 points. Il empochera la différence, c’est-à-dire 50 points. Il devra cependant retirer le montant de la prime payée pour déterminer la rentabilité de son investissement.
+
+\paragraph{Put option on CAC 40}
+
+Dans le cadre d’un put, la logique est exactement opposée. L’acheteur du contrat a acquis un droit de vendre. Ainsi, il peut livrer le sous-jacent, ici le tracker sur l’indice CAC 40, à la contrepartie vendeuse du contrat dès lors que le prix du sous-jacent est inférieur au prix d’exercice de l’option à l’échéance. Si le prix d’exercice est de 5 000 points et que l’indice CAC 40 vaut 4 900 points, l’investisseur peut exercer son option. Pour cela, il achète la contrepartie au prix de 4 900 points (il en prend livraison) et revend directement l’actif au prix de 5 000 points. Il empoche ainsi la différence, c’est-à-dire 100 points. Il devra également retirer le montant de la prime du put payée pour déterminer la rentabilité de son investissement.
 
 \subsection{Les autres types d'options}
 
-\subsection{Les stratégies optionnelle de base}
+\subsubsection{Les options américaines}
+
+\subsection{Les stratégies optionnelles de base}
 
 \section{La Parité Call-Put}
 
