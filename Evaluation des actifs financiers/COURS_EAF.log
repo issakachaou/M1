@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2024.10.12)  31 OCT 2024 19:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2024.10.12)  1 NOV 2024 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -970,6 +970,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [29]
+Overfull \hbox (2.34735pt too wide) in paragraph at lines 837--838
+ \T1/ptm/b/n/12 Quelles dif-f�-rences avec les op-tions eu-ro-p�ennes[] \T1/ptm
+/m/n/12 Pour les op-tions am�-ri-caines,
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.13202pt, for example:
@@ -987,13 +992,58 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
-[31] (COURS_EAF.aux) ) 
+[31]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.13202pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.13202pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
+
+[32]
+<../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225140.png, id=142, 
+700.11563pt x 275.52937pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225140.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225140.png>
+Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-11
+-01 225140.png  used on input line 893.
+(pdftex.def)             Requested size: 350.05696pt x 137.76434pt.
+<../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225414.png, id=143, 
+688.07062pt x 219.82124pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225414.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225414.png>
+Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-11
+-01 225414.png  used on input line 901.
+(pdftex.def)             Requested size: 344.03447pt x 109.91034pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.13202pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.13202pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
+
+[33 <../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225140.png> <../
+../../Pictures/Screenshots/Capture d'écran 2024-11-01 225414.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.13202pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.13202pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
+
+[34] (COURS_EAF.aux) ) 
 Here is how much of TeX's memory you used:
- 6573 strings out of 475385
- 113942 string characters out of 2776906
+ 6600 strings out of 475385
+ 115503 string characters out of 2776906
  471262 words of memory out of 3000000
- 27829 multiletter control sequences out of 15000+600000
- 513093 words of font info for 91 fonts, out of 8000000 for 9000
+ 27849 multiletter control sequences out of 15000+600000
+ 515223 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,62p,1352b,426s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/enc/d
@@ -1008,9 +1058,9 @@ k/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/issak
 /AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/issak
 /AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/issak
 /AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on COURS_EAF.pdf (31 pages, 1233261 bytes).
+Output written on COURS_EAF.pdf (34 pages, 1272687 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
+ 195 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

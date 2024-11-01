@@ -832,7 +832,76 @@ Dans le cadre d’un put, la logique est exactement opposée. L’acheteur du co
 
 \subsubsection{Les options américaines}
 
+\paragraph{Quelles différences avec les options européennes}
+
+Pour les options américaines, l’exercice de l’option est possible à toute date \( t \) avant la maturité \( T \) ou à la maturité. Cet avantage justifie donc qu’elle soit plus chère que l’option européenne. La différence entre les deux prix s’appelle la prime d’exercice anticipée (early exercise premium).
+
+\subsubsection{Les options exotiques}
+
+\paragraph{Une multitude d’options}
+
+Options à barrière : le paiement a lieu (ou n’a pas lieu) si le sous-jacent a dépassé un niveau contractuel (la barrière) avant cette date. Options asiatiques : le payoff dépend de la valeur moyenne du sous-jacent pendant la vie de l’option (pour empêcher la manipulation des prix). Options multi-sous-jacent : sur un panier d’actions, un panier de taux de change, etc. Les options forward start. Le strike d’une telle option est déterminé à une date future selon une règle spécifiée, par exemple, le pay-off peut être : 
+\[
+H_T = (S_T - mS_{T_0})^+ 
+\]
+où \( T_0 < T \) est une date future et \( m \) est un nombre fixé dans le contrat.
+
+\paragraph{Les ratchet options}
+
+Les options cliquets : options vues comme une séquence d’options forward start, avec des dates de départ de plus en plus éloignées. Par exemple, le pay-off d’une telle option de maturité \( T = 1 \) an peut être donné par :
+\[
+\sum_{i=1}^{12} \max(0, r_i), \quad r_i = S_{\frac{i}{12}} - S_{\frac{i-1}{12}} 
+\]
+Cette option permet alors de récupérer l’ensemble des performances positives d’un indice de référence sans en subir des performances négatives. Une option cliquet, parfois appelée ratchet option, est une option exotique globale, constituée de plusieurs options démarrant à des dates ultérieures et pour des périodes déterminées, avec des prix d’exercice égaux aux cours marqués par le sous-jacent à ces dates. Les performances de chaque option sont enregistrées et peuvent être reversées périodiquement (typiquement, lors de leur maturité respective) ou en une seule fois, à l’échéance de l’option cliquet.
+
 \subsection{Les stratégies optionnelles de base}
+
+\subsubsection{Stratégies sur options vanilles}
+
+\paragraph{Définitions}
+
+Le détenteur peut décider d’exercer ou non l’option qu’il détient en fonction de l’évolution du prix de l’actif sous-jacent par rapport au prix d’exercice \( K \) de l’option. On dit que l’option est : dans la monnaie (in the money) si la levée de l’option permet de dégager un profit pour son détenteur, à la monnaie (at the money) si le prix d’exercice est égal au cours spot de l’actif sous-jacent, hors de la monnaie (out of the money) si la levée de l’option ne permet pas de dégager un profit pour son détenteur. Il existe globalement quatre profils de gain en fonction des stratégies : 1. l’achat d’un call, 2. la vente d’un call, 3. l’achat d’un put, 4. la vente d’un put.
+
+\subsubsection{Call \& Put options}
+
+\paragraph{Call option}
+
+L’option d’achat « Call » confère à son acheteur le droit d’acheter un sous-jacent \( S \) à maturité \( T \), c’est-à-dire \( S_T \) au prix \( K \). Le sous-jacent \( S \) est noté \( S_0 \) en \( t = 0 \). Arrivé à maturité \( (T) \), si \( S_T > K \), l’option sera exercée ; autrement \( (S_T < K) \), l’option sera abandonnée. Le payoff du call peut donc être noté \( C = \max(S_T - K, 0) \).
+
+\paragraph{Put option}
+
+L’option de vente « Put » confère à son acheteur le droit de vendre un sous-jacent \( S \) à maturité \( T \), c’est-à-dire \( S_T \) au prix \( K \). Le sous-jacent \( S \) est noté \( S_0 \) en \( t = 0 \). Arrivé à maturité \( (T) \), si \( S_T < K \), l’option sera exercée ; autrement \( (S_T > K) \), le Put sera abandonné. Le payoff du Put peut donc être noté \( P = \max(K - S_T, 0) \).
+
+\subsubsection{Stratégies sur options et arbitrages}
+
+\paragraph{Absence d’Opportunité d’Arbitrage (AOA)}
+
+Considérons une quantité de liquidité notée \( K \). Cette quantité investie au taux \( r \) en temps discret donnera dans \( T \) : \( K (1 + r)^T \). En temps continu, cette valeur sera \( Ke^{rT} \). Considérons deux portefeuilles \( A \) et \( B \). Si leurs valeurs liquidatives en \( T \) sont égales, c’est-à-dire \( V_A(T) = V_B(T) \), alors par hypothèse d’absence d’opportunité d’arbitrage (AOA), \( V_A(0) = V_B(0) \). En effet, si \( V_A(0) > V_B(0) \), on achèterait \( B \) en vendant à découvert \( A \).
+
+\subsubsection{Achat d’un Call : Long position}
+
+\paragraph{L’anticipation d’une hausse de l’actif sous-jacent}
+
+L’acheteur d’un call paie la prime \( C_0 \) au vendeur : il anticipe ainsi une hausse de la valeur de l’actif sous-jacent. Si le prix de l’actif sous-jacent \( (S_T) \) est inférieur au prix d’exercice \( (K) \) de l’option, l’acheteur n’a pas intérêt à exercer son option : il perd donc ici la valeur de la prime payée au vendeur. Dès que le prix de l’actif sous-jacent \( (S_T) \) dépasse le prix d’exercice de l’option \( (K) \), l’acheteur a intérêt à exercer son option. Son profit sera positif lorsque le prix de l’actif sous-jacent dépassera le prix d’exercice de l’option plus le montant de la prime payée. La perte de l’acheteur du call est limitée au montant de la prime versée ; son gain est potentiellement illimité.
+
+\subsubsection{Payoff du Call option : Achat d’un Call (Long Call)}
+
+\paragraph{Call option}
+
+Supposons le sous-jacent \( S \) à maturité \( T \) \( (S_T) \), un strike price \( K \) et le prix d’un Call \( C_0 \). Le payoff du Call est donné par : \( C = \max(S_T - K, 0) \).
+
+\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225140}
+
+\subsubsection{Payoff du Call option : Vente d’un Call (Short Call)}
+
+\paragraph{Call option}
+
+Le profil de gain du vendeur du call est symétrique à celui de l’acheteur. Il perçoit la prime \( C_0 \) versée car il anticipe une baisse du sous-jacent. Si le prix du sous-jacent \( (S_T) \) est inférieur au strike \( (K) \), le vendeur n’a pas à livrer l’actif à l’acheteur. Mais dès que le prix du sous-jacent \( (S_T) \) dépasse le strike \( (K) \), l’acheteur a intérêt à exercer son option. Le vendeur doit livrer la quantité de l’actif définie dans le contrat. Le gain du vendeur d’un call est limité à \( C_0 \) ; sa perte est potentiellement illimitée.
+
+\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225414}
+
+
+\subsubsection{Payoff du Call option : Achat + Vente d’un Call (Long-Short Call Option)}
 
 \section{La Parité Call-Put}
 
