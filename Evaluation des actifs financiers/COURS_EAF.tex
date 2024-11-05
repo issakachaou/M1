@@ -900,12 +900,50 @@ Le profil de gain du vendeur du call est symétrique à celui de l’acheteur. I
 
 \includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225414}
 
-
 \subsubsection{Payoff du Call option : Achat + Vente d’un Call (Long-Short Call Option)}
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-11-05 114541}
+\end{center}
+
+\subsubsection{Achat d’un Put}
+
+\paragraph{Option de vente (Put option)}
+
+Supposons un sous-jacent \( S \) à maturité \( T \) (noté \( S_T \)) et un strike price \( K \) pour le prix d’un Put \( P_0 \). À maturité (\( T \)), si \( S_T < K \), l’option sera exercée ; autrement, si \( S_T > K \), le Put sera abandonné. On a alors \( P = \max(K - S_T, 0) \).
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-11-05 115057}
+\end{center}
+
+\subsubsection{Vente d’un Put option}
+
+\paragraph{Put option}
+
+Supposons un sous-jacent \( S \) à maturité \( T \) (noté \( S_T \)) et un strike price \( K \) pour le prix d’un Put \( P_0 \). À maturité (\( T \)), si \( S_T < K \), l’option sera exercée ; autrement, si \( S_T > K \), le Put sera abandonné. On a alors \( P = \max(K - S_T, 0) \).
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-11-05 115417}
+\end{center}
+
 
 \section{La Parité Call-Put}
 
-\subsection{Call-Put : un relation européenne}
+\subsection{Call-Put : une relation européenne}
+
+\subsubsection{La rentabilité en temps continu}
+
+Supposons que la somme \( V_0 \) est investie durant \( T \) années. L’opérateur de marché obtiendra la valeur future \( V_T \) équivalente, en temps discret, à :
+\[
+V_T = V_0 \cdot (1 + r)^T 
+\]
+Ce qui amène à :
+\[
+V_0 = \frac{V_T}{(1 + r)^T} 
+\]
+Par équivalence, une liquidité \( K \), à la maturité \( T \), correspondant au strike price d’une option à maturité, en temps continu, au taux d’intérêt \( r \), donne la valeur de \( K \) en \( t = 0 \) à \( K e^{-rT} \).
+
+page 30
 
 \section{Stratégies sur options}
 

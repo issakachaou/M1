@@ -18,6 +18,10 @@
 \usepackage{array,multirow,makecell}
 \setcellgapes{1pt}
 \makegapedcells
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
 \newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
 \newcolumntype{C}[1]{>{\centering\arraybackslash }b{#1}} 
@@ -2043,45 +2047,264 @@ L'utilité linéaire de Markowitz est donc un cas particulier de la théorie de 
 
 \chapter{La dominance stochastique}
 
+\section{Le problème}
+
+En univers certain, il est possible de dire sans ambiguïté si une richesse certaine \( w \) est supérieure ou inférieure à une autre richesse certaine \( w' \) : il suffit de comparer les montants.
+
+Dès qu'on passe en univers incertain, les notions de supériorité et d'infériorité, de hausse et de baisse, cessent d'être claires : comment comparer des richesses aléatoires ?
+
+Nous allons introduire la notion de \textit{dominance stochastique} (d'ordre 1), qui permet, dans certains cas, de lever ce problème.
+
+C'est un critère général permettant de savoir quel sera le choix d'un individu, quelle que soit sa fonction d'utilité.
+
+\subsection{Exemples introductifs}
+
+\subsubsection{Exemple 1 : Prenons 3 richesses aléatoires : }
+\[
+W = 
+\begin{cases} 
+	w \\
+	1 
+\end{cases} 
+\]
+\[
+W' = 
+\begin{cases} 
+	w - x &  w + x\\ 
+	 0{,}5& 0{,}5 
+\end{cases} 
+\]
+\[
+W'' = 
+\begin{cases} 
+	w - 2x & w + 3x  \\ 
+	0{,}6 & 0{,}4 
+\end{cases} 
+\]
+Quelle est la plus grande de ces richesses ?
+
+\subsubsection{Exemple 2 : Si la demande qui s'adresse à une firme passe de \( D \) à \( D' \), peut-on dire qu'elle a augmenté ?}
+\[
+D = \left\{\begin{matrix}
+	50 & 100 & 150  \\
+	0,1 & 0,8  & 0,1  \\
+\end{matrix}\right.
+\]
+\[
+D' = 
+\left\{\begin{matrix}
+	50 & 100 & 140 \\
+	0,1 & 0,7  & 0,2  \\
+\end{matrix}\right.
+\]
+
+Il n'y a pas de réponse objective à ces questions.
+
+Vous feriez face à un problème de même nature si je vous demandais qui de MC’UPEC ou NINHO est le meilleur rappeur : vous ne diriez pas que l'un de ces deux rappeurs est objectivement meilleur que l'autre, mais plutôt que vous trouvez l'un meilleur que l'autre (en fonction de vos préférences !).
+
+On peut aussi imaginer que l'un de ces deux rappeurs soit unanimement considéré comme le meilleur par un ensemble de personnes, éventuellement très vaste.
+
+De la même manière, il se peut que tous les agents qui préfèrent une grande richesse certaine à une petite richesse certaine préfèrent une richesse aléatoire \( W' \) à une richesse aléatoire \( W \).
+
+On dit alors, non pas que la richesse \( W' \) est plus grande que la richesse \( W \) (cela n'aurait pas de sens car ce sont des variables aléatoires !)… 
+
+…mais que la richesse \( W' \) domine la richesse \( W \) pour cette classe d'agents.
+
+\section{Notion de dominance}
+
+Commençons par deux exemples :
+
+1) Soit \( A, B, C \) l'ensemble des vacances possibles pour un couple où \( A \) désigne des vacances à la montagne, \( B \) des vacances à la mer et \( C \) des vacances à la campagne.
+
+Ordre de préférence d'un membre du couple : \( A \succ B \succ C \).
+
+Ordre de préférence de l'autre membre : \( A \succ C \succ B \).
+
+Dans ce cas, \( A \) domine \( B \) et \( C \) pour ce couple : cette information suffit pour savoir que le couple choisira les vacances à la montagne.
+
+L'intérêt de la notion de dominance est qu'elle nous dispense de connaître la fonction d'utilité de ce couple.
+
+2) Soient \( A \) et \( B \) deux paniers de biens de consommation :
+\[ 
+A = (1;2) \quad B = (1,1)
+ \]
+\( A \) domine \( B \) pour tous les consommateurs dont les préférences respectent l'hypothèse de non satiété.
+
+\subsection{Définition}
+
+Plus généralement, pour définir une dominance :
+
+On pose une ou plusieurs hypothèses sur les ordres de préférences individuels.
+
+On note \( S \) l'ensemble des ordres de préférences qui respectent ces hypothèses.
+
+On considère le rang des objets du choix \( A \) et \( B \) dans tous les ordres de préférences appartenant à \( S \).
+
+Si \( A \) est classé devant \( B \) dans tous les ordres de préférences de \( S \), on dit que \( A \) domine \( B \) pour l'ensemble \( S \) des ordres de préférences et on note :
+\[
+A \succ_S B
+\]
+
+\subsection{Spécifications}
+
+La dominance peut être définie au sens strict ou au sens large : si \( B \) n'est classé avant \( A \) dans aucun des ordres de préférences, on dit que \( A \) domine \( B \) au sens large pour l'ensemble \( S \) des ordres de préférences et on note :
+\[
+A \succsim_S B
+\]
+
+En univers incertain, si les préférences sont représentées par des fonctions d'utilité espérées, on précisera que la dominance est stochastique.
+
+On distingue plusieurs ordres de dominances stochastiques : à l'ordre 1 (la plus forte), à l'ordre 2, etc.
+
+Ici, nous nous attacherons à définir la dominance stochastique d'ordre 1 (DS1).
+
+\section{La dominance stochastique d'ordre 1}
 
 
+Définition : la richesse \( W' \) domine stochastiquement la richesse \( W \) à l'ordre 1 si tous les agents dont les préférences sont représentables par une fonction d'utilité espérée et qui respectent l'hypothèse de non satiété préfèrent \( W' \) à \( W \).
+
+Nous allons dans ce qui suit chercher à établir un critère d'identification de la dominance stochastique à l'ordre 1.
+
+\subsection{Condition nécessaire}
+
+Pour que la richesse \( W' \) domine stochastiquement la richesse \( W \) à l'ordre 1, il est nécessaire, mais non suffisant, que l'espérance de \( W' \) soit supérieure à celle de \( W \) : \( \mathbb{E}(W') > \mathbb{E}(W) \).
+
+Nécessaire car les agents neutres face au risque ont des préférences pouvant être représentées par l'espérance mathématique.
+
+Non suffisant car, par exemple, un agent averse au risque peut préférer une richesse \( W \) à une richesse \( W' \) dont l'espérance est plus élevée.
+
+On aura ainsi :
+\[
+W' \succ_{S1} W \Rightarrow \mathbb{E}(W') > \mathbb{E}(W)
+\]
+\[
+\mathbb{E}(W') > \mathbb{E}(W) \nRightarrow W' \succ_{S1} W
+\]
+
+\subsection{Condition nécessaire et suffisante}
+
+Partons d'un exemple, pour introduire formellement le critère d'identification de la dominance stochastique d'ordre 1. Comparons les deux richesses :
+\[
+W = 
+\begin{cases} 
+0 & 2w \\ 
+0,5 & 0,5 
+\end{cases} 
+\]
+\[
+W' = 
+\left\{\begin{matrix}
+	0 & 2w & 3w \\
+	0,45 & 0,3  & 0,25  \\
+\end{matrix}\right.
+\]
+
+Intuitivement, on soupçonne que tous les individus préfèrent \( W' \) à \( W \) car elle donne une moindre probabilité à la valeur 0 et propose des valeurs allant jusqu'à \( 3w \), contre seulement \( 2w \) pour \( W \).
+
+Nous allons chercher à formaliser cette intuition.
+
+Considérons la valeur la plus élevée possible :
+\[
+\mathbb{P}(W \geq 3w) = 0 \quad \text{et} \quad \mathbb{P}(W' \geq 3w) = 0{,}25
+\]
+De ce point de vue, \( W' \) est préférable à \( W \).
+
+Voyons pour la valeur suivante :
+\[
+\mathbb{P}(W \geq 2w) = 0{,}5 \quad \text{et} \quad \mathbb{P}(W' \geq 2w) = 0{,}3 + 0{,}25 = 0{,}55
+\]
+De ce point de vue aussi, \( W' \) est préférable à \( W \).
+
+Enfin :
+\[
+\mathbb{P}(W \geq 0) = 1 \quad \text{et} \quad \mathbb{P}(W' \geq 0) = 1
+\]
+De ce point de vue, \( W' \) est équivalent à \( W \).
+
+Au total, \( W' \) apparaît préférable à \( W \) car, quelle que soit la valeur \( t \) que nous retenons, entre \( -\infty \) et \( +\infty \), on a :
+\[
+\mathbb{P}(W' \geq t) \geq \mathbb{P}(W \geq t)
+\]
+avec une valeur de \( t \) au moins pour laquelle l'inégalité est stricte.
+
+Intuition : la probabilité d'être plus riche qu'un seuil donné \( t \) est plus élevée avec la richesse \( W' \) qu'avec la richesse \( W \), quel que soit le seuil \( t \) de richesse considéré.
+
+Il est équivalent d'écrire :
+\[
+1 - \mathbb{P}(W' < t) \geq 1 - \mathbb{P}(W < t)
+\]
+Soit, en notant \( F_W(t) = \mathbb{P}(W < t) \) la fonction de répartition de \( W \) et \( F_{W'}(t) = \mathbb{P}(W' < t) \) la fonction de répartition de \( W' \) :
+\[
+1 - F_{W'}(t) \geq 1 - F_W(t)
+\]
+ce qui implique que :
+\[
+F_{W'}(t) \leq F_W(t)
+\]
+Intuition : la fonction de répartition de \( W' \) est située en dessous de la fonction de répartition de \( W \).
+
+\subsection{Fonctions de répartition}
+
+\begin{center}
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-11-05 111602}
+\end{center}
+
+\subsection{Critère d'une domination stochastique d'ordre 1}
+
+Nous retiendrons le critère suivant pour établir une domination stochastique de premier ordre (DS1) : la richesse \( W' \), de fonction de répartition \( F_{W'}(t) \), domine stochastiquement à l'ordre 1 la richesse \( W \), de fonction de répartition \( F_{W}(t) \), si et seulement si : 
+\[
+\forall t, \quad F_{W'}(t) \leq F_{W}(t)
+\]
+ou 
+\[
+\forall t, \quad \mathbb{P}(W' \geq t) \geq \mathbb{P}(W \geq t)
+\]
+L'inégalité étant stricte pour un ensemble de valeurs de \( t \) de probabilité non nulle. 
+Notation : \( W' \succ_{S1} W \).
+
+\subsection{Remarques}
+
+Il n'est pas toujours possible, c'est même rarement le cas, d'établir une dominance stochastique à l'ordre 1 entre deux richesses : très souvent, \( W' \) ne dominera pas \( W \) et \( W \) ne dominera pas \( W' \), tout en étant différentes l'une de l'autre. Dans ce cas, pour connaître le choix d'un individu, on ne pourra pas se passer d'observer plus précisément ses préférences et donc sa fonction d'utilité espérée. De plus, il existe des critères de dominance d'ordre 2, 3, etc., qui sont plus faibles que le critère de dominance stochastique d'ordre 1.
+
+\subsection{Exercices}
+
+Dans chacun des 2 cas qui suivent, dites si l'une des richesses domine stochastiquement l'autre à l'ordre 1. Pour ce faire, vous calculerez les fonctions de répartition associées aux différentes richesses
+
+\noindent 1)
+\[ 
+W_1 = \left\{\begin{matrix}
+	w\\
+	1 \\
+\end{matrix}\right. \quad \text{et}\quad W_2=
+\left\{\begin{matrix}
+	0 & 2w \\
+	0,5 & 0,5\\
+\end{matrix}\right. 
+ \]
+2)
+\[ 
+W_1 = \left\{\begin{matrix}
+	2 & 4 & 6\\
+	\frac{1}{3} & \frac{1}{3} & \frac{1}{3}\\
+\end{matrix}\right. \quad \text{et}\quad W_2=
+\left\{\begin{matrix}
+	1 & 2 & 4 & 6\\
+	\frac{1}{4} & \frac{1}{4} & \frac{1}{4} & \frac{1}{4}\\
+\end{matrix}\right. 
+ \]
+
+\subsubsection{Cas 1}
+
+\begin{center}
+	\includegraphics[scale=0.45]{../../../Pictures/Screenshots/Capture d'écran 2024-11-05 113137}
+\end{center}
 
 
+\subsubsection{Cas 2}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\begin{center}
+	\includegraphics[scale=0.45]{../../../Pictures/Screenshots/Capture d'écran 2024-11-05 113245}
+\end{center}
 
 
 
@@ -2100,3 +2323,10 @@ L'utilité linéaire de Markowitz est donc un cas particulier de la théorie de 
 
 
 \end{document}
+
+
+
+
+
+
+
