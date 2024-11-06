@@ -22,6 +22,7 @@
 %\renewcommand{\thechapter}{\Roman{chapter}}
 %\setcounter{chapter}{1} % pour numéroter le chapitre 
 \begin{document}
+	
 	\chapter*{Introduction}
 	
 Au cours années 1980, mouvement de déréglementation, de désintermédiation et de décloisonnement (3D). Le rôle des marchés de capitaux est renforcé dans le financement de l’activité économique. Cependant banques ont toujours une place prépondérante dans le financement, notamment pour les ménages. 
@@ -982,7 +983,15 @@ Dérivés de crédits (crédit default swap) ou swap sur défaillance
 \includegraphics[scale=0.8]{../../../Pictures/Screenshots/Capture d'écran 2024-10-23 164632}
 \end{center}
 
-\subsection{Titrisation et dérivés de crédit}
+Le credit default swap (CDS) est un contrat financier qui permet à un investisseur de se protéger contre le risque de défaut d'un emprunteur en échange d'une prime. L’acheteur de protection paie une prime au vendeur de protection. Si l'emprunteur fait défaut, le vendeur indemnise l’acheteur pour couvrir la perte. Les CDS servent ainsi à couvrir le risque de défaut ou à spéculer sur la solvabilité d'une entité. Ils ont joué un rôle important dans la crise financière de 2008 en raison de leur utilisation massive et des risques accumulés.
+
+Durant la crise les entreprises de notation donnaient des triple A pour des produit titrisé qui était plus risqué. Les agences reçoivent des commission proportionnel au montant émis. Incitation à la sur notation
+
+
+
+\subsubsection{Titrisation et dérivés de crédit}
+
+CDO : collateralized debt obligation
 
 \begin{center}
 	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-10-23 164850}
@@ -992,8 +1001,209 @@ Dérivés de crédits (crédit default swap) ou swap sur défaillance
 	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-10-23 165026}
 \end{center}
 
+\subsubsection{Produits structurés par tranches de risque}
+
+Les flux de paiement, composés du principal et des intérêts, sont alloués en différentes tranches (\textit{trenching}). Trois tranches principales existent : Senior, Mezzanine et Equity.
+
+Les flux sont d’abord versés à la tranche Senior jusqu’à atteindre la rentabilité, puis aux tranches Mezzanine et enfin Equity. Cet ordre de priorité dans l’allocation des flux suit le principe de la \og fontaine \fg.
+
+Le remboursement dépend des pertes sur les actifs sous-jacents. Les premiers 5 \% de pertes sont absorbés par la tranche Equity, les pertes entre 5 \% et 20 \% par la tranche Mezzanine, et au-delà de 20 \% par la tranche Senior.
+
+\subsubsection{Exemple}
+
+\begin{center}
+	\includegraphics[scale=0.65]{../../../Pictures/Screenshots/Capture d'écran 2024-11-06 143114}
+\end{center}
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-11-06 143245}
+\end{center}
 
 
+La structuration d’un \textit{asset-backed security} (ABS) est telle que la tranche Senior est notée AAA, la tranche Mezzanine est notée BBB, et la tranche Equity n’est pas notée.
+
+\subsubsection{Asset-backed security (ABS) Collateralised Debt Obligations (CDO)}
+
+Il est relativement facile de vendre la tranche Senior, notée AAA, même si elle inclut partiellement des crédits subprime. La tranche Equity est généralement détenue par l’initiateur (la banque) ou vendue à un fonds spéculatif, tandis que la tranche Mezzanine est plus difficile à commercialiser.
+
+Il est également possible de créer un ABS à partir de la tranche Mezzanine d’un autre ABS, produit alors appelé ABS CDO ou Mezz ABS CDO.
+
+Le montant des titres notés AAA (ABS + ABS CDO) représente 90 \% de la valeur du portefeuille initial, soit 75 \% plus 15 \% (correspondant à 20 \% de 75 \%).
+
+\begin{center}
+	\includegraphics[scale=0.6]{../../../Pictures/Screenshots/Capture d'écran 2024-11-06 143926}
+	
+	\includegraphics[scale=0.9]{../../../Pictures/Screenshots/Capture d'écran 2024-11-06 144058}
+\end{center}
+
+\subsection{Gestion externalisée du risque de crédit}
+
+La banque suit un modèle de production jointe incluant plusieurs opérations : sélection de client (\textit{screening}), évaluation du risque du client (\textit{scoring}), montage du crédit, financement (\textit{funding}), surveillance (\textit{monitoring}) et gestion des remboursements.
+
+La banque accorde les crédits puis les « marchéïse ». Elle conserve la sélection et l’évaluation, mais les autres opérations sont confiées à un \textit{Special Purpose Vehicle} (SPV) et à un rehausseur de crédit.
+
+Ce modèle entraîne un allongement de la chaîne d’intermédiation, vers une intermédiation de marché.
+
+Ces techniques permettent plusieurs avantages pour les banques.
+
+Tout d'abord, elles conduisent à une hausse de la liquidité des banques, ce qui facilite leur capacité à accorder des crédits. Ensuite, elles permettent une amélioration du ratio de solvabilité, car les banques ont moins de fonds propres à constituer par rapport à l'encours d'actifs risqués (\textit{RWA}).
+
+De plus, ces techniques réduisent le nombre d'actifs irrécouvrables, ce qui entraîne une diminution des provisions à constituer. Elles contribuent également à une amélioration de la rentabilité financière, mesurée par le ratio \textit{RN/FP}.
+
+Enfin, elles permettent le transfert du risque vers des agents qui souhaitent le porter. Cela crée de nouvelles classes d'actifs nécessaires à la diversification du portefeuille des investisseurs. L'acquisition de titres par ces investisseurs est cohérente avec leur profil d'aversion au risque.
+
+La titrisation permet de limiter les coûts liés à la gestion des actifs illiquides (AI) par les banques, car elle n'exige pas une estimation précise de la solvabilité des emprunteurs. Cela permet de relâcher les critères d'attribution des crédits, comme c'était le cas avant la crise financière globale (CFG).
+
+Cependant, avec la CFG, les \textit{Special Purpose Vehicles} (SPV) ont dû faire appel aux banques cédantes pour obtenir des liquidités lorsque la valeur des titres (ABS, etc.) a chuté de manière significative. Cela a contraint les banques à réincorporer dans leur bilan les créances titrisées.
+
+Les banques avaient elles-mêmes créé ces entités (SPV), mais elles ont dû réconstituer en urgence leurs fonds propres (FP). Ce processus a entraîné une concentration accrue des risques dans leur bilan.
+
+De plus, il n'y a pas de valorisation en continu des produits titrisés sur le marché secondaire. Lorsque le taux de défaut augmente, les actifs titrisés passent du statut de valeur sûre à celui de valeur très risquée, entraînant une valorisation extrêmement volatile.
+
+\subsection{Exemple numérique : titrisation et liquidité}
+
+Considérons deux banques :
+
+La Banque A possède deux crédits : un crédit de 100 € remboursé avec une probabilité de 0,9 et un crédit de 50 € remboursé avec une probabilité de 0,1 au bout d'une période. 
+
+La Banque B possède également deux crédits : un crédit de 100 € remboursé avec une probabilité de 0,6 et un crédit de 50 € remboursé avec une probabilité de 0,4 au bout d'une période. 
+
+Les investisseurs, incapables de différencier entre le portefeuille de la Banque A et celui de la Banque B, estiment qu'il y a une probabilité de 50 \% d'avoir un portefeuille de créances bien valorisé et une probabilité de 50 \% d'avoir un portefeuille moins bien valorisé (ou estimé).
+
+La Banque A souhaite titriser ces crédits. Le coût de communication de la vraie valeur du portefeuille de crédit à titriser est de 5 \%. Cependant, si un rehausseur de crédit est impliqué, le coût pour déterminer la vraie valeur du portefeuille devient négligeable.
+
+\begin{center}
+	\includegraphics{../../../Pictures/Screenshots/Capture d'écran 2024-11-06 145333}
+\end{center}
+
+On suppose que les investisseurs sont neutres à l'égard du risque et que le taux d'actualisation est nul.
+
+\subsubsection{Solution}
+
+\paragraph{1) Si la Banque A ne communique pas les informations aux investisseurs :}
+
+La valeur de marché de son portefeuille de crédits à titriser sera égale à la valeur moyenne des portefeuilles estimée par les investisseurs. Celle-ci se calcule ainsi :
+\[
+\frac{2 \times [0,9 \times 100 + 0,1 \times 50] + 2 \times [0,6 \times 100 + 0,4 \times 50]}{2} = 175 \, \text{€}.
+\]
+
+\paragraph{2) Si la Banque A connaît la vraie valeur de son portefeuille :}
+
+La vraie valeur de son portefeuille de crédits à titriser est :
+\[
+2 \times [0,9 \times 100 + 0,1 \times 50] = 190 \, \text{€}.
+\]
+
+Si la Banque A communique cette information privée aux investisseurs, le coût de la communication est de \(0,05 \times 190 = 9,5 \, \text{€}\). La Banque A peut alors vendre son portefeuille pour 190 € et réaliser un bénéfice net de :
+\[
+190 - 9,5 = 180,5 \, \text{€}.
+\]
+
+La Banque A préfère titriser son portefeuille avec communication des informations aux investisseurs, car le bénéfice net de 180,50 € est supérieur à la valeur de 175 € obtenue sans communication.
+
+\paragraph{2) Titrisation du portefeuille de la Banque A avec 2 tranches :}
+
+Le portefeuille de la Banque A est titrisé en deux tranches :
+
+\begin{itemize}
+	\item Tranche super-senior : les détenteurs reçoivent 100 €
+	\item Tranche senior : reçoit au maximum 100 €, ou les flux de trésorerie résiduels
+\end{itemize}
+
+Le remboursement maximal sur le portefeuille est de 200 €.
+
+Pour la tranche senior, la valeur du portefeuille est de 90 €, tandis que la valeur de la tranche super-senior est estimée à 100 €, la valeur estimée par la Banque A est de 190 €.
+
+Cependant, selon les investisseurs, la valeur de la tranche senior est de 75 €, et la valeur de la tranche super-senior est estimée à 100 €, avec une estimation totale du portefeuille à 175 €.
+
+Si la Banque A communique la vraie valeur sur la tranche senior, alors :
+
+La tranche super-senior permet aux détenteurs de recevoir 100 €. La tranche senior a une valeur de 90 €, mais avec un coût de communication de 5 \%, ce qui équivaut à \(90 \times 0,05 = 4,5 \, \text{€}\). Ainsi, la valeur nette de la tranche senior devient \(90 - 4,5 = 85,50 \, \text{€}\).
+
+Le bénéfice net de la banque en titrisant avec la vraie information sur la tranche senior est donc de \(100 + 85,50 = 185,50 \, \text{€}\), ce qui est supérieur à 180,50 €.
+
+\paragraph{3) Rehausseur de crédit}
+
+Le rehausseur de crédit garantit à la banque qu'elle recevra 100 € avec certitude pour la tranche senior. Cela signifie que la banque bénéficie d'une sécurité accrue concernant les flux de trésorerie de cette tranche.
+
+Cependant, la question se pose : combien la banque doit-elle payer au rehausseur de crédit pour cette garantie financière ? Ce coût dépendra des termes de l'accord entre la banque et le rehausseur.
+
+De plus, grâce à cette garantie, la banque n'aura pas besoin de communiquer d'informations sur la valeur de son portefeuille, ce qui simplifie le processus de titrisation et réduit les coûts associés à la communication des informations.
+
+\paragraph{4) Notation des crédits de la Banque A}
+
+Les deux crédits de la Banque A sont notés comme suit : crédit 1 et crédit 2.
+
+\begin{itemize}
+\item[(i)] Les crédits 1 et 2 sont remboursés à hauteur de 100 € chacun avec une probabilité de \(0,9 \times 0,9 = 0,81\).
+\item[(ii)] Le crédit 1 est remboursé à hauteur de 100 € et le crédit 2 à 50 € avec une probabilité de \(0,9 \times 0,1 = 0,09\).
+\item[(iii)] Le crédit 1 est remboursé à hauteur de 50 € et le crédit 2 à 100 € avec une probabilité de \(0,1 \times 0,9 = 0,09\).
+\item[(iv)] Les crédits 1 et 2 sont remboursés à hauteur de 50 € chacun avec une probabilité de \(0,1 \times 0,1 = 0,01\).
+\end{itemize}
+
+\paragraph{États des interventions du rehausseur de crédit}
+
+\begin{itemize}
+\item[(i)] Dans cet état, le rehausseur de crédit n'intervient pas. Le portefeuille, d'une valeur de 200 €, est suffisant pour rembourser les tranches senior et super-senior.
+
+\item[(ii) et (iii)] Dans ces états, le rehausseur intervient. Le portefeuille vaut 150 €, dont 100 € seront versés à la tranche super-senior et 50 € à la tranche senior. Cependant, le rehausseur garantit que la tranche senior sera remboursée à hauteur de 100 €. Ainsi, le passif du rehausseur (dette du rehausseur à l'égard de la banque) est de \(200 - 150 = 50\) €, avec une probabilité de \(0,09 + 0,09 = 0,18\).
+
+\item[(iv)] Dans cet état, le rehausseur intervient également. Le portefeuille a une valeur de 100 €. Le passif du rehausseur est donc de \(200 - 100 = 100\) € avec une probabilité de 0,0.
+\end{itemize}
+
+\paragraph{Valeur anticipée du passif du rehausseur}
+
+La valeur anticipée du passif du rehausseur est calculée comme suit : 
+
+\[
+0,18 \times 50 + 0,01 \times 100 = 10
+\]
+
+C'est ce que devra payer la Banque A pour le rehaussement du crédit (garantie financière) sur un marché compétitif.
+
+Le bénéfice net de la Banque A est donc :
+
+\[
+100 \, (\text{val marché super-senior}) + 100 \, (\text{val marché senior avec le rehaussement})
+\]
+\[ 
+ - 10 \, (\text{commission due au rehausseur}) = 190 \, \text{€}
+ \]
+
+Cette solution est la plus avantageuse pour la banque, car \(190 \, \text{€} > 185,50 \, \text{€}\).
+
+De plus, le portefeuille de crédit devient parfaitement liquide grâce à la titrisation. La liquidité bancaire s'accroît, ce qui signifie que la banque a moins besoin de constituer des fonds propres face au risque de crédit et respecte plus facilement le ratio de solvabilité.
+
+\subsection{Exemple numérique : titrisation et actifs homogènes}
+
+La banque a le choix entre trois actifs possibles (a, b, c) à titriser ; elle doit en retenir seulement deux.
+
+Les actifs sont relativement homogènes dans la distribution de leur flux de paiement (cash-flow) :
+\begin{center}
+	\includegraphics[scale=1]{../../../Pictures/Screenshots/Capture d'écran 2024-11-06 165301}
+\end{center}
+
+\subsubsection{Solution}
+
+\paragraph{1) Choix des actifs a et b pour la titrisation}
+
+Si la banque choisit les actifs a et b pour la titrisation, la distribution des flux du portefeuille serait la suivante :
+
+\begin{itemize}
+	\item Flux de 0 avec une probabilité de 0,06
+	\item Flux de 220 avec une probabilité de 0,56
+	\item Flux de 100 avec une probabilité de 0,24
+	\item Flux de 120 avec une probabilité de 0,14
+\end{itemize}
+
+La valeur attendue est calculée comme suit :
+\[
+\text{Valeur attendue}  = (0 \times 0,06) + (0,56 \times 220) + (0,24 \times 100) + (0,14 \times 120) = 164
+\]
+
+\begin{center}
+	\includegraphics[scale=0.8]{../../../Pictures/Screenshots/Capture d'écran 2024-11-06 165702}
+\end{center}
 
 
 
