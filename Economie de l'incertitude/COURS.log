@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2024.10.12)  5 NOV 2024 11:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2024.10.12)  11 NOV 2024 23:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1790,7 +1790,7 @@ File: ../../../Pictures/Screenshots/Capture d'écran 2024-11-05 113137.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-11-05 113137.png>
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-11
--05 113137.png  used on input line 2299.
+-05 113137.png  used on input line 2308.
 (pdftex.def)             Requested size: 363.1534pt x 196.48224pt.
 
 
@@ -1802,13 +1802,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [57]
-<../../../Pictures/Screenshots/Capture d'écran 2024-11-05 113245.png, id=755, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-11-05 113245.png, id=756, 
 813.0375pt x 444.15938pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-11-05 113245.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-11-05 113245.png>
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-11
--05 113245.png  used on input line 2306.
+-05 113245.png  used on input line 2326.
 (pdftex.def)             Requested size: 365.8635pt x 199.86986pt.
 
 
@@ -1819,14 +1819,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
-[58 <../../../Pictures/Screenshots/Capture d'écran 2024-11-05 113137.png> <../
-../../Pictures/Screenshots/Capture d'écran 2024-11-05 113245.png>] (COURS.aux)
-Package rerunfilecheck Info: File `COURS.out' has not changed.
-(rerunfilecheck)             Checksum: 9DB2729E78F422962A8AB38D008E5BFA;22404.
+[58 <../../../Pictures/Screenshots/Capture d'écran 2024-11-05 113137.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.13202pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.13202pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
+
+[59 <../../../Pictures/Screenshots/Capture d'écran 2024-11-05 113245.png>]
+Chapitre 6.
+[60
+
+] (COURS.aux)
+
+Package rerunfilecheck Warning: File `COURS.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `COURS.out':
+(rerunfilecheck)             Before: 9DB2729E78F422962A8AB38D008E5BFA;22404
+(rerunfilecheck)             After:  F215BBA535A93823AC32101D11BE9D01;22560.
  ) 
 Here is how much of TeX's memory you used:
- 34634 strings out of 475385
- 809013 string characters out of 2776906
+ 34637 strings out of 475385
+ 809036 string characters out of 2776906
  1259017 words of memory out of 3000000
  55213 multiletter control sequences out of 15000+600000
  522686 words of font info for 114 fonts, out of 8000000 for 9000
@@ -1848,9 +1866,9 @@ b><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb
 <C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
 <C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb
 >
-Output written on COURS.pdf (58 pages, 998406 bytes).
+Output written on COURS.pdf (60 pages, 1000658 bytes).
 PDF statistics:
- 862 PDF objects out of 1000 (max. 8388607)
- 190 named destinations out of 1000 (max. 500000)
+ 872 PDF objects out of 1000 (max. 8388607)
+ 193 named destinations out of 1000 (max. 500000)
  998 words of extra memory for PDF output out of 10000 (max. 10000000)
 
