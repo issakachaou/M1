@@ -1,0 +1,91 @@
+\babel@toc {french}{}\relax 
+\contentsline {section}{\numberline {0.1}Logement et localisation}{6}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Le parc de logements}{7}{section.0.2}%
+\contentsline {section}{\numberline {0.3}Les conditions de logement}{9}{section.0.3}%
+\contentsline {section}{\numberline {0.4}Le logement comme placement}{9}{section.0.4}%
+\contentsline {section}{\numberline {0.5}Le statut d'occupation du logement}{10}{section.0.5}%
+\contentsline {section}{\numberline {0.6}Les dépenses de logement}{11}{section.0.6}%
+\contentsline {section}{\numberline {0.7}Politique du logement}{13}{section.0.7}%
+\contentsline {chapter}{\numberline {1}État du logement en France et enjeux des politiques de logement}{15}{chapter.1}%
+\contentsline {section}{\numberline {1.1}État du logement en France}{15}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Le logement en France depuis 30 ans}{15}{subsection.1.1.1}%
+\contentsline {subsubsection}{Le confort de base s’est généralisé}{16}{section*.3}%
+\contentsline {subsubsection}{Le logement comme placement}{17}{section*.4}%
+\contentsline {subsubsection}{Acheter ou louer}{18}{section*.5}%
+\contentsline {subsection}{\numberline {1.1.2}Parc du logement : évolution, répartition géographique et caractéristiques}{19}{subsection.1.1.2}%
+\contentsline {subsubsection}{Evolution récente du logement en France}{19}{section*.6}%
+\contentsline {subsubsection}{Évolution annuelle moyenne du nombre de logements par catégorie}{19}{section*.7}%
+\contentsline {subsubsection}{Évolution annuelle moyenne du nombre de logements par type d'habitat}{20}{section*.8}%
+\contentsline {subsubsection}{Répartition de l'habitat individuel et collectif selon la taille de l’unité urbaine en 2021}{21}{section*.9}%
+\contentsline {subsubsection}{Répartition des résidences principales selon le statut d'occupation}{22}{section*.10}%
+\contentsline {subsubsection}{Evolution du logement en DOM}{22}{section*.11}%
+\contentsline {subsubsection}{Quelques statistiques récentes}{23}{section*.12}%
+\contentsline {section}{\numberline {1.2}Enjeux des politiques du logement}{24}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Enjeux et acteurs des politiques du logement}{24}{subsection.1.2.1}%
+\contentsline {subsubsection}{Politique du logement}{24}{section*.13}%
+\contentsline {subsubsection}{La multiplicité des enjeux sociaux des politiques du logement}{25}{section*.14}%
+\contentsline {subsection}{\numberline {1.2.2}Les grandes questions : Construire un nombre déterminé de logements par an ? l’accession à la propriété ? la régulation des marchés locatifs, les logements sociaux aux plus pauvres ?}{26}{subsection.1.2.2}%
+\contentsline {subsubsection}{Faut-il construire 500 000 logements par an ?}{26}{section*.15}%
+\contentsline {subsubsection}{Faut–il favoriser une France de propriétaires ?}{26}{section*.16}%
+\contentsline {subsubsection}{Faut-il réguler les marchés locatifs ?}{27}{section*.17}%
+\contentsline {subsubsection}{Faut-il Réserver le logement social aux plus pauvres ?}{27}{section*.18}%
+\contentsline {subsubsection}{Prendre en compte les questions environnementales et sociales}{28}{section*.19}%
+\contentsline {subsubsection}{Conclusion}{29}{section*.20}%
+\contentsline {chapter}{\numberline {2}Conditions de logement en France}{30}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Évolution des conditions de logement depuis 1960}{30}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}État des lieux}{30}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Accroissement du parc immobilier}{31}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Évolution de la composition du parc de logements}{31}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Le développement des maisons individuelles}{32}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Évolution des statuts d'occupation}{33}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.6}Uniformisation des conditions sanitaires}{33}{subsection.2.1.6}%
+\contentsline {subsection}{\numberline {2.1.7}Opinions des ménages sur les conditions}{34}{subsection.2.1.7}%
+\contentsline {section}{\numberline {2.2}Les conditions de logement en Ile-de-France}{35}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Le parc de logements}{35}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Le mal-logement}{36}{subsection.2.2.2}%
+\contentsline {chapter}{\numberline {3}Le secteur locatif social}{38}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Caractéristiques et production du logement social}{38}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Qu'est-ce qu'un logement social ?}{38}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Cadre juridique du logement locatif en France}{39}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Parc locatif}{40}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Caractéristiques du parc social}{41}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Caractéristiques des occupants}{42}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}Les organismes de producteurs de logement social}{43}{subsection.3.1.6}%
+\contentsline {section}{\numberline {3.2}Financement et fonctionnement du secteur locatif social}{43}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Financement du logement social}{43}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Caractéristiques des prêts}{45}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Les loyers d'équilibre}{45}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Les niveaux de loyers}{46}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Limites du modèle}{48}{subsection.3.2.5}%
+\contentsline {section}{\numberline {3.3}Vivre en HLM : quelles conséquences ?}{50}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Avantages monétaires et conditions de vie}{50}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Résultats de l'étude}{51}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Définition des effets}{51}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Résultats de l'étude}{51}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Accession à la propriété}{53}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}Accès à l'emploi}{55}{subsection.3.3.6}%
+\contentsline {chapter}{\numberline {4}La dynamique des marchés immobiliers}{58}{chapter.4}%
+\contentsline {section}{\numberline {4.1}La dynamique de long terme du logement}{59}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Les volumes}{59}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Les prix}{60}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Le cycle depuis 2000}{61}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Les faits}{61}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}La phase croissante du cycle}{62}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Évolution depuis 2005}{65}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Le cycle des années 1985-1998}{66}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}L’hypothèse de bulle}{66}{subsection.4.3.1}%
+\contentsline {chapter}{\numberline {5}Les prix de l'immobilier}{68}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Les prix de l’immobilier et leurs déterminants fondamentaux}{68}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Connaitre les évolutions des prix des logements}{68}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Les évolutions en longue période}{69}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}La forte volatilité des prix}{69}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Les évolutions récentes dans l'Union Européenne}{70}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}Les déterminants des prix : l'équilibre de marché}{71}{subsection.5.1.5}%
+\contentsline {subsection}{\numberline {5.1.6}Les déterminants des prix : le revenu des ménages}{72}{subsection.5.1.6}%
+\contentsline {subsection}{\numberline {5.1.7}Les déterminants des prix : les conditions de prêt}{72}{subsection.5.1.7}%
+\contentsline {subsection}{\numberline {5.1.8}Les déterminants des prix : la démographie}{74}{subsection.5.1.8}%
+\contentsline {subsection}{\numberline {5.1.9}Les déterminants des prix : les politiques publiques}{74}{subsection.5.1.9}%
+\contentsline {subsection}{\numberline {5.1.10}Les déterminants des prix : les anticipations}{75}{subsection.5.1.10}%
+\contentsline {subsection}{\numberline {5.1.11}Les effets de concentration et de ségrégation}{75}{subsection.5.1.11}%
+\contentsline {subsection}{\numberline {5.1.12}Les besoins d'un modèle pour expliquer les prix}{76}{subsection.5.1.12}%
+\contentsline {subsection}{\numberline {5.1.13}Exemple de modèle pour expliquer les prix}{76}{subsection.5.1.13}%
