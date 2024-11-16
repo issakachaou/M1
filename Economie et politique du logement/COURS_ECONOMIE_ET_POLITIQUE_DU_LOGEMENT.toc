@@ -74,7 +74,7 @@
 \contentsline {subsection}{\numberline {4.2.3}Évolution depuis 2005}{65}{subsection.4.2.3}%
 \contentsline {section}{\numberline {4.3}Le cycle des années 1985-1998}{66}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}L’hypothèse de bulle}{66}{subsection.4.3.1}%
-\contentsline {chapter}{\numberline {5}Les prix de l'immobilier}{68}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Analyses économiques et économétriques du marché du logement}{68}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Les prix de l’immobilier et leurs déterminants fondamentaux}{68}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Connaitre les évolutions des prix des logements}{68}{subsection.5.1.1}%
 \contentsline {subsection}{\numberline {5.1.2}Les évolutions en longue période}{69}{subsection.5.1.2}%

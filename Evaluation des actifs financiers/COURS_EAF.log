@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2024.10.12)  5 NOV 2024 12:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2024.10.12)  16 NOV 2024 19:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -343,7 +343,335 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
 )
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 23
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
+sty
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex
+\pgfutil@everybye=\toks28
+\pgfutil@tempdima=\dimen257
+\pgfutil@tempdimb=\dimen258
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common-lists.tex))
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def
+\pgfutil@abb=\box60
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
+sty
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+sty
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
+\pgfkeys@pathtoks=\toks29
+\pgfkeys@temptoks=\toks30
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+filtered.code.tex
+\pgfkeys@tmptoks=\toks31
+))
+\pgf@x=\dimen259
+\pgf@y=\dimen260
+\pgf@xa=\dimen261
+\pgf@ya=\dimen262
+\pgf@xb=\dimen263
+\pgf@yb=\dimen264
+\pgf@xc=\dimen265
+\pgf@yc=\dimen266
+\pgf@xd=\dimen267
+\pgf@yd=\dimen268
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count296
+\c@pgf@countb=\count297
+\c@pgf@countc=\count298
+\c@pgf@countd=\count299
+\t@pgf@toka=\toks32
+\t@pgf@tokb=\toks33
+\t@pgf@tokc=\toks34
+\pgf@sys@id@count=\count300
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+fg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+ssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count301
+\pgfsyssoftpath@bigbuffer@items=\count302
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+sprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+e.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+code.tex)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+r.code.tex
+\pgfmath@dimen=\dimen269
+\pgfmath@count=\count303
+\pgfmath@box=\box61
+\pgfmath@toks=\toks35
+\pgfmath@stack@operand=\toks36
+\pgfmath@stack@operation=\toks37
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.code.tex
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.integerarithmetics.code.tex)))
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
+.code.tex
+\c@pgfmathroundto@lastzeros=\count304
+))
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+tex)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen270
+\pgf@picmaxx=\dimen271
+\pgf@picminy=\dimen272
+\pgf@picmaxy=\dimen273
+\pgf@pathminx=\dimen274
+\pgf@pathmaxx=\dimen275
+\pgf@pathminy=\dimen276
+\pgf@pathmaxy=\dimen277
+\pgf@xx=\dimen278
+\pgf@xy=\dimen279
+\pgf@yx=\dimen280
+\pgf@yy=\dimen281
+\pgf@zx=\dimen282
+\pgf@zy=\dimen283
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen284
+\pgf@path@lasty=\dimen285
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen286
+\pgf@shorten@start@additional=\dimen287
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+escopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box62
+\pgf@hbox=\box63
+\pgf@layerbox@main=\box64
+\pgf@picture@serial@count=\count305
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+egraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen288
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen289
+\pgf@pt@y=\dimen290
+\pgf@pt@temp=\dimen291
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+equick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+earrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen292
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen293
+\pgf@sys@shading@range@num=\count306
+\pgf@shadingcount=\count307
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box65
+))
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+elayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+erdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+shapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box66
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+plot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen294
+\pgf@nodesepend=\dimen295
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
+y
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
+ty
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex))
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex))
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
+code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex)
+\pgffor@iter=\dimen296
+\pgffor@skip=\dimen297
+\pgffor@stack=\toks38
+\pgffor@toks=\toks39
+))
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z\tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count308
+\pgfplotmarksize=\dimen298
+)
+\tikz@lastx=\dimen299
+\tikz@lasty=\dimen300
+\tikz@lastxsaved=\dimen301
+\tikz@lastysaved=\dimen302
+\tikz@lastmovetox=\dimen303
+\tikz@lastmovetoy=\dimen304
+\tikzleveldistance=\dimen305
+\tikzsiblingdistance=\dimen306
+\tikz@figbox=\box67
+\tikz@figbox@bg=\box68
+\tikz@tempbox=\box69
+\tikz@tempbox@bg=\box70
+\tikztreelevel=\count309
+\tikznumberofchildren=\count310
+\tikznumberofcurrentchild=\count311
+\tikz@fig@count=\count312
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+matrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count313
+\pgfmatrixcurrentcolumn=\count314
+\pgf@matrix@numberofcolumns=\count315
+)
+\tikz@expandcount=\count316
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
+Package: import 2020/04/01  v 6.2
+)
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 25
 .
 
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
@@ -352,40 +680,40 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count296
-\l__pdf_internal_box=\box60
+\l__color_backend_stack_int=\count317
+\l__pdf_internal_box=\box71
 ) (COURS_EAF.aux)
 \openout1 = `COURS_EAF.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count297
-\scratchdimen=\dimen257
-\scratchbox=\box61
-\nofMPsegments=\count298
-\nofMParguments=\count299
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count300
-\MPscratchDim=\dimen258
-\MPnumerator=\count301
-\makeMPintoPDFobject=\count302
-\everyMPtoPDFconversion=\toks29
+\scratchcounter=\count318
+\scratchdimen=\dimen307
+\scratchbox=\box72
+\nofMPsegments=\count319
+\nofMParguments=\count320
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count321
+\MPscratchDim=\dimen308
+\MPnumerator=\count322
+\makeMPintoPDFobject=\count323
+\everyMPtoPDFconversion=\toks41
 )
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -397,48 +725,48 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \degres on input line 23.
-LaTeX Info: Redefining \up on input line 23.
-\Hy@linkcounter=\count303
+LaTeX Info: Redefining \degres on input line 25.
+LaTeX Info: Redefining \up on input line 25.
+\Hy@linkcounter=\count324
 
 Chapitre 1.
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 30.
+ 32.
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 30.
+ 32.
 
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 30.
+ 32.
 
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 30.
+ 32.
 
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
-0.
+2.
 
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
 
-Overfull \hbox (4.80595pt too wide) in paragraph at lines 32--34
+Overfull \hbox (4.80595pt too wide) in paragraph at lines 34--36
 \T1/ptm/m/n/12 La somme des pon-d�-ra-tions de ces por-te-feuilles est �gale � 
 1 (c'est-�-dire $[][] \OML/ztmcm/m/it/12 ![] \OT1/ztmcm/m/n/12 =
  []
@@ -447,7 +775,7 @@ Overfull \hbox (4.80595pt too wide) in paragraph at lines 32--34
 
 
 {C:/Users/issak/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Overfull \hbox (15.8844pt too wide) in paragraph at lines 78--80
+Overfull \hbox (15.8844pt too wide) in paragraph at lines 80--82
 \T1/ptm/m/n/12 En d'autres termes, le ren-de-ment at-tendu d'un por-te-feuille 
 est sim-ple-ment la moyenne
  []
@@ -461,13 +789,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [2]
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-27 200006.png, id=18, 6
+<../../../Pictures/Screenshots/Capture d'écran 2024-09-27 200006.png, id=21, 6
 24.08156pt x 292.09125pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-27 200006.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-09-27 200006.png>
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-09
--27 200006.png  used on input line 102.
+-27 200006.png  used on input line 104.
 (pdftex.def)             Requested size: 249.62819pt x 116.83441pt.
 
 
@@ -488,31 +816,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [4]
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-27 215442.png, id=27, 6
+<../../../Pictures/Screenshots/Capture d'écran 2024-09-27 215442.png, id=30, 6
 89.57625pt x 215.30438pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-27 215442.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-09-27 215442.png>
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-09
--27 215442.png  used on input line 153.
+-27 215442.png  used on input line 155.
 (pdftex.def)             Requested size: 275.8256pt x 86.12022pt.
 
-Overfull \hbox (2.8268pt too wide) in paragraph at lines 153--154
+Overfull \hbox (2.8268pt too wide) in paragraph at lines 155--156
  [][] 
  []
 
 
-Underfull \hbox (badness 4048) in paragraph at lines 154--156
+Underfull \hbox (badness 4048) in paragraph at lines 156--158
 []\T1/ptm/m/n/12 La cor-r�-la-tion entre
  []
 
 
-Overfull \hbox (2.76167pt too wide) in paragraph at lines 154--156
+Overfull \hbox (2.76167pt too wide) in paragraph at lines 156--158
 \T1/ptm/m/n/12 deux ac-tions a le m�me
  []
 
 
-Underfull \hbox (badness 4846) in paragraph at lines 154--156
+Underfull \hbox (badness 4846) in paragraph at lines 156--158
 \T1/ptm/m/n/12 riance, elle a donc
  []
 
@@ -538,43 +866,43 @@ File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-27 200006.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-09-27 200006.png>
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-09
--27 200006.png  used on input line 211.
+-27 200006.png  used on input line 213.
 (pdftex.def)             Requested size: 249.62819pt x 116.83441pt.
 
-Underfull \hbox (badness 5711) in paragraph at lines 213--214
+Underfull \hbox (badness 5711) in paragraph at lines 215--216
 [][]\T1/ptm/m/n/12 Comme tou-jours, la
  []
 
 
-Underfull \hbox (badness 3815) in paragraph at lines 213--214
+Underfull \hbox (badness 3815) in paragraph at lines 215--216
 \T1/ptm/m/n/12 les ac-tions des com-pa-
  []
 
 
-Underfull \hbox (badness 5756) in paragraph at lines 213--214
+Underfull \hbox (badness 5756) in paragraph at lines 215--216
 \T1/ptm/m/n/12 li�res du ta-bleau 11.1.
  []
 
 
-Overfull \hbox (2.0401pt too wide) in paragraph at lines 213--214
+Overfull \hbox (2.0401pt too wide) in paragraph at lines 215--216
 \T1/ptm/m/n/12 Consi-d�-rons le por-te-feuille
  []
 
 
-Underfull \hbox (badness 1147) in paragraph at lines 213--214
+Underfull \hbox (badness 1147) in paragraph at lines 215--216
 \T1/ptm/m/n/12 conte-nant les ac-tions de
  []
 
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-28 192523.png, id=35, 6
+<../../../Pictures/Screenshots/Capture d'écran 2024-09-28 192523.png, id=38, 6
 87.31781pt x 323.70938pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-28 192523.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-09-28 192523.png>
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-09
--28 192523.png  used on input line 236.
+-28 192523.png  used on input line 238.
 (pdftex.def)             Requested size: 274.92226pt x 129.48145pt.
 
-Overfull \hbox (9.72511pt too wide) in paragraph at lines 236--237
+Overfull \hbox (9.72511pt too wide) in paragraph at lines 238--239
  [][] 
  []
 
@@ -587,22 +915,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [7]
-Underfull \hbox (badness 2189) in paragraph at lines 238--239
+Underfull \hbox (badness 2189) in paragraph at lines 240--241
 [][]\T1/ptm/m/n/12 La vo-la-ti-lit� di-mi-
  []
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 238--239
+Underfull \hbox (badness 1852) in paragraph at lines 240--241
 \T1/ptm/m/n/12 la moi-ti� de la vo-la-
  []
 
 
-Underfull \hbox (badness 2707) in paragraph at lines 238--239
+Underfull \hbox (badness 2707) in paragraph at lines 240--241
 \T1/ptm/m/n/12 vi-duelles est �li-mi-n�e
  []
 
 
-Underfull \hbox (badness 2512) in paragraph at lines 238--239
+Underfull \hbox (badness 2512) in paragraph at lines 240--241
 \T1/ptm/m/n/12 dans un grand por-te-
  []
 
@@ -624,54 +952,54 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [9]
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-29 225806.png, id=47, 4
+<../../../Pictures/Screenshots/Capture d'écran 2024-09-29 225806.png, id=50, 4
 81.8pt x 266.49562pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-29 225806.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-09-29 225806.png>
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-09
--29 225806.png  used on input line 292.
+-29 225806.png  used on input line 294.
 (pdftex.def)             Requested size: 240.8994pt x 133.24748pt.
 
-Overfull \hbox (6.89702pt too wide) in paragraph at lines 292--293
+Overfull \hbox (6.89702pt too wide) in paragraph at lines 294--295
  [][] 
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 294--295
+Underfull \hbox (badness 2418) in paragraph at lines 296--297
 [][]\T1/ptm/m/n/12 Nous di-sons qu'un por-
  []
 
 
-Underfull \hbox (badness 2600) in paragraph at lines 294--295
+Underfull \hbox (badness 2600) in paragraph at lines 296--297
 \T1/ptm/m/n/12 te-feuille est in-ef-fi-cace lors-
  []
 
 
-Underfull \hbox (badness 1102) in paragraph at lines 294--295
+Underfull \hbox (badness 1102) in paragraph at lines 296--297
 \T1/ptm/m/n/12 en termes de ren-de-ment at-
  []
 
 
-Underfull \hbox (badness 4479) in paragraph at lines 294--295
+Underfull \hbox (badness 4479) in paragraph at lines 296--297
 \T1/ptm/m/n/12 re-garde la fi-gure 11.3, un
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 294--295
+Underfull \hbox (badness 5316) in paragraph at lines 296--297
 \T1/ptm/m/n/12 existe d'autres por-te-feuilles
  []
 
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-29 230936.png, id=48, 5
+<../../../Pictures/Screenshots/Capture d'écran 2024-09-29 230936.png, id=51, 5
 14.92375pt x 280.04625pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-29 230936.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-09-29 230936.png>
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-09
--29 230936.png  used on input line 303.
+-29 230936.png  used on input line 305.
 (pdftex.def)             Requested size: 257.46124pt x 140.02277pt.
 
-Overfull \hbox (3.96362pt too wide) in paragraph at lines 303--304
+Overfull \hbox (3.96362pt too wide) in paragraph at lines 305--306
  [][] 
  []
 
@@ -693,23 +1021,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [11 <../../../Pictures/Screenshots/Capture d'écran 2024-09-29 230936.png>]
-Overfull \hbox (8.05438pt too wide) detected at line 354
+Overfull \hbox (8.05438pt too wide) detected at line 356
 \OML/ztmcm/m/it/12 ^^[[] \OT1/ztmcm/m/n/12 = []
  []
 
 
-Overfull \hbox (2.46837pt too wide) in paragraph at lines 357--359
+Overfull \hbox (2.46837pt too wide) in paragraph at lines 359--361
 \T1/ptm/m/n/12 por-te-feuille, mais �ga-le-ment sa vo-la-ti-lit�, au-del� de ce
 lle des ac-tions in-di-vi-duelles. 
  []
 
-<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155216.png, id=57, 4
+<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155216.png, id=60, 4
 71.26062pt x 263.48438pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155216.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155216.png>
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
--17 155216.png  used on input line 370.
+-17 155216.png  used on input line 372.
 (pdftex.def)             Requested size: 329.88019pt x 184.43779pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -720,21 +1048,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [12]
-<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155515.png, id=61, 4
+<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155515.png, id=64, 4
 93.0922pt x 252.945pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155515.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155515.png>
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
--17 155515.png  used on input line 376.
+-17 155515.png  used on input line 378.
 (pdftex.def)             Requested size: 345.16219pt x 177.06029pt.
-<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155648.png, id=62, 4
+<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155648.png, id=65, 4
 99.8675pt x 273.27094pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155648.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155648.png>
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
--17 155648.png  used on input line 381.
+-17 155648.png  used on input line 383.
 (pdftex.def)             Requested size: 349.90486pt x 191.28833pt.
 
 
@@ -747,7 +1075,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [13 <../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155216.png> <../
 ../../Pictures/Screenshots/Capture d'écran 2024-10-17 155515.png>]
-Overfull \hbox (1.27802pt too wide) in paragraph at lines 393--394
+Overfull \hbox (1.27802pt too wide) in paragraph at lines 395--396
 []\T1/ptm/m/n/12 Cependant, cette conclu-sion ignore les op-por-tu-ni-t�s de di
 -ver-si-fi-ca-tion que Bore
  []
@@ -761,13 +1089,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [14 <../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155648.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 160716.png, id=73, 4
+<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 160716.png, id=76, 4
 75.7775pt x 263.48438pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 160716.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 160716.png>
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
--17 160716.png  used on input line 419.
+-17 160716.png  used on input line 421.
 (pdftex.def)             Requested size: 333.04196pt x 184.43779pt.
 
 
@@ -788,13 +1116,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [16]
-<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 161419.png, id=81, 4
+<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 161419.png, id=84, 4
 75.7775pt x 258.9675pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 161419.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 161419.png>
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
--17 161419.png  used on input line 480.
+-17 161419.png  used on input line 482.
 (pdftex.def)             Requested size: 333.04196pt x 181.27599pt.
 
 
@@ -824,13 +1152,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [19]
-<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 163726.png, id=93, 4
+<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 163726.png, id=96, 4
 75.02469pt x 251.43938pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 163726.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 163726.png>
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
--17 163726.png  used on input line 553.
+-17 163726.png  used on input line 555.
 (pdftex.def)             Requested size: 332.515pt x 176.00635pt.
 
 
@@ -851,7 +1179,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [21]
-Overfull \hbox (1.85445pt too wide) in paragraph at lines 607--608
+Overfull \hbox (1.85445pt too wide) in paragraph at lines 609--610
 []\T1/ptm/m/n/12 Soit $\OML/ztmcm/m/it/12 r[]$ \T1/ptm/m/n/12 le ren-de-ment du
  fonds im-mo-bi-lier et $\OML/ztmcm/m/it/12 r[]$ \T1/ptm/m/n/12 le ren-de-ment 
 du Fonds Omega.
@@ -866,7 +1194,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [22]
-Overfull \hbox (31.24782pt too wide) in paragraph at lines 639--639
+Overfull \hbox (31.24782pt too wide) in paragraph at lines 641--641
 []\T1/ptm/b/n/17.28 Le mo-d�le d'�va-lua-tion des ac-tifs fi-nan-ciers (CAPM) 
  []
 
@@ -879,26 +1207,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [23]
-<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 170450.png, id=107, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 170450.png, id=110, 
 472.76625pt x 262.73157pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 170450.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 170450.png>
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
--17 170450.png  used on input line 663.
+-17 170450.png  used on input line 665.
 (pdftex.def)             Requested size: 236.38254pt x 131.36545pt.
 
-Underfull \hbox (badness 2384) in paragraph at lines 666--667
+Underfull \hbox (badness 2384) in paragraph at lines 668--669
 [][]\T1/ptm/m/n/12 Selon le CAPM,
  []
 
 
-Underfull \hbox (badness 3679) in paragraph at lines 666--667
+Underfull \hbox (badness 3679) in paragraph at lines 668--669
 \T1/ptm/m/n/12 de-vraient choi-sir un
  []
 
 
-Overfull \hbox (2.48541pt too wide) in paragraph at lines 666--667
+Overfull \hbox (2.48541pt too wide) in paragraph at lines 668--669
 \T1/ptm/m/n/12 por-te-feuille sur la ligne
  []
 
@@ -911,13 +1239,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [24 <../../../Pictures/Screenshots/Capture d'écran 2024-10-17 170450.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 172834.png, id=112, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 172834.png, id=115, 
 493.845pt x 273.27094pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 172834.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 172834.png>
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
--17 172834.png  used on input line 721.
+-17 172834.png  used on input line 723.
 (pdftex.def)             Requested size: 246.92189pt x 136.63512pt.
 
 
@@ -929,13 +1257,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [25]
-<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 173525.png, id=117, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 173525.png, id=120, 
 463.7325pt x 261.22594pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 173525.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 173525.png>
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
--17 173525.png  used on input line 728.
+-17 173525.png  used on input line 730.
 (pdftex.def)             Requested size: 231.86568pt x 130.61264pt.
 
 
@@ -970,7 +1298,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [29]
-Overfull \hbox (2.34735pt too wide) in paragraph at lines 837--838
+Overfull \hbox (2.34735pt too wide) in paragraph at lines 839--840
  \T1/ptm/b/n/12 Quelles dif-f�-rences avec les op-tions eu-ro-p�ennes[] \T1/ptm
 /m/n/12 Pour les op-tions am�-ri-caines,
  []
@@ -1002,29 +1330,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [32]
-<../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225140.png, id=142, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225140.png, id=145, 
 700.11563pt x 275.52937pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225140.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225140.png>
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-11
--01 225140.png  used on input line 893.
+-01 225140.png  used on input line 895.
 (pdftex.def)             Requested size: 350.05696pt x 137.76434pt.
-<../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225414.png, id=143, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225414.png, id=146, 
 688.07062pt x 219.82124pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225414.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225414.png>
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-11
--01 225414.png  used on input line 901.
+-01 225414.png  used on input line 903.
 (pdftex.def)             Requested size: 344.03447pt x 109.91034pt.
-<../../../Pictures/Screenshots/Capture d'écran 2024-11-05 114541.png, id=144, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-11-05 114541.png, id=147, 
 474.27188pt x 225.09094pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-11-05 114541.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-11-05 114541.png>
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-11
--05 114541.png  used on input line 906.
+-05 114541.png  used on input line 908.
 (pdftex.def)             Requested size: 331.98805pt x 157.56258pt.
 
 
@@ -1037,21 +1365,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [33 <../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225140.png> <../
 ../../Pictures/Screenshots/Capture d'écran 2024-11-01 225414.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2024-11-05 115057.png, id=150, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-11-05 115057.png, id=153, 
 478.78876pt x 188.95593pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-11-05 115057.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-11-05 115057.png>
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-11
--05 115057.png  used on input line 916.
+-05 115057.png  used on input line 918.
 (pdftex.def)             Requested size: 335.14984pt x 132.26823pt.
-<../../../Pictures/Screenshots/Capture d'écran 2024-11-05 115417.png, id=151, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-11-05 115417.png, id=154, 
 487.06969pt x 196.48407pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-11-05 115417.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2024-11-05 115417.png>
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-11
--05 115417.png  used on input line 926.
+-05 115417.png  used on input line 928.
 (pdftex.def)             Requested size: 340.94644pt x 137.5379pt.
 
 
@@ -1081,15 +1409,38 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
-[36] (COURS_EAF.aux) ) 
+[36]
+Overfull \hbox (7.25342pt too wide) in paragraph at lines 1048--1049
+[]\T1/ptm/m/n/12 On peut r�-pli-quer le pla-ce-ment sans risque d'un mon-tant q
+ui vau-dra � l'�ch�ance
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.13202pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.13202pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
+
+[37]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.13202pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.13202pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
+
+[38] (COURS_EAF.aux) ) 
 Here is how much of TeX's memory you used:
- 6633 strings out of 475385
- 117804 string characters out of 2776906
- 471262 words of memory out of 3000000
- 27879 multiletter control sequences out of 15000+600000
+ 17133 strings out of 475385
+ 346514 string characters out of 2776906
+ 667390 words of memory out of 3000000
+ 38158 multiletter control sequences out of 15000+600000
  515223 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,12n,62p,1352b,426s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 84i,12n,89p,1352b,426s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/enc/d
 vips/base/8r.enc}<C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmex10.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/t
@@ -1102,9 +1453,9 @@ k/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/issak
 /AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/issak
 /AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/issak
 /AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on COURS_EAF.pdf (36 pages, 1303860 bytes).
+Output written on COURS_EAF.pdf (38 pages, 1312060 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
+ 219 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 108 words of extra memory for PDF output out of 10000 (max. 10000000)
 

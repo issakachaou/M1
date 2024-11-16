@@ -14,6 +14,8 @@
 \usepackage{array,multirow,makecell}
 \setcellgapes{1pt}
 \usepackage{mathptmx} %times aves le mode math
+\usepackage{tikz}
+\usepackage{import}
 \makegapedcells
 \newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
@@ -943,11 +945,112 @@ V_0 = \frac{V_T}{(1 + r)^T}
 \]
 Par équivalence, une liquidité \( K \), à la maturité \( T \), correspondant au strike price d’une option à maturité, en temps continu, au taux d’intérêt \( r \), donne la valeur de \( K \) en \( t = 0 \) à \( K e^{-rT} \).
 
-page 30
+\subsubsection{Tester la parité Call-Put}
+
+Supposons à nouveau que les valeurs des deux portefeuilles \( A \) et \( B \) soient égales, c'est-à-dire \( V_A(T) = V_B(T) \).
+
+Nous pourrions composer différemment les portefeuilles afin d’observer si leurs valeurs à l’échéance sont toujours égales. Autrement dit, nous pouvons tester la parité Call-Put :
+
+\[
+C + K e^{-rT} = P + S_0
+\]
+
+Le portefeuille \( A \) contient un Call \( (C) \) ainsi qu’une liquidité en \( t = 0 \) de \( K e^{-rT} \).
+
+Le portefeuille \( B \) contient un Put \( (P) \) et le sous-jacent en \( t = 0 \) noté \( S_0 \).
+
+\subsubsection{Illustration de deux stratégies}
+
+Le portefeuille \( A \) contient un Call \( (C) \) ainsi qu’une liquidité en \( t = 0 \) de \( K e^{-rT} \).
+
+Le portefeuille \( B \) contient un Put \( (P) \) et le sous-jacent en \( t = 0 \) noté \( S_0 \).
+
+À partir des éléments présentés, nous avons :
+
+\[
+V_A(T) = \max(S_T - K, 0) + K
+\]
+
+\[
+V_B(T) = \max(K - S_T, 0) + S_T
+\]
+
+À maturité \( T \), deux possibilités s’offrent à nous :
+
+1. Si \( S_T > K \) (Call exercé, Put abandonné) :
+\[
+V_A(T) = \max(S_T - K, 0) + K \quad \text{donc} \quad V_A(T) = S_T
+\]
+\[
+V_B(T) = \max(K - S_T, 0) + S_T \quad \text{donc} \quad V_B(T) = S_T
+\]
+
+2. Si \( S_T < K \) (Put exercé, Call abandonné) :
+\[
+V_A(T) = \max(S_T - K, 0) + K \quad \text{donc} \quad V_A(T) = K
+\]
+\[
+V_B(T) = \max(K - S_T, 0) + S_T \quad \text{donc} \quad V_B(T) = K
+\]
+
+Sous l'hypothèse d’arbitrage sans opportunité (AOA), si les portefeuilles \( A \) et \( B \) ont la même valeur en \( T \), alors les deux ont la même valeur en \( t = 0 \).
+
+Dans tous les cas de figure, la valeur des portefeuilles \( A \) et \( B \) vaut :
+\[
+V_A(T) = V_B(T) = \max(S_T, K)
+\]
+
+Si \( V_A(T) = V_B(T) \), alors \( V_A(0) = V_B(0) \) et donc nous avons bien :
+\[
+C + K e^{-rT} = P + S_0
+\]
+ce qui entraîne :
+\[
+C = P + S_0 - K e^{-rT}
+\]
+
+\subsection{L’intérêt de cette parité}
+
+\subsubsection{Les enjeux de l’AOA (Absence d'opportunité d'arbitrage)}
+
+Reprenons la parité suivante :
+
+\[
+C + K e^{-rT} = P + S_0 
+\]
+
+Le principal intérêt de cette relation réside dans le fait qu’elle exprime la valeur d’un Call en fonction d’un Put et vice versa, mais aussi une stratégie de réplication :
+
+\[
+C = P + S_0 - K e^{-rT} 
+\]
+
+La valeur d’un Call de strike \( K \) est identique à celle d’un portefeuille composé d’un Put de strike \( K \) et d’un titre \( S \) financés par l’emprunt d’un montant qui vaudra \( K \) à l’échéance pendant une période \( T \) au taux \( r \). On appelle cette stratégie un Call synthétique.
+
+\[
+P = -S_0 + K e^{-rT} + C 
+\]
+
+La valeur d’un Put de strike \( K \) est identique à celle d’un portefeuille composé d’un Call de strike \( K \) et de la vente à découvert d’un titre \( S \) qui finance le placement d’un montant qui vaudra \( K \) à l’échéance \( T \) au taux \( r \). On appelle cette stratégie un Put synthétique.
+
+\[
+S_0 = C + K e^{-rT} - P 
+\]
+
+On peut répliquer la valeur d’un titre en plaçant un montant qui vaudra \( K \) au terme de \( T \) années au taux d’intérêt \( r \), en achetant un Call de strike \( K \) et en vendant à découvert un Put \( P \) de strike \( K \), sachant que le Call et le Put ont la même maturité \( T \). Cette stratégie s’appelle un sous-jacent synthétique.
+
+Enfin,
+
+\[
+K e^{-rT} = P + S_0 - C 
+\]
+
+On peut répliquer le placement sans risque d’un montant qui vaudra à l’échéance pendant une période \( T \) en achetant le sous-jacent \( S \), en vendant un Call \( C \) de strike \( K \) à découvert et en achetant un Put \( P \) de strike \( K \), sachant que le Call et le Put ont la même maturité \( T \). Cette stratégie s’appelle un placement monétaire synthétique ou placement sans risque synthétique.
 
 \section{Stratégies sur options}
 
 \subsection{Le recours aux options pour quelles stratégies ?}
+
 
 \subsection{Les Caps, les Floors et les Collars}
 

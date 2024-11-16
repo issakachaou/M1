@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2024.10.12)  12 NOV 2024 19:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2024.10.12)  13 NOV 2024 20:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2179,7 +2179,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (COURS_ECONOMIE_ET_POLITIQUE_DU_LOGEMENT.aux)
 Package rerunfilecheck Info: File `COURS_ECONOMIE_ET_POLITIQUE_DU_LOGEMENT.out'
  has not changed.
-(rerunfilecheck)             Checksum: D7DDD06B0D534435997FFAD7F1A17A0D;18050.
+(rerunfilecheck)             Checksum: DAFF12274A4DE63811B27455E1F514F9;18254.
  ) 
 Here is how much of TeX's memory you used:
  14053 strings out of 475385
@@ -2197,8 +2197,8 @@ eymr10.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol
 tmb8a.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/u
 tmr8a.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on COURS_ECONOMIE_ET_POLITIQUE_DU_LOGEMENT.pdf (78 pages, 115192
-11 bytes).
+Output written on COURS_ECONOMIE_ET_POLITIQUE_DU_LOGEMENT.pdf (78 pages, 115194
+69 bytes).
 PDF statistics:
  899 PDF objects out of 1000 (max. 8388607)
  171 named destinations out of 1000 (max. 500000)

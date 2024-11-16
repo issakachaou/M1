@@ -1206,6 +1206,216 @@ La valeur attendue est calculée comme suit :
 \end{center}
 
 
+\paragraph{2) imaginons que l’actif \( c \) soit remplacé par l’actif \( d \) qui a des flux équitablement distribués de \([0, 1000]\).} 
+
+L'investisseur doit être attentif aux actifs retenus dans le portefeuille. La combinaison des actifs \( a \) et \( d \) donne une valeur attendue de 580 € : 100 avec une probabilité de 0,4 (soit \( 0,5 \times 0,8 \)), 1000 avec une probabilité de 0,1, 1100 avec une probabilité de 0,4, et 0 avec une probabilité de 0,1.
+
+\begin{center}
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-11-13 142441}
+\end{center}
+
+La valeur attendue de ce portefeuille est supérieure aux valeurs des combinaisons précédentes. Si le portefeuille est partitionné (tranché), il est important pour les créanciers juniors de connaître la composition du portefeuille, car les actifs peuvent être plus ou moins risqués. Les classes d’actifs homogènes sont plus faciles à titriser et à commercialiser.
+
+\chapter{La banque et le risque de liquidité}
+
+Un autre obstacle à la relation entre prêteurs et emprunteurs est le besoin de liquidité des prêteurs. Les consommateurs (prêteurs) ont la possibilité d’épargner sur des comptes, avec des placements liquides à court terme. En revanche, les investisseurs (emprunteurs) ont besoin d’effectuer des emprunts à long terme pour financer des projets d'investissement.
+
+Le modèle de Diamond et Dybvig (1983), qui a valu le prix Nobel 2022, met en lumière le rôle légitime des banques. Ces dernières mobilisent les fonds des prêteurs au service des emprunteurs et assurent la liquidité des dépôts des prêteurs. Elles transforment des passifs liquides (placement des épargnant) en actifs illiquides (financement des projet de long terme des emprunteurs) et offrent une assurance de liquidité supérieure à celle du marché. De plus, le contrat de dépôt protège les épargnants contre le risque de liquidité, que ce soit par une assurance auprès d'une compagnie ou par l'achat de titres. Les épargnant pourrait également se protéger de se risque en souscrivant à une assurance. Les placements à vue ne sont pas équivalent à des placement sur des titres.
+
+L'offre de contrat de dépôt permet de mutualiser le risque de liquidité entre les déposants patients (ils attendent avant retirer leur argent entre deux période) et impatients  (ils retirent leur argent en fin de période). 
+
+Le risque de liquidité survient lorsqu'elle ne parvient plus a se procurer la liquidité pour faire face a ses engagement soit par prêt bancaire, par émission de titre ou pas vente de créance client. Si tous les déposants panique et se précipitent au guichet de la banque, alors la banque n'arrive pas a faire face au retrait massif des déposants. La banque ne peut pas convertir les depôts en billet ni les transféré les depôts dans une nouvelle banque.
+
+Toutefois, la banque s'expose elle-même à ce risque de liquidité, comme en témoignent les cas de ruées bancaires, tels que Northern Rock (Royaume-Uni) en septembre 2007 et Silicon Valley Bank (États-Unis) en mars 2023. Dans ces situations, les autorités doivent intervenir pour maintenir la panique en donnant confiance au déposant, avec le mécanisme de la garantie des déposants. Cela se traduit par la mise en place d'un mécanisme de garantie des dépôts (FGDR, 1999) et, pour éviter le risque systémique, la banque centrale joue un rôle de prêteur en dernier ressort. 
+
+\section{La banque comme « assureur de liquidité » : le modèle de Diamond et Dybvig, 1983}
+
+\subsection{Gestion de la liquidité par la banque}
+La banque dispose du bilan simplifié suivant (en millions d’€) :
+
+\begin{center}
+	\includegraphics[scale=0.8]{../../../Pictures/Screenshots/Capture d'écran 2024-11-13 145203}
+\end{center}
+
+La liquidité bancaire est la somme des réserves ou la somme de la monnaie centrale détenue en compte auprès de la banque centrale. 
+
+trésorerie : billet de banque et compte à vue la somme de la monnaie centrale détenue en compte auprès de la banque centrale. 
+
+Si le taux de réserves obligatoires (RO) est de 1 \%, la banque doit détenir 10 millions au titre des réserves obligatoires, soit \( \text{RO} = 0,01 \times \text{Dépôts} \). Les réserves (Ro+RE=20M) totales de la banque sont donc de 20 millions, avec des réserves excédentaires (RE) de 10 millions.
+
+\[ \text{Réserves Obligatoire (RO)} = r \times \text{Dépôt clientèle} \]
+\[ \text{Réserves Obligatoire (RO)} = 1\text{\%} \times \text{Dépôt clientèle} \]
+\[ \text{Réserves Obligatoire (RO)} = 0.01 \times 1000 =10\]
+
+\[ \text{Depôt} =1000-20=980\]
+
+
+Imaginons maintenant un retrait de 20 millions effectué par les déposants.
+
+\begin{center}
+	\includegraphics[scale=0.8]{../../../Pictures/Screenshots/Capture d'écran 2024-11-13 150446}
+	
+	\includegraphics[scale=0.8]{../../../Pictures/Screenshots/Capture d'écran 2024-11-13 150541}
+	
+	\includegraphics[scale=0.8]{../../../Pictures/Screenshots/Capture d'écran 2024-11-13 150658}
+	
+\end{center}
+
+1) Elle emprunte à la BC
+
+2) Elle emprunte aux EC
+
+3) Elle emet de titres
+
+4) Elle vend des titres
+
+5) Elle titrise des crédits pour 9.8M
+
+6) Elle emprunt a la BC et au EC, elle va titriser des crédit, elle va vendre titres. 
+
+\subsection{Modèle de Diamond et Dybvig, 1983}
+
+Le modèle de Diamond et Dybvig, proposé en 1983, repose sur une technique de production sans risque, où l'investissement à long terme s'étend sur 3 périodes, avec des rendements d'échelle constants. Les agents, averses au risque, disposent en \( t=0 \) d'une dotation initiale d'une unité de bien homogène, qu'ils investissent en \( t=0 \). Si les agents sont contraint d'interrompre l'investissement en \( t=1 \) ils gagneront 0 en \( t=2 \)
+
+\begin{center}
+	\includegraphics[scale=0.8]{../../../Pictures/Screenshots/Capture d'écran 2024-11-13 152057}
+\end{center}
+
+La séquence pour les agents peut être décrite par les types (0,R) ou (1,0). Pour le type (0,R), l'investissement à long terme est rentable mais irréversible.
+
+Au temps \( t=0 \), tous les agents sont identiques. Au temps \( t=1 \), ils apprennent s'ils sont de type 1 « impatients » (interruption et consommation en \( t=1 \)) ou de type 2 « patients » (consommation en \( t=2 \)). 
+
+Les agents souhaitent s'assurer contre le risque d'être de type 1. 
+
+Un équilibre amélioré est atteint si les agents se regroupent au sein d'une banque, ce qui permet de lisser la consommation entre les agents en \( t=1 \). Cela entraîne une augmentation de la consommation des agents impatients en \( t=1 \) et une baisse de la consommation des agents patients en \( t=2 \) grâce au contrat de dépôt proposé par la banque. 
+
+Au temps \( t=2 \), la banque est dissoute et les actifs sont répartis entre les agents qui n'ont pas encore retiré leurs fonds. 
+
+Il existe deux équilibres pour la banque : 
+
+
+le bon équilibre, dit Pareto-optimal, où les impatients soldent leur compte en \( t=1 \) et les patients en \( t=2 \), et le mauvais équilibre, dit de ruée bancaire, où tous les agents paniquent et se précipitent pour retirer leurs fonds en \( t=1 \).
+
+Dans ce dernier cas, la banque doit liquider ses investissements à long terme pour récupérer des fonds, mais le remboursement aux déposants s'avère insuffisant.
+
+Dans ce modèle, il est difficile de déterminer ce qui motive les actions des agents, que ce soit des motivations de type tâches solaires ou « Sunspots », pour retirer leurs fonds. Ces anticipations auto-réalisatrices peuvent conduire à l'insolvabilité et à la faillite de la banque, même si les données fondamentales de celle-ci sont saines.
+
+\subsubsection{Exemple numérique : modèle de Diamond et Dybvig}
+
+Considérons 100 agents avec une aversion au risque. Chacun veut investir 1 € dans un projet en \( t=0 \). Ce projet rapporte 1 € s'il est stoppé en \( t=1 \) et 2,25 € en \( t=2 \). Si un consommateur est de type 1 ou « impatient », sa fonction d'utilité est donnée par \( U_1 = \sqrt{C_1^I} \). S'il est de type 2 ou « patient », sa fonction d'utilité est \( U_2 = 0,6 \times \sqrt{C_1^P+C_2^P}  \).
+
+Au temps \( t=0 \), nous savons que 40\% des individus seront des impatients et 60\% des patients au temps \( t=1 \). Nous procédons au calcul ex-ante de la fonction d'utilité espérée pour chaque individu dans deux scénarios : 
+
+(i) s'il n'y a pas de banque et que chaque individu investit dans son propre projet, 
+
+(ii) s'il y a une banque qui accepte un dépôt de 1 € pour chaque individu et investit toute la somme recueillie (100 €) dans 100 projets de 1 €.
+
+\paragraph{1) Situation sans banque}
+
+Au temps \( t=0 \), chaque individu croit avoir une chance de 40\% d'être impatient et une chance de 60\% d'être patient au temps \( t=1 \). La fonction d'utilité espérée pour les individus en \( t=0 \) est donnée par : \( C_1^I= 1 \) , \( C_2^I= 0 \) , \( C_1^P= 0 \) , \( C_2^P= R = 2,25 \)
+
+\[
+\mathbb{E}(U) = t \times U_1 + (1-t) \times U_2
+\]
+
+où \( t \) représente la proportion d'impatients. En substituant les valeurs, nous obtenons :
+
+\[
+\mathbb{E}(U) = 0,4 \times \sqrt{1} + 0,6 \times 0,6 \times \sqrt{2,25} = 0,94
+\]
+
+\paragraph{2) Une banque détenue par 100 déposants}
+
+La banque procure une assurance en offrant \( C_1^{\star} > 1 \, \text{€} \) et \( C_2^{\star} < R \, \text{€} \) (où \( C^{\star} \) représente la consommation avec une banque), permettant ainsi un lissage de la consommation. 
+
+Si la banque annonce en \( t=0 \) : \( C_1^{\star}= 1,1 \, \text{€} \), alors 40 déposants retirent leurs fonds, et la banque devra payer 44 € (\( 40 \times 1,1 \)) pour la liquidation prématurée de 44 projets.
+
+Les 56 (100-44) projets restants rapporteront \( 56 \times 2,25 = 126 \, \text{€} \) en \( t=2 \).
+
+
+La banque promet à chacun des 60 déposants en \( t=2 \) une consommation égale à \( \frac{126}{60} = 2,1 \, \text{€} \).
+
+La fonction d’utilité espérée en \( t=0 \) est donnée par :
+
+\[
+\mathbb{E}(U^{\star}) = 0,4 \times \sqrt{1,1}+0,6 \times 0,6 \times \sqrt{2,1}=0,9412
+\]
+
+Les agents améliorent leur bien-être grâce à la consommation lissée dans le temps, rendue possible par l'intervention de la banque.
+
+\paragraph{3) Si les consommateurs de type « patient » décident de retirer leurs fonds :}
+
+En \( t=2 \), leur fonction d’utilité sera donnée par :
+
+\[
+0,6 \times \sqrt{2,1}=0,8695
+\]
+
+ \noindent En \( t=1 \) :
+
+\[ 0,6 \times \sqrt{1,1} = 0,6293\]
+
+ \noindent Les agents patients n’ont pas intérêt à retirer leurs fonds en \( t=1 \). 
+
+ \noindent De façon générale, il est plus profitable :
+
+- Pour les déposants de type « impatient » de retirer leurs fonds en \( t=1 \).
+
+- Pour les déposants de type « patient » de les retirer en \( t=2 \).
+
+ \noindent Il s’agit du bon équilibre Pareto optimal.
+ 
+\paragraph{4) En cas de ruée bancaire, les 100 déposants souhaitent retirer leurs fonds en \( t=1 \).} 
+
+Les 100 projets devront être liquidés pour obtenir 100 €. Le remboursement dépendra de la position dans la file d'attente.
+
+La banque paiera 1,1 € aux 90 premiers déposants (totalisant 99 €), et le reste de 1 € sera distribué au 91ème déposant. Les 9 déposants restants ne recevront rien.
+
+Si vous attendez jusqu’en \( t=2 \) (alors que tous les autres déposants ont retiré leurs fonds en \( t=1 \)), vous n’obtiendrez rien.
+
+En \( t=1 \), la position dans la file d’attente est déterminée de manière aléatoire : la probabilité de recevoir 1,1 € est de 0,90, la probabilité de recevoir 1 € est de 0,01, et la probabilité de ne rien recevoir est de 0,09.
+
+La stratégie optimale est de retirer les fonds en \( t=1 \). Cet équilibre constitue une ruée bancaire.
+
+\paragraph{5) Pour éliminer ce type de ruée, les déposants souhaitant retirer leurs fonds en \( t=1 \) ne recevront que 1 €.}
+
+La banque n’a pas besoin de liquider plus de projets que la demande de retrait en \( t=1 \).
+
+Un déposant « patient » peut attendre jusqu’en \( t=2 \) et recevra sûrement \( R \, € \). Il est optimal pour un agent patient d’attendre en \( t=2 \) pour retirer ses fonds.
+
+Cependant, le contrat de dépôt ne joue pas son rôle de mutualisation des risques de liquidité. Il n’y a donc pas de raison d’être de la banque.
+
+\paragraph{6) Assurance de dépôts}
+
+L'assurance de dépôts permet d'éliminer l'équilibre de ruée bancaire sans banaliser le rôle de la banque. L'État s’engage à ce que les impatients reçoivent 1,1 € en \( t=1 \) et les patients 2,1 € en \( t=2 \). Cela constitue un bon équilibre.
+
+\paragraph{Les solutions}
+
+Suspension de convertibilité :
+
+- Cela altère la nature du contrat de dépôt en interdisant la conversion immédiate du dépôt en liquidité.
+
+- La suspension est mise en place lorsque les retraits sont excessifs. Par exemple, au Liban en 2020, un retrait maximum de 200 € par semaine était autorisé (en plus en livres libanaises avec un haircut de 40 \%).
+
+Garantie des dépôts mise en place :
+
+- Par la Federal Deposit Insurance Corporation (FDIC), créée en 1933 aux USA, garantissant jusqu'à 250 000 \$.
+
+- Par le Fonds de Garantie des Dépôts et Résolution (FGDR), créé en 1999 en France, garantissant jusqu'à 100 000 €.
+
+
+
+\section{Les prolongements : le risque systémique}
+
+
+\section{Le rôle du prêteur en dernier ressort dans la crise financière}
+
+
+
+
+
+
+
 
 
 \end{document}
