@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2024.10.12)  21 NOV 2024 15:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2024.10.12)  24 NOV 2024 23:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./COURS_EAF.tex
-(COURS_EAF.tex
+**./FICHE_CH_1_EAF.tex
+(FICHE_CH_1_EAF.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-09-28>
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
@@ -668,6 +668,150 @@ File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 z/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2022-09-22 v7.00t Hypertext links for LaTeX
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
+.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count317
+)
+\@linkdim=\dimen307
+\Hy@linkcounter=\count318
+\Hy@pagecounter=\count319
+ (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2022-09-22 v7.00t Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count320
+ (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2022-09-22 v7.00t Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4162.
+Package hyperref Info: Link nesting OFF on input line 4167.
+Package hyperref Info: Hyper index ON on input line 4170.
+Package hyperref Info: Plain pages OFF on input line 4177.
+Package hyperref Info: Backreferencing OFF on input line 4182.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4410.
+\c@Hy@tempcnt=\count321
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4748.
+\XeTeXLinkMargin=\dimen308
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count322
+\Field@Width=\dimen309
+\Fld@charsize=\dimen310
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count323
+\c@Item=\count324
+\c@Hfootnote=\count325
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2022-09-22 v7.00t Hyperref driver for pdfTeX
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count326
+\c@bookmark@seq@number=\count327
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip69
+)
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
 Package: import 2020/04/01  v 6.2
 )
@@ -680,10 +824,10 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count317
+\l__color_backend_stack_int=\count328
 \l__pdf_internal_box=\box71
-) (COURS_EAF.aux)
-\openout1 = `COURS_EAF.aux'.
+) (FICHE_CH_1_EAF.aux)
+\openout1 = `FICHE_CH_1_EAF.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
@@ -699,20 +843,24 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count318
-\scratchdimen=\dimen307
+\scratchcounter=\count329
+\scratchdimen=\dimen311
 \scratchbox=\box72
-\nofMPsegments=\count319
-\nofMParguments=\count320
+\nofMPsegments=\count330
+\nofMParguments=\count331
 \everyMPshowfont=\toks40
-\MPscratchCnt=\count321
-\MPscratchDim=\dimen308
-\MPnumerator=\count322
-\makeMPintoPDFobject=\count323
+\MPscratchCnt=\count332
+\MPscratchDim=\dimen312
+\MPnumerator=\count333
+\makeMPintoPDFobject=\count334
 \everyMPtoPDFconversion=\toks41
 )
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -727,7 +875,11 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 LaTeX Info: Redefining \degres on input line 25.
 LaTeX Info: Redefining \up on input line 25.
-\Hy@linkcounter=\count324
+Package hyperref Info: Link coloring OFF on input line 25.
+ (FICHE_CH_1_EAF.out) (FICHE_CH_1_EAF.out)
+\@outlinefile=\write4
+\openout4 = `FICHE_CH_1_EAF.out'.
+
 
 Chapitre 1.
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
@@ -766,20 +918,10 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
 
-Overfull \hbox (4.80595pt too wide) in paragraph at lines 34--36
-\T1/ptm/m/n/12 La somme des pon-d�-ra-tions de ces por-te-feuilles est �gale � 
-1 (c'est-�-dire $[][] \OML/ztmcm/m/it/12 ![] \OT1/ztmcm/m/n/12 =
- []
-
 [1
 
 
 {C:/Users/issak/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Overfull \hbox (15.8844pt too wide) in paragraph at lines 80--82
-\T1/ptm/m/n/12 En d'autres termes, le ren-de-ment at-tendu d'un por-te-feuille 
-est sim-ple-ment la moyenne
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.13202pt, for example:
@@ -789,412 +931,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [2]
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-27 200006.png, id=21, 6
-24.08156pt x 292.09125pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-27 200006.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2024-09-27 200006.png>
-Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-09
--27 200006.png  used on input line 104.
-(pdftex.def)             Requested size: 249.62819pt x 116.83441pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[3 <../../../Pictures/Screenshots/Capture d'écran 2024-09-27 200006.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[4]
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-27 215442.png, id=30, 6
-89.57625pt x 215.30438pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-27 215442.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2024-09-27 215442.png>
-Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-09
--27 215442.png  used on input line 155.
-(pdftex.def)             Requested size: 275.8256pt x 86.12022pt.
-
-Overfull \hbox (2.8268pt too wide) in paragraph at lines 155--156
- [][] 
- []
-
-
-Underfull \hbox (badness 4048) in paragraph at lines 156--158
-[]\T1/ptm/m/n/12 La cor-r�-la-tion entre
- []
-
-
-Overfull \hbox (2.76167pt too wide) in paragraph at lines 156--158
-\T1/ptm/m/n/12 deux ac-tions a le m�me
- []
-
-
-Underfull \hbox (badness 4846) in paragraph at lines 156--158
-\T1/ptm/m/n/12 riance, elle a donc
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[5 <../../../Pictures/Screenshots/Capture d'écran 2024-09-27 215442.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[6]
-File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-27 200006.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2024-09-27 200006.png>
-Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-09
--27 200006.png  used on input line 213.
-(pdftex.def)             Requested size: 249.62819pt x 116.83441pt.
-
-Underfull \hbox (badness 5711) in paragraph at lines 215--216
-[][]\T1/ptm/m/n/12 Comme tou-jours, la
- []
-
-
-Underfull \hbox (badness 3815) in paragraph at lines 215--216
-\T1/ptm/m/n/12 les ac-tions des com-pa-
- []
-
-
-Underfull \hbox (badness 5756) in paragraph at lines 215--216
-\T1/ptm/m/n/12 li�res du ta-bleau 11.1.
- []
-
-
-Overfull \hbox (2.0401pt too wide) in paragraph at lines 215--216
-\T1/ptm/m/n/12 Consi-d�-rons le por-te-feuille
- []
-
-
-Underfull \hbox (badness 1147) in paragraph at lines 215--216
-\T1/ptm/m/n/12 conte-nant les ac-tions de
- []
-
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-28 192523.png, id=38, 6
-87.31781pt x 323.70938pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-28 192523.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2024-09-28 192523.png>
-Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-09
--28 192523.png  used on input line 238.
-(pdftex.def)             Requested size: 274.92226pt x 129.48145pt.
-
-Overfull \hbox (9.72511pt too wide) in paragraph at lines 238--239
- [][] 
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[7]
-Underfull \hbox (badness 2189) in paragraph at lines 240--241
-[][]\T1/ptm/m/n/12 La vo-la-ti-lit� di-mi-
- []
-
-
-Underfull \hbox (badness 1852) in paragraph at lines 240--241
-\T1/ptm/m/n/12 la moi-ti� de la vo-la-
- []
-
-
-Underfull \hbox (badness 2707) in paragraph at lines 240--241
-\T1/ptm/m/n/12 vi-duelles est �li-mi-n�e
- []
-
-
-Underfull \hbox (badness 2512) in paragraph at lines 240--241
-\T1/ptm/m/n/12 dans un grand por-te-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[8 <../../../Pictures/Screenshots/Capture d'écran 2024-09-28 192523.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[9]
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-29 225806.png, id=50, 4
-81.8pt x 266.49562pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-29 225806.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2024-09-29 225806.png>
-Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-09
--29 225806.png  used on input line 294.
-(pdftex.def)             Requested size: 240.8994pt x 133.24748pt.
-
-Overfull \hbox (6.89702pt too wide) in paragraph at lines 294--295
- [][] 
- []
-
-
-Underfull \hbox (badness 2418) in paragraph at lines 296--297
-[][]\T1/ptm/m/n/12 Nous di-sons qu'un por-
- []
-
-
-Underfull \hbox (badness 2600) in paragraph at lines 296--297
-\T1/ptm/m/n/12 te-feuille est in-ef-fi-cace lors-
- []
-
-
-Underfull \hbox (badness 1102) in paragraph at lines 296--297
-\T1/ptm/m/n/12 en termes de ren-de-ment at-
- []
-
-
-Underfull \hbox (badness 4479) in paragraph at lines 296--297
-\T1/ptm/m/n/12 re-garde la fi-gure 11.3, un
- []
-
-
-Underfull \hbox (badness 5316) in paragraph at lines 296--297
-\T1/ptm/m/n/12 existe d'autres por-te-feuilles
- []
-
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-29 230936.png, id=51, 5
-14.92375pt x 280.04625pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-29 230936.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2024-09-29 230936.png>
-Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-09
--29 230936.png  used on input line 305.
-(pdftex.def)             Requested size: 257.46124pt x 140.02277pt.
-
-Overfull \hbox (3.96362pt too wide) in paragraph at lines 305--306
- [][] 
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[10 <../../../Pictures/Screenshots/Capture d'écran 2024-09-29 225806.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[11 <../../../Pictures/Screenshots/Capture d'écran 2024-09-29 230936.png>]
-Overfull \hbox (8.05438pt too wide) detected at line 356
-\OML/ztmcm/m/it/12 ^^[[] \OT1/ztmcm/m/n/12 = []
- []
-
-
-Overfull \hbox (2.46837pt too wide) in paragraph at lines 359--361
-\T1/ptm/m/n/12 por-te-feuille, mais �ga-le-ment sa vo-la-ti-lit�, au-del� de ce
-lle des ac-tions in-di-vi-duelles. 
- []
-
-<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155216.png, id=60, 4
-71.26062pt x 263.48438pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155216.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155216.png>
-Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
--17 155216.png  used on input line 372.
-(pdftex.def)             Requested size: 329.88019pt x 184.43779pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[12]
-<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155515.png, id=64, 4
-93.0922pt x 252.945pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155515.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155515.png>
-Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
--17 155515.png  used on input line 378.
-(pdftex.def)             Requested size: 345.16219pt x 177.06029pt.
-<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155648.png, id=65, 4
-99.8675pt x 273.27094pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155648.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155648.png>
-Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
--17 155648.png  used on input line 383.
-(pdftex.def)             Requested size: 349.90486pt x 191.28833pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[13 <../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155216.png> <../
-../../Pictures/Screenshots/Capture d'écran 2024-10-17 155515.png>]
-Overfull \hbox (1.27802pt too wide) in paragraph at lines 395--396
-[]\T1/ptm/m/n/12 Cependant, cette conclu-sion ignore les op-por-tu-ni-t�s de di
--ver-si-fi-ca-tion que Bore
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[14 <../../../Pictures/Screenshots/Capture d'écran 2024-10-17 155648.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 160716.png, id=76, 4
-75.7775pt x 263.48438pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 160716.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 160716.png>
-Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
--17 160716.png  used on input line 421.
-(pdftex.def)             Requested size: 333.04196pt x 184.43779pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[15 <../../../Pictures/Screenshots/Capture d'écran 2024-10-17 160716.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[16]
-<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 161419.png, id=84, 4
-75.7775pt x 258.9675pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 161419.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 161419.png>
-Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
--17 161419.png  used on input line 482.
-(pdftex.def)             Requested size: 333.04196pt x 181.27599pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[17 <../../../Pictures/Screenshots/Capture d'écran 2024-10-17 161419.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[18]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[19]
-<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 163726.png, id=96, 4
-75.02469pt x 251.43938pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 163726.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 163726.png>
-Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
--17 163726.png  used on input line 555.
-(pdftex.def)             Requested size: 332.515pt x 176.00635pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[20 <../../../Pictures/Screenshots/Capture d'écran 2024-10-17 163726.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[21]
-Overfull \hbox (1.85445pt too wide) in paragraph at lines 609--610
-[]\T1/ptm/m/n/12 Soit $\OML/ztmcm/m/it/12 r[]$ \T1/ptm/m/n/12 le ren-de-ment du
- fonds im-mo-bi-lier et $\OML/ztmcm/m/it/12 r[]$ \T1/ptm/m/n/12 le ren-de-ment 
-du Fonds Omega.
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[22]
-Overfull \hbox (31.24782pt too wide) in paragraph at lines 641--641
+Overfull \hbox (31.24782pt too wide) in paragraph at lines 112--112
 []\T1/ptm/b/n/17.28 Le mo-d�le d'�va-lua-tion des ac-tifs fi-nan-ciers (CAPM) 
  []
 
@@ -1206,29 +943,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
-[23]
-<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 170450.png, id=110, 
-472.76625pt x 262.73157pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 170450.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 170450.png>
-Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
--17 170450.png  used on input line 665.
-(pdftex.def)             Requested size: 236.38254pt x 131.36545pt.
-
-Underfull \hbox (badness 2384) in paragraph at lines 668--669
-[][]\T1/ptm/m/n/12 Selon le CAPM,
- []
+[3]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 131.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 131.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 131.
 
 
-Underfull \hbox (badness 3679) in paragraph at lines 668--669
-\T1/ptm/m/n/12 de-vraient choi-sir un
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 131.
 
 
-Overfull \hbox (2.48541pt too wide) in paragraph at lines 668--669
-\T1/ptm/m/n/12 por-te-feuille sur la ligne
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beta' on input line 131.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 131.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1238,224 +971,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
-[24 <../../../Pictures/Screenshots/Capture d'écran 2024-10-17 170450.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 172834.png, id=115, 
-493.845pt x 273.27094pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 172834.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 172834.png>
-Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
--17 172834.png  used on input line 723.
-(pdftex.def)             Requested size: 246.92189pt x 136.63512pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[25]
-<../../../Pictures/Screenshots/Capture d'écran 2024-10-17 173525.png, id=120, 
-463.7325pt x 261.22594pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 173525.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2024-10-17 173525.png>
-Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-10
--17 173525.png  used on input line 730.
-(pdftex.def)             Requested size: 231.86568pt x 130.61264pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[26 <../../../Pictures/Screenshots/Capture d'écran 2024-10-17 172834.png> <../
-../../Pictures/Screenshots/Capture d'écran 2024-10-17 173525.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[27]
-Chapitre 2.
-[28
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[29]
-Overfull \hbox (2.34735pt too wide) in paragraph at lines 839--840
- \T1/ptm/b/n/12 Quelles dif-f�-rences avec les op-tions eu-ro-p�ennes[] \T1/ptm
-/m/n/12 Pour les op-tions am�-ri-caines,
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[30]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[31]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[32]
-<../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225140.png, id=145, 
-700.11563pt x 275.52937pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225140.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225140.png>
-Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-11
--01 225140.png  used on input line 895.
-(pdftex.def)             Requested size: 350.05696pt x 137.76434pt.
-<../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225414.png, id=146, 
-688.07062pt x 219.82124pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225414.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225414.png>
-Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-11
--01 225414.png  used on input line 903.
-(pdftex.def)             Requested size: 344.03447pt x 109.91034pt.
-<../../../Pictures/Screenshots/Capture d'écran 2024-11-05 114541.png, id=147, 
-474.27188pt x 225.09094pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2024-11-05 114541.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2024-11-05 114541.png>
-Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-11
--05 114541.png  used on input line 908.
-(pdftex.def)             Requested size: 331.98805pt x 157.56258pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[33 <../../../Pictures/Screenshots/Capture d'écran 2024-11-01 225140.png> <../
-../../Pictures/Screenshots/Capture d'écran 2024-11-01 225414.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2024-11-05 115057.png, id=153, 
-478.78876pt x 188.95593pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2024-11-05 115057.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2024-11-05 115057.png>
-Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-11
--05 115057.png  used on input line 918.
-(pdftex.def)             Requested size: 335.14984pt x 132.26823pt.
-<../../../Pictures/Screenshots/Capture d'écran 2024-11-05 115417.png, id=154, 
-487.06969pt x 196.48407pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2024-11-05 115417.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2024-11-05 115417.png>
-Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-11
--05 115417.png  used on input line 928.
-(pdftex.def)             Requested size: 340.94644pt x 137.5379pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[34 <../../../Pictures/Screenshots/Capture d'écran 2024-11-05 114541.png> <../
-../../Pictures/Screenshots/Capture d'écran 2024-11-05 115057.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[35 <../../../Pictures/Screenshots/Capture d'écran 2024-11-05 115417.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[36]
-Overfull \hbox (7.25342pt too wide) in paragraph at lines 1048--1049
-[]\T1/ptm/m/n/12 On peut r�-pli-quer le pla-ce-ment sans risque d'un mon-tant q
-ui vau-dra � l'�ch�ance
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[37]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.13202pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.13202pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
-
-[38] (COURS_EAF.aux) ) 
+[4] (FICHE_CH_1_EAF.aux)
+Package rerunfilecheck Info: File `FICHE_CH_1_EAF.out' has not changed.
+(rerunfilecheck)             Checksum: 00A70C411C9095D573EAC017F58A0A39;4175.
+ ) 
 Here is how much of TeX's memory you used:
- 17133 strings out of 475385
- 346514 string characters out of 2776906
- 667390 words of memory out of 3000000
- 38158 multiletter control sequences out of 15000+600000
- 515223 words of font info for 96 fonts, out of 8000000 for 9000
+ 23692 strings out of 475385
+ 440662 string characters out of 2776906
+ 764862 words of memory out of 3000000
+ 44610 multiletter control sequences out of 15000+600000
+ 522025 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,12n,89p,1352b,426s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/enc/d
-vips/base/8r.enc}<C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmex10.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmmi10.pfb><C:/Users/issak/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/issak/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/issak/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/iss
-ak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/issa
-k/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/issak
-/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/issak
-/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/issak
-/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on COURS_EAF.pdf (38 pages, 1312116 bytes).
+ 84i,11n,89p,525b,551s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
+/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi1
+0.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr10.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type
+1/urw/symbol/usyr.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1
+/urw/symbol/usyr.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/
+urw/times/utmb8a.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/
+urw/times/utmr8a.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/
+urw/times/utmri8a.pfb>
+Output written on FICHE_CH_1_EAF.pdf (4 pages, 99898 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 108 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 PDF objects out of 1000 (max. 8388607)
+ 28 named destinations out of 1000 (max. 500000)
+ 173 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,138 @@
+\documentclass[a4paper, 12pt]{report}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc} 
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amsfonts,amssymb, empheq}
+\usepackage{eurosym}
+\usepackage{booktabs}
+\usepackage{wrapfig}
+\pagestyle{fancy}
+\fancyhead[R]{Université Paris-Est Créteil}
+\fancyhead[L]{Évaluation des actifs financiers}
+\usepackage{array,multirow,makecell}
+\setcellgapes{1pt}
+\usepackage{mathptmx} %times aves le mode math
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{import}
+\makegapedcells
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash }b{#1}} 
+
+\begin{document}
+	
+	\chapter{Choix optimal de portefeuille et modèle d’évaluation des actifs financiers}
+	
+\section{Le rendement attendu d’un portefeuille}
+
+\subsection{Définir un portefeuille}
+Un portefeuille est défini par ses pondérations $\omega_i$, qui indiquent la proportion de l’investissement total allouée à chaque actif :
+\[
+\omega_i = \frac{\text{Valeur de l'investissement } i}{\text{Valeur totale du portefeuille}}
+\]
+La somme des pondérations doit être égale à 1 : $\sum_{i=1}^N \omega_i = 1$.
+
+\subsection{Rendement du portefeuille}
+Le rendement d’un portefeuille est la moyenne pondérée des rendements des actifs qui le composent :
+\[
+r_p = \sum_{i=1}^N \omega_i \cdot r_i
+\]
+
+\paragraph{Exemple.} 
+Un portefeuille comprend 200 actions Dolby à 30 \$ (pondération : $60\%$) et 100 actions Coca-Cola à 40 \$ (pondération : $40\%$). Si les prix montent respectivement à 36 \$ et 38 \$, la nouvelle valeur totale est $11\,000\$ $ avec un rendement global de $ 10\% $ 
+
+\subsection{Rendement attendu}
+Le rendement attendu d’un portefeuille est calculé comme la moyenne pondérée des rendements attendus des actifs :
+\[
+E(r_p) = \sum_{i=1}^N \omega_i \cdot E(r_i)
+\]
+
+\section{La volatilité et le risque}
+
+Une position longue (\textit{long}) correspond à l'achat d'un actif dans l'anticipation que son prix augmentera, offrant ainsi un potentiel de gain illimité avec une perte maximale limitée au prix payé pour l'actif. À l'inverse, une position courte (\textit{short}) implique la vente à découvert d'un actif que l'investisseur ne possède pas, avec l'obligation de le racheter ultérieurement. Cette stratégie est utilisée lorsque l'on anticipe une baisse du prix de l'actif.
+
+\subsection{Risque et diversification}
+En combinant des actifs dans un portefeuille, il est possible de réduire le risque grâce à la diversification. Le risque total dépend de la corrélation entre les actifs.
+
+\subsection{Variance d’un portefeuille à deux actifs}
+Pour deux actifs, la variance du portefeuille est donnée par :
+\[
+\sigma_p^2 = \omega_1^2 \sigma_1^2 + \omega_2^2 \sigma_2^2 + 2 \omega_1 \omega_2 \rho_{1,2} \sigma_1 \sigma_2
+\]
+où $\rho_{1,2}$ est la corrélation entre les deux actifs.
+
+\paragraph{Exemple.} 
+Deux actifs avec $\sigma_1 = 13,4\%$, $\sigma_2 = 13,4\%$, et $\rho = -0,12$ :
+\[
+\sigma_p^2 = 0.5^2 \cdot 0.134^2 + 0.5^2 \cdot 0.134^2 + 2 \cdot 0.5 \cdot 0.5 \cdot (-0.12) \cdot 0.134 \cdot 0.134
+\]
+
+\subsection{Covariance et corrélation}
+La covariance mesure comment les rendements de deux actifs évoluent ensemble :
+\[
+\text{cov}(r_i, r_j) = \frac{1}{T} \sum_{t=1}^T (r_{i,t} - \mu_i)(r_{j,t} - \mu_j)
+\]
+La corrélation est la covariance normalisée :
+\[
+\rho_{i,j} = \frac{\text{cov}(r_i, r_j)}{\sigma_i \sigma_j}, \quad -1 \leq \rho_{i,j} \leq 1
+\]
+
+\section{Le portefeuille efficient}
+
+\subsection{Définition}
+Un portefeuille est efficient s’il maximise le rendement attendu pour un niveau de risque donné ou minimise le risque pour un rendement attendu donné.
+
+\subsection{Frontière efficiente}
+La frontière efficiente est l’ensemble des portefeuilles qui offrent les meilleurs compromis entre rendement et risque.
+
+\paragraph{Exemple.} 
+Un portefeuille composé de 40\% d’Intel ($E(r) = 26\%$, $\sigma = 50\%$) et de 60\% de Coca-Cola ($E(r) = 6\%$, $\sigma = 25\%$) a :
+\[
+E(r_p) = 0.4 \cdot 26 + 0.6 \cdot 6 = 14\%
+\]
+
+\subsection{Impact de la corrélation}
+La diversification est plus efficace lorsque la corrélation entre les actifs est faible ou négative. Si $\rho = -1$, il est possible de construire un portefeuille sans risque.
+
+\section{Le ratio de Sharpe et le portefeuille tangent}
+
+\subsection{Ratio de Sharpe}
+Le ratio de Sharpe mesure la performance ajustée au risque d’un portefeuille :
+\[
+S = \frac{E(r_p) - r_f}{\sigma_p}
+\]
+où $r_f$ est le taux sans risque.
+
+\subsection{Portefeuille tangent}
+Le portefeuille tangent a le ratio de Sharpe le plus élevé et représente le meilleur portefeuille à combiner avec un actif sans risque.
+
+\section{Le modèle d’évaluation des actifs financiers (CAPM)}
+
+\subsection{Hypothèses clés}
+\begin{itemize}
+	\item Les investisseurs peuvent emprunter ou prêter au taux sans risque.
+	\item Tous les investisseurs détiennent le portefeuille de marché, qui est efficient.
+	\item Les investisseurs ont des attentes homogènes sur les rendements et les risques.
+\end{itemize}
+
+\subsection{Équation du CAPM}
+Le rendement attendu d’un actif est donné par :
+\[
+E(r_i) = r_f + \beta_i (E(r_M) - r_f)
+\]
+où $\beta_i$ mesure la sensibilité de l’actif $i$ aux variations du marché :
+\[
+\beta_i = \frac{\text{cov}(r_i, r_M)}{\sigma_M^2}
+\]
+
+\subsection{Interprétation du $\beta$}
+\begin{itemize}
+	\item $\beta > 1$ : L’actif est plus risqué que le marché.
+	\item $\beta < 1$ : L’actif est moins risqué que le marché.
+	\item $\beta = 1$ : L’actif suit exactement les variations du marché.
+\end{itemize}
+
+\end{document}

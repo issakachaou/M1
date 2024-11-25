@@ -1,0 +1,84 @@
+\documentclass[a4paper, 12pt]{report}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc} 
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amsfonts,amssymb, empheq}
+\usepackage{eurosym}
+\usepackage{booktabs}
+\usepackage{wrapfig}
+\pagestyle{fancy}
+\fancyhead[R]{Université Paris-Est Créteil}
+\fancyhead[L]{TD3}
+\usepackage{array,multirow,makecell}
+\setcellgapes{1pt}
+\usepackage{mathptmx} %times aves le mode math
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{import}
+\makegapedcells
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash }b{#1}} 
+
+\begin{document}
+
+\section*{Résolution de l'équation pour $r^\star$}
+
+Nous cherchons à résoudre l'équation suivante pour exprimer $r^\star$ en fonction des constantes données :
+
+\[
+-\frac{1}{1-\alpha} \cdot \frac{1}{r} \cdot \left( \frac{r^{1-\gamma}}{1-\gamma} - \frac{b^{1-\gamma}}{1-\gamma} \right) + r^{-\gamma} = 0
+\]
+
+\subsection*{Étape 1 : Simplification de l'équation}
+
+Pour simplifier cette équation, nous multiplions chaque côté par le facteur commun $(1-\alpha) \cdot r \cdot (1-\gamma)$ afin d'éliminer les dénominateurs. Nous obtenons alors :
+
+\[
+-\left( r^{1-\gamma} - b^{1-\gamma} \right) + (1-\alpha)(1-\gamma) \cdot r^{1-\gamma} = 0
+\]
+
+\subsection*{Étape 2 : Réorganisation des termes}
+
+En regroupant les termes contenant $r^{1-\gamma}$, nous obtenons :
+
+\[
+-\left( r^{1-\gamma} \right) + b^{1-\gamma} + (1-\alpha)(1-\gamma) \cdot r^{1-\gamma} = 0
+\]
+
+Cela peut être réécrit comme suit :
+
+\[
+\left[ -(1-\alpha)(1-\gamma) + 1 \right] \cdot r^{1-\gamma} = b^{1-\gamma}
+\]
+
+\subsection*{Étape 3 : Isolement de $r^{1-\gamma}$}
+
+Nous isolons $r^{1-\gamma}$ en divisant chaque côté par le facteur $\left[ -(1-\alpha)(1-\gamma) + 1 \right]$ :
+
+\[
+r^{1-\gamma} = b^{1-\gamma} \cdot \frac{1}{-(1-\alpha)(1-\gamma) + 1}
+\]
+
+\subsection*{Étape 4 : Résolution pour $r$}
+
+Pour isoler $r$, nous appliquons la puissance $\frac{1}{1-\gamma}$ des deux côtés :
+
+\[
+r = b \cdot \left[ -(1-\alpha)(1-\gamma) + 1 \right]^{\frac{1}{\gamma-1}}
+\]
+
+\subsection*{Résultat final}
+
+Ainsi, la solution finale est donnée par :
+
+\[
+r^\star = b \cdot \left[ -(1-\alpha)(1-\gamma) + 1 \right]^{\frac{1}{\gamma-1}}
+\]
+
+
+
+
+\end{document}

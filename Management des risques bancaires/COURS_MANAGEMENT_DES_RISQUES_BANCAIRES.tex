@@ -1403,12 +1403,193 @@ Garantie des dépôts mise en place :
 
 - Par le Fonds de Garantie des Dépôts et Résolution (FGDR), créé en 1999 en France, garantissant jusqu'à 100 000 €.
 
-
-
 \section{Les prolongements : le risque systémique}
 
+Le risque systémique désigne le risque de déséquilibre majeur résultant de l'apparition de dysfonctionnements dans le système financier. Il se manifeste par la réalisation de deux types de risques : le risque de contagion et le risque de liquidité, pouvant même conduire à l'insolvabilité.
+
+\subsection{Le risque de contagion}
+
+La contagion peut se produire d'une banque à une autre. En effet, la faillite d'une banque peut inciter les déposants d'autres banques à modifier leurs anticipations concernant la probabilité de faillite de leur propre banque, les poussant ainsi à retirer leurs fonds à un moment \(t=1\). Cela peut engendrer une généralisation des ruées (runs). 
+
+De plus, des ruées informationnelles peuvent se produire, liées aux doutes des déposants sur la santé des banques. Si des déposants retirent leurs fonds à \(t=1\), d'autres déposants non informés interprètent la file d'attente comme un signe de mauvaise gestion. Ils modifient alors leurs anticipations et adoptent des comportements mimétiques, créant une interaction stratégique entre les agents.
+
+\begin{center}
+	\includegraphics[scale=0.9]{../../../Pictures/Screenshots/Capture d'écran 2024-11-20 141223}
+\end{center}
+
+Considérons le cas où la Banque A subit un choc, tel qu'un défaut de paiement. Dans ce scénario, la Banque A ne rembourse pas sa dette à la Banque B. Si les pertes inattendues de la Banque B sont importantes, cela aura un impact significatif sur sa solidité financière. Par conséquent, la Banque B pourrait faire défaut à son tour, ce qui se répercutera sur la Banque C, et ainsi de suite. Ce défaut de la Banque A se propage alors par un effet de dominos d'une banque à une autre.
+
+Le phénomène de contagion est particulièrement fort si le système de paiement et de règlement fonctionne en flux nets et si la Banque A est une G-SIB (\textit{Global Systemically Important Bank}).
+
+Pour retrouver de la liquidité durant la crise financière globale (CFG), les banques ont dû vendre une partie de leurs actifs de manière forcée, ce qui a entraîné une déflation de leur bilan (\textit{deleveraging}). Un exemple schématique proposé par le FMI en 2007 illustre cette situation.
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-11-20 141728}
+\end{center}
+
+Un levier constant implique une dépendance vis-à-vis de la dette qui reste constante. Dans ce cas, la banque aura perdu des actifs d'une valeur de 59, soit environ 60, pour une perte en capital de 6. Ce mécanisme agit comme un amplificateur puissant, avec un ratio de 10 (60) pour 1 (6). Ratio de Levier = \( \frac{\text{Total actif}}{\text{Fond propre}} \)
+
+\subsection{Le risque de liquidité}
+
+Les banques ont intérêt à détenir peu d'actifs liquides à court terme, car ceux-ci rapportent moins que les actifs à long terme pour le calcul de la MNI (Marge Nette d'Intérêt) (\( MNI = i_{\text{débiteur}}-i_{\text{créditeur}}  \)). Cependant, les actifs à court terme sont utiles pour récupérer de la liquidité, car ils peuvent être cédés à tout moment sans grand risque de perte de capital. 
+
+Les banques comptent souvent sur d'autres banques pour obtenir de la liquidité en leur empruntant. Cela crée un rôle de passager clandestin (\textit{free rider}). De plus, en raison de l'asymétrie d'information (AI) entre les banques, elles doutent de la capacité des autres à rembourser leurs emprunts. Par conséquent, elles conservent de la liquidité pour elles-mêmes au cas où une situation difficile surviendrait. Comme l'a montré Akerlof, un marché peut complètement disparaître en raison de cette asymétrie d'information.
+
+Exemples de la CFG 2007-2009 et de la crise de la dette souveraine 2010-2012
+
+\begin{center}
+	\includegraphics[scale=0.6]{../../../Pictures/Screenshots/Capture d'écran 2024-11-20 142400}
+\end{center}
+
+A partir de la fin 2005 on a eu une hausse du taux de court terme liée au resserrement de la politique monétaire. En juillet 2007 il atteint son max depuis octobre 2001 avec 4,66\%, de même pour le taux EURIBOR.
+
+La faillite de Lehman Brother en 2008 va avivé les tensions sur le marché bancaire. 
+
+Le rétrécissement des volumes échangés sur le marché interbancaire a conduit à des changements significatifs dans les comportements des banques. Les banques en excédent de liquidité préfèrent déposer leurs fonds auprès de la banque centrale à la facilité de dépôts, plutôt que de prêter sur le marché interbancaire, même si cela entraîne un manque à gagner pour elles. 
+
+En réponse à cette situation, la Banque centrale européenne (BCE) a décidé d'apporter de la liquidité de manière abondante, en proposant une allocation illimitée de liquidité à taux fixe. À partir de novembre 2008, les taux à court terme ont amorcé une baisse. 
+
+Cependant, en 2010, les banques européennes se sont retrouvées exposées au risque de la dette souveraine. Elles détenaient une grande quantité de titres publics dans leur bilan et étaient sous-capitalisées, ce qui entraînait un fort effet de levier. En conséquence, elles refusaient de se prêter sur le marché interbancaire.
+
+Evolution des spreads interbancaires (emprunts en euro vs. emprunts en dollar), en \%
+
+\begin{center}
+	\includegraphics[scale=0.6]{../../../Pictures/Screenshots/Capture d'écran 2024-11-20 152338}
+\end{center}
+
+LTRO : Long term refinancing operation
 
 \section{Le rôle du prêteur en dernier ressort dans la crise financière}
+
+\subsection{Principes}
+
+Pour prévenir les runs bancaires, le prêteur ultime prête de la liquidité aux banques en difficulté. Selon Thornton (1802), la banque centrale a un statut spécial pour remplir ce rôle, en assurant une rationalité publique et une indépendance vis-à-vis du gouvernement. La banque centrale à une rationalité publique et doit être indépendante du gouvernement.   
+
+Cela s'oppose à la théorie d'un système bancaire libre (\textit{free banking}) défendue par Hayek (1976) et Selgin (1992), qui soutiennent que l'émission de monnaie et les banques devraient être régulées par le marché, comme cela a été le cas en Écosse de 1716 à 1847, en France de 1796 à 1803, et en Angleterre et aux États-Unis avant 1913. 
+
+Selon cette perspective, la monnaie centrale ne devrait pas être émise par la banque centrale, car elle risquerait de s'en servir pour financer la dette publique de l'État.
+
+Sans banque centrale, plusieurs chambres de compensation privées pourraient s'occuper d'arrangements coopératifs entre les banques en cas de difficultés. Les problèmes de liquidité seraient alors résolus sur le marché interbancaire. Cependant, ce marché présente des défauts de coordination et des conflits d'intérêts entre les banques. 
+
+Les banques se font concurrence dans une recherche du profit, ce qui les pousse à détenir davantage d'actifs à long terme et à compter sur les autres banques. Beaucoup de ces institutions adoptent une stratégie de passager clandestin, rendant difficile la mutualisation du risque de liquidité sur le marché interbancaire.
+
+Bagehot (1873) a précisé la fonction du prêteur de dernier ressort (PDR). Selon lui, la banque centrale prête sans limite, à un taux d'intérêt pénalisant, uniquement aux banques illiquides mais solvables, en contrepartie d'actifs de bonne qualité, évalués avant la crise. 
+
+Cependant, Thornton souligne que la banque centrale est confrontée à un problème d'aléa moral, étant incapable de distinguer les banques prudentes des banques imprudentes en situation d'insolvabilité.
+
+Il existe une confusion entre les positions d'illiquidité et d'insolvabilité au sein du système financier. Les agents (banques) insolvables en raison de leur imprudence sont encouragés à poursuivre leurs activités, car ils restent indétectables. En fournissant de la liquidité à tous indistinctement, la banque centrale contribue à réduire la prudence et accroît le risque moral.
+
+Face à ce dilemme, la banque centrale doit mettre en œuvre une ambiguïté constructive. Elle doit agir de manière discrétionnaire et incertaine, tant en termes de quantité que de rapidité, afin de maintenir les banques dans l'incertitude. De plus, la banque centrale se trouve souvent en situation d'otage des banques jugées trop grandes pour faire faillite (\textit{too big to fail}) ou trop interconnectées pour faire faillite (\textit{too interconnected to fail}), ainsi que des banques d'importance systémique mondiale (G-SIBs).
+
+\subsection{Application : de la CFG à la crise de la dette souveraine}
+
+Au commencement de la CFG les autorités on cherchés a soutenir le système bancaire.
+
+Les banquiers centraux craignaient une situation de déflation, ce qui a conduit à l'utilisation d'instruments conventionnels. Cependant, face à la nécessité d'éviter une récession mondiale, des instruments non conventionnels ont été mis en place pour soutenir l'activité économique.
+
+Cette situation a entraîné un creusement des déficits publics et un accroissement des dettes publiques, transférant ainsi le risque du secteur bancaire vers le secteur public (souverain). Les premiers pays touchés par cette crise furent la Grèce et l'Irlande, dès 2009.
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-11-20 155510}
+\end{center}
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-11-20 155639}
+\end{center}
+
+\chapter{La banque et les marchés}
+
+Les banques ont tiré profit du développement des marchés des capitaux et de la globalisation financière. Elles sont devenues plus dépendantes des marchés, car elles détiennent davantage de titres dans leurs actifs et leurs passifs, ce qui a conduit à une mobiliérisation des bilans.
+
+De plus, les conditions de financement et de placement se sont rapprochées des conditions de marché, un phénomène que l'on désigne par le terme de marchéisation.
+
+La technique de titrisation représente une nouvelle forme d'intermédiation, souvent qualifiée d'intermédiation de marché. 
+
+Tous les risques, qu'il s'agisse des risques de taux, de marché, de crédit, de liquidité ou opérationnels, verront leur gestion modifiée avec l'introduction des modèles internes des banques.
+
+\section{Marges bancaires et risque de taux}
+
+\subsection{Marge bancaire}
+
+Le processus de transformation d'échéances génère une marge nette d'intérêt (MNI) positive en présence d'une courbe des taux d'intérêt normale. Cela se traduit par un taux débiteur supérieur au taux créditeur, ce qui peut être exprimé par la formule suivante :
+\[
+\text{MNI} = \text{taux débiteur (reçu)} - \text{taux créditeur (versé)}
+\]
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-11-20 160929}
+\end{center}
+
+\subsubsection{Exemple numérique (en millions d’€) : calcul de la marge nette d’intérêt (MNI)}
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-11-20 161150}
+\end{center}
+\[
+\text{Marge} = \left( \frac{100}{100} \cdot 0,03 \right) - \left[ \left( \frac{50}{100} \cdot 0,01 \right) + \left( \frac{50}{100} \cdot 0,005 \right) \right] = 2,25\%
+\]
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-11-20 161402}
+\end{center}
+\[
+\text{Marge} = \left( \frac{100}{100} \cdot 0,02 \right) - \left[ \left( \frac{50}{100} \cdot 0,01 \right) + \left( \frac{50}{100} \cdot 0,001 \right) \right] = 0,02 - 0,005 = 1,45\%
+\]
+
+\subsection{Risque de taux d’intérêt}
+
+Le risque de taux d'intérêt intervient lorsqu'une variation du taux d'intérêt a un impact négatif sur le bilan de la banque. 
+
+Le risque de taux d'intérêt peut être évalué par trois mesures distinctes. 
+
+La première mesure est la mesure de volume, qui correspond à l'impasse (gap) de taux. 
+
+La deuxième mesure, la mesure de marge, concerne l'amortissement dans le temps de la marge nette d'intérêt (MNI) sur l'activité à taux fixe ainsi que sa sensibilité aux fluctuations de taux.
+
+Enfin, la troisième mesure est la mesure de valeur, qui évalue la sensibilité de la valeur actuelle nette (VAN) de l'établissement.
+
+La mesure de volume vise à quantifier les masses du bilan qui ne sont pas assises à l’actif et au passif sur la même référence de taux. 
+
+L'impasse de taux est définie comme la différence entre l'encours passif et l'encours actif sur les opérations à taux fixe. 
+\[
+\text{Impasse de taux} = \text{Encours passif}_t - \text{Encours actif}_t
+\]
+Seules les opérations à taux fixe sont source de risque, car elles ne suivent pas l’évolution des taux sur le marché. Ainsi, l'impasse de taux peut également être considérée comme une impasse de liquidité sur des opérations à taux fixe.
+
+L'impasse en taux d’intérêt relie la marge nette d'intérêt (MNI) aux variations du taux. 
+
+Si le taux d’intérêt sur le marché augmente et que l’impasse est positive (P > A), les excédents de ressources seront utilisés pour accorder des crédits et/ou acheter des titres dont la rémunération augmente, ce qui se traduit par une hausse de la MNI. 
+
+En revanche, si le taux sur le marché baisse et que P > A (excédent de ressources), les excédents de ressources seront utilisés pour accorder des crédits ou acheter des titres dont la rémunération baisse, entraînant ainsi une baisse de la MNI.
+
+Dans le cas d’une impasse négative (P < A), en cas de baisse des taux, les besoins de ressources seront financés à un coût moindre, et inversement.
+
+Le bilan simplifié est exprimé en trimestres (T). 
+
+Du côté de l'actif, il comprend un prêt d’un nominal de 100, remboursable amortissablement de manière linéaire sur chaque trimestre d’une durée de 4 trimestres, avec un taux fixe de 3 \% (soit 1/4 du nominal chaque trimestre).
+
+Du côté du passif, on a un fonds de prêt (FP) de 20, un emprunt in fine émis sur 2 trimestres d’un nominal de 20 avec un taux fixe de 2,5 \%, ainsi qu’un emprunt in fine émis sur 2 trimestres d’un nominal de 60 avec un taux variable.
+
+\begin{center}
+	\includegraphics[scale = 0.6]{../../../Pictures/Screenshots/Capture d'écran 2024-11-20 162754}
+\end{center}
+
+Au cours des trimestres T1, T2, T3 et T4, il existe une impasse de taux négative, caractérisée par un déficit de ressources à taux fixe (passif) par rapport aux emplois à taux fixe (actif). La marge nette d'intérêt (MNI) se dégrade en cas de hausse des taux, car la banque doit se procurer des fonds (ressources) à un taux plus élevé. En revanche, la MNI s’améliore en cas de baisse des taux, car les ressources sont obtenues à moindre coût.
+
+Pour le trimestre T5, il y a un excédent de ressources à taux fixe sur les emplois à taux fixe. Dans ce cas, la MNI se dégrade en cas de baisse des taux, car la banque doit investir cet excédent dans des actifs dont la rémunération baisse. À l'inverse, la MNI s’améliore en cas de hausse des taux.
+
+\section{Intermédiation de bilan et de marché}
+
+
+\section{Risque de marché}
+
+
+
+
+
+
+
+
+
+
 
 
 
