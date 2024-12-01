@@ -1,5 +1,5 @@
 \babel@toc {french}{}\relax 
-\beamer@sectionintoc {1}{Qu'est ce que l'économie ?}{3}{0}{1}
+\beamer@sectionintoc {1}{Qu'est ce que l'économie ?\emoji {bar-chart}}{3}{0}{1}
 \beamer@sectionintoc {2}{Qu'est ce que la microéconomie ?}{4}{0}{2}
 \beamer@sectionintoc {3}{Microéconomie et Macroéconomie : quel approche privilégier ?}{5}{0}{3}
 \beamer@sectionintoc {4}{Les pré-requis de ce cours}{6}{0}{4}

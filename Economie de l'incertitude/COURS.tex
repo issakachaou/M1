@@ -2326,11 +2326,256 @@ Aucune richesse ne domine stochastiquement l'autre à l'ordre 1
 	\includegraphics[scale=0.45]{../../../Pictures/Screenshots/Capture d'écran 2024-11-05 113245}
 \end{center}
 
-\chapter{Choix de portefeuille}
+\chapter{Les choix de portefeuille}
+
+Dans ce chapitre, nous allons appliquer les outils vus dans les chapitres précédents à un cas classique de décision en incertitude : les choix de portefeuille. Nous supposerons ici que le montant d'épargne de l'agent a été déterminé au préalable et nous nous intéresserons uniquement à la composition de cette épargne, c'est-à-dire au choix des actifs sous la forme desquels un agent conserve sa richesse.
+
+\section{Les hypothèses}
+
+Nous nous intéressons donc à la forme sous laquelle un agent va conserver sa richesse \( \omega \). Pour simplifier, nous supposerons qu'elle peut être conservée sous deux formes : un actif sans risque au taux de rendement certain \( r \) (ex : livret d'épargne, comme le livret A, avec un taux d'intérêt certain) et un actif risqué au taux de rendement incertain (i.e. aléatoire) \( Y \) (ex : actions cotées en bourse avec un taux de rendement anticipé aléatoire). 
+
+Remarque : On pourrait généraliser au cas de plus de deux actifs.
+
+\subsection{Taux de rendement incertain anticipé}
+
+Il est souvent raisonnable de supposer que \( Y \) suit une loi normale. Par exemple, un ménage peut penser qu'il y a autant de chances que \( Y \) dépasse 10\% que de chances qu'il soit inférieur à ce taux (symétrie de la loi) et qu'il est pratiquement exclu que \( Y \) soit inférieur à 6\% ou supérieur à 14\% (notion d'écart type : 95\% des observations sont situées à \(\pm 2\) écarts types de l'espérance) → Loi normale d'espérance 10\% et d'écart type 2\%. Dans ce cas, la variance constitue une mesure correcte du risque perçu. C'est un outil raisonnable mais pas nécessaire : aucun des résultats que nous allons montrer ne dépend de la forme exacte de la loi de \( Y \).
+
+\subsection{Si \( Y \) suit une loi normale}
+\begin{center}
+\includegraphics[scale = 0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-12-01 161703}
+\end{center}
+
+\subsection{Choix de portefeuille et risque partiel}
+
+Nous noterons \( m \) la partie de la richesse \( \omega \) placée sur le livret et \( a \) le montant placé en actions. Si l'individu décide de placer toute sa richesse sur le livret (\( a = 0 \)), il obtiendra en fin de période une richesse finale certaine : \( W = \omega (1 + r) \). À l'inverse, s'il place tout en actions (\( a = \omega \)), il choisit la richesse finale de risque multiplicatif : \( W = \omega (1 + Y) \). En général, un investisseur placera une partie de sa richesse sur le livret et une partie en actions, on parle de diversification. Il choisit une richesse finale de risque partiel : \( W = m (1 + r) + a (1 + Y) \).
+
+Remarque : l'investisseur part d'une situation sans risque (il possède \( \omega \)) pour aller vers une situation risquée s'il choisit un montant en actions \( a \neq 0 \). C'est l'inverse du cas de l'assurance où l'agent part d'une situation risquée (bien soumis à un sinistre potentiel) pour aller vers une situation moins risquée ou éventuellement certaine en cas de couverture complète.
+
+\subsection{Réécriture de la richesse finale}
+
+La contrainte budgétaire s'écrit : \( m + a = \omega \). Il suffit alors de déterminer soit le montant optimal placé sur le livret \( m^* \) soit le montant optimal placé en actions \( a^* \) puisque la richesse initiale \( \omega \) est connue. Ainsi, nous pouvons ré-exprimer la richesse finale comme une fonction uniquement de \( a \) (la variable de décision) :
+
+\[W(a) = m (1 + r) + a (1 + Y) \]
+\[ \Leftrightarrow W(a) = \omega - a (1 + r) + a (1 + Y) \] 
+\[ \Leftrightarrow W(a) = \omega (1 + r) + a (Y - r) \]
+
+\subsection{Interprétation}
+
+\[
+W(a) = \omega (1 + r) + a (Y - r)
+\]
+
+- \( \omega (1 + r) \) : richesse finale qui serait obtenue si toute la richesse initiale était placée sur l'actif certain (livret).
+
+- \( Y - r \) : différence aléatoire entre les taux de rendement, risque de rendement, qui ne s'applique qu'à la partie placée dans l'actif risqué (actions).
+
+Exemple : si l'agent déplace 1€ de \( m \) vers \( a \), il augmente le rendement aléatoire de \( Y \)€ mais diminue le rendement certain de \( r \)€.
+
+\subsection{Bornes de variation de \( a \)}
+
+Spontanément, vous pourriez être tentés, en plus de la contrainte budgétaire, de poser une contrainte de positivité sur les montants : \( m \geq 0 \) ; \( a \geq 0 \) soit, une fois \( m \) éliminé, \( 0 \leq a \leq \omega \).
+
+Cette restriction est moins logique sur les marchés financiers où des quantités négatives peuvent avoir un sens : si l'investisseur souhaite acheter des actions pour un montant supérieur à sa richesse \( \omega \), il peut emprunter (on parle d'achat à découvert). De même, s'il souhaite placer sur un livret un montant supérieur à \( \omega \), il peut réaliser une opération financière appelée vente à découvert.
+
+Hypothèse simplificatrice : taux d'intérêt débiteur (lorsqu'on s'endette) = taux d'intérêt créditeur (lorsqu'on place de l'argent).
+
+\subsubsection{Achat à découvert}
+
+L'investisseur, qui s'attend à une hausse du cours des actions, s'endette pour acheter des actions. Par exemple, si l'investisseur emprunte 20€, il remboursera en fin de période \( 20 (1 + r) \)€, alors que ces 20€ placés en actions lui rapporteront \( 20 (1 + Y) \)€. Le résultat de cette opération sera donc de \( 20 (Y - r) \)€ → gain si \( Y > r \), perte si \( Y < r \), opération blanche si \( Y = r \).
+
+La capacité d'emprunt de l'investisseur est limitée cependant par sa capacité de remboursement : il faut que, dans le pire des cas, celui où \( Y \) prend sa valeur minimale (\( y_{\text{min}} \)), il reste solvable, ce qui détermine un \( a_{\text{max}} \) tel que :
+
+\[
+W(a) = \omega (1 + r) + a_{\text{max}} (y_{\text{min}} - r) \geq 0
+\]
+
+soit 
+
+\[
+a_{\text{max}} = \omega\left( \frac{ 1 + r}{r - y_{\text{min}}}\right) 
+\]
+
+en admettant que : \( y_{\text{min}} < r < y_{\text{max}} \).
+
+Ce montant est croissant avec la richesse \( \omega \) et le rendement minimum de l'actif risqué.
+
+→ On aura la contrainte suivante : \( a \leq a_{\text{max}} \), \( a_{\text{max}} > \omega \).
+
+
+\subsubsection{Vente à découvert (VAD)}
+	
+Inversement, l'investisseur, qui s'attend à une baisse du cours des actions, peut souhaiter placer plus que \( \omega \) sur le livret. Il peut se procurer cette somme supplémentaire en vendant des actions à découvert. Il :
+
+- S'engage aujourd'hui à livrer un bien ou un titre à une date ultérieure, alors qu'il ne le possède pas aujourd'hui.
+- A un prix fixé aujourd'hui, avec un paiement aujourd'hui.
+
+Exemple : je m'engage aujourd'hui à livrer des actions en fin de période. En contrepartie, je reçois aujourd'hui 90€ (montant dépendant de la cote des actions au moment de la VAD). En réalité, je ne possède pas ces actions, j'ai l'intention de les acquérir sur le marché en fin de période, où j'espère les payer moins que \( 90(1 + r) \)€.
+
+La capacité de vente à découvert de l'investisseur est limitée par sa capacité à honorer ses engagements : il faut que, dans le pire des cas, celui où \( Y \) prend sa valeur maximale (\( y_{\text{max}} \)) :
+
+\[
+W(a) = \omega (1 + r) + a_{\text{min}} (y_{\text{max}} - r) \geq 0
+\]
+
+soit 
+
+\[
+a_{\text{min}} =\omega \left( \frac{ 1 + r}{r - y_{\text{max}}}\right)  < 0
+\]
+
+en admettant que : \( y_{\text{min}} < r < y_{\text{max}} \).
+
+→ On aura la contrainte suivante : \( a_{\text{min}} \leq a \leq a_{\text{max}} \); \( a_{\text{min}} < 0 \); \( a_{\text{max}} > \omega \).
+
+\subsubsection{Résumé}
+
+
+Nous écrirons donc la richesse finale de la manière suivante :
+
+\[
+W(a) = \omega (1 + r) + a (Y - r)
+\]
+
+Avec 
+
+\[
+a_{\text{min}} \leq a \leq a_{\text{max}}
+\]
+\[
+a_{\text{min}} < 0 ; \quad a_{\text{max}} > \omega
+\]
+
+\section{Cas de dominance stochastique}
+
+Comme expliqué dans le chapitre précédent, la dominance stochastique est un critère permettant de classer les alternatives sans avoir besoin de connaître la fonction d'utilité de l'agent. Ainsi, il sera inutile de résoudre un programme de maximisation s'il existe un portefeuille qui domine stochastiquement les autres. Nous verrons dans cette section qu'il n'existe de dominance stochastique que dans des cas peu intéressants (car peu crédibles).
+
+\subsection{Dominance stochastique à l'ordre 1}
+
+Il est possible de montrer les deux résultats suivants (démonstration laissée de côté ici) :
+
+1) Si le rendement \( Y \) de l'actif risqué n'est pas borné, toutes les fonctions de répartition se croisent et aucun portefeuille n'en domine stochastiquement un autre.
+
+2) Si le rendement de l'actif risqué est borné, c'est-à-dire si \( Y \in [y_{\text{min}}, y_{\text{max}}] \), il existe deux cas de dominance stochastique à l'ordre 1 :
+
+2.1) Si \( y_{\text{min}} < y_{\text{max}} < r \), la richesse obtenue avec \( a = a_{\text{min}} \) domine stochastiquement toutes les autres à l'ordre 1. Qu'il soit riscophobe ou riscophile, l'investisseur a intérêt à vendre à découvert le plus d'actif risqué possible pour augmenter son placement sur le livret.
+
+2.2) Si \( r < y_{\text{min}} < y_{\text{max}} \), la richesse obtenue avec \( a = a_{\text{max}} \) domine stochastiquement toutes les autres à l'ordre 1. Qu'il soit riscophobe ou riscophile, l'investisseur a intérêt à acheter le plus d'actif risqué possible et donc à emprunter autant que possible pour augmenter son placement en bourse.
+
+Ainsi, si \( y_{\text{min}} < y_{\text{max}} < r \), aucun agent n'est demandeur d'actif risqué et si \( r < y_{\text{min}} < y_{\text{max}} \), aucun agent n'est demandeur d'actif certain.
+
+→ L'existence simultanée d'un marché de l'actif risqué et d'un marché de l'actif certain implique donc, conformément à l'observation, que \( y_{\text{min}} < r < y_{\text{max}} \).
+
+\subsection{Dominance stochastique à l'ordre 2}
+
+Il n'existe qu'un cas de dominance stochastique à l'ordre 2. Ce critère n'ayant pas été détaillé dans le Chap. 5, nous n'en donnons ici que le résultat : Si le rendement de l'actif certain est égal à l'espérance de rendement de l'actif risqué, c'est-à-dire si \( \mathbb{E}[Y] = r \), la richesse certaine domine stochastiquement à l'ordre 2 la richesse risquée. Tous les agents riscophobes préfèrent donc ne pas investir dans l'actif risqué et \( a = 0 \).
+
+\section{Optimum pour un agent neutre au risque}
+
+Nous avons vu que les préférences d'un agent neutre au risque peuvent être représentées par la fonction d’espérance mathématique. Le programme de cet investisseur est alors :
+
+\[
+\begin{cases}
+	\underset{a}\max \; U(W(a)) = \mathbb{E}[W(a)] = \omega (1 + r) + a\left( \mathbb{E}[Y] - r\right)  \\
+	a_{\text{min}} \leq a \leq a_{\text{max}}
+\end{cases}
+\]
+
+Comme la fonction objectif est affine, la solution dépend du signe de la pente, c'est-à-dire de \( \mathbb{E}[Y] - r \) :
+
+1) Cas 1 : \( \mathbb{E}[Y] < r \) : la fonction d'utilité est décroissante en \( a \), donc \( a^{\star} = a_{\text{min}} \) → non seulement l'agent neutre place intégralement \( \omega \) sur le livret, mais il utilise toute sa capacité de vente à découvert quand le rendement moyen des actions est inférieur au rendement certain du livret.
+
+2) Cas 2 : \( \mathbb{E}[Y] = r \) : la fonction d'utilité ne dépend plus de \( a \), donc la solution est un intervalle, \( a^{\star} \in [a_{\text{min}}, a_{\text{max}}] \) → choix indéterminé.
+
+3) Cas 3 : \( \mathbb{E}[Y] > r \) : la fonction d'utilité est croissante en \( a \), donc \( a^{\star} = a_{\text{max}} \) → non seulement l'agent neutre place \( \omega \) intégralement en actions, mais en plus il utilise toute sa capacité d'emprunt (achat à découvert).
+
+Globalement, un agent neutre aura un comportement de "tout ou rien" qui ne correspond pas au comportement majoritaire observé dans la pratique (on retrouve le même type de résultat que dans le paradoxe de l'assurance). On observe en effet en pratique que les ménages diversifient leurs placements et que les changements ne sont pas aussi brutaux quand les taux de rendement se modifient : de petites variations de l'environnement conduisent généralement à de petites variations dans les comportements. On retrouve les défauts de l'hypothèse de neutralité face au risque.
+
+\section{Optimum pour un riscophile}
+
+Le programme d'un investisseur riscophile s'écrit :
+
+\[
+\begin{cases}
+	\underset{a}\max \; U(W(a)) = \mathbb{E}[u(W(a))] = \mathbb{E}[u(\omega (1 + r) + a(Y - r))] \\
+	a_{\text{min}} \leq a \leq a_{\text{max}}
+\end{cases}
+\]
+
+Avec \( u'(w) > 0 \) : utilité croissante avec la richesse, et \( u''(w) > 0 \) : fonction d'utilité strictement convexe.
+
+CPO : 
+
+\[
+\frac{d \mathbb{E}[u(W(a^{\star})]}{da} = (\mathbb{E}[Y] - r) u'(\omega(1 + r) + a^{\star} Y - r) = 0
+\]
+
+CSO :
+
+\[
+\frac{d^2 \mathbb{E}[u(W(a))]}{da^2} = (\mathbb{E}[Y] - r)^2 u''(\omega(1 + r) + a Y - r) > 0
+\]
+
+La dérivée seconde étant positive, la condition de premier ordre nous donnerait un minimum (et non un maximum). On n'utilisera donc pas la condition de premier ordre pour trouver \( a^{\star} \) → solution en coin en \( a_{\text{min}} \) ou en \( a_{\text{max}} \)
+
+On distingue 3 cas :
+
+1) \( a^{\star} = a_{\text{min}} \) quand \( U(W(a_{\text{min}})) > U(W(a_{\text{max}})) \)
+
+\[
+\equiv \mathbb{E}[u(\omega (1 + r) + a_{\text{min}} Y - r] > \mathbb{E}[u(\omega (1 + r) + a_{\text{max}} Y - r]
+\]
+→ Vente à découvert.
+
+2) \( a^{\star} \in [a_{\text{min}}, a_{\text{max}}] \) quand \( U(W(a_{\text{min}})) = U(W(a_{\text{max}})) \)
+
+\[
+\equiv \mathbb{E}[u(\omega (1 + r) + a_{\text{min}} Y - r] = \mathbb{E}[u(\omega (1 + r) + a_{\text{max}} Y - r]
+\]
+→ Solution indéterminée entre les deux extrêmes.
+
+3) \( a^{\star} = a_{\text{max}} \) quand \( U(W(a_{\text{min}})) < U(W(a_{\text{max}})) \)
+
+\[
+\equiv \mathbb{E}[u(\omega (1 + r) + a_{\text{min}} Y - r] < \mathbb{E}[u(\omega (1 + r) + a_{\text{max}} Y - r]
+\]
+→ Achat à découvert.
+
+Remarque : Méfiez-vous de votre intuition si elle vous suggère qu'un riscophile souhaite toujours placer sa richesse dans l'actif risqué. En effet, les préférences d'un agent riscophile respectent l'hypothèse de non satiété : son goût pour le risque est limité par son goût pour la richesse. Il est vrai cependant que pour \( \mathbb{E}[Y] \) supérieur ou très peu inférieur à \( r \), alors le riscophile place effectivement toute sa richesse en actions.
+
+Globalement, on retrouve le même comportement de "tout ou rien" qu'avec un agent neutre au risque, ce qui se traduit par l'absence de diversification des portefeuilles.
+
+\subsection{Exemple 1}
+
+Supposons que les préférences d'un riscophile soient représentées par une fonction exponentielle négative et que \( Y \) suive une loi normale. Dans ce cas, les préférences peuvent être représentées par une fonction linéaire de Markowitz :
+
+\[
+U(W(a)) = E[W(a)] - kV[W(a)], \quad \text{avec } k < 0
+\]
+Avec
+\[ W(a)=\omega(1+r)+a(Y-r) \]
+\begin{enumerate}
+	\item Calculer l'espérance et la variance de la richesse \( W(a) \)
+\[ \mathbb{E}\left[W(a) \right]= \omega(1+r)+a(Y-r) \]
+\noindent
+On sait que 
+\[ \mathbb{V}(a+X)=\mathbb{V}(X) \]
+Alors
+\[ \mathbb{V}\left[W(a) \right]=\mathbb{V}\left[ a(Y-r)\right]  \]
+\[= a^2 \mathbb{V}(Y-r) \]
+\[= a^2 \mathbb{V}(Y)\]
+page 199
+	\item Écrire l'utilité espérée
+	
+\[ U(W(a)) =  \omega(1+r)+a(Y-r) - ka^2 \mathbb{V}(Y) \]	
+	
+	\item Résoudre le programme du décideur (détailler les trois cas) 
+\end{enumerate}
+
+\section{Optimum pour un riscophobe}
 
 
 
-
+\section{Statique comparative}
 
 
 
