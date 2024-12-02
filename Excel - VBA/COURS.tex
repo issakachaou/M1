@@ -1,0 +1,126 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{mathptmx} %times aves le mode math
+\fancyhead[R]{Université Paris-Est Créteil}
+\fancyhead[L]{Excel-VBA}
+\usepackage{array,multirow,makecell}
+\setcellgapes{1pt}
+
+% Configuration pour le code VBA
+\lstset{
+	language=[Visual]Basic,
+	basicstyle=\ttfamily\small,
+	keywordstyle=\color{blue}\bfseries,
+	stringstyle=\color{red},
+	commentstyle=\color{green!50!black}\itshape,
+	numbers=left,
+	numberstyle=\tiny\color{gray},
+	stepnumber=1,
+	numbersep=10pt,
+	frame=single,
+	framerule=0.5pt,
+	backgroundcolor=\color{gray!10},
+	showspaces=false,
+	showstringspaces=false,
+	tabsize=4,
+	captionpos=b,
+	breaklines=true,            % Coupe automatiquement les lignes trop longues
+	breakatwhitespace=true,     % Coupe uniquement aux espaces
+	keepspaces=true,            % Conserve les espaces
+	escapeinside={(*@}{@*)},    % Permet d’insérer du LaTeX dans le code
+	morekeywords={End, Function, Sub} % Ajout des mots-clés spécifiques à VBA
+}
+
+\begin{document}
+	
+\chapter{Les Bases des Macros et des Fonctions}
+	
+	\section{Introduction à VBA}
+	VBA (Visual Basic for Applications) est un langage de programmation intégré dans les applications Microsoft (comme Excel, Word, etc.), qui permet d'automatiser des tâches et de créer des macros ou des fonctions personnalisées. Il est particulièrement utilisé dans Excel pour automatiser des calculs, manipuler des données ou créer des interfaces personnalisées.
+	
+	\section{Structure d'un Code VBA}
+	Un code VBA est généralement constitué de deux éléments principaux : les \textbf{Subroutines} (ou macros) et les \textbf{Fonctions}.
+	
+	\subsection{Les Macros (Subroutines)}
+	Une \textbf{macro} est une séquence d'instructions qui est exécutée lorsque vous l'appelez. Les macros sont généralement utilisées pour automatiser des tâches répétitives. Elles n'ont pas de valeur de retour, ce qui signifie qu'elles effectuent des actions sans renvoyer de résultat.
+	\newpage
+	\subsubsection*{Exemple de macro :}
+	\begin{lstlisting}[caption=Macro simple]
+		Sub macro1()
+		MsgBox "Hello !!"
+		
+		'instruction1
+		'instruction2
+		End Sub
+	\end{lstlisting}
+	
+	\begin{itemize}
+		\item \textbf{Sub macro1()}: Cela définit une macro appelée \texttt{macro1}.
+		\item \textbf{MsgBox "Hello !!"}: Cette instruction affiche une boîte de message avec le texte \texttt{"Hello !!"}.
+		\item \textbf{'instruction1} et \textbf{'instruction2}: Ce sont des commentaires. En VBA, tout ce qui suit un apostrophe (\texttt{'}) est ignoré lors de l'exécution du code.
+		\item \textbf{End Sub}: Cela marque la fin de la macro.
+	\end{itemize}
+	
+	\subsection{Les Fonctions}
+	Une \textbf{fonction} est similaire à une macro, mais elle permet de \textbf{retourner une valeur}. Les fonctions sont souvent utilisées pour effectuer des calculs ou manipuler des données et renvoyer un résultat. 
+	
+	\subsubsection*{Exemple de fonction :}
+	\begin{lstlisting}[caption=Définition d'une fonction]
+		Function mafonction1()
+		'instruction1
+		'instruction2
+		End Function
+	\end{lstlisting}
+	\newpage
+	Les fonctions peuvent également contenir des calculs, comme l'exemple ci-dessous :
+	
+	\begin{lstlisting}[caption=Fonction avec retour de valeur]
+		Function addition(a As Integer, b As Integer) As Integer
+		addition = a + b
+		End Function
+	\end{lstlisting}
+	
+	Cette fonction prend deux paramètres (\texttt{a} et \texttt{b}), les additionne, puis renvoie le résultat.
+	
+	\subsection{Différence entre \texttt{Sub} et \texttt{Function}}
+	\begin{itemize}
+		\item \textbf{Sub (Subroutine)}: Une procédure qui effectue des actions mais ne renvoie pas de valeur.
+		\item \textbf{Function}: Une procédure qui peut effectuer des actions et qui renvoie une valeur.
+	\end{itemize}
+	
+	\section{Comment Utiliser les Macros et les Fonctions}
+	\subsection{Exécution d'une macro}
+	Pour exécuter une \textbf{macro} dans Excel, vous pouvez :
+	\begin{itemize}
+		\item Lier la macro à un bouton.
+		\item L'exécuter directement depuis l'éditeur VBA.
+	\end{itemize}
+	
+	\subsection{Utilisation d'une fonction dans une cellule Excel}
+	Une \textbf{fonction} peut être utilisée dans une cellule Excel, comme une fonction Excel standard. Par exemple, une fonction \texttt{addition} que vous avez définie peut être appelée dans une cellule de la manière suivante :
+	
+	\begin{verbatim}
+		=addition(5, 10)
+	\end{verbatim}
+	
+	Cela renverra le résultat de l'addition de 5 et 10, soit 15.
+	
+	\section{Résumé}
+	\begin{itemize}
+		\item \textbf{Sub}: Crée une macro qui exécute des actions mais ne renvoie pas de valeur.
+		\item \textbf{Function}: Crée une fonction qui peut effectuer des actions et renvoyer une valeur.
+		\item Les \textbf{commentaires} (lignes commençant par \texttt{'}) sont utilisés pour expliquer le code sans affecter son exécution.
+	\end{itemize}
+	
+	\section{Conclusion}
+	Le VBA est un outil puissant pour automatiser les tâches dans les applications Microsoft, comme Excel. Vous pouvez utiliser des \textbf{macros} pour exécuter des séries d'actions et des \textbf{fonctions} pour effectuer des calculs ou manipuler des données tout en renvoyant des résultats. Les commentaires dans le code sont essentiels pour documenter et clarifier les actions sans interférer avec l'exécution.
+	
+\end{document}

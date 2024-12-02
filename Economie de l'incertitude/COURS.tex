@@ -2569,9 +2569,137 @@ page 199
 \[ U(W(a)) =  \omega(1+r)+a(Y-r) - ka^2 \mathbb{V}(Y) \]	
 	
 	\item Résoudre le programme du décideur (détailler les trois cas) 
+\[
+\begin{cases}
+	\underset{a}\max \; U(W(a)) =  \omega(1+r)+a(Y-r) - ka^2 \mathbb{V}(Y) \\ a_{\text{min}} \leq a \leq a_{\text{max}}
+\end{cases}
+\]
+Condition de premier ordre
+\[
+\frac{d U(W(a^{\star}))}{da} = \mathbb{E}[Y] - r -2ka \mathbb{V}(Y)= 0
+\]
+Condition de second ordre
+\[
+\frac{d^2 \mathbb{E}[u(W(a))]}{da^2} = -2k\mathbb{V}(Y) > 0
+\]
+Solution en coin : \( a_{\min} \) ou \( a_{\max} \)
+\[ U\left(W(a_{\min}) \right)= \omega(1+r)+a_{\min}(Y-r) - k(a_{\min})^2 \mathbb{V}(Y)  \]
+\[ U\left(W(a_{\max}) \right)= \omega(1+r)+a_{\max}(Y-r) - k(a_{\max})^2 \mathbb{V}(Y)  \]
+Choix \( a^{\star} = a_{\min} \) si \( U\left(W(a_{\min})\right)> U\left(W(a_{\max}) \right) \)
+
+\noindent
+Choix \( a^{\star} = a_{\max} \) si \( U\left(W(a_{\max})\right)> U\left(W(a_{\min}) \right) \)
+
+\noindent
+Indifférent si \( U\left(W(a_{\max})\right)= U\left(W(a_{\min}) \right) \)
 \end{enumerate}
 
 \section{Optimum pour un riscophobe}
+
+Le programme d'un investisseur riscophobe s'écrit comme celui du riscophile :
+
+\[
+\begin{cases}
+\underset{a}\max \; U(W(a)) = \mathbb{E}[u(W(a))] = \mathbb{E}[u(\omega(1 + r) + a(Y - r))] \\
+a_{\text{min}} \leq a \leq a_{\text{max}}
+\end{cases}
+\]
+
+- Avec \( u'(\omega) > 0 \) : utilité croissante avec la richesse.
+- Et, cette fois, \( u''(\omega) < 0 \) : fonction d'utilité strictement concave.
+- Donc la condition de second ordre (CSO) nous donne bien un maximum d'utilité :
+
+\[
+\frac{d^2 \mathbb{E}[u(W(a))]}{da^2} = \mathbb{E}\left[ (Y - r )^2 u''(\omega(1 + r) + a(Y - r))\right]  < 0
+\]
+
+Dans ce cas, si la fonction d'utilité espérée admet un maximum intérieur, elle en a un seul, \( a^{\star}\), qui est la solution unique du programme de l'investisseur.
+
+En notant \( \tilde{a} \) la solution de la condition de premier ordre, la solution finale est donnée par :
+
+\[
+a^{\star} = 
+\begin{cases} 
+	a_{\text{min}} & \text{si } \tilde{a} < a_{\text{min}} \\
+	\tilde{a} & \text{si } a_{\text{min}} \leq \tilde{a} \leq a_{\text{max}} \\
+	a_{\text{max}} & \text{si } \tilde{a} > a_{\text{max}}
+\end{cases}
+\]
+
+- Comportement de diversification des actifs puisque \( a^{\star} \) (le montant placé en actif risqué) peut prendre, de manière déterminée, toutes les valeurs entre \( a_{\text{min}} \) et \( a_{\text{max}} \).
+
+\subsection{Signe de \( a^{\star} \)}
+
+Dans le cas général, il est possible de se prononcer sur le signe de \( a^{\star} \) (qui peut être positif comme négatif).
+
+Nous savons qu'au point \( a = 0 \), l'utilité espérée marginale de l'investissement risqué est égale à :
+\[
+U'(0) = \mathbb{E}\left[ (Y - r)\cdot u'(\omega(1 + r))\right]  = \left[ \mathbb{E}(Y) - r\right] \cdot u'(\omega(1 + r))\underbrace{u'(\omega(1 + r))}_{>0}
+\]
+
+\begin{itemize}
+	\item Cas 1 : Si \( \mathbb{E}[Y] > r \), alors \( U'(0) > 0 \).
+	\item Cas 2 : Si \( \mathbb{E}[Y] < r \), alors \( U'(0) < 0 \).
+	\item Cas 3 : Si \( \mathbb{E}[Y] = r \), alors \( U'(0) = 0 \).
+\end{itemize}
+
+Une fonction concave étant croissante avant son maximum \( a^{\star} \) et décroissante après, on peut déduire le signe de \( a^{\star} \) à partir du signe de \( \mathbb{E}[Y] - r \) :
+
+\begin{itemize}
+	\item Cas 1 : Si \( \mathbb{E}[Y] > r \), \( U'(0) > 0 \) : le maximum est situé à une valeur strictement positive → \( a^{\star} > 0 \).
+	\item Cas 2 : Si \( \mathbb{E}[Y] < r \), \( U'(0) < 0 \) : le maximum est situé à une valeur strictement négative → \( a^{\star} < 0 \).
+	\item Cas 3 : Si \( \mathbb{E}[Y] = r \), \( U'(0) = 0 \) → \(a^{\star} = 0 \).
+\end{itemize}
+
+\begin{center}
+	\includegraphics[scale=0.45]{../../../Pictures/Screenshots/Capture d'écran 2024-12-02 105529}
+\end{center}
+
+Ainsi, un agent riscophobe place dans un actif risqué si et seulement si l'espérance du taux de rendement de l'actif risqué est strictement supérieure au taux de rendement certain.Nous retrouvons le résultat établi dans le cas de la DS d'ordre 2.
+
+Si l'espérance du taux de rendement de l'actif risqué est inférieure au taux de rendement de l'actif certain, un riscophobe souhaite vendre à découvert et prend alors le risque qu'implique cette opération → l'aversion au risque est limitée par le goût pour la richesse.
+
+\subsection{Exemple 2}
+
+- Supposons que les préférences d'un riscophobe soient représentées par une fonction exponentielle négative et que \( Y \) suive une loi normale. Dans ce cas, les préférences peuvent être représentées par une fonction linéaire de Markowitz :
+\[
+U(W(a)) = E[W(a)] - kV[W(a)], \quad \text{avec } k = 0.5\alpha > 0
+\]
+
+\begin{enumerate}
+	\item Calculer les dérivées première et seconde de l'utilité espérée.
+	
+\[ U(W(a)) =  \omega(1+r)+a(\mathbb{E}(Y)-r) - ka^2 \mathbb{V}(Y) \]	
+\[
+\begin{cases}
+	\underset{a}\max \; U(W(a)) = \omega(1+r)+a(\mathbb{E}(Y)-r) - ka^2 \mathbb{V}(Y) \\
+	a_{\text{min}} \leq a \leq a_{\text{max}}
+\end{cases}
+\]
+Condition de premier ordre 
+\[
+\frac{d U(W(a^{\star}))}{da} = \mathbb{E}[Y] - r -2ka \mathbb{V}(Y)= 0 \tag{1}\label{1}
+\] 
+Condition de second ordre
+\[
+\frac{d^2 U(W(a^{\star}))}{da^2} = -2k \mathbb{V}(Y)< 0 
+\]
+
+	\item Résoudre le programme de l'investisseur et commentez vos résultats.
+
+\noindent
+Revenons à l'équation \ref{1}
+\[ a^{\star}=\frac{\mathbb{E}(Y)-r}{2k\mathbb{V}(Y)} \]
+
+On a plus de comportement de "tout ou rien", variation minimal du signe de \( a^{\star} \) dépend de celui de \( \mathbb{E}(Y)-r \)
+
+Une petite variation de \( r \) ou de \( \mathbb{E}(Y) \) entraine une petite variation de \( a^{\star} \)
+
+\( \left| a^{\star} \right|\)  est inversement proportionnelle à l'aversion pour le risque \( \alpha \) à la variance (risque perçu)
+
+\end{enumerate}
+
+\subsection{Exemple 3}page 207
 
 
 

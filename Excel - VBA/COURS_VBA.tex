@@ -1,0 +1,369 @@
+\documentclass[a4paper,12pt]{report}
+% il faut excecuter ce code en luatex 
+% Encodage et langue
+\usepackage{fontspec} 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+% Packages pour le style et la mise en page
+\usepackage{listings}      % Insertion de code
+\usepackage{xcolor}        % Couleurs
+\usepackage{hyperref}      % Liens hypertexte
+\usepackage{float}         % Placement des figures
+\usepackage{fancyhdr}      % Personnalisation des en-têtes/pieds de page
+\usepackage{mathptmx}      % Police Times avec maths
+\usepackage{array}         % Colonnes étendues
+\usepackage{multirow}      % Cellules multi-lignes
+\usepackage{makecell}      % Cellules personnalisées
+\setcellgapes{1pt}         % Espacement des cellules (si makecell est utilisé)
+
+% Configuration de fancyhdr pour les en-têtes
+\pagestyle{fancy}
+\fancyhead[L]{Excel-VBA}
+\fancyhead[R]{Université Paris-Est Créteil}
+\fancyfoot[C]{\thepage}    % Pied de page avec le numéro de page
+
+% Configuration pour le code VBA
+\lstset{
+	language=[Visual]Basic,
+	basicstyle=\ttfamily\small,
+	keywordstyle=\color{blue}\bfseries,
+	stringstyle=\color{red},
+	commentstyle=\color{green!50!black}\itshape,
+	numbers=left,
+	numberstyle=\tiny\color{gray},
+	stepnumber=1,
+	numbersep=10pt,
+	frame=single,
+	framerule=0.5pt,
+	backgroundcolor=\color{gray!10},
+	showspaces=false,
+	showstringspaces=false,
+	tabsize=4,
+	captionpos=b,
+	breaklines=true,            % Coupe automatiquement les lignes trop longues
+	breakatwhitespace=true,     % Coupe uniquement aux espaces
+	keepspaces=true,            % Conserve les espaces
+	escapeinside={(*@}{@*)},    % Permet d’insérer du LaTeX dans le code
+	morekeywords={End, Function, Sub} % Ajout des mots-clés spécifiques à VBA
+}
+
+\begin{document}
+	
+\chapter{Les Bases des Macros et des Fonctions}
+	
+	\section{Introduction à VBA}
+	VBA (Visual Basic for Applications) est un langage de programmation intégré dans les applications Microsoft (comme Excel, Word, etc.), qui permet d'automatiser des tâches et de créer des macros ou des fonctions personnalisées. Il est particulièrement utilisé dans Excel pour automatiser des calculs, manipuler des données ou créer des interfaces personnalisées.
+	
+	\section{Structure d'un Code VBA}
+	Un code VBA est généralement constitué de deux éléments principaux : les \textbf{Subroutines} (ou macros) et les \textbf{Fonctions}.
+	
+	\subsection{Les Macros (Subroutines)}
+	Une \textbf{macro} est une séquence d'instructions qui est exécutée lorsque vous l'appelez. Les macros sont généralement utilisées pour automatiser des tâches répétitives. Elles n'ont pas de valeur de retour, ce qui signifie qu'elles effectuent des actions sans renvoyer de résultat.
+	\newpage
+	\subsubsection*{Exemple de macro :}
+	\begin{lstlisting}[caption=Macro simple]
+		Sub macro1()
+		MsgBox "Hello !!"
+		
+		'instruction1
+		'instruction2
+		End Sub
+	\end{lstlisting}
+	
+	\begin{itemize}
+		\item \textbf{Sub macro1()}: Cela définit une macro appelée \texttt{macro1}.
+		\item \textbf{MsgBox "Hello !!"}: Cette instruction affiche une boîte de message avec le texte \texttt{"Hello !!"}.
+		\item \textbf{'instruction1} et \textbf{'instruction2}: Ce sont des commentaires. En VBA, tout ce qui suit un apostrophe (\texttt{'}) est ignoré lors de l'exécution du code.
+		\item \textbf{End Sub}: Cela marque la fin de la macro.
+	\end{itemize}
+	
+	\subsection{Les Fonctions}
+	Une \textbf{fonction} est similaire à une macro, mais elle permet de \textbf{retourner une valeur}. Les fonctions sont souvent utilisées pour effectuer des calculs ou manipuler des données et renvoyer un résultat. 
+	
+	\subsubsection*{Exemple de fonction :}
+	\begin{lstlisting}[caption=Définition d'une fonction]
+		Function mafonction1()
+		'instruction1
+		'instruction2
+		End Function
+	\end{lstlisting}
+	\newpage
+	Les fonctions peuvent également contenir des calculs, comme l'exemple ci-dessous :
+	
+	\begin{lstlisting}[caption=Fonction avec retour de valeur]
+		Function addition(a As Integer, b As Integer) As Integer
+		addition = a + b
+		End Function
+	\end{lstlisting}
+	
+	Cette fonction prend deux paramètres (\texttt{a} et \texttt{b}), les additionne, puis renvoie le résultat.
+	
+	\subsection{Différence entre \texttt{Sub} et \texttt{Function}}
+	\begin{itemize}
+		\item \textbf{Sub (Subroutine)}: Une procédure qui effectue des actions mais ne renvoie pas de valeur.
+		\item \textbf{Function}: Une procédure qui peut effectuer des actions et qui renvoie une valeur.
+	\end{itemize}
+	
+	\section{Comment Utiliser les Macros et les Fonctions}
+	\subsection{Exécution d'une macro}
+	Pour exécuter une \textbf{macro} dans Excel, vous pouvez :
+	\begin{itemize}
+		\item Lier la macro à un bouton.
+		\item L'exécuter directement depuis l'éditeur VBA.
+	\end{itemize}
+	
+	\subsection{Utilisation d'une fonction dans une cellule Excel}
+	Une \textbf{fonction} peut être utilisée dans une cellule Excel, comme une fonction Excel standard. Par exemple, une fonction \texttt{addition} que vous avez définie peut être appelée dans une cellule de la manière suivante :
+	
+	\begin{verbatim}
+		=addition(5, 10)
+	\end{verbatim}
+	
+	Cela renverra le résultat de l'addition de 5 et 10, soit 15.
+	
+	\section{Résumé}
+	\begin{itemize}
+		\item \textbf{Sub}: Crée une macro qui exécute des actions mais ne renvoie pas de valeur.
+		\item \textbf{Function}: Crée une fonction qui peut effectuer des actions et renvoyer une valeur.
+		\item Les \textbf{commentaires} (lignes commençant par \texttt{'}) sont utilisés pour expliquer le code sans affecter son exécution.
+	\end{itemize}
+	
+	\section{Conclusion}
+	Le VBA est un outil puissant pour automatiser les tâches dans les applications Microsoft, comme Excel. Vous pouvez utiliser des \textbf{macros} pour exécuter des séries d'actions et des \textbf{fonctions} pour effectuer des calculs ou manipuler des données tout en renvoyant des résultats. Les commentaires dans le code sont essentiels pour documenter et clarifier les actions sans interférer avec l'exécution.
+	
+\chapter{Utilisation de la fonction MsgBox en VBA}
+
+\section{Exemple simple de MsgBox}
+La fonction \texttt{MsgBox} permet d'afficher une boîte de dialogue à l'utilisateur. Voici un exemple :
+
+\begin{lstlisting}
+	Sub bonjour()
+	MsgBox "Bonjour ! Nous sommes le : " & Date
+	'L'instruction Date nous donne la date du jour
+	End Sub
+\end{lstlisting}
+
+\section{Personnalisation de MsgBox}
+Vous pouvez personnaliser les boutons et les icônes de la boîte de dialogue. Exemple :
+
+\begin{lstlisting}
+	Sub bonjour_personnalise()
+	MsgBox "Bonjour ! Nous sommes le : " & Date, vbYesNo + vbCritical, "Titre personnalisé
+	End Sub
+\end{lstlisting}
+
+Dans cet exemple :
+\begin{itemize}
+	\item \texttt{vbYesNo} ajoute les boutons "Oui" et "Non".
+	\item \texttt{vbCritical} affiche une icône d'alerte.
+	\item Le titre de la boîte est défini par le troisième argument.
+\end{itemize}
+
+\section{Retour à la ligne dans MsgBox}
+Pour insérer un retour à la ligne dans une boîte de dialogue, utilisez la fonction \texttt{Chr(10)} :
+
+\begin{lstlisting}
+	Sub msgbox_retour_ligne()
+	MsgBox "Bonjour !" & Chr(10) & "Nous sommes le : " & Date, vbOKOnly, "Message structuré"
+	End Sub
+\end{lstlisting}
+
+\section{Confirmation avec MsgBox}
+Une autre utilisation fréquente de \texttt{MsgBox} est de demander une confirmation avant d'effectuer une action. Exemple :
+
+\begin{lstlisting}
+	Sub color()
+	If MsgBox("Voulez-vous appliquer la couleur rouge à la cellule F2 ?", vbYesNo, "Confirmation") = vbYes Then
+	Range("F2").Interior.Color = RGB(255, 0, 0)
+	Else
+	Range("F2").ClearFormats
+	End If
+	End Sub
+\end{lstlisting}
+\newpage
+\section{Exemple avancé : Mise en couleur automatique}
+
+Ce code applique des couleurs et des commentaires aux cellules d'une plage en fonction de leur valeur :
+
+\begin{lstlisting}
+	Sub applicouleur()
+	If MsgBox("Voulez-vous appliquer la couleur et les commentaires ?", vbYesNo, "Confirmation") = vbNo Then
+	Sheets("Feuil2").Range("B2:C13").Interior.Pattern = xlNone
+	Sheets("Feuil2").Range("C2:C13").ClearContents
+	Exit Sub
+	End If
+	
+	For i = 2 To 13
+	If Sheets("Feuil2").Range("B" & i).Value > 0 Then
+	Sheets("Feuil2").Range("B" & i).Interior.Color = RGB(0, 255, 0) ' Vert
+	Sheets("Feuil2").Range("C" & i).Value = "Positif"
+	ElseIf Sheets("Feuil2").Range("B" & i).Value < 0 Then
+	Sheets("Feuil2").Range("B" & i).Interior.Color = RGB(255, 0, 0) ' Rouge
+	Sheets("Feuil2").Range("C" & i).Value = "Négatif"
+	Else
+	Sheets("Feuil2").Range("B" & i).Interior.Color = RGB(0, 0, 255) ' Bleu
+	Sheets("Feuil2").Range("C" & i).Value = "Nul"
+	End If
+	Next i
+	End Sub
+\end{lstlisting}
+
+\chapter{Gestion des erreurs et affichage des informations d'un pays}
+
+Ce chapitre explore des concepts avancés en VBA liés à la gestion des erreurs, à l'interaction utilisateur via les \texttt{InputBox} et \texttt{MsgBox}, et à la manipulation de plages de données dans Excel.
+
+\section{Théorie : Les notions abordées}
+
+\subsection{La gestion des erreurs}
+
+La gestion des erreurs en VBA permet de prévenir les plantages en cas d'entrée ou d'événement inattendu. L'instruction \texttt{On Error GoTo} redirige l'exécution vers un point spécifique du code lorsqu'une erreur survient.
+
+\begin{itemize}
+	\item \texttt{On Error GoTo [nom\_du\_label]} : Détermine le point d'entrée en cas d'erreur.
+	\item \texttt{Resume Next} : Ignorer l'erreur et passer à l'instruction suivante.
+	\item \texttt{Err.Number} : Donne le numéro de l'erreur rencontrée.
+	\item \texttt{Err.Description} : Retourne une description de l'erreur.
+\end{itemize}
+\newpage
+\textbf{Exemple : Gestion d'une erreur}
+\begin{lstlisting}
+	On Error GoTo erreur
+	' Code risquant de générer une erreur
+	
+	Exit Sub ' Sortir pour éviter d'exécuter le label en l'absence d'erreur
+	
+	erreur:
+	MsgBox "Une erreur est survenue : " & Err.Description, vbCritical
+\end{lstlisting}
+
+\subsection{Les interactions utilisateur}
+
+Les interactions utilisateur en VBA se font souvent à l'aide des fonctions suivantes :
+
+\begin{itemize}
+	\item \textbf{\texttt{MsgBox}} : Affiche une boîte de message. Elle peut afficher des informations, poser des questions ou alerter l'utilisateur.
+	\item \textbf{\texttt{InputBox}} : Permet de demander à l'utilisateur une entrée, qui sera ensuite traitée dans le programme.
+\end{itemize}
+
+\textbf{Paramètres principaux de \texttt{MsgBox} :}
+\begin{itemize}
+	\item \texttt{Prompt} : Le texte affiché dans la boîte.
+	\item \texttt{Buttons} : Définit les boutons et icônes (ex. \texttt{vbYesNo}, \texttt{vbCritical}).
+	\item \texttt{Title} : Spécifie le titre de la boîte.
+\end{itemize}
+
+\textbf{Exemple : Une boîte de message simple}
+\begin{lstlisting}
+	MsgBox "Ceci est un message d'information.", vbInformation, "Information"
+\end{lstlisting}
+
+\textbf{Paramètres principaux de \texttt{InputBox} :}
+\begin{itemize}
+	\item \texttt{Prompt} : Texte expliquant ce qui est attendu de l'utilisateur.
+	\item \texttt{Title} : Titre de la boîte.
+	\item \texttt{Default} : Valeur par défaut de l'entrée.
+\end{itemize}
+
+\textbf{Exemple : Demander une valeur numérique}
+\begin{lstlisting}
+	Dim valeur As Integer
+	valeur = InputBox("Veuillez saisir un entier :", "Entrée de données", 0)
+\end{lstlisting}
+
+\subsection{La gestion des plages de données}
+
+En VBA, les plages de données sont manipulées à l'aide de la méthode \texttt{Range}. Voici quelques concepts clés :
+\begin{itemize}
+	\item \textbf{\texttt{Range("A1")}} : Référence à une cellule spécifique.
+	\item \textbf{\texttt{Range("A1:B10")}} : Référence à une plage.
+	\item \textbf{\texttt{Interior.Color}} : Change la couleur de fond d'une cellule.
+	\item \textbf{\texttt{Value}} : Récupère ou affecte une valeur à une cellule.
+\end{itemize}
+
+\textbf{Exemple : Appliquer une couleur à une cellule}
+\begin{lstlisting}
+	Range("A1").Interior.Color = RGB(255, 0, 0) ' Rouge
+\end{lstlisting}
+
+\section{Exemples pratiques avec explications}
+
+\subsection{Exemple 1 : Gestion des erreurs avec \texttt{TypeVal}}
+
+Le code ci-dessous montre comment demander une valeur numérique à l'utilisateur et gérer les erreurs de saisie.
+
+\begin{lstlisting}
+	Sub TypeVal()
+	
+	' En cas d'erreur, aller au message d'alerte
+	On Error GoTo msg_erreur
+	
+	' Définir la variable
+	Dim VarNum As Integer
+	
+	' Saisie de l'utilisateur
+	VarNum = InputBox("Veuillez saisir une valeur numérique", _
+	"Type variable", 0)
+	
+	' Affectation de la valeur à une cellule
+	Sheets("Feuil1").Range("B3").Value = VarNum
+	
+	Exit Sub
+	
+	msg_erreur:
+	MsgBox "Erreur : saisie non numérique. Veuillez réessayer.", _
+	vbCritical, "Alerte"
+	Call TypeVal ' Relance la procédure
+	End Sub
+\end{lstlisting}
+
+\textbf{Analyse :}
+\begin{itemize}
+	\item Si l'utilisateur saisit une valeur invalide, le message d'alerte s'affiche et l'utilisateur doit réessayer.
+	\item La valeur est ensuite insérée dans la cellule \texttt{B3}.
+\end{itemize}
+
+\subsection{Exemple 2 : Affichage des informations d'un pays}
+
+Ce code permet d'afficher des informations spécifiques à un pays sélectionné par l'utilisateur dans une feuille Excel.
+
+\begin{lstlisting}
+	Sub FichePays()
+	
+	Dim NumPays As Integer
+	Dim sh As Worksheet
+	
+	On Error GoTo msg_erreur
+	
+	Set sh = Sheets("DATA")
+	NumPays = InputBox("Veuillez saisir un entier entre 2 et 6", _
+	"Sélection du pays", 2)
+	
+	If NumPays >= 2 And NumPays <= 6 Then
+	MsgBox "Pays : " & sh.Range("A" & NumPays).Value & Chr(10) & _
+	"Capitale : " & sh.Range("B" & NumPays).Value, vbInformation
+	Else
+	GoTo msg_erreur
+	End If
+	
+	Exit Sub
+	
+	msg_erreur:
+	MsgBox "Erreur : valeur invalide. Veuillez réessayer.", vbCritical, "Alerte"
+	Call FichePays
+	End Sub
+\end{lstlisting}
+
+\textbf{Analyse :}
+\begin{itemize}
+	\item L'utilisateur doit sélectionner un numéro correspondant à un pays dans la plage 2 à 6.
+	\item Les informations du pays sont extraites de la feuille \texttt{DATA} et affichées dans une boîte de message.
+	\item Si la saisie est incorrecte, une alerte s'affiche, et la procédure est relancée.
+\end{itemize}
+
+\section{Conclusion}
+
+Ces exemples montrent comment gérer les interactions utilisateur et les erreurs dans un programme VBA. Les notions de \texttt{InputBox}, \texttt{MsgBox}, et de gestion des plages permettent de créer des applications interactives robustes. En combinant ces concepts, il est possible d'améliorer la fiabilité et l'expérience utilisateur des macros VBA.
+	
+\end{document}
