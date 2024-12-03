@@ -2699,18 +2699,199 @@ Une petite variation de \( r \) ou de \( \mathbb{E}(Y) \) entraine une petite va
 
 \end{enumerate}
 
-\subsection{Exemple 3}page 207
+\subsection{Exemple 3}
 
+Supposons que les préférences d'un riscophobe soient représentées par une fonction logarithmique et, pour simplifier le calcul, que le taux de rendement de l'actif risqué ne puisse prendre que 2 valeurs :
 
+\[
+Y = 
+\begin{cases} 
+	y_{\min} & y_{\max}  \\ 
+p	 &  1 - p 
+\end{cases} 
+\quad \text{où } y_{\min} < r < y_{\max}
+\]
+
+\begin{itemize}
+	\item Résoudre le programme de l'investisseur et commentez vos résultats.
+\end{itemize}
+
+\[ W(a)=\omega(1+r)+a(Y-r) \]
+\[ \begin{cases}
+	\underset{a}{\max}\;U(W(a)) =p\ln\left[ \omega(1+r)+a(y_{\min}-r)\right]+(1-p) \ln\left[ \omega(1+r)+a(y_{\max}-r) \right]  \\
+	s.c.\; a_{\min}\le a \le a_{\max}
+\end{cases} \]
+\noindent
+Rappel : \( \left( \ln u \right)'= \frac{u'}{u} \)
+
+\noindent
+Condition de premier ordre :
+\[ \frac{d U(W(a))}{da}=0 \]
+\[ \Rightarrow p\left( \frac{y_{\min}-r}{\omega(1+r)+a(y_{\min}-r)} \right)+\underbrace{(1-p)\left( \frac{y_{\max}-r}{\omega(1+r)+a(y_{\max}-r)} \right)}_{= 0} \]
+\[ p(y_{\min}-r)\omega(1+r)+p(y_{\min}-r)a(y_{\max}-r)+(1-p)(y_{\max}-r)\omega(1+r)
+\]
+\[ +(1-p)(y_{\max}-r)a(y_{\min}-r)=0 \]
+\[ \omega(1+r)\left[ p(y_{\min}-r)+(1-p)(y_{\max}-r)\right]+a(y_{\min}-r) (y_{\max}-r) = 0\]
+\[ \omega(1+r)\left[ \mathbb{E}(Y)-r\right]+ a(y_{\min}-r)(y_{\max}-r) = 0\]
+\[ a^{\star} = \frac{\omega(1+r)(\mathbb{E}(Y)-r)}{(y_{\min}-r)(y_{\max}-r)} \]
+\noindent
+Avec
+\[ a^{\star} = \frac{\underbrace{\omega(1+r)}_{>0}(\mathbb{E}(Y)-r)}{\underbrace{(y_{\min}-r)}_{>0}\underbrace{(y_{\max}-r)}_{>0}} \]
+
+\subsection{Montant de \(  a^{\star} \) \& prime marginale}
+
+Nous allons chercher à caractériser plus en détails l'optimum du décideur riscophobe. Pour ce faire, nous allons réécrire la condition de premier ordre d'une manière différente pour faire apparaître une propriété intéressante de l'optimum. Nous allons introduire la notion de prime de risque marginale.
+
+Repartons de la définition de la prime de risque absolue \(\pi_a\) :
+\[
+E\left[ u(W_a) \right] = u\left( \underbrace{\mathbb{E}[W_a] - \pi_a}_{\text{Equivalent certain}}\right)
+\]
+Équivalent, ce certain \(w\). Nous en tirons que maximiser l'utilité espérée (ce que nous avons fait pour trouver l'optimum de l'investisseur) est équivalent à maximiser : \(u(\mathbb{E}[W_a] - \pi_a)\). Et, comme la fonction \(u\) est supposée strictement croissante (hypothèse de non satiété), cela revient à maximiser son argument : \(\mathbb{E}[W_a] - \pi_a\).
+\[
+\max_a \mathbb{E}([W_a]) - \pi_a 
+\]
+L'utilité est donc maximale lorsque la différence entre l'espérance de la richesse et la prime de risque qui lui est attachée est maximale. À espérance donnée, le riscophobe préfère la richesse à laquelle il attache la prime de risque la plus faible. On retrouve ici la prime de risque comme mesure de l'aversion pour le risque : à espérance donnée, le riscophobe préfère la richesse qu'il estime la moins risquée. Une variation du montant placé en actions \(a\) augmente l'utilité si elle augmente l'espérance de la richesse plus qu'elle n'augmente la prime de risque → comparaison de variations marginales.
+
+La CPO du programme de l'investisseur peut donc être réécrite sous la forme d'une égalité entre l'espérance marginale et la prime de risque marginale :
+\[
+\underbrace{\frac{d\mathbb{E}[W(a^{\star})]}{da^{\star}}}_{\mathbb{E}^{\star}_m}= \underbrace{\frac{d\pi(a^{\star})}{da^{\star}}}_{\pi^{\star}_m} 
+\]
+\(\Leftrightarrow \mathbb{E}[Y] - r = \pi_m^{\star} \Leftrightarrow \mathbb{E}[Y] = r + \pi_m^{\star}\).
+
+Comme d'habitude en économie, l'optimum n'est caractérisé que par des conditions marginales. CSO : positivité de la pente de la prime marginale.
+
+Interprétation : le terme de gauche représente le gain marginal d'un euro de risque supplémentaire et le terme de droite le coût marginal, la désutilité marginale du risque → si le gain et le coût marginal ne sont pas égaux, l'investisseur peut améliorer sa situation en modifiant la quantité d'actions demandée.
+
+L'espérance du taux de rendement de l'actif risqué se décompose entre le rendement de l'actif certain et une prime (marginale) de risque.
+
+Remarque : si tous les individus attribuent la même valeur à \(\mathbb{E}[Y]\), alors, à l'optimum, la prime de risque marginale est identique pour tous les agents : \(\pi_m^{\star} = \mathbb{E}[Y] - r\). À l'équilibre, tous les agents riscophobes ont la même prime marginale de risque, qu'ils soient riches ou pauvres, qu'ils aient une aversion forte ou faible pour le risque. En revanche, ils atteignent cette situation avec des montants \(a^{\star}\) différents selon leurs préférences et leur richesse \(\omega\). On retrouve un résultat similaire à la théorie élémentaire du consommateur d'univers certain dans laquelle, à l'équilibre, tous les consommateurs ont le même taux marginal de substitution, égal au rapport des prix.
+
+\subsection{Représentation graphique \((\mathbb{E}(Y)>r) \)}
+
+Le montant optimal d'actif risqué 𝑎∗ se trouve au point où la différence
+entre l'espérance de la richesse et la prime est maximale, donc au
+point où les pentes des courbes sont égales.
+\begin{center}
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-12-03 181344}
+\end{center}
+
+\begin{center}
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-12-03 181608}
+\end{center}
 
 \section{Statique comparative}
 
+Dans cette section, nous allons étudier comment varie le montant d'actif risqué \(a^{\star}\) choisi par un riscophobe en fonction des différents paramètres du modèle :
+
+\begin{itemize}
+	\item la richesse initiale \(\omega\),
+	\item le taux de rendement certain \(r\),
+	\item l'idée que l'agent se fait du rendement de l'actif risqué \(Y\),
+	\item l'idée qu'il se fait du risque associé à l'actif risqué.
+\end{itemize}
+
+Nous allons ici recourir aux notions d'indices d'aversion absolue et partielle au risque vues dans le Chap. 3, je vous y renvoie pour rappel.
+
+\subsection{Effet de la richesse initiale \( \omega \)}
+
+Comment un individu dont les préférences sont données modifie-t-il son comportement lorsque sa richesse initiale varie ? L'actif risqué se présente soit sous la forme d'actions détenues (\(a^{\star} > 0\)), soit sous la forme d'actions vendues à découvert (\(a^{\star} < 0\)) → le montant d'actif risqué est donc mesuré par la valeur absolue \(\left| a^{\star} \right|\). Nous cherchons donc à déterminer le signe de : \(\frac{d\left| a^{\star} \right|}{d\omega}\).
+
+\begin{itemize}
+	\item Si \(\frac{d\left| a^{\star} \right|}{d\omega} > 0\) : l'actif risqué est un bien normal, la quantité demandée varie dans le même sens que la richesse. 
+
+	\item Si \(\frac{d\left| a^{\star} \right|}{d\omega} < 0\) : l'actif risqué est un bien inférieur.
+\end{itemize}
+
+On peut démontrer que : 
+
+\[ \frac{d\left| a^{\star} \right|}{d\omega} \;\text{est}\begin{cases}
+	> 0 \quad \text{si} \quad \frac{dA_a}{d\omega} < 0 \\
+	= 0 \quad \text{si} \quad \frac{dA_a}{d\omega} = 0\\
+	< 0 \quad \text{si} \quad \frac{dA_a}{d\omega} > 0
+\end{cases} \]
+
+L'actif risqué est un bien normal ssi l'aversion absolue pour le risque est une fonction décroissante de la richesse (ex : CRRA et exemple 3 avec fonction logarithmique). La quantité d'actif risqué ne varie pas quand la richesse varie ssi l'aversion absolue ne dépend pas de la richesse (ex : CARA, cf. exemple 2). L'actif risqué est un bien inférieur ssi l'aversion absolue est une fonction croissante de la richesse (ex : utilité quadratique).
+
+L'observation nous enseigne que ce sont les personnes les plus riches qui détiennent le plus d'actifs risqués, ce qui signifie donc que l'actif risqué est un bien normal. Pour rendre compte de cette observation, nous devons admettre que les préférences des individus respectent non seulement l'hypothèse de non-satiété et celle d'aversion pour le risque, mais aussi l'hypothèse selon laquelle l'aversion absolue pour le risque est une fonction décroissante de la richesse :
+\[
+\frac{dA_a}{d\omega} < 0
+\]
+
+\subsection{Représentation graphique}
+
+Supposons que la richesse augmente de \(\omega\) à \(\omega'\) et que l'aversion pour le risque décroisse avec la richesse : le riscophobe attache une plus petite prime de risque à la richesse \(W(a, \omega')\) qu'à la richesse \(W(a, \omega)\).
+
+\begin{center}
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-12-03 183932}
+\end{center}
+
+Dans ce cas, la prime marginale de risque associée à la richesse \(W(a, \omega')\) est inférieure à celle associée à la richesse \(W(a, \omega)\), et la quantité d'actif risqué demandée augmente de \(a^{\star}\) à \(a^{\star \star}\).
+
+\begin{center}
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-12-03 184202}
+\end{center}
+
+\subsection{Effet du rendement certain \( r \)}
+
+Quel est l'effet d'une variation de \(r\) sur la quantité optimale d'actif risqué \(a^{\star}\) ? Raisonnons dans le cas où \(a^{\star} > 0\) (on peut reformuler les conclusions dans le cas d'une vente à découvert). On s'attend à ce qu'une variation de \(r\) entraîne une variation en sens inverse de \(a^\star\) de la part de n'importe quel riscophobe : 
+\[
+\frac{da^\star}{dr} < 0 \ldots
+\]
+Ce comportement n'est garanti que si l'aversion partielle au risque \(A_P\) est inférieure à 1.
+
+En effet, une hausse de \(r\) à \(r'\) entraîne un effet de richesse (ou effet de revenu) et un effet de substitution, qui ne jouent pas forcément dans le même sens. Prenons le cas où \(a^* < \omega\) (une partie de la richesse est placée en actif certain) :
+
+\begin{itemize}
+	\item Effet de substitution : une hausse de \(r\) diminue l'espérance marginale \(\mathbb{E}[Y] - r\) → on a alors une baisse de \(a^\star\) à \(\hat{a}\), l'individu substitue de l'actif certain à l'actif risqué.
+	\item Effet de revenu une hausse de \(r\) entraîne une hausse de la partie certaine de la richesse. Si l'on suppose que l'aversion absolue diminue avec la richesse, on aura donc un déplacement vers la droite de la courbe représentative de la prime de risque marginale → déplacement de l'optimum de \(\hat{a}\) à \(a^{\star \star}\).
+\end{itemize}
+
+\begin{center}
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2024-12-03 184828}
+\end{center}
+
+Il n'est alors pas impossible que l'effet de revenu l'emporte sur l'effet de substitution et qu'au final la demande d'actif risqué augmente (même si, usuellement, on considère que l'effet de substitution l'emporte sur l'effet de revenu). 
+
+Remarque : si \(a^\star > \omega\), le montant placé sur l'actif certain est négatif, l'agent a emprunté pour acheter de l'actif risqué. Dans ce cas, une hausse de \(r\) est un appauvrissement. Alors, l'effet de revenu va dans le même sens que l'effet de substitution et la demande d'actif risqué diminue.
+
+\subsection{Effet du rendement risqué \( Y \)}
+
+Supposons que l'investisseur devienne plus optimiste au sujet de l'actif risqué : il estime que le rendement de cet actif \(Y'\) est plus attrayant, sans qu'une augmentation du risque ne supprime cet avantage à ses yeux :
+\[
+\mathbb{E}[Y'] > \mathbb{E}[Y]
+\]
+On peut démontrer que si \(a^\star > 0\), le remplacement de \(Y\) par \(Y'\) accroît la demande d'actif risqué si l'aversion partielle est inférieure à 1, ce qui est cohérent avec le résultat précédent.
+
+\subsection{Effet du risque de l'actif risqué}
+
+Il est difficile de donner un sens précis, en général, à la notion de "hausse du risque". Supposons toutefois que l'on puisse définir un rendement unanimement considéré comme plus risqué par tous les riscophobes. On s'attend alors à une baisse de la demande d'actif risqué. Mais ce résultat ne peut être établi qu'en faisant des hypothèses supplémentaires :
+
+\begin{itemize}
+	\item Sur la distribution des probabilités de \(Y\) et \(Y'\)
+	\item Sur sur les préférences
+\end{itemize}
+
+\subsection{Conclusion}
+
+Dans ce chapitre, nous avons vu le rôle des notions d'aversion absolue et partielle dans l'explication des choix de portefeuille d'un riscophobe. Plus précisément :
+
+\begin{itemize}
+	\item Comme d'habitude en économie, nous n'avons aucun résultat sans poser l'hypothèse de non-satiété.
+	\item Seule l'hypothèse d'aversion pour le risque permet de prédire le comportement de diversification que nous observons en pratique.
+	\item Seule l'hypothèse de décroissance de l'aversion absolue pour le risque avec la richesse explique que les agents les plus riches détiennent plus d'actifs risqués.
+	\item Seule l'hypothèse d'aversion partielle inférieure à 1 garantit un comportement conforme à l'intuition et à l'observation en cas de variation du taux de rendement de l'actif certain ou de l'actif risqué.
+\end{itemize}
+
+\subsection{Difficultés}
 
 
+Relatif échec de la théorie pour prédire le comportement face à un accroissement du risque : les hypothèses faites ne suffisent pas pour rendre compte de certains comportements, qui pourtant semblent assez naturels. 
 
-
-
-
+\begin{itemize}
+	\item Chercher des restrictions supplémentaires ?
+	\item Conclure que les fonctions d'utilité espérées sont inutilement subtiles : tant qu'à ne pas tout expliquer, autant se limiter à des fonctions plus simples comme les fonctions de Markowitz (modèle MEDAF en finance).
+	\item Considérer simplement que la théorie montre que des cas non observés sont possibles.
+\end{itemize}
 
 
 

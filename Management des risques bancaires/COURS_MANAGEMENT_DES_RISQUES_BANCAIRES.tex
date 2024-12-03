@@ -1576,11 +1576,228 @@ Au cours des trimestres T1, T2, T3 et T4, il existe une impasse de taux négativ
 
 Pour le trimestre T5, il y a un excédent de ressources à taux fixe sur les emplois à taux fixe. Dans ce cas, la MNI se dégrade en cas de baisse des taux, car la banque doit investir cet excédent dans des actifs dont la rémunération baisse. À l'inverse, la MNI s’améliore en cas de hausse des taux.
 
+\subsubsection{Mesure de marge}
+
+Les différences dans le profil d’amortissement entre l’actif et le passif sont source d’impasses sur différentes périodes dans le futur.
+
+\subsubsection{Exemple}
+
+Considérons un portefeuille d'actifs et de passifs (en milliards d’euros) qui se présente comme suit :
+\begin{center}
+	\includegraphics[scale=0.6]{../../../Pictures/Screenshots/Capture d'écran 2024-12-03 221916}
+\end{center}
+
+Créances :
+\begin{itemize}
+	\item Prêt = 100 M € à taux fixe d’échéance \(t = 3\) ;
+	\item Prêt = 100 M € à taux fixe d’échéance \(t = 2\) ;
+	\item \(t\) représente le semestre.
+\end{itemize}
+
+Dette = 160 M € à taux fixe et remboursable \(t = 1\).
+
+Taux débiteurs = 2 \% et taux créditeurs = 1 \% semestriel.
+
+L'impasse de taux de la période \(t\) notée \(G_t\) est par définition : 
+\[
+G_t = P_t - A_t
+\]
+Avec :
+\begin{itemize}
+	\item \(G_1 = 0\)
+	\item \(G_2 = -160\)
+	\item \(G_3 = -60\)
+\end{itemize}
+
+L'impasse \(G\) s’interprète comme l’encours de financements nouveaux nécessaires au financement des emplois. 
+
+Une hausse des taux se traduira par une réduction de la MNI en cas d’impasse négative. La banque devra payer plus cher les nouvelles ressources destinées à financer les emplois.
+
+On suppose que les taux d’intérêt restent stables pendant 3 semestres de sorte que les nouvelles dettes sont contractées au taux initial de 1 \% semestriel.
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-12-03 222420}
+\end{center}
+
+On suppose désormais que les taux varient à la hausse de 50 points de base pendant le 1er semestre puis restent stables jusqu’au 3ème semestre de sorte que le taux semestriel de la nouvelle dette s’établit à 1,5 \% pour les semestres 2 et 3.
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-12-03 222838}
+\end{center}
+
+La hausse des taux de 50 points de base se traduit donc par une baisse des marges de 0,4 \% (= 1,2 \% - 0,8 \%) pour la période 2 et de 0,3 \% (= 1,4 \% - 1,1 \%) pour la période 3 car les impasses des périodes 2 et 3 sont négatives (= besoin de financement).
+
+L'insensibilité au risque de taux s’obtient par annulation des différentes impasses :
+\begin{itemize}
+	\item En synchronisant l’amortissement de l’actif et du passif (bilan et hors-bilan) à taux fixes.
+	\item En utilisant notamment les produits dérivés.
+\end{itemize}
+
+\subsubsection{Mesure de valeur}
+
+Utiliser le concept de duration.
+
+La duration est la durée moyenne de recouvrement de tous les flux actualisés. Elle mesure la sensibilité des actifs et passifs bancaires aux variations de taux d’intérêt.
+
+La méthode repose sur l’actualisation des flux :
+Calcul de la VAN des flux financiers futurs certains de chacun des éléments du bilan :
+\[
+\text{VAN} = \text{VAN}_{\text{actif}} - \text{VAN}_{\text{passif}}
+\]
+
+La VAN de l’actif est la somme en valeur présente de tous les flux futurs (capital et intérêts) de tous les actifs :
+\[
+\text{VAN}_{\text{actif}} = \sum \frac{F_t}{(1+i)^t}
+\]
+où \(t\) est la durée de vie allant de 1 à \(n\), \(i\) est le taux d’intérêt, et \(F\) est le flux.
+
+La sensibilité du bilan aux variations de taux dépend de l’écart entre les durations de la totalité de l’actif (\(D_A\)) et de la totalité du passif (hors fonds propres) (\(D_P\)).
+
+La duration \(D\) s’exprime de la façon suivante :
+\[
+D = \frac{\sum t \cdot F_t}{(1+i)^t} \Big/ \text{VAN}
+\]
+
+En cas de très petite variation positive du taux d’intérêt, il y aura une baisse de \(S\%\) de la valeur de marché de l’actif ou du passif du bilan bancaire (\(P\)) :
+\[
+\frac{\Delta P}{P} \approx - S \cdot \Delta i
+\]
+
+La variation en  \% de la valeur de marché de l’actif ou du passif (\(P\)) dépend de la duration et de l’évolution du taux d’intérêt, si cette évolution est faible :
+Comme on a : \(S = \frac{D}{(1+i)}\)
+\[
+\frac{\Delta P}{P} = - \frac{\Delta i}{(1+i)} \cdot D \quad (\approx -\Delta i \cdot D)
+\]
+
+Écart de duration (ED) = \(D_A - D_P\)
+
+\(D_A\) est la duration des actifs pondérées par leur poids dans le total de l’actif :
+\[
+D_A = \sum_{i=1}^{n} w_i \times D_{A_i}
+\]
+
+\(D_P\) est la duration des passifs pondérées par leur poids dans le total du passif :
+\[
+D_P = \sum_{i=1}^{n} w_i \times D_{P_i}
+\]
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-12-03 224104}
+\end{center}
+
+ Position neutre = bilan immunisé
+
+\subsubsection{Exemple}
+
+On dispose du bilan simplifié suivant. Le taux de rentabilité interne moyen initial est égal à 2,1 \%.
+
+\begin{enumerate}
+	\item Calculez \(D_A\) et \(D_P\) ?
+	\item Quel est le résultat de la banque si le taux augmente de 50 points de base ? De même, si le taux baisse de 50 points de base ?
+	\item La banque décide de restructurer son financement en rachetant ses anciennes obligations pour en émettre de nouvelles afin d’immuniser son bilan contre une petite variation de taux. Quelle devrait être la duration de son nouveau financement obligataire ?
+\end{enumerate}
+
+\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-12-03 225441}
+
+1) 
+\[
+DA = \sum_{i=1}^{n} w_i \times D_{A_i} 
+\]
+\[ = \frac{200\,000}{1\,750\,000} \times 0,3 + \frac{500\,000}{1\,750\,000} \times 5,5 + \frac{250\,000}{1\,750\,000} \times 1,5 + \frac{700\,000}{1\,750\,000} \times 4 = 3,42 \]
+\[
+DP = 2,71
+\]
+La banque a un résultat défavorable en cas de hausse du taux et inversement (si \(DA - DP > 0\), il y a besoin de financement).
+
+2) Pour une hausse du taux de 50 points de base, on aura :
+- Une baisse de la valeur de marché de l’actif de :
+\[
+-\frac{0,005}{(1+0,021)} \times 3,42 = -0,0167 \quad (1,67\%)
+\]
+Ce qui signifie un déclin de l'actif de :
+\[
+-1,67\% \times 1\,750\,000 = -29\,225
+\]
+
+- Une baisse de la valeur de marché du passif de :
+\[
+-\frac{0,005}{(1+0,021)} \times 2,71 = -0,0132 \quad (1,32\%)
+\]
+Ce qui signifie un déclin du passif de :
+\[
+-1,32\% \times 1\,750\,000 = -23\,100
+\]
+
+Au final, les pertes seront de :
+\[
+-6\,125 \,€ \quad (= -29\,225 - (-23\,100) = -6\,125)
+\]
+
+En cas de baisse du taux de 50 points de base, les gains seraient de :
+\[
+6\,125 \,€ \quad (29\,225 - 23\,100 = 6\,125)
+\]
+
+3) 
+La banque cherche à égaliser la duration de l’actif et du passif. Elle va émettre de nouvelles obligations d’une duration de \(DP_{O}\) égale à :
+\[
+3,42 = 28,57\% \times 0,5 + 17,14\% \times 0,3 + 50,28\% \times DP_{O}
+\]
+En résolvant pour \(DP_{O}\) :
+\[
+DP_{O} = 6,41 \text{ ans}
+\]
+
+Nouveau financement destiné à immuniser le bilan contre une petite variation du taux doit avoir une duration de 6,41 ans.
+
+Dans la gestion actif-passif, le risque n’est pas complètement éliminé mais maîtrisé de manière à préserver la rentabilité.
+
+
 \section{Intermédiation de bilan et de marché}
 
+\subsection{Activité des banques à travers leur bilan agrégé}
+
+FINREP "FINancial REPorting"
+
+\begin{itemize}
+	\item Aux normes IFRS "International Financial Reporting Standards".
+	\item Depuis janvier 2005, les sociétés cotées européennes sont tenues de préparer leurs comptes consolidés conformément à ces normes IFRS.
+	\item Attention, le hors-bilan est aussi très important avec des encours non encore réalisés très importants, essentiellement sur des engagements sur produits dérivés.
+\end{itemize}
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-12-03 230852}
+	
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-12-03 231027}
+\end{center}
+
+\subsection{Activité des banques à travers leur compte de résultat IFRS}
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-12-03 231229}
+\end{center}
+2 \text{ soldes intermédiaires de gestion importants :}
+
+\begin{itemize}
+	\item \textbf{Produit net bancaire (PNB)} = différence entre les produits et les charges d’exploitation. Il représente la marge globale dégagée par les banques sur l’ensemble de leurs activités.
+	
+	\item \textbf{Résultat net (RN)} 
+	\[
+	RN = \text{Résultat avant impôts} - \text{impôts sur bénéfices}
+	\]
+	Il représente le bénéfice ou la perte consolidé(e) de l'exercice.
+\end{itemize}
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2024-12-03 231602}
+\end{center}
 
 \section{Risque de marché}
 
+Le risque de marché englobe les risques de variation des taux d’intérêt sur les titres à revenus fixes, de taux de change, ainsi que les variations des prix des actifs financiers, des actifs réels et des matières premières. Ces risques concernent tous les éléments du portefeuille de marché, tant au bilan qu’au hors-bilan.
+
+Pour se prémunir contre ce risque, les institutions financières peuvent recourir à des opérations de couverture. De plus, elles utilisent des fonds propres (FP) pour couvrir ce risque en calculant une \textit{Value at Risk} (VaR) selon un modèle interne.
+
+La VaR représente le montant de perte potentielle maximale à ne pas dépasser sur un portefeuille d’actifs, avec un seuil de confiance de 99\% sur une période de 10 jours. Cette VaR est ensuite convertie en fonds propres selon une formule réglementaire. À partir de 2022, le concept d'Expected Shortfall (ES) est également introduit pour une évaluation plus complète du risque.
 
 
 

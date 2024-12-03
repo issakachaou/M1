@@ -366,4 +366,403 @@ Ce code permet d'afficher des informations spécifiques à un pays sélectionné
 
 Ces exemples montrent comment gérer les interactions utilisateur et les erreurs dans un programme VBA. Les notions de \texttt{InputBox}, \texttt{MsgBox}, et de gestion des plages permettent de créer des applications interactives robustes. En combinant ces concepts, il est possible d'améliorer la fiabilité et l'expérience utilisateur des macros VBA.
 	
+\chapter{Introduction aux Variables en VBA}
+
+\section{Déclaration des Variables et Portée}
+En VBA, la \textbf{portée} des variables détermine où celles-ci sont accessibles dans le code :
+\begin{itemize}
+	\item \textbf{Variables locales :} Déclarées dans une procédure (\texttt{Sub}), elles ne sont accessibles qu'à l'intérieur de cette procédure.
+	\item \textbf{Variables globales :} Déclarées au début du module, elles sont accessibles dans toutes les procédures de ce module.
+\end{itemize}
+
+\subsection*{Exemple}
+\begin{lstlisting}
+	Dim x As Integer
+	
+	Sub macro1()
+	' x est disponible ici
+	Dim y As Integer
+	' y est disponible uniquement ici
+	End Sub
+	
+	Sub macro2()
+	' x est disponible ici
+	End Sub
+\end{lstlisting}
+
+Dans cet exemple :
+\begin{itemize}
+	\item \texttt{x} est une variable globale, accessible dans \texttt{macro1} et \texttt{macro2}.
+	\item \texttt{y} est une variable locale, accessible uniquement dans \texttt{macro1}.
+\end{itemize}
+
+\section{Variables à Longueur Fixe}
+VBA permet de déclarer des variables de longueur fixe pour limiter la quantité de mémoire utilisée.
+\begin{lstlisting}
+	Sub TestVar()
+	Dim Tvar As String * 4 ' Longueur fixe à 4 caractères
+	Dim sh As Worksheet
+	Dim cel As Range
+	
+	' Affecter une valeur via une boîte de dialogue
+	Set sh = Worksheets("Feuil1")
+	Set cel = sh.Range("B2")
+	Tvar = InputBox("Veuillez saisir une valeur", "Test variable")
+	
+	' Stocker la valeur dans une cellule
+	cel.Value = Tvar
+	MsgBox Len(Tvar) ' Nombre de caractères
+	End Sub
+\end{lstlisting}
+
+Cet exemple montre :
+\begin{itemize}
+	\item La déclaration d'une variable \texttt{Tvar} avec une longueur maximale de 4 caractères.
+	\item L'utilisation de \texttt{InputBox} pour récupérer une valeur saisie par l'utilisateur.
+	\item L'affichage de la longueur de la chaîne avec la fonction \texttt{Len}.
+\end{itemize}
+
+\chapter{Les Boucles \texttt{For} et \texttt{While}}
+
+\section{Introduction}
+Les boucles permettent d'exécuter une séquence d'instructions plusieurs fois, selon une condition ou une plage de valeurs. En VBA, les boucles les plus courantes sont :
+\begin{itemize}
+	\item \texttt{For ... Next} : utilisée pour itérer sur une plage définie de valeurs.
+	\item \texttt{Do While ... Loop} : utilisée pour répéter une série d'instructions tant qu'une condition est vraie.
+\end{itemize}
+
+\section{La Boucle \texttt{For}}
+La boucle \texttt{For} est utilisée lorsque le nombre d'itérations est connu à l'avance.
+
+\subsection*{Structure Théorique}
+\begin{lstlisting}
+	For [Variable] = [ValeurDépart] To [ValeurFin] [Step [Incrément]]
+	' Instructions à exécuter
+	Next [Variable]
+\end{lstlisting}
+
+\begin{itemize}
+	\item \textbf{Variable :} La variable utilisée pour contrôler la boucle.
+	\item \textbf{ValeurDépart :} La valeur initiale de la variable.
+	\item \textbf{ValeurFin :} La valeur finale à atteindre.
+	\item \textbf{Step :} (Optionnel) Définit l'incrément ou le décrément. Par défaut, il vaut 1.
+\end{itemize}
+
+\subsection*{Exemple : Parcourir une Plage de Cellules}
+\begin{lstlisting}
+	Sub ExempleFor()
+	Dim i As Integer
+	Dim sh As Worksheet
+	Set sh = Worksheets("Feuil1")
+	
+	For i = 1 To 10
+	sh.Cells(i, 1).Value = "Ligne " & i
+	Next i
+	End Sub
+\end{lstlisting}
+
+Dans cet exemple :
+\begin{itemize}
+	\item La boucle \texttt{For} parcourt les lignes 1 à 10 de la feuille \texttt{Feuil1}.
+	\item La cellule de chaque ligne dans la colonne A reçoit la valeur \texttt{"Ligne X"}, où \texttt{X} correspond au numéro de la ligne.
+\end{itemize}
+
+\subsection*{Exemple avec \texttt{Step}}
+\begin{lstlisting}
+	Sub ExempleForStep()
+	Dim i As Integer
+	For i = 1 To 10 Step 2
+	Debug.Print "Valeur : " & i
+	Next i
+	End Sub
+\end{lstlisting}
+
+Ici, l'instruction \texttt{Step 2} incrémente la variable de 2, ce qui donne comme valeurs successives : 1, 3, 5, 7, 9.
+
+\section{La Boucle \texttt{Do While}}
+La boucle \texttt{Do While} répète une série d'instructions tant qu'une condition reste vraie.
+
+\subsection*{Structure Théorique}
+\begin{lstlisting}
+	Do While [Condition]
+	' Instructions à exécuter
+	Loop
+\end{lstlisting}
+
+\begin{itemize}
+	\item \textbf{Condition :} Une expression logique ou une comparaison. La boucle s'exécute tant que cette condition est vraie.
+\end{itemize}
+
+\subsection*{Exemple : Addition jusqu'à une Limite}
+\begin{lstlisting}
+	Sub ExempleWhile()
+	Dim somme As Integer
+	Dim i As Integer
+	somme = 0
+	i = 1
+	
+	Do While somme < 20
+	somme = somme + i
+	i = i + 1
+	Loop
+	
+	MsgBox "Somme finale : " & somme
+	End Sub
+\end{lstlisting}
+
+Dans cet exemple :
+\begin{itemize}
+	\item La boucle continue tant que la somme des nombres ajoutés est inférieure à 20.
+	\item Une boîte de message affiche la somme finale une fois la boucle terminée.
+\end{itemize}
+
+\section{Comparaison entre \texttt{For} et \texttt{Do While}}
+\begin{itemize}
+	\item \textbf{Utilisez \texttt{For} :} lorsque le nombre d'itérations est défini ou déterminable à l'avance.
+	\item \textbf{Utilisez \texttt{Do While} :} lorsque vous devez continuer à itérer jusqu'à ce qu'une certaine condition soit remplie.
+\end{itemize}
+\newpage
+\section{Exemple Combiné : \texttt{For} et \texttt{Do While}}
+\begin{lstlisting}
+	Sub ExempleCombine()
+	Dim i As Integer
+	Dim somme As Integer
+	somme = 0
+	
+	For i = 1 To 10
+	If somme >= 15 Then
+	Exit For ' Arrête la boucle si la somme atteint 15
+	End If
+	somme = somme + i
+	Next i
+	
+	MsgBox "Somme finale : " & somme
+	End Sub
+\end{lstlisting}
+
+Cet exemple illustre :
+\begin{itemize}
+	\item Une boucle \texttt{For} qui s'arrête prématurément à l'aide de \texttt{Exit For}.
+	\item Une condition pour limiter la somme calculée.
+\end{itemize}
+
+\section{Bonnes Pratiques}
+\begin{itemize}
+	\item Limitez les boucles imbriquées pour éviter des performances dégradées et des codes difficiles à lire.
+	\item Utilisez \texttt{Exit For} ou \texttt{Exit Do} pour interrompre une boucle lorsqu'une condition est remplie.
+	\item Assurez-vous que la condition d'arrêt dans une boucle \texttt{Do While} est toujours atteinte pour éviter des boucles infinies.
+\end{itemize}
+
+\section{Conclusion}
+Les boucles \texttt{For} et \texttt{While} sont essentielles pour automatiser les tâches répétitives en VBA. Elles permettent de parcourir des données, effectuer des calculs ou appliquer des formats de manière efficace. Leur utilisation judicieuse est un atout pour optimiser les performances et la lisibilité du code.
+
+
+
+\chapter{L'instruction \texttt{With ... End With}}
+
+\section{Introduction}
+L'instruction \texttt{With ... End With} permet de simplifier et d'optimiser le code lorsqu'on effectue plusieurs opérations sur le même objet. Elle évite de répéter l'identification de l'objet pour chaque propriété ou méthode que vous souhaitez utiliser, rendant le code plus clair et plus rapide à exécuter.
+
+\section{Syntaxe}
+La syntaxe générale est la suivante :
+\begin{lstlisting}
+	With [Objet]
+	.Propriété1 = Valeur1
+	.Propriété2 = Valeur2
+	.Méthode
+	End With
+\end{lstlisting}
+\begin{itemize}
+	\item \textbf{[Objet]} : L'objet sur lequel vous travaillez.
+	\item \textbf{Propriété1, Propriété2, etc.} : Les propriétés que vous souhaitez modifier.
+	\item \textbf{Méthode} : Les méthodes de l'objet que vous souhaitez appeler.
+\end{itemize}
+\newpage
+\section{Exemple de Base}
+Voici un exemple simple d'utilisation pour mettre en forme une plage de cellules :
+\begin{lstlisting}
+	Sub MiseEnForme()
+	With Worksheets("Feuil1").Range("A1:D5").Font
+	.Name = "Arial"
+	.Size = 12
+	.Bold = True
+	.Color = RGB(255, 0, 0) ' Rouge
+	End With
+	End Sub
+\end{lstlisting}
+
+Dans cet exemple, la plage de cellules \texttt{A1:D5} sur la feuille \texttt{Feuil1} est formatée avec :
+\begin{itemize}
+	\item La police définie sur \texttt{Arial}.
+	\item Une taille de 12 points.
+	\item Un style gras.
+	\item Une couleur rouge.
+\end{itemize}
+
+\section{Avantages}
+\begin{itemize}
+	\item \textbf{Lisibilité :} Le code est plus lisible car il élimine la répétition des références à l'objet.
+	\item \textbf{Performance :} L'objet est évalué une seule fois, ce qui peut améliorer les performances pour des objets complexes.
+	\item \textbf{Facilité de maintenance :} Si l'objet doit être changé, il suffit de modifier une seule ligne.
+\end{itemize}
+\newpage
+\section{Exemple avec des Objets Multiples}
+L'instruction \texttt{With ... End With} peut être utilisée de manière imbriquée pour travailler avec plusieurs objets :
+\begin{lstlisting}
+	Sub FormatMultiple()
+	With Worksheets("Feuil1")
+	With .Range("A1:D5")
+	.Interior.Color = RGB(200, 200, 255) ' Couleur de fond
+	.Font.Bold = True
+	End With
+	.Range("A1").Value = "Titre"
+	End With
+	End Sub
+\end{lstlisting}
+
+Ici :
+\begin{itemize}
+	\item Le formatage est appliqué à la plage \texttt{A1:D5}.
+	\item La cellule \texttt{A1} reçoit une valeur.
+\end{itemize}
+
+\section{Bonnes Pratiques}
+\begin{itemize}
+	\item Utilisez \texttt{With ... End With} uniquement si vous effectuez plusieurs opérations sur le même objet.
+	\item Veillez à ne pas imbriquer trop de blocs \texttt{With}, car cela peut rendre le code difficile à lire.
+	\item Combinez \texttt{With ... End With} avec des commentaires clairs pour indiquer ce que chaque section fait.
+\end{itemize}
+\newpage
+\section{Exemple Complet : Mise en Forme et Valeurs}
+\begin{lstlisting}
+	Sub ExempleComplet()
+	With Worksheets("Feuil1")
+	' Appliquer des propriétés de mise en forme
+	With .Range("A1:D1").Font
+	.Name = "Verdana"
+	.Bold = True
+	.Size = 14
+	End With
+	
+	' Insérer des valeurs
+	.Range("A1").Value = "Produit"
+	.Range("B1").Value = "Prix"
+	.Range("C1").Value = "Quantité"
+	.Range("D1").Value = "Total"
+	End With
+	End Sub
+\end{lstlisting}
+
+Cet exemple montre comment :
+\begin{itemize}
+	\item Formater les en-têtes (\texttt{A1:D1}).
+	\item Insérer des valeurs dans les cellules \texttt{A1}, \texttt{B1}, \texttt{C1}, et \texttt{D1}.
+\end{itemize}
+
+\section{Conclusion}
+L'instruction \texttt{With ... End With} est une fonctionnalité essentielle pour simplifier, clarifier et optimiser le code VBA. Elle est particulièrement utile dans les projets où de nombreux objets doivent être manipulés de manière répétitive.
+
+
+\chapter{Manipulation de Données}
+
+\section{Calculs et Opérations de Base}
+\begin{lstlisting}
+	Sub test()
+	Dim alpha As Integer, beta As Integer
+	alpha = 6
+	beta = 3
+	
+	Cells(1, 1).Value = alpha + beta
+	MsgBox alpha + beta
+	End Sub
+\end{lstlisting}
+Cet exemple montre comment effectuer des calculs simples et afficher les résultats dans une cellule et une boîte de message.
+\newpage
+\section{Formatage et Boucles}
+\begin{lstlisting}
+	Sub FormatNBoucle()
+	Dim sh As Worksheet, i As Integer
+	Set sh = Worksheets("Feuil1")
+	
+	For i = 2 To 5
+	If Trim(LCase(sh.Range("D" & i).Value)) = "eur" Then
+	sh.Range("E" & i).NumberFormat = "###,###,##0.00 €"
+	ElseIf Trim(UCase(sh.Range("D" & i).Value)) = "GBP" Then
+	sh.Range("E" & i).NumberFormat = "£ ###,###,##0.00"
+	ElseIf Trim(UCase(sh.Range("D" & i).Value)) = "YEN" Then
+	sh.Range("E" & i).NumberFormat = "¥ ###,###,##0.00"
+	Else
+	sh.Range("E" & i).NumberFormat = "###,###,##0.00"
+	End If
+	Next i
+	End Sub
+\end{lstlisting}
+
+Cet exemple montre comment :
+\begin{itemize}
+	\item Utiliser une boucle \texttt{For} pour parcourir plusieurs cellules.
+	\item Formater des valeurs numériques selon une devise (EUR, GBP, YEN).
+	\item Manipuler des chaînes avec les fonctions \texttt{Trim}, \texttt{LCase} et \texttt{UCase}.
+\end{itemize}
+
+\chapter{Fonctions Personnalisées et Boucles}
+
+\section{Fonctions Personnalisées}
+\begin{lstlisting}
+	Function indice(cours As Integer)
+	indice = IIf(cours > 1000, "Croissant", "Décroissant")
+	End Function
+	
+	Function CmNote(note As Integer)
+	CmNote = IIf(note < 8, "Faible", IIf(note < 10, "Moyen", IIf(note < 15, "Bien", "Excellent")))
+	End Function
+\end{lstlisting}
+
+Les fonctions personnalisées permettent de simplifier des calculs ou des classifications répétées. Dans cet exemple :
+\begin{itemize}
+	\item \texttt{indice} renvoie une chaîne selon la valeur d'une variable.
+	\item \texttt{CmNote} évalue une note et renvoie un texte correspondant.
+	
+\end{itemize}
+\newpage
+\section{Procédure avec Boucles}
+\begin{lstlisting}
+	Sub CmtBoucle()
+	Dim sh As Worksheet, i As Integer, DerL As Integer
+	Set sh = Worksheets("Feuil2")
+	DerL = sh.Cells(1, 1).End(xlDown).Row
+	
+	For i = 2 To DerL
+	If sh.Cells(i, 2).Value < 8 Then
+	sh.Cells(i, 7).Value = "Faible"
+	ElseIf sh.Cells(i, 2).Value < 10 Then
+	sh.Cells(i, 7).Value = "Moyen"
+	ElseIf sh.Cells(i, 2).Value < 15 Then
+	sh.Cells(i, 7).Value = "Bien"
+	Else
+	sh.Cells(i, 7).Value = "Excellent"
+	End If
+	Next i
+	End Sub
+\end{lstlisting}
+
+Cette procédure évalue des notes et attribue un commentaire (faible, moyen, bien, excellent) dans une colonne correspondante.
+
+\chapter{Mise en Forme}
+
+\begin{lstlisting}
+	Sub mise_en_forme()
+	With Worksheets(1).Range("ma_plage1").Font
+	.Name = "Arial"
+	.Bold = True
+	.Italic = True
+	End With
+	End Sub
+\end{lstlisting}
+
+Ce code montre comment appliquer des styles (gras, italique, police) à une plage de cellules avec la structure \texttt{With...End With}.
+
+\end{document}	
+	
+	
 \end{document}

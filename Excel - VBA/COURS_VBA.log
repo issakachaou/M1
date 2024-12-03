@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  2 DEC 2024 20:45
+This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  3 DEC 2024 19:19
  restricted system commands enabled.
 **COURS_VBA.tex
 (./COURS_VBA.tex
@@ -717,21 +717,142 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12] (./COURS_VBA.aux)
+[12]
+Chapitre 4.
+[13
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[14]
+Chapitre 5.
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 425.
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 434.
+[15
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[16]
+Overfull \hbox (4.0053pt too wide) in paragraph at lines 522--523
+[]\T1/ptm/b/n/12 Uti-li-sez \T1/lmtt/b/n/12 Do While \T1/ptm/b/n/12 : \T1/ptm/m
+/n/12 lorsque vous de-vez conti-nuer à ité-rer jus-qu'à ce qu'une
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[17]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[18]
+Chapitre 6.
+[19
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[20]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[21]
+Overfull \hbox (1.13579pt too wide) in paragraph at lines 663--664
+[]\T1/ptm/m/n/12 L'ins-truc-tion \T1/lmtt/m/n/12 With ... End With \T1/ptm/m/n/
+12 est une fonc-tion-na-lité es-sen-tielle pour sim-
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[22]
+Chapitre 7.
+[23
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[24
+Missing character: There is no € (U+20AC) in font ec-lmtt10!
+]
+Chapitre 8.
+[25
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[26]
+Chapitre 9.
+[27
+
+] (./COURS_VBA.aux)
 Package rerunfilecheck Info: File `COURS_VBA.out' has not changed.
-(rerunfilecheck)             Checksum: FBD3430CF732B4485CFC5A3E9CAF2C8F;5644.
+(rerunfilecheck)             Checksum: 90839AEC5614EABA236EBD7CDEC7BB78;10253.
 )
 
 Here is how much of LuaTeX's memory you used:
- 16210 strings out of 477352
+ 16629 strings out of 477352
  195333,953878 words of node,token memory allocated
- 2769 words of node memory still in use:
-   4 hlist, 1 vlist, 1 rule, 100 glue, 59 kern, 1 penalty, 2 glyph, 600 attribut
-e, 52 glue_spec, 87 attribute_list, 1 write nodes
-   avail lists: 1:2,2:10373,3:265,4:2892,5:2311,6:87,7:6505,8:56,9:7058,10:12,11
-:322
- 36656 multiletter control sequences out of 65536+600000
- 43 fonts using 3036151 bytes
+ 4673 words of node memory still in use:
+   4 hlist, 1 vlist, 1 rule, 174 glue, 109 kern, 1 penalty, 2 glyph, 1097 attrib
+ute, 52 glue_spec, 158 attribute_list, 1 write nodes
+   avail lists: 1:2,2:9805,3:265,4:2892,5:2280,6:87,7:7321,8:56,9:7058,10:12,11:
+322
+ 36844 multiletter control sequences out of 65536+600000
+ 45 fonts using 3199591 bytes
  72i,11n,73p,462b,1308s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/U
 sers/issak/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/i
@@ -741,9 +862,9 @@ ak/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/issa
 k/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtti10.pfb><C:/Users/issa
 k/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/issak
 /AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on COURS_VBA.pdf (12 pages, 201948 bytes).
+Output written on COURS_VBA.pdf (27 pages, 283217 bytes).
 
-PDF statistics: 320 PDF objects out of 1000 (max. 8388607)
- 165 named destinations out of 1000 (max. 131072)
- 209 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 685 PDF objects out of 1000 (max. 8388607)
+ 396 named destinations out of 1000 (max. 131072)
+ 425 words of extra memory for PDF output out of 10000 (max. 100000000)
 
