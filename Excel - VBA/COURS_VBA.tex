@@ -5,6 +5,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
+\usepackage{graphicx}
 
 % Packages pour le style et la mise en page
 \usepackage{listings}      % Insertion de code
@@ -50,6 +51,51 @@
 }
 
 \begin{document}
+	
+	
+	\begin{titlepage}
+		\centering
+		\begin{center}
+\includegraphics[scale = 0.3]{../../../Pictures/FAC_SEG_rvb}
+					
+		\end{center}
+		\vspace*{2cm}
+		\Huge
+		
+		\textbf{Excel-VBA}
+		\vspace{1.5cm}
+		
+		\Large
+		Cours intégral
+		
+		\vspace{2cm}
+		
+		\textbf{Issa KACHAOU} \\
+		{\normalsize Délégué étudiant du M1 MBFA parcours Ingénierie Immobilière}
+		
+		
+		\vfill
+		
+		\Large
+		
+		\textsc{\textbf{Université Paris Est-Créteil}}	 \\
+		\textbf{Département d'économie} \\
+		\textbf{2024}
+		
+	\end{titlepage}
+	\thispagestyle{empty}
+	\newpage
+	\clearpage
+	\mbox{}
+	\thispagestyle{empty}
+	
+	\tableofcontents
+	
+	\thispagestyle{empty}
+	\newpage
+	\mbox{}
+	\thispagestyle{empty} %Dernière page vide
+	%\backmatter
 	
 \chapter{Les Bases des Macros et des Fonctions}
 	
@@ -762,7 +808,498 @@ Cette procédure évalue des notes et attribue un commentaire (faible, moyen, bi
 
 Ce code montre comment appliquer des styles (gras, italique, police) à une plage de cellules avec la structure \texttt{With...End With}.
 
-\end{document}	
+\chapter{Fonctions, Méthodes et Boucles en VBA}
+
+Dans ce chapitre, nous allons explorer différentes fonctions intégrées dans VBA ainsi que les structures de boucles. Ces notions permettent de rendre les macros plus interactives et puissantes.
+
+\section{Fonctions Intégrées dans VBA}
+
+\subsection{Fonction \texttt{InStr}}
+La fonction \texttt{InStr} retourne la position d'une chaîne de caractères dans une autre chaîne. Elle est très utile pour rechercher un caractère ou une sous-chaîne dans une chaîne donnée.
+
+\begin{lstlisting}[caption=Exemple de fonction InStr]
+	Sub InsTrt()
 	
+	MsgBox InStr(1, "test_insTr", "T", 1)
+	
+	' Le premier argument est la position de départ.
+	' "T" est le caractère recherché.
+	' 1 signifie que la recherche n'est pas sensible à la casse.
+	
+	End Sub
+\end{lstlisting}
+
+\subsection{Fonction \texttt{Chr}}
+La fonction \texttt{Chr} retourne le caractère correspondant à un code ASCII donné. Cela permet de manipuler directement les caractères.
+
+\begin{lstlisting}[caption=Exemple de fonction Chr]
+	Sub ChrT()
+	
+	MsgBox Chr(98) ' Affiche le caractère correspondant au code ASCII 98 (b).
+	
+	End Sub
+\end{lstlisting}
+
+\subsection{Fonctions de gestion des dates}
+
+VBA propose plusieurs fonctions pour manipuler les dates et heures :
+
+\begin{itemize}
+	\item \texttt{Date} : retourne la date actuelle.
+	\item \texttt{Now} : retourne la date et l'heure actuelles.
+	\item \texttt{Time} : retourne uniquement l'heure actuelle.
+	\item \texttt{DateAdd} : ajoute un intervalle de temps à une date donnée.
+\end{itemize}
+
+\begin{lstlisting}[caption=Exemples de fonctions de gestion des dates]
+	Sub dateT()
+	
+	MsgBox Date    ' Affiche la date actuelle.
+	MsgBox Now     ' Affiche la date et l'heure actuelles.
+	MsgBox Time    ' Affiche uniquement l'heure actuelle.
+	
+	End Sub
+	
+	Sub dateAddT()
+	
+	MsgBox DateAdd("m", 1, Date)    ' Ajoute un mois à la date actuelle.
+	MsgBox DateAdd("d", 1, Date)    ' Ajoute un jour à la date actuelle.
+	MsgBox DateAdd("yyyy", 1, Date) ' Ajoute un an à la date actuelle.
+	
+	End Sub
+\end{lstlisting}
+
+\subsection{Fonction \texttt{Round}}
+La fonction \texttt{Round} permet d'arrondir un nombre à un certain nombre de décimales.
+
+\begin{lstlisting}[caption=Exemple de fonction Round]
+	Sub RoundT()
+	
+	Dim x As Double, y As Double
+	
+	x = 3.1458917417
+	y = Round(x, 3) ' Arrondit à 3 décimales.
+	
+	MsgBox y ' Affiche 3.146.
+	
+	End Sub
+\end{lstlisting}
+
+\subsection{La méthode \texttt{Offset} en VBA}
+
+La méthode \texttt{Offset} en VBA est utilisée pour accéder à des cellules en fonction de leur position relative par rapport à une cellule de départ. Elle est particulièrement utile pour parcourir des plages de données dynamiquement, sans avoir besoin de spécifier les coordonnées exactes.
+
+\subsection*{Syntaxe}
+\begin{verbatim}
+	Range.Offset(Ligne, Colonne)
+\end{verbatim}
+
+\begin{itemize}
+	\item \textbf{Ligne} : Nombre de lignes à se déplacer à partir de la cellule de départ.
+	\begin{itemize}
+		\item Valeur positive : déplacement vers le bas.
+		\item Valeur négative : déplacement vers le haut.
+	\end{itemize}
+	\item \textbf{Colonne} : Nombre de colonnes à se déplacer à partir de la cellule de départ.
+	\begin{itemize}
+		\item Valeur positive : déplacement vers la droite.
+		\item Valeur négative : déplacement vers la gauche.
+	\end{itemize}
+\end{itemize}
+\newpage
+\subsection*{Exemples d'utilisation}
+\textbf{Exemple 1 : Accéder à une cellule spécifique}
+\begin{lstlisting}[language=vbscript, caption={Accès à une cellule spécifique}]
+	Sub ExempleOffset()
+	
+	Dim c As Range
+	
+	' Définir la cellule de départ
+	Set c = Range("A1")
+	
+	' Accéder à une cellule 2 lignes en dessous et 1 colonne à droite
+	c.Offset(2, 1).Value = "Bonjour VBA!"
+	
+	End Sub
+\end{lstlisting}
+
+Dans cet exemple, la cellule de départ est \texttt{A1}. La méthode \texttt{Offset(2, 1)} permet de se déplacer de 2 lignes vers le bas et 1 colonne vers la droite, ce qui correspond à la cellule \texttt{B3}.
+
+\textbf{Exemple 2 : Parcourir une plage de cellules}
+\begin{lstlisting}[language=vbscript, caption={Parcourir une plage avec \texttt{Offset}}]
+	Sub ParcoursAvecOffset()
+	
+	Dim c As Range
+	
+	' Début à la cellule A1
+	Set c = Range("A1")
+	
+	' Parcourir 10 lignes vers le bas
+	Do Until c.Row > 10
+	c.Value = "Ligne " & c.Row  ' Insérer un texte dans chaque cellule
+	Set c = c.Offset(1, 0)      ' Passer à la cellule de la ligne suivante
+	Loop
+	
+	End Sub
+\end{lstlisting}
+
+Ici, la boucle commence à \texttt{A1} et parcourt les 10 premières lignes. À chaque itération, la méthode \texttt{Offset(1, 0)} déplace la cellule courante d'une ligne vers le bas.
+
+\subsection{Autres fonctions utiles}
+\begin{itemize}
+	\item \texttt{IsEmpty} : vérifie si une cellule est vide.
+	\item \texttt{IsNumeric} : vérifie si une cellule contient une valeur numérique.
+\end{itemize}
+
+\begin{lstlisting}[caption=Exemple de fonctions IsEmpty et IsNumeric]
+	Sub VideT()
+	
+	MsgBox IsEmpty(Range("A2"))   ' Vrai si la cellule A2 est vide.
+	MsgBox IsNumeric(Range("A2")) ' Vrai si la cellule A2 contient un nombre.
+	
+	End Sub
+\end{lstlisting}
+
+\section{Les Boucles en VBA}
+
+Les boucles permettent d'exécuter des instructions de manière répétée jusqu'à ce qu'une condition soit remplie.
+
+\subsection{Boucle \texttt{While...Wend}}
+Cette boucle exécute les instructions tant qu'une condition donnée est vraie.
+
+\begin{lstlisting}[caption=Exemple de boucle While...Wend]
+	Sub MdP()
+	
+	Dim psw As String
+	
+	While psw <> "12345"
+	psw = InputBox("Mot de passe ?", "Mot de passe")
+	Wend
+	
+	MsgBox "Mot de passe correct !"
+	
+	End Sub
+\end{lstlisting}
+
+\subsection{Boucle \texttt{Do Until...Loop}}
+La boucle \texttt{Do Until} s'exécute jusqu'à ce qu'une condition soit vraie.
+
+\begin{lstlisting}[caption=Exemple de boucle Do Until...Loop]
+	Sub ShortLong()
+	
+	Dim c As Range
+	Dim sh As Worksheet
+	Set sh = Sheets(8)
+	
+	' Début de la boucle
+	Set c = sh.Range("A2")
+	
+	Do Until c.Value = ""
+	If c.Offset(0, 1).Value > 0 Then
+	c.Offset(0, 2).Value = "LONG"
+	c.Offset(0, 2).Font.Color = RGB(0, 255, 0)
+	ElseIf c.Offset(0, 1).Value < 0 Then
+	c.Offset(0, 2).Value = "SHORT"
+	c.Offset(0, 2).Font.Color = RGB(255, 0, 0)
+	Else
+	c.Offset(0, 2).Value = "null"
+	c.Offset(0, 2).Font.Color = RGB(0, 0, 255)
+	End If
+	Set c = c.Offset(1, 0)
+	Loop
+	
+	End Sub
+\end{lstlisting}
+\newpage
+\subsection{Boucle \texttt{For Each...Next}}
+Cette boucle permet de parcourir chaque élément d'une collection.
+
+\begin{lstlisting}[caption=Exemple de boucle For Each...Next]
+	Sub LongShortF()
+	
+	Dim cel As Range, sh As Worksheet, Derlig As Integer
+	
+	Set sh = Sheets(8)
+	Derlig = sh.Range("A1").End(xlDown).Row
+	
+	For Each cel In sh.Range("A2:A" & Derlig)
+	If cel.Offset(0, 1).Value > 0 Then
+	cel.Offset(0, 2).Value = "LONG"
+	cel.Offset(0, 2).Font.Color = RGB(0, 255, 0)
+	ElseIf cel.Offset(0, 1).Value < 0 Then
+	cel.Offset(0, 2).Value = "SHORT"
+	cel.Offset(0, 2).Font.Color = RGB(255, 0, 0)
+	Else
+	cel.Offset(0, 2).Value = "null"
+	cel.Offset(0, 2).Font.Color = RGB(0, 0, 255)
+	End If
+	Next
+	
+	End Sub
+\end{lstlisting}
+
+\chapter{Réinitialisation de données avec les méthodes \texttt{Clear}}
+
+En VBA, les méthodes \texttt{Clear}, \texttt{ClearContents} et \texttt{ClearFormats} sont utilisées pour réinitialiser ou effacer des données dans une plage de cellules. Ces méthodes permettent de supprimer soit les données, soit les formats, ou les deux.
+
+\section{Méthodes principales de \texttt{Clear}}
+
+\begin{itemize}
+	\item \textbf{\texttt{ClearContents}} : Efface uniquement le contenu des cellules, mais conserve les formats (couleurs, bordures, etc.).
+	\item \textbf{\texttt{ClearFormats}} : Efface uniquement les formats des cellules, mais conserve leur contenu.
+	\item \textbf{\texttt{Clear}} : Efface à la fois le contenu et les formats des cellules.
+\end{itemize}
+
+\subsection*{Syntaxe}
+\begin{verbatim}
+	Range.ClearContents
+	Range.ClearFormats
+	Range.Clear
+\end{verbatim}
+
+\section{Exemple pratique}
+
+Voici un exemple d'utilisation combinée de ces méthodes pour réinitialiser une colonne de données dans une feuille de calcul.
+\newpage
+\begin{lstlisting}[language=vbscript, caption={Exemple de réinitialisation avec \texttt{Clear}}]
+	Sub ReInit()
+	
+	Dim DerL As Integer
+	Dim sh As Worksheet
+	
+	' Affecter des valeurs aux variables
+	Set sh = Worksheets(7)
+	DerL = sh.Cells(1, 1).End(xlDown).Row
+	
+	' Réinitialiser les colonnes de C2 à la dernière ligne remplie
+	sh.Range("C2:C" & DerL).ClearContents  ' Efface le contenu
+	sh.Range("C2:C" & DerL).ClearFormats  ' Efface les formats
+	sh.Range("C2:C" & DerL).Clear         ' Efface contenu + formats
+	
+	End Sub
+\end{lstlisting}
+
+\subsection*{Explications détaillées}
+
+\begin{itemize}
+	\item \textbf{Déclaration des variables :}
+	\begin{itemize}
+		\item \texttt{DerL} : Variable qui détermine la dernière ligne non vide de la colonne \texttt{A}.
+		\item \texttt{sh} : Objet représentant la feuille de calcul numéro 7.
+	\end{itemize}
+	\item \textbf{Détection de la dernière ligne remplie :}
+	\begin{lstlisting}[language=vbscript]
+		DerL = sh.Cells(1, 1).End(xlDown).Row
+	\end{lstlisting}
+	Cette ligne utilise \texttt{End(xlDown)} pour détecter la dernière cellule non vide à partir de la cellule \texttt{A1}.
+	\item \textbf{Effacement ciblé :}
+	\begin{itemize}
+		\item \texttt{ClearContents} supprime uniquement les valeurs de la plage \texttt{C2:C\&DerL}.
+		\item \texttt{ClearFormats} supprime uniquement les formats de la plage.
+		\item \texttt{Clear} combine les deux opérations.
+	\end{itemize}
+\end{itemize}
+
+\section{Applications pratiques}
+
+Ces méthodes sont particulièrement utiles pour :
+\begin{itemize}
+	\item Réinitialiser une plage de données avant une nouvelle saisie.
+	\item Supprimer des formats appliqués par erreur tout en conservant les données.
+	\item Nettoyer des feuilles de calcul en préparation d'une nouvelle analyse.
+\end{itemize}
+
+\chapter{Manipulation de texte avec \texttt{Mid}, \texttt{Len}, \texttt{Left}, et \texttt{Right}}
+
+Ce chapitre explore diverses fonctions VBA utilisées pour manipuler des chaînes de caractères, en particulier lorsqu'il s'agit de nettoyer ou de transformer des données textuelles dans une feuille Excel.
+
+\section{Présentation des fonctions}
+
+\begin{itemize}
+	\item \textbf{\texttt{Mid}} : Extrait une sous-chaîne d'une chaîne à partir d'une position donnée.
+	\begin{itemize}
+		\item \texttt{Mid(chaine, départ, longueur)}
+	\end{itemize}
+	\item \textbf{\texttt{Len}} : Renvoie la longueur totale d'une chaîne.
+	\item \textbf{\texttt{Left}} : Extrait les premiers caractères d'une chaîne.
+	\begin{itemize}
+		\item \texttt{Left(chaine, longueur)}
+	\end{itemize}
+	\item \textbf{\texttt{Right}} : Extrait les derniers caractères d'une chaîne.
+	\begin{itemize}
+		\item \texttt{Right(chaine, longueur)}
+	\end{itemize}
+\end{itemize}
+
+\section{Exemple pratique}
+
+L'exemple suivant montre comment utiliser ces fonctions pour modifier des chaînes de texte en fonction de conditions spécifiques, telles que la présence d'un préfixe \texttt{"X\_"} ou une longueur excessive.
+\newpage
+\begin{lstlisting}[language=vbscript, caption={Exemple avec \texttt{Left}, \texttt{Right}, \texttt{Mid}, et \texttt{Len}}]
+	Sub CleanText()
+	
+	Dim cel As Range, sh As Worksheet
+	Set sh = Worksheets(1)
+	
+	For Each cel In sh.Range("A1:A10") ' Parcourt les cellules de la colonne A
+	
+	' Condition 1 : Si la chaîne commence par "X_"
+	If Left(cel.Value, 2) = "X_" Then
+	cel.Value = Right(cel.Value, Len(cel.Value) - 2)
+	End If
+	
+	' Condition 2 : Si la chaîne contient plus de 7 caractères
+	If Len(cel.Value) > 7 Then
+	cel.Value = Right(cel.Value, Len(cel.Value) - 2)
+	End If
+	
+	Next cel
+	
+	End Sub
+\end{lstlisting}
+
+\subsection*{Explications détaillées}
+
+\begin{itemize}
+	\item \textbf{Condition \texttt{If Left(cel.Value, 2) = "X\_"}} :
+	\begin{itemize}
+		\item \texttt{Left(cel.Value, 2)} extrait les deux premiers caractères de la chaîne.
+		\item La condition vérifie si ces caractères correspondent à \texttt{"X\_"}.
+		\item \texttt{Right(cel.Value, Len(cel.Value) - 2)} extrait les caractères restants après suppression des deux premiers.
+	\end{itemize}
+	\item \textbf{Condition \texttt{If Len(cel.Value) > 7}} :
+	\begin{itemize}
+		\item \texttt{Len(cel.Value)} calcule la longueur totale de la chaîne.
+		\item Si cette longueur dépasse 7, les deux premiers caractères sont supprimés à l'aide de \texttt{Right}.
+	\end{itemize}
+\end{itemize}
+
+\section{Applications pratiques}
+
+Ce type de manipulation est utile pour :
+\begin{itemize}
+	\item Nettoyer des données textuelles avec des préfixes indésirables.
+	\item Réduire la longueur des chaînes pour répondre à des contraintes spécifiques.
+	\item Préparer des données textuelles pour des analyses ou transformations ultérieures.
+\end{itemize}
+
+\section{Résumé des fonctions utilisées}
+
+\begin{itemize}
+	\item \texttt{Left} : Extrait les premiers caractères d'une chaîne.
+	\item \texttt{Right} : Extrait les derniers caractères d'une chaîne.
+	\item \texttt{Mid} : Extrait une sous-chaîne d'une chaîne.
+	\item \texttt{Len} : Renvoie la longueur totale d'une chaîne.
+\end{itemize}
+
+Ces fonctions, combinées avec des conditions comme \texttt{If}, permettent une manipulation efficace et ciblée des données textuelles en VBA.
+
+\chapter{Classification des notes d'agence}
+
+Ce chapitre présente une procédure et une fonction VBA permettant de classifier les notes d'une agence en différentes catégories qualitatives en fonction de leurs valeurs.
+
+\section{Utilisation de \texttt{Select Case}}
+
+La procédure suivante, \texttt{SignAg}, utilise une boucle et une structure conditionnelle \texttt{Select Case} pour attribuer une classification textuelle basée sur la note donnée.
+
+\begin{lstlisting}[language=vbscript, caption={Procédure \texttt{SignAg}}]
+	Sub SignAg()
+	
+	' Déclaration de variables
+	Dim NoteAgence As String
+	Dim SignNote As String
+	Dim sh As Worksheet
+	Dim i As Integer, Derligne As Integer
+	
+	' Définir la feuille de calcul
+	Set sh = Sheets(4)
+	
+	' Identifier la dernière ligne de données
+	Derligne = sh.Cells(200, 1).End(xlUp).Row
+	
+	' Boucle à travers chaque ligne pour analyser la note
+	For i = 2 To Derligne
+	
+	NoteAgence = sh.Cells(i, 2).Value ' Lecture de la note dans la colonne B
+	
+	' Classification à l'aide de Select Case
+	Select Case NoteAgence
+	
+	Case "AAA"
+	SignNote = "Prime"
+	
+	Case "AA", "AA-", "AA+"
+	SignNote = "High grade"
+	
+	Case "A", "A-", "A+"
+	SignNote = "Upper medium grade"
+	
+	Case "BBB", "BBB-", "BBB+"
+	SignNote = "Lower medium grade"
+	
+	Case Else
+	SignNote = "Note indisponible"
+	
+	End Select
+	
+	' Stockage de la classification dans la colonne D
+	sh.Cells(i, 4).Value = SignNote
+	
+	Next i
+	
+	End Sub
+\end{lstlisting}
+
+\subsection*{Explications}
+
+\begin{itemize}
+	\item \textbf{\texttt{Select Case}} : Permet de tester plusieurs cas pour une variable donnée.
+	\item \textbf{\texttt{Case Else}} : Définit une action par défaut si aucun des cas spécifiés n'est rempli.
+	\item Les résultats sont enregistrés dans la colonne \texttt{D} de la feuille.
+\end{itemize}
+
+\section{Utilisation de \texttt{IIf} dans une fonction personnalisée}
+
+La fonction \texttt{SignNoteF} est une alternative compacte à la procédure \texttt{SignAg}. Elle utilise des expressions imbriquées \texttt{IIf} pour déterminer la classification.
+
+\begin{lstlisting}[language=vbscript, caption={Fonction \texttt{SignNoteF}}]
+	Function SignNoteF(NoteAg As String)
+	
+	SignNoteF = IIf(NoteAg = "AAA", "Prime", _
+	IIf(NoteAg = "AA" Or NoteAg = "AA+" Or NoteAg = "AA-", "High grade", _
+	IIf(NoteAg = "A" Or NoteAg = "A+" Or NoteAg = "A-", "Upper grade", _
+	IIf(NoteAg = "BBB" Or NoteAg = "BBB+" Or NoteAg = "BBB-", "Lower Medium grade", _
+	"NON DISPONIBLE"))))
+	
+	End Function
+\end{lstlisting}
+
+\subsection*{Explications}
+
+\begin{itemize}
+	\item \textbf{\texttt{IIf}} : Une fonction VBA qui retourne une valeur en fonction d'une condition.
+	\item Les expressions \texttt{IIf} imbriquées remplacent la structure \texttt{Select Case}.
+	\item La fonction retourne la classification correspondant à la note passée en paramètre.
+\end{itemize}
+
+\section{Applications pratiques}
+
+Ces outils sont particulièrement utiles pour :
+\begin{itemize}
+	\item Classifier les notes d'une agence de manière automatique.
+	\item Gérer des jeux de données volumineux.
+	\item Fournir une vue synthétique des données dans une feuille Excel.
+\end{itemize}
+
+\section{Résumé des techniques utilisées}
+
+\begin{itemize}
+	\item \texttt{Select Case} : Simplifie la gestion des conditions multiples.
+	\item \texttt{IIf} : Permet d'imbriquer des conditions dans une fonction unique.
+	\item Boucles \texttt{For ... Next} : Automatisent l'application des règles sur plusieurs lignes.
+\end{itemize}
+
+Ces deux approches offrent des solutions flexibles pour le traitement de données textuelles dans Excel à l'aide de VBA.
+
 	
 \end{document}
