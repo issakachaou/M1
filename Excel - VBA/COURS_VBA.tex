@@ -468,6 +468,35 @@ Cet exemple montre :
 	\item L'affichage de la longueur de la chaîne avec la fonction \texttt{Len}.
 \end{itemize}
 
+\section{Option Explicit}
+La directive \texttt{Option Explicit} est utilisée dans VBA pour obliger la déclaration explicite de toutes les variables avant leur utilisation dans le code. Cela signifie que chaque variable doit être déclarée à l'aide de la commande \texttt{Dim}, \texttt{Private}, ou \texttt{Public}, et une tentative d'utiliser une variable non déclarée entraînera une erreur de compilation.
+
+Cette pratique est recommandée car elle permet de détecter les erreurs liées aux fautes de frappe dans les noms de variables, ce qui peut être difficile à repérer autrement. De plus, l'utilisation de \texttt{Option Explicit} rend le code plus lisible et prévient des comportements inattendus dus à l'utilisation de variables non définies.
+
+\subsection{Exemple}
+
+Voici un exemple de code avec \texttt{Option Explicit} activée :
+
+\begin{lstlisting}[language=VBScript]
+	Option Explicit
+	
+	Sub ExempleOptionExplicit()
+	Dim x As Integer
+	x = 10
+	y = 5  ' Erreur : la variable 'y' n'est pas déclarée
+	End Sub
+\end{lstlisting}
+
+Dans cet exemple, la tentative d'utiliser la variable \texttt{y} sans l'avoir déclarée provoque une erreur de compilation. Si \texttt{Option Explicit} n'était pas activé, \texttt{y} aurait été automatiquement créée comme variable de type \texttt{Variant}, ce qui pourrait entraîner des erreurs difficiles à déboguer plus tard.
+
+\subsection{Avantages}
+\begin{itemize}
+	\item \texttt{Option Explicit} permet de réduire les erreurs liées aux variables mal déclarées.
+	\item Elle rend le code plus propre et plus facile à maintenir.
+	\item Elle aide à identifier rapidement les erreurs lors de la compilation, plutôt que lors de l'exécution du code.
+\end{itemize}
+
+
 \chapter{Les Boucles \texttt{For} et \texttt{While}}
 
 \section{Introduction}
@@ -1301,5 +1330,75 @@ Ces outils sont particulièrement utiles pour :
 
 Ces deux approches offrent des solutions flexibles pour le traitement de données textuelles dans Excel à l'aide de VBA.
 
+
+\chapter{Les Fonctions Importées d'Excel}
+
+\section{Théorie}
+En VBA, il est possible d'utiliser une large gamme de fonctions natives d'Excel pour effectuer des calculs directement dans le code. Ces fonctions sont accessibles via l'objet \texttt{WorksheetFunction}, qui permet d'accéder aux fonctions Excel comme \texttt{VLookup}, \texttt{Sum}, \texttt{CountIf}, et bien d'autres.
+
+Ces fonctions sont très utiles pour effectuer des calculs complexes ou des recherches de données directement dans le code VBA, sans avoir besoin de manipuler manuellement les cellules. Elles sont appelées de la manière suivante :
+\begin{itemize}
+	\item \texttt{WorksheetFunction.FonctionExcel(argument1, argument2, \dots)}
+\end{itemize}
+
+Les fonctions les plus courantes comprennent :
+\begin{itemize}
+	\item \texttt{VLookup} : Recherche une valeur dans une table et retourne une valeur correspondante.
+	\item \texttt{Sum} : Additionne une plage de valeurs.
+	\item \texttt{CountIf} : Compte les cellules qui satisfont à un critère spécifique.
+	\item \texttt{Average} : Calcule la moyenne des valeurs dans une plage.
+	\item \texttt{Max} et \texttt{Min} : Renvoient respectivement la valeur maximale et minimale d'une plage.
+\end{itemize}
+
+\section{Exemples}
+\subsection{Exemple 1 : \texttt{VLookup}}
+La fonction \texttt{VLookup} recherche une valeur dans la première colonne d'une plage et renvoie une valeur correspondante à partir d'une autre colonne.
+\newpage
+\begin{lstlisting}[language=VBScript]
+	data.Cells(i, 5).Value = WorksheetFunction.VLookup(Mid(data.Cells(i, 1).Value, 5, 3), ref.Columns("A:C"), 3, False)
+\end{lstlisting}
+
+Cette ligne recherche une sous-chaîne dans la colonne A de la feuille \texttt{ref}, et retourne la valeur correspondante dans la troisième colonne de la plage \texttt{A:C}.
+
+\subsection{Exemple 2 : \texttt{CountIf}}
+La fonction \texttt{CountIf} compte le nombre de cellules dans une plage qui répondent à un critère spécifique.
+
+\begin{lstlisting}[language=VBScript]
+	data.Cells(i, 8).Value = WorksheetFunction.CountIf(Columns(4), data.Cells(i, 4).Value)
+\end{lstlisting}
+
+Ici, \texttt{CountIf} compte combien de fois la valeur de la cellule \texttt{D(i)} apparaît dans la colonne D.
+
+\subsection{Exemple 3 : \texttt{Sum}}
+La fonction \texttt{Sum} additionne les valeurs dans une plage de cellules.
+
+\begin{lstlisting}[language=VBScript]
+	.Cells(Derligne + 2, 7).Value = WorksheetFunction.Sum(.Range("G2:G" & Derligne))
+\end{lstlisting}
+
+Cette ligne additionne toutes les valeurs de la colonne G de la ligne 2 à la dernière ligne (\texttt{Derligne}), et place le résultat dans la cellule \texttt{G(Derligne + 2)}.
+
+\subsection{Exemple 4 : \texttt{Average}}
+La fonction \texttt{Average} calcule la moyenne des valeurs dans une plage de cellules.
+
+\begin{lstlisting}[language=VBScript]
+	data.Cells(i, 9).Value = WorksheetFunction.Average(data.Range("C2:C" & Derligne))
+\end{lstlisting}
+
+Cette ligne calcule la moyenne des valeurs dans la plage \texttt{C2:C(Derligne)} et place le résultat dans la cellule \texttt{I(i)}.
+
+\subsection{Exemple 5 : \texttt{Max} et \texttt{Min}}
+Les fonctions \texttt{Max} et \texttt{Min} renvoient respectivement la valeur maximale et minimale d'une plage.
+
+\begin{lstlisting}[language=VBScript]
+	data.Cells(i, 10).Value = WorksheetFunction.Max(data.Range("C2:C" & Derligne))
+	data.Cells(i, 11).Value = WorksheetFunction.Min(data.Range("C2:C" & Derligne))
+\end{lstlisting}
+
+Les deux lignes ci-dessus retournent respectivement la valeur maximale et minimale de la plage \texttt{C2:C(Derligne)}.
+
+	
+	
+	
 	
 \end{document}
