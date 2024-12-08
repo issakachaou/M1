@@ -1,91 +1,113 @@
 \babel@toc {french}{}\relax 
-\contentsline {chapter}{\numberline {1}Les Bases des Macros et des Fonctions}{6}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Introduction à VBA}{6}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Structure d'un Code VBA}{6}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Les Macros (Subroutines)}{6}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Les Fonctions}{7}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Différence entre \texttt {Sub} et \texttt {Function}}{8}{subsection.1.2.3}%
-\contentsline {section}{\numberline {1.3}Comment Utiliser les Macros et les Fonctions}{8}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Exécution d'une macro}{8}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Utilisation d'une fonction dans une cellule Excel}{8}{subsection.1.3.2}%
-\contentsline {section}{\numberline {1.4}Résumé}{9}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Conclusion}{9}{section.1.5}%
-\contentsline {chapter}{\numberline {2}Utilisation de la fonction MsgBox en VBA}{10}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Exemple simple de MsgBox}{10}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Personnalisation de MsgBox}{10}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Retour à la ligne dans MsgBox}{11}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Confirmation avec MsgBox}{11}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Exemple avancé : Mise en couleur automatique}{12}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Gestion des erreurs et affichage des informations d'un pays}{13}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Théorie : Les notions abordées}{13}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}La gestion des erreurs}{13}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Les interactions utilisateur}{14}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}La gestion des plages de données}{14}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Exemples pratiques avec explications}{15}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Exemple 1 : Gestion des erreurs avec \texttt {TypeVal}}{15}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Exemple 2 : Affichage des informations d'un pays}{16}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Conclusion}{17}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Introduction aux Variables en VBA}{18}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Déclaration des Variables et Portée}{18}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Variables à Longueur Fixe}{19}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Option Explicit}{19}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Exemple}{20}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Avantages}{20}{subsection.4.3.2}%
-\contentsline {chapter}{\numberline {5}Les Boucles \texttt {For} et \texttt {While}}{21}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{21}{section.5.1}%
-\contentsline {section}{\numberline {5.2}La Boucle \texttt {For}}{21}{section.5.2}%
-\contentsline {section}{\numberline {5.3}La Boucle \texttt {Do While}}{22}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Comparaison entre \texttt {For} et \texttt {Do While}}{23}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Exemple Combiné : \texttt {For} et \texttt {Do While}}{24}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Bonnes Pratiques}{24}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Conclusion}{24}{section.5.7}%
-\contentsline {chapter}{\numberline {6}L'instruction \texttt {With ... End With}}{25}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Introduction}{25}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Syntaxe}{25}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Exemple de Base}{26}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Avantages}{26}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Exemple avec des Objets Multiples}{27}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Bonnes Pratiques}{27}{section.6.6}%
-\contentsline {section}{\numberline {6.7}Exemple Complet : Mise en Forme et Valeurs}{28}{section.6.7}%
-\contentsline {section}{\numberline {6.8}Conclusion}{28}{section.6.8}%
-\contentsline {chapter}{\numberline {7}Manipulation de Données}{29}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Calculs et Opérations de Base}{29}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Formatage et Boucles}{30}{section.7.2}%
-\contentsline {chapter}{\numberline {8}Fonctions Personnalisées et Boucles}{31}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Fonctions Personnalisées}{31}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Procédure avec Boucles}{32}{section.8.2}%
-\contentsline {chapter}{\numberline {9}Mise en Forme}{33}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Fonctions, Méthodes et Boucles en VBA}{34}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Fonctions Intégrées dans VBA}{34}{section.10.1}%
-\contentsline {subsection}{\numberline {10.1.1}Fonction \texttt {InStr}}{34}{subsection.10.1.1}%
-\contentsline {subsection}{\numberline {10.1.2}Fonction \texttt {Chr}}{35}{subsection.10.1.2}%
-\contentsline {subsection}{\numberline {10.1.3}Fonctions de gestion des dates}{35}{subsection.10.1.3}%
-\contentsline {subsection}{\numberline {10.1.4}Fonction \texttt {Round}}{36}{subsection.10.1.4}%
-\contentsline {subsection}{\numberline {10.1.5}La méthode \texttt {Offset} en VBA}{36}{subsection.10.1.5}%
-\contentsline {subsection}{\numberline {10.1.6}Autres fonctions utiles}{38}{subsection.10.1.6}%
-\contentsline {section}{\numberline {10.2}Les Boucles en VBA}{38}{section.10.2}%
-\contentsline {subsection}{\numberline {10.2.1}Boucle \texttt {While...Wend}}{38}{subsection.10.2.1}%
-\contentsline {subsection}{\numberline {10.2.2}Boucle \texttt {Do Until...Loop}}{38}{subsection.10.2.2}%
-\contentsline {subsection}{\numberline {10.2.3}Boucle \texttt {For Each...Next}}{40}{subsection.10.2.3}%
-\contentsline {chapter}{\numberline {11}Réinitialisation de données avec les méthodes \texttt {Clear}}{41}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Méthodes principales de \texttt {Clear}}{41}{section.11.1}%
-\contentsline {section}{\numberline {11.2}Exemple pratique}{41}{section.11.2}%
-\contentsline {section}{\numberline {11.3}Applications pratiques}{43}{section.11.3}%
-\contentsline {chapter}{\numberline {12}Manipulation de texte avec \texttt {Mid}, \texttt {Len}, \texttt {Left}, et \texttt {Right}}{44}{chapter.12}%
-\contentsline {section}{\numberline {12.1}Présentation des fonctions}{44}{section.12.1}%
-\contentsline {section}{\numberline {12.2}Exemple pratique}{44}{section.12.2}%
-\contentsline {section}{\numberline {12.3}Applications pratiques}{45}{section.12.3}%
-\contentsline {section}{\numberline {12.4}Résumé des fonctions utilisées}{46}{section.12.4}%
-\contentsline {chapter}{\numberline {13}Classification des notes d'agence}{47}{chapter.13}%
-\contentsline {section}{\numberline {13.1}Utilisation de \texttt {Select Case}}{47}{section.13.1}%
-\contentsline {section}{\numberline {13.2}Utilisation de \texttt {IIf} dans une fonction personnalisée}{49}{section.13.2}%
-\contentsline {section}{\numberline {13.3}Applications pratiques}{49}{section.13.3}%
-\contentsline {section}{\numberline {13.4}Résumé des techniques utilisées}{49}{section.13.4}%
-\contentsline {chapter}{\numberline {14}Les Fonctions Importées d'Excel}{51}{chapter.14}%
-\contentsline {section}{\numberline {14.1}Théorie}{51}{section.14.1}%
-\contentsline {section}{\numberline {14.2}Exemples}{51}{section.14.2}%
-\contentsline {subsection}{\numberline {14.2.1}Exemple 1 : \texttt {VLookup}}{51}{subsection.14.2.1}%
-\contentsline {subsection}{\numberline {14.2.2}Exemple 2 : \texttt {CountIf}}{52}{subsection.14.2.2}%
-\contentsline {subsection}{\numberline {14.2.3}Exemple 3 : \texttt {Sum}}{52}{subsection.14.2.3}%
-\contentsline {subsection}{\numberline {14.2.4}Exemple 4 : \texttt {Average}}{52}{subsection.14.2.4}%
-\contentsline {subsection}{\numberline {14.2.5}Exemple 5 : \texttt {Max} et \texttt {Min}}{53}{subsection.14.2.5}%
+\contentsline {chapter}{\numberline {1}Les Bases des Macros et des Fonctions}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction à VBA}{7}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Structure d'un Code VBA}{7}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Les Macros (Subroutines)}{7}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Les Fonctions}{8}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Différence entre \texttt {Sub} et \texttt {Function}}{9}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Comment Utiliser les Macros et les Fonctions}{9}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Exécution d'une macro}{9}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Utilisation d'une fonction dans une cellule Excel}{9}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.4}Résumé}{10}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Conclusion}{10}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Utilisation de la fonction MsgBox en VBA}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Exemple simple de MsgBox}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Personnalisation de MsgBox}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Retour à la ligne dans MsgBox}{12}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Confirmation avec MsgBox}{12}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Exemple avancé : Mise en couleur automatique}{13}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Gestion des erreurs et affichage des informations d'un pays}{14}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Théorie : Les notions abordées}{14}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}La gestion des erreurs}{14}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Les interactions utilisateur}{15}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}La gestion des plages de données}{15}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Exemples pratiques avec explications}{16}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Exemple 1 : Gestion des erreurs avec \texttt {TypeVal}}{16}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Exemple 2 : Affichage des informations d'un pays}{17}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Conclusion}{18}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Introduction aux Variables en VBA}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Déclaration des Variables et Portée}{19}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Variables à Longueur Fixe}{20}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Option Explicit}{20}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Exemple}{21}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Avantages}{21}{subsection.4.3.2}%
+\contentsline {chapter}{\numberline {5}Les Boucles \texttt {For} et \texttt {While}}{22}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{22}{section.5.1}%
+\contentsline {section}{\numberline {5.2}La Boucle \texttt {For}}{22}{section.5.2}%
+\contentsline {section}{\numberline {5.3}La Boucle \texttt {Do While}}{23}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Comparaison entre \texttt {For} et \texttt {Do While}}{24}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Exemple Combiné : \texttt {For} et \texttt {Do While}}{25}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Bonnes Pratiques}{25}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Conclusion}{25}{section.5.7}%
+\contentsline {chapter}{\numberline {6}L'instruction \texttt {With ... End With}}{26}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction}{26}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Syntaxe}{26}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Exemple de Base}{27}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Avantages}{27}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Exemple avec des Objets Multiples}{28}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Bonnes Pratiques}{28}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Exemple Complet : Mise en Forme et Valeurs}{29}{section.6.7}%
+\contentsline {section}{\numberline {6.8}Conclusion}{29}{section.6.8}%
+\contentsline {chapter}{\numberline {7}Manipulation de Données}{30}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Calculs et Opérations de Base}{30}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Formatage et Boucles}{31}{section.7.2}%
+\contentsline {chapter}{\numberline {8}Fonctions Personnalisées et Boucles}{32}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Fonctions Personnalisées}{32}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Procédure avec Boucles}{33}{section.8.2}%
+\contentsline {chapter}{\numberline {9}Mise en Forme}{34}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Fonctions, Méthodes et Boucles en VBA}{35}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Fonctions Intégrées dans VBA}{35}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}Fonction \texttt {InStr}}{35}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.1.2}Fonction \texttt {Chr}}{36}{subsection.10.1.2}%
+\contentsline {subsection}{\numberline {10.1.3}Fonctions de gestion des dates}{36}{subsection.10.1.3}%
+\contentsline {subsection}{\numberline {10.1.4}Fonction \texttt {Round}}{37}{subsection.10.1.4}%
+\contentsline {subsection}{\numberline {10.1.5}La méthode \texttt {Offset} en VBA}{37}{subsection.10.1.5}%
+\contentsline {subsection}{\numberline {10.1.6}Autres fonctions utiles}{39}{subsection.10.1.6}%
+\contentsline {section}{\numberline {10.2}Les Boucles en VBA}{39}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}Boucle \texttt {While...Wend}}{39}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}Boucle \texttt {Do Until...Loop}}{39}{subsection.10.2.2}%
+\contentsline {subsection}{\numberline {10.2.3}Boucle \texttt {For Each...Next}}{41}{subsection.10.2.3}%
+\contentsline {chapter}{\numberline {11}Réinitialisation de données avec les méthodes \texttt {Clear}}{42}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Méthodes principales de \texttt {Clear}}{42}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Exemple pratique}{42}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Applications pratiques}{44}{section.11.3}%
+\contentsline {chapter}{\numberline {12}Manipulation de texte avec \texttt {Mid}, \texttt {Len}, \texttt {Left}, et \texttt {Right}}{45}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Présentation des fonctions}{45}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Exemple pratique}{45}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Applications pratiques}{46}{section.12.3}%
+\contentsline {section}{\numberline {12.4}Résumé des fonctions utilisées}{47}{section.12.4}%
+\contentsline {chapter}{\numberline {13}Classification des notes d'agence}{48}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Utilisation de \texttt {Select Case}}{48}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Utilisation de \texttt {IIf} dans une fonction personnalisée}{50}{section.13.2}%
+\contentsline {section}{\numberline {13.3}Applications pratiques}{50}{section.13.3}%
+\contentsline {section}{\numberline {13.4}Résumé des techniques utilisées}{50}{section.13.4}%
+\contentsline {chapter}{\numberline {14}Les Fonctions Importées d'Excel}{52}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Théorie}{52}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Exemples}{52}{section.14.2}%
+\contentsline {subsection}{\numberline {14.2.1}Exemple 1 : \texttt {VLookup}}{52}{subsection.14.2.1}%
+\contentsline {subsection}{\numberline {14.2.2}Exemple 2 : \texttt {CountIf}}{53}{subsection.14.2.2}%
+\contentsline {subsection}{\numberline {14.2.3}Exemple 3 : \texttt {Sum}}{53}{subsection.14.2.3}%
+\contentsline {subsection}{\numberline {14.2.4}Exemple 4 : \texttt {Average}}{53}{subsection.14.2.4}%
+\contentsline {subsection}{\numberline {14.2.5}Exemple 5 : \texttt {Max} et \texttt {Min}}{54}{subsection.14.2.5}%
+\contentsline {chapter}{\numberline {15}Quelques fonctions et boucles en Excel VBA}{55}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Quelques fonctions utiles}{55}{section.15.1}%
+\contentsline {subsection}{\numberline {15.1.1}La fonction \texttt {Mid}}{55}{subsection.15.1.1}%
+\contentsline {subsubsection}{Syntaxe}{55}{section*.17}%
+\contentsline {subsubsection}{Exemple 1 : Extraire un département}{55}{section*.18}%
+\contentsline {subsubsection}{Exemple 2 : Extraction d'une sous-chaîne}{56}{section*.19}%
+\contentsline {subsection}{\numberline {15.1.2}La fonction \texttt {Replace}}{56}{subsection.15.1.2}%
+\contentsline {subsubsection}{Syntaxe}{56}{section*.20}%
+\contentsline {subsubsection}{Exemple : Remplacer des séparateurs}{56}{section*.21}%
+\contentsline {subsection}{\numberline {15.1.3}La fonction \texttt {InStr}}{56}{subsection.15.1.3}%
+\contentsline {subsubsection}{Syntaxe}{56}{section*.22}%
+\contentsline {subsubsection}{Exemple}{57}{section*.23}%
+\contentsline {subsection}{\numberline {15.1.4}La fonction \texttt {DateAdd}}{57}{subsection.15.1.4}%
+\contentsline {subsubsection}{Syntaxe}{57}{section*.24}%
+\contentsline {subsubsection}{Exemple : Ajouter une période à la date actuelle}{57}{section*.25}%
+\contentsline {subsection}{\numberline {15.1.5}Les fonctions \texttt {Match}, \texttt {CountIf} et \texttt {SumIf}}{57}{subsection.15.1.5}%
+\contentsline {subsubsection}{Exemple de \texttt {Match}}{58}{section*.26}%
+\contentsline {subsubsection}{Exemple de \texttt {CountIf}}{58}{section*.27}%
+\contentsline {subsubsection}{Exemple de \texttt {SumIf}}{58}{section*.28}%
+\contentsline {section}{\numberline {15.2}Les boucles en VBA}{58}{section.15.2}%
+\contentsline {subsection}{\numberline {15.2.1}\texttt {While...Wend}}{58}{subsection.15.2.1}%
+\contentsline {subsubsection}{Exemple : Saisie de mot de passe}{58}{section*.29}%

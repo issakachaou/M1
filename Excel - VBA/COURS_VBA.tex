@@ -1397,8 +1397,160 @@ Les fonctions \texttt{Max} et \texttt{Min} renvoient respectivement la valeur ma
 
 Les deux lignes ci-dessus retournent respectivement la valeur maximale et minimale de la plage \texttt{C2:C(Derligne)}.
 
-	
-	
-	
+
+\chapter{Quelques fonctions et boucles en Excel VBA}
+
+\section{Quelques fonctions utiles}
+
+\subsection{La fonction \texttt{Mid}}
+
+\subsubsection{Syntaxe}
+\begin{verbatim}
+	Mid(la chaîne, position de début, nombre de caractères)
+\end{verbatim}
+
+Cette fonction extrait un sous-ensemble de caractères d'une chaîne donnée, en précisant la position de début et le nombre de caractères à extraire.
+
+\subsubsection{Exemple 1 : Extraire un département}
+\begin{lstlisting}[language=VBScript]
+	Sub num_dep()
+	Dim dep As String
+	dep = Mid("2 55 08 14 168 025 12", 9, 2)
+	MsgBox dep
+	End Sub
+\end{lstlisting}
+
+\emph{Sortie :} La boîte de dialogue (\texttt{MsgBox}) affiche \texttt{14}. Cela s'explique par le fait que l'extraction commence à la 9\up{e} position de la chaîne \texttt{"2 55 08 14 168 025 12"} et capture les 2 caractères suivants.
+\newpage
+\subsubsection{Exemple 2 : Extraction d'une sous-chaîne}
+\begin{lstlisting}[language=VBScript]
+	Sub AzeRty()
+	Dim TEX As String
+	TEX = Mid("AZERTY", 2, 3)
+	MsgBox TEX
+	End Sub
+\end{lstlisting}
+
+\emph{Sortie :} La boîte de dialogue affiche \texttt{ZER}. L'extraction commence à la 2\up{e} position de \texttt{"AZERTY"} et s'étend sur 3 caractères.
+
+\subsection{La fonction \texttt{Replace}}
+
+\subsubsection{Syntaxe}
+\begin{verbatim}
+	Replace(chaîne, à remplacer, remplacement)
+\end{verbatim}
+
+Cette fonction remplace une partie d'une chaîne par une autre.
+
+\subsubsection{Exemple : Remplacer des séparateurs}
+\begin{lstlisting}[language=VBScript]
+	Sub num_rep()
+	Dim new_string As String
+	new_string = Replace("2024/11/12", "/", "-")
+	MsgBox new_string
+	End Sub
+\end{lstlisting}
+
+\emph{Sortie :} La boîte de dialogue affiche \texttt{"2024-11-12"}. Tous les caractères \texttt{/} dans la chaîne d'origine sont remplacés par \texttt{-}.
+
+\subsection{La fonction \texttt{InStr}}
+
+\subsubsection{Syntaxe}
+\begin{verbatim}
+	InStr(position, chaîne, recherche, comparaison)
+\end{verbatim}
+
+Cette fonction renvoie la position de la première occurrence d'une sous-chaîne dans une chaîne.
+
+\subsubsection{Exemple}
+\begin{lstlisting}[language=VBScript]
+	Sub instr_test()
+	MsgBox InStr(1, "test_insTr", "T", 0)
+	MsgBox InStr(1, "test_insTr", "T", 1)
+	MsgBox InStr(1, "test_insTr", "X", 1)
+	End Sub
+\end{lstlisting}
+
+\emph{Sorties :} 
+\begin{itemize}
+	\item \texttt{9} : Le \texttt{T} majuscule apparaît à la 9\up{e} position (sensible à la casse, \texttt{vbBinaryCompare}).
+	\item \texttt{1} : La comparaison est insensible à la casse (\texttt{vbTextCompare}), donc \texttt{T} majuscule est traité comme \texttt{t}.
+	\item \texttt{0} : Aucun \texttt{X} trouvé dans la chaîne.
+\end{itemize}
+
+\subsection{La fonction \texttt{DateAdd}}
+
+\subsubsection{Syntaxe}
+\begin{verbatim}
+	DateAdd(partie, unité, date)
+\end{verbatim}
+
+Cette fonction ajoute une unité de temps (année, mois, jour) à une date donnée.
+
+\subsubsection{Exemple : Ajouter une période à la date actuelle}
+\begin{lstlisting}[language=VBScript]
+	Sub date_test()
+	MsgBox DateAdd("YYYY", 1, Date)
+	MsgBox DateAdd("M", 1, Date)
+	MsgBox DateAdd("D", 1, Date)
+	End Sub
+\end{lstlisting}
+
+\emph{Sorties :}
+\begin{itemize}
+	\item Si aujourd'hui est le \texttt{08/12/2024} :
+	\begin{itemize}
+		\item \texttt{"08/12/2025"} : 1 an ajouté.
+		\item \texttt{"08/01/2025"} : 1 mois ajouté.
+		\item \texttt{"09/12/2024"} : 1 jour ajouté.
+	\end{itemize}
+\end{itemize}
+
+\subsection{Les fonctions \texttt{Match}, \texttt{CountIf} et \texttt{SumIf}}
+\newpage
+\subsubsection{Exemple de \texttt{Match}}
+\begin{lstlisting}[language=VBScript]
+	Sub LookVals()
+	MsgBox WorksheetFunction.Match("X", Range("D12:D15"), 0)
+	End Sub
+\end{lstlisting}
+
+\emph{Sortie :} Si \texttt{"X"} est dans \texttt{D13}, la boîte de dialogue affiche \texttt{2}.
+
+\subsubsection{Exemple de \texttt{CountIf}}
+\begin{lstlisting}[language=VBScript]
+	Sub CountVals()
+	MsgBox WorksheetFunction.CountIf(Range("A10:A25"), "X")
+	End Sub
+\end{lstlisting}
+
+\emph{Sortie :} Le nombre de cellules contenant \texttt{"X"} dans la plage \texttt{A10:A25}.
+
+\subsubsection{Exemple de \texttt{SumIf}}
+\begin{lstlisting}[language=VBScript]
+	Sub SumVals()
+	MsgBox WorksheetFunction.SumIf(Range("A10:A15"), "Y", Range("B10:B15"))
+	End Sub
+\end{lstlisting}
+
+\emph{Sortie :} La somme des cellules dans \texttt{B10:B15} où la condition \texttt{"Y"} est remplie.
+
+\section{Les boucles en VBA}
+
+\subsection{\texttt{While...Wend}}
+
+\subsubsection{Exemple : Saisie de mot de passe}
+\begin{lstlisting}[language=VBScript]
+	Sub Mot_de_passe()
+	Dim MDP As String
+	While MDP <> "12345"
+	MDP = InputBox("Saisissez le mot de passe:", "Mot de passe")
+	Wend
+	End Sub
+\end{lstlisting}
+
+\emph{Sortie :} Tant que l'utilisateur n'entre pas \texttt{"12345"}, la demande de saisie persiste.
+
+
 	
 \end{document}
