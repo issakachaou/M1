@@ -1,0 +1,67 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\begin{document}
+	
+	\section*{Tableau récapitulatif des formules}
+	
+	\begin{table}[ht]
+		\centering
+		\begin{tabular}{|p{4cm}|p{8cm}|p{4cm}|}
+			\hline
+			\textbf{Thème} & \textbf{Formule} & \textbf{Détails/Commentaires} \\
+			\hline
+			Rentabilité & 
+			\textit{Rentabilité d’un portefeuille} = poids $\times$ rentabilité individuelle \newline
+			\textit{Rentabilité} = $\Delta$ prix + dividende &
+			--- \\
+			\hline
+			Performance & 
+			\textit{Performance de l’entreprise} = rentabilité par titre $\times$ proportion & --- \\
+			\hline
+			Options (Call/Put) & 
+			Put = $\max(K - S_t)$, Call = $\max(S_t - K)$ &
+			$K$ : prix d'exercice, $S_t$ : prix du sous-jacent à maturité \\
+			\hline
+			Ratio de Sharpe & 
+			$\text{Sharpe Ratio} = \frac{E(r_M) - r_f}{\theta_R}$ &
+			$E(r_M)$ : espérance de rentabilité du marché, $r_f$ : taux sans risque, $\theta_R$ : volatilité \\
+			\hline
+			Actualisation (NPV) & 
+			$V_0 = C \cdot \frac{1}{r_{YTM}} \cdot \left(1 - \frac{1}{(1 + r_{YTM})^n}\right) + \frac{N}{(1 + r_{YTM})^n}$ &
+			$C$ : coupon, $N$ : nominal, $r_{YTM}$ : taux yield to maturity, $n$ : maturité en années \\
+			\hline
+			Black-Scholes (Call/Put) & 
+			$C + K e^{-rT} - P = S_0$ &
+			$S_0$ : prix du sous-jacent aujourd'hui, $r$ : taux sans risque, $T$ : durée \\
+			\hline
+			Rentabilité espérée (CAPM) & 
+			$E(r_i) = r_f + \beta \cdot (E(r_M) - r_f)$ &
+			$\beta$ : sensibilité au marché \\
+			\hline
+			Ratios financiers & 
+			Current ratio = $\frac{\text{Actifs circulants}}{\text{Passifs circulants}}$ \newline
+			Quick ratio = $\frac{\text{Cash + Créances}}{\text{Passifs circulants}}$ \newline
+			Cash ratio = $\frac{\text{Cash}}{\text{Passifs circulants}}$ &
+			--- \\
+			\hline
+			Besoin en fonds de roulement & 
+			$BFR = \text{Actif circulant} - \text{Passif circulant}$ &
+			BFR négatif = bonne gestion, BFR positif = tension \\
+			\hline
+			Valorisation d’un projet (NPV) & 
+			$NPV = -I_0 + f \cdot \frac{1}{r} \cdot \left(1 - \frac{1}{(1 + r)^N}\right)$ &
+			$f$ : flux net, $r$ : taux (ex. WACC), $I_0$ : investissement initial \\
+			\hline
+			Valorisation d'une obligation & 
+			$V_0 = C \cdot \frac{1}{r_{YTM}} \cdot \left(1 - \frac{1}{(1 + r_{YTM})^n}\right) + \frac{N}{(1 + r_{YTM})^n}$ &
+			$C$ : coupon annuel, $N$ : nominal, $r_{YTM}$ : taux actuariel, $n$ : maturité en années \\
+			\hline
+		\end{tabular}
+		\caption{Résumé des formules financières}
+	\end{table}
+	
+\end{document}
