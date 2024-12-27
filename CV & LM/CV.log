@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  26 DEC 2024 16:53
+This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  27 DEC 2024 16:18
  restricted system commands enabled.
 **CV.tex
 (./CV.tex
@@ -1764,8 +1764,8 @@ Here is how much of LuaTeX's memory you used:
    30 hlist, 3 vlist, 13 rule, 15 disc, 2 local_par, 2 math, 72 glue, 14 kern, 7
  penalty, 158 glyph, 530 attribute, 100 glue_spec, 77 attribute_list, 2 write, 2
  pdf_start_link, 2 pdf_end_link, 2 pdf_action, 14 pdf_colorstack nodes
-   avail lists: 1:2,2:7420,3:510,4:273,5:288,6:244,7:6432,8:29,9:2158,10:11,11:4
-98
+   avail lists: 1:2,2:7420,3:510,4:273,5:290,6:244,7:6453,8:29,9:2158,10:11,11:5
+00
  61157 multiletter control sequences out of 65536+600000
  91 fonts using 18244967 bytes
  129i,14n,116p,998b,1119s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1778,7 +1778,7 @@ type/public/fontawesome5/fontawesome5free-solid-900.otf><//?/c:/users/issak/appd
 ata/local/programs/miktex/fonts/opentype/public/libertine/linlibertine_ri.otf></
 /?/c:/users/issak/appdata/local/programs/miktex/fonts/opentype/public/libertine/
 linlibertine_r.otf>
-Output written on CV.pdf (2 pages, 46340 bytes).
+Output written on CV.pdf (2 pages, 46692 bytes).
 
 PDF statistics: 86 PDF objects out of 1000 (max. 8388607)
  8 named destinations out of 1000 (max. 131072)
