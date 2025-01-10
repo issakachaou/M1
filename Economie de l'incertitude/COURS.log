@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  3 DEC 2024 18:59
+This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  8 JAN 2025 22:18
  restricted system commands enabled.
 **COURS.tex
 (./COURS.tex
@@ -1261,7 +1261,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 [3
 
 ]
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-09 225833.png, id=596, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-09-09 225833.png, id=600, 
 585.68813pt x 239.39438pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-09 225833.png Grap
 hic file (type png)
@@ -1286,7 +1286,7 @@ Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 <../../../Pictures/Screenshots/Capture d'écran 2024-09-09 225833.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-10 001051.png, id=602, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-09-10 001051.png, id=606, 
 574.39594pt x 237.88875pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-10 001051.png Grap
 hic file (type png)
@@ -1354,7 +1354,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [10]
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-23 161629.png, id=631, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-09-23 161629.png, id=635, 
 459.96844pt x 142.28156pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-23 161629.png Grap
 hic file (type png)
@@ -1381,7 +1381,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [12]
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-23 183537.png, id=642, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-09-23 183537.png, id=646, 
 674.52pt x 249.18094pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-23 183537.png Grap
 hic file (type png)
@@ -1477,7 +1477,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [19]
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-25 213135.png, id=672, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-09-25 213135.png, id=676, 
 560.0925pt x 210.03468pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-25 213135.png Grap
 hic file (type png)
@@ -1485,7 +1485,7 @@ hic file (type png)
 Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2024-09
 -25 213135.png  used on input line 752.
 (luatex.def)             Requested size: 224.03302pt x 84.01237pt.
-<../../../Pictures/Screenshots/Capture d'écran 2024-09-29 214207.png, id=673, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-09-29 214207.png, id=677, 
 623.32875pt x 172.39406pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-09-29 214207.png Grap
 hic file (type png)
@@ -1609,7 +1609,7 @@ Chapitre 3.
 [31
 
 ]
-<../../../Pictures/Screenshots/Capture d'écran 2024-10-14 225055.png, id=728, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-10-14 225055.png, id=732, 
 578.91281pt x 313.9228pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-14 225055.png Grap
 hic file (type png)
@@ -1665,7 +1665,7 @@ Missing character: There is no € (U+20AC) in font ptmr8t!
 Missing character: There is no € (U+20AC) in font ptmr8t!
 Missing character: There is no € (U+20AC) in font ptmr8t!
 ]
-<../../../Pictures/Screenshots/Capture d'écran 2024-10-23 193755.png, id=742, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-10-23 193755.png, id=746, 
 553.31718pt x 456.95718pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-23 193755.png Grap
 hic file (type png)
@@ -1697,7 +1697,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [36<../../../Pictures/Screenshots/Capture d'écran 2024-10-23 193755.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2024-10-23 202153.png, id=752, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-10-23 202153.png, id=756, 
 815.29594pt x 325.215pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-23 202153.png Grap
 hic file (type png)
@@ -1764,7 +1764,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [40]
-<../../../Pictures/Screenshots/Capture d'écran 2024-10-28 114219.png, id=776, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-10-28 114219.png, id=780, 
 818.30719pt x 372.64218pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-10-28 114219.png Grap
 hic file (type png)
@@ -1937,7 +1937,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [55]
-<../../../Pictures/Screenshots/Capture d'écran 2024-11-05 111602.png, id=847, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-11-05 111602.png, id=851, 
 835.62187pt x 440.39531pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-11-05 111602.png Grap
 hic file (type png)
@@ -1959,7 +1959,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [56<../../../Pictures/Screenshots/Capture d'écran 2024-11-05 111602.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2024-11-05 113137.png, id=853, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-11-05 113137.png, id=857, 
 807.015pt x 436.63126pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-11-05 113137.png Grap
 hic file (type png)
@@ -1977,7 +1977,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [57]
-<../../../Pictures/Screenshots/Capture d'écran 2024-11-05 113245.png, id=859, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-11-05 113245.png, id=863, 
 813.0375pt x 444.15938pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-11-05 113245.png Grap
 hic file (type png)
@@ -2015,7 +2015,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 2343.
 
-<../../../Pictures/Screenshots/Capture d'écran 2024-12-01 161703.png, id=871, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-12-01 161703.png, id=875, 
 740.0147pt x 270.25969pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-12-01 161703.png Grap
 hic file (type png)
@@ -2143,7 +2143,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [68]
-<../../../Pictures/Screenshots/Capture d'écran 2024-12-02 105529.png, id=916, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-12-02 105529.png, id=920, 
 813.79031pt x 321.45094pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-12-02 105529.png Grap
 hic file (type png)
@@ -2209,7 +2209,7 @@ Overfull \hbox (5.72108pt too wide) in paragraph at lines 2761--2762
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 2769.
 
-<../../../Pictures/Screenshots/Capture d'écran 2024-12-03 181344.png, id=936, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-12-03 181344.png, id=940, 
 737.00343pt x 338.01282pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-12-03 181344.png Grap
 hic file (type png)
@@ -2231,7 +2231,7 @@ Missing character: There is no → (U+2192) in font ptmr8t!
 Missing character: There is no 𝑎 (U+1D44E) in font ptmr8t!
 Missing character: There is no ∗ (U+2217) in font ptmr8t!
 ]
-<../../../Pictures/Screenshots/Capture d'écran 2024-12-03 181608.png, id=941, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-12-03 181608.png, id=945, 
 763.35187pt x 430.60875pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-12-03 181608.png Grap
 hic file (type png)
@@ -2258,7 +2258,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [73<../../../Pictures/Screenshots/Capture d'écran 2024-12-03 181344.png><../../
 ../Pictures/Screenshots/Capture d'écran 2024-12-03 181608.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2024-12-03 183932.png, id=948, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-12-03 183932.png, id=952, 
 639.89063pt x 306.39468pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-12-03 183932.png Grap
 hic file (type png)
@@ -2278,7 +2278,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [74
 Missing character: There is no → (U+2192) in font ptmr8t!
 ]
-<../../../Pictures/Screenshots/Capture d'écran 2024-12-03 184202.png, id=953, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-12-03 184202.png, id=957, 
 799.48688pt x 325.215pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-12-03 184202.png Grap
 hic file (type png)
@@ -2305,7 +2305,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [75<../../../Pictures/Screenshots/Capture d'écran 2024-12-03 183932.png><../../
 ../Pictures/Screenshots/Capture d'écran 2024-12-03 184202.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2024-12-03 184828.png, id=960, 
+<../../../Pictures/Screenshots/Capture d'écran 2024-12-03 184828.png, id=964, 
 799.48688pt x 475.7775pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2024-12-03 184828.png Grap
 hic file (type png)
@@ -2352,24 +2352,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.13202pt}.
 
 [78] (./COURS.aux)
-
-Package rerunfilecheck Warning: File `COURS.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `COURS.out':
-(rerunfilecheck)             Before: E9468C8AE6836EB1453F13788E1560D1;27788
-(rerunfilecheck)             After:  FF7F298EEEC39A54F6E57F0E0F01F9BA;27909.
+Package rerunfilecheck Info: File `COURS.out' has not changed.
+(rerunfilecheck)             Checksum: FF7F298EEEC39A54F6E57F0E0F01F9BA;27909.
 )
 
 Here is how much of LuaTeX's memory you used:
- 36587 strings out of 477352
+ 36588 strings out of 477352
  100000,1373583 words of node,token memory allocated
  29333 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 858 glue, 816 kern, 1 penalty, 2 glyph, 8208 attrib
 ute, 59 glue_spec, 1174 attribute_list, 2 write nodes
    avail lists: 2:1267,3:183,4:32,5:198,6:59,7:6390,8:85,9:712,10:8,11:698
- 55823 multiletter control sequences out of 65536+600000
+ 55824 multiletter control sequences out of 65536+600000
  178 fonts using 11538551 bytes
  84i,21n,85p,1081b,480s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Us
@@ -2386,9 +2380,9 @@ issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/is
 sak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/iss
 ak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/issa
 k/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on COURS.pdf (78 pages, 1453951 bytes).
+Output written on COURS.pdf (78 pages, 1454251 bytes).
 
-PDF statistics: 1026 PDF objects out of 1200 (max. 8388607)
+PDF statistics: 1029 PDF objects out of 1200 (max. 8388607)
  247 named destinations out of 1000 (max. 131072)
- 1152 words of extra memory for PDF output out of 10000 (max. 100000000)
+ 1160 words of extra memory for PDF output out of 10000 (max. 100000000)
 
