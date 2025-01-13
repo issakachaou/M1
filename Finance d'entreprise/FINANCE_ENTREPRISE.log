@@ -1,7 +1,7 @@
-This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  13 JAN 2025 22:55
+This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  13 JAN 2025 13:44
  restricted system commands enabled.
-**ANALYSE_FINANCIERE.tex
-(./ANALYSE_FINANCIERE.tex
+**FINANCE_ENTREPRISE.tex
+(./FINANCE_ENTREPRISE.tex
 LaTeX2e <2022-06-01> patch level 5
 Lua module: luaotfload 2022-10-03 3.23 Lua based OpenType font support
 Lua module: lualibs 2022-10-04 2.75 ConTeXt Lua standard libraries.
@@ -647,8 +647,8 @@ tex.def
 File: l3backend-luatex.def 2022-09-28 L3 backend support: PDF output (LuaTeX)
 \l__color_backend_stack_int=\count304
 \l__pdf_internal_box=\box60
-) (./ANALYSE_FINANCIERE.aux)
-\openout1 = ANALYSE_FINANCIERE.aux
+) (./FINANCE_ENTREPRISE.aux)
+\openout1 = FINANCE_ENTREPRISE.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
@@ -705,260 +705,41 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 LaTeX Info: Redefining \degres on input line 27.
 LaTeX Info: Redefining \up on input line 27.
 Package hyperref Info: Link coloring OFF on input line 27.
- (./ANALYSE_FINANCIERE.out) (./ANALYSE_FINANCIERE.out)
+ (./FINANCE_ENTREPRISE.out) (./FINANCE_ENTREPRISE.out)
 \@outlinefile=\write3
 
-\openout3 = ANALYSE_FINANCIERE.out
+\openout3 = FINANCE_ENTREPRISE.out
  [1
 
 
-{C:/Users/issak/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 221742.png, id=131, 
-274.02374pt x 213.04594pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 221742.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 221742.png>
-Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
--08 221742.png  used on input line 65.
-(luatex.def)             Requested size: 137.01154pt x 106.5227pt.
+{C:/Users/issak/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (./FINANCE_E
+NTREPRISE.aux)
 
+Package rerunfilecheck Warning: File `FINANCE_ENTREPRISE.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 68
-.
-
-
-Underfull \hbox (badness 1142) in paragraph at lines 70--71
-\T1/ptm/m/n/12 dans le contexte de l'en-tre-
- []
-
-
-Underfull \hbox (badness 3291) in paragraph at lines 70--71
-\T1/ptm/m/n/12 diaires. Ce pro-ces-sus com-
- []
-
-
-Underfull \hbox (badness 1163) in paragraph at lines 70--71
-\T1/ptm/m/n/12 qui est suivi d'un en-cais-se-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[2<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 221742.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222413.png, id=137, 
-307.1475pt x 209.28188pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222413.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222413.png>
-Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
--08 222413.png  used on input line 76.
-(luatex.def)             Requested size: 153.57336pt x 104.64067pt.
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222859.png, id=138, 
-281.55188pt x 152.06813pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222859.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222859.png>
-Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
--08 222859.png  used on input line 89.
-(luatex.def)             Requested size: 140.77559pt x 76.03387pt.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 92
-.
-
-
-Underfull \hbox (badness 4168) in paragraph at lines 94--95
-[][]\T1/ptm/m/n/12 Le cycle de fi-nan-ce-ment consti-tue la
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[3<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222413.png><../../.
-./Pictures/Screenshots/Capture d'écran 2025-01-08 222859.png>]
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 103.
-
-(C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/ot1ztmcm.fd
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 103.
-
-(C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/omlztmcm.fd
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 103.
-
-(C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/omsztmcm.fd
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 103.
-
-(C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/omxztmcm.fd
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
-03.
-
-(C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[4
-Missing character: There is no œ (U+0153) in font ptmr8t!
-Missing character: There is no œ (U+0153) in font ptmr8t!
-]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-30.
- (C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[5]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[6]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[7]
-Chapitre 1.
-[8
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[9
-Missing character: There is no … (U+2026) in font ptmri8t!
-Missing character: There is no ’ (U+2019) in font ptmri8t!
-Missing character: There is no ’ (U+2019) in font ptmri8t!
-Missing character: There is no ’ (U+2019) in font ptmri8t!
-Missing character: There is no ’ (U+2019) in font ptmri8t!
-Missing character: There is no … (U+2026) in font ptmri8t!
-Missing character: There is no € (U+20AC) in font ptmri8t!
-Missing character: There is no ’ (U+2019) in font ptmri8t!
-Missing character: There is no ’ (U+2019) in font ptmri8t!
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[10
-Missing character: There is no ’ (U+2019) in font ptmr8t!
-Missing character: There is no ’ (U+2019) in font ptmr8t!
-Missing character: There is no ’ (U+2019) in font ptmr8t!
-Missing character: There is no ’ (U+2019) in font ptmr8t!
-Missing character: There is no ’ (U+2019) in font ptmr8t!
-Missing character: There is no ’ (U+2019) in font ptmr8t!
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[11]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[12]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[13] (./ANALYSE_FINANCIERE.aux)
-Package rerunfilecheck Info: File `ANALYSE_FINANCIERE.out' has not changed.
-(rerunfilecheck)             Checksum: B92FD5163AF842DA578F9843FF7D70A7;5071.
+Package rerunfilecheck Info: Checksums for `FINANCE_ENTREPRISE.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  D0B355B6971B8FBF506A4109B2A8522A;105.
 )
 
 Here is how much of LuaTeX's memory you used:
- 14292 strings out of 477352
+ 13915 strings out of 477352
  100000,662416 words of node,token memory allocated
- 3222 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 43 glue, 164 kern, 1 penalty, 2 glyph, 712 attribut
-e, 59 glue_spec, 103 attribute_list, 1 write nodes
-   avail lists: 1:1,2:1148,3:193,4:16,5:161,6:43,7:6683,8:31,9:238,10:14,11:602
- 34663 multiletter control sequences out of 65536+600000
- 94 fonts using 6178207 bytes
- 72i,12n,72p,665b,473s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/U
-sers/issak/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/i
-ssak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/
-Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.p
-fb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pf
-b><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb
-><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb
->
-Output written on ANALYSE_FINANCIERE.pdf (13 pages, 216262 bytes).
+ 633 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 penalty, 2 glyph, 46 attribute, 5
+7 glue_spec, 8 attribute_list, 1 write nodes
+   avail lists: 2:302,3:54,4:2,5:45,6:6,7:205,8:12,9:57,11:18
+ 34483 multiletter control sequences out of 65536+600000
+ 26 fonts using 1610575 bytes
+ 72i,5n,72p,260b,349s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Us
+ers/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Use
+rs/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
+Output written on FINANCE_ENTREPRISE.pdf (1 page, 12686 bytes).
 
-PDF statistics: 228 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 131072)
- 241 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 22 PDF objects out of 1000 (max. 8388607)
+ 4 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
