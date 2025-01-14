@@ -1,0 +1,94 @@
+\documentclass[a4paper, 12pt]{report}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc} 
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amsfonts,amssymb, empheq}
+\usepackage{eurosym}
+\usepackage{booktabs}
+\usepackage{cancel}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\pagestyle{fancy}
+\usepackage{mathptmx} %times aves le mode math
+\fancyhead[R]{Université Paris-Est Créteil}
+\fancyhead[L]{Méthodes de valorisation}
+\usepackage{array,multirow,makecell}
+\setcellgapes{1pt}
+\makegapedcells
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash }b{#1}} %times aves le mode math
+
+\begin{document}
+	
+	\chapter{Les méthodes de valorisation}
+	
+\section{Valorisation par le rendement}
+	\textbf{Principe} : Cette méthode repose sur la relation entre le revenu généré par un actif et le taux de rendement attendu par les investisseurs.  
+	
+	\textbf{Formule} :  
+	\[
+	V = \frac{R}{T}
+	\]  
+	où :  
+	\begin{itemize}
+		\item \(V\) = Valeur de l’actif,
+		\item \(R\) = Revenu net généré par l'actif (loyers nets, bénéfices),
+		\item \(T\) = Taux de rendement attendu ou capitalisation.
+	\end{itemize}
+	
+\subsection{Exemple d'application}
+  
+	Si un bien immobilier génère 20 000 \euro~de loyer net annuel et que le taux de rendement est de 5\%, alors :  
+	\[
+	V = \frac{20\,000}{0.05} = 400\,000
+	\]
+	
+\section{ Valorisation par les flux de trésorerie actualisés (DCF)}
+	\textbf{Principe} : Cette méthode consiste à actualiser les flux de trésorerie futurs que l’actif générera pour obtenir sa valeur actuelle.  
+	
+	\textbf{Formule} :  
+	\[
+	V = \sum_{t=1}^{n} \frac{FCF_t}{(1 + r)^t} + \frac{TV}{(1 + r)^n}
+	\]  
+	où :  
+	\begin{itemize}
+		\item \(FCF_t\) = Flux de trésorerie libre à l’année \(t\),
+		\item \(r\) = Taux d’actualisation,
+		\item \(TV\) = Valeur terminale (valeur résiduelle de l’actif après \(n\) années),
+		\item \(n\) = Durée de projection.
+	\end{itemize}
+	
+\subsection{Exemple d'application}
+
+Utilisée pour valoriser une entreprise ou un projet en calculant les flux futurs actualisés.
+	
+\section{Valorisation par la comparaison}
+
+	\textbf{Principe} : Cette méthode compare l’actif à d’autres actifs similaires ayant été récemment vendus pour déterminer sa valeur.  
+	
+	\textbf{Formules possibles} :  
+	\[
+	\text{Prix/m}^2 = \frac{\text{Prix de vente du bien}}{\text{Surface}}
+	\]  
+	\[
+	\text{PER} = \frac{\text{Prix de l’actif}}{\text{Résultat net}}
+	\]
+	
+	\textbf{Étapes} :  
+	\begin{enumerate}
+		\item Identifier des actifs comparables (même secteur, caractéristiques proches).
+		\item Analyser les ratios observés sur ces transactions (par ex., prix/m\( ^2 \)).
+		\item Appliquer ces ratios à l’actif à valoriser.
+	\end{enumerate}
+	
+\subsection{Exemple d'application} 
+
+	Un appartement similaire de 50 m\( ^2 \) a été vendu à 300 000\euro~ dans le même quartier. Le prix/m\( ^2 \) est donc 6 000\euro, et un appartement de 60 m\( ^2 \) serait valorisé à :  
+	\[
+	6\,000 \times 60 = 360\,000\,€
+	\]
+	
+\end{document}
