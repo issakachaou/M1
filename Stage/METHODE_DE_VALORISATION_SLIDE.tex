@@ -1,0 +1,201 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+\usecolortheme{seahorse}
+%\usecolortheme{owl} %mode noir
+%\setbeamertemplate{background canvas}[vertical shading][bottom=darkgray,top=black] %mode noir carré
+%\usepackage{gradient-text} %mode noir
+\usepackage[french]{babel}
+\usepackage{booktabs}
+\title{Méthodes de valorisation}
+\subtitle{\textit{Application aux biens immobiliers}}
+% il faut excecuter en luatex pour les émoji : config > compilateur
+\author{Issa KACHAOU}
+
+\begin{document}
+	\begin{frame}[plain]
+		\maketitle
+	\end{frame}
+
+\section{Introduction : valorisation d'un actif}	
+	\begin{frame}{\textbf{Introduction : valorisation d'un actif}}
+		\begin{block}{\textbf{Qu'est-ce que la valorisation ?}}{}
+La valorisation d'actif (\textit{Asset valuation}) est le processus qui consiste à déterminer la valeur économique d’un actif, d’une entreprise, ou d’un projet. Elle est essentielle dans divers contextes, tels que l’achat ou la vente d’actifs, la levée de fonds, les fusions et acquisitions, ou encore pour prendre des décisions d’investissement.
+		\end{block}
+
+\begin{block}{}
+En immobilier, cette valorisation prend en compte des facteurs spécifiques tels que la localisation, les loyers attendus, le rendement locatif, ainsi que les conditions économiques et réglementaires.
+\end{block}
+
+
+
+	\end{frame}
+	
+\begin{frame}{\textbf{Valorisation par le rendement}}
+
+
+\begin{block}{\textbf{Principe}}
+	
+La valorisation par le rendement repose sur la capacité d’un actif à générer des revenus, et sur la relation entre ces revenus et le taux de rendement attendu par les investisseurs. Cette méthode est largement utilisée pour évaluer des actifs produisant des revenus réguliers, tels que des biens immobiliers locatifs. Elle permet d’estimer la valeur de l’actif en fonction des bénéfices qu’il peut produire et du niveau de risque perçu par le marché.
+	
+\end{block}
+
+\end{frame}
+
+\begin{frame}{\textbf{Valorisation par le rendement}}
+
+\begin{alertblock}{\textbf{Formule}}
+
+\[ V = \frac{R}{T} \]
+
+Où
+
+\begin{itemize}
+	\item \( V \) représente la valeur de l'actif
+	\item \( R \) représente le revenu net généré par l’actif
+	\item \( T \) représente le taux de rendement attendu ou taux de capitalisation
+\end{itemize}
+
+\end{alertblock}
+
+\end{frame}
+	
+\begin{frame}{\textbf{Valorisation par le rendement}}
+
+\begin{exampleblock}{\textbf{Exemple}}
+
+Un investisseur souhaite évaluer la valeur d’un bien immobilier générant des revenus locatifs annuels nets de 50 000€. Par ailleurs l'investissseur estime un taux de rendement attendu égale à 5\%.
+
+\vspace*{1cm}
+\textit{Quelle est la valeur de ce bien en utilisant la méthode de valorisation par le rendement ?}
+
+\end{exampleblock}
+
+
+\end{frame}
+\begin{frame}{\textbf{Valorisation par le rendement}}
+	
+	\begin{exampleblock}{\textbf{Solution}}
+Soit
+
+\begin{itemize}
+	\item \( R = 50\,000\)
+	\item \( T = 5\%=0.05\)
+\end{itemize}
+
+Méthode de valorisation par le rendement :
+
+\[ V = \frac{R}{T} = \frac{50\,000}{0.05}= 1\,000\,000 \]
+
+La valeur estimée du bien immobilier, en utilisant la méthode par le rendement, est de 1 000 000 €. Cela signifie que, pour un revenu net annuel de 50 000 €, les investisseurs prêts à accepter un rendement de 5 \% évaluent ce bien à un million d’euros.
+		
+	\end{exampleblock}
+	
+	
+\end{frame}
+
+\begin{frame}{\textbf{Valorisation par le rendement}}
+	
+\begin{block}{\textbf{Remarque}}
+
+Le taux de rendement (\( T \)) reflète les conditions de marché et le niveau de risque associé. 
+\end{block}
+
+\begin{block}
+
+Si le marché devient plus compétitif et que les investisseurs acceptent un rendement de 4 \%
+\[ V = \frac{50\,000}{0.04}= 1\,250\,000 \]
+Dans cette situation la valeur du bien augmente.
+
+\end{block}
+\begin{block}
+	
+	Si le taux de rendement attendu passe à 6 \%
+	\[ V = \frac{50\,000}{0.06}= 833\,333,33 \]
+	Dans cette situation la valeur du bien diminue.
+	
+\end{block}
+
+\end{frame}
+
+\begin{frame}{\textbf{Valorisation par les flux de trésorerie actualisés (DCF)}}
+	
+	
+	\begin{block}{\textbf{Principe}}		
+La valorisation par les flux de trésorerie actualisés (DCF, \textit{Discounted Cash Flow}) repose sur l’estimation des flux de trésorerie futurs qu’un actif générera, en les actualisant à leur valeur présente à l’aide d’un taux d’actualisation. Cette méthode permet de tenir compte de la valeur temporelle de l’argent et des risques associés.
+	\end{block}
+	
+\begin{block}
+
+En immobilier cette méthode permet d’évaluer la valeur d’un bien en fonction des revenus futurs qu’il génèrera, tout en prenant en compte la valeur temporelle de l’argent et les risques associés. Cette méthode permet de projeter les loyers nets futurs, d’estimer la valeur résiduelle de l’actif après une période de prévision, et de tenir compte du risque inhérent à l’investissement immobilier via le taux d’actualisation.
+\end{block}
+	
+\end{frame}
+
+\begin{frame}{\textbf{Valorisation par les flux de trésorerie actualisés (DCF)}}
+
+\begin{alertblock}{\textbf{Formule générale de la méthode DCF avec valeur terminale}}
+\[ V = \sum_{t=1}^n \frac{CF_t}{(1+r)^t}+\frac{TV}{(1+r)^n}\]
+Où
+\begin{itemize}
+	\item \( V \) représente la valeur actuelle de l'actif
+	\item \( CF \) représente le flux de trésorerie prévu de l'année \( t \) (\textit{Cash Flow})
+	\item \( r \) représente le taux  d'actualisation
+	\item \( n \) représente le nombre d'années de la période de projection
+	\item \( TV \) représente la valeur résiduelle de l'actif après \( n \) années
+\end{itemize}
+\end{alertblock}
+\end{frame}
+
+\begin{frame}{\textbf{Valorisation par les flux de trésorerie actualisés (DCF)}}
+	
+\begin{alertblock}{\textbf{Calcul de la valeur terminale}}
+La valeur terminale peut être estimée en utilisant le modèle de croissance perpétuelle de Gordon-Shapiro. On a donc :
+\[ TV = \frac{CF_{n+1}}{r-g} \]
+	
+\begin{itemize}
+	\item \( CF_{n+1} \) représente le flux de trésorerie prévu pour l'année suivant la période de projection explicite
+	\item \( g \) représente le taux de croissance perpétuel des flux de trésorerie
+	\item \( r \) représente le taux  d'actualisation
+\end{itemize}
+\end{alertblock}	
+	
+\end{frame}
+
+\begin{frame}{\textbf{Valorisation par les flux de trésorerie actualisés (DCF)}}
+	
+\begin{exampleblock}{\textbf{Exemple}}
+Un investisseur souhaite évaluer un immeuble générant des loyers sur une période de 5 ans, avec une estimation d’une valeur résiduelle en fin de période.
+\end{exampleblock}	
+
+\end{frame}
+
+\begin{frame}{\textbf{Valorisation par les flux de trésorerie actualisés (DCF)}}
+	\begin{exampleblock}{\textbf{Donnée}}
+		\begin{center}
+			\begin{tabular}{@{}cc@{}}
+				\toprule
+				\( t \) & \( CF_t\) (en euro)\\ \midrule
+				1   & 120 000                   \\
+				2   & 125 000                   \\
+				3   & 130 000                   \\
+				4   & 135 000                   \\
+				5   & 140 000                   \\ \bottomrule
+			\end{tabular}
+		\end{center}
+
+\begin{itemize}
+	\item Taux d'actualisation = 6\%
+	\item Taux de croissance des loyers estimé = 3\%
+\end{itemize}
+		
+		
+		
+	\end{exampleblock}
+\end{frame}
+
+
+
+
+
+
+\end{document}
