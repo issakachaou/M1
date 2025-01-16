@@ -1,9 +1,6 @@
 \documentclass{beamer}
 \usetheme{Boadilla}
 \usecolortheme{seahorse}
-%\usecolortheme{owl} %mode noir
-%\setbeamertemplate{background canvas}[vertical shading][bottom=darkgray,top=black] %mode noir carré
-%\usepackage{gradient-text} %mode noir
 \usepackage[french]{babel}
 \usepackage{booktabs}
 \title{Méthodes de valorisation}
@@ -182,17 +179,49 @@ Un investisseur souhaite évaluer un immeuble générant des loyers sur une pér
 				5   & 140 000                   \\ \bottomrule
 			\end{tabular}
 		\end{center}
-
+		
 \begin{itemize}
 	\item Taux d'actualisation = 6\%
 	\item Taux de croissance des loyers estimé = 3\%
+	\item \( CF_6 = 140\,000 \cdot (1+0.03)=144\,200 \)
 \end{itemize}
+		
+\textit{Quelle est la valeur de ce bien en utilisant la méthode de valorisation par flux de trésorerie actualisés ?}
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{\textbf{Valorisation par les flux de trésorerie actualisés (DCF)}}
+
+\begin{exampleblock}{\textbf{Solution}}
+Nous appliquons la formule de la valeur terminale en utilisant le taux de croissance des loyers et le taux d'actualisation
+\[ TV = \frac{CF_6}{r-g}=\frac{144\,200}{0.06-0.03}=\frac{144\,200}{0.03}=4\,806\,666,67\]
+La valeur terminale doit maintenant être actualisée à sa valeur présente à la fin de la période de projection (5 ans), en utilisant le taux d'actualisation de 6\% :
+\[ \frac{4\,806\,666,67}{(1+0.06)^5} = 3\,589\,059,38\]
+
+\end{exampleblock}
+
+
+\end{frame}
+
+
+\begin{frame}{\textbf{Valorisation par les flux de trésorerie actualisés (DCF)}}
+	
+	\begin{exampleblock}{\textbf{Solution}}
+Nous devons maintenant calculer les flux de trésorerie actualisés
+		
+Flux de trésorerie de l'année 1 : 
+\[ \frac{120\,000}{1.06}=113\,207,55\]
+Flux de trésorerie de l'année 2 : 
+\[ \frac{125\,000}{(1.06)^2}=111\,412,52 \]
+Flux de trésorerie de l'année 3 : 
+\[ \frac{130\,000}{(1.06)^3}= \]
 		
 		
 		
 	\end{exampleblock}
-\end{frame}
-
+	
+	
+,\end{frame}
 
 
 
