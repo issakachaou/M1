@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  16 JAN 2025 18:08
+This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  17 JAN 2025 10:31
  restricted system commands enabled.
 **METHODE_DE_VALORISATION_SLIDE.tex
 (./METHODE_DE_VALORISATION_SLIDE.tex
@@ -1243,11 +1243,11 @@ hanged.
 Here is how much of LuaTeX's memory you used:
  25094 strings out of 477352
  100000,953878 words of node,token memory allocated
- 8509 words of node memory still in use:
-   78 hlist, 15 vlist, 9 rule, 35 disc, 8 local_par, 182 glue, 22 kern, 26 penal
-ty, 292 glyph, 1315 attribute, 61 glue_spec, 190 attribute_list, 4 write, 57 pdf
+ 8593 words of node memory still in use:
+   78 hlist, 15 vlist, 9 rule, 35 disc, 8 local_par, 185 glue, 22 kern, 26 penal
+ty, 301 glyph, 1315 attribute, 61 glue_spec, 190 attribute_list, 4 write, 57 pdf
 _literal, 22 pdf_colorstack nodes
-   avail lists: 2:3380,3:609,4:258,5:245,6:57,7:3067,8:73,9:514,10:18,11:284
+   avail lists: 2:3380,3:609,4:258,5:245,6:57,7:3055,8:73,9:514,10:18,11:284
  44934 multiletter control sequences out of 65536+600000
  45 fonts using 3420879 bytes
  128i,15n,115p,505b,750s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1264,7 +1264,7 @@ lic/amsfonts/cm/cmmi10.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmss10.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/issak/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on METHODE_DE_VALORISATION_SLIDE.pdf (14 pages, 217410 bytes).
+Output written on METHODE_DE_VALORISATION_SLIDE.pdf (14 pages, 217399 bytes).
 
 PDF statistics: 689 PDF objects out of 1000 (max. 8388607)
  30 named destinations out of 1000 (max. 131072)
