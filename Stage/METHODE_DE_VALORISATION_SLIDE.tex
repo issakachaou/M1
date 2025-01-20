@@ -15,11 +15,13 @@
 
 \section{Introduction : valorisation d'un actif}	
 	\begin{frame}{\textbf{Introduction : valorisation d'un actif}}
+		\subsection{Qu'est-ce que la valorisation ?}
 		\begin{block}{\textbf{Qu'est-ce que la valorisation ?}}{}
 La valorisation d'actif (\textit{Asset valuation}) est le processus qui consiste à déterminer la valeur économique d’un actif, d’une entreprise, ou d’un projet. Elle est essentielle dans divers contextes, tels que l’achat ou la vente d’actifs, la levée de fonds, les fusions et acquisitions, ou encore pour prendre des décisions d’investissement.
 		\end{block}
 
-\begin{block}{}
+\begin{block}
+
 En immobilier, cette valorisation prend en compte des facteurs spécifiques tels que la localisation, les loyers attendus, le rendement locatif, ainsi que les conditions économiques et réglementaires.
 \end{block}
 
@@ -27,9 +29,79 @@ En immobilier, cette valorisation prend en compte des facteurs spécifiques tels
 
 	\end{frame}
 	
+\section{Valorisation par la comparaison}	
+	
+\begin{frame}{\textbf{Valorisation par la comparaison}}
+	
+\subsection{Principe}	
+\begin{block}{\textbf{Principe}}
+	La valorisation par la comparaison consiste à estimer la valeur d’un bien immobilier en le comparant à des biens similaires récemment vendus ou actuellement en vente sur le marché. Elle repose sur l’analyse de caractéristiques communes telles que la localisation, la superficie, l’état du bien  (neuf, ancien, rénové), etc.
+\end{block}	
+	
+\end{frame}
+
+\subsection{Exemple}
+\begin{frame}{\textbf{Valorisation par la comparaison}}
+\begin{exampleblock}{\textbf{Exemple}}
+Un investisseur souhaite évaluer la valeur d'un bureau de 200 m² situé dans un quartier d'affaires. Pour cela, il analyse les transactions récentes de biens similaires afin d'estimer un prix au mètre carré applicable à son bien.
+
+\begin{center}
+	Données de comparaison (ventes récentes de biens similaires)
+\end{center}
+
+\begin{center}
+	\begin{tabular}{@{}cccc@{}}
+	\toprule
+	Bien comparé & Superficie entre \( \text{m}^2 \) & Prix de vente en € & Prix  \( \text{m}^2 \)/€ \\ \midrule
+	Bureau A     & 180                          & 540\,000               & 3\,000                       \\
+	Bureau B     & 220                          & 660\,000               & 3\,000                       \\
+	Bureau C     & 200                          & 620\,000               & 3\,100                       \\ \bottomrule
+
+\end{tabular}
+\end{center}
+\textit{Quelle est la valeur de ce bien en utilisant la méthode de valorisation par comparaison ?}
+\end{exampleblock}	
+
+\end{frame}
+
+\subsection{Solution}
+\begin{frame}{\textbf{Valorisation par la comparaison}}
+	\begin{exampleblock}{\textbf{Solution}}
+Calcul du prix moyen au \( \text{m}^2 \) :
+
+On calcule la moyenne des prix au mètre carré des biens comparables :
+
+\[ \text{Prix moyen au m}^2=\frac{3000+3100+3000}{3}=3033,33\text{€}/\text{m}^2\]
+En appliquant ce prix moyen au m² à la superficie du bien de 200 \( \text{m}^2 \), on obtient :
+\[ \text{Valeur estimée}=200\times3033,33=606\,666,67\text{€} \]
+	\end{exampleblock}	
+\end{frame}
+
+\begin{frame}{\textbf{Valorisation par la comparaison}}
+
+\begin{exampleblock}{\textbf{Ajustements éventuels}}
+
+Si le bien possède des caractéristiques spécifiques (meilleur emplacement, meilleure qualité, etc.), un ajustement peut être appliqué, par exemple une prime de 5\% pour un emplacement privilégié :
+
+\[ 606 666,67\times1,05=637\,000\text{€} \]
+
+En utilisant la méthode par comparaison, la valeur estimée du bureau est de 606 666,67 €, et après ajustement tenant compte de l’emplacement, elle pourrait atteindre 637 000 €.
+
+\end{exampleblock}	
+	
+
+
+	
+\end{frame}
+
+
+
+	
+	
+\section{Valorisation par le rendement}
 \begin{frame}{\textbf{Valorisation par le rendement}}
 
-
+\subsection{Principe}
 \begin{block}{\textbf{Principe}}
 	
 La valorisation par le rendement repose sur la capacité d’un actif à générer des revenus, et sur la relation entre ces revenus et le taux de rendement attendu par les investisseurs. Cette méthode est largement utilisée pour évaluer des actifs produisant des revenus réguliers, tels que des biens immobiliers locatifs. Elle permet d’estimer la valeur de l’actif en fonction des bénéfices qu’il peut produire et du niveau de risque perçu par le marché.
@@ -39,7 +111,7 @@ La valorisation par le rendement repose sur la capacité d’un actif à génér
 \end{frame}
 
 \begin{frame}{\textbf{Valorisation par le rendement}}
-
+\subsection{Formule}
 \begin{alertblock}{\textbf{Formule}}
 
 \[ V = \frac{R}{T} \]
@@ -57,7 +129,7 @@ Où
 \end{frame}
 	
 \begin{frame}{\textbf{Valorisation par le rendement}}
-
+\subsection{Exemple}
 \begin{exampleblock}{\textbf{Exemple}}
 
 Un investisseur souhaite évaluer la valeur d’un bien immobilier générant des revenus locatifs annuels nets de 50 000€. Par ailleurs l'investissseur estime un taux de rendement attendu égale à 5\%.
@@ -70,7 +142,7 @@ Un investisseur souhaite évaluer la valeur d’un bien immobilier générant de
 
 \end{frame}
 \begin{frame}{\textbf{Valorisation par le rendement}}
-	
+\subsection{Solution}
 	\begin{exampleblock}{\textbf{Solution}}
 Soit
 
@@ -81,7 +153,7 @@ Soit
 
 Méthode de valorisation par le rendement :
 
-\[ V = \frac{R}{T} = \frac{50\,000}{0.05}= 1\,000\,000 \]
+\[ V = \frac{R}{T} = \frac{50\,000}{0.05}= 1\,000\,000\text{€} \]
 
 La valeur estimée du bien immobilier, en utilisant la méthode par le rendement, est de 1 000 000 €. Cela signifie que, pour un revenu net annuel de 50 000 €, les investisseurs prêts à accepter un rendement de 5 \% évaluent ce bien à un million d’euros.
 		
@@ -91,7 +163,7 @@ La valeur estimée du bien immobilier, en utilisant la méthode par le rendement
 \end{frame}
 
 \begin{frame}{\textbf{Valorisation par le rendement}}
-	
+\subsection{Remarque}
 \begin{block}{\textbf{Remarque}}
 
 Le taux de rendement (\( T \)) reflète les conditions de marché et le niveau de risque associé. 
@@ -100,23 +172,23 @@ Le taux de rendement (\( T \)) reflète les conditions de marché et le niveau d
 \begin{block}
 
 Si le marché devient plus compétitif et que les investisseurs acceptent un rendement de 4 \%
-\[ V = \frac{50\,000}{0.04}= 1\,250\,000 \]
+\[ V = \frac{50\,000}{0.04}= 1\,250\,000\text{€} \]
 Dans cette situation la valeur du bien augmente.
 
 \end{block}
 \begin{block}
 	
 	Si le taux de rendement attendu passe à 6 \%
-	\[ V = \frac{50\,000}{0.06}= 833\,333,33 \]
+	\[ V = \frac{50\,000}{0.06}= 833\,333,33\text{€} \]
 	Dans cette situation la valeur du bien diminue.
 	
 \end{block}
 
 \end{frame}
-
+\section{Valorisation par les flux de trésorerie actualisés (DCF)}
 \begin{frame}{\textbf{Valorisation par les flux de trésorerie actualisés (DCF)}}
 	
-	
+\subsection{Principe}	
 	\begin{block}{\textbf{Principe}}		
 La valorisation par les flux de trésorerie actualisés (DCF, \textit{Discounted Cash Flow}) repose sur l’estimation des flux de trésorerie futurs qu’un actif générera, en les actualisant à leur valeur présente à l’aide d’un taux d’actualisation. Cette méthode permet de tenir compte de la valeur temporelle de l’argent et des risques associés.
 	\end{block}
@@ -129,7 +201,7 @@ En immobilier cette méthode permet d’évaluer la valeur d’un bien en foncti
 \end{frame}
 
 \begin{frame}{\textbf{Valorisation par les flux de trésorerie actualisés (DCF)}}
-
+\subsection{Formule générale de la méthode DCF avec valeur terminale}
 \begin{alertblock}{\textbf{Formule générale de la méthode DCF avec valeur terminale}}
 \[ V = \sum_{t=1}^n \frac{CF_t}{(1+r)^t}+\frac{TV}{(1+r)^n}\]
 Où
@@ -144,7 +216,7 @@ Où
 \end{frame}
 
 \begin{frame}{\textbf{Valorisation par les flux de trésorerie actualisés (DCF)}}
-	
+\subsection{Calcul de la valeur terminale}
 \begin{alertblock}{\textbf{Calcul de la valeur terminale}}
 La valeur terminale peut être estimée en utilisant le modèle de croissance perpétuelle de Gordon-Shapiro. On a donc :
 \[ TV = \frac{CF_{n+1}}{r-g} \]
@@ -159,7 +231,7 @@ La valeur terminale peut être estimée en utilisant le modèle de croissance pe
 \end{frame}
 
 \begin{frame}{\textbf{Valorisation par les flux de trésorerie actualisés (DCF)}}
-	
+\subsection{Exemple}
 \begin{exampleblock}{\textbf{Exemple}}
 Un investisseur souhaite évaluer un immeuble générant des loyers sur une période de 5 ans, avec une estimation d’une valeur résiduelle en fin de période.
 \end{exampleblock}	
@@ -191,12 +263,12 @@ Un investisseur souhaite évaluer un immeuble générant des loyers sur une pér
 \end{frame}
 
 \begin{frame}{\textbf{Valorisation par les flux de trésorerie actualisés (DCF)}}
-
+\subsection{Solution}
 \begin{exampleblock}{\textbf{Solution}}
 Nous appliquons la formule de la valeur terminale en utilisant le taux de croissance des loyers et le taux d'actualisation
-\[ TV = \frac{CF_6}{r-g}=\frac{144\,200}{0.06-0.03}=\frac{144\,200}{0.03}=4\,806\,666,67\]
+\[ TV = \frac{CF_6}{r-g}=\frac{144\,200}{0.06-0.03}=\frac{144\,200}{0.03}=4\,806\,666,67\text{€}\]
 La valeur terminale doit maintenant être actualisée à sa valeur présente à la fin de la période de projection (5 ans), en utilisant le taux d'actualisation de 6\% :
-\[ \frac{4\,806\,666,67}{(1+0.06)^5} = 3\,589\,059,38\]
+\[ \frac{4\,806\,666,67}{(1+0.06)^5} = 3\,589\,059,38\text{€}\]
 
 \end{exampleblock}
 
@@ -210,11 +282,11 @@ La valeur terminale doit maintenant être actualisée à sa valeur présente à 
 Nous devons maintenant calculer les flux de trésorerie actualisés
 		
 Flux de trésorerie de l'année 1 : 
-\[ \frac{120\,000}{1.06}=113\,207,55\]
+\[ \frac{120\,000}{1.06}=113\,207,55\text{€}\]
 Flux de trésorerie de l'année 2 : 
-\[ \frac{125\,000}{(1.06)^2}=111\,412,52 \]
+\[ \frac{125\,000}{(1.06)^2}=111\,412,52 \text{€}\]
 Flux de trésorerie de l'année 3 : 
-\[ \frac{130\,000}{(1.06)^3}=109\,898,55 \]
+\[ \frac{130\,000}{(1.06)^3}=109\,898,55 \text{€}\]
 
 	
 		
@@ -228,11 +300,11 @@ Flux de trésorerie de l'année 3 :
 	\begin{exampleblock}{\textbf{Solution}}
 Flux de trésorerie de l'année 4 : 
 		
-\[ \frac{135\,000}{(1.06)^4}=106\,974,45 \]
+\[ \frac{135\,000}{(1.06)^4}=106\,974,45\text{€} \]
 
 Flux de trésorerie de l'année 5 : 
 
-\[ \frac{140\,000}{(1.06)^5}=104\,564,47 \]	
+\[ \frac{140\,000}{(1.06)^5}=104\,564,47\text{€} \]	
 
 	\end{exampleblock}
 
@@ -241,16 +313,72 @@ Flux de trésorerie de l'année 5 :
 \begin{frame}{\textbf{Valorisation par les flux de trésorerie actualisés (DCF)}}
 	
 	\begin{exampleblock}{\textbf{Solution}}
-Pour finir on calcule la somme des flux actualisés : 
-	\[ V = \sum_{t=1}^5 \frac{CF_t}{(1+r)^t}= \frac{CF_1}{(1+r)}+\frac{CF_2}{(1+r)^2}+\frac{CF_3}{(1+r)^3}+\cdots+\frac{CF_6}{(1+r)^6}\]
+Par la suite on calcule la somme des flux actualisés : 
+	\[ \sum_{t=1}^5 \frac{CF_t}{(1+r)^t}= \frac{CF_1}{(1+r)}+\frac{CF_2}{(1+r)^2}+\frac{CF_3}{(1+r)^3}+\cdots+\frac{CF_5}{(1+r)^5}\]
 	\[113207,55+111412,52+109898,55+ 106974,45+104564,47=545\,057,54 \]
-		
+Et pour finir on trouve la valeur finale de l'immeuble :
+\[ V = \sum_{t=1}^n \frac{CF_t}{(1+r)^t}+\frac{TV}{(1+r)^n} =545\,057,54+3\,589\,059,38=4\,134\,116,92€ \]
 	\end{exampleblock}
 	
 
 \end{frame}
 
+\begin{frame}{\textbf{Valorisation par les flux de trésorerie actualisés (DCF)}}
+	
+	\begin{exampleblock}{\textbf{Solution}}
+Avec une croissance des loyers de 3 \% par an, la valeur actuelle de l'immeuble est estimée à 4 134 116,92 €, ce qui reflète à la fois les flux de trésorerie générés au cours des 5 prochaines années et la valeur résiduelle de l'actif après cette période, tenant compte de la croissance continue des loyers.
+	\end{exampleblock}
+	
+	
+\end{frame}
+
+\section{Limites des méthodes de valorisation}
+\begin{frame}{\textbf{Limites des méthodes de valorisation}}
+\subsection{Valorisation par la comparaison}
+\begin{block}{\textbf{Valorisation par la comparaison}}
+La précision de l’évaluation dépend fortement de la qualité et de l’actualité des données comparables disponibles.Chaque bien immobilier possèdant des caractéristiques uniques, ce qui nécessite des ajustements subjectifs pour prendre en compte les différences (état du bien, potentiel de valorisation, contraintes réglementaires). Enfin, les prix du marché peuvent fluctuer rapidement en fonction de la conjoncture économique, ce qui peut rendre les comparaisons moins pertinentes sur le long terme.
+\end{block}
+
+\end{frame}
+
+\begin{frame}{\textbf{Limites des méthodes de valorisation}}
+
+\subsection{Valorisation par le rendement}
+\begin{block}{\textbf{Valorisation par le rendement}}
+Cette méthode repose uniquement sur le revenu net généré et le taux de rendement, sans prendre en compte des facteurs tels que l’évolution du marché, l’inflation, ou les coûts imprévus (entretien, vacance locative). Par ailleurs, une légère variation du taux de rendement peut entraîner des écarts importants dans la valorisation, rendant l'estimation vulnérable aux fluctuations du marché. Cette méthode suppose que les revenus restent constants, ce qui n’est pas réaliste sur le long terme, surtout dans des marchés dynamiques. Pour finir, le taux de rendement utilisé peut ne pas refléter précisément le niveau de risque associé à l’actif, notamment en cas de conditions de marché changeantes.
+\end{block}
+\end{frame}
+
+\begin{frame}{\textbf{Limites des méthodes de valorisation}}
+	
+	\subsection{Valorisation par les flux de trésorerie actualisés (DCF)}
+	\begin{block}{\textbf{Valorisation par les flux de trésorerie actualisés (DCF)}}
+Cette méthode repose sur des prévisions de flux de trésorerie futurs et un taux d’actualisation. Une petite erreur dans ces hypothèses (croissance des loyers, coût du capital) peut entraîner des écarts significatifs dans la valorisation. De plus, la valeur terminale repose souvent sur des hypothèses de croissance perpétuelle qui peuvent être irréalistes, surtout dans un marché immobilier incertain ou cyclique. Pour finir, la méthode par les flux de trésorerie actualisés suppose souvent que les conditions économiques et réglementaires resteront relativement stables, alors qu’en réalité, des crises économiques, des changements législatifs ou des perturbations du marché peuvent survenir.
+	\end{block}
+
+\end{frame}
+
+\section{Conclusion}
+\begin{frame}{\textbf{Conclusion}}
+	\subsection{Valorisation des biens immobiliers}
+	\begin{block}{\textbf{Valorisation des biens immobiliers}}
+La valorisation des biens immobiliers est un processus essentiel pour estimer leur juste valeur en fonction des revenus futurs qu'ils peuvent générer et des attentes des investisseurs.
+	\end{block}
+\subsection{Choix de la méthode de valorisation}
+	\begin{block}{\textbf{Choix de la méthode de valorisation}}
+Chaque méthode présente des avantages et des limites, et leur choix dépend du contexte de l’évaluation, du niveau de risque et des objectifs de l’investisseur. La méthode DCF, bien que plus complexe, offre une vision plus complète en intégrant la valeur temporelle de l’argent et la croissance des flux futurs.
+\end{block}
+	
+\end{frame}
 
 
+\begin{frame}{\textbf{Conclusion}}
+\subsection{Un enjeu clé}
+\begin{block}{\textbf{Un enjeu clé}}
+	Recourir aux méthodes de valorisation représente un enjeu clé pour la prise de décision, qu’il s’agisse d’investissement, de financement ou de gestion de portefeuille immobilier. Une évaluation précise d'un actif immobilier permet d'optimiser les choix stratégiques et de minimiser les risques liés aux fluctuations du marché.	
+\end{block}	
+
+
+\end{frame}
 
 \end{document}

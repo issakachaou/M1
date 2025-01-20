@@ -1,2 +1,27 @@
 \babel@toc {french}{}\relax 
 \beamer@sectionintoc {1}{Introduction : valorisation d'un actif}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Qu'est-ce que la valorisation ?}{2}{0}{1}
+\beamer@sectionintoc {2}{Valorisation par la comparaison}{3}{0}{2}
+\beamer@subsectionintoc {2}{1}{Principe}{3}{0}{2}
+\beamer@subsectionintoc {2}{2}{Exemple}{4}{0}{2}
+\beamer@subsectionintoc {2}{3}{Solution}{5}{0}{2}
+\beamer@sectionintoc {3}{Valorisation par le rendement}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{Principe}{7}{0}{3}
+\beamer@subsectionintoc {3}{2}{Formule}{8}{0}{3}
+\beamer@subsectionintoc {3}{3}{Exemple}{9}{0}{3}
+\beamer@subsectionintoc {3}{4}{Solution}{10}{0}{3}
+\beamer@subsectionintoc {3}{5}{Remarque}{11}{0}{3}
+\beamer@sectionintoc {4}{Valorisation par les flux de trésorerie actualisés (DCF)}{12}{0}{4}
+\beamer@subsectionintoc {4}{1}{Principe}{12}{0}{4}
+\beamer@subsectionintoc {4}{2}{Formule générale de la méthode DCF avec valeur terminale}{13}{0}{4}
+\beamer@subsectionintoc {4}{3}{Calcul de la valeur terminale}{14}{0}{4}
+\beamer@subsectionintoc {4}{4}{Exemple}{15}{0}{4}
+\beamer@subsectionintoc {4}{5}{Solution}{17}{0}{4}
+\beamer@sectionintoc {5}{Limites des méthodes de valorisation}{22}{0}{5}
+\beamer@subsectionintoc {5}{1}{Valorisation par la comparaison}{22}{0}{5}
+\beamer@subsectionintoc {5}{2}{Valorisation par le rendement}{23}{0}{5}
+\beamer@subsectionintoc {5}{3}{Valorisation par les flux de trésorerie actualisés (DCF)}{24}{0}{5}
+\beamer@sectionintoc {6}{Conclusion}{25}{0}{6}
+\beamer@subsectionintoc {6}{1}{Valorisation des biens immobiliers}{25}{0}{6}
+\beamer@subsectionintoc {6}{2}{Choix de la méthode de valorisation}{25}{0}{6}
+\beamer@subsectionintoc {6}{3}{Un enjeu clé}{26}{0}{6}

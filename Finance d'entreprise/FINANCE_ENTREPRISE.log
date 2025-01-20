@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  13 JAN 2025 13:44
+This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  20 JAN 2025 16:29
  restricted system commands enabled.
 **FINANCE_ENTREPRISE.tex
 (./FINANCE_ENTREPRISE.tex
@@ -709,37 +709,128 @@ Package hyperref Info: Link coloring OFF on input line 27.
 \@outlinefile=\write3
 
 \openout3 = FINANCE_ENTREPRISE.out
- [1
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
+7.
+
+(C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
+ 37.
+
+(C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
+ 37.
+
+(C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
+ 37.
+
+(C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
+ 37.
+
+(C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
+7.
+
+(C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
+
+[1
 
 
-{C:/Users/issak/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (./FINANCE_E
-NTREPRISE.aux)
+{C:/Users/issak/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
-Package rerunfilecheck Warning: File `FINANCE_ENTREPRISE.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 
-Package rerunfilecheck Info: Checksums for `FINANCE_ENTREPRISE.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  D0B355B6971B8FBF506A4109B2A8522A;105.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[2
+Missing character: There is no ’ (U+2019) in font ptmb8t!
+Missing character: There is no œ (U+0153) in font ptmr8t!
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[3]
+Chapitre 1.
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-20 150035.png, id=52, 4
+91.58656pt x 121.95563pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-20 150035.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2025-01-20 150035.png>
+Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
+-20 150035.png  used on input line 60.
+(luatex.def)             Requested size: 245.79268pt x 60.97765pt.
+[4
+
+
+Missing character: There is no ’ (U+2019) in font ptmb8t!
+Missing character: There is no ’ (U+2019) in font ptmb8t!
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-20 150035.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[5
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+] (./FINANCE_ENTREPRISE.aux)
+Package rerunfilecheck Info: File `FINANCE_ENTREPRISE.out' has not changed.
+(rerunfilecheck)             Checksum: 483C5C29CDD521FBB64824DF995692D1;1200.
 )
 
 Here is how much of LuaTeX's memory you used:
- 13915 strings out of 477352
+ 14176 strings out of 477352
  100000,662416 words of node,token memory allocated
- 633 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 penalty, 2 glyph, 46 attribute, 5
-7 glue_spec, 8 attribute_list, 1 write nodes
-   avail lists: 2:302,3:54,4:2,5:45,6:6,7:205,8:12,9:57,11:18
- 34483 multiletter control sequences out of 65536+600000
- 26 fonts using 1610575 bytes
- 72i,5n,72p,260b,349s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Us
-ers/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Use
-rs/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on FINANCE_ENTREPRISE.pdf (1 page, 12686 bytes).
+ 1457 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 27 glue, 59 kern, 1 penalty, 2 glyph, 214 attribute
+, 58 glue_spec, 32 attribute_list, 1 write, 1 pdf_action nodes
+   avail lists: 2:980,3:145,4:18,5:176,6:38,7:8955,8:65,9:334,10:14,11:799
+ 34615 multiletter control sequences out of 65536+600000
+ 87 fonts using 5608527 bytes
+ 72i,11n,72p,1567b,351s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Us
+ers/issak/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/i
+ssak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/
+Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.p
+fb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb
+><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb>
+<C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><
+C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on FINANCE_ENTREPRISE.pdf (5 pages, 107050 bytes).
 
-PDF statistics: 22 PDF objects out of 1000 (max. 8388607)
- 4 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 94 PDF objects out of 1000 (max. 8388607)
+ 14 named destinations out of 1000 (max. 131072)
+ 57 words of extra memory for PDF output out of 10000 (max. 100000000)
 
