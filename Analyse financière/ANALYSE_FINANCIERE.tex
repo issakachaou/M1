@@ -9,7 +9,6 @@
 \usepackage{booktabs}
 \usepackage{cancel}
 \usepackage{wrapfig}
-%\usepackage{tikz}
 \usepackage{hyperref}
 \pagestyle{fancy}
 \usepackage{mathptmx} %times aves le mode math
@@ -445,6 +444,111 @@ Les principaux postes du passif permettent de structurer les engagements financi
 
 \section{Les comptes consolidés}
 
+L'analyse de l'actif et du passif est essentielle pour la compréhension des comptes consolidés. Ces comptes ont pour objectif de fournir une image fidèle de la réalité économique et financière d'un ensemble coordonné d'entreprises, c'est-à-dire un groupe. Dans ce contexte, les comptes individuels de la société mère présentent un portefeuille de titres à l'actif, ainsi que des droits sur d'autres entreprises. L'opération de consolidation consiste à substituer à la quote-part des titres de participation tout ou partie des éléments d'actif et de passif de l'entreprise concernée ou contrôlée.
+
+Les entreprises cotées sur un marché européen doivent produire leurs comptes consolidés selon les normes IFRS. La réalisation de comptes consolidés est obligatoire pour les groupes, qu'ils soient cotés ou non, qui réunissent 2 des 3 critères suivants : un total du bilan supérieur à 15 millions d'euros, un chiffre d'affaires dépassant 30 millions d'euros, ou un nombre de salariés supérieur à 250. En ce qui concerne les normes, les groupes peuvent choisir entre les \textit{French GAAP} ou les IFRS. En pratique, seuls les petits groupes non cotés utilisent généralement les \textit{French GAAP}.
+
+\subsection{Principe}
+
+Le principe des comptes consolidés repose sur des méthodes de consolidation qui varient selon la nature des relations entre la société mère et sa filiale. Trois méthodes possibles existent. 
+
+\subsubsection{L'intégration globale (IAS 27)}
+
+La première est l'intégration globale (IAS 27), qui s'applique lorsque la société mère exerce un contrôle exclusif sur la filiale, ce qui est généralement le cas lorsque le groupe possède 50\% des droits de vote de la filiale. Toutefois, le critère utilisé est plus large : selon la norme IFRS, il suffit de disposer de la majorité des sièges au conseil d'administration, tandis que selon la norme française, le groupe peut détenir 40\% des droits de vote de la filiale. Dans ce cas, les comptes de la société mère reprennent l'intégralité des actifs et passifs. De plus, la prise en compte des actionnaires minoritaires se traduit par l'apparition, au passif de la société mère, du poste "intérêts minoritaires ou non-contrôlant".
+
+
+\subsubsection{La mise en équivalence (IAS 28)}
+
+La mise en équivalence (IAS 28) s'applique dans les situations où le groupe exerce une influence notable sur une entreprise, sans pour autant contrôler sa politique financière et opérationnelle. Dans ce cas, la société mère n'est pas déterminante dans les prises de décision. Selon les normes IFRS et la pratique des commissaires aux comptes, un seuil de 20\% des droits de vote est requis pour établir cette influence. La mise en équivalence implique une méthode de réévaluation, où la valeur comptable des titres de participation est substituée par la valeur de la quote-part des capitaux propres de la filiale. Dans les comptes de la société mère, cela se traduit par un poste "Titres mis en équivalence" à l'actif et un écart d'évaluation dans les capitaux propres au passif.
+
+\subsubsection{Intégration proportionnelle}
+
+L'intégration proportionnelle (IFRS 31) concerne les situations de contrôle conjoint, où un groupe partage de manière stable le contrôle avec une ou plusieurs entreprises, comme dans le cas des co-entreprises (joint-venture). Dans ce cadre, les comptes de la société mère reprennent une proportion des actifs et passifs de la filiale. Il est important de noter qu'il n'y a pas d'apparition "d'intérêts minoritaires" dans ce type de consolidation. La norme IFRS recommande également d'appliquer une mise en équivalence dans ces situations.
+
+\subsection{Plan comptable}
+
+Le plan comptable et les méthodes de comptabilisation des comptes consolidés diffèrent de ceux des comptes individuels (i.e., French GAAP), notamment par les noms des items à l'actif et au passif. Un exemple d'item spécifique aux comptes consolidés est l'écart d'acquisition (survaleur, ou \textit{goodwill}) à l'actif consolidé. Cet écart provient de la prise en compte des actifs réévalués de la filiale, et non de la valeur comptable du bilan individuel de la filiale, ainsi que de la prise en compte des plus-values. Il est important de noter que le prix d'acquisition de la filiale par la société mère peut différer de la valeur comptable des fonds propres de la filiale. Cela implique un écart entre les éléments d'actif et de passif qui sont remontés lors de la consolidation.
+
+\subsubsection{Exemple de différence dans les méthodes de valorisation : immobilisations financières}
+
+Un exemple de différence dans les méthodes de valorisation concerne les immobilisations financières. La classification des instruments financiers, initialement régie par IAS 39, a été remplacée par IFRS 9 en 2018. Cette norme définit trois catégories ou modèles de valorisation : 
+
+\begin{itemize}
+	\item Modèle Juste Valeur par Résultat : catégorie par défaut.
+	\item Modèle Coût Amorti : applicable pour un business model de type HTC (held to collect), consistant à percevoir les flux de trésorerie contractuels et à conserver l'instrument financier jusqu'à son échéance.
+	\item Modèle Juste Valeur par OCI (Other Comprehensive Income) : recyclable (i.e., par Fonds Propres), destiné aux business models de type HTCS (held to collect and sell), qui consistent à percevoir les flux contractuels et à vendre l'actif.
+\end{itemize}
+
+Ces classifications influencent significativement la manière dont les immobilisations financières sont présentées dans les comptes consolidés.
+
+\subsection{Représentation shématique pour l'IFRS 9}
+
+\begin{wrapfigure}{r}{0.4\textwidth}
+	\centering
+\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2025-01-21 111643}
+\end{wrapfigure}
+
+\section{Conclusion}
+
+Le bilan comptable reflète la situation patrimoniale de l'entreprise à une date donnée, indiquant les moyens mobilisés par l'entreprise pour réaliser son activité. L'étape suivante consiste à analyser les résultats de l'activité. Pour ce faire, il est essentiel d'exploiter les informations du bilan comptable, ce qui inclut le calcul de ratios financiers. Des retraitements peuvent être nécessaires afin de construire un bilan financier plus adapté pour l'analyste financier, facilitant ainsi une meilleure évaluation de la performance et de la santé financière de l'entreprise.
+
+\chapter{Le compte de résultat et autres documents}
+
+\section*{Introduction}
+
+Les documents de synthèse comprennent le bilan, le compte de résultat et l'annexe. 
+
+\subsection{Compte de résultat}
+Le compte de résultat présente l'ensemble des flux de produits et de charges imputables à l'exercice comptable. Il se divise en plusieurs catégories :
+\begin{itemize}
+	\item Produits et charges d'exploitation
+	\item Produits et charges financières
+	\item Produits et charges exceptionnels
+\end{itemize}
+
+L'objectif final est de calculer le résultat net de l'exercice.
+
+\subsection{Annexe}
+L'annexe fournit des précisions sur les méthodes comptables utilisées ainsi que des informations ponctuelles, permettant une meilleure compréhension des états financiers présentés.
+
+\section{Compte de résultat}
+
+\subsection{Éléments du compte de résultat}
+Le compte de résultat se compose des éléments suivants :
+
+\begin{itemize}
+	\item Opérations d'exploitation
+	\item Opérations financières
+	\item Opérations exceptionnelles
+	\item Participation des salariés
+	\item Impôts sur les bénéfices
+\end{itemize}
+
+Chacun de ces éléments joue un rôle crucial dans le calcul du résultat net de l'exercice, offrant une vue d'ensemble de la performance financière de l'entreprise.
+
+\subsubsection{Opérations d'exploitation}
+
+Les opérations d'exploitation se composent des produits d'exploitation suivants :
+
+1. **Ventes de marchandises** : il s'agit d'une absence de transformations par l'entreprise, englobant des activités purement commerciales telles que les opérations de négoce et de distribution.
+
+2. **Production vendue** : ce terme fait référence au processus de création, fabrication ou transformation. 
+\[
+\text{Chiffre d'affaires net} = \text{ventes de marchandises} + \text{production vendue}
+\]
+
+3. **Production stockée** : cela représente la variation de stock au cours de l'exercice, calculée comme suit :
+\[
+\text{Variation de stock} = \text{stock final} - \text{stock initial}
+\]
+Cela inclut :
+- Stocks de produits intermédiaires et finis
+- Encours de production de biens (biens en cours de fabrication)
+- Encours de production de services (études ou prestations en cours, évaluées au coût de production)
+
+4. **Production immobilisée** : cela concerne les investissements corporels ou incorporels réalisés par l'entreprise pour elle-même.
+
+Ces éléments sont essentiels pour déterminer la performance économique de l'entreprise au cours de l'exercice.
 
 
 
@@ -454,6 +558,14 @@ Les principaux postes du passif permettent de structurer les engagements financi
 
 
 
+
+
+
+\section{Compte consolidé}
+
+
+
+\section{L'annexe et autres documents}
 
 
 

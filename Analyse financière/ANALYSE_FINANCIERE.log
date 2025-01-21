@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  14 JAN 2025 12:21
+This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  21 JAN 2025 12:21
  restricted system commands enabled.
 **ANALYSE_FINANCIERE.tex
 (./ANALYSE_FINANCIERE.tex
@@ -636,7 +636,7 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \c@nlinenum=\count303
 \TeXr@lab=\toks28
 )
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 27
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 26
 .
 
 (C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/t1ptm.fd
@@ -650,32 +650,32 @@ File: l3backend-luatex.def 2022-09-28 L3 backend support: PDF output (LuaTeX)
 ) (./ANALYSE_FINANCIERE.aux)
 \openout1 = ANALYSE_FINANCIERE.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
-7.
+6.
 
 (C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 (C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mk
 ii
@@ -702,9 +702,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \degres on input line 27.
-LaTeX Info: Redefining \up on input line 27.
-Package hyperref Info: Link coloring OFF on input line 27.
+LaTeX Info: Redefining \degres on input line 26.
+LaTeX Info: Redefining \up on input line 26.
+Package hyperref Info: Link coloring OFF on input line 26.
  (./ANALYSE_FINANCIERE.out) (./ANALYSE_FINANCIERE.out)
 \@outlinefile=\write3
 
@@ -713,31 +713,31 @@ Package hyperref Info: Link coloring OFF on input line 27.
 
 
 {C:/Users/issak/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 221742.png, id=155, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 221742.png, id=199, 
 274.02374pt x 213.04594pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 221742.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 221742.png>
 Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
--08 221742.png  used on input line 65.
+-08 221742.png  used on input line 64.
 (luatex.def)             Requested size: 137.01154pt x 106.5227pt.
 
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 68
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 67
 .
 
 
-Underfull \hbox (badness 1142) in paragraph at lines 70--71
+Underfull \hbox (badness 1142) in paragraph at lines 69--70
 \T1/ptm/m/n/12 dans le contexte de l'en-tre-
  []
 
 
-Underfull \hbox (badness 3291) in paragraph at lines 70--71
+Underfull \hbox (badness 3291) in paragraph at lines 69--70
 \T1/ptm/m/n/12 diaires. Ce pro-ces-sus com-
  []
 
 
-Underfull \hbox (badness 1163) in paragraph at lines 70--71
+Underfull \hbox (badness 1163) in paragraph at lines 69--70
 \T1/ptm/m/n/12 qui est suivi d'un en-cais-se-
  []
 
@@ -750,29 +750,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [2<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 221742.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222413.png, id=161, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222413.png, id=205, 
 307.1475pt x 209.28188pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222413.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222413.png>
 Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
--08 222413.png  used on input line 76.
+-08 222413.png  used on input line 75.
 (luatex.def)             Requested size: 153.57336pt x 104.64067pt.
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222859.png, id=162, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222859.png, id=206, 
 281.55188pt x 152.06813pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222859.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222859.png>
 Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
--08 222859.png  used on input line 89.
+-08 222859.png  used on input line 88.
 (luatex.def)             Requested size: 140.77559pt x 76.03387pt.
 
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 92
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 91
 .
 
 
-Underfull \hbox (badness 4168) in paragraph at lines 94--95
+Underfull \hbox (badness 4168) in paragraph at lines 93--94
 [][]\T1/ptm/m/n/12 Le cycle de fi-nan-ce-ment consti-tue la
  []
 
@@ -787,41 +787,41 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [3<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222413.png><../../.
 ./Pictures/Screenshots/Capture d'écran 2025-01-08 222859.png>]
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 103.
+ 102.
 
 (C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 103.
+ 102.
 
 (C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 103.
+ 102.
 
 (C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 103.
+ 102.
 
 (C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
-03.
+02.
 
 (C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 102.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 102.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 102.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -836,7 +836,7 @@ Missing character: There is no œ (U+0153) in font ptmr8t!
 Missing character: There is no œ (U+0153) in font ptmr8t!
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-30.
+29.
  (C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -986,21 +986,78 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[17] (./ANALYSE_FINANCIERE.aux)
+[17]
+Overfull \hbox (4.9642pt too wide) in paragraph at lines 470--471
+\T1/ptm/m/n/12 comptes conso-li-dés est l'écart d'ac-qui-si-tion (sur-va-leur,
+ ou \T1/ptm/m/it/12 good-will\T1/ptm/m/n/12 ) à l'ac-tif conso-
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[18]
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 111643.png, id=301, 
+342.5297pt x 289.08pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 111643.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 111643.png>
+Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
+-21 111643.png  used on input line 488.
+(luatex.def)             Requested size: 171.26442pt x 144.53964pt.
+
+Overfull \hbox (15.2668pt too wide) in paragraph at lines 488--489
+ [][] 
+ []
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 49
+1.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[19<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 111643.png>]
+Chapitre 2.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 501.
+
+[20
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[21] (./ANALYSE_FINANCIERE.aux)
 Package rerunfilecheck Info: File `ANALYSE_FINANCIERE.out' has not changed.
-(rerunfilecheck)             Checksum: FB27DDB7D8B92142A70A62021E1293F8;6092.
+(rerunfilecheck)             Checksum: 34EA560640218ACA420284FEEE97E950;7967.
 )
 
 Here is how much of LuaTeX's memory you used:
- 14316 strings out of 477352
+ 14367 strings out of 477352
  100000,662416 words of node,token memory allocated
- 4460 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 83 glue, 218 kern, 1 penalty, 2 glyph, 1013 attribu
-te, 59 glue_spec, 146 attribute_list, 1 write nodes
-   avail lists: 1:1,2:1539,3:193,4:16,5:136,6:54,7:6733,8:31,9:238,10:14,11:644
- 34669 multiletter control sequences out of 65536+600000
+ 5515 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 115 glue, 269 kern, 1 penalty, 2 glyph, 1265 attrib
+ute, 59 glue_spec, 182 attribute_list, 1 write nodes
+   avail lists: 1:2,2:1251,3:193,4:18,5:96,6:54,7:6701,8:31,9:238,10:16,11:644
+ 34690 multiletter control sequences out of 65536+600000
  94 fonts using 6178207 bytes
- 72i,12n,72p,762b,548s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 72i,12n,72p,848b,548s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/U
 sers/issak/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/i
 ssak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:
@@ -1011,9 +1068,9 @@ lmtt12.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/u
 tmb8a.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
 mr8a.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
 ri8a.pfb>
-Output written on ANALYSE_FINANCIERE.pdf (17 pages, 237438 bytes).
+Output written on ANALYSE_FINANCIERE.pdf (21 pages, 363962 bytes).
 
-PDF statistics: 281 PDF objects out of 1000 (max. 8388607)
- 72 named destinations out of 1000 (max. 131072)
- 289 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 350 PDF objects out of 1000 (max. 8388607)
+ 93 named destinations out of 1000 (max. 131072)
+ 377 words of extra memory for PDF output out of 10000 (max. 100000000)
 

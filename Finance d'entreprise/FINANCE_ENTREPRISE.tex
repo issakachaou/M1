@@ -25,7 +25,7 @@
 %\setcounter{chapter}{1} % pour numéroter le chapitre 
 
 \begin{document}
-	
+
 \chapter*{Introduction}	
 
 \section{Introduction}
@@ -87,7 +87,362 @@ Un projet \( P \) est défini comme une séquence de flux (positifs ou négatifs
 
 \[ VAN_n(P)=f_0+\frac{f_1}{(1+r)}+\frac{f_2}{(1+r)^2}+\frac{f_3}{(1+r)^3}+\cdots+\frac{f_n}{(1+r)^n} = \sum_{t=0}^{n}\frac{f_t}{(1+r)^t}\]
 
-Ce que vaut aujourd’hui la richesse du projet \( P \) réalisé sur \( n \) périodes.
+Ce que vaut aujourd'hui la richesse du projet \( P \) réalisé sur \( n \) périodes.
+
+La valeur nette du projet \( P \) peut également être exprimée dans le futur. Si on l'exprime à la date \( n \) (date de fin des flux associés au projet), on obtient la Valeur Finale Nette de la séquence de flux du projet \( P \). Cette approche permet d'évaluer la rentabilité du projet à l'échéance de ses flux financiers.
+
+\[ VFN_n(P)=f_0(1+r)^n+f_1(1+r)^{n-1}+f_2(1+r)^{n-2} + \cdots + f_n = \sum_{t=0}^{n}f_t(1+r)^{n-t}\]
+
+Du point de vue financier, la règle de décision basée sur la Valeur Actuelle Nette (VAN) est la suivante :
+
+\begin{itemize}
+	\item VAN > 0 : Le projet est rentable. Cela signifie que les revenus actualisés générés par l'investissement dépassent son coût initial. En d'autres termes, le projet crée de la valeur pour l'entreprise ou les investisseurs, et il peut donc être réalisé.
+	\item VAN = 0 : Le projet est à l'équilibre. Les revenus actualisés couvrent exactement les coûts, mais ne génèrent pas de bénéfice net supplémentaire. Dans la plupart des cas, ce type de projet n'est pas retenu, sauf si d'autres critères stratégiques sont en jeu (comme une obligation légale ou un bénéfice indirect).
+	\item VAN < 0 : Le projet n'est pas rentable. Les coûts dépassent les revenus actualisés. Ce type de projet doit être évité car il détruit de la valeur.
+\end{itemize}
+
+
+\subsection{Exercice}
+
+Le Laboratoire AurelGap a développé une nouvelle molécule. Son brevet a une durée de vie de 17 ans. Les bénéfices attendus pour ce nouveau médicament s’élèvent à 2 millions d’euros la première année puis ils augmentent de 5\% par an durant la durée de vie du brevet. Au terme des 17 années, un générique pourra être mis en vente sur le marché et les bénéfices obtenus par le médicament original seront alors nuls.
+
+\begin{enumerate}
+	\item Déterminer la valeur actuelle du médicament si le taux d’actualisation est de 10\%.
+	\item Même question mais pour un taux d’actualisation de 3\%.
+\end{enumerate}
+
+\begin{enumerate}
+	\item Les gains espérés chaque année : 
+	
+\includegraphics[scale=1]{../../../Pictures/Screenshots/Capture d'écran 2025-01-21 195312}
+
+\[ VA = \frac{2}{0,1-0,05}\left( 1 - \frac{1,05}{1,1}^{16}\right)=20,99  \]
+
+\item \[ VA = \frac{2}{0,03-0,05}\left( 1 - \frac{1,05}{1,03}^{16}\right)=36,02  \]
+
+\end{enumerate}
+
+\section{Cas les plus usuels}
+
+\subsection{Les annuités constantes}
+
+Les annuités représentent une séquence de \( n \) flux versés à intervalles réguliers (souvent tous les ans). Lorsque les flux sont égaux, on parle d'annuités constantes. Un exemple courant d'annuités constantes est celui des emprunts à remboursements fixes à taux fixes, où le montant remboursé chaque année reste constant tout au long de la durée de l'emprunt.
+
+\begin{center}
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2025-01-21 200847}
+\end{center}
+
+\[ \text{Valeur actuelle nette de ces annuités =}\sum_{t=0}^{n}\frac{f}{(1+r)^t}
+ \]
+
+Soit la suite dont le \( n \)-ème terme est \( a_n \). La somme de ses \( n \) premiers termes, en partant du même terme (avec \( m > n \)), s'écrit :
+
+\[
+\sum_{i=m}^{n} U_i = U_m \frac{1-q^{n-m+1}}{1-q}
+\]
+
+On peut donc en déduire,
+
+\[ VAN = \sum_{t=1}^{n} \frac{f}{(1+r)^t}=\frac{f}{r}\left( 1-\left( \frac{1}{1+r}\right) ^n\right)   \]
+
+Attention ici : \( U_1=\frac{f}{(1+r)} \)
+
+\subsection{Les rentes perpétuelles constantes}
+
+La rente perpétuelle est un titre de dette qui prévoit le paiement régulier d'intérêts sans le remboursement du capital. Cela signifie qu'il s'agit d'une annuité constante qui, théoriquement, n'aurait pas de fin, semblable à une rente viagère.
+
+\begin{center}
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2025-01-21 211714}
+\end{center}
+
+\[ VAN =\sum_{t=1}^{\infty}\frac{f}{(1+r)^t}= \lim_{n\rightarrow \infty}\frac{f}{r}\left( 1-\left( \frac{1}{1+r}\right) ^n\right)=\frac{f}{r} \]
+
+\subsection{Les annuités croissantes}
+
+L'annuité croissante est une séquence de flux de trésorerie qui augmente de manière constante à chaque période. Ces flux sont versés à intervalles réguliers et le taux de croissance des flux, noté \( g \), reste constant sur toute la durée de l'annuité.
+
+\begin{center}
+\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213129}
+\end{center}
+
+\[ VAN = \frac{f}{1+r}\left( \frac{1+g}{1+r} \right)^t=\frac{f}{r-g}\left( 1-\left( \frac{1+g}{1+r} \right)^n \right) \]
+
+\subsection{Les rentes perpétuelles croissantes}
+
+La rente perpétuelle croissante consiste en des annuités croissantes versées à l'infini.
+
+\begin{center}
+\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213904}
+\end{center}
+
+\[
+VAN = \sum_{t=1}^{n} \frac{f}{(1+g)} \left( \frac{1+g}{1+r} \right)^{t} = \lim_{n \to \infty} \frac{f}{r-g} \left( 1 - \left( \frac{1+g}{1+r} \right)^{n} \right) = \begin{cases} 
+	\frac{f}{r-g} & \text{si } g < r \\ 
+	+\infty & \text{si } g > r 
+\end{cases}
+\]
+
+\section{Valeur d’une séquence de flux}
+
+\subsection{Exemple}
+
+Supposons qu'une entreprise envisage un projet nécessitant un investissement initial de 100 000 €. Les flux de trésorerie générés sur les 3 prochaines années sont estimés à 40 000\euro, 50 000\euro~et 60 000\euro~respectivement. Si le taux d'actualisation (reflétant le coût du capital ou le risque) est de 10\%, la VAN serait calculée ainsi :
+
+\[
+VAN = -100000 + \frac{40000}{(1+0,1)} + \frac{50000}{(1+0,1)^2} + \frac{60000}{(1+0,1)^3} = 22764,84\text{\euro}
+\]
+
+Ainsi, le projet est rentable.
+
+\section{Calculer le taux de rentabilité interne (TRI)}
+
+Jusqu’à présent, on a supposé un taux d’intérêt constant \( r \). À partir de l'échéancier associé à un projet, on peut également calculer le taux de rendement interne (TRI) associé à ce projet.
+
+Le taux de rentabilité interne (TRI) est la valeur du taux d'intérêt tel que la somme actualisée des flux positifs soit égale à la valeur actualisée des flux négatifs, ce qui annule la VAN associée au projet.
+
+Considérons un projet dont le coût initial est \( C \) et qui génère \( n \) flux de revenus égaux d'un montant \( f \). Le TRI associé est la solution de l'équation suivante :
+
+\[
+\frac{f}{TRI} \left( 1 - \left( \frac{1}{1 + TRI} \right)^{n} \right) = C
+\]
+
+Dans le cas d'une rente perpétuelle, la solution est évidente :
+
+\[
+TRI = \frac{f}{C}
+\]
+
+En revanche, dans le cas où \( n \) est fini, l'équation précédente n'a pas de solution analytique évidente. Le calcul du TRI nécessite donc l'aide d'un logiciel (comme la fonction TRI dans Excel ou l'utilisation de Mathematica) ou peut être approximé.
+
+La règle du TRI stipule que tout investissement dont le taux de rentabilité interne dépasse le coût du capital (taux d’actualisation) doit être réalisé. 
+
+Attention : pour comparer la rentabilité entre deux projets, il est toujours recommandé d'utiliser la VAN.
+
+\section{Quel taux d'actualisation retenir ?}
+
+
+Jusqu'à présent, nous avons supposé que le taux d'actualisation est un taux d'intérêt unique et constant \( r \).
+
+Cependant, il existe de multiples taux d'intérêt, qui peuvent varier selon les banques, le type de placements ou les clients.
+
+
+La valeur actuelle nette (VAN) d'un projet est sensible à une petite variation du taux d'actualisation.
+
+
+La question se pose alors : lequel choisir pour le calcul de l’actualisation ?
+
+Le taux d'actualisation à utiliser dépend essentiellement de plusieurs facteurs :
+
+Il est crucial d'ajuster la cotation du taux d'intérêt (annuel) avec l'échéancier du projet (mensuel). Cela peut nécessiter le calcul de taux par période infra-annuelle à partir du Taux Annuel Effectif (TAE) sur la base du taux équivalent (sur un mois ou un semestre).
+
+Soit un TAE de 5\%, le taux équivalent par mois est déterminé par :
+
+\[
+\frac{r_m}{100} = (1,05)^{\frac{1}{12}} - 1
+\]
+
+L'horizon temporel du projet est également un facteur important, comme l'indique la courbe des taux (ou structure par terme des taux d'intérêts), qui montre la différence entre les taux courts et les taux longs.
+
+Enfin, le risque associé au projet doit être pris en compte dans le choix du taux d'actualisation.
+
+\section{VAN  et structure par terme des taux}
+
+Dans le calcul de la valeur actuelle nette (VAN), il est nécessaire de tenir compte de la structure par terme des taux d'intérêt, surtout si la courbe des taux n'est pas plate. En effet, il n’y a aucune raison pour que le taux d’intérêt à échéance d’un an soit égal à celui pratiqué pour une échéance de 2 ans (ou 3 ans, etc.). En général, la courbe des taux est croissante.
+
+Ainsi, la VAN de flux sans risques avec \( k = 1, \ldots, n \) sera :
+
+\[
+VAN_i = \sum_{k=0}^{i} \frac{f_k}{(1 + r_i)^k}
+\]
+
+où \( r_i \) est le taux d’intérêt d’un placement arrivant à échéance dans \( i \) années (périodes).
+
+\section{Valeur d' une séquence de flux}
+
+\subsection{Exercice}
+
+AurelDF envisage la construction d’une centrale nucléaire pour un coût de 120 millions d'\euro~à payer immédiatement. Le bénéfice obtenu devrait être de 20 millions d’\euro~par an pendant les 10 prochaines années. Ensuite, la centrale fermera et le site devra être nettoyé pour répondre aux normes environnementales, puis surveillé. Cette surveillance coûtera 2 millions d’\euro~par an sur une période infinie.
+
+\begin{enumerate}
+	\item En appliquant le critère du TRI, l’entreprise AurelDF a-t-elle intérêt à exploiter cette mine ?
+	\item Si le coût du capital est de 8\% que conclure à partir du calcul de la VAN.
+\end{enumerate} 
+
+\begin{enumerate}
+	\item Les échéanciers :
+	
+\begin{center}
+\includegraphics[scale=0.6]{../../../Pictures/Screenshots/Capture d'écran 2025-01-21 232512}
+\end{center}\[
+	VAN = -120 + \frac{20}{TRI} \left( 1 - \left( \frac{1}{1 + TRI} \right)^{10} \right) - \frac{2}{TRI} = 0
+	\]
+	
+La VAN s'annule pour un TRI de \( 0,02924 \) et un \( TRI_2 = 0,08723 \). Cependant, on ne peut pas conclure uniquement sur la base de ces valeurs.
+	
+Considérons l'équation suivante :
+\item Si \(  r = 0,08 \) la VAN est de \( 2,621791 \) millions d'euros. Cela montre que la VAN n’est pas neutre par rapport au taux d’actualisation.	
+\end{enumerate}
+
+\section{Risque et taux d'intérêt}
+
+Le financement de la grande majorité des projets d'investissement porte un risque, notamment le risque de non-paiement des intérêts ou de non-remboursement du capital. Plus ce risque est élevé, plus le créancier exige un rendement élevé, ce qui entraîne l'existence d'une prime de risque.
+
+Ainsi, le taux d'actualisation choisi pour calculer la valeur actuelle nette (VAN) d'un projet doit tenir compte du risque associé à ce projet.
+
+\section{Le coût du capital}
+
+\subsection{Définition}
+
+Le taux d'actualisation à utiliser pour déterminer la valeur actuelle ou future d'un projet est le coût du capital.
+
+Le coût du capital d’un projet correspond au taux de rentabilité le plus élevé présenté par un placement alternatif de même horizon et de même risque.
+
+L’idée est qu'un investisseur potentiel cherche à évaluer ce que rapporte le projet par rapport à un placement alternatif, ce qui représente le coût d’opportunité. 
+
+Attention : la comparaison n'a de sens que si le placement et le projet sont de même risque et de même terme.
+
+\subsection{Premier aperçu}
+
+Considérons un projet (P) avec les caractéristiques suivantes :
+
+- En \( t = 0 \) : coût = 0
+- En \( t = 1 \) : flux = variable aléatoire \( J \) prenant les valeurs \( J_0 > 0 \) avec probabilité \( \pi \) et \( J_1 > J_0 \) avec probabilité \( 1 - \pi \)
+
+On note \( r_f \) le taux d’intérêt certain (taux d’intérêt appliqué aux placements sans risque).
+
+Si j’actualise au taux \( r_f \), la valeur actuelle (VA) du projet \( P \) est donnée par :
+
+\[
+VA(P) = \frac{E(J)}{1 + r_f} = \frac{\pi J_0 + (1 - \pi) J_1}{1 + r_f}
+\]
+
+Cependant, ce calcul pose un problème, car cela ne correspond pas au projet \( P \). En effet, en \( t = 1 \), on n’obtient pas \( E(J) \) avec certitude, alors que \( r_f \) est le taux d’intérêt au certain.
+
+\subsection{Exercice}
+
+Laurent a le choix entre deux projets, chacun d'eux devant l'occuper à plein temps. Le projet   P1 concerne la création d'une boulangerie. L'investissement initial est de 1000 euros, les bénéfices associés seront de 1100 euros la 1ère année, ils diminueront ensuite de 10\% chaque année. Le projet  P2  concerne la création d’une pizzeria équipée d’un unique four. Il n'est pas possible d'en installer davantage. L'investissement initial est de 1000 euros, les bénéfices associés seront de 400 euros la 1ère année, ils diminueront ensuite de 20\% chaque année du fait de l'usure du four. Le coût du capital est de 12\% pour les deux projets.
+\begin{enumerate}
+	\item Représentez l'échéancier associé à chacun des deux projets.
+	\item Calculez la VAN et le TRI pour chacun des projets. Dans lequel de ces projets Laurent devrait-il investir?
+	\item Laurent se rend compte que le local du pizzeria peut en fait contenir 20 fours avec le même montant d'investissement de 1000 €. L'échelle du projet P2 est donc multipliée par 20. Calculez la VAN et le TRI du projet P2 . Dans lequel de ces projets  Laurent devrait-il investir ? Commentez.
+	\item Suivant vos conseils, Laurent se lance dans le projet  P2. Son fournisseur de fours lui propose un contrat de maintenance dont le coût est de 250 euros par an. La maintenance permet d'éliminer totalement l'usure des fours. On appelle  P2 le projet P2  avec contrat de maintenance. Ecrivez l'échéancier associé à ce nouveau projet. 
+	\item Calculez la VAN et le TRI du projet  P2. Laurent devrait-il accepter le contrat de maintenance ? Commentez.
+	\item Calculez le TRI différentiel associé à la comparaison entre   P2  et P1. Commentez.
+	
+\end{enumerate}
+
+\begin{enumerate}
+	\item Echéancier des projets P1 et P2 
+	
+\begin{center}
+	\includegraphics[scale=0.6]{../../../Pictures/Screenshots/Capture d'écran 2025-01-22 001309}
+\end{center}
+
+\item Pour le projet \( P_1 \), la valeur actuelle nette (VAN) est donnée par :
+
+\[
+VAN_{P_1} = -1000 + \sum_{t=1}^{T} \frac{1100}{0,9} \left( \frac{0,9}{1,12} \right)^{t} = -1000 + \frac{1100}{0,22} \left( 1 - \left( \frac{0,9}{1,12} \right)^{T} \right)
+\]
+
+Lorsque \( T \to \infty \), nous avons :
+
+\[
+VAN_{P_1} = -1000 + \frac{1100}{0,22} = 4000 \text{ euros}
+\]
+
+Pour le taux de rendement interne (TRI) du projet \( P_1 \), nous avons :
+
+\[
+TRI_{P_1} \Rightarrow -1000 + \frac{1100}{TRI_{P_1} + 0,1} = 0 \Rightarrow TRI_{P_1} = 100\%
+\]
+
+Pour le projet \( P_2 \), la VAN est donnée par :
+
+\[
+VAN_{P_2} = -1000 + \sum_{t=1}^{T} \frac{400}{0,8} \left( \frac{0,8}{1,12} \right)^{t} = -1000 + \frac{400}{0,32} \left( 1 - \left( \frac{0,8}{1,12} \right)^{T} \right)
+\]
+
+Lorsque \( T \to \infty \), nous avons :
+
+\[
+VAN_{P_2} = -1000 + \frac{400}{0,32} = 250 \text{ euros}
+\]
+
+Pour le TRI du projet \( P_2 \), nous avons :
+
+\[
+TRI_{P_2} \Rightarrow -1000 + \frac{400}{TRI_{P_2} + 0,2} = 0 \Rightarrow TRI_{P_2} = 20\%
+\]
+
+Il convient donc de choisir \( P_1 \) plutôt que \( P_2 \) selon les critères de la VAN et du TRI.
+
+\item Si à présent, le nombre de fours est multiplié par 20, nous avons, avec le même montant d’investissement :
+
+\[
+VAN_{P_2} = -1000 + \frac{(400 \times 20)}{0,32} = 24000 \text{ euros}
+\]
+
+Pour le TRI du projet \( P_2 \), nous avons :
+
+\[
+TRI_{P_2} \Rightarrow -1000 + \frac{(400 \times 20)}{TRI_{P_2} + 0,2} = 0 \Rightarrow TRI_{P_2} = 798\%
+\]
+
+Ainsi, Laurent doit choisir à présent le projet \( P_2 \).
+
+\item Projet \( P_2 \) et contrat de maintenance
+
+\begin{center}
+	
+	\includegraphics[scale=0.6]{../../../Pictures/Screenshots/Capture d'écran 2025-01-22 002943}
+
+\end{center}
+
+Lorsque \( T \to \infty \), la valeur actuelle nette (VAN) pour le projet \( P_2 \) est donnée par :
+
+\[
+VAN_{P_2} = -1000 + \frac{7750}{0,32} = 63583,33 \text{ euros}
+\]
+
+Pour le taux de rendement interne (TRI) du projet \( P_2 \) avec maintenance, nous avons :
+
+\[
+TRI_{P_2} \Rightarrow -1000 + \frac{7750}{TRI_{P_2} + 0,2} = 0 \Rightarrow TRI_{P_2} = 775\%
+\]
+
+Laurent devrait accepter le contrat de maintenance car la VAN est plus élevée. Toutefois, le TRI est plus faible que celui du projet \( P_2 \) sans maintenance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

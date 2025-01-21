@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  20 JAN 2025 16:29
+This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  22 JAN 2025 00:35
  restricted system commands enabled.
 **FINANCE_ENTREPRISE.tex
 (./FINANCE_ENTREPRISE.tex
@@ -778,8 +778,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3]
 Chapitre 1.
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-20 150035.png, id=52, 4
-91.58656pt x 121.95563pt>
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-20 150035.png, id=124, 
+491.58656pt x 121.95563pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-20 150035.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2025-01-20 150035.png>
@@ -803,34 +803,242 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [5
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
+]
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 195312.png, id=138, 
+320.69812pt x 58.71938pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 195312.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 195312.png>
+Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
+-21 195312.png  used on input line 117.
+(luatex.def)             Requested size: 320.69733pt x 58.71921pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[6
 Missing character: There is no ’ (U+2019) in font ptmr8t!
-] (./FINANCE_ENTREPRISE.aux)
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 195312.png>]
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 200847.png, id=149, 
+501.37312pt x 120.45pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 200847.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 200847.png>
+Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
+-21 200847.png  used on input line 132.
+(luatex.def)             Requested size: 250.68594pt x 60.22484pt.
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 211714.png, id=150, 
+445.665pt x 115.93312pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 211714.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 211714.png>
+Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
+-21 211714.png  used on input line 155.
+(luatex.def)             Requested size: 222.83195pt x 57.96642pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[7<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 200847.png>]
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213129.png, id=157, 
+573.64313pt x 127.97812pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213129.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213129.png>
+Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
+-21 213129.png  used on input line 165.
+(luatex.def)             Requested size: 286.82086pt x 63.98889pt.
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213904.png, id=158, 
+454.69875pt x 118.94438pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213904.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213904.png>
+Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
+-21 213904.png  used on input line 175.
+(luatex.def)             Requested size: 227.34882pt x 59.47203pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[8<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 211714.png><../../.
+./Pictures/Screenshots/Capture d'écran 2025-01-21 213129.png><../../../Pictures
+/Screenshots/Capture d'écran 2025-01-21 213904.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[9
+Missing character: There is no ’ (U+2019) in font ptmb8t!
+Missing character: There is no € (U+20AC) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[10
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+]
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 232512.png, id=175, 
+521.69907pt x 84.315pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 232512.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 232512.png>
+Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
+-21 232512.png  used on input line 275.
+(luatex.def)             Requested size: 313.02185pt x 50.58937pt.
+
+Overfull \hbox (5.73296pt too wide) in paragraph at lines 288--289
+\T1/ptm/m/n/12 risque, no-tam-ment le risque de non-paiement des in-té-rêts ou
+ de non-remboursement
+ []
+
+
+Overfull \hbox (2.07233pt too wide) in paragraph at lines 290--291
+[]\T1/ptm/m/n/12 Ainsi, le taux d'ac-tua-li-sa-tion choisi pour cal-cu-ler la va
+-leur ac-tuelle nette (VAN)
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[11
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 232512.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[12
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+]
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-22 001309.png, id=192, 
+541.27219pt x 146.04562pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-22 001309.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2025-01-22 001309.png>
+Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
+-22 001309.png  used on input line 338.
+(luatex.def)             Requested size: 324.76581pt x 87.62804pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[13
+Missing character: There is no € (U+20AC) in font ptmr8t!
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-22 001309.png>]
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-22 002943.png, id=204, 
+544.28343pt x 85.82062pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-22 002943.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2025-01-22 002943.png>
+Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
+-22 002943.png  used on input line 397.
+(luatex.def)             Requested size: 326.57257pt x 51.49275pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[14
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-22 002943.png>]
+(./FINANCE_ENTREPRISE.aux)
 Package rerunfilecheck Info: File `FINANCE_ENTREPRISE.out' has not changed.
-(rerunfilecheck)             Checksum: 483C5C29CDD521FBB64824DF995692D1;1200.
+(rerunfilecheck)             Checksum: 6AC64C70EC9C71C0DD696EDB725A12BC;4476.
 )
 
 Here is how much of LuaTeX's memory you used:
- 14176 strings out of 477352
+ 14410 strings out of 477352
  100000,662416 words of node,token memory allocated
- 1457 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 27 glue, 59 kern, 1 penalty, 2 glyph, 214 attribute
-, 58 glue_spec, 32 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 2:980,3:145,4:18,5:176,6:38,7:8955,8:65,9:334,10:14,11:799
- 34615 multiletter control sequences out of 65536+600000
- 87 fonts using 5608527 bytes
- 72i,11n,72p,1567b,351s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 3848 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 102 glue, 109 kern, 1 penalty, 2 glyph, 921 attribu
+te, 58 glue_spec, 133 attribute_list, 1 write, 1 pdf_action nodes
+   avail lists: 2:1333,3:175,4:18,5:194,6:47,7:8880,8:77,9:563,10:14,11:799
+ 34724 multiletter control sequences out of 65536+600000
+ 96 fonts using 6223311 bytes
+ 72i,12n,72p,1567b,489s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Us
 ers/issak/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/i
-ssak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/
-Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.p
-fb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb
-><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb>
-<C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><
-C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on FINANCE_ENTREPRISE.pdf (5 pages, 107050 bytes).
+ssak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
+/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10
+.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmr10.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/eurosym/feymr10.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/lm/lmtt12.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type
+1/urw/symbol/usyr.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/
+urw/times/utmb8a.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/u
+rw/times/utmr8a.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/ur
+w/times/utmri8a.pfb>
+Output written on FINANCE_ENTREPRISE.pdf (14 pages, 206964 bytes).
 
-PDF statistics: 94 PDF objects out of 1000 (max. 8388607)
- 14 named destinations out of 1000 (max. 131072)
- 57 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 252 PDF objects out of 1000 (max. 8388607)
+ 59 named destinations out of 1000 (max. 131072)
+ 201 words of extra memory for PDF output out of 10000 (max. 100000000)
 
