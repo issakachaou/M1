@@ -412,26 +412,66 @@ TRI_{P_2} \Rightarrow -1000 + \frac{7750}{TRI_{P_2} + 0,2} = 0 \Rightarrow TRI_{
 
 Laurent devrait accepter le contrat de maintenance car la VAN est plus élevée. Toutefois, le TRI est plus faible que celui du projet \( P_2 \) sans maintenance.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 \end{enumerate}
+
+\subsection{Premier aperçu}
+
+L'hypothèse d'aversion au risque stipule que la valeur d'une alternative risquée, notée \( V_A(P) \), est inférieure à la valeur actualisée des gains attendus, exprimée par la formule \[ \frac{\pi J_0 + (1 - \pi) J_1}{1 + r_f}  \]où \( r_f \) représente le taux sans risque. Pour qu'un projet soit jugé viable, le taux d'actualisation utilisé doit être supérieur à \( r_f \), ce qui implique un coût du capital. La prime de risque associée au projet, notée \( \pi_p \), est déterminée par l'évaluation des risques spécifiques liés à celui-ci, tels que la volatilité des flux de trésorerie et les incertitudes économiques. Ainsi, il existe un lien direct entre le risque associé au projet et le coût du capital : plus le risque est élevé, plus le coût du capital nécessaire pour financer le projet augmente, car les investisseurs exigent une compensation plus importante pour accepter une incertitude accrue.
+
+\chapter{Coût du capital et risque}
+
+\section{Risque et rentabilité}
+
+Comme nous l'avons vu, le rendement d'un placement dépend non seulement de sa rentabilité, mais également du risque qui lui est associé, exprimé à travers la prime de risque. Le risque et la rentabilité d'un actif sont mesurés respectivement par la volatilité des rendements et le rendement attendu. La volatilité, souvent calculée à partir des écarts-types des rendements passés, quantifie l'incertitude liée aux fluctuations des prix de l'actif. La relation entre risque et rentabilité est généralement positive : les actifs présentant un risque plus élevé tendent à offrir des rendements attendus plus importants pour compenser les investisseurs pour l'incertitude accrue. En d'autres termes, les investisseurs s'attendent à être rémunérés par des rendements plus élevés lorsqu'ils prennent des risques supplémentaires.
+
+Par nature, la rentabilité future d'un actif risqué est inconnue \textit{ex ante}. Pour pouvoir en dire quelque chose, nous nous plaçons dans un monde probabilisable. Nous faisons l'hypothèse qu'il est possible de définir l'ensemble des scénarios envisageables, ce qui nous permet d'établir une liste des états de la nature. De plus, nous supposons qu'il est possible d'associer une probabilité d'occurrence à chacun de ces scénarios, ce qui nous conduit à établir une distribution de probabilité sur les états de la nature possibles. Ces hypothèses sont fondamentales pour évaluer le risque et la rentabilité des actifs dans un cadre probabiliste.
+
+La rentabilité espérée de l'actif \( R \) est donnée par la formule suivante :
+
+\[
+E(R) = \sum_{i=1}^{n} p_i R_i
+\]
+
+où \( p_i \) représente la probabilité associée à chaque scénario et \( R_i \) la rentabilité dans ce scénario. La variance de l’actif \( R \) est calculée par :
+
+\[
+V(R) = \sum_{i=1}^{n} p_i (R_i - E(R))^2 = E(R^2) - E(R)^2
+\]
+
+L'écart-type de l’actif \( R \) est défini comme suit :
+
+\[
+\sigma_r = \sqrt{V(R)}
+\]
+
+Il est à noter que l'écart-type est la mesure traditionnelle du risque associé à un actif, quantifiant ainsi l'incertitude des rendements futurs.
+
+Pour calculer l'espérance de rentabilité et le risque associé à un actif, il est nécessaire de disposer de la distribution de probabilité des rentabilités. Cependant, cette donnée est inobservable, ce qui conduit généralement à une estimation de cette distribution à partir de données historiques. Cette méthode présente des limites, notamment un problème de qualité de la prédiction (précision) qui est lié à la stabilité de l'environnement économique. En effet, les variations économiques peuvent affecter la fiabilité des estimations basées sur des données passées, rendant ainsi les prévisions moins précises.
+
+La rentabilité historique désigne la rentabilité qui a été effectivement réalisée et constatée pour un actif donné au cours d'une période définie dans le passé. La rentabilité d'une action à la période \( t + 1 \) est calculée selon la formule suivante :
+
+\[
+R_{t+1} = \frac{P_{t+1} + \text{Div}_{t+1} - P_t}{P_t} = \frac{\text{Div}_{t+1}}{P_t} + \frac{P_{t+1} - P_t}{P_t}
+\]
+
+où \( \text{Div}_{t+1} \) représente les dividendes distribués en \( t + 1 \) et \( P_t \) le prix de l'action à la date \( t \). On peut estimer la distribution de probabilité des rentabilités en utilisant les rentabilités observées successivement durant un grand nombre d'années, ce qui permet de construire la densité de probabilité empirique.
+
+52
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
