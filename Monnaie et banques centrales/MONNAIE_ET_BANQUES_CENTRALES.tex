@@ -153,18 +153,484 @@ De plus, d'autres facteurs nets contribuent également à un retrait de liquidit
 
 Enfin, les avoirs nets de change, incluant l'or et les devises, influencent la liquidité dans le même sens que le montant des avoirs nets de change. Ainsi, une augmentation de ces avoirs se traduit par un apport de liquidité.
 
+\subsubsection{Réserves}
+
+Les réserves obligatoires (RO) sont un instrument de politique monétaire permettant d'accroître la liquidité bancaire. Les RO correspondent aux avoirs des établissements de crédit (EC) en compte courant auprès de la Banque centrale.
+
+Avant septembre 2023, les RO étaient rémunérées à un taux de 1\%, qui était en vigueur depuis 2012 (auparavant à 2\%).
+
+L'assiette des RO comprend les dépôts à vue, les dépôts à terme inférieurs ou égaux à 2 ans, les dépôts remboursables avec un préavis inférieur ou égal à 3 mois, les pensions, les titres d'organismes de placement collectif (OPC) monétaires, ainsi que les titres de créances d'une durée inférieure ou égale à 2 ans.
+
+Les réserves totales sont composées des RO et des réserves excédentaires (RE), qui correspondent à la facilité de dépôt.
+
+Les Réserves excédentaires étaient rémunérées de manière négative de 2014 à juillet 2022. Depuis décembre 2022, elles sont rémunérées au taux de la facilité de dépôt.
+
+De octobre 2019 à juillet 2022, un système de rémunération à deux paliers était en place : les RE jusqu'à 6 fois le montant des RO étaient rémunérées à 0\%, le reste étant rémunéré de manière négative à -0,5\%. Ce système de tiering a été suspendu depuis.
+
+\begin{wrapfigure}{r}{0.7\textwidth}
+	\centering
+\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2025-01-26 213812}
+\end{wrapfigure}
+Ce graphique, issu de la BCE, illustre l'évolution de la liquidité fournie par les opérations d'open market et de l'excédent de liquidité dans la zone euro entre 2016 et 2023.  
+
+Les portefeuilles d'achats fermes de titres (en jaune) ont fortement augmenté à partir de 2020, reflétant les mesures de politique monétaire expansionniste mises en œuvre en réponse à la pandémie de COVID-19. Cette composante a atteint un pic en 2022 avant de diminuer progressivement.  
+
+Les opérations de crédit (en bleu) ont suivi une dynamique croissante jusqu’en 2021, puis une baisse marquée, indiquant un reflux des opérations de refinancement ciblé.  
+
+L’excédent de liquidité (courbe rouge) a suivi une tendance haussière jusqu’en 2022, avant de se contracter en 2023, suggérant une absorption progressive des liquidités excédentaires, probablement en lien avec le resserrement monétaire.  
+
+Cette évolution reflète les ajustements de la politique monétaire de la BCE, marquée par une phase d’expansion pour soutenir l’économie, suivie d’une normalisation face aux pressions inflationnistes
 
 \subsection{Approches conventionnelle et non conventionnelle de la création de monnaie}
 	
+\subsubsection{Approche conventionnelle}
+
+
+
+La base monétaire (H) correspond à la monnaie émise par la Banque centrale. Elle se compose des billets en circulation et de la monnaie centrale.
+
+La monnaie centrale comprend les réserves, qui sont elles-mêmes composées des réserves obligatoires (RO) et des réserves excédentaires (RE). Les réserves correspondent aux avoirs des établissements de crédit (EC) en compte courant auprès de la Banque centrale, ainsi qu'à leurs avoirs à la facilité de dépôt.
+
+La base monétaire figure au passif du bilan de la Banque centrale, tandis que ses contreparties se trouvent à l'actif du bilan.
+	
+\subsubsection{Base monétaire}
+	
+\begin{wrapfigure}{r}{0.5\textwidth}
+	\centering
+\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2025-01-26 215458}
+\end{wrapfigure}
+
+Le graphique de la BCE illustre l'évolution de la base monétaire de la zone euro entre 1999 et 2017. On observe une tendance générale à la hausse, avec une accélération marquée après la crise financière de 2008. Cette augmentation reflète les politiques monétaires non conventionnelles mises en œuvre par la BCE pour stimuler l'économie. La composition de la base monétaire montre une prédominance des comptes courants des banques, soulignant le rôle central du système bancaire dans la création monétaire. Ces évolutions ont eu des implications significatives pour la stabilité des prix, l'activité économique et la stabilité financière de la zone euro.
+
+\begin{center}
+	\includegraphics[scale=0.55]{../../../Pictures/Screenshots/Capture d'écran 2025-01-26 215959}
+\end{center}
+	
+\subsubsection{Mécanisme de l’expansion monétaire}
+	
+Soit une banque disposant ex-ante de réserves excédentaires (RE) auprès de la Banque centrale pour un montant de 1000.
+
+Le coefficient de réserves obligatoires (b = B/D) est de 20\% et le taux de rémunération des réserves obligatoires (r) est de 1\%.
+
+Dans ce cadre, la création de monnaie par le multiplicateur monétaire se déroule de la manière suivante :
+\begin{center}
+	
+\includegraphics[scale=0.8]{../../../Pictures/Screenshots/Capture d'écran 2025-01-26 220820}
+	
+\end{center}
+	
+\paragraph{Modèle de création monétaire}
+
+On considère un système bancaire où :
+\begin{itemize}
+	\item $RE$: réserves excédentaires
+	\item $b$: coefficient de réserve
+	\item $r$: taux de réserve obligatoire
+	\item $D$: dépôts
+	\item $C$: création de monnaie (équivalent à $\Delta C$)
+	\item $\Delta M$: variation de la masse monétaire totale
+	\item $k$: multiplicateur de crédit
+\end{itemize}
+
+\paragraph{Processus de création monétaire}
+
+Soit $C_0$ un dépôt initial. La banque conserve une fraction $b$ en réserve et prête le reste $(1-b)C_0$, créant ainsi un nouveau dépôt $C_1$. Ce processus se répète.
+
+\paragraph{Calcul de la variation totale de la masse monétaire:}
+
+$$\Delta M = \Delta C = C_0 + (1-b)C_0 + (1-b)^2C_0 + ... = C_0 \sum_{i=0}^{\infty} (1-b)^i$$
+
+En utilisant la formule de la somme d'une série géométrique, on obtient :
+
+$$\Delta M = \frac{C_0}{1-(1-b)} = \frac{C_0}{b}$$
+
+\paragraph{Multiplicateur de crédit:}
+
+On peut généraliser cette formule en fonction des réserves excédentaires initiales $RE$:
+
+$$\Delta M = RE \cdot \frac{1}{b + r(1-b)} = RE \cdot k$$
+
+où $k = \frac{1}{b + r(1-b)}$ est le multiplicateur de crédit.
+	
+\subsubsection{Relation macroéconomique entre M et H}
+	
+On suppose que la masse monétaire (M) est composée de billets de banque (B) et de dépôts à vue (DAV). Les billets représentent une proportion b de la masse monétaire. Le montant des réserves obligatoires des banques auprès de la Banque centrale est une proportion r des dépôts à vue. Les banques détiennent aussi des réserves excédentaires pour une proportion e des dépôts à vue.
+
+\begin{align*}
+	M &= B + DAV \\
+	B &= b \times M \\
+	DAV &= (1 - b) \times M \\
+	R &= (r + e) \times DAV \\
+	R &= (r + e) \times (1 - b) \times M
+\end{align*}
+
+La base monétaire (H) comprend les billets de banque et les réserves :
+\begin{align*}
+	H &= B + R \\
+	&= b \times M + (r + e) \times (1 - b) \times M \\
+	&= [b + (r + e) \times (1 - b)] \times M
+\end{align*}
+
+Si on pose $d = [b + (r + e) \times (1 - b)]$, alors : $H = d \times M$ où $d$ représente le diviseur, $d < 1$. Le lien de causalité va de la masse vers la base dans le cas du diviseur.
+
+La relation peut s'écrire dans l'autre sens : $M = 1/[b + (r + e) \times (1 - b)] \times H$. Si on pose $k = 1/[b + (r + e) \times (1 - b)]$, alors : $M = k \times H$ où $k$ est le multiplicateur, $k > 1$. Le lien de causalité va de la base vers la masse dans le cas du multiplicateur.
+	
+Cependant, le multiplicateur $k = 1/d$ n'est pas toujours acceptable. En effet, il n'est acceptable que s'il est stable ou une fonction stable des coefficients caractéristiques (b, r, e), et si la base monétaire H est exogène. Or, dans le cas présent, le multiplicateur est variable car il dépend de b, r et e, et la base monétaire H est endogène, car elle dépend de la masse monétaire M.
+
+Mais il existe des cas où le multiplicateur est acceptable. En effet, si les coefficients caractéristiques (b, r, e) sont stables ou forment une fonction stable, et si la base monétaire H est exogène, alors le multiplicateur $k = 1/d$ sera également stable et acceptable.
+
+\subsubsection{Approche non conventionnelle}
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2025-01-26 222812}
+\end{center}
+
+
+Le graphique ci-dessus, issu de la Banque Centrale Européenne (BCE), illustre l'évolution de la base monétaire, de la monnaie au sens large (M3) et du multiplicateur monétaire au sein de la zone euro entre 1999 et 2017. On observe une croissance continue de la base monétaire et de M3 sur cette période, avec une accélération marquée après la crise financière de 2008, reflétant les mesures de politique monétaire non conventionnelles mises en œuvre par la BCE. Le multiplicateur monétaire, qui mesure le rapport entre M3 et la base monétaire, a quant à lui connu des fluctuations plus importantes, notamment en lien avec les différentes opérations de refinancement à long terme (LTRO) menées par la BCE. Ces évolutions soulignent l'impact des politiques monétaires sur la création de monnaie et la transmission de ces politiques à l'économie réelle.
+	
+\begin{center}
+	\includegraphics[scale=0.9]{../../../Pictures/Screenshots/Capture d'écran 2025-01-26 223134}
+\end{center}
+	
+Le graphique ci-dessus présente l'évolution du multiplicateur monétaire dans la zone euro et aux États-Unis depuis 1999. Le multiplicateur monétaire, calculé comme le rapport entre la masse monétaire au sens large (M3 en zone euro, M2 aux États-Unis) et la base monétaire, reflète l'efficacité avec laquelle les banques commerciales créent de la monnaie à partir des réserves bancaires.
+
+On observe que le multiplicateur monétaire a connu des fluctuations importantes dans les deux zones monétaires. Dans l'ensemble, il a tendance à diminuer au cours de la période considérée, suggérant une baisse de la capacité des banques à créer de la monnaie. Cette diminution pourrait être liée à plusieurs facteurs, tels qu'une augmentation des exigences de fonds propres, une aversion accrue au risque et des changements dans le comportement des agents économiques.
+
+Les politiques monétaires mises en œuvre par les banques centrales, notamment les opérations de refinancement à long terme (LTRO) et les achats d'actifs, ont également pu influencer l'évolution du multiplicateur monétaire.	
+	
 \subsection{Marché du crédit et marché interbancaire}
+	
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2025-01-26 224225}
+\end{center}
+	
+À partir du bilan simplifié de la banque, on obtient :  
+\[
+RF = C + r(1-b) M - (1-b) M \quad (1)
+\]
+Si on pose que les contreparties de la masse monétaire sont les crédits (C) plus les contreparties externes exogènes (X) :  
+\[
+M = C + X
+\]
+En remplaçant dans (1) \( M \) par ses contreparties, on obtient :  
+\[
+RF = C (b+r-rb) - X (1-b-r+rb)
+\]
+Le résultat financier (RF) de la banque centrale dépend positivement du taux de refinancement \( i_{RF} \), qui correspond au taux des opérations principales de refinancement (OPR). L'offre de monnaie centrale est ainsi contrôlée par la banque centrale.  
+
+Les dépôts de la clientèle sont rémunérés au taux créditeur \( i_C \). Pour la banque, le coût du crédit comprend le coût de collecte des dépôts ainsi que le coût du refinancement auprès de la banque centrale, ce qui se traduit par l'expression suivante :  
+\[
+i_C (1-b) M + i_{RF} RF \quad (2)
+\]
+De plus, le taux de refinancement est défini comme suit :  
+\[
+i_{RF} = i_{RF}(RF), \quad \frac{\partial i_{RF}}{\partial RF} \geq 0
+\]
+
+En remplaçant \( M \) et \( RF \) par leur valeur dans l'équation (2), on obtient :  
+\[
+i_C (1-b) (C+X) + i_{RF} \left[ C (b+r-rb) - X (1-b-r+rb) \right]
+\]
+La fonction de profit bancaire s'écrit :  
+\[
+\pi = i_D C - \left[ i_C (1-b) (C+X) + i_{RF} \left[ C (b+r-rb) - X (1-b-r+rb) \right] \right]
+\]
+où \( i_D \) désigne le taux d'intérêt débiteur.  
+
+En supposant un comportement concurrentiel du système bancaire, la fonction d'offre de crédit se déduit de la maximisation de la fonction de profit par rapport au volume de crédit.  
+
+Les conditions du premier ordre déterminent la relation liant l'offre de crédit aux différentes variables du modèle.
+
+La fonction d'offre \( C_s \) dépend positivement :  
+\begin{itemize}
+	\item du taux débiteur et des contreparties externes.
+\end{itemize}
+
+et négativement :  
+\begin{itemize}
+	\item du taux créditeur, du taux de réserves obligatoires, du taux de refinancement et de la part des billets dans la masse monétaire.
+\end{itemize}
+
+La fonction de demande de crédit \( C_d \) est une fonction croissante de l'activité économique \( y \) et décroissante du taux débiteur \( i_D \).  
+
+À l'équilibre sur ce marché, l'offre de crédit est égale à la demande de crédit.  
+
+Imaginons une hausse de la demande de crédit :  
+\begin{itemize}
+	\item Déplacement de la courbe de demande \( C_d' \).
+	\item Cela conduit à un nouvel équilibre sur le marché du crédit avec un taux débiteur \( i_D \) plus élevé.
+\end{itemize}
+
+Cette hausse du crédit provoque une hausse de la demande de refinancement des banques auprès de la banque centrale, ce qui entraîne un déplacement de la courbe \( RF_d' \).  
+
+L'incidence de cette hausse dépend de la fonction d'offre de refinancement de la banque centrale \( RF_s \).  
+
+La banque centrale augmente son taux de refinancement \( i_{RF} \), ce qui correspond à un nouvel équilibre.  
+
+La création de monnaie se déduit de l'interaction entre les fonctions d'offre et de demande de refinancement et les fonctions d'offre et de demande de crédit.
+
+	
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2025-01-26 224840}
+\end{center}
+
+Ciblage du taux \( i_{RF} \) : La banque centrale contrôle le taux de refinancement \( i_{RF} \), ce qui l'oblige à satisfaire toute la demande de refinancement des banques au taux fixé.  
+
+Le volume de refinancement \( RF \) est insensible aux variations du taux de refinancement.  
+
+Tout déplacement de la demande de crédit entraîne mécaniquement un déplacement de la demande de refinancement, soit \( \Delta RF = (b+r-rb) \Delta C \).  
+
+Toute la demande de crédit des agents est satisfaite au taux débiteur \( i_D \) affiché.  
+
+Le diviseur : le sens de la causalité va de la masse monétaire \( M \) vers la base monétaire \( H \).  
+
+Cela entraîne une création de monnaie endogène.
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2025-01-26 225233}
+\end{center}
+	
+La banque centrale (BC) : il n'y a pas une politique monétaire exclusive de taux ou de base, mais un arbitrage entre les deux.  
+
+Depuis 2009, l'excédent de liquidité (\( H \)) ne détermine plus la masse monétaire (\( M \)).  
+
+Il n'y a plus d'effet de multiplicateur.  
+
+La création de \( M \) est contrainte par la demande de monnaie et la réponse apportée par les banques à l'octroi de crédit.
 	
 \section{Demande de monnaie}	
 	
 \subsection{Premières approches sur la demande de monnaie}
 	
+\subsubsection{Équation des échanges}
+	
+I. Fisher : Première reformulation de la théorie quantitative de la monnaie des classiques (Ricardo, Say, Walras).  
+
+L'équation des échanges, parue dans « The Purchasing Power of Money » en 1911 :  
+« \textit{Dans chaque vente ou achat, la monnaie et les biens échangés sont ipso facto équivalents… }»  
+\begin{center}
+	Le membre de la monnaie est le total de la monnaie payée et peut être considéré comme le produit de la monnaie par sa vitesse de circulation. Le membre des biens se compose du produit de la quantité des biens échangés par leurs prix respectifs.
+\end{center}  
+
+Où \( M \) est la quantité de monnaie matérielle (pièces, billets), \( M' \) est la quantité de monnaie scripturale, \( V \) est la vitesse de circulation de \( M \) (nombre moyen de fois qu'une unité monétaire a circulé pour effectuer une transaction), \( V' \) est la vitesse de circulation de \( M' \), \( P \) est le niveau général des prix (NGP) et \( T \) est le volume global des transactions pendant la période donnée.  
+
+Identité comptable : D'après la théorie quantitative, toute augmentation de \( M \) entraîne une augmentation proportionnelle de \( P \).  
+
+Cela est vérifié si \( V \) et \( T \) sont constants.  
+
+Hypothèses :  
+\begin{itemize}
+	\item Neutralité de la monnaie : \( T \) ne varie pas quand \( M \) augmente. La monnaie n'influence pas les quantités produites ni l'emploi. \( M \), introduite après dans l'équation, ne modifie pas l'équilibre.
+	\item \( V \) est supposée constante à court terme (CT) ou converger vers une valeur d'équilibre \( V^\star \). À long terme (LT), elle dépend de facteurs structurels : habitudes de paiement, densité de la population, etc.
+\end{itemize}
+	
+\subsubsection{Impact de l’équation}
+
+L'équation de Fisher :  
+\[
+M \times V = P \times Y
+\]
+où \( T \) est remplacé par \( Y \) (production ou PIB).  
+
+En termes de taux de croissance, on a :  
+\[
+\frac{\Delta M}{M} + \frac{\Delta V}{V} = \frac{\Delta P}{P} + \frac{\Delta Y}{Y}
+\]
+
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2025-01-26 230716}
+\end{center}
+	
+Le lien entre la masse monétaire (M) et le niveau général des prix (NGP) est plus complexe que ne le suggère la théorie quantitative de la monnaie. En effet, la vitesse de circulation de la monnaie (V) n'est pas constante et peut varier en fonction de nombreux facteurs tels que l'incertitude économique, l'évolution des primes de risque, les innovations financières ou les changements réglementaires. Par conséquent, une augmentation de la masse monétaire ne se traduit pas nécessairement par une hausse proportionnelle du niveau général des prix. De plus, une partie de la liquidité injectée dans l'économie peut être utilisée pour acquérir des actifs financiers, ce qui entraîne une hausse des prix de ces actifs plutôt qu'une inflation généralisée. Des études empiriques, comme celle de Bruggeman (2007), ont d'ailleurs montré que dans de nombreux cas, un excès de liquidité peut conduire à une hausse des prix d'actifs plutôt qu'à une inflation généralisée, soulignant ainsi la transmission non automatique de la politique monétaire. Néanmoins, des recherches plus récentes, telles que celles de Nicolini et Weber (2020), suggèrent que la masse monétaire conserve un impact sur le niveau général des prix à long terme, ce qui incite les banques centrales à continuer de surveiller cet agrégat monétaire parmi d'autres indicateurs pour atteindre leurs objectifs de stabilité des prix.
+	
+\begin{center}
+	\includegraphics[scale=0.7]{../../../Pictures/Screenshots/Capture d'écran 2025-01-26 230833}
+\end{center}	
+
+
+\paragraph{Résumé}
+\begin{itemize}
+	\item Il y a à court terme (CT) et moyen terme (MT) un relâchement de la relation entre \(M\) et \(NGP\).
+	\item Les effets des politiques monétaires non conventionnelles (PMNC) sur l'activité et les prix transitent par d'autres canaux que celui de \(M\).
+	\item Les programmes d'achats d'actifs affectent la courbe des taux et les conditions de financement.
+\end{itemize}
+
 \subsection{Demande de monnaie transactionnelle}
+
+\subsubsection{École de Cambridge}
+
+
+A. C. Pigou dans "\textit{The Value of Money}" (1917) et A. Marshall dans "\textit{Money, Credit and Commerce}" (1923) ont analysé les motifs de détention d'une encaisse monétaire.
+	
+Théorie quantitative deviendra théorie de la demande de monnaie
+
+Fonction de demande (ou d'encaisses) pour le motif de transaction déduite de l'équation des échanges :
+
+$M \times V = P \times T \Leftrightarrow M = \frac{P \times T}{V} \Leftrightarrow P = \frac{M \times V}{T}$
+
+Offre et demande de monnaie : $M^s = M^d$
+
+$M^d$ remplace $M$ et $\frac{1}{V}$ par $k$
+
+$M^d = k \times P \times Y$
+
+où $M^d$ = demande de monnaie, $P$ = niveau général des prix, $Y$ = revenu national réel, $k$ = constante (dépend de facteurs structurels)
+
+Monnaie détenue pour son rôle intermédiaire des échanges
+
+Les agents demandent de la monnaie (détention de stock de monnaie) car existence d'1 décalage entre les recettes (revenus) et les dépenses
+
+Pouvoir achat du stock de monnaie : $M^d/P$
+
+Monnaie neutre n'agit pas sur les équilibres réels
+
+Si $M^o$ augmente comme $M^o = M^d$, la demande de monnaie nominale (encaisse effective nominale) augmente, mais pouvoir d'achat $M^d / P$ reste identique car si $M^o$ augmente $P$ augmente aussi
+
+Agents pas victime de l'illusion monétaire
+
+Effet d'encaisses réelles
+
+2.2 La demande de monnaie en termes de gestion de stock
+
+M. Allais (1947) dans son ouvrage "\textit{Economie et Intérêt}" et W. Baumol (1952) dans "\textit{The transaction demand for cash: an inventory theoretic approach}"
+
+Intérêt de la théorie de la gestion des stocks :
+\begin{itemize}
+	\item Demande de monnaie pour motif de transaction
+	\item Titres, coûts de transaction, temps pour liquider titres, commissions
+	\item Monnaie : économiser des coûts de transaction
+	\item Agents subissent coût d'opportunité en détenant de la monnaie (perte en termes d'intérêt)
+\end{itemize}
+
+Problème : trouver le nombre optimal de conversion de titres en monnaie de façon à minimiser coûts d'opportunité et coûts de transaction
+
+Dans le modèle :
+\begin{itemize}
+	\item $Y$: revenu annuel de l'agent en début d'année, $r$ : taux d'intérêt annuel constant perdu sur titres qui sont achetés pour répondre à ses dépenses
+	\item Agent vendent régulièrement 1 fraction constante de titres pour répondre à ses dépenses qui sont échelonnées dans le temps.
+	\item $b$ représente le coût de conversion de titres en monnaie et $n$ le nombre de conversion de titres en monnaie par an.
+	\item L'agent place $(\frac{Y}{n})$ en titres et conserve en monnaie pour ses dépenses immédiates en début d'année.
+\end{itemize}
+
+Son revenu moyen $R$ se calcule de la façon suivante : $R = r \times (\frac{Y - \frac{Y}{n}}{2})$.
+
+Modèle de gestion de stock de monnaie (Allais, Baumol)
+
+Revenu et coûts
+Revenu moyen:
+$$R = r \cdot \frac{Y - \frac{Y}{n}}{2}$$
+Revenu net:
+$$R - bn = r \cdot \frac{Y - \frac{Y}{n}}{2} - bn$$
+
+Optimisation du nombre de conversions
+\begin{itemize}
+	\item Problème: Trouver le nombre optimal de conversions ($n^*$) qui maximise le revenu net.
+	\item Résolution:
+	\begin{enumerate}
+		\item Calcul de la dérivée: $\frac{d}{dn} \left( r \cdot \frac{Y - \frac{Y}{n}}{2} - bn \right) = 0$
+		\item Simplification: $\frac{rY}{2n^2} - b = 0$
+		\item Solution: $n^* = \sqrt{\frac{rY}{2b}}$
+	\end{enumerate}
+\end{itemize}
+
+ Demande de monnaie
+
+Encaisse moyenne: $\frac{Y}{2n^*}$
+Demande de monnaie: $M^d = \frac{Y}{2n^*} = \sqrt{\frac{bY}{2r}}$
+
+Interprétation
+
+Ce modèle montre que la demande de monnaie est une fonction croissante du revenu et du coût de transaction, et décroissante du taux d'intérêt. Les agents économiques cherchent à optimiser leur gestion de trésorerie en minimisant les coûts de transaction liés à la conversion des titres en monnaie tout en profitant des intérêts offerts par les placements.
+
+Explications des notations:
+\begin{itemize}
+	\item $Y$: Revenu annuel de l'agent
+	\item $r$: Taux d'intérêt
+	\item $n$: Nombre de conversions de titres en monnaie par an
+	\item $b$: Coût par conversion
+	\item $M^d$: Demande de monnaie
+\end{itemize}
+
+Ce modèle est un classique en économie monétaire et permet de comprendre comment les individus gèrent leur liquidité en fonction des coûts et des opportunités de placement.
+
 	
 \subsection{Demande de monnaie patrimoniale}
+
+\subsubsection{La fonction de demande de monnaie chez Keynes}
+
+J. Maynard Keynes, dans son "\textit{Traité sur la monnaie}" (1930) et sa "\textit{Théorie générale de l'emploi, de l'intérêt et de la monnaie}" (1936), définit la monnaie comme :
+\begin{itemize}
+	\item Une unité de compte, un intermédiaire des échanges et une réserve de valeur.
+	\item Le revenu se partage entre consommation (C) et épargne (S) ; l'épargne peut prendre deux formes : soit sous forme de monnaie, soit sous forme de titres. Les titres, tels que les rentes perpétuelles, sont rémunérés.
+	\item Les titres représentent un droit de consommation différée, tandis que la monnaie représente un droit de consommation immédiate.
+	\item L'intérêt versé sur les titres est considéré comme une " \textit{récompense pour la renonciation à la liquidité}".
+	\item Les titres rapportent un taux de rentabilité, qui peut fluctuer en fonction de la valeur en capital.
+\end{itemize}
+
+En situation d'incertitude, les agents évaluent le taux de rentabilité anticipé.
+
+La détention de liquidité pour motif de spéculation est influencée par l'incertitude liée à l'évolution future des taux d'intérêt. Les agents économiques prennent des décisions basées sur leurs anticipations concernant ces taux.
+
+Si les agents anticipent une baisse des taux futurs, cela entraîne une hausse du prix des titres. Dans ce cas, ils préfèrent acheter des titres maintenant. À l'inverse, lorsqu'ils anticipent une hausse future des taux, ils peuvent choisir de détenir plus de liquidités.
+
+Pour déterminer son encaisse spéculative optimale, l'agent compare le taux de rentabilité anticipé des titres, noté \( r_e \), à celui de la monnaie, qui est \( r_e = 0 \). 
+
+\begin{itemize}
+	\item Si \( r_e > 0 \), l'agent détient uniquement des titres.
+	\item Si \( r_e < 0 \), il détient uniquement de la monnaie.
+\end{itemize}
+
+Il est important de noter que l'agent ne peut pas détenir simultanément de la monnaie et des titres
+
+Lorsque \( r_e = 0 \), on atteint le taux d'intérêt critique noté \( i_c \). À ce stade, l'agent est indifférent entre la détention de titres et celle de la monnaie. 
+
+La comparaison entre le taux de marché \( i \) et le taux d'intérêt critique \( i_c \) détermine le choix de l'agent :
+\begin{itemize}
+	\item Si \( i > i_c \), l'agent détient des titres à 100 \% et pas de monnaie.
+	\item Si \( i < i_c \), l'agent détient de la monnaie à 100 \%.
+	\item Si \( i = i_c \), l'agent est indifférent entre les deux options.
+\end{itemize}
+
+Concernant la demande de monnaie spéculative, il est important de noter que la fonction macro de demande de monnaie spéculative ne résulte pas simplement de l'agrégation des encaisses spéculatives individuelles. Cela s'explique par le fait que les agents n'ont pas les mêmes anticipations sur l'évolution future des taux d'intérêt. 
+
+Ainsi, il existe autant de taux d'intérêt critiques \( i_c \) que d'agents.
+
+La demande agrégée d'encaisse spéculative est une fonction continue et décroissante du taux d'intérêt. Elle comprend deux situations extrêmes :
+
+\begin{itemize}
+	\item Lorsque le taux d'intérêt sur le marché \( i \) est élevé, les agents détiennent des titres et pas d'encaisses spéculatives. Dans ce cas, la demande de monnaie spéculative est inélastique par rapport au taux d'intérêt.
+	\item À l'inverse, lorsque le taux d'intérêt atteint un niveau minimal, les agents estiment qu'il ne descendra jamais en dessous de ce seuil. Ils choisissent alors de détenir leur richesse (réserve de valeur) sous forme d'encaisses spéculatives. Dans cette situation, la demande de monnaie spéculative est infiniment élastique au taux.
+\end{itemize}
+
+Il existe trois motifs principaux pour la détention de liquidité (monnaie) : 
+\begin{itemize}
+	\item La transaction,
+	\item La précaution,
+	\item La spéculation.
+\end{itemize}
+
+Les encaisses peuvent être classées selon différents motifs :
+
+\begin{itemize}
+	\item Motif de transaction : Ce motif est lié au décalage temporel entre les recettes et les dépenses.
+	\item Motif de précaution: Il s'agit de répondre à des transactions imprévues.
+\end{itemize}
+
+Les encaisses de transaction et de précaution sont regroupées dans une même fonction de liquidité, notée \( L_1(Y) \), qui dépend positivement du revenu courant \( Y \). En revanche, les encaisses spéculatives, notées \( L_2(i) \), dépendent négativement du taux d'intérêt \( i \).
+
+La demande totale d'encaisses peut être exprimée sous forme additive :
+\[
+M_d = L_1(Y) + L_2(i), \quad M_d = f(Y, i)
+\]
+L'équilibre sur le marché de la monnaie est donné par \( M_o = M_d \), où \( M_o \) est exogène, soit \( M_o = M \).
+
+La vitesse de circulation du revenu \( V \) est définie comme :
+\[
+V = \frac{P \cdot Y}{M_d}
+\]
+Il est important de noter que \( V \) est variable et instable, dépendant du taux d'intérêt \( i \). Par conséquent, la politique monétaire (PM) n'est pas un bon instrument de politique économique.
+
+
 	
 \subsection{Approches empiriques}
 	

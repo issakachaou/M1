@@ -429,16 +429,16 @@ Par nature, la rentabilité future d'un actif risqué est inconnue \textit{ex an
 La rentabilité espérée de l'actif \( R \) est donnée par la formule suivante :
 
 \[
-E(R) = \sum_{i=1}^{n} p_i R_i
+\mathbb{E}(R) = \sum_{i=1}^{n} p_i R_i
 \]
 
 où \( p_i \) représente la probabilité associée à chaque scénario et \( R_i \) la rentabilité dans ce scénario. La variance de l’actif \( R \) est calculée par :
 
 \[
-V(R) = \sum_{i=1}^{n} p_i (R_i - E(R))^2 = E(R^2) - E(R)^2
+\mathbb{V}(R) = \sum_{i=1}^{n} p_i (R_i - \mathbb{E}(R))^2 = \mathbb{E}(R^2) - \mathbb{E}(R)^2
 \]
 
-L'écart-type de l’actif \( R \) est défini comme suit :
+L'écart-type de l'actif \( R \) est défini comme suit :
 
 \[
 \sigma_r = \sqrt{V(R)}
@@ -456,26 +456,576 @@ R_{t+1} = \frac{P_{t+1} + \text{Div}_{t+1} - P_t}{P_t} = \frac{\text{Div}_{t+1}}
 
 où \( \text{Div}_{t+1} \) représente les dividendes distribués en \( t + 1 \) et \( P_t \) le prix de l'action à la date \( t \). On peut estimer la distribution de probabilité des rentabilités en utilisant les rentabilités observées successivement durant un grand nombre d'années, ce qui permet de construire la densité de probabilité empirique.
 
-52
+\begin{center}
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2025-01-26 145125}
+\end{center}
+
+À partir de la densité de probabilité empirique, il est facile de déduire une estimation (sans biais) de l'espérance de rentabilité et une estimation de la variance de la rentabilité d'un actif.
+
+
+En notant \( R_t \) la rentabilité effective d'un actif en \( t \), observée entre les périodes 1 et \( T \), l'estimation sans biais de l'espérance de rentabilité de cet actif est donnée par :
+
+\[
+\bar{R} = \frac{1}{T} \sum_{t=1}^{T} R_t 
+\]
+
+\subsection*{Variance Empirique des Rentabilités Effectives}
+
+De même, l'estimation de la variance des rentabilités de cet actif est donnée par :
+
+\[
+V(R) = \frac{1}{T-1} \sum_{t=1}^{T} (R_t - \bar{R})^2 
+\]
+
+Il faut garder en tête les limites associées à cette estimation de la rentabilité :
+
+\begin{itemize}
+	\item Elle repose sur une hypothèse forte : les rentabilités observées sont tirées de variables aléatoires indépendantes et identiquement distribuées (VA iid).
+	\item Même si cette hypothèse est vérifiée, les erreurs de mesure peuvent être importantes et l’estimation peu précise avec un nombre d'observations limité.
+\end{itemize}
+
+L'aversion pour le risque des investisseurs implique qu'il devrait exister une relation croissante entre risque et rentabilité. 
+
+\begin{itemize}
+	\item On retrouve cette relation quand on s'intéresse à des portefeuilles diversifiés.
+	\item En revanche, on ne la retrouve pas systématiquement quand on examine la rentabilité des titres individuels.
+\end{itemize}
+
+Comment expliquer ce phénomène ? Il est nécessaire de faire la différence entre risque spécifique et risque systématique.
+
+\begin{center}
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151425}
+	
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151713}
+\end{center}
+
+\section{Risque spécifique et risque systématique}
+
+Le risque lié à la détention d'un actif se définit comme la possibilité que sa rentabilité effective soit inférieure à sa rentabilité espérée.
+
+Les déterminants de la rentabilité d'une action incluent le cours de cette action et les dividendes distribués.
+
+Les sources de variation dans les cours et les dividendes comprennent :
+\begin{itemize}
+	\item Informations spécifiques à l'entreprise.
+	\item Informations relatives à l'ensemble du marché.
+\end{itemize}
+
+Il existe deux types de risque : le risque spécifique ou diversifiable, qui est l'incertitude associée aux informations spécifiques à l'entreprise, et le risque systématique ou non-diversifiable, qui est l'incertitude relative aux informations macroéconomiques.
+
+Dans le cas d'un portefeuille d'actions, les risques indépendants se compensent entre eux (ils ne sont pas tous dans le même sens et ils n'arrivent pas tous en même temps), mais pas les risques systématiques.
+
+La diversification permet de réduire le risque, mais ne l'élimine pas complètement. Le risque systématique demeure.
+
+Nous avons vu qu'il existe une relation croissante entre risque systématique et rentabilité. Cependant, une telle relation n'existe pas entre risque spécifique et rentabilité. 
+
+Comment expliquer ce second résultat ? Il est possible de s'assurer contre le risque spécifique en diversifiant son portefeuille d'actions. Dans ces conditions, il ne peut exister une prime de risque pour un actif porteur uniquement d'un risque spécifique.
+
+\section{Prime de risque, risque spécifique et risque systématique}
+
+En conclusion, la prime de risque offerte par un actif est déterminée uniquement par son risque systématique ; elle ne dépend pas de son risque diversifiable. L'écart-type constitue une information pertinente pour déterminer la prime de risque associée à un portefeuille d'actions, mais pas pour la prime de risque associée à un titre individuel. En effet, pour chaque titre, il n'y a pas de relation claire entre l'écart-type et la rentabilité.
+
+Ainsi, pour estimer le coût du capital, il faut d'abord estimer la prime de risque, qui elle-même dépend de l'estimation du risque systématique.
+
+\section{Mesurer le risque systématique}
+
+
+Quelle part de la volatilité d'un actif incombe au risque systématique ? Cette part correspond à la sensibilité de la rentabilité de l'action aux chocs systémiques. 
+
+Pour mesurer cette sensibilité, on compare la rentabilité de l'action à la rentabilité d'un portefeuille exclusivement exposé au risque de marché, appelé portefeuille efficient. Nous ne reviendrons pas sur l'identification d'un tel portefeuille, qui doit être suffisamment diversifié, c'est-à-dire contenir un grand nombre de titres, formant ainsi le portefeuille de marché. En pratique, on l'approxime par un indice boursier suffisamment large, comme le S\&P 500 ou le SBF 250.
+
+\subsection{Exercice}
+
+Parmi les risques suivants, lesquels sont systématiques et lesquels sont diversifiables ?
+
+\begin{enumerate}
+	\item Le PDG disparaît dans un accident d'avion. Ce risque est spécifique à l'entreprise et donc diversifiable.
+	\item L'économie entre en récession, ce qui réduit la demande adressée à l'entreprise. Ce risque est systématique, car il est lié aux conditions macroéconomiques.
+	\item L'ingénieur le plus créatif de la division R\&D part à la concurrence. Ce risque est spécifique à l'entreprise et donc diversifiable.
+	\item Les recherches en cours dans la division R\&D ne débouchent pas sur des innovations. Ce risque est spécifique à l'entreprise et donc diversifiable.
+\end{enumerate}
+
+\subsection{Solution}
+
+\begin{enumerate}
+	\item Le PDG disparaît dans un accident d'avion. Type : Diversifiable. Explication : La disparition du PDG est un événement spécifique à l’entreprise. Ce type de risque peut être atténué en investissant dans plusieurs entreprises pour réduire l'impact d'un événement individuel.
+	\item L’économie entre en récession, ce qui réduit la demande adressée à l’entreprise. Type : Systématique. Explication : La récession est un phénomène économique global qui affecte toutes les entreprises. Il est impossible de l’éliminer par diversification, car il touche tous les secteurs dans une certaine mesure.
+	\item L’ingénieur le plus créatif de la division R\&D part à la concurrence. Type : Diversifiable
+	\item Les recherches en cours dans la division R\&D ne débouchent pas sur des innovations. Type : Diversifiable
+\end{enumerate}
+
+\subsection{Exercice : Soit les rentabilités annuelles d'un titre sur la période 2011-2016}
+
+\begin{center}
+	\begin{tabular}{@{}lllllll@{}}
+	\toprule
+	Année     & 2011    & 2012 & 2013 & 2014  & 2015 & 2016 \\ \midrule
+	Rendement & -12.5\% & -4\% & -8\% & 2.5\% & 10\% & 13\% \\ \bottomrule
+\end{tabular}
+\end{center}
+
+
+\begin{enumerate}
+	\item Quelle est la rentabilité annuelle moyenne sur la période ?
+	\item Quelle est la variance des rentabilités sur la période ?
+	\item Déterminer l’intervalle de confiance de la rentabilité annuelle espéré au seuil de 5\%. On supposera que les rentabilités annuelles sont des variables aléatoires indépendantes  qui suivent une loi de Student.
+\end{enumerate}
+
+Rappel : Soit \(  R_i, i =1,\cdots,n, \) \( n \) variable aléatoires indépendantes et de même loi et d'écart type  . On peut estimer l'écart type de la moyenne de ces variables aléatoires par : \( \sigma_R = \frac{\sigma_R }{\sqrt{N}} \)
+
+\subsection{Solution}
+
+\begin{enumerate}
+	\item La rentabilité annuelle moyenne est donnée par : $R_n = \frac{1}{n} \cdot \sum R_i$, où $R_n = 0.0017$ (soit 0,17\%).
+	\item La variance des rentabilités est donnée par : $\sigma^2 = \frac{1}{n} \cdot \sum (R_i - \bar{R})^2$, où $\sigma^2 = 0.0102$.
+	\item L'intervalle de confiance est donné par : $\bar{R} \pm t_{n-1,\alpha/2} \cdot (\sigma / \sqrt{n})$. Au seuil de 5\%, l'intervalle de confiance est $[-0.1045, 0.1078]$ (soit $[-10,45\%, 10,78\%]$). Cela signifie que la rentabilité annuelle moyenne se situe avec 95\% de confiance dans cet intervalle.
+\end{enumerate}
+
+
+La mesure du risque systématique d'un actif consiste à calculer son bêta. 
+
+Le bêta (\( \beta \)) d'un actif représente la variation en pourcentages de la rentabilité excédentaire d'un titre donné lorsque la rentabilité (excédentaire) du portefeuille de marché varie de 1\%. Il s'agit donc d'une élasticité.
+
+La rentabilité excédentaire est définie comme l'écart entre la rentabilité de l'actif et le taux d'intérêt sans risque. Nous ne reviendrons pas sur les différentes façons d'estimer le bêta d'un actif, cela a été abordé dans le cours "Évaluation des actifs financiers".
+
+\begin{center}
+	\includegraphics[scale=0.5]{../../../Pictures/Screenshots/Capture d'écran 2025-01-26 173535}
+\end{center}
+
+\section{Estimer la prime de risque}
+
+On appelle la prime de risque de marché ($\Pi_m$) la différence entre la rentabilité espérée du portefeuille de marché ($\mathbb{E}(R_m)$) et le taux d'intérêt sans risque ($r_f$) :
+\[
+\Pi_m = \mathbb{E}(R_m) - r_f
+\]
+
+Le risque systématique d'un titre sera proportionnel à son bêta ($\beta_i$), tout comme sa prime de risque. On a donc :
+\[
+\Pi_i =\beta_i(\mathbb{E}(R_m) - r_f) = \beta_i \Pi_m
+\]
+
+Il est alors possible de proposer une estimation de l'espérance de rentabilité d'un titre à partir de son bêta :
+\[
+\mathbb{E}(R_i) = r_f + \Pi_i = r_f + \beta_i (\mathbb{E}(R_m) - r_f)
+\]
+
+\section{Risque et coût du capital}
+
+Rappel : le taux d'actualisation est égal au coût du capital, qui correspond à la rentabilité espérée d'actifs de même risque et de même rentabilité espérée.
+
+On a donc : le coût du capital est égal à la rentabilité espérée d'actifs ayant le même bêta.
+
+Le coût du capital $r_p$ d'un projet de bêta $\beta_p$ est donc :
+\[
+r_p = r_f + \beta_p (\mathbb{E}(R_m) - r_f)
+\]
+
+Comment déterminer $\beta_p$ ?
+
+Généralement, on utilise le bêta de l'entreprise comme bêta (ou celui d'entreprises comparables) de ses projets d'investissement.
+
+Dans le cas d'une entreprise non-endettée, le bêta des actions de l'entreprise peut être utilisé directement comme bêta de l'entreprise et donc comme bêta du projet.
+
+Nous verrons dans la Partie II comment calculer le coût du capital pour une entreprise endettée.
+
+\subsection{Exercice}
+
+Soit les rentabilités annuelles d'un actif au cours de quatre années successives.
+
+\begin{center}
+	\begin{tabular}{@{}lllll@{}}
+	\toprule
+	Année     & 1    & 2    & 3    & 4    \\ \midrule
+	Rendement & 10\% & 20\% & -5\% & 15\% \\ \bottomrule
+\end{tabular}
+\end{center}
+
+\begin{enumerate}
+	\item Quel est le taux de croissance annuel composé de cet actif sur les quatre années ?
+	\item Quelle est la rentabilité annuelle moyenne de l’actif sur la période ?
+	\item Quelle mesure de performance passée de l’actif doit-on choisir ?
+	\item En supposant que les rentabilités sont des variables aléatoires indépendantes et identiquement distribuées, estimer la rentabilité espérée de  cet actif.
+\end{enumerate}
+
+\subsection{Solution}
+
+\begin{enumerate}
+
+\item Formule du taux de croissance annuel composé (\textit{Compound Annual Growth Rate - CAGR})
+
+La formule du CAGR est :
+\[
+\text{CAGR} = \left[\left(1 + r_1\right) \times \left(1 + r_2\right) \times \dots \times \left(1 + r_n\right)\right]^{1/n} - 1
+\]
+Avec $r_i$ les taux de croissance annuels.
+
+Dans l'exemple donné, on a : $r_1 = 10\%$, $r_2 = 20\%$, $r_3 = -5\%$ et $r_4 = 15\%$. Le CAGR est donc :
+\[
+\text{CAGR} = \left[(1.10 \times 1.20 \times 0.95 \times 1.15)\right]^{1/4} - 1 \approx 9.43\%
+\]
+
+Une seconde manière de calculer le CAGR est :
+\[
+\text{CAGR} = \left(\frac{A_T}{A_0}\right)^{1/n} - 1
+\]
+Où $A_T$ (resp. $A_0$) est la valeur de l'actif à la date terminale (resp. initiale). Ici, on ne connaît pas $A_0$, mais on sait que $A_T = A_0 \times (1.10 \times 1.20 \times 0.95 \times 1.15) \Rightarrow \frac{A_T}{A_0} = 1.44 \Rightarrow \text{CAGR} = 9.43\%$.
+
+\item La rentabilité moyenne est calculée comme :
+\[
+\text{Rentabilité moyenne} = \frac{r_1 + r_2 + \dots + r_n}{n} = \frac{10\% + 20\% - 5\% + 15\%}{4} = 10\%
+\]
+
+\item Le CAGR est préféré pour mesurer la performance passée car :
+\begin{itemize}
+	\item Il reflète mieux la croissance réelle en tenant compte de la capitalisation.
+	\item La moyenne arithmétique (rentabilité moyenne) surestime souvent la rentabilité réelle.
+\end{itemize}
+Donc, le CAGR est à privilégier pour analyser la performance passée.
+
+\item La rentabilité espérée est égale à la moyenne des rendements, sous l'hypothèse que les rendements sont indépendants et identiquement distribués (iid) :
+\[
+\text{Rentabilité espérée} = \frac{10\% + 20\% - 5\% + 15\%}{4} = 10\%
+\]
+\end{enumerate}
+
+\subsection{Exercice}
+Il existe deux types d'entreprises S et I. La performance des actions des entreprises S dépend uniquement de la conjoncture. Lorsqu'elle est bonne leur rentabilité est de 40\%, lorsqu'elle est mauvaise, leur rentabilité est de -5\%. La conjoncture a une chance sur trois d'être bonne.
+
+La performance des actions des entreprises I dépend uniquement de la qualité de leur dirigeant. Lorsque ce dernier est efficace leur rentabilité est de 35\%, lorsqu'il est inefficace, leur rentabilité est de -25\%. La moitié des dirigeants sont efficaces. De plus ces derniers sont répartis de façon aléatoire entre les entreprises I.
+
+\begin{enumerate}
+	\item Quelle est la volatilité des actions d'une entreprise de type  \( I \) ? Même question pour une entreprise de type \( S \) ?
+\end{enumerate}
+
+\subsection{Solution}
+
+\begin{enumerate}
+	\item \[
+E(R_S) = \left(\frac{1}{3} \times 40\%\right) + \left(\frac{2}{3} \times (-5\%)\right)
+\]
+
+\[
+E(R_S) = \frac{40}{3} - \frac{10}{3} = \frac{30}{3} = 10\%
+\]
 
 
 
+\[
+E(R_I) = \left(\frac{1}{2} \times 35\%\right) + \left(\frac{1}{2} \times (-25\%)\right)
+\]
+
+\[
+E(R_I) = \frac{35}{2} - \frac{25}{2} = \frac{10}{2} = 5\%
+\]
+
+\[
+\text{Var}(R_S) = \left(\frac{1}{3} \times (40 - 10)^2\right) + \left(\frac{2}{3} \times (-5 - 10)^2\right)
+\]
+
+\[
+\text{Var}(R_S) = \left(\frac{1}{3} \times 900\right) + \left(\frac{2}{3} \times 225\right)
+\]
+
+\[
+\text{Var}(R_S) = 300 + 150 = 450
+\]
+
+\[
+\sigma_S = \sqrt{450} \approx 21.21\%
+\]
+
+\[
+\text{Var}(R_I) = \left(\frac{1}{2} \times (35 - 5)^2\right) + \left(\frac{1}{2} \times (-25 - 5)^2\right)
+\]
+
+\[
+\text{Var}(R_I) = \left(\frac{1}{2} \times 900\right) + \left(\frac{1}{2} \times 900\right)
+\]
+
+\[
+\text{Var}(R_I) = 900
+\]
+
+\[
+\sigma_I = \sqrt{900} = 30\%
+\]
+
+\begin{itemize}
+	\item Volatilité de l’entreprise de type S : \( \sigma_S \approx 21.21\% \)
+	\item Volatilité de l’entreprise de type I : \( \sigma_I = 30\% \)
+\end{itemize}
+\end{enumerate}
+
+\subsection{Exercice}
+
+\begin{enumerate}
+	\item Quelle est la volatilité d'un portefeuille composé de 100 actions d'entreprises de type I ? Idem  pour 100 actions d'entreprises de type S.
+	\item On suppose que la rentabilité du portefeuille de marché augmente de 47\% en période d'expansion et baisse de 25\% en période de récession.  Quel type d'actifs aura le bêta le plus élevé ? Commentez.
+\end{enumerate}
+
+\subsection{Solution}
+\begin{enumerate}
+	\item \textbf{Volatilité d'un portefeuille de 100 actions d'entreprises de type I et S :}
+	
+	La volatilité d'un portefeuille composé d'actions identiques est proportionnelle à la volatilité d'une seule action. En effet, si l'on suppose que les rendements des actions sont parfaitement corrélés, la volatilité totale est donnée par :
+	
+	\[
+	\sigma_{\text{portefeuille}} = \sigma_{\text{action}}
+	\]
+	
+	Ainsi, pour un portefeuille de 100 actions d'entreprises de type I :
+	
+	\[
+	\sigma_{I} = 30\%
+	\]
+	
+	De même, pour un portefeuille de 100 actions d'entreprises de type S :
+	
+	\[
+	\sigma_{S} \approx 21.21\%
+	\]
+	
+	En conclusion, la volatilité reste la même, car la diversification ne réduit pas le risque dans le cas où toutes les actions sont identiques.
+	
+	\item \textbf{Comparaison du bêta des actifs de type I et S :}
+	
+	Le bêta (\(\beta\)) mesure la sensibilité de la rentabilité d'un actif par rapport au portefeuille de marché. Il est défini comme :
+	
+	\[
+	\beta = \frac{\text{Cov}(R_{\text{actif}}, R_{\text{marché}})}{\text{Var}(R_{\text{marché}})}
+	\]
+	
+	Les rendements du marché sont donnés par :
+	
+	\[
+	R_{\text{marché}}^+ = 47\%, \quad R_{\text{marché}}^- = -25\%
+	\]
+	
+	\textbf{Calcul de la rentabilité espérée du marché :}
+	
+	\[
+	E(R_{\text{marché}}) = \frac{1}{2} \times 47\% + \frac{1}{2} \times (-25\%) = \frac{47 - 25}{2} = 11\%
+	\]
+	
+	\textbf{Calcul de la variance du marché :}
+	
+	\[
+	\text{Var}(R_{\text{marché}}) = \frac{1}{2} \times (47 - 11)^2 + \frac{1}{2} \times (-25 - 11)^2
+	\]
+	
+	\[
+	\text{Var}(R_{\text{marché}}) = \frac{1}{2} \times 1296 + \frac{1}{2} \times 1296 = 1296
+	\]
+	
+	\[
+	\sigma_{\text{marché}} = \sqrt{1296} = 36\%
+	\]
+	
+	\textbf{Analyse des actifs I et S :}
+	
+	- Les entreprises de type S sont sensibles à la conjoncture économique, elles auront un bêta plus élevé si leur rentabilité varie fortement avec la conjoncture.
+	- Les entreprises de type I sont influencées par des facteurs internes (efficacité du dirigeant), elles sont donc moins corrélées avec le marché.
+	
+	Par conséquent, les entreprises de type S devraient avoir un \(\beta\) plus élevé, car leur rentabilité est directement affectée par la conjoncture économique, qui est un facteur clé de la rentabilité du marché.
+	
+	\textbf{Conclusion :} Le bêta des entreprises de type S est plus élevé que celui des entreprises de type I, car leur performance est plus liée aux fluctuations du marché.
+	
+\end{enumerate}
+
+\subsection{Exercice}
 
 
+On suppose que le portefeuille de marché a autant de chance d'augmenter de 30\% que de diminuer de 10\%. 
 
+\begin{enumerate}
+	\item Quel est le béta d'un titre dont le cours augmente de 43\% en moyenne quand le marché est haussier et diminue de 17\% en moyenne quand le marché est baissier?
+	\item Quel est le béta d'un titre dont le cours augmente en moyenne de 18\% lorsque le marché est baissier et diminue en moyenne de 22\% lorsque le marché est haussier?
+	\item Exprimer le béta d'un titre dont la rentabilité espérée est de 4\% indépendamment de la rentabilité du marché?
+\end{enumerate}
 
+\subsection{Solution}
 
+\begin{enumerate}
+	\item \textbf{Calcul du bêta pour un titre augmentant de 43\% en marché haussier et diminuant de 17\% en marché baissier}
+	
+	\textbf{Données :}
+	
+	\begin{itemize}
+		\item Rentabilités du marché : 
+		\[
+		R_M^+ = 30\%, \quad R_M^- = -10\%, \quad P(+) = P(-) = \frac{1}{2}
+		\]
+		\item Rentabilités du titre : 
+		\[
+		R_A^+ = 43\%, \quad R_A^- = -17\%
+		\]
+	\end{itemize}
+	
+	\textbf{Rentabilité espérée du marché :}
+	\[
+	E(R_M) = \frac{1}{2} \times 30\% + \frac{1}{2} \times (-10\%) = \frac{30 - 10}{2} = 10\%
+	\]
+	
+	\textbf{Rentabilité espérée du titre :}
+	\[
+	E(R_A) = \frac{1}{2} \times 43\% + \frac{1}{2} \times (-17\%) = \frac{43 - 17}{2} = 13\%
+	\]
+	
+	\textbf{Covariance entre le titre et le marché :}
+	\[
+	\text{Cov}(R_A, R_M) = \frac{1}{2} \left( (43 - 13)(30 - 10) + (-17 - 13)(-10 - 10) \right)
+	\]
+	\[
+	\text{Cov}(R_A, R_M) = \frac{1}{2} \left( 30 \times 20 + (-30) \times (-20) \right)
+	\]
+	\[
+	\text{Cov}(R_A, R_M) = \frac{1}{2} (600 + 600) = 600
+	\]
+	
+	\textbf{Variance du marché :}
+	\[
+	\text{Var}(R_M) = \frac{1}{2} \left( (30 - 10)^2 + (-10 - 10)^2 \right)
+	\]
+	\[
+	\text{Var}(R_M) = \frac{1}{2} \left( 20^2 + (-20)^2 \right) = 400
+	\]
+	
+	\textbf{Bêta du titre :}
+	\[
+	\beta_A = \frac{\text{Cov}(R_A, R_M)}{\text{Var}(R_M)} = \frac{600}{400} = 1.5
+	\]
+	
+	Le bêta du titre est donc \( \beta_A = 1.5 \).
+	
+	\item \textbf{Calcul du bêta pour un titre augmentant de 18\% en marché baissier et diminuant de 22\% en marché haussier}
+	
+	\textbf{Données :}
+	
+	\begin{itemize}
+		\item Rentabilités du marché :
+		\[
+		R_M^+ = 30\%, \quad R_M^- = -10\%, \quad P(+) = P(-) = \frac{1}{2}
+		\]
+		\item Rentabilités du titre :
+		\[
+		R_B^+ = -22\%, \quad R_B^- = 18\%
+		\]
+	\end{itemize}
+	
+	\textbf{Rentabilité espérée du titre :}
+	\[
+	E(R_B) = \frac{1}{2} \times (-22\%) + \frac{1}{2} \times 18\% = \frac{-22 + 18}{2} = -2\%
+	\]
+	
+	\textbf{Covariance entre le titre et le marché :}
+	\[
+	\text{Cov}(R_B, R_M) = \frac{1}{2} \left( (-22 + 2)(30 - 10) + (18 + 2)(-10 - 10) \right)
+	\]
+	\[
+	\text{Cov}(R_B, R_M) = \frac{1}{2} \left( -24 \times 20 + 20 \times (-20) \right)
+	\]
+	\[
+	\text{Cov}(R_B, R_M) = \frac{1}{2} (-480 - 400) = -440
+	\]
+	
+	\textbf{Bêta du titre :}
+	\[
+	\beta_B = \frac{\text{Cov}(R_B, R_M)}{\text{Var}(R_M)} = \frac{-440}{400} = -1.1
+	\]
+	
+	Le bêta du titre est donc \( \beta_B = -1.1 \).
+	
+	\item \textbf{Bêta d'un titre avec une rentabilité constante de 4\% indépendamment du marché}
+	
+	Lorsque la rentabilité d'un titre est constante et indépendante de la rentabilité du marché, la covariance entre le titre et le marché est nulle :
+	
+	\[
+	\text{Cov}(R_C, R_M) = 0
+	\]
+	
+	Par conséquent, le bêta du titre est donné par :
+	
+	\[
+	\beta_C = \frac{\text{Cov}(R_C, R_M)}{\text{Var}(R_M)} = \frac{0}{400} = 0
+	\]
+	
+	Le bêta de ce titre est donc \( \beta_C = 0 \), ce qui signifie que le titre est insensible aux fluctuations du marché.
+	
+\end{enumerate}
 
+\subsection{Exercice}
 
+On suppose que le portefeuille de marché a autant de chance d'augmenter de 30\% que de baisser de 10\% et que le taux d'intérêt sans risque est de 4\% (\( r_f \))
 
+\begin{enumerate}
+	\item A partir du béta calculé à  la question 1 de l'exercice précédent, calculez le coût du capital d'un projet de même béta.
+	\item A partir du béta calculé à  la question 2 de l'exercice précédent, calculez le coût du capital d'un projet de même béta.
+\end{enumerate}
 
+\subsection{Correction de l'exercice}
 
+On suppose que le portefeuille de marché a autant de chance d'augmenter de 30\% que de baisser de 10\%, et que le taux d'intérêt sans risque est de 4\% (\( r_f \)). 
 
+\begin{enumerate}
+	\item \textbf{Calcul du coût du capital pour un projet de même bêta que dans la question 1 de l'exercice précédent}
+	
+	\textbf{Données :}
+	\begin{itemize}
+		\item Taux d'intérêt sans risque : \( r_f = 4\% \)
+		\item Rentabilité espérée du marché : 
+		\[
+		E(R_M) = \frac{1}{2} \times 30\% + \frac{1}{2} \times (-10\%) = \frac{30 - 10}{2} = 10\%
+		\]
+		\item Bêta du projet (issu de l'exercice précédent) : \( \beta_1 = 1.5 \)
+	\end{itemize}
+	
+	\textbf{Formule du coût du capital selon le modèle d'évaluation des actifs financiers (MEDAF) :}
+	\[
+	E(R_A) = r_f + \beta (E(R_M) - r_f)
+	\]
+	
+	\textbf{Application :}
+	\[
+	E(R_A) = 4\% + 1.5 \times (10\% - 4\%)
+	\]
+	
+	\[
+	E(R_A) = 4\% + 1.5 \times 6\% = 4\% + 9\% = 13\%
+	\]
+	
+	Ainsi, le coût du capital du projet est de \( 13\% \).
+	
+	\item \textbf{Calcul du coût du capital pour un projet de même bêta que dans la question 2 de l'exercice précédent}
+	
+	\textbf{Données :}
+	\begin{itemize}
+		\item Taux d'intérêt sans risque : \( r_f = 4\% \)
+		\item Rentabilité espérée du marché : 
+		\[
+		E(R_M) = 10\%
+		\]
+		\item Bêta du projet (issu de l'exercice précédent) : \( \beta_2 = -1.1 \)
+	\end{itemize}
+	
+	\textbf{Formule du coût du capital :}
+	\[
+	E(R_B) = r_f + \beta (E(R_M) - r_f)
+	\]
+	
+	\textbf{Application :}
+	\[
+	E(R_B) = 4\% + (-1.1) \times (10\% - 4\%)
+	\]
+	
+	\[
+	E(R_B) = 4\% - 1.1 \times 6\% = 4\% - 6.6\% = -2.6\%
+	\]
+	
+	Ainsi, le coût du capital du projet est de \( -2.6\% \), ce qui signifie que ce projet est moins risqué que l'actif sans risque et pourrait générer une rentabilité inférieure au taux sans risque.
+	
+\end{enumerate}
 
-
-
-
-
+\chapter{Critères de  choix d'investissement}
 
 
 
