@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  26 JAN 2025 21:30
+This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  27 JAN 2025 14:00
  restricted system commands enabled.
 **FINANCE_ENTREPRISE.tex
 (./FINANCE_ENTREPRISE.tex
@@ -778,7 +778,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3]
 Chapitre 1.
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-20 150035.png, id=212, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-20 150035.png, id=228, 
 491.58656pt x 121.95563pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-20 150035.png Grap
 hic file (type png)
@@ -804,7 +804,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 ]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 195312.png, id=226, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 195312.png, id=242, 
 320.69812pt x 58.71938pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 195312.png Grap
 hic file (type png)
@@ -827,7 +827,7 @@ Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 <../../../Pictures/Screenshots/Capture d'écran 2025-01-21 195312.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 200847.png, id=237, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 200847.png, id=253, 
 501.37312pt x 120.45pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 200847.png Grap
 hic file (type png)
@@ -835,7 +835,7 @@ hic file (type png)
 Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 -21 200847.png  used on input line 132.
 (luatex.def)             Requested size: 250.68594pt x 60.22484pt.
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 211714.png, id=238, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 211714.png, id=254, 
 445.665pt x 115.93312pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 211714.png Grap
 hic file (type png)
@@ -853,7 +853,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [7<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 200847.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213129.png, id=245, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213129.png, id=261, 
 573.64313pt x 127.97812pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213129.png Grap
 hic file (type png)
@@ -861,7 +861,7 @@ hic file (type png)
 Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 -21 213129.png  used on input line 165.
 (luatex.def)             Requested size: 286.82086pt x 63.98889pt.
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213904.png, id=246, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213904.png, id=262, 
 454.69875pt x 118.94438pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213904.png Grap
 hic file (type png)
@@ -912,7 +912,7 @@ Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 ]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 232512.png, id=263, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 232512.png, id=279, 
 521.69907pt x 84.315pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 232512.png Grap
 hic file (type png)
@@ -968,7 +968,7 @@ Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 ]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-22 001309.png, id=280, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-22 001309.png, id=296, 
 541.27219pt x 146.04562pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-22 001309.png Grap
 hic file (type png)
@@ -988,7 +988,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [13
 Missing character: There is no € (U+20AC) in font ptmr8t!
 <../../../Pictures/Screenshots/Capture d'écran 2025-01-22 001309.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-22 002943.png, id=292, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-22 002943.png, id=308, 
 544.28343pt x 85.82062pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-22 002943.png Grap
 hic file (type png)
@@ -1023,7 +1023,7 @@ Chapitre 2.
 
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 ]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 145125.png, id=309, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 145125.png, id=325, 
 618.05907pt x 445.665pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-26 145125.png Grap
 hic file (type png)
@@ -1052,7 +1052,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [18
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 <../../../Pictures/Screenshots/Capture d'écran 2025-01-26 145125.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151425.png, id=320, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151425.png, id=336, 
 655.69969pt x 478.78876pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151425.png Grap
 hic file (type png)
@@ -1060,7 +1060,7 @@ hic file (type png)
 Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 -26 151425.png  used on input line 497.
 (luatex.def)             Requested size: 327.84904pt x 239.39378pt.
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151713.png, id=321, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151713.png, id=337, 
 631.60968pt x 472.76625pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151713.png Grap
 hic file (type png)
@@ -1126,7 +1126,7 @@ ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 0\OML/ztmcm/m/it/12 :\OT1/ztmcm/m/n/12 1078]$
 /n/12 10\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 78%]$\T1/ptm/m/n/12 ).
  []
 
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 173535.png, id=353, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 173535.png, id=369, 
 631.60968pt x 474.27188pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-26 173535.png Grap
 hic file (type png)
@@ -1248,6 +1248,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Chapitre 3.
 [33
 
+
+Missing character: There is no ’ (U+2019) in font ptmb8t!
+Missing character: There is no œ (U+0153) in font ptmr8t!
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[34
+Missing character: There is no ’ (U+2019) in font ptmr8t!
 ] (./FINANCE_ENTREPRISE.aux)
 
 Package rerunfilecheck Warning: File `FINANCE_ENTREPRISE.out' has changed.
@@ -1255,18 +1269,18 @@ Package rerunfilecheck Warning: File `FINANCE_ENTREPRISE.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `FINANCE_ENTREPRISE.out':
-(rerunfilecheck)             Before: 817A4D861E256DE5B1A3E30B622E5AF2;8122
-(rerunfilecheck)             After:  B57B421203FC18A4925FDD037FEC3834;8348.
+(rerunfilecheck)             Before: E59CEB898FFBEE4354A9D609B5811C9F;8975
+(rerunfilecheck)             After:  57747F5ABC76289ACE3ED0569358E557;9186.
 )
 
 Here is how much of LuaTeX's memory you used:
- 14592 strings out of 477352
+ 14601 strings out of 477352
  100000,662416 words of node,token memory allocated
- 10582 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 291 glue, 339 kern, 1 penalty, 2 glyph, 2783 attrib
-ute, 59 glue_spec, 399 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 2:1221,3:198,4:18,5:169,6:50,7:8691,8:77,9:592,10:14,11:799
- 34787 multiletter control sequences out of 65536+600000
+ 10701 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 293 glue, 344 kern, 1 penalty, 2 glyph, 2818 attrib
+ute, 59 glue_spec, 404 attribute_list, 1 write, 1 pdf_action nodes
+   avail lists: 2:1181,3:198,4:18,5:164,6:50,7:8689,8:77,9:592,10:14,11:799
+ 34791 multiletter control sequences out of 65536+600000
  97 fonts using 6305951 bytes
  72i,12n,72p,1567b,489s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Us
@@ -1283,9 +1297,9 @@ eX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX
 /fonts/type1/urw/times/utmb8a.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/
 fonts/type1/urw/times/utmr8a.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on FINANCE_ENTREPRISE.pdf (33 pages, 1257494 bytes).
+Output written on FINANCE_ENTREPRISE.pdf (34 pages, 1262364 bytes).
 
-PDF statistics: 473 PDF objects out of 1000 (max. 8388607)
- 140 named destinations out of 1000 (max. 131072)
- 377 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 493 PDF objects out of 1000 (max. 8388607)
+ 145 named destinations out of 1000 (max. 131072)
+ 409 words of extra memory for PDF output out of 10000 (max. 100000000)
 
