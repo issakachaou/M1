@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  27 JAN 2025 23:05
+This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  28 JAN 2025 10:09
  restricted system commands enabled.
 **PROJET_ANALYSE_FINANCIERE.tex
 (./PROJET_ANALYSE_FINANCIERE.tex
@@ -893,8 +893,6 @@ warning  (pdf backend): ignoring duplicate destination with the name 'figure.1.2
 Chapitre 2.
 [12
 
-
-Missing character: There is no ’ (U+2019) in font ptmr8t!
 ] (./PROJET_ANALYSE_FINANCIERE.aux)
 Package rerunfilecheck Info: File `PROJET_ANALYSE_FINANCIERE.out' has not chang
 ed.
@@ -920,7 +918,7 @@ ymbol/usyr.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/tim
 es/utmb8a.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/time
 s/utmr8a.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on PROJET_ANALYSE_FINANCIERE.pdf (13 pages, 319606 bytes).
+Output written on PROJET_ANALYSE_FINANCIERE.pdf (13 pages, 319613 bytes).
 
 PDF statistics: 162 PDF objects out of 1000 (max. 8388607)
  36 named destinations out of 1000 (max. 131072)
