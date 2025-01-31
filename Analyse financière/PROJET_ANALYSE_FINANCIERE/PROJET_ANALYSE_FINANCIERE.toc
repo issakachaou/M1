@@ -13,4 +13,4 @@
 \contentsline {subsubsection}{Skewness}{10}{section*.6}%
 \contentsline {subsubsection}{Kurtosis}{10}{section*.7}%
 \contentsline {section}{\numberline {1.5}Relation entre les rendements}{10}{section.1.5}%
-\contentsline {chapter}{\numberline {2}Information comptable}{12}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Information comptable}{13}{chapter.2}%

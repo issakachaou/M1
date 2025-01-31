@@ -1,0 +1,107 @@
+# Forecasting using ARMA and ARCH models with high-frequency data: an application to stock market index
+## Issa KACHAOU, Pierre Durand
+
+Welcome to the revolution in thesis preparation: 
+
+📚 Literature Search: 
+- Before: Endless hours in libraries, combing through archives. 
+- Now: AI tools like Litmapms, Elicit, Undermind swiftly unlock your topic's secrets. 
+
+🔤 Grammar and Writing: 
+- Before: Proofreading marathons. 
+- Now: Hemingway, Grammarly, PaperPal turn you into an editing prodigy. 
+
+📄 Paper Summary: 
+- Before: Endless page skimming. 
+- Now: Scholarcy, SciSummary, Resoomer deliver quick summaries. 
+
+📑 Citations: 
+- Before: Manually crafting each reference. 
+- Now: Mendeley, Zotero, Scite curate your bibliography with ease. 
+
+📝 Qualitative Research: 
+- Before: Tedious manual data coding. 
+- Now: Atlas, NVivo, Thematic reveal unseen data patterns. 
+
+📊 Quantitative Research: 
+- Before: Battling with complicated stats software. 
+- Now: R, SPSS, Julius turn data into engaging narratives.
+
+test de Diebold-Mariano : bonne prévision
+
+
+
+
+
+
+Pour faire des sorties en LaTeX de statsmodels
+beginningtex = """\\documentclass{report}
+\\usepackage{booktabs}
+\\begin{document}"""
+endtex = "\end{document}"
+
+f = open('myreg.tex', 'w')
+f.write(beginningtex)
+f.write(resultat.summary().as_latex())
+f.write(endtex)
+f.close()
+
+31/01/2025 : Choix de la sources : Alpha Vantage 
+
+Clé API : VI3VNDX0I1XOSCL9
+
+#Is0621394000
+
+
+
+
+Diapositive 1 : Titre Titre : Optimisez votre recherche avec Zotero Sous-titre : Gérer efficacement vos sources pour un mémoire de master et autres travaux académiques
+________________________________________
+Diapositive 2 : Introduction Pourquoi utiliser un gestionnaire de sources ?
+•	Gagner du temps dans l'organisation et la citation des références
+•	Éviter les erreurs de citation
+•	Structurer efficacement une bibliographie
+________________________________________
+Diapositive 3 : Présentation de Zotero
+•	Logiciel gratuit et open-source
+•	Compatible avec Windows, Mac et Linux
+•	Extension pour navigateur et plugin pour traitement de texte
+________________________________________
+Diapositive 4 : Installation et configuration
+•	Téléchargement depuis www.zotero.org
+•	Installation du logiciel et de l’extension navigateur
+•	Intégration avec Word, LibreOffice et Google Docs
+________________________________________
+Diapositive 5 : Collecte des sources Ajout automatique :
+•	Cliquer sur l’icône Zotero dans la barre du navigateur
+•	Extraction automatique des métadonnées (auteur, titre, date, etc.)
+•	Ajout de fichiers PDF associés
+Ajout manuel :
+•	Entrer les informations bibliographiques manuellement
+•	Ajouter des notes et tags
+________________________________________
+Diapositive 6 : Organisation des références
+•	Création de collections et sous-collections
+•	Ajout de tags pour retrouver facilement les sources
+•	Recherche avancée et filtres
+________________________________________
+Diapositive 7 : Insertion et formatage des citations
+•	Utilisation du plugin Zotero dans Word/LibreOffice
+•	Choix du style de citation (APA, Chicago, MLA, etc.)
+•	Génération automatique de la bibliographie
+________________________________________
+Diapositive 8 : Synchronisation et collaboration
+•	Synchronisation des sources entre plusieurs appareils
+•	Partage de bibliothèques avec des collaborateurs
+________________________________________
+Diapositive 9 : Astuces et bonnes pratiques
+•	Toujours vérifier les métadonnées des références
+•	Utiliser les notes pour annoter les documents
+•	Exporter la bibliographie pour la conserver en cas de besoin
+________________________________________
+Diapositive 10 : Conclusion Pourquoi adopter Zotero ?
+•	Gain de temps et organisation optimisée
+•	Meilleure qualité des citations et bibliographies
+•	Outil indispensable pour tout chercheur
+Merci pour votre attention !
+
