@@ -3,7 +3,7 @@
 
 Welcome to the revolution in thesis preparation: 
 
-📚 Literature Search: 
+📚 Literature Search:
 - Before: Endless hours in libraries, combing through archives. 
 - Now: AI tools like Litmapms, Elicit, Undermind swiftly unlock your topic's secrets. 
 
@@ -51,6 +51,7 @@ f.close()
 Clé API : VI3VNDX0I1XOSCL9
 
 #Is0621394000
+
 
 
 
