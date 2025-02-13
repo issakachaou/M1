@@ -1,0 +1,36 @@
+\babel@toc {french}{}\relax 
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Zotero ?}{2}{0}{1}
+\beamer@sectionintoc {2}{Pourquoi utiliser un gestionnaire de sources ?}{3}{0}{2}
+\beamer@subsectionintoc {2}{1}{Gagner du temps dans l'organisation et la citation des références}{3}{0}{2}
+\beamer@subsectionintoc {2}{2}{Éviter les erreurs de citation}{3}{0}{2}
+\beamer@subsectionintoc {2}{3}{Structurer efficacement une bibliographie}{4}{0}{2}
+\beamer@sectionintoc {3}{Présentation de Zotero}{5}{0}{3}
+\beamer@subsectionintoc {3}{1}{Logiciel gratuit et open-source}{5}{0}{3}
+\beamer@subsectionintoc {3}{2}{Compatible avec Windows, Mac et Linux}{5}{0}{3}
+\beamer@subsectionintoc {3}{3}{Extension pour navigateur et plugin pour traitement de texte}{5}{0}{3}
+\beamer@sectionintoc {4}{Installation et configuration}{6}{0}{4}
+\beamer@subsectionintoc {4}{1}{Téléchargement}{6}{0}{4}
+\beamer@subsectionintoc {4}{2}{Installation du logiciel et de l’extension navigateur}{6}{0}{4}
+\beamer@subsectionintoc {4}{3}{Intégration avec Word, LibreOffice et Google Docs}{6}{0}{4}
+\beamer@sectionintoc {5}{Collecte des sources}{7}{0}{5}
+\beamer@subsectionintoc {5}{1}{Ajout automatique}{7}{0}{5}
+\beamer@subsectionintoc {5}{2}{Ajout manuel}{7}{0}{5}
+\beamer@sectionintoc {6}{Organisation des références}{8}{0}{6}
+\beamer@subsectionintoc {6}{1}{Création de collections et sous-collections}{8}{0}{6}
+\beamer@subsectionintoc {6}{2}{Recherche avancée et filtres}{8}{0}{6}
+\beamer@sectionintoc {7}{Insertion et formatage des citations}{9}{0}{7}
+\beamer@subsectionintoc {7}{1}{Utilisation du plugin Zotero dans Word/LibreOffice}{9}{0}{7}
+\beamer@subsectionintoc {7}{2}{Choix du style de citation (APA, Chicago, MLA, etc.)}{9}{0}{7}
+\beamer@subsectionintoc {7}{3}{Génération automatique de la bibliographie}{9}{0}{7}
+\beamer@sectionintoc {8}{Synchronisation et collaboration}{10}{0}{8}
+\beamer@subsectionintoc {8}{1}{Synchronisation des sources entre plusieurs appareils}{10}{0}{8}
+\beamer@subsectionintoc {8}{2}{Partage de bibliothèques avec des collaborateurs}{10}{0}{8}
+\beamer@sectionintoc {9}{Astuces et bonnes pratiques}{11}{0}{9}
+\beamer@subsectionintoc {9}{1}{Toujours vérifier les métadonnées des références}{11}{0}{9}
+\beamer@subsectionintoc {9}{2}{Utiliser les notes pour annoter les documents}{11}{0}{9}
+\beamer@subsectionintoc {9}{3}{Exporter la bibliographie pour la conserver en cas de besoin}{11}{0}{9}
+\beamer@sectionintoc {10}{Conclusion - Pourquoi adopter Zotero ?}{12}{0}{10}
+\beamer@subsectionintoc {10}{1}{Gain de temps et organisation optimisée}{12}{0}{10}
+\beamer@subsectionintoc {10}{2}{Meilleure qualité des citations et bibliographies}{12}{0}{10}
+\beamer@subsectionintoc {10}{3}{Outil indispensable pour tout chercheur}{12}{0}{10}
