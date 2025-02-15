@@ -1,0 +1,51 @@
+# Pourquoi choisir JupyterLab plutôt que Jupyter Notebook ?
+
+## Optimisez votre environnement de développement pour des projets de data science et d'analyse de données
+
+#### Diapositive 2 : Introduction
+
+Présentation de Jupyter Notebook : Outil interactif populaire pour le développement en Python, permettant de combiner code, visualisations et texte narratif dans un seul document.
+
+Émergence de JupyterLab : Évolution de Jupyter Notebook offrant une interface plus flexible et riche en fonctionnalités pour améliorer la productivité des développeurs et des chercheurs.
+
+#### Diapositive 3 : Interface Utilisateur
+
+Jupyter Notebook : Interface simple avec une disposition linéaire des cellules de code et de texte.
+
+JupyterLab : Interface moderne et modulaire permettant d'ouvrir plusieurs documents (notebooks, scripts, terminaux) dans des onglets ou des panneaux adjacents, facilitant le multitâche et l'organisation du travail.
+
+#### Diapositive 4 : Fonctionnalités Avancées
+
+
+Explorateur de fichiers intégré : Navigation aisée dans les répertoires et gestion des fichiers directement depuis JupyterLab.
+
+Éditeur de texte et de code : Support pour l'édition de divers formats de fichiers avec coloration syntaxique et fonctionnalités avancées.
+
+Terminaux intégrés : Accès direct à la ligne de commande pour exécuter des commandes système sans quitter l'environnement JupyterLab.
+
+#### Diapositive 5 : Extensibilité et Personnalisation
+
+Extensions et plugins : Large éventail d'extensions disponibles pour ajouter des fonctionnalités spécifiques, telles que l'intégration avec Git, des outils de visualisation avancés, etc.
+
+Personnalisation de l'interface : Ajustement de la disposition, des thèmes et des raccourcis clavier selon les préférences de l'utilisateur.
+
+#### Diapositive 6 : Collaboration et Partage
+
+Collaboration en temps réel : Fonctionnalités permettant à plusieurs utilisateurs de travailler simultanément sur le même notebook.
+
+Partage simplifié : Outils intégrés pour partager des notebooks et des projets avec des collègues ou la communauté.
+
+#### Diapositive 7 : Performance et Scalabilité
+
+Gestion efficace des ressources : Capacité à gérer de grands projets avec de multiples fichiers et données volumineuses sans compromettre les performances.
+
+Support pour divers langages : Compatibilité avec plusieurs kernels, permettant l'utilisation de différents langages de programmation au sein du même environnement.
+
+#### Diapositive 8 : Conclusion
+
+
+Synthèse des avantages de JupyterLab : Interface flexible, fonctionnalités enrichies, extensibilité, et meilleures capacités de collaboration.
+
+Recommandation : Pour les projets nécessitant une organisation avancée, une collaboration efficace et une personnalisation poussée, JupyterLab s'avère être le choix optimal par rapport à Jupyter Notebook.
+
+Cette structure vise à mettre en évidence les points clés différenciant JupyterLab de Jupyter Notebook, aidant ainsi les professionnels à choisir l'outil le plus adapté à leurs besoins en matière de développement et d'analyse de données.

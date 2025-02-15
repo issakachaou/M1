@@ -25,6 +25,52 @@
 %\setcounter{chapter}{1} % pour numéroter le chapitre 
 
 \begin{document}
+	
+	
+\begin{titlepage}
+	\centering
+	\begin{center}
+		\includegraphics[scale=0.3]{../../../Pictures/FAC_SEG_rvb}
+	\end{center}
+	\vspace*{2cm}
+	
+	\Huge
+	
+	\textbf{Finance d'entreprise}
+	\vspace{1.5cm}
+	
+	\Large
+	Cours intégral
+	
+	\vspace{2cm}
+	
+	\textbf{Issa KACHAOU} \\
+	{\normalsize Délégué général du Master 1 MBFA}
+	
+	
+	\vfill
+	
+	\Large
+	
+	\textsc{\textbf{Université Paris Est-Créteil}}	 \\
+	\textbf{Département d'\'Economie} \\
+	\textbf{2025}
+	
+\end{titlepage}
+\thispagestyle{empty}
+\newpage
+\clearpage
+\mbox{}
+\thispagestyle{empty}
+
+\tableofcontents
+
+\thispagestyle{empty}
+\newpage
+\mbox{}
+\thispagestyle{empty} %Dernière page vide
+%\backmatter	
+	
 
 \chapter*{Introduction}	
 
@@ -36,7 +82,7 @@ Une entreprise est une organisation dont le but est de produire et d'offrir des 
 
 En 2021, les secteurs principalement marchands non agricoles et non financiers comptent 3,7 millions d'entreprises (Source : \url{https://www.insee.fr/fr/statistiques/}). Ces entreprises affichent un chiffre d'affaires hors taxes global de 4142 milliards d'euros et une valeur ajoutée de 1179 milliards d'euros, représentant 60\% de la valeur ajoutée de l'économie française. Les 4200 entreprises de taille intermédiaire (ETI) et les grandes entreprises (GE) représentent 65\% du chiffre d'affaires, 61\% de la valeur ajoutée, 46\% des investissements et 86\% des exportations, illustrant une forte concentration de l'activité. En revanche, les 3,6 millions de petites entreprises (PE) contribuent à environ 21\% du chiffre d'affaires et à un quart de la valeur ajoutée, tout en n'ayant aucune part dans les exportations. Les grandes entreprises (GE) et les entreprises de taille intermédiaire (ETI), bien qu'elles ne représentent qu'une part infime des entreprises (environ 0,2\%), contribuent à 65\% du chiffre d'affaires, 61\% de la valeur ajoutée, 75\% des immobilisations corporelles et 86\% des exportations, soulignant ainsi une forte concentration de l'activité économique sur ces catégories. À l'inverse, les micro-entreprises et les PME hors micro-entreprises, représentant environ 99\% des entreprises, participent pour 35\% du chiffre d'affaires et 39\% de la valeur ajoutée, mais leur part dans les exportations reste marginale.
 
-\section{Quel type d’entreprise ?}
+\section{Quel type d'entreprise ?}
 	
 Nous nous focaliserons sur les sociétés par action. Le capital de ces entreprises est divisé en actions, sans limite sur le nombre d'actionnaires. Chaque actionnaire (shareholder) détient une part de l'entreprise et a le droit de percevoir des dividendes. En 2021, ces sociétés ne représentaient que 7\% du nombre total d'entreprises, mais elles comptaient pour 38\% du nombre de salariés et 50\% de la valeur ajoutée, ce qui illustre leur importance en tant qu'entreprises de taille significative, notamment les entreprises de taille intermédiaire (ETI) et les grandes entreprises (GE).
 
@@ -50,9 +96,11 @@ Les décisions des sociétés par actions cotées en bourse répondent à plusie
 
 L'asymétrie d'information entre les dirigeants, les actionnaires et les créanciers a des implications significatives pour la stratégie financière de l'entreprise. En raison de cette asymétrie, les dirigeants peuvent prendre des décisions qui ne sont pas toujours alignées avec les intérêts des actionnaires, entraînant des conflits d'intérêts. De plus, les créanciers, n'ayant pas accès aux mêmes informations que les dirigeants, peuvent percevoir un risque plus élevé, ce qui peut augmenter le coût du capital. Pour atténuer ces problèmes, les entreprises doivent adopter des pratiques de transparence, établir des mécanismes de contrôle efficaces et maintenir une communication ouverte avec toutes les parties prenantes, tout en choisissant des stratégies d'investissement prudentes.
 
-\chapter{Évaluation d’un projet}
+\part{Les décisions d'investissement}
+\pagestyle{empty} 
+\chapter{Évaluation d'un projet}
 
-\section{Principes de l’évaluation}
+\section{Principes de l'évaluation}
 
 Un projet d'investissement peut être défini comme une séquence de flux financiers (cash flows). Les flux positifs, appelés inflows, sont les revenus générés par le projet, tandis que les flux négatifs, ou outflows, représentent les coûts associés. Le principe fondamental de l'évaluation d'un projet repose sur la comparaison entre coûts et bénéfices : un projet n'est rentable que si les bénéfices dépassent les coûts. De plus, il est important de noter que les coûts et les bénéfices sont échelonnés dans le temps, ce qui implique qu'une analyse actualisée des flux financiers doit être réalisée pour évaluer la viabilité du projet.
 
@@ -72,10 +120,10 @@ L'opération visant à exprimer des flux futurs en valeur présente est appelée
 
 \[ VA_n(f)= \frac{f}{(1+r)^n} \]
 
-Ce que vaut aujourd’hui le flux \( f \) obtenu dans \( n \) périodes.
+Ce que vaut aujourd'hui le flux \( f \) obtenu dans \( n \) périodes.
 
 \( r \) est aussi appelé le taux  d'actualisation (taux actuariel si les périodes considérées sont des années).
-Ce que vaut aujourd’hui le flux \( f \) obtenu dans n périodes.
+Ce que vaut aujourd'hui le flux \( f \) obtenu dans n périodes.
 
 \( r \) est aussi appelé le taux d'actualisation (taux actuariel si les périodes considérées sont des années).
 
@@ -104,11 +152,11 @@ Du point de vue financier, la règle de décision basée sur la Valeur Actuelle 
 
 \subsection{Exercice}
 
-Le Laboratoire AurelGap a développé une nouvelle molécule. Son brevet a une durée de vie de 17 ans. Les bénéfices attendus pour ce nouveau médicament s’élèvent à 2 millions d’euros la première année puis ils augmentent de 5\% par an durant la durée de vie du brevet. Au terme des 17 années, un générique pourra être mis en vente sur le marché et les bénéfices obtenus par le médicament original seront alors nuls.
+Le Laboratoire AurelGap a développé une nouvelle molécule. Son brevet a une durée de vie de 17 ans. Les bénéfices attendus pour ce nouveau médicament s'élèvent à 2 millions d'euros la première année puis ils augmentent de 5\% par an durant la durée de vie du brevet. Au terme des 17 années, un générique pourra être mis en vente sur le marché et les bénéfices obtenus par le médicament original seront alors nuls.
 
 \begin{enumerate}
-	\item Déterminer la valeur actuelle du médicament si le taux d’actualisation est de 10\%.
-	\item Même question mais pour un taux d’actualisation de 3\%.
+	\item Déterminer la valeur actuelle du médicament si le taux d'actualisation est de 10\%.
+	\item Même question mais pour un taux d'actualisation de 3\%.
 \end{enumerate}
 
 \begin{enumerate}
@@ -182,7 +230,7 @@ VAN = \sum_{t=1}^{n} \frac{f}{(1+g)} \left( \frac{1+g}{1+r} \right)^{t} = \lim_{
 \end{cases}
 \]
 
-\section{Valeur d’une séquence de flux}
+\section{Valeur d'une séquence de flux}
 
 \subsection{Exemple}
 
@@ -196,7 +244,7 @@ Ainsi, le projet est rentable.
 
 \section{Calculer le taux de rentabilité interne (TRI)}
 
-Jusqu’à présent, on a supposé un taux d’intérêt constant \( r \). À partir de l'échéancier associé à un projet, on peut également calculer le taux de rendement interne (TRI) associé à ce projet.
+Jusqu'à présent, on a supposé un taux d'intérêt constant \( r \). À partir de l'échéancier associé à un projet, on peut également calculer le taux de rendement interne (TRI) associé à ce projet.
 
 Le taux de rentabilité interne (TRI) est la valeur du taux d'intérêt tel que la somme actualisée des flux positifs soit égale à la valeur actualisée des flux négatifs, ce qui annule la VAN associée au projet.
 
@@ -214,7 +262,7 @@ TRI = \frac{f}{C}
 
 En revanche, dans le cas où \( n \) est fini, l'équation précédente n'a pas de solution analytique évidente. Le calcul du TRI nécessite donc l'aide d'un logiciel (comme la fonction TRI dans Excel ou l'utilisation de Mathematica) ou peut être approximé.
 
-La règle du TRI stipule que tout investissement dont le taux de rentabilité interne dépasse le coût du capital (taux d’actualisation) doit être réalisé. 
+La règle du TRI stipule que tout investissement dont le taux de rentabilité interne dépasse le coût du capital (taux d'actualisation) doit être réalisé. 
 
 Attention : pour comparer la rentabilité entre deux projets, il est toujours recommandé d'utiliser la VAN.
 
@@ -229,7 +277,7 @@ Cependant, il existe de multiples taux d'intérêt, qui peuvent varier selon les
 La valeur actuelle nette (VAN) d'un projet est sensible à une petite variation du taux d'actualisation.
 
 
-La question se pose alors : lequel choisir pour le calcul de l’actualisation ?
+La question se pose alors : lequel choisir pour le calcul de l'actualisation ?
 
 Le taux d'actualisation à utiliser dépend essentiellement de plusieurs facteurs :
 
@@ -247,7 +295,7 @@ Enfin, le risque associé au projet doit être pris en compte dans le choix du t
 
 \section{VAN  et structure par terme des taux}
 
-Dans le calcul de la valeur actuelle nette (VAN), il est nécessaire de tenir compte de la structure par terme des taux d'intérêt, surtout si la courbe des taux n'est pas plate. En effet, il n’y a aucune raison pour que le taux d’intérêt à échéance d’un an soit égal à celui pratiqué pour une échéance de 2 ans (ou 3 ans, etc.). En général, la courbe des taux est croissante.
+Dans le calcul de la valeur actuelle nette (VAN), il est nécessaire de tenir compte de la structure par terme des taux d'intérêt, surtout si la courbe des taux n'est pas plate. En effet, il n'y a aucune raison pour que le taux d'intérêt à échéance d'un an soit égal à celui pratiqué pour une échéance de 2 ans (ou 3 ans, etc.). En général, la courbe des taux est croissante.
 
 Ainsi, la VAN de flux sans risques avec \( k = 1, \ldots, n \) sera :
 
@@ -255,16 +303,16 @@ Ainsi, la VAN de flux sans risques avec \( k = 1, \ldots, n \) sera :
 VAN_i = \sum_{k=0}^{i} \frac{f_k}{(1 + r_i)^k}
 \]
 
-où \( r_i \) est le taux d’intérêt d’un placement arrivant à échéance dans \( i \) années (périodes).
+où \( r_i \) est le taux d'intérêt d'un placement arrivant à échéance dans \( i \) années (périodes).
 
 \section{Valeur d' une séquence de flux}
 
 \subsection{Exercice}
 
-AurelDF envisage la construction d’une centrale nucléaire pour un coût de 120 millions d'\euro~à payer immédiatement. Le bénéfice obtenu devrait être de 20 millions d’\euro~par an pendant les 10 prochaines années. Ensuite, la centrale fermera et le site devra être nettoyé pour répondre aux normes environnementales, puis surveillé. Cette surveillance coûtera 2 millions d’\euro~par an sur une période infinie.
+AurelDF envisage la construction d'une centrale nucléaire pour un coût de 120 millions d'\euro~à payer immédiatement. Le bénéfice obtenu devrait être de 20 millions d'\euro~par an pendant les 10 prochaines années. Ensuite, la centrale fermera et le site devra être nettoyé pour répondre aux normes environnementales, puis surveillé. Cette surveillance coûtera 2 millions d'\euro~par an sur une période infinie.
 
 \begin{enumerate}
-	\item En appliquant le critère du TRI, l’entreprise AurelDF a-t-elle intérêt à exploiter cette mine ?
+	\item En appliquant le critère du TRI, l'entreprise AurelDF a-t-elle intérêt à exploiter cette mine ?
 	\item Si le coût du capital est de 8\% que conclure à partir du calcul de la VAN.
 \end{enumerate} 
 
@@ -280,7 +328,7 @@ AurelDF envisage la construction d’une centrale nucléaire pour un coût de 12
 La VAN s'annule pour un TRI de \( 0,02924 \) et un \( TRI_2 = 0,08723 \). Cependant, on ne peut pas conclure uniquement sur la base de ces valeurs.
 	
 Considérons l'équation suivante :
-\item Si \(  r = 0,08 \) la VAN est de \( 2,621791 \) millions d'euros. Cela montre que la VAN n’est pas neutre par rapport au taux d’actualisation.	
+\item Si \(  r = 0,08 \) la VAN est de \( 2,621791 \) millions d'euros. Cela montre que la VAN n'est pas neutre par rapport au taux d'actualisation.	
 \end{enumerate}
 
 \section{Risque et taux d'intérêt}
@@ -295,9 +343,9 @@ Ainsi, le taux d'actualisation choisi pour calculer la valeur actuelle nette (VA
 
 Le taux d'actualisation à utiliser pour déterminer la valeur actuelle ou future d'un projet est le coût du capital.
 
-Le coût du capital d’un projet correspond au taux de rentabilité le plus élevé présenté par un placement alternatif de même horizon et de même risque.
+Le coût du capital d'un projet correspond au taux de rentabilité le plus élevé présenté par un placement alternatif de même horizon et de même risque.
 
-L’idée est qu'un investisseur potentiel cherche à évaluer ce que rapporte le projet par rapport à un placement alternatif, ce qui représente le coût d’opportunité. 
+L'idée est qu'un investisseur potentiel cherche à évaluer ce que rapporte le projet par rapport à un placement alternatif, ce qui représente le coût d'opportunité. 
 
 Attention : la comparaison n'a de sens que si le placement et le projet sont de même risque et de même terme.
 
@@ -308,19 +356,19 @@ Considérons un projet (P) avec les caractéristiques suivantes :
 - En \( t = 0 \) : coût = 0
 - En \( t = 1 \) : flux = variable aléatoire \( J \) prenant les valeurs \( J_0 > 0 \) avec probabilité \( \pi \) et \( J_1 > J_0 \) avec probabilité \( 1 - \pi \)
 
-On note \( r_f \) le taux d’intérêt certain (taux d’intérêt appliqué aux placements sans risque).
+On note \( r_f \) le taux d'intérêt certain (taux d'intérêt appliqué aux placements sans risque).
 
-Si j’actualise au taux \( r_f \), la valeur actuelle (VA) du projet \( P \) est donnée par :
+Si j'actualise au taux \( r_f \), la valeur actuelle (VA) du projet \( P \) est donnée par :
 
 \[
 VA(P) = \frac{E(J)}{1 + r_f} = \frac{\pi J_0 + (1 - \pi) J_1}{1 + r_f}
 \]
 
-Cependant, ce calcul pose un problème, car cela ne correspond pas au projet \( P \). En effet, en \( t = 1 \), on n’obtient pas \( E(J) \) avec certitude, alors que \( r_f \) est le taux d’intérêt au certain.
+Cependant, ce calcul pose un problème, car cela ne correspond pas au projet \( P \). En effet, en \( t = 1 \), on n'obtient pas \( E(J) \) avec certitude, alors que \( r_f \) est le taux d'intérêt au certain.
 
 \subsection{Exercice}
 
-Laurent a le choix entre deux projets, chacun d'eux devant l'occuper à plein temps. Le projet   P1 concerne la création d'une boulangerie. L'investissement initial est de 1000 euros, les bénéfices associés seront de 1100 euros la 1ère année, ils diminueront ensuite de 10\% chaque année. Le projet  P2  concerne la création d’une pizzeria équipée d’un unique four. Il n'est pas possible d'en installer davantage. L'investissement initial est de 1000 euros, les bénéfices associés seront de 400 euros la 1ère année, ils diminueront ensuite de 20\% chaque année du fait de l'usure du four. Le coût du capital est de 12\% pour les deux projets.
+Laurent a le choix entre deux projets, chacun d'eux devant l'occuper à plein temps. Le projet   P1 concerne la création d'une boulangerie. L'investissement initial est de 1000 euros, les bénéfices associés seront de 1100 euros la 1ère année, ils diminueront ensuite de 10\% chaque année. Le projet  P2  concerne la création d'une pizzeria équipée d'un unique four. Il n'est pas possible d'en installer davantage. L'investissement initial est de 1000 euros, les bénéfices associés seront de 400 euros la 1ère année, ils diminueront ensuite de 20\% chaque année du fait de l'usure du four. Le coût du capital est de 12\% pour les deux projets.
 \begin{enumerate}
 	\item Représentez l'échéancier associé à chacun des deux projets.
 	\item Calculez la VAN et le TRI pour chacun des projets. Dans lequel de ces projets Laurent devrait-il investir?
@@ -376,7 +424,7 @@ TRI_{P_2} \Rightarrow -1000 + \frac{400}{TRI_{P_2} + 0,2} = 0 \Rightarrow TRI_{P
 
 Il convient donc de choisir \( P_1 \) plutôt que \( P_2 \) selon les critères de la VAN et du TRI.
 
-\item Si à présent, le nombre de fours est multiplié par 20, nous avons, avec le même montant d’investissement :
+\item Si à présent, le nombre de fours est multiplié par 20, nous avons, avec le même montant d'investissement :
 
 \[
 VAN_{P_2} = -1000 + \frac{(400 \times 20)}{0,32} = 24000 \text{ euros}
@@ -432,7 +480,7 @@ La rentabilité espérée de l'actif \( R \) est donnée par la formule suivante
 \mathbb{E}(R) = \sum_{i=1}^{n} p_i R_i
 \]
 
-où \( p_i \) représente la probabilité associée à chaque scénario et \( R_i \) la rentabilité dans ce scénario. La variance de l’actif \( R \) est calculée par :
+où \( p_i \) représente la probabilité associée à chaque scénario et \( R_i \) la rentabilité dans ce scénario. La variance de l'actif \( R \) est calculée par :
 
 \[
 \mathbb{V}(R) = \sum_{i=1}^{n} p_i (R_i - \mathbb{E}(R))^2 = \mathbb{E}(R^2) - \mathbb{E}(R)^2
@@ -481,7 +529,7 @@ Il faut garder en tête les limites associées à cette estimation de la rentabi
 
 \begin{itemize}
 	\item Elle repose sur une hypothèse forte : les rentabilités observées sont tirées de variables aléatoires indépendantes et identiquement distribuées (VA iid).
-	\item Même si cette hypothèse est vérifiée, les erreurs de mesure peuvent être importantes et l’estimation peu précise avec un nombre d'observations limité.
+	\item Même si cette hypothèse est vérifiée, les erreurs de mesure peuvent être importantes et l'estimation peu précise avec un nombre d'observations limité.
 \end{itemize}
 
 L'aversion pour le risque des investisseurs implique qu'il devrait exister une relation croissante entre risque et rentabilité. 
@@ -548,9 +596,9 @@ Parmi les risques suivants, lesquels sont systématiques et lesquels sont divers
 \subsection{Solution}
 
 \begin{enumerate}
-	\item Le PDG disparaît dans un accident d'avion. Type : Diversifiable. Explication : La disparition du PDG est un événement spécifique à l’entreprise. Ce type de risque peut être atténué en investissant dans plusieurs entreprises pour réduire l'impact d'un événement individuel.
-	\item L’économie entre en récession, ce qui réduit la demande adressée à l’entreprise. Type : Systématique. Explication : La récession est un phénomène économique global qui affecte toutes les entreprises. Il est impossible de l’éliminer par diversification, car il touche tous les secteurs dans une certaine mesure.
-	\item L’ingénieur le plus créatif de la division R\&D part à la concurrence. Type : Diversifiable
+	\item Le PDG disparaît dans un accident d'avion. Type : Diversifiable. Explication : La disparition du PDG est un événement spécifique à l'entreprise. Ce type de risque peut être atténué en investissant dans plusieurs entreprises pour réduire l'impact d'un événement individuel.
+	\item L'économie entre en récession, ce qui réduit la demande adressée à l'entreprise. Type : Systématique. Explication : La récession est un phénomène économique global qui affecte toutes les entreprises. Il est impossible de l'éliminer par diversification, car il touche tous les secteurs dans une certaine mesure.
+	\item L'ingénieur le plus créatif de la division R\&D part à la concurrence. Type : Diversifiable
 	\item Les recherches en cours dans la division R\&D ne débouchent pas sur des innovations. Type : Diversifiable
 \end{enumerate}
 
@@ -568,7 +616,7 @@ Parmi les risques suivants, lesquels sont systématiques et lesquels sont divers
 \begin{enumerate}
 	\item Quelle est la rentabilité annuelle moyenne sur la période ?
 	\item Quelle est la variance des rentabilités sur la période ?
-	\item Déterminer l’intervalle de confiance de la rentabilité annuelle espéré au seuil de 5\%. On supposera que les rentabilités annuelles sont des variables aléatoires indépendantes  qui suivent une loi de Student.
+	\item Déterminer l'intervalle de confiance de la rentabilité annuelle espéré au seuil de 5\%. On supposera que les rentabilités annuelles sont des variables aléatoires indépendantes  qui suivent une loi de Student.
 \end{enumerate}
 
 Rappel : Soit \(  R_i, i =1,\cdots,n, \) \( n \) variable aléatoires indépendantes et de même loi et d'écart type  . On peut estimer l'écart type de la moyenne de ces variables aléatoires par : \( \sigma_R = \frac{\sigma_R }{\sqrt{N}} \)
@@ -642,8 +690,8 @@ Soit les rentabilités annuelles d'un actif au cours de quatre années successiv
 
 \begin{enumerate}
 	\item Quel est le taux de croissance annuel composé de cet actif sur les quatre années ?
-	\item Quelle est la rentabilité annuelle moyenne de l’actif sur la période ?
-	\item Quelle mesure de performance passée de l’actif doit-on choisir ?
+	\item Quelle est la rentabilité annuelle moyenne de l'actif sur la période ?
+	\item Quelle mesure de performance passée de l'actif doit-on choisir ?
 	\item En supposant que les rentabilités sont des variables aléatoires indépendantes et identiquement distribuées, estimer la rentabilité espérée de  cet actif.
 \end{enumerate}
 
@@ -751,8 +799,8 @@ E(R_I) = \frac{35}{2} - \frac{25}{2} = \frac{10}{2} = 5\%
 \]
 
 \begin{itemize}
-	\item Volatilité de l’entreprise de type S : \( \sigma_S \approx 21.21\% \)
-	\item Volatilité de l’entreprise de type I : \( \sigma_I = 30\% \)
+	\item Volatilité de l'entreprise de type S : \( \sigma_S \approx 21.21\% \)
+	\item Volatilité de l'entreprise de type I : \( \sigma_I = 30\% \)
 \end{itemize}
 \end{enumerate}
 
@@ -1028,7 +1076,7 @@ On suppose que le portefeuille de marché a autant de chance d'augmenter de 30\%
 \chapter{Critères de  choix d'investissement}
 
 
-\section{VAN d'un projet d’investissement}
+\section{VAN d'un projet d'investissement}
 
 Le taux d'actualisation est fixé pour le calcul de la valeur actuelle nette (VAN) associée à un projet. Selon le principe établi, un projet dont la VAN est positive sera entrepris. En 2001, 75\% des entreprises américaines, contre seulement 35\% des entreprises françaises, utilisaient la VAN pour sélectionner leurs projets.
 
@@ -1040,7 +1088,7 @@ Le principe est qu'un projet sera entrepris s'il permet de récupérer les capit
 
 Cependant, une limite importante de ce critère est qu'il ne prend pas en compte la valeur temps de l'argent ni le coût du capital. Cela peut conduire à rejeter des projets ayant une valeur actuelle nette (VAN) positive.
 
-\section{Le taux de rendement interne}
+\section{Le taux de rendement interne (TRI)}
 
 Le principe est qu'un projet sera entrepris si le taux de rendement interne (TRI) dépasse le coût du capital. En général, les critères de la valeur actuelle nette (VAN) et du TRI conduisent à la même décision.
 
@@ -1049,9 +1097,441 @@ Cependant, ce résultat est vrai seulement si la VAN est une fonction décroissa
 
 \section{Projets mutuellement exclusifs}
 
-Jusqu'à présent, nous avons considéré des projets pouvant être entrepris indépendamment. Cependant, il arrive qu'une entreprise doive choisir un projet parmi plusieurs projets mutuellement exclusifs, également appelés projets incompatibles. Souvent, on suppose que ces projets sont envisagés pour répondre au même besoin, ce qui signifie qu'ils utilisent les mêmes ressources et le même montant d’investissement.
+Jusqu'à présent, nous avons considéré des projets pouvant être entrepris indépendamment. Cependant, il arrive qu'une entreprise doive choisir un projet parmi plusieurs projets mutuellement exclusifs, également appelés projets incompatibles. Souvent, on suppose que ces projets sont envisagés pour répondre au même besoin, ce qui signifie qu'ils utilisent les mêmes ressources et le même montant d'investissement.
 
 Dans ce contexte, le critère de la valeur actuelle nette (VAN) stipule qu'il faut choisir le ou les projets ayant la VAN la plus élevée. En revanche, le critère du taux de rendement interne (TRI) n'est pas un bon critère pour faire un choix parmi des projets mutuellement exclusifs.
+
+\section{TRI et projets mutuellement exclusifs}
+
+Le Taux de Rentabilité Interne (TRI) n'est pas sensible à l'échelle du projet, tandis que la Valeur Actuelle Nette (VAN) d'un projet (si elle est positive) doublera si l'échelle du projet double. Par exemple, pour le projet \( P_1 \) : coût = \( C \), rentes perpétuelles (flux = \( J > 0 \)) et coût du capital \( r \). Pour le projet \( P_2 \) : on multiplie l'échelle du projet \( P_1 \) par \( N \).
+
+\[ VAN(P_1)=-C+\frac{J}{r}\Leftrightarrow TRI_1=\frac{J}{C} \]
+\[ VAN(P_2)=N\left( -C+\frac{J}{r}\right) = NVAN(P_1)\Leftrightarrow TRI_2=\frac{J}{C} \]
+
+Le Taux de Rentabilité Interne (TRI) peut également conduire à choisir un projet au détriment d'un autre de même Valeur Actuelle Nette (VAN) seulement parce que le calendrier des deux projets est différent.
+
+Appliquer le Taux de Rentabilité Interne (TRI) à la comparaison de projets mutuellement exclusifs implique le calcul du TRI différentiel. 
+
+Principe : Soit deux projets mutuellement exclusifs \( P_1 \) et \( P_2 \) ; on soustrait les flux du projet \( P_2 \) à ceux du projet \( P_1 \) pour calculer le TRI associé à la différence des flux, appelé TRI différentiel. Si celui-ci est supérieur au coût du capital, il faut choisir le projet \( P_1 \) ; sinon, il faut retenir le projet \( P_2 \). 
+
+Cf. Exemple en utilisant le logiciel Python. Attention : cette méthode n'est valable que si les projets ont le même coût du capital.
+
+\section{Choix d'investissement et contrainte sur les ressources}
+
+Jusqu'à présent, nous avons abordé la notion de projets mutuellement exclusifs, qui se caractérisent par le fait que les deux projets nécessitent des investissements identiques et mobilisent les mêmes ressources. Cependant, il est également possible qu'une entreprise se trouve confrontée à des limitations concernant certaines ressources spécifiques. Par exemple, elle peut disposer d'un nombre limité d'employés, d'une taille restreinte pour son entrepôt de stockage, d'un nombre fixe de machines, ou encore faire face à des contraintes financières. Dans de telles situations, le critère de la Valeur Actuelle Nette (VAN) maximale ne constitue pas nécessairement le bon indicateur pour guider la prise de décision.
+
+Un critère souvent utilisé en pratique pour évaluer des projets est l'indice de profitabilité. La méthode consiste d'abord à identifier la "ressource rare" sur laquelle pèse la contrainte, puis à calculer la Valeur Actuelle Nette (VAN) ainsi que les quantités consommées de cette ressource pour chacun des projets envisagés.
+
+Le calcul de l'indice de profitabilité du projet \( P \) se formule comme suit :
+
+\[
+I P(P) = \frac{VAN(P)}{\text{Ressources consommées}}
+\]
+
+Il est recommandé d'accepter les projets pour lesquels l'indice de profitabilité est le plus élevé, et ce, jusqu'à épuisement de la "ressource rare".
+
+\subsection{Exemple}
+Considérons une contrainte de financement fixée à 10 millions d'euros d'investissement. Cette limitation budgétaire doit être prise en compte lors de l'évaluation des projets, car elle influence directement la capacité de l'entreprise à financer les initiatives envisagées.
+
+\begin{center}
+	\begin{tabular}{@{}cccc@{}}
+	\toprule
+	Projet & VAN & Investissement nécessaire & IP   \\ \midrule
+	A      & 30  & 8                         & 3,75 \\
+	B      & 20  & 4                         & 5    \\
+	C      & 20  & 5                         & 4    \\
+	D      & 1   & 1                         & 1    \\ \bottomrule
+\end{tabular}
+
+\end{center}
+\begin{center}
+	
+\begin{tabular}{@{}ccc@{}}
+	\toprule
+	Projet & IP   & Investissement nécessaire cumulé \\ \midrule
+	B      & 5    & 4                                \\
+	C      & 4    & 9                                \\
+	A      & 3,75 & 17                               \\
+	D      & 1    & 18                               \\ \bottomrule
+\end{tabular}
+
+\end{center}
+
+Dans cette situation, seuls les projets \( B \) et \( C \) sont entrepris, tandis que le projet ayant la Valeur Actuelle Nette (VAN) maximale, désigné comme projet \( A \), n'est pas retenu. 
+
+Cependant, certaines limites doivent être prises en considération. Par exemple, le projet \( D \) aurait dû être entrepris, car cela aurait permis de saturer la contrainte de ressources disponible. De plus, il est important de noter que l'indice de profitabilité ne peut pas être utilisé de manière efficace lorsqu'il existe plusieurs contraintes à gérer simultanément.
+
+\chapter{Évaluation des actifs d'une entreprise}
+
+Jusqu'à présent, notre attention s'est principalement portée sur l'évaluation des projets d'investissement. Cependant, il est essentiel de reconnaître qu'une entreprise est souvent porteuse de nombreux projets. Dès lors, quel lien existe-t-il entre la valeur d'une entreprise et la Valeur Actuelle Nette (VAN) des projets qu'elle détient ?
+
+La valeur d'une entreprise peut être définie comme la valeur de marché de son actif économique, c'est-à-dire le montant qu'un investisseur devrait débourser pour acquérir l'entreprise tout en remboursant intégralement ses dettes. Cette valeur se compose de deux éléments principaux : d'une part, la valeur de marché des capitaux propres, souvent représentée par la capitalisation boursière, et, d'autre part, la dette nette, qui est calculée comme la différence entre la dette totale et la trésorerie de l'entreprise.
+
+Le principe de base de l'évaluation d'un actif repose sur l'absence d'opportunités d'arbitrage. En d'autres termes, le prix d'un actif financier est égal à la valeur actualisée des flux futurs auxquels il donne droit.
+
+Avec ce principe en tête, on peut suivre trois étapes clés pour évaluer un actif :
+
+\begin{enumerate}
+	\item Prix d'une action : Déterminer le prix actuel d'une action sur le marché.
+	\item Évaluation de la capitalisation boursière : Calculer la capitalisation boursière de l'entreprise, qui est le produit du prix de l'action par le nombre total d'actions en circulation.
+	\item Valeur de marché de l'actif économique d'une entreprise : Évaluer la valeur totale de l'actif économique en tenant compte des capitaux propres et de la dette nette.
+\end{enumerate}
+
+Ces étapes permettent d'obtenir une évaluation précise et cohérente de la valeur d'une entreprise.
+
+\section{Prix d'une action}
+
+Considérons le placement à un an d'un investisseur. 
+
+\begin{itemize}
+	\item À \( t = 0 \) : l'investisseur effectue l'achat de l'action au prix \( P_0 \).
+	\item À \( t = 1 \) : l'investisseur revend l'action au prix \( P_1 \) et reçoit également le versement d'un dividende à la fin de la période, noté \( Div_1 \).
+\end{itemize}
+
+\[ \text{Prix d\'\,équilibre de l\'\,action : }P_0 =\frac{Div_1 + P_1}{1+r_{cp}} \]
+
+Le taux d'actualisation est défini comme le coût des capitaux propres, noté \( r_{cp} \). Ce coût représente la rentabilité espérée des placements alternatifs présentant le même niveau de risque que les actions de l'entreprise. Il est important de noter que les flux futurs de revenus ne sont pas connus avec certitude, ce qui rend impossible leur actualisation au taux d'intérêt sans risque.
+
+Remarque : La rentabilité de l'action d'une entreprise est équivalente au coût des capitaux propres de cette même entreprise.
+
+\[ r_{cp}=\underbrace{\underbrace{\frac{Div_1}{P_0}}_{\text{Redement}}+\underbrace{\frac{P_1-P_0}{P_0}}_{\text{Taux de plus-value}}}_{\text{Rentabilité}} \]
+
+Placement à deux  ans :
+
+\[ P_0=\frac{Div_1}{1 + r_{cp}}+\frac{Div_2+P_2}{(1 + r_{cp})^2} \]
+
+Remarque: Ce résultat peut être retrouvé en réutilisant notre formule du placement à un an, soit :
+
+\[
+P_0 = \frac{Div_1 + P_1}{1 + r_{cp}} \hspace{0.5cm} \text{et}\hspace{0.5cm} P_1 = \frac{Div_2 + P_2}{1 + r_{cp}} 
+\]
+
+Conséquence : Le prix d'une action ne dépend pas explicitement de l'horizon du placement \( N \). Le gain obtenu sous forme de dividendes ou de plus-value est indifférent pour estimer la valeur d'une action.
+
+Pour un placement à \( N \) années, la formule se présente comme suit :
+
+\[
+P_0 = \frac{Div_1}{1 + r_{cp}} + \frac{Div_2}{(1 + r_{cp})^2} + \ldots + \frac{Div_N + P_N}{(1 + r_{cp})^N}.
+\]
+
+Hypothèse : Tous les investisseurs partagent les mêmes anticipations (rationnelles) concernant les dividendes futurs. 
+
+Ainsi, le prix d'une action est égal à la valeur actuelle de tous les dividendes futurs :
+
+\[
+P_0 = \sum_{n=1}^{N} \frac{Div_n}{(1 + r_{cp})^n}+\frac{P_n}{(1 + r_{cp})^n}
+\]
+
+Si l'on suppose que les dividendes croissent à un taux constant \( g \) et que l'action est détenue indéfiniment (rente perpétuelle croissante), on obtient la formule suivante :
+
+\[
+P_0 = \frac{Div_1}{r_{cp} - g},
+\]
+
+ce qui correspond au modèle de Gordon-Shapiro (1956).
+
+\section{Évaluation de la capitalisation boursière d'une entreprise}
+
+1ère approche : La capitalisation boursière est donnée par la formule suivante :
+
+\[
+\text{Capitalisation boursière} = P_0 \times N_0,
+\]
+
+où \( N_0 \) est le nombre d'actions en circulation à la date \( t = 0 \).
+
+2ème approche : La valeur de marché des capitaux propres d'une entreprise est égale à la valeur actuelle des flux futurs que recevront les actionnaires.
+
+Il existe deux façons alternatives de rémunérer les actionnaires :
+
+\begin{enumerate}
+	\item Verser des dividendes.
+	\item Racheter des actions, ce qui diminue les dividendes tout en réduisant le nombre de titres en circulation, entraînant ainsi une augmentation du dividende par action
+\end{enumerate}.
+
+La capitalisation boursière peut être exprimée comme suit :
+
+\[
+\text{Capitalisation boursière} = VA(\text{Dividendes} + \text{rachats d'actions}).
+\]
+
+À partir de cette première approche, on peut retrouver le prix d'une action de l'entreprise :
+
+\[
+P_0 = \frac{VA(\text{Dividendes} + \text{rachats d'actions})}{N_0}.
+\]
+
+\section{Évaluation de l'actif économique d'une entreprise}
+
+La valeur de marché d'une entreprise, notée \( V_0 \), est égale à la valeur actualisée des flux de trésorerie disponibles qui peuvent être versés à l'ensemble des investisseurs (actionnaires et créanciers) :
+
+\[
+V_0 = VA(\text{Flux de trésorerie disponibles}).
+\]
+
+Remarque : En notant \( D_0 \) la valeur de la dette actualisée à la date \( t = 0 \), on peut réécrire la valeur d'une action de l'entreprise de la façon suivante :
+
+\[
+P_0 = \frac{V_0 - D_0 + \text{Trésorerie}}{N_0}.
+\]
+
+Question : Dans le calcul de \( V_0 \), à quel taux doivent être actualisés les Flux de Trésorerie Disponibles (\( FTD \)) ?
+
+Les deux types d'investisseurs (créanciers et actionnaires) ne prennent pas les mêmes risques, ce qui signifie que le taux d'actualisation doit tenir compte de cette différence. On utilise donc le Coût Moyen Pondéré du Capital, noté \( r_{cmpc} \), défini plus précisément dans la suite du cours.
+
+La formule est la suivante :
+
+\[
+V_0 = \frac{FTD_1}{(1 + r_{cmpc})} + \frac{FTD_2}{(1 + r_{cmpc})^2} + \ldots + \frac{FTD_N + V_N}{(1 + r_{cmpc})^N},
+\]
+
+où \( V_N \) représente la valeur terminale (ou valeur de continuation) de l'entreprise.
+
+Pour estimer \( V_N \), on fait généralement l'hypothèse d'un taux de croissance des Flux de Trésorerie Disponibles (\( FTD \)) constant à long terme, noté \( g_{FTD} \) (comme dans le cas des rentes perpétuelles croissantes).
+
+Dans ce cas, on a :
+\[
+V_N = \frac{FTD_{N+1}}{r_{cmpc} - g_{FTD}}=\left(\frac{1+g_{FTD}}{r_{cmpc} - g_{FTD}} \right) FTD_N
+\]
+
+\section{Valeur de l'entreprise, prix des actions et choix d'investissement}
+
+Les investissements présents et futurs génèrent des Flux de Trésorerie Disponibles (FTD) futurs.
+
+La valeur de marché de l'entreprise, notée \( V_0 \), est égale à la valeur actualisée totale que l'entreprise obtiendra grâce à ses projets actuels et futurs.
+
+La valeur actualisée (VA) d'un projet particulier représente la contribution de ce projet à la valeur de l'entreprise.
+
+Il est conseillé de retenir tous les projets ayant une Valeur Actualisée Nette (VAN) positive (sous contrainte financière), ce qui permet de maximiser le prix de l'action de l'entreprise.
+
+\part{La structure financière de l'entreprise}
+
+\chapter{Structure financière dans le cadre de marchés parfaits}
+
+Jusqu'à présent, nous avons exploré la question cruciale : "\textit{Quel projet d'investissement choisir ?}" Cette interrogation est fondamentale pour toute entreprise cherchant à optimiser ses ressources et à maximiser sa valeur.
+
+Dans cette partie, nous nous pencherons sur une autre question tout aussi importante : "\textit{Comment financer le projet d'investissement choisi ?}" Il est pertinent de se demander si ces deux questions sont indépendantes. En effet, le mode de financement peut avoir des répercussions significatives sur la Valeur Actualisée Nette (VAN) d'un projet. Ainsi, nous chercherons à répondre à ces questions sous deux hypothèses :
+
+\begin{itemize}
+	\item Sous l'hypothèse de marchés parfaits : Dans ce cadre théorique, nous supposons qu'il n'existe ni impôts ni coûts de transaction, ce qui simplifie considérablement l'analyse.
+
+	\item Sous l’hypothèse d’imperfections de marché : Ici, nous tiendrons compte des réalités économiques, telles que les taxes et les coûts associés aux transactions financières.
+\end{itemize}
+
+Pour une entreprise qui ne dispose pas de fonds propres, il existe principalement deux modes de financement à considérer :
+
+\begin{itemize}
+	\item L'emprunt : Ce mode de financement implique que l'investissement soit financé par la dette. Les entreprises peuvent recourir à différents types de prêts, qui doivent être remboursés selon des modalités définies, généralement avec des intérêts.
+	\item L’émission d'actions : Dans ce cas, l'investissement est financé par les capitaux propres. Cela signifie que l'entreprise émet de nouvelles actions pour lever des fonds, ce qui dilue la propriété existante mais peut également apporter des ressources financières sans obligation de remboursement.
+\end{itemize}
+
+La composition du passif de l'entreprise, c'est-à-dire la proportion relative de dette et de capitaux propres, est connue sous le nom de structure financière de l'entreprise. Cette structure est cruciale, car elle influence non seulement la stabilité financière de l'entreprise, mais aussi sa capacité à réaliser des investissements futurs.
+\noindent
+Il existe des différences essentielles entre la dette et les actions :
+
+\begin{itemize}
+	\item Priorité de remboursement : Le remboursement de la dette a la priorité sur les paiements aux détenteurs d'actions. Cela signifie que, en cas de liquidation, les créanciers sont remboursés avant que les actionnaires ne reçoivent quoi que ce soit. Les détenteurs de capitaux propres sont donc considérés comme des ayant droits résiduels (\textit{residual claimants}).
+	\item Risque associé : En général, la dette est perçue comme un actif moins risqué que les actions. Cela est dû au fait que les paiements d'intérêts sur la dette sont souvent fixes et que les créanciers ont une position privilégiée en cas de difficultés financières.
+\end{itemize}
+
+En ce qui concerne les rendements, il existe une relation inverse entre le risque et le rendement potentiel. Plus un investisseur prend de risques en investissant dans des actions, plus le rendement potentiel est élevé. En revanche, les investissements en dette, tels que les obligations, offrent généralement un rendement plus faible, mais aussi un risque plus faible. 
+
+\begin{wrapfigure}{r}{0.6\textwidth}
+	\centering
+	\includegraphics{../../../Pictures/Screenshots/Capture d'écran 2025-02-15 222044}
+\end{wrapfigure}
+
+Il est important de noter qu'au-delà d'un certain seuil de risque, désigné par \( D \), le rendement des investissements en dette peut commencer à augmenter. Cependant, cela est souvent associé à des investissements plus risqués, ce qui nécessite une évaluation minutieuse des opportunités et des risques associés.
+
+Ainsi, le choix du mode de financement ne doit pas être pris à la légère, car il peut influencer de manière significative la viabilité et la rentabilité des projets d'investissement.
+
+\section{L'hypothèse de marchés parfaits}
+
+Dans un marché parfait, il existe une absence d'opportunité d'arbitrage. Cela signifie que les prix des actifs reflètent intégralement leur valeur actualisée, qui est calculée à partir des flux monétaires futurs qu'ils génèrent. Ainsi, le prix d'un actif est égal à la valeur actualisée des flux monétaires offerts par cet actif.
+
+La valeur boursière d'une entreprise non endettée est alors équivalente à la somme des valeurs actualisées des différents projets qu'elle porte. Cela implique que chaque projet contribue de manière additive à la valeur totale de l'entreprise.
+
+Considérons un projet spécifique, qui présente les caractéristiques suivantes :
+
+\begin{itemize}
+	\item À \( t = 0 \) : le coût initial de l'investissement est noté \( C \).
+	\item À \( t = 1 \) : le flux de trésorerie généré par le projet est une variable aléatoire \( f \) qui peut prendre deux valeurs :
+\begin{itemize}
+	\item 	\( f_0 > 0 \) avec une probabilité \( \theta \),
+	\item 	\( f_1 > f_0 \) avec une probabilité \( 1 - \theta \), en fonction de la conjoncture économique.
+\end{itemize}
+	
+\end{itemize}
+
+
+
+
+La Valeur Actualisée Nette (VAN) du projet peut être exprimée par la formule suivante :
+
+\[
+\text{VAN} = -C + \frac{\mathbb{E}(f)}{(1 + r_{cp})} = -C + \frac{(\theta f_0 + (1 - \theta) f_1)}{(1 + r_{cp})}
+\]
+
+où \( \mathbb{E}(f) \) représente l'espérance mathématique des flux futurs.
+
+Le coût du capital, noté \( r_{cp} \), est défini comme suit :
+
+\[
+r_{cp} = r_f + r_p
+\]
+
+où \( r_f \) est le taux d'intérêt sans risque et \( r_p \) est la prime de risque de marché. Ce coût du capital est essentiel pour évaluer la rentabilité des projets d'investissement.
+
+Dans le cas où l'entrepreneur opte pour un financement total par capitaux propres, il doit faire face à une situation où il ne dispose pas de fonds propres. Par conséquent, pour financer les coûts \( C \) associés à son projet, il doit émettre des actions. Cette décision de financement a des implications sur la structure du capital de l'entreprise et sur sa capacité à attirer des investisseurs.
+
+Dans un contexte de marchés parfaits, caractérisés par l'absence d'opportunités d'arbitrage, le prix de "l'actif entreprise", noté \( p_A \), est directement lié à l'investissement initial des actionnaires. Ce lien peut être exprimé par la relation suivante :
+
+\[
+p_A = VA = \frac{\mathbb{E}(f)}{(1 + r_{cp})}
+\]
+
+où \( VA \) représente la valeur actualisée des flux futurs attendus de l'entreprise.
+
+Les profits de l'entreprise peuvent être calculés en soustrayant le coût initial de l'investissement \( C \) du prix de l'actif :
+
+\[
+\text{Profits} = p_A - C = \text{VAN}
+\]
+
+Cela indique que la Valeur Actualisée Nette (VAN) du projet revient aux propriétaires de l'entreprise, qu'il s'agisse des actionnaires ou de l'entrepreneur lui-même. En d'autres termes, les bénéfices générés par le projet sont directement redistribués aux investisseurs.
+
+Pour évaluer l'espérance de rentabilité de l'actif, nous pouvons utiliser la formule suivante :
+
+\[
+\frac{\theta (f_0 - p_A)}{p_A} + \frac{(1 - \theta)(f_1 - p_A)}{p_A} = \frac{\mathbb{E}(f)}{p_A} - 1 = r_{cp}
+\]
+
+Cette équation montre que l'espérance de rentabilité de l'actif est égale au coût du capital de l'entreprise. En effet, les actionnaires sont rémunérés selon le coût du capital, ce qui reflète les risques qu'ils prennent en investissant dans l'entreprise.
+
+Ainsi, nous pouvons conclure que la boucle est bouclée : si les actionnaires ne reçoivent pas une rémunération équivalente au coût du capital, cela créerait une opportunité d'arbitrage. Dans un marché parfait, les investisseurs chercheraient à profiter de cette opportunité, ce qui conduirait à un ajustement des prix jusqu'à ce que l'équilibre soit rétabli.
+
+\section{Financement exclusif par capitaux propres : un exemple}
+
+Reprenons l'exemple précédent avec les données suivantes :
+
+\begin{itemize}
+	\item Coût initial du projet : \( C = 800 \)
+	\item Probabilité : \( \theta = \frac{1}{2} \)
+	\item Flux \( f_0 = 900 \)
+	\item Flux \( f_1 = 1400 \)
+	\item Taux d'intérêt sans risque : \( r_f = 5\% \)
+	\item Prime de risque : \( r_p = 10\% \)
+\end{itemize}
+
+\subsubsection{Calcul de la Valeur Actualisée Nette (VAN) du projet}
+
+La VAN du projet est calculée comme suit :
+
+\[
+\text{VAN} = -C + \frac{\mathbb{E}(f)}{(1 + r_{cp})}
+\]
+
+où le coût du capital \( r_{cp} \) est donné par :
+
+\[
+r_{cp} = r_f + r_p = 5\% + 10\% = 15\%
+\]
+
+Pour calculer l'espérance des flux futurs \( \mathbb{E}(f) \) :
+
+\[
+\mathbb{E}(f) = \theta f_0 + (1 - \theta) f_1 = \frac{1}{2} \cdot 900 + \frac{1}{2} \cdot 1400 = 450 + 700 = 1150
+\]
+
+Ainsi, la VAN devient :
+
+\[
+\text{VAN} = -800 + \frac{1150}{1,15} \approx -800 + 1000 = 200
+\]
+
+\subsubsection{Valeur Actualisée des Capitaux Propres}
+
+La valeur actualisée des capitaux propres levés par l'entrepreneur est :
+
+\[
+VA = \frac{\mathbb{E}(f)}{(1 + r_{cp})} = \frac{1150}{1,15} \approx 1000
+\]
+
+\subsubsection{Profit Actualisé de l'Entreprise}
+
+En vendant toutes les actions de son entreprise, l'entrepreneur reçoit :
+
+\[
+\text{Profit (actualisé)} = VA - C = 1000 - 800 = 200
+\]
+
+Ce montant correspond à la VAN du projet :
+
+\[
+\text{VAN} = 200
+\]
+
+La valeur actualisée des capitaux propres est donc la somme des investissements initiaux et des profits futurs (actualisés). Cela illustre le lien entre le coût du capital, la VAN et la valeur des capitaux propres dans un cadre de marché parfait.
+
+Quelle est la rentabilité espérée pour les actionnaires :
+
+\begin{center}
+\begin{tabular}{@{}ccccc@{}}
+	\toprule
+	$t=0$           & \multicolumn{2}{c}{$t=1-\text{flux}$} & \multicolumn{2}{c}{$t=1-\text{rentabilité}$} \\ \midrule
+	Valeur initiale & Croissance         & Récession        & Croissance            & Récession            \\
+	1000            & 1400               & 900              & 40 \%                 & -10\%                \\ \bottomrule
+\end{tabular}
+\end{center}
+
+La rentabilité espérée de l'investissement est calculée comme suit :
+
+\[
+\text{Rentabilité espérée} = \theta \cdot (f_0 - p_A) + (1 - \theta) \cdot (f_1 - p_A)
+\]
+
+En utilisant les données fournies :
+
+\begin{itemize}
+	\item \( \theta = \frac{1}{2} \)
+	\item \( f_0 = 900 \)
+	\item \( f_1 = 1400 \)
+	\item \( p_A = 1000 \)
+\end{itemize}
+
+Nous avons :
+
+\[
+\text{Rentabilité espérée} = \frac{1}{2} \cdot (900 - 1000) + \frac{1}{2} \cdot (1400 - 1000) = 150
+\]
+
+Pour obtenir le taux de rentabilité, nous divisons par le prix de l'actif :
+
+\[
+\text{Taux de rentabilité} = \frac{150}{1000} = 0,15 \quad \text{ou} \quad 15\%
+\]
+
+\subsubsection{Coût du Capital de l'entreprise}
+\noindent
+Ce taux de rentabilité correspond au coût du capital de l'entreprise. Cela signifie que :
+
+\begin{itemize}
+	\item Les actionnaires sont rémunérés à hauteur du risque qu'ils prennent.
+	\item Le risque de l'entreprise non endettée correspond au risque du projet.
+\end{itemize}
+
+Ainsi, dans un cadre de marché parfait, la rentabilité espérée des actionnaires est alignée avec le coût du capital, illustrant l'importance de la gestion des risques dans les décisions d'investissement.
+
+\section{Financement par capitaux propres et endettement : un exemple}
+
+
+
+
+
+
+
+
+
 
 
 
