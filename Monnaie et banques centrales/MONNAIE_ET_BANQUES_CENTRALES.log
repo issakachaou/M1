@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  27 JAN 2025 10:16
+This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  16 FEB 2025 20:32
  restricted system commands enabled.
 **MONNAIE_ET_BANQUES_CENTRALES.tex
 (./MONNAIE_ET_BANQUES_CENTRALES.tex
@@ -1162,20 +1162,42 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[28] (./MONNAIE_ET_BANQUES_CENTRALES.aux)
+[28]
+<../../../Pictures/Screenshots/Capture d'écran 2025-02-16 203042.png, id=272, 
+411.78844pt x 226.59656pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2025-02-16 203042.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2025-02-16 203042.png>
+Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-02
+-16 203042.png  used on input line 817.
+(luatex.def)             Requested size: 288.24992pt x 158.6165pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[29
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+<../../../Pictures/Screenshots/Capture d'écran 2025-02-16 203042.png>]
+(./MONNAIE_ET_BANQUES_CENTRALES.aux)
 Package rerunfilecheck Info: File `MONNAIE_ET_BANQUES_CENTRALES.out' has not ch
 anged.
 (rerunfilecheck)             Checksum: 95630E933766A19834F15C21B8DE1620;6001.
 )
 
 Here is how much of LuaTeX's memory you used:
- 14435 strings out of 477352
+ 14459 strings out of 477352
  100000,662416 words of node,token memory allocated
- 7637 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 216 glue, 242 kern, 1 penalty, 2 glyph, 1937 attrib
-ute, 60 glue_spec, 278 attribute_list, 1 write nodes
-   avail lists: 2:1002,3:210,4:26,5:138,6:63,7:6461,8:48,9:408,10:25,11:543
- 34711 multiletter control sequences out of 65536+600000
+ 7942 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 218 glue, 265 kern, 1 penalty, 2 glyph, 2014 attrib
+ute, 60 glue_spec, 289 attribute_list, 1 write nodes
+   avail lists: 2:914,3:210,4:26,5:123,6:63,7:6459,8:48,9:408,10:25,11:527
+ 34721 multiletter control sequences out of 65536+600000
  92 fonts using 5974087 bytes
  72i,12n,72p,1490b,454s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Us
@@ -1189,9 +1211,9 @@ s/type1/urw/symbol/usyr.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/
 type1/urw/times/utmb8a.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/urw/times/utmr8a.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on MONNAIE_ET_BANQUES_CENTRALES.pdf (28 pages, 1171439 bytes).
+Output written on MONNAIE_ET_BANQUES_CENTRALES.pdf (29 pages, 1256493 bytes).
 
-PDF statistics: 305 PDF objects out of 1000 (max. 8388607)
- 76 named destinations out of 1000 (max. 131072)
+PDF statistics: 315 PDF objects out of 1000 (max. 8388607)
+ 81 named destinations out of 1000 (max. 131072)
  185 words of extra memory for PDF output out of 10000 (max. 100000000)
 

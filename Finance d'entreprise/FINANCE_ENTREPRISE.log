@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  15 FEB 2025 23:51
+This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  16 FEB 2025 17:28
  restricted system commands enabled.
 **FINANCE_ENTREPRISE.tex
 (./FINANCE_ENTREPRISE.tex
@@ -709,7 +709,7 @@ Package hyperref Info: Link coloring OFF on input line 27.
 \@outlinefile=\write3
 
 \openout3 = FINANCE_ENTREPRISE.out
-<../../../Pictures/FAC_SEG_rvb.jpg, id=267, 706.64pt x 307.1475pt>
+<../../../Pictures/FAC_SEG_rvb.jpg, id=311, 706.64pt x 307.1475pt>
 File: ../../../Pictures/FAC_SEG_rvb.jpg Graphic file (type jpg)
 <use ../../../Pictures/FAC_SEG_rvb.jpg>
 Package luatex.def Info: ../../../Pictures/FAC_SEG_rvb.jpg  used on input line 
@@ -784,30 +784,13 @@ File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [6
 
 ]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
 [7
 Missing character: There is no œ (U+0153) in font ptmr8t!
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[8] [9
+] [8] [9
 
 ]
 Chapitre 1.
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-20 150035.png, id=387, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-20 150035.png, id=442, 
 491.58656pt x 121.95563pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-20 150035.png Grap
 hic file (type png)
@@ -819,7 +802,7 @@ Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 
 <../../../Pictures/Screenshots/Capture d'écran 2025-01-20 150035.png>]
 [11]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 195312.png, id=402, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 195312.png, id=457, 
 320.69812pt x 58.71938pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 195312.png Grap
 hic file (type png)
@@ -828,7 +811,7 @@ Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 -21 195312.png  used on input line 165.
 (luatex.def)             Requested size: 320.69733pt x 58.71921pt.
  [12<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 195312.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 200847.png, id=413, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 200847.png, id=468, 
 501.37312pt x 120.45pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 200847.png Grap
 hic file (type png)
@@ -836,7 +819,7 @@ hic file (type png)
 Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 -21 200847.png  used on input line 180.
 (luatex.def)             Requested size: 250.68594pt x 60.22484pt.
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 211714.png, id=414, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 211714.png, id=469, 
 445.665pt x 115.93312pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 211714.png Grap
 hic file (type png)
@@ -845,7 +828,7 @@ Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 -21 211714.png  used on input line 203.
 (luatex.def)             Requested size: 222.83195pt x 57.96642pt.
 [13<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 200847.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213129.png, id=421, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213129.png, id=476, 
 573.64313pt x 127.97812pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213129.png Grap
 hic file (type png)
@@ -853,7 +836,7 @@ hic file (type png)
 Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 -21 213129.png  used on input line 213.
 (luatex.def)             Requested size: 286.82086pt x 63.98889pt.
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213904.png, id=422, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213904.png, id=477, 
 454.69875pt x 118.94438pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213904.png Grap
 hic file (type png)
@@ -867,7 +850,7 @@ Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 s/Screenshots/Capture d'écran 2025-01-21 213904.png>] [15
 Missing character: There is no € (U+20AC) in font ptmr8t!
 ] [16]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 232512.png, id=439, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 232512.png, id=494, 
 521.69907pt x 84.315pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 232512.png Grap
 hic file (type png)
@@ -889,7 +872,7 @@ Overfull \hbox (2.07233pt too wide) in paragraph at lines 338--339
 
 [17<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 232512.png>]
 [18]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-22 001309.png, id=454, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-22 001309.png, id=509, 
 541.27219pt x 146.04562pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-22 001309.png Grap
 hic file (type png)
@@ -900,7 +883,7 @@ Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
  [19
 Missing character: There is no € (U+20AC) in font ptmr8t!
 <../../../Pictures/Screenshots/Capture d'écran 2025-01-22 001309.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-22 002943.png, id=467, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-22 002943.png, id=522, 
 544.28343pt x 85.82062pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-22 002943.png Grap
 hic file (type png)
@@ -915,7 +898,7 @@ Chapitre 2.
 [22
 
 ]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 145125.png, id=485, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 145125.png, id=540, 
 618.05907pt x 445.665pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-26 145125.png Grap
 hic file (type png)
@@ -924,7 +907,7 @@ Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 -26 145125.png  used on input line 508.
 (luatex.def)             Requested size: 309.02878pt x 222.83195pt.
  [23] [24<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 145125.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151425.png, id=496, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151425.png, id=551, 
 655.69969pt x 478.78876pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151425.png Grap
 hic file (type png)
@@ -932,7 +915,7 @@ hic file (type png)
 Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 -26 151425.png  used on input line 545.
 (luatex.def)             Requested size: 327.84904pt x 239.39378pt.
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151713.png, id=497, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151713.png, id=552, 
 631.60968pt x 472.76625pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151713.png Grap
 hic file (type png)
@@ -957,7 +940,7 @@ ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 0\OML/ztmcm/m/it/12 :\OT1/ztmcm/m/n/12 1078]$
 /n/12 10\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 78%]$\T1/ptm/m/n/12 ).
  []
 
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 173535.png, id=528, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 173535.png, id=583, 
 631.60968pt x 474.27188pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-26 173535.png Grap
 hic file (type png)
@@ -1003,7 +986,7 @@ Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 ]
-<../../../Pictures/Screenshots/Capture d'écran 2025-02-15 222044.png, id=647, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-02-15 222044.png, id=702, 
 192.72pt x 132.495pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-02-15 222044.png Grap
 hic file (type png)
@@ -1027,19 +1010,35 @@ Underfull \hbox (badness 1033) in paragraph at lines 1344--1345
  []
 
 [50<../../../Pictures/Screenshots/Capture d'écran 2025-02-15 222044.png>]
-[51] [52] [53] [54] (./FINANCE_ENTREPRISE.aux)
+[51] [52] [53] [54
+Missing character: There is no € (U+20AC) in font ptmr8t!
+]
+Overfull \hbox (1.44933pt too wide) in paragraph at lines 1596--1597
+[]\T1/ptm/m/n/12 En rai-son de l'aug-men-ta-tion du risque qui pèse sur eux, le
+s ac-tion-naires exigent
+ []
+
+[55] [56] [57] [58] [59] [60
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+] [61
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+]
+Chapitre 6.
+[62
+
+] (./FINANCE_ENTREPRISE.aux)
 Package rerunfilecheck Info: File `FINANCE_ENTREPRISE.out' has not changed.
-(rerunfilecheck)             Checksum: 319AB56EFA47EDB18AB8A176D74B2C0D;13206.
+(rerunfilecheck)             Checksum: 211FE0A2C19851FC9A429ED385514E81;15566.
 )
 
 Here is how much of LuaTeX's memory you used:
- 14725 strings out of 477352
+ 14760 strings out of 477352
  100000,662416 words of node,token memory allocated
- 14945 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 469 glue, 457 kern, 1 penalty, 2 glyph, 3890 attrib
-ute, 59 glue_spec, 557 attribute_list, 1 write, 2 pdf_action nodes
-   avail lists: 2:1494,3:374,4:18,5:157,6:116,7:6812,8:78,9:564,10:14,11:631
- 34835 multiletter control sequences out of 65536+600000
+ 16603 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 532 glue, 502 kern, 1 penalty, 2 glyph, 4324 attrib
+ute, 59 glue_spec, 619 attribute_list, 1 write, 2 pdf_action nodes
+   avail lists: 2:2132,3:374,4:18,5:250,6:116,7:6587,8:78,9:638,10:14,11:617
+ 34846 multiletter control sequences out of 65536+600000
  101 fonts using 6627711 bytes
  72i,16n,72p,1567b,597s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Us
@@ -1056,9 +1055,9 @@ eX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX
 /fonts/type1/urw/times/utmb8a.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/
 fonts/type1/urw/times/utmr8a.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on FINANCE_ENTREPRISE.pdf (55 pages, 1357006 bytes).
+Output written on FINANCE_ENTREPRISE.pdf (63 pages, 1387554 bytes).
 
-PDF statistics: 721 PDF objects out of 1000 (max. 8388607)
- 189 named destinations out of 1000 (max. 131072)
- 529 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 815 PDF objects out of 1000 (max. 8388607)
+ 213 named destinations out of 1000 (max. 131072)
+ 617 words of extra memory for PDF output out of 10000 (max. 100000000)
 

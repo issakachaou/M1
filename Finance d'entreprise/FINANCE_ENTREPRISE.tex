@@ -71,7 +71,7 @@
 \thispagestyle{empty} %Dernière page vide
 %\backmatter	
 	
-
+\pagestyle{plain} 
 \chapter*{Introduction}	
 
 \section{Introduction}
@@ -97,7 +97,7 @@ Les décisions des sociétés par actions cotées en bourse répondent à plusie
 L'asymétrie d'information entre les dirigeants, les actionnaires et les créanciers a des implications significatives pour la stratégie financière de l'entreprise. En raison de cette asymétrie, les dirigeants peuvent prendre des décisions qui ne sont pas toujours alignées avec les intérêts des actionnaires, entraînant des conflits d'intérêts. De plus, les créanciers, n'ayant pas accès aux mêmes informations que les dirigeants, peuvent percevoir un risque plus élevé, ce qui peut augmenter le coût du capital. Pour atténuer ces problèmes, les entreprises doivent adopter des pratiques de transparence, établir des mécanismes de contrôle efficaces et maintenir une communication ouverte avec toutes les parties prenantes, tout en choisissant des stratégies d'investissement prudentes.
 
 \part{Les décisions d'investissement}
-\pagestyle{empty} 
+
 \chapter{Évaluation d'un projet}
 
 \section{Principes de l'évaluation}
@@ -467,7 +467,7 @@ Laurent devrait accepter le contrat de maintenance car la VAN est plus élevée.
 L'hypothèse d'aversion au risque stipule que la valeur d'une alternative risquée, notée \( V_A(P) \), est inférieure à la valeur actualisée des gains attendus, exprimée par la formule \[ \frac{\pi J_0 + (1 - \pi) J_1}{1 + r_f}  \]où \( r_f \) représente le taux sans risque. Pour qu'un projet soit jugé viable, le taux d'actualisation utilisé doit être supérieur à \( r_f \), ce qui implique un coût du capital. La prime de risque associée au projet, notée \( \pi_p \), est déterminée par l'évaluation des risques spécifiques liés à celui-ci, tels que la volatilité des flux de trésorerie et les incertitudes économiques. Ainsi, il existe un lien direct entre le risque associé au projet et le coût du capital : plus le risque est élevé, plus le coût du capital nécessaire pour financer le projet augmente, car les investisseurs exigent une compensation plus importante pour accepter une incertitude accrue.
 
 \chapter{Coût du capital et risque}
-
+\pagestyle{plain} 
 \section{Risque et rentabilité}
 
 Comme nous l'avons vu, le rendement d'un placement dépend non seulement de sa rentabilité, mais également du risque qui lui est associé, exprimé à travers la prime de risque. Le risque et la rentabilité d'un actif sont mesurés respectivement par la volatilité des rendements et le rendement attendu. La volatilité, souvent calculée à partir des écarts-types des rendements passés, quantifie l'incertitude liée aux fluctuations des prix de l'actif. La relation entre risque et rentabilité est généralement positive : les actifs présentant un risque plus élevé tendent à offrir des rendements attendus plus importants pour compenser les investisseurs pour l'incertitude accrue. En d'autres termes, les investisseurs s'attendent à être rémunérés par des rendements plus élevés lorsqu'ils prennent des risques supplémentaires.
@@ -1524,26 +1524,219 @@ Ainsi, dans un cadre de marché parfait, la rentabilité espérée des actionnai
 
 \section{Financement par capitaux propres et endettement : un exemple}
 
+Supposons que l'entrepreneur finance une partie de l'investissement initial par endettement. 
+
+\subsubsection{Détails de l'emprunt}
+
+Montant de l'emprunt : 
+
+\begin{itemize}
+	\item L'entrepreneur emprunte 500 euros.
+\end{itemize}
+
+Caractéristiques de la Dette : 
+
+\begin{itemize}
+	\item La dette est considérée comme sans risque, ce qui signifie qu'elle devra toujours être remboursée.
+	\item Taux d'actualisation : \( r_f = 5\% \).
+\end{itemize}
+
+Dans un an, l'entreprise devra rembourser un montant total de :
+\[
+\text{Montant total remboursé} = D \cdot (1 + r_f) = 500 \cdot (1 + 0,05) = 525 \, \text{€}
+\]
+
+Quelle est à présent la valeur des capitaux propres ?
+
+\begin{center}
+	\begin{tabular}{@{}cccc@{}}
+		\toprule
+		& $t=0$           & \multicolumn{2}{c}{$t=1-\text{flux}$} \\ \midrule
+		& Valeur initiale & Croissance         & Recession        \\ \midrule
+		Créanciers   & 500             & 525                & 525              \\
+		Actionnaires & $V_{CP}$ = ?    & 875                & 375              \\
+		Entreprise   & $V_{CP}+500$    & 1400               & 900              \\ \bottomrule
+	\end{tabular}
+\end{center}
+
+Vision naïve:
+
+\[ \frac{0,5\cdot(1400-525)+0,5\cdot(900-525)}{1,15}=\frac{0,5\cdot875+0,5\cdot375}{1,15} =543 \]
+
+La valeur de l'entreprise endettée est calculée comme suit : \( 500 + 543 = 1043 \), ce qui est supérieur à \( 1000 \), la valeur de l'entreprise non endettée. Cependant, l'entreprise endettée porte exactement le même projet que l'entreprise non endettée. Par conséquent, il n'y a aucune raison que sa valeur initiale soit différente.
 
 
+Nous devons avoir \( VA = V_{CP} + V_D = 1000 \), ce qui implique que \( V_{CP} = 500 \). Cependant, une erreur dans le raisonnement précédent est que le recours à l'endettement augmente le risque supporté par les actionnaires, ce qui signifie que le coût des capitaux propres doit évoluer en conséquence. Pour illustrer cela, calculons la prime de risque associée aux capitaux propres de l'entreprise endettée, afin de montrer le lien entre risque et rentabilité.
+
+\subsubsection{Rentabilité des fonds propres selon la structure de financement :}
+
+\begin{center}
+	\begin{tabular}{@{}cccc@{}}
+		\toprule
+		& Croissance & Recession & $\mathbb{E}(R)$ \\ \midrule
+		Dette                           & 5\%        & 5\%       & 5\%             \\
+		Actions entreprise non-endettée & 40\%       & 10\%      & 15\%            \\
+		Actions entreprise endettée     & 75\%       & -25\%     & 25\%            \\ \bottomrule
+	\end{tabular}
+\end{center}
+\[ 75\% = \frac{875(375)-500}{500\cdot100} \]
+
+\subsubsection{Prime de risque selon la structure de financement :}
+
+\begin{center}
+	\begin{tabular}{@{}ccc@{}}
+	\toprule
+	& Variation de la rentabilité & $r_p=\mathbb{E}(R)-r_f$ \\ \midrule
+	Dette                   & 5\%-5\%=0\%                 & 5\%-5\%=0\%          \\
+	Entreprise non-endettée & 40\%-(-10\%)=50\%           & 15\%-5\%=10\%        \\
+	Entreprise endettée     & 75\% -(-25\%)=100\%         & 25\%-5\%=20\%        \\ \bottomrule
+\end{tabular}
+\end{center}
+
+En raison de l'augmentation du risque qui pèse sur eux, les actionnaires exigent une rentabilité de 25\% pour financer le projet de l'entreprise endettée. La valeur actualisée des capitaux propres \( (V_{CP}) \) doit être calculée en prenant cette rentabilité comme coût du capital : 
+
+\[
+\frac{0,5 \times 875 + 0,5 \times 375}{1,25} = 500
+\]
+
+Ainsi, la valeur de l'entreprise reste inchangée à 1000, que l'entrepreneur ait recours à l'endettement ou qu'il se finance exclusivement par l'émission d'actions. Il est important de noter que l'endettement d'une entreprise augmente le risque des actions, même en supposant que le risque de faillite est nul.
+
+\section{Propositions de Modigliani et Miller}
+
+\subsection{Proposition 1}
+
+Dans le cadre de marchés de capitaux parfaits, la valeur totale d'une entreprise est égale à la valeur de marché des flux de trésorerie de ses actifs, et cette valeur n'est pas influencée par la structure financière de l'entreprise. Ainsi, la structure financière est neutre et n'a pas d'effet sur la valeur de l'entreprise. En d'autres termes, la taille du gâteau ne dépend pas de la façon dont il est partagé. Par conséquent, un entrepreneur peut se concentrer sur le choix d'un projet sans avoir à se soucier de la manière dont il va le financer.
+
+\subsection{Démonstration}
+
+Considérons deux firmes (1 et 2) portant toutes les deux un projet dont les flux à la date \( t = 1 \) sont décrits par la même variable aléatoire \( X \). Notons la valeur de la dette de l'entreprise \( i \) en \( t = 0 \) par \( V_D^i \). L'entreprise 1 n'est pas endettée (\( V_D^1 = 0 \)), tandis que l'entreprise 2 est endettée (\( V_D^2 > 0 \)). Soit \( V_{CP}^1 \) et \( V_{CP}^2 \) la valeur actualisée (en \( t = 0 \)) des capitaux propres dans chacune des entreprises. Les valeurs actualisées (en \( t = 0 \)) de chacune des entreprises sont données par \( V^1 = V_{CP}^1 \) et \( V^2 = V_{CP}^2 + V_D^2 \). Selon le théorème de Modigliani-Miller, si les marchés financiers sont parfaits, alors nous avons \( V^1 = V^2 \).
+
+Supposons que \( V^2 > V^1 \). La stratégie en \( t = 0 \) consiste à vendre des actions et des titres de dette de l'entreprise 2 pour acheter des actions de l'entreprise 1.
+
+\begin{center}
+	\begin{tabular}{@{}ccc@{}}
+		\toprule
+		& \multicolumn{2}{c}{Flux}                       \\ \midrule
+		Transaction                  & $t=0$               & $t=1$                    \\
+		Vente $\alpha$ de $V_D^2$    & $\alpha V_D^2$      & $-\alpha(1-r_f)V_D^2$    \\
+		Vente $\alpha$ de $V_{CP}^2$ & $\alpha  V_{CP}^2$  & $-\alpha(X-(1+r_f)V_D^2)$ \\
+		Achat $\alpha$ de $V_{CP}^1$ & $-\alpha V_{CP}^1$  & $\alpha X$               \\
+		Somme                        & $\alpha(V^2-V^1)>0$ & 0                        \\ \bottomrule
+	\end{tabular}
+\end{center}
+
+Cela crée une opportunité d'arbitrage, contrairement à l'hypothèse de départ. En suivant cette stratégie, l'investisseur réalise un profit sans risque à \( t = 0 \) (voir la somme des flux à \( t = 0 \)). Les conséquences sont significatives : si une telle opportunité d'arbitrage existe, les investisseurs vont massivement acheter les actions de l'entreprise 1 tout en vendant celles de l'entreprise 2. Cette demande accrue pour les actions de l'entreprise 1 fera augmenter leur prix, tandis que la vente massive des actions de l'entreprise 2 entraînera une baisse de leur prix. Ce processus se poursuivra jusqu'à ce que \( V^1 = V^2 \), éliminant ainsi l'opportunité d'arbitrage.
+
+Supposons à présent que \( V^1 > V^2 \). La stratégie en \( t = 0 \) consiste à acheter des actions et des titres de dette de l'entreprise 2, financée par la vente d'actions de l'entreprise 1. 
 
 
+\begin{center}
+	\begin{tabular}{@{}ccc@{}}
+		\toprule
+		& \multicolumn{2}{c}{Flux}                        \\ \midrule
+		Transaction                  & $t=0$               & $t=1$                     \\
+		Achat $\alpha$ de $V_D^2$    & $-\alpha V_D^2$     & $\alpha(1+r_f)V_D^2$      \\
+		Achat $\alpha$ de $V_{CP}^2$ & $-\alpha  V_{CP}^2$ & $-\alpha(X-(1+r_f)V_D^2)$ \\
+		Vente $\alpha$ de $V_{CP}^1$ & $\alpha V_{CP}^1$   & $-\alpha X$               \\
+		Somme                        & $\alpha(V^1-V^2)>0$ & 0                         \\ \bottomrule
+	\end{tabular}
+\end{center}
+Cette approche crée également une opportunité d'arbitrage, car les investisseurs peuvent tirer profit de cette différence de valeur entre les deux entreprises
 
+\section{Structure financière et effet de levier}
 
+Selon le théorème de Modigliani-Miller, la valeur d'une entreprise est indépendante de sa structure financière, même si l'endettement augmente la rentabilité des capitaux propres. On dit que l'endettement exerce un effet de levier sur la rentabilité des capitaux propres. La question se pose alors : que se passe-t-il si des investisseurs préfèrent une structure financière différente de celle choisie par l'entreprise ? Par exemple, les investisseurs peuvent préférer une entreprise plus endettée, ce qui entraînerait un effet de levier plus fort.
 
+\section{Le levier synthétique}
 
+La réponse de Modigliani et Miller est que cela ne change rien. Les investisseurs peuvent, en ajustant leur portefeuille, répliquer la structure financière qui leur convient le mieux en créant une entreprise "\textit{fictive composite}". Ceux qui préfèrent une entreprise plus endettée peuvent s'endetter eux-mêmes, ce qui signifie qu'ils ont recours au levier synthétique, un parfait substitut au levier de l'entreprise endettée.
 
+Reprenons l'exemple initial : \( C = 800 \), \( \theta = \frac{1}{2} \), \( f_0 = 900 \), \( f_1 = 1400 \), \( r_f = 5\% \), \( r_p = 10\% \), et considérons que l'entreprise est non endettée. Un investisseur ayant une préférence pour la structure financière de l'entreprise endettée peut emprunter 500 euros pour acheter des actions de l'entreprise non endettée. Il répliquera ainsi les flux de trésorerie de l'entreprise endettée, obtenant donc 875 euros (1400 - 525) en cas de croissance et 375 euros (900 - 525) en cas de récession. 
 
+À l'inverse, un investisseur souhaitant supporter moins de risque que celui d'une entreprise endettée peut combiner l'achat d'actions avec la vente de titres de dette de l'entreprise endettée, ce qui constitue un levier synthétique négatif.
 
+\section{Endettement et coût des capitaux propres}
 
+Quel facteur d'actualisation choisir pour une entreprise endettée ? Le levier d'entreprise est équivalent au levier synthétique. Quelle que soit sa structure financière, une entreprise peut être analysée à partir d'une situation d'endettement nul. 
 
+Pour répondre à cette question, considérons deux entreprises : E, qui est endettée, et N, qui ne l'est pas, portant un projet de même risque et de même rentabilité. On peut exprimer la rentabilité des actions de E en fonction de la rentabilité des actions de N. 
 
+Notations : \( V_N \) est la valeur de marché de l'entreprise N, \( V_E \) est la valeur de marché de l'entreprise E, et \( V_{CP} \) et \( V_D \) sont les valeurs de marché respectives des capitaux propres et de la dette de l'entreprise E. 
 
+Selon Modigliani-Miller, \( V_E = V_N \) implique que \( V_{CP} + V_D = V_N \). Ainsi, en détenant un portefeuille composé de dettes et de capitaux de l'entreprise E, un investisseur peut répliquer les flux de trésorerie dont bénéficie l'actionnaire de l'entreprise N. 
 
+La rentabilité d'un portefeuille est donc la moyenne pondérée des rentabilités des titres qui le composent, avec comme pondération la part de chaque actif dans la valeur totale du portefeuille.
 
+On note \( R_{CP} \), \( R_N \) et \( R_D \) les rentabilités respectives des capitaux propres de l'entreprise E, de l'entreprise N et de la dette. La relation suivante s'exprime comme suit :
 
+\[
+R_N = \left( \frac{V_{CP}}{V_{CP} + V_D} \right) R_{CP} + \left( \frac{V_D}{V_{CP} + V_D} \right) R_D
+\]
 
+Les deux firmes ont la même rentabilité en raison des possibilités d'arbitrage illimitées, ce qui donne :
 
+\[
+R_{CP} = R_N + \frac{V_D}{V_{CP}} (R_N - R_D)
+\]
+
+Le premier terme représente le rendement (risqué) de l'actif de l'entreprise N, tandis que le second terme indique le rendement (risqué) additionnel dû au levier.
+
+\subsubsection{Conséquences de l'endettement sur la rentabilité des capitaux propres :}
+La rentabilité des actions de l'entreprise E est égale à la rentabilité de l'entreprise N plus une prime liée au risque provoqué par l'endettement. Cette prime est positive si \( R_N > R_D \) (effet levier) et négative en général si \( R_N < R_D \) (effet massue). Le niveau du risque supplémentaire, et donc de la prime, dépend du niveau d'endettement, mesuré par le levier en valeur de marché \( \frac{V_D}{V_{CP}} \).
+
+\subsection{Proposition 2}
+
+Le coût des capitaux propres d'une entreprise endettée est égal au coût des capitaux propres d'une entreprise non endettée, plus une prime de risque proportionnelle au levier en valeur de marché de l'entreprise :
+
+\[
+r_{CP} = r_N + \frac{V_D}{V_{CP}} (r_N - r_D)
+\]
+
+En appliquant ce résultat à l'exemple précédent, on obtient :
+
+\[
+r_{CP} = 15\% + \frac{500}{500}(15\% - 5\%) = 25\%
+\]
+
+Si l'entreprise endettée l'était de seulement 200 euros, le rendement de ses capitaux propres serait :
+
+\[
+r_{CP} = 15\% + \frac{200}{800}(15\% - 5\%) = 17,5\%
+\]
+
+\section{Le coût moyen pondéré du capital et choix d'investissement}
+
+\subsubsection{Choix d'investissement : actualisation des flux associés au projet}
+
+Le taux d'actualisation, qui correspond au coût du capital, représente la rentabilité que l'entreprise doit offrir aux investisseurs pour les rémunérer du risque qu'ils prennent. Dans une entreprise endettée, il existe deux types d'investisseurs (créanciers et actionnaires) qui ne prennent pas le même risque. Le taux d'actualisation est donc le coût moyen pondéré du capital (CMCP), noté \( r_{CMCP} \), qui est la rentabilité moyenne espérée que l'entreprise doit offrir à ses investisseurs. Il se calcule comme suit :
+
+\[
+r_{CMCP} = \frac{V_{CP}}{V_{CP} + V_D} r_{CP} + \frac{V_D}{V_{CP} + V_D} r_D
+\]
+
+Selon la Proposition 2 de Modigliani-Miller, on a \( r_{CMCP} = r_N \). En conclusion, le taux d'actualisation à utiliser dépend seulement du projet entrepris et non de la structure financière de l'entreprise qui le porte, ce qui est une extension de la Proposition 1 de Modigliani-Miller.
+
+\section{Endettement et Bêta}
+
+Le risque d'une action d'une entreprise non endettée est équivalent au risque d'un portefeuille composé de titres de dette et d'actions d’une entreprise endettée. On observe une relation similaire pour le risque, mesuré par le bêta, que pour celui mesuré par les rendements :
+
+\[
+\beta_N = \frac{V_{CP}}{V_{CP} + V_D} \beta_{CP} + \frac{V_D}{V_{CP} + V_D} \beta_D
+\]
+
+Ici, \( \beta_N \) représente le bêta à endettement nul (ou bêta désendetté) de l'entreprise, qui mesure son risque de marché sans tenir compte de l'effet de sa dette. Lorsque la dette est sans risque (\( \beta_D = 0 \)), on obtient la relation suivante :
+
+\[
+\beta_{CP} = \left(1 + \frac{V_D}{V_{CP}}\right) \beta_N
+\]
+
+Le levier amplifie le risque de marché des actifs de l'entreprise E, et par conséquent, celui de ses actions. Cela permet de comprendre pourquoi des entreprises d'un même secteur présentent des bêtas différents, en raison de l'effet de leur structure financière.
+
+\section{Qu'en est-il empriquement ?}
+
+Le résultat de neutralité de la structure financière vis-à-vis de la valeur d’une firme est contredit par plusieurs observations. Les directeurs financiers consacrent du temps et des ressources à l'analyse et à l'optimisation de la structure financière. De plus, des différences systématiques de structure financière existent selon les secteurs d'activité. On constate également un lien entre la structure financière et la performance économique. Cela soulève un puzzle : l'hypothèse de marché parfait est-elle réaliste ?
+
+\chapter{Structure financière en présence d'impôts}
 
 
 
