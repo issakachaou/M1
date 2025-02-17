@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  28 JAN 2025 18:36
+This is LuaHBTeX, Version 1.15.1 (MiKTeX 22.10) (format=lualatex 2024.10.12)  17 FEB 2025 23:10
  restricted system commands enabled.
 **ANALYSE_FINANCIERE.tex
 (./ANALYSE_FINANCIERE.tex
@@ -709,177 +709,136 @@ Package hyperref Info: Link coloring OFF on input line 26.
 \@outlinefile=\write3
 
 \openout3 = ANALYSE_FINANCIERE.out
+<../../../Pictures/FAC_SEG_rvb.jpg, id=239, 706.64pt x 307.1475pt>
+File: ../../../Pictures/FAC_SEG_rvb.jpg Graphic file (type jpg)
+<use ../../../Pictures/FAC_SEG_rvb.jpg>
+Package luatex.def Info: ../../../Pictures/FAC_SEG_rvb.jpg  used on input line 
+30.
+(luatex.def)             Requested size: 211.99364pt x 92.14496pt.
  [1
 
+{C:/Users/issak/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}<../../../Pictu
+res/FAC_SEG_rvb.jpg>]
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
+[1
 
-{C:/Users/issak/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 221742.png, id=211, 
-274.02374pt x 213.04594pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 221742.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 221742.png>
-Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
--08 221742.png  used on input line 64.
-(luatex.def)             Requested size: 137.01154pt x 106.5227pt.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 67
-.
-
-
-Underfull \hbox (badness 1142) in paragraph at lines 69--70
-\T1/ptm/m/n/12 dans le contexte de l'en-tre-
- []
-
-
-Underfull \hbox (badness 3291) in paragraph at lines 69--70
-\T1/ptm/m/n/12 diaires. Ce pro-ces-sus com-
- []
-
-
-Underfull \hbox (badness 1163) in paragraph at lines 69--70
-\T1/ptm/m/n/12 qui est suivi d'un en-cais-se-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[2<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 221742.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222413.png, id=217, 
-307.1475pt x 209.28188pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222413.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222413.png>
-Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
--08 222413.png  used on input line 75.
-(luatex.def)             Requested size: 153.57336pt x 104.64067pt.
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222859.png, id=218, 
-281.55188pt x 152.06813pt>
-File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222859.png Grap
-hic file (type png)
-<use ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222859.png>
-Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
--08 222859.png  used on input line 88.
-(luatex.def)             Requested size: 140.77559pt x 76.03387pt.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 91
-.
-
-
-Underfull \hbox (badness 4168) in paragraph at lines 93--94
-[][]\T1/ptm/m/n/12 Le cycle de fi-nan-ce-ment consti-tue la
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[3<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222413.png><../../.
-./Pictures/Screenshots/Capture d'écran 2025-01-08 222859.png>]
+] (./ANALYSE_FINANCIERE.toc
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 102.
+ 2.
 
 (C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 102.
+ 2.
 
 (C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 102.
+ 2.
 
 (C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 102.
+ 2.
 
 (C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
-02.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
+.
 
 (C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 102.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 102.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 102.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+
+[2
+
+])
+\tf@toc=\write4
+
+\openout4 = ANALYSE_FINANCIERE.toc
+ [3] [4] [5
+
+]
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 221742.png, id=330, 
+274.02374pt x 213.04594pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 221742.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 221742.png>
+Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
+-08 221742.png  used on input line 108.
+(luatex.def)             Requested size: 137.01154pt x 106.5227pt.
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 11
+1.
 
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[4
+Underfull \hbox (badness 1142) in paragraph at lines 113--114
+\T1/ptm/m/n/12 dans le contexte de l'en-tre-
+ []
+
+
+Underfull \hbox (badness 3291) in paragraph at lines 113--114
+\T1/ptm/m/n/12 diaires. Ce pro-ces-sus com-
+ []
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 113--114
+\T1/ptm/m/n/12 qui est suivi d'un en-cais-se-
+ []
+
+[6<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 221742.png>]
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222413.png, id=336, 
+307.1475pt x 209.28188pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222413.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222413.png>
+Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
+-08 222413.png  used on input line 119.
+(luatex.def)             Requested size: 153.57336pt x 104.64067pt.
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222859.png, id=337, 
+281.55188pt x 152.06813pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222859.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222859.png>
+Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
+-08 222859.png  used on input line 132.
+(luatex.def)             Requested size: 140.77559pt x 76.03387pt.
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 13
+5.
+
+
+Underfull \hbox (badness 4168) in paragraph at lines 137--138
+[][]\T1/ptm/m/n/12 Le cycle de fi-nan-ce-ment consti-tue la
+ []
+
+[7<../../../Pictures/Screenshots/Capture d'écran 2025-01-08 222413.png><../../.
+./Pictures/Screenshots/Capture d'écran 2025-01-08 222859.png>] [8
 Missing character: There is no œ (U+0153) in font ptmr8t!
 Missing character: There is no œ (U+0153) in font ptmr8t!
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-29.
+73.
  (C:/Users/issak/AppData/Local/Programs/MiKTeX/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[5]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[6]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[7]
+[9] [10] [11]
 Chapitre 1.
-[8
+[12
 
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[9
+] [13
 Missing character: There is no … (U+2026) in font ptmri8t!
 Missing character: There is no ’ (U+2019) in font ptmri8t!
 Missing character: There is no ’ (U+2019) in font ptmri8t!
@@ -889,324 +848,215 @@ Missing character: There is no … (U+2026) in font ptmri8t!
 Missing character: There is no € (U+20AC) in font ptmri8t!
 Missing character: There is no ’ (U+2019) in font ptmri8t!
 Missing character: There is no ’ (U+2019) in font ptmri8t!
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[10
+] [14
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[11]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[12]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[13]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[14
+] [15] [16] [17] [18
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[15
+] [19
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[16
+] [20
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
 Missing character: There is no ’ (U+2019) in font ptmr8t!
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[17]
-Overfull \hbox (4.9642pt too wide) in paragraph at lines 470--471
+] [21]
+Overfull \hbox (4.9642pt too wide) in paragraph at lines 514--515
 \T1/ptm/m/n/12 comptes conso-li-dés est l'écart d'ac-qui-si-tion (sur-va-leur,
  ou \T1/ptm/m/it/12 good-will\T1/ptm/m/n/12 ) à l'ac-tif conso-
  []
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[18]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 111643.png, id=313, 
+[22]
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 111643.png, id=433, 
 342.5297pt x 289.08pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 111643.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 111643.png>
 Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
--21 111643.png  used on input line 488.
+-21 111643.png  used on input line 532.
 (luatex.def)             Requested size: 171.26442pt x 144.53964pt.
 
-Overfull \hbox (15.2668pt too wide) in paragraph at lines 488--489
+Overfull \hbox (15.2668pt too wide) in paragraph at lines 532--533
  [][] 
  []
 
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 49
-1.
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 53
+5.
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[19<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 111643.png>]
+[23<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 111643.png>]
 Chapitre 2.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 501.
+(hyperref)                than one, level fixed on input line 545.
 
-[20
+[24
 
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[21]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[22]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[23]
-Overfull \hbox (12.16399pt too wide) in paragraph at lines 632--633
+] [25] [26] [27]
+Overfull \hbox (12.16399pt too wide) in paragraph at lines 676--677
 []\T1/ptm/m/n/12 Ces charges com-prennent des frais liés à des pres-ta-tions 
 de sous-traitance,
  []
 
 
-Overfull \hbox (1.29488pt too wide) in paragraph at lines 632--633
+Overfull \hbox (1.29488pt too wide) in paragraph at lines 676--677
 \T1/ptm/m/n/12 des consom-ma-tions di-verses (eau, éner-gie), des loyers, des 
 primes d'as-
  []
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[24]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[25]
-Overfull \hbox (6.52428pt too wide) in paragraph at lines 689--690
+[28] [29]
+Overfull \hbox (6.52428pt too wide) in paragraph at lines 733--734
 []\T1/ptm/m/n/12 Cor-res-pondent à la ma-té-ria-li-sa-tion d'une dé-pré-cia-
 tion an-té-rieure concer-
  []
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[26
-Missing character: There is no ’ (U+2019) in font ptmr8t!
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[27
-Missing character: There is no ’ (U+2019) in font ptmr8t!
-Missing character: There is no ’ (U+2019) in font ptmr8t!
-Missing character: There is no ’ (U+2019) in font ptmr8t!
-Missing character: There is no ’ (U+2019) in font ptmr8t!
-Missing character: There is no ’ (U+2019) in font ptmr8t!
-Missing character: There is no ’ (U+2019) in font ptmr8t!
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[28
-Missing character: There is no ’ (U+2019) in font ptmr8t!
-Missing character: There is no ’ (U+2019) in font ptmr8t!
-Missing character: There is no ’ (U+2019) in font ptmr8t!
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[29]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
 [30
 Missing character: There is no ’ (U+2019) in font ptmr8t!
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[31]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[32]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-28 183546.png, id=426, 
+] [31
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+] [32
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+] [33] [34
+Missing character: There is no ’ (U+2019) in font ptmr8t!
+] [35] [36]
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-28 183546.png, id=545, 
 496.85625pt x 389.95688pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-28 183546.png Grap
 hic file (type png)
 <use ../../../Pictures/Screenshots/Capture d'écran 2025-01-28 183546.png>
 Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
--28 183546.png  used on input line 873.
+-28 183546.png  used on input line 917.
 (luatex.def)             Requested size: 248.4275pt x 194.97795pt.
 
+Overfull \hbox (19.9176pt too wide) in paragraph at lines 931--932
+[]\T1/ptm/m/n/12 Ex-pli-ca-tions et com-men-taires : Four-nit des dé-tails qui per-mettent une meilleure
+ []
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+[37<../../../Pictures/Screenshots/Capture d'écran 2025-01-28 183546.png>]
+[38] [39]
+Chapitre 3.
+[40
 
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+]
+<../../../Pictures/Screenshots/Capture d'écran 2025-02-17 212624.png, id=572, 
+466.74374pt x 288.3272pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2025-02-17 212624.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2025-02-17 212624.png>
+Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-02
+-17 212624.png  used on input line 1025.
+(luatex.def)             Requested size: 373.3955pt x 230.66205pt.
+ [41<../../../Pictures/Screenshots/Capture d'écran 2025-02-17 212624.png>] [42
+]
+<../../../Pictures/Screenshots/Capture d'écran 2025-02-17 214315.png, id=586, 
+526.96875pt x 107.65219pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2025-02-17 214315.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2025-02-17 214315.png>
+Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-02
+-17 214315.png  used on input line 1079.
+(luatex.def)             Requested size: 316.18369pt x 64.5918pt.
+<../../../Pictures/Screenshots/Capture d'écran 2025-02-17 215438.png, id=588, 
+502.87875pt x 129.48375pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2025-02-17 215438.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2025-02-17 215438.png>
+Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-02
+-17 215438.png  used on input line 1091.
+(luatex.def)             Requested size: 352.01273pt x 90.63799pt.
+ [43<../../../Pictures/Screenshots/Capture d'écran 2025-02-17 214315.png><../..
+/../Pictures/Screenshots/Capture d'écran 2025-02-17 215438.png>]
+<../../../Pictures/Screenshots/Capture d'écran 2025-02-17 221038.png, id=599, 
+520.19344pt x 166.37157pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2025-02-17 221038.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2025-02-17 221038.png>
+Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-02
+-17 221038.png  used on input line 1129.
+(luatex.def)             Requested size: 312.11845pt x 99.82368pt.
 
-[33<../../../Pictures/Screenshots/Capture d'écran 2025-01-28 183546.png>]
+[44]
+Overfull \hbox (3.66953pt too wide) in paragraph at lines 1142--1143
+[]\T1/ptm/m/n/12 Ac-ti-vi-tés Cou-rantes "Anor-males" : Le RE in-clut éga-le-m
+ent d'autres charges
+ []
+
+
+Overfull \hbox (3.40648pt too wide) in paragraph at lines 1143--1144
+[]\T1/ptm/m/n/12 Aléas "Nor-maux" : Les dé-pré-cia-tions et pro-vi-sions sont
+ consi-dé-rées comme
+ []
+
+
+Overfull \hbox (3.20192pt too wide) in paragraph at lines 1155--1156
+[]\T1/ptm/m/n/12 Sous-estimation des Dé-pré-cia-tions et Pro-vi-sions : Cette pra-tique peut "am
+é-
+ []
+
+[45<../../../Pictures/Screenshots/Capture d'écran 2025-02-17 221038.png>]
+<../../../Pictures/Screenshots/Capture d'écran 2025-02-17 223057.png, id=616, 
+460.72125pt x 153.57375pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2025-02-17 223057.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2025-02-17 223057.png>
+Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-02
+-17 223057.png  used on input line 1167.
+(luatex.def)             Requested size: 276.43488pt x 92.14494pt.
+<../../../Pictures/Screenshots/Capture d'écran 2025-02-17 224626.png, id=617, 
+406.51875pt x 150.5625pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2025-02-17 224626.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2025-02-17 224626.png>
+Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-02
+-17 224626.png  used on input line 1185.
+(luatex.def)             Requested size: 243.91312pt x 90.33818pt.
+
+[46<../../../Pictures/Screenshots/Capture d'écran 2025-02-17 223057.png><../../
+../Pictures/Screenshots/Capture d'écran 2025-02-17 224626.png>]
+<../../../Pictures/Screenshots/Capture d'écran 2025-02-17 225232.png, id=626, 
+509.65407pt x 148.30406pt>
+File: ../../../Pictures/Screenshots/Capture d'écran 2025-02-17 225232.png Grap
+hic file (type png)
+<use ../../../Pictures/Screenshots/Capture d'écran 2025-02-17 225232.png>
+Package luatex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-02
+-17 225232.png  used on input line 1229.
+(luatex.def)             Requested size: 305.7948pt x 88.98311pt.
+ [47] [48<../../../Pictures/Screenshots/Capture d'écran 2025-02-17 225232.png>] [49]
 (./ANALYSE_FINANCIERE.aux)
 Package rerunfilecheck Info: File `ANALYSE_FINANCIERE.out' has not changed.
-(rerunfilecheck)             Checksum: 744B6F7F83A28C51CD9C589D3F30146F;8805.
+(rerunfilecheck)             Checksum: B2E71117AC4D4EB0AFF4AECD0192F773;10993.
 )
 
 Here is how much of LuaTeX's memory you used:
- 14453 strings out of 477352
+ 14698 strings out of 477352
  100000,662416 words of node,token memory allocated
- 10364 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 301 glue, 444 kern, 1 penalty, 2 glyph, 2434 attrib
-ute, 59 glue_spec, 349 attribute_list, 1 write nodes
-   avail lists: 1:2,2:1492,3:214,4:18,5:185,6:54,7:6515,8:31,9:274,10:16,11:644
- 34703 multiletter control sequences out of 65536+600000
- 94 fonts using 6178207 bytes
- 72i,12n,72p,848b,636s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 13943 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 430 glue, 596 kern, 1 penalty, 2 glyph, 3267 attrib
+ute, 59 glue_spec, 468 attribute_list, 1 write, 2 pdf_action nodes
+   avail lists: 1:2,2:1129,3:328,4:18,5:94,6:93,7:6228,8:66,9:460,10:16,11:630
+ 34798 multiletter control sequences out of 65536+600000
+ 98 fonts using 6500031 bytes
+ 72i,6n,72p,848b,634s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/U
 sers/issak/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/i
 ssak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
@@ -1215,12 +1065,13 @@ ssak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
 m/cmr10.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/lm/lmtt12.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw
-/times/utmb8a.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
-times/utmr8a.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
-imes/utmri8a.pfb>
-Output written on ANALYSE_FINANCIERE.pdf (33 pages, 555333 bytes).
+/symbol/usyr.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
+imes/utmb8a.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/ti
+mes/utmr8a.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/urw/tim
+es/utmri8a.pfb>
+Output written on ANALYSE_FINANCIERE.pdf (50 pages, 763725 bytes).
 
-PDF statistics: 468 PDF objects out of 1000 (max. 8388607)
- 157 named destinations out of 1000 (max. 131072)
- 401 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 695 PDF objects out of 1000 (max. 8388607)
+ 217 named destinations out of 1000 (max. 131072)
+ 473 words of extra memory for PDF output out of 10000 (max. 100000000)
 
