@@ -1,5 +1,16 @@
-# Forecasting using ARMA and ARCH models with high-frequency data: an application to stock market index
+# Forecasting using ARMA and ARCH models with high-frequency data: *an application to stock market index*
 ## Issa KACHAOU, Pierre DURAND
+
+### Abstract 
+
+• 25% (Introduction)
+
+• 25% (Methods)
+
+• 35% (Results)
+
+• 15% (Discussion)
+
 
 ### Literature Search:
 
@@ -11,36 +22,11 @@ Attempts to produce improved forecasts of stock returns have spawned a huge lite
 Campbell and Shiller  [21], Fama and French  [22], Fama and French (1989), Ferson and Harvey  [23], and Keim and Stambaugh  [24],
 who provide convincing economic arguments and in-sample empirical results that some of the fluctuations in returns are predictable
 because of persistent time variation in expected returns. In sample evidence for predictability is
+___
+### Presentation with Pierre 7 march !
 
-### Outil qui pourrait servir
+I need to talk of the choice of the scientific articles, I have to talk about the rank quartile ? is it good ?
 
-Welcome to the revolution in thesis preparation:
-
-📚 Literature Search:
-- Before: Endless hours in libraries, combing through archives.
-- Now: AI tools like Litmapms, Elicit, Undermind swiftly unlock your topic's secrets.
-
-🔤 Grammar and Writing:
-- Before: Proofreading marathons.
-- Now: Hemingway, Grammarly, PaperPal turn you into an editing prodigy.
-
-📄 Paper Summary:
-- Before: Endless page skimming.
-- Now: Scholarcy, SciSummary, Resoomer deliver quick summaries.
-
-📑 Citations:
-- Before: Manually crafting each reference.
-- Now: Mendeley, Zotero, Scite curate your bibliography with ease.
-
-📝 Qualitative Research:
-- Before: Tedious manual data coding.
-- Now: Atlas, NVivo, Thematic reveal unseen data patterns.
-
-📊 Quantitative Research:
-- Before: Battling with complicated stats software.
-- Now: R, SPSS, Julius turn data into engaging narratives.
-
-test de Diebold-Mariano : bonne prévision
 
 ### Conseil de Gemini
 
@@ -82,11 +68,12 @@ Voici une stratégie pour trouver des sources pertinentes :
 En résumé: Votre sujet est pertinent et intéressant, mais il nécessite de cibler les bonnes revues.  Concentrez-vous sur les revues d'économétrie appliquée à la
 finance et les revues de finance.  La communication avec votre professeur est essentielle pour vous assurer que vos sources sont conformes aux exigences de votre mémoire.
 
+What is a good forecast ? we can try to use the Diebold-Mariano test
 
 
+### Pour faire des sorties en LaTeX de statsmodels
 
-Pour faire des sorties en LaTeX de statsmodels
-beginningtex = """\\documentclass{report}
+beginningtex = """\\documentclass{report} 
 \\usepackage{booktabs}
 \\begin{document}"""
 endtex = "\end{document}"
@@ -96,9 +83,69 @@ f.write(beginningtex)
 f.write(resultat.summary().as_latex())
 f.write(endtex)
 f.close()
+___
+### Some advices and tools found in linkedin
 
-31/01/2025 : Choix de la sources : Alpha Vantage
+Welcome to the revolution in thesis preparation:
 
-Clé API : VI3VNDX0I1XOSCL9
+📚 Literature Search:
+- Before: Endless hours in libraries, combing through archives.
+- Now: AI tools like Litmapms, Elicit, Undermind swiftly unlock your topic's secrets.
 
-#Is0621394000
+🔤 Grammar and Writing:
+- Before: Proofreading marathons.
+- Now: Hemingway, Grammarly, PaperPal turn you into an editing prodigy.
+
+📄 Paper Summary:
+- Before: Endless page skimming.
+- Now: Scholarcy, SciSummary, Resoomer deliver quick summaries.
+
+📑 Citations:
+- Before: Manually crafting each reference.
+- Now: Mendeley, Zotero, Scite curate your bibliography with ease.
+
+📝 Qualitative Research:
+- Before: Tedious manual data coding.
+- Now: Atlas, NVivo, Thematic reveal unseen data patterns.
+
+📊 Quantitative Research:
+- Before: Battling with complicated stats software.
+- Now: R, SPSS, Julius turn data into engaging narratives.
+
+
+𝐖𝐫𝐢𝐭𝐢𝐧𝐠 𝐋𝐢𝐭𝐞𝐫𝐚𝐭𝐮𝐫𝐞 𝐑𝐞𝐯𝐢𝐞𝐰
+
+1. Paperpal
+2. ResearchPal
+3. Review-it
+4. Grammarly
+5. Overleaf
+6. Google Doc
+7. LaTeX Project
+8. Scrivener
+9. Evernote
+10. Focus Writer
+
+𝐅𝐢𝐧𝐝𝐢𝐧𝐠 𝐏𝐚𝐩𝐞𝐫𝐬
+
+11. Undermind
+12. EvidenceHunt
+13. Litmaps
+14. Google Scholar
+15. Omni Iota Science Limited (OiPub)
+16. arXiv
+17. Semantic Scholar
+18. R Discovery
+19. PubMed
+
+𝐑𝐞𝐚𝐝𝐢𝐧𝐠 𝐏𝐚𝐩𝐞𝐫𝐬
+
+20. Scholarcy
+21. Enago (Crimson Interactive)
+22. SciSummary
+23. ScribeAI
+24. Petal
+25. Outread
+26. Paper Digest
+27. Pub Reader
+28. Deep Dyve

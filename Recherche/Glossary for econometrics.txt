@@ -1,0 +1,5 @@
+# Glossary for econometrics
+
+tick by tick data :donnée de haute fréquence qui capturent chaque mouvement de prix, chaque transaction exécutée et chaque mise à jour des offres et des demandes.
+
+goodness-of-fit : qualité d'ajustement
