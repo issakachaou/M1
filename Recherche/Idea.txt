@@ -20,6 +20,9 @@ If the GARCH model doesn't provide a good results maybe i should try to use the 
 
 All the article doesn't have a large dataset like me. Even if their data was in daily i should to try with a smallest dataset
 
+We can use the moving average filter to reduce the whie noise in the dataset
+
+> **I HAVE TO WATCH PIERRE VIDEO AND MAKE AN ADFULLER PROCESS CLEAN**
 
 ### Advice from chatgpt
  

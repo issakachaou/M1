@@ -25,8 +25,26 @@ because of persistent time variation in expected returns. In sample evidence for
 ___
 ### Presentation with Pierre 7 march !
 
-I need to talk of the choice of the scientific articles, I have to talk about the rank quartile ? is it good ?
+I need to make a slide
 
+I need to talk of the choice of the scientific articles, I have to talk about the rank quartile ? is it good ?
+___
+### Thoughts
+
+I need to find a clean example of the ARMA models with adfuller process etc then i will see for the Moving Average Filter
+ 
+#### What is the difference between the autocorrelation function and the partial autocorrelation function ?
+
+> Autocorelation : global
+> Partial autocorrelation :  just for one period
+
+### Maybe data set have a long memory 
+
+i think that because le correlogram of autocorrelation decrease so slowly 
+
+It decrease more slowly more i have more observation in the dataset 
+
+___
 
 ### Conseil de Gemini
 
