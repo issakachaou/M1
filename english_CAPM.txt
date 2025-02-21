@@ -1,0 +1,103 @@
+Diapositive 1 : Titre
+
+Le Bêta d'une Entreprise : Théorie et Estimation
+
+Diapositive 2 : Introduction
+
+Définition du bêta
+
+Importance dans la finance et la gestion du risque
+
+Objectif de l’exposé : expliquer le rôle du bêta et l'estimer avec un exemple
+
+Diapositive 3 : Définition et Rôle du Bêta
+
+Mesure de la sensibilité d’une action aux fluctuations du marché
+
+Indicateur clé du risque systématique
+
+Relation avec la rentabilité attendue (CAPM)
+
+Diapositive 4 : Risque de Marché et Risque Idiosyncratique
+
+Risque de marché : non diversifiable, lié à l'économie globale
+
+Risque idiosyncratique : propre à l’entreprise, peut être réduit par diversification
+
+Le bêta ne mesure que le risque systématique
+
+Diapositive 5 : La Formule du CAPM et le Bêta
+
+Formule : 
+
+Explication des variables :
+
+ : Rentabilité attendue
+
+ : Taux sans risque
+
+ : Rentabilité du marché
+
+ : Sensibilité au marché
+
+Diapositive 6 : Estimation du Modèle de Marché
+
+Régression entre le rendement de l’action NVIDIA et celui du NASDAQ
+
+Formule du modèle de marché : 
+
+Explication des coefficients  et 
+
+Diapositive 7 : Données et Méthodologie
+
+Données utilisées : prix de clôture de NVIDIA et NASDAQ
+
+Fréquence : quotidienne sur une période donnée
+
+Estimation du bêta via régression linéaire
+
+Diapositive 8 : Résultats de l'Estimation
+
+Valeur estimée du bêta de NVIDIA
+
+Interprétation : volatilité par rapport au marché
+
+Comparaison avec un bêta de référence (ex : 1)
+
+Diapositive 9 : Interprétation et Implications
+
+Si  : NVIDIA est plus risqué que le marché
+
+Si  : NVIDIA est moins risqué que le marché
+
+Impact pour les investisseurs et gestionnaires de portefeuille
+
+Diapositive 10 : Limites du Bêta
+
+Dépendance aux données historiques
+
+Variation dans le temps
+
+Influence d’événements exceptionnels
+
+Diapositive 11 : Conclusion
+
+Synthèse des points clés
+
+Importance du bêta dans l’analyse financière
+
+Perspectives d’amélioration et d’autres modèles (ex : modèles multifactoriels)
+
+Diapositive 12 : Questions et Discussion
+
+Espace ouvert pour des échanges
+
+Propositions d'approfondissement
+
+bibliographie : 
+
+William F. Sharpe (1964) : "Capital Asset Prices: A Theory of Market Equilibrium under Conditions of Risk" publié dans le Journal of Finance.
+
+John Lintner (1965) : "The Valuation of Risk Assets and the Selection of Risky Investments in Stock Portfolios and Capital Budgets" dans la Review of Economics and Statistics.
+
+Jan Mossin (1966) : "Equilibrium in a Capital Asset Market" dans Econometrica.
