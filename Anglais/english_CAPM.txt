@@ -1,0 +1,267 @@
+Diapositive 1 : Titre
+
+Le Bêta d'une Entreprise : Théorie et Estimation
+
+Diapositive 2 : Introduction
+
+Définition du bêta
+
+Importance dans la finance et la gestion du risque
+
+Objectif de l’exposé : expliquer le rôle du bêta et l'estimer avec un exemple
+
+Diapositive 3 : Définition et Rôle du Bêta
+
+Mesure de la sensibilité d’une action aux fluctuations du marché
+
+Indicateur clé du risque systématique
+
+Relation avec la rentabilité attendue (CAPM)
+
+Diapositive 4 : Risque de Marché et Risque Idiosyncratique
+
+Risque de marché : non diversifiable, lié à l'économie globale
+
+Risque idiosyncratique : propre à l’entreprise, peut être réduit par diversification
+
+Le bêta ne mesure que le risque systématique
+
+Diapositive 5 : La Formule du CAPM et le Bêta
+
+Formule : 
+
+Explication des variables :
+
+ : Rentabilité attendue
+
+ : Taux sans risque
+
+ : Rentabilité du marché
+
+ : Sensibilité au marché
+
+Diapositive 6 : Estimation du Modèle de Marché
+
+Régression entre le rendement de l’action NVIDIA et celui du NASDAQ
+
+Formule du modèle de marché : 
+
+Explication des coefficients  et 
+
+Diapositive 7 : Données et Méthodologie
+
+Données utilisées : prix de clôture de NVIDIA et NASDAQ
+
+Fréquence : quotidienne sur une période donnée
+
+Estimation du bêta via régression linéaire
+
+Diapositive 8 : Résultats de l'Estimation
+
+Valeur estimée du bêta de NVIDIA
+
+Interprétation : volatilité par rapport au marché
+
+Comparaison avec un bêta de référence (ex : 1)
+
+Diapositive 9 : Interprétation et Implications
+
+Si  : NVIDIA est plus risqué que le marché
+
+Si  : NVIDIA est moins risqué que le marché
+
+Impact pour les investisseurs et gestionnaires de portefeuille
+
+Diapositive 10 : Limites du Bêta
+
+Dépendance aux données historiques
+
+Variation dans le temps
+
+Influence d’événements exceptionnels
+
+Diapositive 11 : Conclusion
+
+Synthèse des points clés
+
+Importance du bêta dans l’analyse financière
+
+Perspectives d’amélioration et d’autres modèles (ex : modèles multifactoriels)
+
+Diapositive 12 : Questions et Discussion
+
+Espace ouvert pour des échanges
+
+Propositions d'approfondissement
+
+bibliographie : 
+
+William F. Sharpe (1964) : "Capital Asset Prices: A Theory of Market Equilibrium under Conditions of Risk" publié dans le Journal of Finance.
+
+John Lintner (1965) : "The Valuation of Risk Assets and the Selection of Risky Investments in Stock Portfolios and Capital Budgets" dans la Review of Economics and Statistics.
+
+Jan Mossin (1966) : "Equilibrium in a Capital Asset Market" dans Econometrica.
+___
+Slide 1: Title
+
+# Estimating a Company's Beta: An Application of the Capital Asset Pricing Model to Measure Different Types of Risk
+
+Slide 2: Introduction
+\begin{block}{Context}
+
+The Capital Asset Pricing Model (CAPM) is widely used in finance to estimate the expected return of an asset given its risk level.
+
+The Beta coefficient is a key parameter in this model, measuring an asset’s sensitivity to market movements.
+\end{block}
+\begin{block}{Objective}
+
+This presentation aims to estimate the beta of NVIDIA using the NASDAQ index as a benchmark.
+
+We will distinguish between systematic (market) risk and idiosyncratic (specific) risk.
+\end{block}
+
+Notes:
+"Good morning everyone. Today, I am going to talk about an important financial concept: Beta. Specifically, we will look at how we can estimate the beta of a company, in this case, NVIDIA, using the Capital Asset Pricing Model, or CAPM.
+
+First, we will define what beta is and why it matters. Then, we will see how beta helps differentiate between systematic risk and idiosyncratic risk. Next, I will explain how we can estimate beta using real-world data. Finally, we will analyze the results and discuss their implications.
+
+The goal of this presentation is to understand how beta helps investors measure risk and make informed financial decisions."
+
+Slide 3: Literature Review
+\begin{block}{Foundational Studies}
+
+Sharpe (1964), Lintner (1965), and Mossin (1966) formalized CAPM.
+
+Fama and French (2004) evaluated CAPM’s empirical validity and proposed multi-factor models.
+\end{block}
+\begin{block}{Key Findings}
+
+CAPM assumes markets are efficient, and investors are rational.
+
+Beta is widely used but has been criticized for its instability over time.
+\end{block}
+
+Notes:
+"Before we move on to the estimation of beta, let's take a look at some key studies that have shaped our understanding of this concept.
+
+The Capital Asset Pricing Model, or CAPM, was developed in the 1960s by economists William Sharpe, John Lintner, and Jan Mossin. Their work established the relationship between an asset's risk and its expected return.
+
+Later, Fama and French in 2004 critically evaluated the CAPM and introduced a multi-factor model to account for additional risk factors. While CAPM remains widely used, one of its main criticisms is that beta is not always stable over time. This means that the risk measurement for an asset can change depending on market conditions."
+
+Slide 4: Theoretical Framework
+\begin{block}{CAPM Equation}
+
+\end{block}
+\begin{block}{Interpretation of Parameters}
+
+: Expected return of asset .
+
+: Risk-free rate.
+
+: Market return.
+
+: Beta of the asset.
+\end{block}
+
+Notes:
+"Now, let's discuss the theoretical framework behind beta estimation. The main formula we use is the Capital Asset Pricing Model equation. It is written as follows:
+
+E(Ri) = Rf + βi (Rm - Rf)
+
+This equation tells us that the expected return of an asset depends on the risk-free rate, the market return, and the beta of the asset.
+
+The risk-free rate represents the return of an investment with zero risk, typically government bonds. The market return is the return of a broad stock market index, like the NASDAQ. Finally, beta measures how much the asset moves in relation to the market. If beta is greater than 1, the asset is more volatile than the market. If beta is less than 1, the asset is less volatile."
+
+Slide 5: Methodology
+\begin{block}{Data Selection}
+
+Stock prices of NVIDIA and NASDAQ index.
+
+Frequency: 5-minute vs. daily returns.
+
+Sample period: [Specify timeframe].
+\end{block}
+\begin{block}{Estimation Technique}
+
+Ordinary Least Squares (OLS) regression:
+
+\end{block}
+
+Notes:
+"To estimate beta, we need real-world data. For this analysis, we use the stock prices of NVIDIA and the NASDAQ index as our benchmark. We consider different data frequencies: daily returns and high-frequency 5-minute returns.
+
+We then apply a statistical technique called Ordinary Least Squares regression, or OLS. This technique allows us to estimate the relationship between NVIDIA’s returns and the NASDAQ’s returns. The resulting beta coefficient tells us how sensitive NVIDIA is to market movements."
+
+Slide 6: Results
+\begin{block}{Estimated Beta}
+
+Beta estimate for NVIDIA: [Insert value].
+
+Statistical significance: [Insert results].
+\end{block}
+\begin{block}{Comparison with Benchmark}
+
+NASDAQ beta = 1 (market benchmark).
+
+Semiconductor industry average beta: [Insert reference].
+\end{block}
+
+Notes:
+"Here are our estimation results. The estimated beta for NVIDIA is [insert beta value]. This means that NVIDIA is [more/less] volatile compared to the NASDAQ index.
+
+We can compare this value to the industry average for semiconductor companies, which is around [insert reference]. If NVIDIA's beta is higher than this value, it means the stock carries more risk compared to its industry peers."
+
+Slide 7: Discussion
+\begin{block}{Implications}
+
+High beta (>1): Higher risk and higher expected returns.
+
+Low beta (<1): Lower risk but lower expected returns.
+\end{block}
+\begin{block}{Limitations}
+
+Beta is time-dependent and can change.
+
+CAPM assumes constant risk preferences.
+\end{block}
+
+Notes:
+"Understanding beta is important for investors. A high beta means the stock is riskier but could offer higher returns. A low beta means lower risk but lower potential returns.
+
+However, beta is not perfect. It changes over time, and the CAPM assumes investors have constant risk preferences, which is not always true. Alternative models may better capture real-world risk factors."
+
+Slide 8: Conclusion
+\begin{block}{Key Takeaways}
+
+Beta helps measure systematic risk but does not capture idiosyncratic risk.
+
+CAPM provides a useful framework for estimating expected returns.
+\end{block}
+
+Notes:
+"To conclude, beta is a useful tool to measure market risk, but it does not capture all types of risks. CAPM remains a popular model, but it has limitations. Future research should explore more advanced methods to estimate risk."
+
+Slide 9: Questions and Discussion
+\begin{block}{Open Discussion}
+
+Feedback and questions are welcome.
+\end{block}
+
+Notes:
+"Thank you for your attention! If you have any questions, feel free to ask."
+
+___
+# notes
+
+"To ensure that our time series is stationary, we apply the log difference transformation to both NVIDIA and NASDAQ prices. This method is commonly used in financial econometrics to stabilize variance and remove trends, making the data more suitable for regression analysis.
+
+A stock with a beta greater than 1 is considered more volatile than the overall market. This means that when the market goes up, the stock tends to increase by a larger percentage, and when the market declines, the stock usually falls more steeply. Investors looking for higher returns might be willing to accept the additional risk associated with high-beta stocks. Such stocks are often found in growth sectors like technology, where price movements are more pronounced due to speculative interest and high sensitivity to economic cycles.
+
+A stock with a beta lower than 1 is considered less volatile than the market. These stocks generally move in the same direction as the market but with smaller fluctuations. Low-beta stocks are often preferred by risk-averse investors or those seeking stability in their portfolio. They are typically found in defensive sectors such as utilities, consumer staples, and healthcare, where demand remains stable regardless of economic conditions.
+
+The beta coefficient is not a fixed value; it evolves over time as market conditions change. Factors such as economic cycles, changes in a company’s business model, or shifts in investor sentiment can all influence beta. This variability means that a stock that was once considered low risk may become riskier and vice versa. Investors should regularly reassess a stock's beta to ensure their portfolio aligns with their risk tolerance.
+
+"Understanding the implications of beta is crucial for portfolio management. A high beta stock offers greater return potential but comes with higher risk, making it suitable for aggressive investors who are willing to endure volatility. In contrast, low beta stocks provide stability and are preferred by conservative investors seeking predictable returns.
+
+However, beta is not a static measure. It changes over time due to shifting market dynamics, making it necessary to monitor and adjust investment strategies accordingly. Additionally, while CAPM provides a useful framework for estimating expected returns, its assumption of constant risk preferences does not always hold in reality. Investor behavior is influenced by emotions, external events, and market inefficiencies, which can lead to deviations from CAPM predictions. This highlights the importance of complementing CAPM analysis with other risk assessment models and qualitative factors."
+

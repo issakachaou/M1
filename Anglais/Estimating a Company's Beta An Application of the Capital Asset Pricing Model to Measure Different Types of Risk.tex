@@ -1,0 +1,201 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+\usecolortheme{seahorse}
+\usepackage[english]{babel}
+
+\usepackage{booktabs}
+\title{Estimating a Company's Beta}
+
+\subtitle{\textit{An Application of the Capital Asset Pricing Model to Measure Different Types of Risks}}
+% il faut excecuter en luatex pour les émoji : config > compilateur
+\author{Issa KACHAOU}
+\begin{document}
+	
+\begin{frame}[plain]
+	\maketitle
+\end{frame}
+
+\begin{frame}{\textbf{Introduction}}
+
+\begin{block}{\textbf{Context}}
+	
+	The Capital Asset Pricing Model (CAPM) is widely used in finance to estimate the expected return of an asset given its risk level.
+	
+	The Beta coefficient is a key parameter in this model, measuring an asset’s sensitivity to market movements.
+\end{block}
+\begin{block}{\textbf{Objective}}
+	
+	This presentation aims to estimate the beta of NVIDIA using the NASDAQ index as a benchmark.
+	
+	We will distinguish between \textit{systematic} (market) risk and \textit{idiosyncratic} (specific) risk.
+\end{block}
+
+
+\end{frame}
+	
+\begin{frame}{\textbf{Literature Review}}
+
+\begin{block}{\textbf{Formalization of CAPM}}
+	Sharpe (1964), Lintner (1965), and Mossin (1966) formalized the Capital Asset Pricing Model (CAPM), which describes the relationship between expected return and risk. CAPM introduces the concept of systematic risk, measured by beta (\(\beta\)), and asserts that an asset’s expected return is determined by its exposure to market risk.
+\end{block}
+	
+\begin{block}{\textbf{Empirical Evaluation}}
+	Fama and French (2004) critically evaluated CAPM’s empirical validity, finding that the model struggles to fully explain asset returns. Their research led to the development of multi-factor models, such as the Fama-French three-factor model, which incorporates size and value factors in addition to market risk.
+\end{block}
+	
+\end{frame}
+
+\begin{frame}{\textbf{Literature Review}}
+\begin{block}{\textbf{Assumptions and Limitations}}
+CAPM assumes efficient markets, rational investors, and no transaction costs. While beta (\(\beta\)) is widely used, it has been criticized for its instability over time.
+\end{block}
+\end{frame}
+
+\begin{frame}{\textbf{Theoretical Framework}}
+
+
+\begin{alertblock}{\textbf{Capital Asset Pricing Model Equation}}
+	\[ \mathbb{E}(R_i)=R_f+\beta_i(R_m-R_f) \]
+\end{alertblock}
+With :
+
+\begin{itemize}
+	\item \( \mathbb{E}(R_i) \) : Expected return of asset \( i \).
+	\item \( R_f \) : Risk-free rate
+	\item \( R_m \) : Market return
+	\item  \( \beta_i \) : Beta of the asset \( i \)
+\end{itemize}
+
+
+\end{frame}
+
+\begin{frame}{\textbf{Methodology}}
+\begin{exampleblock}{\textbf{Data Selection}}
+	
+\begin{itemize}
+\item Stock prices of NVIDIA and NASDAQ index. (We will take the adjusted close prices for these two series)
+	\item 	Frequency: 5-minute vs. daily returns.
+	\item 	Sample period: We use data from 2001 to today (6070 observations), ensuring a sufficient number of observations to obtain statistically significant results.
+	\item 	Data source: The data is obtained from Yahoo Finance.
+	\item 	Data preprocessing: To ensure stationarity in the time series, we apply the log difference transformation to both NVIDIA and NASDAQ prices. (After a Augmented Dickey Fuller test of course)
+	
+	\item 	For this study, we primarily use daily returns, as they provide a clearer long-term trend and reduce the noise inherent in high-frequency data.
+\end{itemize}
+\end{exampleblock}
+\end{frame}
+
+\begin{frame}{\textbf{Methodology}}
+	
+\begin{exampleblock}{\textbf{The model}}
+\[ \Delta \ln \text{NVIDIA} = \alpha + \beta \Delta \ln \text{NASDAQ} + \epsilon_t\]
+
+\begin{itemize}
+	\item \( \Delta \ln \text{NVIDIA}\) represents the log-differenced returns of NVIDIA,
+	\item \( \Delta \ln \text{NASDAQ} \) represents the log-differenced returns of the NASDAQ index,
+	\item  \( \alpha \) is the intercept
+	\item \( \beta \) is the coefficient measuring NVIDIA’s sensitivity to market movements
+	\item \( \epsilon \) is the error term capturing idiosyncratic risk.
+	
+	
+\end{itemize}
+\end{exampleblock}	
+	
+\end{frame}
+
+
+\begin{frame}{\textbf{Results}}
+	
+\centering
+	{\scriptsize\begin{tabular}{lclc}
+	\toprule
+	\textbf{Dep. Variable:}    &     LN\_NVDA     & \textbf{  R-squared:         } &     0.442   \\
+	\textbf{Model:}            &       OLS        & \textbf{  Adj. R-squared:    } &     0.442   \\
+	\textbf{Method:}           &  Least Squares   & \textbf{  F-statistic:       } &     4802.   \\
+	\textbf{Date:}             & Sat, 22 Feb 2025 & \textbf{  Prob (F-statistic):} &     0.00    \\
+	\textbf{Time:}             &     22:48:18     & \textbf{  Log-Likelihood:    } &   -14436.   \\
+	\textbf{No. Observations:} &        6070      & \textbf{  AIC:               } & 2.888e+04   \\
+	\textbf{Df Residuals:}     &        6068      & \textbf{  BIC:               } & 2.889e+04   \\
+	\textbf{Df Model:}         &           1      & \textbf{                     } &             \\
+	\textbf{Covariance Type:}  &    nonrobust     & \textbf{                     } &             \\
+	\bottomrule
+\end{tabular}
+\begin{tabular}{lcccccc}
+	& \textbf{coef} & \textbf{std err} & \textbf{t} & \textbf{P$> |$t$|$} & \textbf{[0.025} & \textbf{0.975]}  \\
+	\midrule
+	\textbf{const}    &       0.0608  &        0.034     &     1.813  &         0.070        &       -0.005    &        0.126     \\
+	\textbf{LN\_NSDQ} &       1.5783  &        0.023     &    69.293  &         0.000        &        1.534    &        1.623     \\
+	\bottomrule
+\end{tabular}
+\begin{tabular}{lclc}
+	\textbf{Omnibus:}       & 2497.834 & \textbf{  Durbin-Watson:     } &     2.038   \\
+	\textbf{Prob(Omnibus):} &   0.000  & \textbf{  Jarque-Bera (JB):  } & 242178.502  \\
+	\textbf{Skew:}          &  -1.023  & \textbf{  Prob(JB):          } &      0.00   \\
+	\textbf{Kurtosis:}      &  33.877  & \textbf{  Cond. No.          } &      1.47   \\
+	\bottomrule
+\end{tabular}
+
+%\caption{OLS Regression Results}
+
+Notes: \newline
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.}
+\end{frame}
+
+\begin{frame}{\textbf{Discussion}}
+	
+\begin{block}{\textbf{Implications}}
+	
+	High beta \( (\widehat\beta>1) \): A stock with a beta greater than 1 is considered more volatile than the overall market. This means that when the market goes up, the stock tends to increase by a larger percentage, and when the market declines, the stock usually falls more steeply. Investors looking for higher returns might be willing to accept the additional risk associated with high-beta stocks. Such stocks are often found in growth sectors like technology, where price movements are more pronounced due to speculative interest and high sensitivity to economic cycles.
+	
+	
+\end{block}
+
+\end{frame}
+\begin{frame}{\textbf{Discussion}}
+
+\begin{block}{\textbf{Implications}}
+	
+	Low beta \( (\widehat\beta<1) \): A stock with a beta lower than 1 is considered less volatile than the market. These stocks generally move in the same direction as the market but with smaller fluctuations. Low-beta stocks are often preferred by risk-averse investors or those seeking stability in their portfolio. They are typically found in defensive sectors such as utilities, consumer staples, and healthcare, where demand remains stable regardless of economic conditions.
+\end{block}
+
+\end{frame}
+
+\begin{frame}{\textbf{Discussion}}
+\begin{block}{\textbf{Beta is time-dependent and can changes}}
+	
+	The beta coefficient is not a fixed value; it evolves over time as market conditions change. Factors such as economic cycles, changes in a company’s business model, or shifts in investor sentiment can all influence beta. This variability means that a stock that was once considered low risk may become riskier and vice versa. Investors should regularly reassess a stock's beta to ensure their portfolio aligns with their risk tolerance.
+\end{block}
+\end{frame}
+
+
+\begin{frame}{\textbf{Discussion}}
+\begin{block}{\textbf{CAPM assumes constant risk preferences}}
+
+The Capital Asset Pricing Model (CAPM) operates under the assumption that investors have stable risk preferences and that they make decisions rationally based on expected returns and risk levels. However, in reality, investor behavior can be influenced by psychological biases, market sentiment, and changing financial circumstances. For example, during periods of economic uncertainty, investors might become more risk-averse, leading to fluctuations in asset prices that the CAPM does not account for. Additionally, real-world markets exhibit inefficiencies, meaning that asset prices may not always adjust perfectly according to CAPM predictions.
+
+\end{block}
+\end{frame}
+
+\begin{frame}{\textbf{Conclusion}}
+\begin{block}{\textbf{Key Takeaways}}
+\begin{itemize}
+	\item Beta measures systematic risk.
+	\item \( 1-R^2 \) quantifies idiosyncratic risk.
+	\item The Capital Asset Pricing Model (CAPM) provides a useful framework for estimating expected returns, but has limitations.
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}{\textbf{References}}
+
+		\begin{itemize}
+\item Lintner, J. (1965). The valuation of risk assets and the selection of risky investments in stock portfolios and capital budgets. \textit{The Review of Economics and Statistics}, 47(1), 13-37.
+\item Fama, E. F., \& French, K. R. (2004). The capital asset pricing model: Theory and evidence. \textit{Journal of Economic Perspectives}, 18(3), 25-46.
+\item Mossin, J. (1966). Equilibrium in a capital asset market. Econometrica: \textit{Journal of the Econometric Society}, 768-783. 
+		
+\item Sharpe, W. F. (1964). Capital asset prices: A theory of market equilibrium under conditions of risk. \textit{The Journal of Finance}, 19(3), 425-442. 
+\end{itemize}
+
+\end{frame}
+
+
+\end{document}
