@@ -1,0 +1,28 @@
+# Présentation du 7 mars
+
+## Ce que j'ai lu 
+
+J'ai lu :
+
+
+## Ce que j'ai fait 
+
+redéfinition du sujet :
+
+>*Forecasting using ARMA and ARCH models with high-frequency data: *an application to stock market index**
+
+>*Forecasting with High-Frequency Data: An Application of GARCH Models to Stock Market Indices*
+
+Choix du modèle GARCH qui prends en compte les différences de volatilité à travers le temps et les clusters de volatilité
+
+Loi de distribution GED (queue épaisse de distribution)
+
+faire un test de spécification 
+
+> parler de pmdarima et faire des test 
+
+
+## Les problèmes rencontrer et des piste de solution 
+
+Forte hétérosked non capté par le modèle
+

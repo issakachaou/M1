@@ -1,119 +1,140 @@
 \babel@toc {french}{}\relax 
-\contentsline {section}{\numberline {0.1}Quelques éléments sur l'entreprise}{5}{section.0.1}%
-\contentsline {subsection}{\numberline {0.1.1}Entreprise}{5}{subsection.0.1.1}%
-\contentsline {subsection}{\numberline {0.1.2}Parties prenantes}{5}{subsection.0.1.2}%
-\contentsline {subsection}{\numberline {0.1.3}Analyse}{5}{subsection.0.1.3}%
-\contentsline {subsection}{\numberline {0.1.4}Rentabilité et solvabilité}{5}{subsection.0.1.4}%
-\contentsline {subsection}{\numberline {0.1.5}Les cycles de l'entreprise}{5}{subsection.0.1.5}%
-\contentsline {subsection}{\numberline {0.1.6}Cycle d'exploitation}{6}{subsection.0.1.6}%
-\contentsline {subsection}{\numberline {0.1.7}Phases du cycle d'exploitation}{6}{subsection.0.1.7}%
-\contentsline {subsection}{\numberline {0.1.8}Contrepartie}{6}{subsection.0.1.8}%
-\contentsline {subsection}{\numberline {0.1.9}Financement du cycle d'exploitation}{7}{subsection.0.1.9}%
-\contentsline {subsection}{\numberline {0.1.10}Cycle d'investissement}{7}{subsection.0.1.10}%
-\contentsline {subsection}{\numberline {0.1.11}Cycle de financement}{7}{subsection.0.1.11}%
-\contentsline {subsection}{\numberline {0.1.12}Rentabilité et solvabilité}{8}{subsection.0.1.12}%
-\contentsline {subsubsection}{Rentabilité}{8}{section*.3}%
-\contentsline {subsubsection}{Solvabilité}{8}{section*.4}%
-\contentsline {section}{\numberline {0.2}Information comptable}{8}{section.0.2}%
-\contentsline {subsection}{\numberline {0.2.1}Principes comptables}{9}{subsection.0.2.1}%
-\contentsline {subsection}{\numberline {0.2.2}Documents comptables}{10}{subsection.0.2.2}%
-\contentsline {section}{\numberline {0.3}Annexe}{11}{section.0.3}%
-\contentsline {chapter}{\numberline {1}Le bilan comptable}{12}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Analyse de l'actif}{12}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Capital souscrit non appelé}{13}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Immobilisations incorporelles}{14}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.1.3}Immobilisations corporelles}{14}{subsection.1.1.3}%
-\contentsline {subsection}{\numberline {1.1.4}Immobilisation financière}{14}{subsection.1.1.4}%
-\contentsline {subsection}{\numberline {1.1.5}Stock}{15}{subsection.1.1.5}%
-\contentsline {subsection}{\numberline {1.1.6}Créances et avances}{15}{subsection.1.1.6}%
-\contentsline {subsection}{\numberline {1.1.7}Trésorerie}{16}{subsection.1.1.7}%
-\contentsline {subsection}{\numberline {1.1.8}Comptes de régularisation}{16}{subsection.1.1.8}%
-\contentsline {subsection}{\numberline {1.1.9}Les principaux postes de l'actif}{17}{subsection.1.1.9}%
-\contentsline {section}{\numberline {1.2}Analyse du passif}{17}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Capitaux propres}{18}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Provisions pour risques et charges}{19}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Dettes}{19}{subsection.1.2.3}%
-\contentsline {subsubsection}{Dettes financières}{19}{section*.6}%
-\contentsline {subsubsection}{Dettes d'exploitation}{20}{section*.7}%
-\contentsline {subsubsection}{Dettes diverses (hors exploitation)}{20}{section*.8}%
-\contentsline {subsection}{\numberline {1.2.4}Comptes de régularisation}{20}{subsection.1.2.4}%
-\contentsline {subsection}{\numberline {1.2.5}Trésorerie}{20}{subsection.1.2.5}%
-\contentsline {subsection}{\numberline {1.2.6}Les principaux postes du passif}{20}{subsection.1.2.6}%
-\contentsline {section}{\numberline {1.3}Les comptes consolidés}{21}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Principe}{21}{subsection.1.3.1}%
-\contentsline {subsubsection}{L'intégration globale (IAS 27)}{21}{section*.9}%
-\contentsline {subsubsection}{La mise en équivalence (IAS 28)}{22}{section*.10}%
-\contentsline {subsubsection}{Intégration proportionnelle}{22}{section*.11}%
-\contentsline {subsection}{\numberline {1.3.2}Plan comptable}{22}{subsection.1.3.2}%
-\contentsline {subsubsection}{Exemple de différence dans les méthodes de valorisation : immobilisations financières}{23}{section*.12}%
-\contentsline {subsection}{\numberline {1.3.3}Représentation shématique pour l'IFRS 9}{23}{subsection.1.3.3}%
-\contentsline {section}{\numberline {1.4}Conclusion}{23}{section.1.4}%
-\contentsline {chapter}{\numberline {2}Le compte de résultat et autres documents}{24}{chapter.2}%
-\contentsline {subsection}{\numberline {2.0.1}Compte de résultat}{24}{subsection.2.0.1}%
-\contentsline {subsection}{\numberline {2.0.2}Annexe}{24}{subsection.2.0.2}%
-\contentsline {section}{\numberline {2.1}Compte de résultat}{24}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Éléments du compte de résultat}{24}{subsection.2.1.1}%
-\contentsline {subsubsection}{Opérations d'exploitation}{25}{section*.14}%
-\contentsline {subsection}{\numberline {2.1.2}Remarques sur le chiffre d'affaires (CA) :}{26}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Remarques sur la production stockée}{27}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Les Charges de l'Entreprise}{28}{subsection.2.1.4}%
-\contentsline {subsubsection}{Opération financières}{29}{section*.15}%
-\contentsline {paragraph}{Objectif des Opérations Financières}{29}{section*.16}%
-\contentsline {paragraph}{Les charges financières}{30}{section*.18}%
-\contentsline {subsubsection}{Opérations exceptionnelles}{31}{section*.19}%
-\contentsline {paragraph}{Les opérations (produits ou charges)}{31}{section*.20}%
-\contentsline {paragraph}{Autres Éléments}{32}{section*.21}%
+\contentsline {section}{\numberline {0.1}Quelques éléments sur l'entreprise}{6}{section.0.1}%
+\contentsline {subsection}{\numberline {0.1.1}Entreprise}{6}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {0.1.2}Parties prenantes}{6}{subsection.0.1.2}%
+\contentsline {subsection}{\numberline {0.1.3}Analyse}{6}{subsection.0.1.3}%
+\contentsline {subsection}{\numberline {0.1.4}Rentabilité et solvabilité}{6}{subsection.0.1.4}%
+\contentsline {subsection}{\numberline {0.1.5}Les cycles de l'entreprise}{6}{subsection.0.1.5}%
+\contentsline {subsection}{\numberline {0.1.6}Cycle d'exploitation}{7}{subsection.0.1.6}%
+\contentsline {subsection}{\numberline {0.1.7}Phases du cycle d'exploitation}{7}{subsection.0.1.7}%
+\contentsline {subsection}{\numberline {0.1.8}Contrepartie}{7}{subsection.0.1.8}%
+\contentsline {subsection}{\numberline {0.1.9}Financement du cycle d'exploitation}{8}{subsection.0.1.9}%
+\contentsline {subsection}{\numberline {0.1.10}Cycle d'investissement}{8}{subsection.0.1.10}%
+\contentsline {subsection}{\numberline {0.1.11}Cycle de financement}{8}{subsection.0.1.11}%
+\contentsline {subsection}{\numberline {0.1.12}Rentabilité et solvabilité}{9}{subsection.0.1.12}%
+\contentsline {subsubsection}{Rentabilité}{9}{section*.3}%
+\contentsline {subsubsection}{Solvabilité}{9}{section*.4}%
+\contentsline {section}{\numberline {0.2}Information comptable}{9}{section.0.2}%
+\contentsline {subsection}{\numberline {0.2.1}Principes comptables}{10}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {0.2.2}Documents comptables}{11}{subsection.0.2.2}%
+\contentsline {section}{\numberline {0.3}Annexe}{12}{section.0.3}%
+\contentsline {chapter}{\numberline {1}Le bilan comptable}{13}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Analyse de l'actif}{13}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Capital souscrit non appelé}{14}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Immobilisations incorporelles}{15}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Immobilisations corporelles}{15}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Immobilisation financière}{15}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Stock}{16}{subsection.1.1.5}%
+\contentsline {subsection}{\numberline {1.1.6}Créances et avances}{16}{subsection.1.1.6}%
+\contentsline {subsection}{\numberline {1.1.7}Trésorerie}{17}{subsection.1.1.7}%
+\contentsline {subsection}{\numberline {1.1.8}Comptes de régularisation}{17}{subsection.1.1.8}%
+\contentsline {subsection}{\numberline {1.1.9}Les principaux postes de l'actif}{18}{subsection.1.1.9}%
+\contentsline {section}{\numberline {1.2}Analyse du passif}{18}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Capitaux propres}{19}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Provisions pour risques et charges}{20}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Dettes}{20}{subsection.1.2.3}%
+\contentsline {subsubsection}{Dettes financières}{20}{section*.6}%
+\contentsline {subsubsection}{Dettes d'exploitation}{21}{section*.7}%
+\contentsline {subsubsection}{Dettes diverses (hors exploitation)}{21}{section*.8}%
+\contentsline {subsection}{\numberline {1.2.4}Comptes de régularisation}{21}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Trésorerie}{21}{subsection.1.2.5}%
+\contentsline {subsection}{\numberline {1.2.6}Les principaux postes du passif}{21}{subsection.1.2.6}%
+\contentsline {section}{\numberline {1.3}Les comptes consolidés}{22}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Principe}{22}{subsection.1.3.1}%
+\contentsline {subsubsection}{L'intégration globale (IAS 27)}{22}{section*.9}%
+\contentsline {subsubsection}{La mise en équivalence (IAS 28)}{23}{section*.10}%
+\contentsline {subsubsection}{Intégration proportionnelle}{23}{section*.11}%
+\contentsline {subsection}{\numberline {1.3.2}Plan comptable}{23}{subsection.1.3.2}%
+\contentsline {subsubsection}{Exemple de différence dans les méthodes de valorisation : immobilisations financières}{24}{section*.12}%
+\contentsline {subsection}{\numberline {1.3.3}Représentation shématique pour l'IFRS 9}{24}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.4}Conclusion}{24}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Le compte de résultat et autres documents}{25}{chapter.2}%
+\contentsline {subsection}{\numberline {2.0.1}Compte de résultat}{25}{subsection.2.0.1}%
+\contentsline {subsection}{\numberline {2.0.2}Annexe}{25}{subsection.2.0.2}%
+\contentsline {section}{\numberline {2.1}Compte de résultat}{25}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Éléments du compte de résultat}{25}{subsection.2.1.1}%
+\contentsline {subsubsection}{Opérations d'exploitation}{26}{section*.14}%
+\contentsline {subsection}{\numberline {2.1.2}Remarques sur le chiffre d'affaires (CA) :}{27}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Remarques sur la production stockée}{28}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Les Charges de l'Entreprise}{29}{subsection.2.1.4}%
+\contentsline {subsubsection}{Opération financières}{30}{section*.15}%
+\contentsline {paragraph}{Objectif des Opérations Financières}{30}{section*.16}%
+\contentsline {paragraph}{Les charges financières}{31}{section*.18}%
+\contentsline {subsubsection}{Opérations exceptionnelles}{32}{section*.19}%
+\contentsline {paragraph}{Les opérations (produits ou charges)}{32}{section*.20}%
+\contentsline {paragraph}{Autres Éléments}{33}{section*.21}%
 \contentsline {section}{\numberline {2.2}Compte consolidé et normes IFRS}{34}{section.2.2}%
-\contentsline {subsubsection}{Quelques éléments spécifiques avec la consolidation}{34}{section*.22}%
-\contentsline {paragraph}{Quote-part de résultat des sociétés mise en équivalence}{34}{section*.23}%
-\contentsline {paragraph}{Part des minoritaires / Part du groupe}{35}{section*.24}%
-\contentsline {subsubsection}{Quelques éléments spécifiques en IFRS}{35}{section*.25}%
-\contentsline {paragraph}{Disparition des produits et charges exceptionnels et de la participation des salariés}{35}{section*.26}%
-\contentsline {paragraph}{Exemples}{36}{section*.27}%
-\contentsline {subsubsection}{Modèle de compte de résultat (income statement) en IFRS}{36}{section*.28}%
-\contentsline {paragraph}{Présentation}{36}{section*.29}%
-\contentsline {paragraph}{Structure du compte de résultat}{36}{section*.30}%
-\contentsline {section}{\numberline {2.3}L'annexe et autres documents}{37}{section.2.3}%
-\contentsline {subsubsection}{Annexe : 3ème Document Comptable de Synthèse}{37}{section*.31}%
-\contentsline {subsubsection}{Objectif de l'annexe}{37}{section*.32}%
+\contentsline {subsubsection}{Quelques éléments spécifiques avec la consolidation}{35}{section*.22}%
+\contentsline {paragraph}{Quote-part de résultat des sociétés mise en équivalence}{35}{section*.23}%
+\contentsline {paragraph}{Part des minoritaires / Part du groupe}{36}{section*.24}%
+\contentsline {subsubsection}{Quelques éléments spécifiques en IFRS}{36}{section*.25}%
+\contentsline {paragraph}{Disparition des produits et charges exceptionnels et de la participation des salariés}{36}{section*.26}%
+\contentsline {paragraph}{Exemples}{37}{section*.27}%
+\contentsline {subsubsection}{Modèle de compte de résultat (income statement) en IFRS}{37}{section*.28}%
+\contentsline {paragraph}{Présentation}{37}{section*.29}%
+\contentsline {paragraph}{Structure du compte de résultat}{37}{section*.30}%
+\contentsline {section}{\numberline {2.3}L'annexe et autres documents}{38}{section.2.3}%
+\contentsline {subsubsection}{Annexe : 3ème Document Comptable de Synthèse}{38}{section*.31}%
+\contentsline {subsubsection}{Objectif de l'annexe}{38}{section*.32}%
 \contentsline {subsubsection}{Importance des Autres Documents}{38}{section*.33}%
-\contentsline {subsubsection}{Exemples d'Informations Reportées dans l'Annexe}{38}{section*.34}%
-\contentsline {subsubsection}{Dimension de l'Annexe}{38}{section*.35}%
+\contentsline {subsubsection}{Exemples d'Informations Reportées dans l'Annexe}{39}{section*.34}%
+\contentsline {subsubsection}{Dimension de l'Annexe}{39}{section*.35}%
 \contentsline {subsubsection}{Géométrie Variable Selon les Entreprises}{39}{section*.36}%
-\contentsline {subsubsection}{Les Documents d'Information}{39}{section*.37}%
-\contentsline {subsubsection}{Les Documents d'Information en IFRS}{39}{section*.38}%
-\contentsline {chapter}{\numberline {3}Les soldes intermdiaires de gestion}{40}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Chiffre d'affaire, production et marges}{40}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Calcul des marges}{41}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}La marge commerciale (MC)}{41}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Marge Brute (MB)}{42}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}La valeur ajoutée}{42}{section.3.2}%
-\contentsline {subsubsection}{Calcul de la VA dans le cadre des SIG}{43}{section*.39}%
-\contentsline {section}{\numberline {3.3}L'Excédent Brut d'Exploitation (EBE) et le résultat d'exploitation (RE)}{43}{section.3.3}%
-\contentsline {subsubsection}{Calcul de l'Excédent Brut d'Exploitation (EBE)}{43}{section*.40}%
-\contentsline {subsubsection}{L'excédent brut d'exploitation (EBE)}{43}{section*.41}%
-\contentsline {subsubsection}{Information Apportée par l'EBE}{44}{section*.42}%
-\contentsline {subsubsection}{Cas des Entreprises Individuelles}{44}{section*.43}%
-\contentsline {subsubsection}{Calcul du résultat d'exploitation (RE)}{45}{section*.44}%
-\contentsline {subsubsection}{Résultat d'Exploitation (RE)}{45}{section*.45}%
-\contentsline {subsubsection}{Informations Apportées par le RE}{45}{section*.46}%
-\contentsline {subsubsection}{Problèmes pour l'Analyse du RE}{45}{section*.47}%
-\contentsline {subsubsection}{Manipulations Comptables}{45}{section*.48}%
-\contentsline {section}{\numberline {3.4}Le résultat courant (RC) et le résultat net (RN)}{46}{section.3.4}%
-\contentsline {subsubsection}{Calcul du résultat courant (RC)}{46}{section*.49}%
-\contentsline {subsubsection}{Calcul du résultat net (RN)}{46}{section*.50}%
-\contentsline {subsubsection}{Remarque sur les Éléments Exceptionnels}{47}{section*.51}%
-\contentsline {subsubsection}{Information Apportée par les Éléments Exceptionnels}{47}{section*.52}%
-\contentsline {subsubsection}{Remarques}{47}{section*.53}%
-\contentsline {subsubsection}{Information du RN}{47}{section*.54}%
-\contentsline {section}{\numberline {3.5}La capacité d'autofinancement (CAF)}{48}{section.3.5}%
-\contentsline {subsubsection}{Calcul de la CAF}{48}{section*.55}%
-\contentsline {subsubsection}{Logique du Calcul : Retraitement du Résultat Net (RN)}{48}{section*.56}%
-\contentsline {subsubsection}{Information Apportée}{48}{section*.57}%
-\contentsline {subsubsection}{Remarques}{48}{section*.58}%
-\contentsline {subsubsection}{Utilisations Possibles de la Capacité d'Autofinancement (CAF)}{48}{section*.59}%
-\contentsline {subsubsection}{Auto-financement}{49}{section*.60}%
-\contentsline {subsubsection}{Manipulations Comptables}{49}{section*.61}%
-\contentsline {subsubsection}{Calcul des Soldes Intermédiaires de Gestion (SIG)}{49}{section*.62}%
-\contentsline {subsubsection}{Limite}{49}{section*.63}%
-\contentsline {subsubsection}{Définition de Ratio}{49}{section*.64}%
+\contentsline {subsubsection}{Les Documents d'Information}{40}{section*.37}%
+\contentsline {subsubsection}{Les Documents d'Information en IFRS}{40}{section*.38}%
+\contentsline {chapter}{\numberline {3}Les soldes intermdiaires de gestion}{41}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Chiffre d'affaire, production et marges}{41}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Calcul des marges}{42}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}La marge commerciale (MC)}{42}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Marge Brute (MB)}{43}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}La valeur ajoutée}{43}{section.3.2}%
+\contentsline {subsubsection}{Calcul de la VA dans le cadre des SIG}{44}{section*.39}%
+\contentsline {section}{\numberline {3.3}L'Excédent Brut d'Exploitation (EBE) et le résultat d'exploitation (RE)}{44}{section.3.3}%
+\contentsline {subsubsection}{Calcul de l'Excédent Brut d'Exploitation (EBE)}{44}{section*.40}%
+\contentsline {subsubsection}{L'excédent brut d'exploitation (EBE)}{44}{section*.41}%
+\contentsline {subsubsection}{Information Apportée par l'EBE}{45}{section*.42}%
+\contentsline {subsubsection}{Cas des Entreprises Individuelles}{45}{section*.43}%
+\contentsline {subsubsection}{Calcul du résultat d'exploitation (RE)}{46}{section*.44}%
+\contentsline {subsubsection}{Résultat d'Exploitation (RE)}{46}{section*.45}%
+\contentsline {subsubsection}{Informations Apportées par le RE}{46}{section*.46}%
+\contentsline {subsubsection}{Problèmes pour l'Analyse du RE}{46}{section*.47}%
+\contentsline {subsubsection}{Manipulations Comptables}{46}{section*.48}%
+\contentsline {section}{\numberline {3.4}Le résultat courant (RC) et le résultat net (RN)}{47}{section.3.4}%
+\contentsline {subsubsection}{Calcul du résultat courant (RC)}{47}{section*.49}%
+\contentsline {subsubsection}{Calcul du résultat net (RN)}{47}{section*.50}%
+\contentsline {subsubsection}{Remarque sur les Éléments Exceptionnels}{48}{section*.51}%
+\contentsline {subsubsection}{Information Apportée par les Éléments Exceptionnels}{48}{section*.52}%
+\contentsline {subsubsection}{Remarques}{48}{section*.53}%
+\contentsline {subsubsection}{Information du RN}{48}{section*.54}%
+\contentsline {section}{\numberline {3.5}La capacité d'autofinancement (CAF)}{49}{section.3.5}%
+\contentsline {subsubsection}{Calcul de la CAF}{49}{section*.55}%
+\contentsline {subsubsection}{Logique du Calcul : Retraitement du Résultat Net (RN)}{49}{section*.56}%
+\contentsline {subsubsection}{Information Apportée}{49}{section*.57}%
+\contentsline {subsubsection}{Remarques}{49}{section*.58}%
+\contentsline {subsubsection}{Utilisations Possibles de la Capacité d'Autofinancement (CAF)}{49}{section*.59}%
+\contentsline {subsubsection}{Auto-financement}{50}{section*.60}%
+\contentsline {subsubsection}{Manipulations Comptables}{50}{section*.61}%
+\contentsline {subsubsection}{Calcul des Soldes Intermédiaires de Gestion (SIG)}{50}{section*.62}%
+\contentsline {subsubsection}{Limite}{50}{section*.63}%
+\contentsline {subsubsection}{Définition de Ratio}{50}{section*.64}%
+\contentsline {chapter}{\numberline {4}Le bilan financier}{51}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Le reclassement du bilan}{51}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Masses financières (tant à l'actif qu'au passif)}{51}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Traitements à l'actif}{52}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Traitements au passif}{52}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Les valeurs structurelle}{53}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Les ressources propres}{54}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Le fonds de roulement (FR)}{54}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Le besoin en fonds de roulement (BFR)}{55}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}La trésorerie nette (TN)}{56}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Normes sur les valeurs structurelles}{57}{subsection.4.2.5}%
+\contentsline {section}{\numberline {4.3}Situations types}{57}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Situation soutenable (de référence)}{57}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}FR négatif et BFR négatif}{57}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}FR négatif et BFR positif}{58}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}FR positif et BFR négatif}{59}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}FR nul et BFR positif}{60}{subsection.4.3.5}%
+\contentsline {section}{\numberline {4.4}Conclusion}{60}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Annexe : définitions}{61}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Définition des EENE}{61}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Définition de mobilisation "Dailly"}{61}{subsection.4.5.2}%

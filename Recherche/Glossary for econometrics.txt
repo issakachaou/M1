@@ -1,5 +1,37 @@
 # Glossary for econometrics
 
-tick by tick data :donnée de haute fréquence qui capturent chaque mouvement de prix, chaque transaction exécutée et chaque mise à jour des offres et des demandes.
+**Tick by tick data** : donnée de haute fréquence qui capturent chaque mouvement de prix, chaque transaction exécutée et chaque mise à jour des offres et des demandes.
 
-goodness-of-fit : qualité d'ajustement
+**Goodness-of-fit** : qualité d'ajustement
+
+**Out of sample** : échantillon qui n'a rien avoir avec l'echantillon de d'apprentissage et de test
+
+**Stock market index** (singular)
+
+**Stock market indices** (plural)
+
+**Although** : bien que 
+
+**Survey** : rapport, enquête, sondage 
+
+**Roughly speaking** : En gros, pour parler vulgairement
+
+**Effectively** : efficacement 
+
+**Feature** : caractéristique
+
+**Further** : supplémenetaire
+
+**i.e.** : *Id est* du latin pour signifier "C'est-à-dire"
+
+**Skewed** : asymétrique
+
+**Cope** : faire face 
+
+**Hence** : Par conséquent
+
+**Advocated** : préconisé
+
+**forecasting scheme** : modèle de prévision
+
+**As well as** : ainsi que 

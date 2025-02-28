@@ -2,19 +2,8 @@
 
 ## Introduction
 
+
 ## Methods
-
-### Mohammadi, M., 2017. Prediction of α-stable GARCH and ARMA-GARCH-M models. Journal of Forecasting 36, 859–866. 
-
-Using the log-returns
-
-> "*A popular model for log-returns of stock markets is a GARCH model.*"
-
-The author say it because the GARCH models is used for of high fluctuations (volatility of the financial markets) and when they can see a volatility clustering 
-
-### Chong, C.W., Ahmad, M.I., Abdullah, M.Y., 1999. Performance of GARCH models in forecasting stock market volatility. Journal of Forecasting 18, 333–343.
-
-> "*One of the alternatives of non-linear models that can cope with skewness is the Exponential GARCH or EGARCH model introduced by Nelson (1990). For stock indices, Nelson's exponential GARCH is proven to be the best model of the conditional heteroscedasticity.*"
 
 If the GARCH model doesn't provide a good results maybe i should try to use the EGARCH model
 
@@ -32,7 +21,54 @@ I will make a new data set with a frenquency of "5min"
 
 Try with NASDAQ in 5min 
 
->  Multiplicative Component GARCH
+> I have to verify if the NASDAQ(daily) have a negative skewness : 
+
+## Modèle
+
+Multiplicative Component GARCH
+
+GARCH -> problème d'hétérosked
+
+> I have to find a efficient way to select the best order of a GARCH model
+
+FIGARH pareil
+
+Modèles HAR (Heterogeneous Autoregressive) :
+
+Realized GARCH ou Score GARCH :
+
+## Conseil de gemini
+
+Absolument ! Voici une liste d'articles de recherche qui abordent la prévision avec des modèles ARMA et ARCH en utilisant des données de haute fréquence, appliqués aux indices boursiers :
+
+1. Modèles de volatilité réalisée (Realized Volatility) et HAR :
+
+    "The risk in financial returns: A long-memory relationship" (Andersen, T. G., & Bollerslev, T., 1997):
+        Cet article classique introduit l'utilisation de la volatilité réalisée et met en évidence la mémoire longue de la volatilité.
+    "Modeling and forecasting realized volatility" (Andersen, T. G., Bollerslev, T., Diebold, F. X., & Labys, P., 2003):
+        Cet article examine en détail les modèles de volatilité réalisée et leurs applications à la prévision.
+    "HAR-RV: Modeling and forecasting realized volatility" (Corsi, F., 2009):
+        Cet article introduit le modèle HAR-RV, qui est largement utilisé pour la prévision de la volatilité réalisée.
+    "Realized GARCH: A joint model for returns and realized measures of volatility" (Hansen, P. R., Huang, Z., & Shek, H. H., 2012):
+        Cet article présente le modèle Realized GARCH, qui combine les modèles GARCH avec les mesures de volatilité réalisée.
+
+2. Modèles ARCH et GARCH pour les données de haute fréquence :
+
+    "High-frequency financial econometrics: Recent developments and challenges" (Andersen, T. G., Bollerslev, T., & Diebold, F. X., 2010):
+        Cet article de revue examine les développements récents dans l'économétrie financière à haute fréquence, y compris les modèles ARCH et GARCH.
+    "Score-driven time-varying parameter models" (Creal, D., Koopman, S. J., & Lucas, A., 2013):
+        Cet article présente les modèles Score GARCH, qui sont une alternative aux modèles GARCH traditionnels.
+    "Long memory in realized volatility" (Ding, Z., Granger, C. W., & Engle, R. F., 1993):
+        Cet article examine la mémoire longue dans la volatilité réalisée et discute des modèles FIGARCH.
+
+3. Applications aux indices boursiers :
+
+    De nombreux articles appliquent ces modèles à des indices boursiers spécifiques, tels que le S&P 500, le NASDAQ ou le Dow Jones. Vous pouvez trouver ces articles en effectuant des recherches sur Google Scholar ou d'autres bases de données académiques.
+    Lors de vos recherches, utilisé des mots clefs comme:
+        "High-frequency volatility forecasting stock market index"
+        "Realized GARCH stock market index"
+        "HAR-RV forecasting stock index"
+        "ARMA ARCH high-frequency data"
 
 
 ## Results
