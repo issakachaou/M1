@@ -29,3 +29,5 @@ Yes the NASDAQ have a little negative skewness (-0.37)
 In this article the QGARCH model seems the best for forcasting
 
 The GARCH model can remove the excess kurtosis in returns
+
+They use the Median of Squared Error (MedSE)

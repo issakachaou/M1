@@ -1,10 +1,12 @@
 # Glossary for econometrics
 
-**Tick by tick data** : donnée de haute fréquence qui capturent chaque mouvement de prix, chaque transaction exécutée et chaque mise à jour des offres et des demandes.
+**Tick by tick data** : donnée de haute fréquence qui capturent chaque mouvement de prix, 
+chaque transaction exécutée et chaque mise à jour des offres et des demandes.
 
 **Goodness-of-fit** : qualité d'ajustement
 
-**Out of sample** : échantillon qui n'a rien avoir avec l'echantillon de d'apprentissage et de test
+**Out of sample** : échantillon qui n'a rien avoir avec l'echantillon de d'apprentissage
+et de test
 
 **Stock market index** (singular)
 
@@ -35,3 +37,32 @@
 **forecasting scheme** : modèle de prévision
 
 **As well as** : ainsi que 
+
+**Denotes** : indique, désigne 
+
+**Futhermore** : de plus 
+
+**Odd moments** : rare occasion
+
+**Is the so-called** : est connu sous le nom 
+
+**Tedious** : Fastidieux
+
+**Relevant** : pertinent
+
+**Upon** : sur
+
+**The latter** : Ce dernier
+
+**Span** : couvre, porte
+
+**Hold-out sample** : A hold-out sample is a random sample from a data set
+that is withheld and not used in the model fitting process.
+
+**Thus** : Par conséquent, ainsi, donc
+
+**one step ahead forecast** : prévisions avec une seule longueur d'avance
+
+**In order to** : afin de 
+
+**Outperform** : surpasse

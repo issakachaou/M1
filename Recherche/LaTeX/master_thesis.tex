@@ -9,7 +9,7 @@
 \usepackage{wrapfig}
 \usepackage{hyperref}
 \pagestyle{fancy}
-\usepackage{array,multirow,makecell}
+\usepackage{amsmath,amsfonts,amssymb, empheq}
 \setcellgapes{1pt}
 \makegapedcells
 \newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
@@ -35,8 +35,8 @@
 		
 		\LARGE
 		
-		\textbf{Forecasting using ARMA and ARCH models with high-frequency data}\\
-			\textit{An application to stock market index}\\
+		\textbf{Forecasting with High-Frequency Data:}\\
+			\textit{An Application of GARCH Models to Stock Market Indices}\\
 		\vspace{1cm}		
 		\Large
 
@@ -69,6 +69,12 @@ The remainder of this paper is structured as follows: Section 2 presents a revie
 
 
 \part{Methods}
+
+\section{The GARCH model, Bollerslev (1986)}
+
+\[ \sigma_t^2=\alpha_0+\sum_{i=1}^{q}\alpha_i\epsilon_{t-i}^2+\sum_{j=1}^{p}\beta_j\sigma_{t-j}^2=\alpha_0+\alpha(L)\epsilon_t^2+\beta(L)\sigma_t^2\] 
+Where 
+\[ \alpha_0>0 \; , \; \alpha_i \ge 0 \; , \; \beta_j \ge 0 \; ,\; \forall i, \forall j\]
 
 
 \part{Results}

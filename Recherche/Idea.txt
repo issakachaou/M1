@@ -5,9 +5,11 @@
 
 ## Methods
 
-If the GARCH model doesn't provide a good results maybe i should try to use the EGARCH model
+If the GARCH model doesn't provide a good results maybe i should try to use the EGARCH
+model
 
-All the article doesn't have a large dataset like me. Even if their data was in daily i should to try with a smallest dataset
+All the article doesn't have a large dataset like me. Even if their data was in daily
+i should to try with a smallest dataset
 
 We can use the moving average filter to reduce the whie noise in the dataset
 
@@ -15,7 +17,9 @@ We can use the moving average filter to reduce the whie noise in the dataset
 
 ### Advice from chatgpt
  
-Take high-frequency data for forecasting can be a good idea but the using of the log-returns of a stock market index with data in 1min doesn't work well because of the noise of market microstructure 
+Take high-frequency data for forecasting can be a good idea but the using of the
+log-returns of a stock market index with data in 1min doesn't work well because of 
+the noise of market microstructure 
 
 I will make a new data set with a frenquency of "5min"
 
@@ -32,6 +36,12 @@ GARCH -> problème d'hétérosked
 > I have to find a efficient way to select the best order of a GARCH model
 
 FIGARH pareil
+
+> Références : Andersen, Bollerslev, Diebold and Labys (1999) and Andersen et al. (2001a).
+
+Processus de mémoire longue
+
+for a GARCH model alpha + beta <1 to insure the stationnarity
 
 Modèles HAR (Heterogeneous Autoregressive) :
 
