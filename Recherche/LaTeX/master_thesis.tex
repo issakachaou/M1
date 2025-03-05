@@ -11,6 +11,7 @@
 \pagestyle{fancy}
 \usepackage{amsmath,amsfonts,amssymb, empheq}
 \setcellgapes{1pt}
+\usepackage[affil-it]{authblk}
 \makegapedcells
 \newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
@@ -18,54 +19,51 @@
 
 %\setcellgapes{1pt}
 \makegapedcells
+
 \begin{document}
 
 	\begin{titlepage}
+		
 		\centering
-		\vspace*{0.5cm}
+%\vspace*{0.5cm}
 \textsc{{\LARGE \textbf{Université Paris-Est Créteil}}} \\
 \vspace*{0.5cm}
 \textsc{{\LARGE \textbf{Faculté de Sciences Économiques et de Gestion}}}
-\vspace*{2cm}
+\vspace*{1cm}
 
-		\begin{center}
-\includegraphics[scale=0.3]{../../UPEC-logo.svg}
-		\end{center}
-		\vspace*{2cm}
-		
-		\LARGE
-		
-		\textbf{Forecasting with High-Frequency Data:}\\
-			\textit{An Application of GARCH Models to Stock Market Indices}\\
-		\vspace{1cm}		
-		\Large
+\begin{center}
+	\includegraphics[scale=0.25]{../../UPEC-logo.svg}
+\end{center}
+\vspace*{1cm}
 
-		\vspace{1cm}
-		
-		\textbf{Issa KACHAOU}\\
-		\large
-		\textbf{Thesis advisor : Pierre DURAND} \\
-		
-		
-		
-		\vfill
-		
-		\Large
+\LARGE
 
-		\textbf{2025}
+\textbf{Forecasting with High-Frequency Data:}\\
+\textit{An Application of GARCH Models to Stock Market Indices}\\
+\vspace{1cm}		
+\Large
+
+\vspace{0cm}
+
+\textbf{Issa KACHAOU}\\
+\large
+\textbf{Thesis advisor : Pierre DURAND} \\
+\begin{abstract}
+	\noindent
+	Financial markets exhibit complex dynamics, making accurate forecasting a critical yet challenging task for investors, analysts, and policymakers. Time series models, such as the Autoregressive Moving Average (ARMA) and the Autoregressive Conditional Heteroskedasticity (ARCH) models, have been widely employed to capture the underlying patterns in financial data. While ARMA models focus on modeling the linear dependence in time series, ARCH models account for the volatility clustering phenomenon often observed in financial markets.
+\end{abstract}
+
+
+\vfill
+
+\Large
+
+\textbf{\today}
 		
 	\end{titlepage}
 
 \pagestyle{plain}
 \part{Introduction}
-
-Financial markets exhibit complex dynamics, making accurate forecasting a critical yet challenging task for investors, analysts, and policymakers. Time series models, such as the Autoregressive Moving Average (ARMA) and the Autoregressive Conditional Heteroskedasticity (ARCH) models, have been widely employed to capture the underlying patterns in financial data. While ARMA models focus on modeling the linear dependence in time series, ARCH models account for the volatility clustering phenomenon often observed in financial markets.
-
-The advent of high-frequency data has opened new avenues for financial modeling and forecasting. Unlike traditional low-frequency data (e.g., daily or monthly observations), high-frequency data (e.g., minute-by-minute or tick-by-tick prices) provides a more granular view of market dynamics. This increased resolution presents both opportunities and challenges: while more data points enhance the ability to detect short-term dependencies and volatility structures, they also introduce issues such as market microstructure noise and non-stationarity.
-
-This study investigates the role of data frequency in the forecasting performance of ARMA and ARCH models applied to financial time series. Using high-frequency stock market index data from NASDAQ, we assess the predictive power of these models and explore how different data aggregation levels impact forecast accuracy. The findings aim to contribute to the ongoing discussion on the effectiveness of traditional econometric models in high-frequency financial forecasting and provide insights into their practical implementation in risk management and trading strategies.
-
-The remainder of this paper is structured as follows: Section 2 presents a review of the theoretical background of ARMA and ARCH models, highlighting their application in financial econometrics. Section 3 describes the data set and methodology used in our empirical analysis. Section 4 discusses the results obtained from different forecasting horizons, followed by Section 5, which concludes with key takeaways and implications for financial practitioners.
 
 
 \part{Methods}

@@ -1,28 +1,77 @@
 # Présentation du 7 mars
+<p style="text-align:justify;">
 
-## Ce que j'ai lu 
+## Ce que j'ai lu
 
 J'ai lu :
 
 
-## Ce que j'ai fait 
 
-redéfinition du sujet :
+Parfois je suis tomber sur des articles qui pourrait être pertinent pour nos recherches mais ce n'était pas des revue d'économie ou de finance. Je voulais quand même garder ces 
+articles qui pourrait nous servir. Pour m'assurer la véracité de chacune des revues je me suis intéresser à leur quartile qui mesure le facteur d'impact de la revue, une mesure 
+pas réellement sur mais qui donne des indication 
+
+
+
+## Ce que j'ai fait
+
+Tout d'abord la revue de litterature m'a permis de redefinir le sujet. En effet, les caractèristiques des modèle ARMA (Box and Jenkins, 1970)
+ne semble pas adapté à l'étude des série financières. Les modèle ARMA ne prennent pas en compte deux fait stylisé caractèristiques des série série :
+des différences de volatilité à travers le temps et la présence de cluster de volatilité. En sachant ceci il parait plus pertinent de s'orienter sur
+des modèles a Héteroscédasticité conditionnelle. Dans la litterature, le modèle GARCH (Bollerslev, 1986), ainsi que ses nombreuses déclinaisons, est largement utilisé.
+
+Ainsi le sujet de base qui était :
 
 >*Forecasting using ARMA and ARCH models with high-frequency data: *an application to stock market index**
 
+A été redéfini de la manière suivante
+
 >*Forecasting with High-Frequency Data: An Application of GARCH Models to Stock Market Indices*
 
-Choix du modèle GARCH qui prends en compte les différences de volatilité à travers le temps et les clusters de volatilité
+Notre préférence d'utilisation des modèles GARCH est motivé par plusieurs éléments. Tout d'abord ses modèles prennent en compte la présence de cluster de volatilité un éléments
+présent dans nos série quelque soit les fréquences utilisées. Par ailleurs, comme l'ont mis en lumière Frances and Van Dijk (1996), les rendements logaritmique possède des skewness
+negatif, et le modèle prendrait dont en compte cette asymétrie. 
+
+## Données
+
+Pour éviter d'être dépendant de Yahoo Finance j'ai décidé d'utiliser le package yfinance pour télécharger les données du NASDAQ et utiliser un code Python pour les télécharger 
+localement sous format CSV. Ainsi une fois les données télécharger, on en risque pas d'être bloqué par Yahoo Finance. Les données ont été extrait en fréquence mensuelle qui 
+représentera notre basse fréquence dans notre étude et en 5min qui reprénsentera la haute fréquence. La haute fréquence que j'avais choisi au départ était de 1min mais j'ai décidé 
+de réduire la fréquence après avoir lu que sur les données a haute fréquence (et par conséquent à très haute fréquence) les données était très bruité lié à la microstructure 
+des marchés. 
+
+
 
 Loi de distribution GED (queue épaisse de distribution)
 
-faire un test de spécification 
-
-> parler de pmdarima et faire des test 
+faire un test de spécification
 
 
-## Les problèmes rencontrer et des piste de solution 
+
+## Les problèmes rencontrer et des piste de solution
 
 Forte hétérosked non capté par le modèle
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Loi de distribution GED (queue épaisse de distribution)
+
+faire un test de spécification
+
+
+
+
+
+
+</p>

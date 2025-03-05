@@ -1,5 +1,7 @@
 # Glossary for econometrics
 
+<p style="text-align:justify;">
+
 **Tick by tick data** : donnée de haute fréquence qui capturent chaque mouvement de prix, 
 chaque transaction exécutée et chaque mise à jour des offres et des demandes.
 
@@ -66,3 +68,6 @@ that is withheld and not used in the model fitting process.
 **In order to** : afin de 
 
 **Outperform** : surpasse
+
+
+</p>

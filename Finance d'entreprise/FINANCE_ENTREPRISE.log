@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2024.10.12)  1 MAR 2025 21:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2024.10.12)  3 MAR 2025 16:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -431,42 +431,6 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip65
 )
-(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathptmx.sty
-Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
-LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
-LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
-\symbold=\mathgroup6
-\symitalic=\mathgroup7
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
-LaTeX Info: Redefining \hbar on input line 50.
-)
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
 \col@sep=\dimen257
@@ -489,12 +453,6 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \rotheadsize=\dimen260
 \c@nlinenum=\count306
 \TeXr@lab=\toks27
-)
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 27
-.
-
-(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
-File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 (C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
@@ -555,7 +513,7 @@ Package hyperref Info: Link coloring OFF on input line 27.
 \@outlinefile=\write3
 \openout3 = `FINANCE_ENTREPRISE.out'.
 
-<../../../Pictures/FAC_SEG_rvb.jpg, id=319, 706.64pt x 307.1475pt>
+<../../../Pictures/FAC_SEG_rvb.jpg, id=347, 706.64pt x 307.1475pt>
 File: ../../../Pictures/FAC_SEG_rvb.jpg Graphic file (type jpg)
 <use ../../../Pictures/FAC_SEG_rvb.jpg>
 Package pdftex.def Info: ../../../Pictures/FAC_SEG_rvb.jpg  used on input line 
@@ -573,43 +531,16 @@ l.66 \tableofcontents
                       [1
 
 ] (FINANCE_ENTREPRISE.toc
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 2.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
 
-(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 2.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
 
-(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 2.
-
-(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 2.
-
-(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
-.
-
-(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-
 [2
 
 ]
@@ -634,11 +565,17 @@ File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 [6
 
-] [7] [8] [9
+] [7]
+Overfull \hbox (1.47647pt too wide) in paragraph at lines 97--98
+[]\T1/cmr/m/n/12 L'asym�trie d'in-for-ma-tion entre les di-ri-geants, les ac-ti
+on-naires et les cr�an-
+ []
+
+[8] [9
 
 ]
 Chapitre 1.
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-20 150035.png, id=449, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-20 150035.png, id=489, 
 491.58656pt x 121.95563pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-20 150035.png Grap
 hic file (type png)
@@ -650,7 +587,7 @@ Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 
  <../../../Pictures/Screenshots/Capture d'écran 2025-01-20 150035.png>]
 [11]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 195312.png, id=464, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 195312.png, id=506, 
 320.69812pt x 58.71938pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 195312.png Grap
 hic file (type png)
@@ -659,7 +596,7 @@ Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 -21 195312.png  used on input line 165.
 (pdftex.def)             Requested size: 320.69733pt x 58.71921pt.
  [12 <../../../Pictures/Screenshots/Capture d'écran 2025-01-21 195312.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 200847.png, id=476, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 200847.png, id=517, 
 501.37312pt x 120.45pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 200847.png Grap
 hic file (type png)
@@ -667,7 +604,8 @@ hic file (type png)
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 -21 200847.png  used on input line 180.
 (pdftex.def)             Requested size: 250.68594pt x 60.22484pt.
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 211714.png, id=477, 
+ [13 <../../../Pictures/Screenshots/Capture d'écran 2025-01-21 200847.png>]
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 211714.png, id=524, 
 445.665pt x 115.93312pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 211714.png Grap
 hic file (type png)
@@ -675,8 +613,7 @@ hic file (type png)
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 -21 211714.png  used on input line 203.
 (pdftex.def)             Requested size: 222.83195pt x 57.96642pt.
- [13 <../../../Pictures/Screenshots/Capture d'écran 2025-01-21 200847.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213129.png, id=484, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213129.png, id=525, 
 573.64313pt x 127.97812pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213129.png Grap
 hic file (type png)
@@ -684,7 +621,7 @@ hic file (type png)
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 -21 213129.png  used on input line 213.
 (pdftex.def)             Requested size: 286.82086pt x 63.98889pt.
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213904.png, id=485, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213904.png, id=526, 
 454.69875pt x 118.94438pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 213904.png Grap
 hic file (type png)
@@ -692,16 +629,20 @@ hic file (type png)
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 -21 213904.png  used on input line 223.
 (pdftex.def)             Requested size: 227.34882pt x 59.47203pt.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-37.
 
-(C:\Users\issak\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
+Overfull \hbox (23.95163pt too wide) detected at line 231
+\OML/cmm/m/it/12 VAN \OT1/cmr/m/n/12 = [] [] [][] = [] [] [] = []
+ []
+
 [14 <../../../Pictures/Screenshots/Capture d'écran 2025-01-21 211714.png> <../
 ../../Pictures/Screenshots/Capture d'écran 2025-01-21 213129.png> <../../../Pi
-ctures/Screenshots/Capture d'écran 2025-01-21 213904.png>] [15] [16]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 232512.png, id=502, 
+ctures/Screenshots/Capture d'écran 2025-01-21 213904.png>]
+Overfull \hbox (3.42578pt too wide) in paragraph at lines 245--245
+[]\T1/cmr/bx/n/17.28 Calculer le taux de ren-ta-bi-lit� in-terne (TRI) 
+ []
+
+[15] [16]
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-21 232512.png, id=545, 
 521.69907pt x 84.315pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-21 232512.png Grap
 hic file (type png)
@@ -709,21 +650,9 @@ hic file (type png)
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 -21 232512.png  used on input line 323.
 (pdftex.def)             Requested size: 313.02185pt x 50.58937pt.
-
-Overfull \hbox (5.73296pt too wide) in paragraph at lines 336--337
-\T1/ptm/m/n/12 risque, no-tam-ment le risque de non-paiement des in-t�-r�ts ou 
-de non-remboursement
- []
-
-
-Overfull \hbox (1.69714pt too wide) in paragraph at lines 338--339
-[]\T1/ptm/m/n/12 Ainsi, le taux d'ac-tua-li-sa-tion choisi pour cal-cu-ler la v
-a-leur ac-tuelle nette (VAN)
- []
-
-[17 <../../../Pictures/Screenshots/Capture d'écran 2025-01-21 232512.png>]
-[18]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-22 001309.png, id=518, 
+ [17 <../../../Pictures/Screenshots/Capture d'écran 2025-01-21 232512.png>] [1
+8]
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-22 001309.png, id=560, 
 541.27219pt x 146.04562pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-22 001309.png Grap
 hic file (type png)
@@ -731,8 +660,19 @@ hic file (type png)
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 -22 001309.png  used on input line 386.
 (pdftex.def)             Requested size: 324.76581pt x 87.62804pt.
- [19 <../../../Pictures/Screenshots/Capture d'écran 2025-01-22 001309.png>]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-22 002943.png, id=531, 
+
+Overfull \hbox (9.3191pt too wide) detected at line 393
+\OML/cmm/m/it/12 VAN[] \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 10
+00 + [] [] [][] = \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1000 + [] []
+ []
+
+[19 <../../../Pictures/Screenshots/Capture d'écran 2025-01-22 001309.png>]
+Overfull \hbox (2.83305pt too wide) detected at line 411
+\OML/cmm/m/it/12 VAN[] \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 10
+00 + [] [] [][] = \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1000 + [] []
+ []
+
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-22 002943.png, id=574, 
 544.28343pt x 85.82062pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-22 002943.png Grap
 hic file (type png)
@@ -740,13 +680,13 @@ hic file (type png)
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 -22 002943.png  used on input line 445.
 (pdftex.def)             Requested size: 326.57257pt x 51.49275pt.
- [20 <../../../Pictures/Screenshots/Capture d'écran 2025-01-22 002943.png>]
-[21]
+[20] [21 <../../../Pictures/Screenshots/Capture d'écran 2025-01-22 002943.png>
+]
 Chapitre 2.
 [22
 
 ]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 145125.png, id=548, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 145125.png, id=591, 
 618.05907pt x 445.665pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-26 145125.png Grap
 hic file (type png)
@@ -756,7 +696,7 @@ Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 (pdftex.def)             Requested size: 309.02878pt x 222.83195pt.
  [23] [24 <../../../Pictures/Screenshots/Capture d'écran 2025-01-26 145125.png
 >]
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151425.png, id=560, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151425.png, id=603, 
 655.69969pt x 478.78876pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151425.png Grap
 hic file (type png)
@@ -764,7 +704,7 @@ hic file (type png)
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 -26 151425.png  used on input line 545.
 (pdftex.def)             Requested size: 327.84904pt x 239.39378pt.
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151713.png, id=561, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151713.png, id=604, 
 631.60968pt x 472.76625pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151713.png Grap
 hic file (type png)
@@ -772,24 +712,19 @@ hic file (type png)
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 -26 151713.png  used on input line 547.
 (pdftex.def)             Requested size: 315.80406pt x 236.38254pt.
- [25 <../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151425.png>]
-Overfull \hbox (1.34955pt too wide) in paragraph at lines 564--565
-[]\T1/ptm/m/n/12 Dans le cas d'un por-te-feuille d'ac-tions, les risques in-d�-
-pen-dants se com-pensent
+ [25 <../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151425.png>] [2
+6 <../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151713.png>] [27] 
+[28]
+Overfull \hbox (38.85379pt too wide) in paragraph at lines 629--630
+\T1/cmr/m/n/12 de 5%, l'in-ter-valle de confiance est $\OT1/cmr/m/n/12 [\OMS/cm
+sy/m/n/12 ^^@\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1045\OML/cmm/m/
+it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1078]$ \T1/cmr/m/n/1
+2 (soit $\OT1/cmr/m/n/12 [\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 10\OML/cmm/m/it/1
+2 ; \OT1/cmr/m/n/12 45%\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 10\OML/cmm/m/it/12 ; 
+\OT1/cmr/m/n/12 78%]$\T1/cmr/m/n/12 ).
  []
 
-[26 <../../../Pictures/Screenshots/Capture d'écran 2025-01-26 151713.png>]
-[27] [28]
-Overfull \hbox (16.99808pt too wide) in paragraph at lines 629--630
-\T1/ptm/m/n/12 5%, l'in-ter-valle de confiance est $\OT1/ztmcm/m/n/12 [\OMS/ztm
-cm/m/n/12 ^^@\OT1/ztmcm/m/n/12 0\OML/ztmcm/m/it/12 :\OT1/ztmcm/m/n/12 1045\OML/
-ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 0\OML/ztmcm/m/it/12 :\OT1/ztmcm/m/n/12 1078]$
- \T1/ptm/m/n/12 (soit $\OT1/ztmcm/m/n/12 [\OMS/ztmcm/m/n/12 ^^@\OT1/ztmcm/m/n/1
-2 10\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 45%\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m
-/n/12 10\OML/ztmcm/m/it/12 ; \OT1/ztmcm/m/n/12 78%]$\T1/ptm/m/n/12 ).
- []
-
-<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 173535.png, id=592, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-01-26 173535.png, id=635, 
 631.60968pt x 474.27188pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-01-26 173535.png Grap
 hic file (type png)
@@ -797,21 +732,10 @@ hic file (type png)
 Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-01
 -26 173535.png  used on input line 640.
 (pdftex.def)             Requested size: 315.80406pt x 237.13536pt.
-
-Overfull \hbox (2.17981pt too wide) in paragraph at lines 650--651
-[]\T1/ptm/m/n/12 Le risque sys-t�-ma-tique d'un titre sera pro-por-tion-nel � s
-on b�ta ($\OML/ztmcm/m/it/12 ^^L[]$\T1/ptm/m/n/12 ), tout comme
- []
-
 [29 <../../../Pictures/Screenshots/Capture d'écran 2025-01-26 173535.png>]
-Overfull \hbox (2.5934pt too wide) in paragraph at lines 702--703
-[]\T1/ptm/m/n/12 Formule du taux de crois-sance an-nuel com-pos� (\T1/ptm/m/it/
-12 Com-pound An-nual Growth
- []
-
 [30]
-Overfull \hbox (11.37453pt too wide) detected at line 724
-[] \OT1/ztmcm/m/n/12 = [] = [] = 10%
+Overfull \hbox (36.59752pt too wide) detected at line 724
+[] \OT1/cmr/m/n/12 = [] = [] = 10%
  []
 
 [31] [32] [33] [34] [35] [36] [37] [38]
@@ -822,14 +746,25 @@ Chapitre 3.
 Chapitre 4.
 [43
 
-] [44] [45] [46] [47] [48
+] [44]
+Overfull \hbox (22.41054pt too wide) in paragraph at lines 1233--1233
+[]\T1/cmr/bx/n/17.28 �valuation de la ca-pi-ta-li-sa-tion bour-si�re d'une
+ []
+
+[45] [46] [47] [48
 
 ]
 Chapitre 5.
+
+Overfull \hbox (4.8406pt too wide) in paragraph at lines 1318--1319
+[]\T1/cmr/m/n/12 Sous l'hy-po-th�se d'im-per-fec-tions de mar-ch� : Ici, nous t
+ien-drons compte
+ []
+
 [49
 
 ]
-<../../../Pictures/Screenshots/Capture d'écran 2025-02-15 222044.png, id=713, 
+<../../../Pictures/Screenshots/Capture d'écran 2025-02-15 222044.png, id=758, 
 192.72pt x 132.495pt>
 File: ../../../Pictures/Screenshots/Capture d'écran 2025-02-15 222044.png Grap
 hic file (type png)
@@ -838,60 +773,71 @@ Package pdftex.def Info: ../../../Pictures/Screenshots/Capture d'écran 2025-02
 -15 222044.png  used on input line 1341.
 (pdftex.def)             Requested size: 192.71951pt x 132.49466pt.
 
-Underfull \hbox (badness 2735) in paragraph at lines 1344--1345
-[][]\T1/ptm/m/n/12 Il est im-por-tant de no-
+Underfull \hbox (badness 2042) in paragraph at lines 1344--1345
+\T1/cmr/m/n/12 site une �va-lua-tion mi-nu-
  []
 
 
-Underfull \hbox (badness 3930) in paragraph at lines 1344--1345
-\T1/ptm/m/n/12 ter qu'au-del� d'un cer-tain
- []
-
-
-Underfull \hbox (badness 1033) in paragraph at lines 1344--1345
-\T1/ptm/m/n/12 seuil de risque, d�-si-gn� par
+Underfull \hbox (badness 1253) in paragraph at lines 1344--1345
+\T1/cmr/m/n/12 tieuse des op-por-tu-ni-t�s et
  []
 
 [50 <../../../Pictures/Screenshots/Capture d'écran 2025-02-15 222044.png>]
-[51] [52] [53] [54]
-Overfull \hbox (1.07414pt too wide) in paragraph at lines 1596--1597
-[]\T1/ptm/m/n/12 En rai-son de l'aug-men-ta-tion du risque qui p�se sur eux, le
-s ac-tion-naires exigent
+[51]
+Overfull \hbox (1.4525pt too wide) in paragraph at lines 1413--1413
+[]\T1/cmr/bx/n/17.28 Financement ex-clu-sif par ca-pi-taux propres :
  []
 
-[55] [56] [57] [58] [59] [60] [61]
+[52] [53] [54] [55] [56] [57] [58]
+Overfull \hbox (19.74692pt too wide) in paragraph at lines 1684--1684
+[][]\T1/cmr/bx/n/12 Cons�quences de l'en-det-te-ment sur la ren-ta-bi-lit� des 
+ca-pi-taux propres : 
+ []
+
+[59] [60] [61]
 Chapitre 6.
 [62
 
 ] [63] (FINANCE_ENTREPRISE.aux)
 Package rerunfilecheck Info: File `FINANCE_ENTREPRISE.out' has not changed.
-(rerunfilecheck)             Checksum: 55FEB2D55A43376C4DCE5D63A4AB22CE;15899.
+(rerunfilecheck)             Checksum: 3BFEB501CD0A36370D49436116261E74;17049.
  ) 
 Here is how much of TeX's memory you used:
- 13733 strings out of 475385
- 227912 string characters out of 2776906
- 574462 words of memory out of 3000000
- 34640 multiletter control sequences out of 15000+600000
- 526911 words of font info for 105 fonts, out of 8000000 for 9000
+ 13554 strings out of 475385
+ 224956 string characters out of 2776906
+ 574351 words of memory out of 3000000
+ 34490 multiletter control sequences out of 15000+600000
+ 485334 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,15n,77p,1615b,726s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <C
-:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.
-pk><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmex10.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmmi10.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmr10.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/issak/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/eurosym/feymr10.pfb><C:/Users/issak/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/issak/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/issak/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/issak/AppData
-/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/issak/AppData
-/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/issak/AppData
-/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on FINANCE_ENTREPRISE.pdf (64 pages, 1375869 bytes).
+ <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
+0800.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\tcrm1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecti1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ectt1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\issak\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\issak\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecxc1728.pk> <C:\Users\issak\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\issak\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\issak\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\issak\
+AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/i
+ssak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
+:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
+12.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmmi6.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmmi8.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr12.pfb><C:/Users/issak/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/issak/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/issak/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/issak/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/issak/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/eurosym/feymr10.pfb><C:/Users/i
+ssak/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.p
+fb>
+Output written on FINANCE_ENTREPRISE.pdf (64 pages, 1537606 bytes).
 PDF statistics:
- 895 PDF objects out of 1000 (max. 8388607)
- 216 named destinations out of 1000 (max. 500000)
- 708 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1373 PDF objects out of 1440 (max. 8388607)
+ 223 named destinations out of 1000 (max. 500000)
+ 764 words of extra memory for PDF output out of 10000 (max. 10000000)
 

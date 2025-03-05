@@ -10,7 +10,7 @@
 \contentsline {subsection}{\numberline {1.3.1}Exercice}{12}{subsection.1.3.1}%
 \contentsline {section}{\numberline {1.4}Cas les plus usuels}{13}{section.1.4}%
 \contentsline {subsection}{\numberline {1.4.1}Les annuités constantes}{13}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Les rentes perpétuelles constantes}{13}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.2}Les rentes perpétuelles constantes}{14}{subsection.1.4.2}%
 \contentsline {subsection}{\numberline {1.4.3}Les annuités croissantes}{14}{subsection.1.4.3}%
 \contentsline {subsection}{\numberline {1.4.4}Les rentes perpétuelles croissantes}{14}{subsection.1.4.4}%
 \contentsline {section}{\numberline {1.5}Valeur d'une séquence de flux}{15}{section.1.5}%
@@ -20,11 +20,11 @@
 \contentsline {section}{\numberline {1.8}VAN et structure par terme des taux}{16}{section.1.8}%
 \contentsline {section}{\numberline {1.9}Valeur d' une séquence de flux}{17}{section.1.9}%
 \contentsline {subsection}{\numberline {1.9.1}Exercice}{17}{subsection.1.9.1}%
-\contentsline {section}{\numberline {1.10}Risque et taux d'intérêt}{17}{section.1.10}%
+\contentsline {section}{\numberline {1.10}Risque et taux d'intérêt}{18}{section.1.10}%
 \contentsline {section}{\numberline {1.11}Le coût du capital}{18}{section.1.11}%
 \contentsline {subsection}{\numberline {1.11.1}Définition}{18}{subsection.1.11.1}%
 \contentsline {subsection}{\numberline {1.11.2}Premier aperçu}{18}{subsection.1.11.2}%
-\contentsline {subsection}{\numberline {1.11.3}Exercice}{18}{subsection.1.11.3}%
+\contentsline {subsection}{\numberline {1.11.3}Exercice}{19}{subsection.1.11.3}%
 \contentsline {subsection}{\numberline {1.11.4}Premier aperçu}{21}{subsection.1.11.4}%
 \contentsline {chapter}{\numberline {2}Coût du capital et risque}{22}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Risque et rentabilité}{22}{section.2.1}%
@@ -34,7 +34,7 @@
 \contentsline {subsection}{\numberline {2.4.1}Exercice}{27}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Solution}{28}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Exercice : Soit les rentabilités annuelles d'un titre sur la période 2011-2016}{28}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Solution}{28}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.4}Solution}{29}{subsection.2.4.4}%
 \contentsline {section}{\numberline {2.5}Estimer la prime de risque}{29}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Risque et coût du capital}{30}{section.2.6}%
 \contentsline {subsection}{\numberline {2.6.1}Exercice}{30}{subsection.2.6.1}%
@@ -59,7 +59,7 @@
 \contentsline {section}{\numberline {4.1}Prix d'une action}{44}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Évaluation de la capitalisation boursière d'une entreprise}{45}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Évaluation de l'actif économique d'une entreprise}{46}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Valeur de l'entreprise, prix des actions et choix d'investissement}{46}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Valeur de l'entreprise, prix des actions et choix d'investissement}{47}{section.4.4}%
 \contentsline {part}{II\hspace {1em}La structure financière de l'entreprise}{48}{part.2}%
 \contentsline {chapter}{\numberline {5}Structure financière dans le cadre de marchés parfaits}{49}{chapter.5}%
 \contentsline {section}{\numberline {5.1}L'hypothèse de marchés parfaits}{50}{section.5.1}%
@@ -71,7 +71,7 @@
 \contentsline {section}{\numberline {5.3}Financement par capitaux propres et endettement : un exemple}{54}{section.5.3}%
 \contentsline {subsubsection}{Détails de l'emprunt}{54}{section*.8}%
 \contentsline {subsubsection}{Rentabilité des fonds propres selon la structure de financement :}{55}{section*.9}%
-\contentsline {subsubsection}{Prime de risque selon la structure de financement :}{55}{section*.10}%
+\contentsline {subsubsection}{Prime de risque selon la structure de financement :}{56}{section*.10}%
 \contentsline {section}{\numberline {5.4}Propositions de Modigliani et Miller}{56}{section.5.4}%
 \contentsline {subsection}{\numberline {5.4.1}Proposition 1}{56}{subsection.5.4.1}%
 \contentsline {subsection}{\numberline {5.4.2}Démonstration}{56}{subsection.5.4.2}%
@@ -83,7 +83,14 @@
 \contentsline {section}{\numberline {5.8}Le coût moyen pondéré du capital et choix d'investissement}{60}{section.5.8}%
 \contentsline {subsubsection}{Choix d'investissement : actualisation des flux associés au projet}{60}{section*.12}%
 \contentsline {section}{\numberline {5.9}Endettement et Bêta}{60}{section.5.9}%
-\contentsline {section}{\numberline {5.10}Qu'en est-il empriquement ?}{61}{section.5.10}%
+\contentsline {section}{\numberline {5.10}Qu'en est-il empiriquement ?}{61}{section.5.10}%
 \contentsline {chapter}{\numberline {6}Structure financière en présence d'impôts}{62}{chapter.6}%
 \contentsline {section}{\numberline {6.1}La déduction fiscale des intérêts}{62}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}France}{62}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}États-Unis}{62}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Allemagne}{63}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Royaume-Uni}{63}{subsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.1.5}Assiette de l'IS }{63}{subsection.6.1.5}%
+\contentsline {subsection}{\numberline {6.1.6}Impact de l'endettement}{63}{subsection.6.1.6}%
+\contentsline {subsection}{\numberline {6.1.7}Dispositions fiscales pour 2024}{63}{subsection.6.1.7}%
+\contentsline {section}{\numberline {6.2}La déduction fiscale des intérêts}{63}{section.6.2}%

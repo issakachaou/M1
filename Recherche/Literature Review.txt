@@ -1,3 +1,5 @@
+<p style="text-align:justify;">
+
 # Literature Review
 
 ## Mohammadi, M., 2017. Prediction of α-stable GARCH and ARMA-GARCH-M models. Journal of Forecasting 36, 859–866. 
@@ -26,8 +28,12 @@ These models are used for describe the often observed negative skewness in stock
 
 Yes the NASDAQ have a little negative skewness (-0.37)
 
+> In their work the indices's skewness is also quiet negative (We can see the the indices's skewness in the table 1)
+
 In this article the QGARCH model seems the best for forcasting
 
 The GARCH model can remove the excess kurtosis in returns
 
 They use the Median of Squared Error (MedSE)
+
+</p>

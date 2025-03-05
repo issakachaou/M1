@@ -1,4 +1,5 @@
 # Idea
+<p style="text-align:justify;">
 
 ## Introduction
 
@@ -87,3 +88,6 @@ Absolument ! Voici une liste d'articles de recherche qui abordent la prévision 
 ## Discussion
 
 ## Conclusion 
+
+
+</p>
